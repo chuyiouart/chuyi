@@ -62,6 +62,16 @@ const pages = await readJson("data/pages.json");
 const products = await readJson("data/products.json");
 
 const requiredPageIds = new Set([1641, 1646, 1982, 2109, 2110, 2113, 2114, 2115]);
+const coursePageIds = new Set([1982, 2109, 2110]);
+const galleryPageIds = new Set([2113, 2114, 2115]);
+const pageDescriptions = new Map([
+  [1982, "面向成人绘画学习者的系统油画课程，从材料、色彩、构图、临摹到个人创作，帮助学习者逐步建立观察与表达的方法。"],
+  [2109, "面向 5-16 岁学生的综合美术课程，结合绘画、手工、设计与当代工具，重视想象力、造型能力和长期表达。"],
+  [2110, "围绕景观模型、微缩场景与空间制作展开，把绘画、材料、结构和模型工艺结合在一起。"],
+  [2113, "成人绘画作品记录不同阶段的练习、临摹与个人创作成果。"],
+  [2114, "少儿美术作品呈现儿童在色彩、材料、造型和主题表达中的创造力。"],
+  [2115, "模型场景作品展示人偶、景观、微缩空间和综合材料制作成果。"],
+]);
 const pageExclusions = /membership|password|checkout|cart|account|thank-you|registration|join|wshop/i;
 const visiblePages = pages.filter((page) => {
   const text = htmlText(page.content?.rendered || "");
@@ -136,7 +146,68 @@ const cleanContent = (html = "", currentPrefix = "../..") => {
   return output;
 };
 
-const shell = ({ title, subtitle, body, section = "内容" }) => `<!doctype html>
+const imageSrc = (img = "") => img.match(/\bsrc=["']([^"']+)["']/i)?.[1] || "";
+
+const extractImages = (html = "") => {
+  const seen = new Set();
+  const images = [];
+  for (const match of html.matchAll(/<img\b[^>]*>/gi)) {
+    const src = imageSrc(match[0]);
+    if (!src || seen.has(src)) continue;
+    seen.add(src);
+    images.push(match[0]);
+  }
+  return images;
+};
+
+const textBlocks = (html = "", title = "") => {
+  const blocks = [];
+  const seen = new Set([title]);
+  const withoutImages = html
+    .replace(/<figure[\s\S]*?<\/figure>/gi, " ")
+    .replace(/<img\b[^>]*>/gi, " ");
+  for (const match of withoutImages.matchAll(/<(h[1-6]|p|li)\b[^>]*>([\s\S]*?)<\/\1>/gi)) {
+    const text = htmlText(match[2]);
+    if (text.length < 8 || text === "更多" || seen.has(text)) continue;
+    seen.add(text);
+    blocks.push({ tag: match[1].startsWith("h") ? "h3" : "p", text });
+  }
+  return blocks.slice(0, 18);
+};
+
+const renderTextBlocks = (blocks) =>
+  blocks.length
+    ? `<div class="detail-copy">${blocks.map((block) => `<${block.tag}>${block.text}</${block.tag}>`).join("")}</div>`
+    : "";
+
+const renderImageGrid = (images, className = "detail-image-grid") =>
+  images.length
+    ? `<div class="${className}">${images.map((img) => `<figure>${img}</figure>`).join("")}</div>`
+    : "";
+
+const courseBody = ({ title, cleaned, description }) => {
+  const images = extractImages(cleaned);
+  const blocks = textBlocks(cleaned, title);
+  return `
+    <section class="detail-intro">
+      <p>${description}</p>
+    </section>
+    ${renderImageGrid(images, "course-image-grid")}
+    ${renderTextBlocks(blocks)}
+  `;
+};
+
+const galleryBody = ({ cleaned, description }) => {
+  const images = extractImages(cleaned);
+  return `
+    <section class="detail-intro">
+      <p>${description}</p>
+    </section>
+    ${renderImageGrid(images, "artwork-grid")}
+  `;
+};
+
+const shell = ({ title, subtitle, body, section = "内容", layoutClass = "" }) => `<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
@@ -158,7 +229,7 @@ const shell = ({ title, subtitle, body, section = "内容" }) => `<!doctype html
       </nav>
     </header>
     <main>
-      <article class="content-page">
+      <article class="content-page${layoutClass ? ` ${layoutClass}` : ""}">
         <p class="eyebrow">${section}</p>
         <h1>${title}</h1>
         ${subtitle ? `<p class="content-meta">${subtitle}</p>` : ""}
@@ -189,10 +260,27 @@ const writeGeneratedPages = async () => {
 
   for (const page of visiblePages) {
     const title = titleOf(page, `初艺内容 ${page.id}`);
-    const body = cleanContent(page.content?.rendered || "", "../..");
+    const cleaned = cleanContent(page.content?.rendered || "", "../..");
+    let body = cleaned;
+    let layoutClass = "";
+    if (coursePageIds.has(page.id)) {
+      layoutClass = "course-detail";
+      body = courseBody({
+        title,
+        cleaned,
+        description: pageDescriptions.get(page.id) || "课程内容围绕创作方法、材料实践与作品推进展开。",
+      });
+    }
+    if (galleryPageIds.has(page.id)) {
+      layoutClass = "gallery-detail";
+      body = galleryBody({
+        cleaned,
+        description: pageDescriptions.get(page.id) || "作品按系列整理展示，方便集中浏览。",
+      });
+    }
     await fs.writeFile(
       path.join(outRoot, "pages", `${page.id}.html`),
-      shell({ title, body, section: "作品与课程" }),
+      shell({ title, body, section: coursePageIds.has(page.id) ? "课程" : "作品集", layoutClass }),
       "utf8"
     );
     page.local_url = `./content/pages/${page.id}.html`;
