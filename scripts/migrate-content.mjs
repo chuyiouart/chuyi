@@ -8,6 +8,7 @@ const root = process.cwd();
 const outRoot = path.join(root, "content");
 const migratedAssetDir = path.join(root, "assets", "migrated");
 const execFileAsync = promisify(execFile);
+const assetVersion = "20260528c";
 
 const readJson = async (file) => JSON.parse(await fs.readFile(path.join(root, file), "utf8"));
 const slugify = (value) =>
@@ -213,7 +214,7 @@ const shell = ({ title, subtitle, body, section = "内容", layoutClass = "" }) 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${title} | 初艺 OUART</title>
-    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../styles.css?v=${assetVersion}" />
   </head>
   <body>
     <header class="site-header">

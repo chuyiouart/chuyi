@@ -558,12 +558,20 @@ h3 {
 .artwork-grid,
 .course-image-grid {
   display: grid;
-  gap: 14px;
+  gap: 12px;
 }
 
 .artwork-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   align-items: start;
+}
+
+.gallery-detail.content-page {
+  max-width: 1500px;
+}
+
+.gallery-detail .wp-content {
+  margin-top: 24px;
 }
 
 .course-image-grid {
@@ -663,9 +671,12 @@ h3 {
   .product-list,
   .contact-grid,
   .stats-band,
-  .artwork-grid,
   .course-image-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .artwork-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .course-card.large {
