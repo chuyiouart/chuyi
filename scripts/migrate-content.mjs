@@ -26,12 +26,21 @@ const htmlText = (html = "") =>
     .replace(/\s+/g, " ")
     .trim();
 
-const titleOf = (item, fallback) => htmlText(item?.title?.rendered || "") || fallback;
+const titleOf = (item, fallback) => {
+  const title = htmlText(item?.title?.rendered || "");
+  if (title) return title;
+  try {
+    const slugTitle = decodeURIComponent(item?.slug || "").replace(/-/g, " ").trim();
+    if (slugTitle) return slugTitle;
+  } catch {}
+  return fallback;
+};
 
 const hashName = (url) => {
   const clean = url.split("?")[0].split("#")[0];
   const extMatch = clean.match(/\.(jpe?g|png|webp|gif)$/i);
-  const ext = extMatch ? extMatch[1].toLowerCase().replace("jpeg", "jpg") : "jpg";
+  const originalExt = extMatch ? extMatch[1].toLowerCase().replace("jpeg", "jpg") : "jpg";
+  const ext = originalExt === "png" ? "jpg" : originalExt;
   return `${crypto.createHash("sha1").update(clean).digest("hex").slice(0, 16)}.${ext}`;
 };
 
@@ -43,6 +52,7 @@ const normalizeUrl = (url = "") => {
 };
 
 const isUploadUrl = (url) => /^https:\/\/chuyiouart\.com\/wp-content\/uploads\//i.test(normalizeUrl(url));
+const isOldSiteUrl = (url) => /^https:\/\/chuyiouart\.com/i.test(normalizeUrl(url));
 
 const posts = [
   ...(await readJson("data/posts-page-1.json")),
@@ -51,10 +61,11 @@ const posts = [
 const pages = await readJson("data/pages.json");
 const products = await readJson("data/products.json");
 
+const requiredPageIds = new Set([1641, 1646, 1982, 2109, 2110, 2113, 2114, 2115]);
 const pageExclusions = /membership|password|checkout|cart|account|thank-you|registration|join|wshop/i;
 const visiblePages = pages.filter((page) => {
   const text = htmlText(page.content?.rendered || "");
-  return text.length > 60 && !pageExclusions.test(page.slug || "");
+  return requiredPageIds.has(page.id) || (text.length > 60 && !pageExclusions.test(page.slug || ""));
 });
 
 const pagePath = (type, item) => `./content/${type}/${item.id}.html`;
@@ -101,6 +112,7 @@ const cleanContent = (html = "", currentPrefix = "../..") => {
   let output = html
     .replace(/<script[\s\S]*?<\/script>/gi, "")
     .replace(/<style[\s\S]*?<\/style>/gi, "")
+    .replace(/<form[\s\S]*?<\/form>/gi, '<p class="contact-inline">如需咨询课程、作品或模型资源，请通过页面底部的联系方式与我们联系。</p>')
     .replace(/\s(?:srcset|sizes)=["'][^"']*["']/gi, "")
     .replace(/\s(?:loading|decoding|fetchpriority|data-[a-z0-9_-]+)=["'][^"']*["']/gi, "")
     .replace(/\sclass=["'][^"']*["']/gi, "")
@@ -109,7 +121,9 @@ const cleanContent = (html = "", currentPrefix = "../..") => {
 
   output = output.replace(/(<img\b[^>]*\bsrc=["'])([^"']+)(["'][^>]*>)/gi, (all, before, src, after) => {
     const normalized = normalizeUrl(src);
-    if (!imageMap.has(normalized)) return all;
+    if (!imageMap.has(normalized)) {
+      return isOldSiteUrl(normalized) ? '<span class="missing-image-note">图片整理中</span>' : all;
+    }
     return `${before}${currentPrefix}/${imageMap.get(normalized)}${after}`;
   });
 
