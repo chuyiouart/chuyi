@@ -274,8 +274,9 @@ h3 {
 .feature-card img,
 .gallery-card img {
   width: 100%;
-  aspect-ratio: 1.35 / 1;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
+  object-position: center;
 }
 
 .feature-card span,
