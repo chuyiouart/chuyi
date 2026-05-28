@@ -678,6 +678,30 @@ h3 {
   color: var(--muted);
 }
 
+.course-note-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.course-note-grid article {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f6f1ea;
+}
+
+.course-note-grid h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+.course-note-grid p {
+  margin: 0;
+  color: #4b463f;
+}
+
 .contact-hero {
   grid-template-columns: minmax(0, 0.88fr) minmax(360px, 0.9fr);
   min-height: min(740px, calc(100vh - 76px));
@@ -778,7 +802,8 @@ h3 {
   .contact-grid,
   .stats-band,
   .course-image-grid,
-  .course-highlight-grid {
+  .course-highlight-grid,
+  .course-note-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -839,7 +864,8 @@ h3 {
   .stats-band,
   .artwork-grid,
   .course-image-grid,
-  .course-highlight-grid {
+  .course-highlight-grid,
+  .course-note-grid {
     grid-template-columns: 1fr;
   }
 

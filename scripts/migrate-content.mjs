@@ -73,11 +73,21 @@ const pageDescriptions = new Map([
   [2114, "少儿美术作品呈现儿童在色彩、材料、造型和主题表达中的创造力。"],
   [2115, "模型场景作品展示人偶、景观、微缩空间和综合材料制作成果。"],
 ]);
+const pageTitles = new Map([[1982, "成人油画课程"]]);
 const courseHeroImages = new Map([
+  [1982, "../../assets/course-oil-ai.jpg"],
   [2109, "../../assets/course-kids-ai.jpg"],
   [2110, "../../assets/course-model-ai.jpg"],
 ]);
 const courseHighlights = new Map([
+  [
+    1982,
+    [
+      ["课程目标", "建立观察、构图、色彩和画面推进的方法，让学习者能绘画、会创作、懂欣赏、善思考。"],
+      ["课程结构", "包含基础入门、印象大师、古典大师、创作训练和延展内容，适合长期系统学习。"],
+      ["学习方式", "围绕材料示范、临摹分析、阶段练习和个人作品反馈展开，帮助每位学员找到自己的节奏。"],
+    ],
+  ],
   [
     2109,
     [
@@ -92,6 +102,17 @@ const courseHighlights = new Map([
       ["课程方向", "围绕景观模型、微缩场景、空间结构和综合材料制作展开。"],
       ["核心训练", "学习构图、比例、材料处理、地形塑造和模型呈现。"],
       ["适合人群", "适合对模型制作、场景设计、空间表达感兴趣的学习者。"],
+    ],
+  ],
+]);
+const courseNotes = new Map([
+  [
+    1982,
+    [
+      ["基础入门", "认识油画材料、媒介、笔触和画布准备，建立稳定的观察与起稿方法。"],
+      ["大师研究", "通过印象派与古典绘画案例理解色彩关系、光影结构、边缘处理和画面节奏。"],
+      ["个人创作", "从临摹过渡到主题创作，结合阶段反馈完成更完整的个人作品。"],
+      ["学习安排", "原课程内容按系统课时组织，可根据基础、目标和作品方向沟通具体学习路径。"],
     ],
   ],
 ]);
@@ -212,6 +233,7 @@ const courseBody = ({ id, title, cleaned, description }) => {
   const images = extractImages(cleaned);
   const blocks = textBlocks(cleaned, title);
   const heroImage = courseHeroImages.get(id);
+  const notes = courseNotes.get(id);
   const highlights = courseHighlights.get(id) || [
     ["课程结构", "围绕基础训练、材料实践和阶段作品推进。"],
     ["学习方式", "结合示范、练习、反馈和作品整理。"],
@@ -236,7 +258,11 @@ const courseBody = ({ id, title, cleaned, description }) => {
       <section class="course-highlight-grid">
         ${highlights.map(([label, text]) => `<article><span>${label}</span><p>${text}</p></article>`).join("")}
       </section>
-      ${renderTextBlocks(blocks)}
+      ${
+        notes
+          ? `<section class="course-note-grid">${notes.map(([label, text]) => `<article><h3>${label}</h3><p>${text}</p></article>`).join("")}</section>`
+          : renderTextBlocks(blocks)
+      }
     `;
   }
   return `
@@ -310,7 +336,7 @@ const writeGeneratedPages = async () => {
   }
 
   for (const page of visiblePages) {
-    const title = titleOf(page, `初艺内容 ${page.id}`);
+    const title = pageTitles.get(page.id) || titleOf(page, `初艺内容 ${page.id}`);
     const cleaned = cleanContent(page.content?.rendered || "", "../..");
     let body = cleaned;
     let layoutClass = "";
