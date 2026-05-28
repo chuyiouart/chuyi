@@ -462,10 +462,6 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.contact-hero {
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
-}
-
 .contact-card {
   padding: 28px;
 }
@@ -603,6 +599,115 @@ h3 {
   grid-column: 1 / -1;
 }
 
+.course-detail.content-page {
+  max-width: 1360px;
+}
+
+.course-detail.content-page h1 {
+  max-width: 1080px;
+}
+
+.course-landing {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(420px, 1.22fr);
+  gap: clamp(24px, 4vw, 56px);
+  align-items: center;
+  padding: clamp(18px, 3vw, 34px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.course-landing-copy h2 {
+  margin-bottom: 16px;
+  font-size: clamp(26px, 3.2vw, 44px);
+}
+
+.course-landing-copy p:not(.eyebrow) {
+  color: #4b463f;
+  font-size: 18px;
+}
+
+.course-actions,
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.course-landing-media {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #eee7dd;
+}
+
+.course-landing-media img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.course-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.course-highlight-grid article {
+  min-height: 150px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: 0 12px 34px rgba(31, 26, 20, 0.05);
+}
+
+.course-highlight-grid span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--accent-dark);
+  font-weight: 900;
+}
+
+.course-highlight-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.contact-hero {
+  grid-template-columns: minmax(0, 0.88fr) minmax(360px, 0.9fr);
+  min-height: min(740px, calc(100vh - 76px));
+}
+
+.contact-hero h1 {
+  font-size: clamp(42px, 5.4vw, 78px);
+}
+
+.contact-visual {
+  margin: 0;
+}
+
+.contact-visual img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.contact-card.highlight {
+  background: var(--dark);
+  color: white;
+}
+
+.contact-card.highlight p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
 .wp-content figure {
   margin: 24px 0;
 }
@@ -660,7 +765,8 @@ h3 {
   .split-intro,
   .dark-panel,
   .course-card.large,
-  .contact-hero {
+  .contact-hero,
+  .course-landing {
     grid-template-columns: 1fr;
   }
 
@@ -671,7 +777,8 @@ h3 {
   .product-list,
   .contact-grid,
   .stats-band,
-  .course-image-grid {
+  .course-image-grid,
+  .course-highlight-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -731,7 +838,8 @@ h3 {
   .contact-grid,
   .stats-band,
   .artwork-grid,
-  .course-image-grid {
+  .course-image-grid,
+  .course-highlight-grid {
     grid-template-columns: 1fr;
   }
 

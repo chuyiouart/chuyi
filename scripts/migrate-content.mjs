@@ -8,7 +8,7 @@ const root = process.cwd();
 const outRoot = path.join(root, "content");
 const migratedAssetDir = path.join(root, "assets", "migrated");
 const execFileAsync = promisify(execFile);
-const assetVersion = "20260528c";
+const assetVersion = "20260528d";
 
 const readJson = async (file) => JSON.parse(await fs.readFile(path.join(root, file), "utf8"));
 const slugify = (value) =>
@@ -72,6 +72,28 @@ const pageDescriptions = new Map([
   [2113, "成人绘画作品记录不同阶段的练习、临摹与个人创作成果。"],
   [2114, "少儿美术作品呈现儿童在色彩、材料、造型和主题表达中的创造力。"],
   [2115, "模型场景作品展示人偶、景观、微缩空间和综合材料制作成果。"],
+]);
+const courseHeroImages = new Map([
+  [2109, "../../assets/course-kids-ai.jpg"],
+  [2110, "../../assets/course-model-ai.jpg"],
+]);
+const courseHighlights = new Map([
+  [
+    2109,
+    [
+      ["年龄阶段", "面向 5-16 岁学生，根据年龄、基础和兴趣方向调整课程难度。"],
+      ["课程内容", "覆盖绘画、色彩、手工、设计、材料实验与主题创作。"],
+      ["学习目标", "培养观察力、想象力、造型能力和长期表达习惯。"],
+    ],
+  ],
+  [
+    2110,
+    [
+      ["课程方向", "围绕景观模型、微缩场景、空间结构和综合材料制作展开。"],
+      ["核心训练", "学习构图、比例、材料处理、地形塑造和模型呈现。"],
+      ["适合人群", "适合对模型制作、场景设计、空间表达感兴趣的学习者。"],
+    ],
+  ],
 ]);
 const pageExclusions = /membership|password|checkout|cart|account|thank-you|registration|join|wshop/i;
 const visiblePages = pages.filter((page) => {
@@ -186,9 +208,37 @@ const renderImageGrid = (images, className = "detail-image-grid") =>
     ? `<div class="${className}">${images.map((img) => `<figure>${img}</figure>`).join("")}</div>`
     : "";
 
-const courseBody = ({ title, cleaned, description }) => {
+const courseBody = ({ id, title, cleaned, description }) => {
   const images = extractImages(cleaned);
   const blocks = textBlocks(cleaned, title);
+  const heroImage = courseHeroImages.get(id);
+  const highlights = courseHighlights.get(id) || [
+    ["课程结构", "围绕基础训练、材料实践和阶段作品推进。"],
+    ["学习方式", "结合示范、练习、反馈和作品整理。"],
+    ["创作目标", "帮助学习者建立稳定的观察与表达方法。"],
+  ];
+  if (heroImage) {
+    return `
+      <section class="course-landing">
+        <div class="course-landing-copy">
+          <p class="eyebrow">OUART COURSE</p>
+          <h2>课程如何展开</h2>
+          <p>${description}</p>
+          <div class="course-actions">
+            <a class="button primary" href="../../contact.html">咨询课程</a>
+            <a class="button secondary" href="../../gallery.html">查看作品</a>
+          </div>
+        </div>
+        <figure class="course-landing-media">
+          <img src="${heroImage}" alt="${title}课程视觉图" />
+        </figure>
+      </section>
+      <section class="course-highlight-grid">
+        ${highlights.map(([label, text]) => `<article><span>${label}</span><p>${text}</p></article>`).join("")}
+      </section>
+      ${renderTextBlocks(blocks)}
+    `;
+  }
   return `
     <section class="detail-intro">
       <p>${description}</p>
@@ -267,6 +317,7 @@ const writeGeneratedPages = async () => {
     if (coursePageIds.has(page.id)) {
       layoutClass = "course-detail";
       body = courseBody({
+        id: page.id,
         title,
         cleaned,
         description: pageDescriptions.get(page.id) || "课程内容围绕创作方法、材料实践与作品推进展开。",
