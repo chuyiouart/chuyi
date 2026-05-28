@@ -479,6 +479,94 @@ h3 {
   color: var(--muted);
 }
 
+.content-page {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: clamp(36px, 6vw, 78px) clamp(18px, 5vw, 64px);
+}
+
+.content-page h1 {
+  max-width: 900px;
+  font-size: clamp(34px, 5vw, 64px);
+}
+
+.content-meta {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.wp-content {
+  display: flow-root;
+  margin-top: 32px;
+  color: #2f2b26;
+  font-size: 17px;
+}
+
+.wp-content :is(h1, h2, h3, h4) {
+  margin-top: 36px;
+}
+
+.wp-content p {
+  margin-bottom: 18px;
+}
+
+.wp-content a {
+  color: var(--accent-dark);
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.wp-content img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 16px auto;
+  border-radius: 8px;
+  box-shadow: 0 14px 38px rgba(31, 26, 20, 0.1);
+}
+
+.wp-content figure {
+  margin: 24px 0;
+}
+
+.wp-content figure img {
+  margin-bottom: 8px;
+}
+
+.wp-content figcaption {
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+
+.wp-content ul,
+.wp-content ol {
+  padding-left: 1.4em;
+}
+
+.wp-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+.wp-content :is(td, th) {
+  padding: 10px;
+  border: 1px solid var(--line);
+}
+
+.missing-image-note {
+  display: block;
+  max-width: 360px;
+  margin: 16px auto;
+  padding: 18px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  text-align: center;
+}
+
 .empty-state {
   grid-column: 1 / -1;
   padding: 34px;

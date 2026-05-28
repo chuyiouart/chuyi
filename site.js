@@ -50,7 +50,7 @@ const renderArticleCards = (container, posts) => {
           <time datetime="${post.date}">${formatDate(post.date)}</time>
           <h2>${title}</h2>
           <p>${cardExcerpt(post)}</p>
-          <a class="text-link" href="${post.link}" target="_blank" rel="noopener">查看详情</a>
+          <a class="text-link" href="${post.local_url || post.link}" ${post.local_url ? "" : 'target="_blank" rel="noopener"'}>查看详情</a>
         </article>
       `;
     })
@@ -114,7 +114,7 @@ const initProducts = async () => {
           <span>${formatDate(product.date)}</span>
           <h2>${title}</h2>
           <p>${cardExcerpt(product)}</p>
-          <a class="text-link" href="./contact.html">咨询详情</a>
+          <a class="text-link" href="${product.local_url || "./contact.html"}">查看详情</a>
         </article>
       `;
     })
