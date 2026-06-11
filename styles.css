@@ -463,6 +463,141 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.daily-hero {
+  max-width: 1040px;
+}
+
+.daily-list {
+  padding-top: 18px;
+}
+
+.daily-card {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1fr);
+  gap: clamp(22px, 4vw, 44px);
+  align-items: center;
+  max-width: 1220px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.daily-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+}
+
+.daily-card div {
+  padding: clamp(22px, 4vw, 46px);
+}
+
+.daily-card time,
+.daily-card span {
+  display: inline-block;
+  margin: 0 10px 12px 0;
+  color: var(--accent-dark);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.daily-card h2 {
+  max-width: 760px;
+  margin-bottom: 14px;
+  font-size: clamp(28px, 4vw, 48px);
+}
+
+.daily-card p {
+  max-width: 720px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.daily-article {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(30px, 5vw, 72px) clamp(18px, 5vw, 64px);
+}
+
+.daily-article-header {
+  max-width: 940px;
+}
+
+.daily-artwork {
+  margin: 38px 0;
+}
+
+.daily-artwork img {
+  width: 100%;
+  max-height: 760px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #eee7dd;
+  box-shadow: var(--shadow);
+}
+
+.daily-artwork figcaption {
+  max-width: 840px;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.daily-section,
+.daily-practice,
+.daily-source {
+  max-width: 900px;
+  margin-top: 34px;
+}
+
+.daily-section p,
+.daily-practice li,
+.daily-source p {
+  color: #403b35;
+  font-size: 18px;
+}
+
+.daily-skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.daily-skill-grid article,
+.daily-practice,
+.daily-source {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.daily-skill-grid span {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.daily-skill-grid h2 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.daily-skill-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.daily-source a {
+  color: var(--accent-dark);
+  font-weight: 900;
+}
+
 .contact-card {
   padding: 28px;
 }
@@ -791,6 +926,7 @@ h3 {
   .dark-panel,
   .course-card.large,
   .contact-hero,
+  .daily-card,
   .course-landing {
     grid-template-columns: 1fr;
   }
@@ -802,6 +938,7 @@ h3 {
   .product-list,
   .contact-grid,
   .stats-band,
+  .daily-skill-grid,
   .course-image-grid,
   .course-highlight-grid,
   .course-note-grid {
@@ -864,6 +1001,7 @@ h3 {
   .contact-grid,
   .stats-band,
   .artwork-grid,
+  .daily-skill-grid,
   .course-image-grid,
   .course-highlight-grid,
   .course-note-grid {
@@ -872,6 +1010,10 @@ h3 {
 
   .course-card.large {
     grid-column: span 1;
+  }
+
+  .daily-card img {
+    min-height: 240px;
   }
 
   .tools {

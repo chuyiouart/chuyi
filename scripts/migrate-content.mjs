@@ -8,7 +8,7 @@ const root = process.cwd();
 const outRoot = path.join(root, "content");
 const migratedAssetDir = path.join(root, "assets", "migrated");
 const execFileAsync = promisify(execFile);
-const assetVersion = "20260528d";
+const assetVersion = "20260611a";
 
 const readJson = async (file) => JSON.parse(await fs.readFile(path.join(root, file), "utf8"));
 const slugify = (value) =>
@@ -298,6 +298,7 @@ const shell = ({ title, subtitle, body, section = "内容", layoutClass = "" }) 
       <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
       <nav class="nav" aria-label="主导航">
         <a href="../../courses.html">课程</a>
+        <a href="../../daily-art.html">每日一画</a>
         <a href="../../gallery.html">作品集</a>
         <a href="../../resources.html">模型分享</a>
         <a href="../../open-class.html">公开课</a>
