@@ -291,10 +291,16 @@ const shell = ({ title, subtitle, body, section = "内容", layoutClass = "" }) 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${title} | 初艺 OUART</title>
     <link rel="stylesheet" href="../../styles.css?v=${assetVersion}" />
+    <meta name="application-name" content="OUART" />
+    <meta name="apple-mobile-web-app-title" content="OUART" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" type="image/png" href="../../assets/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png" />
+    <link rel="manifest" href="../../site.webmanifest" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="../../index.html"><img src="../../assets/logo-dark.png" alt="" /><span><strong>初艺 OUART</strong><small>${section}</small></span></a>
+      <a class="brand" href="../../index.html"><img src="../../assets/logo-dark.png?v=20260612b" alt="" /><span><strong>初艺 OUART</strong><small>${section}</small></span></a>
       <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
       <nav class="nav" aria-label="主导航">
         <a href="../../courses.html">课程</a>
