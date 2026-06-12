@@ -8,7 +8,7 @@ const root = process.cwd();
 const outRoot = path.join(root, "content");
 const migratedAssetDir = path.join(root, "assets", "migrated");
 const execFileAsync = promisify(execFile);
-const assetVersion = "20260611a";
+const assetVersion = "20260612a";
 
 const readJson = async (file) => JSON.parse(await fs.readFile(path.join(root, file), "utf8"));
 const slugify = (value) =>

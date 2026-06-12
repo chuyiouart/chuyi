@@ -56,14 +56,18 @@ img {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0;
   min-width: 0;
 }
 
 .brand img {
-  width: 86px;
+  width: 96px;
   height: auto;
   object-fit: contain;
+}
+
+.brand span {
+  display: none;
 }
 
 .brand strong,
