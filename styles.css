@@ -146,6 +146,11 @@ img {
   max-width: 820px;
 }
 
+.hero-copy h1 {
+  font-size: clamp(40px, 4.8vw, 58px);
+  text-wrap: balance;
+}
+
 .eyebrow {
   margin: 0 0 12px;
   color: var(--accent);
