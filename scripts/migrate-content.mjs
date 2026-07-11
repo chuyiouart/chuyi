@@ -166,7 +166,7 @@ const cleanContent = (html = "", currentPrefix = "../..") => {
   let output = html
     .replace(/<script[\s\S]*?<\/script>/gi, "")
     .replace(/<style[\s\S]*?<\/style>/gi, "")
-    .replace(/<form[\s\S]*?<\/form>/gi, '<p class="contact-inline">如需咨询课程、作品或模型资源，请通过页面底部的联系方式与我们联系。</p>')
+    .replace(/<form[\s\S]*?<\/form>/gi, '<p class="contact-inline">如需咨询课程、作品或艺术项目，请通过页面底部的联系方式与我们联系。</p>')
     .replace(/\s(?:srcset|sizes)=["'][^"']*["']/gi, "")
     .replace(/\s(?:loading|decoding|fetchpriority|data-[a-z0-9_-]+)=["'][^"']*["']/gi, "")
     .replace(/\sclass=["'][^"']*["']/gi, "")
@@ -306,9 +306,7 @@ const shell = ({ title, subtitle, body, section = "内容", layoutClass = "" }) 
         <a href="../../courses.html">课程</a>
         <a href="../../daily-art.html">每日一画</a>
         <a href="../../gallery.html">作品集</a>
-        <a href="../../resources.html">模型分享</a>
         <a href="../../open-class.html">公开课</a>
-        <a href="../../shop.html">商店展示</a>
         <a href="../../contact.html">联系</a>
       </nav>
     </header>
