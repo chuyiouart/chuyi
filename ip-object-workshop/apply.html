@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>报名初诊 | IP 实物化五天实战营</title>
+    <meta name="theme-color" content="#111214" />
+    <link rel="stylesheet" href="./course.css?v=20260711-v2" />
+    <link rel="stylesheet" href="./apply.css?v=20260711-v1" />
+  </head>
+  <body class="apply-page">
+    <header class="course-header">
+      <a class="course-brand" href="./index.html"><span><strong>IP 实物化实战营</strong><small>FIVE-DAY WORKSHOP</small></span></a>
+      <a class="apply-back" href="./index.html#enrollment">返回课程与费用</a>
+    </header>
+
+    <main class="apply-layout">
+      <aside class="apply-intro">
+        <p class="apply-kicker">APPLICATION / 01</p>
+        <h1>先判断项目，<br /><em>再确认名额。</em></h1>
+        <p>这不是考试。我们需要先知道你从哪里出发、五天最想做到什么，以及项目是否适合在现场完成。</p>
+        <dl>
+          <div><dt>填写时间</dt><dd>约 6-10 分钟</dd></div>
+          <div><dt>初诊方式</dt><dd>资料判断 + 15 分钟沟通</dd></div>
+          <div><dt>付款时点</dt><dd>初诊通过、确认边界之后</dd></div>
+        </dl>
+        <div class="apply-notice">
+          当前为独立站试运行。资料只保存在本设备，不会自动上传；提交后会生成一份初诊摘要，正式收件渠道开放后即可直接接入。
+        </div>
+      </aside>
+
+      <section class="apply-form-section">
+        <form class="application-form" data-application-form>
+          <fieldset>
+            <legend><span>01</span>基本信息</legend>
+            <div class="field-grid two">
+              <label><span>姓名 *</span><input name="name" type="text" required autocomplete="name" /></label>
+              <label><span>所在城市 *</span><input name="city" type="text" required autocomplete="address-level2" /></label>
+              <label><span>联系电话 *</span><input name="phone" type="tel" required autocomplete="tel" /></label>
+              <label><span>微信号</span><input name="wechat" type="text" autocomplete="off" /></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>02</span>你的起点</legend>
+            <div class="choice-grid">
+              <label><input type="radio" name="route" value="已有作品或IP" required /><span><strong>已有作品 / IP</strong><small>角色、插画、原画、设定或系列作品</small></span></label>
+              <label><input type="radio" name="route" value="只有想法或零基础" required /><span><strong>只有想法 / 零基础</strong><small>从故事、关键词和参考图开始</small></span></label>
+            </div>
+            <label class="wide-field"><span>项目名称或暂定名称 *</span><input name="projectName" type="text" required /></label>
+            <label class="wide-field"><span>请用 100-300 字介绍你想做的内容 *</span><textarea name="projectIntro" rows="6" required></textarea></label>
+            <label class="wide-field"><span>参考作品链接（可选）</span><input name="referenceUrl" type="url" placeholder="网盘、作品集或社交媒体公开链接" /></label>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>03</span>五天目标</legend>
+            <label class="wide-field"><span>最希望优先完成什么 *</span>
+              <select name="primaryGoal" required>
+                <option value="">请选择</option>
+                <option>完成可继续修改的三维主模型</option>
+                <option>完成可展示的灰模或小尺寸实体</option>
+                <option>完成基础涂装和包装方向</option>
+                <option>完成个人展示页和发布资料</option>
+                <option>尽可能走完全部闭环</option>
+              </select>
+            </label>
+            <div class="field-grid two">
+              <label><span>三维 / 建模经验</span><select name="modelLevel"><option>完全没有</option><option>接触过生成工具</option><option>会基础修模</option><option>可以独立建模</option></select></label>
+              <label><span>绘画 / 涂装经验</span><select name="paintLevel"><option>完全没有</option><option>会基础绘画</option><option>做过手办涂装</option><option>可以独立完成</option></select></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>04</span>设备与确认</legend>
+            <div class="check-list">
+              <label><input type="checkbox" name="device" value="iPad" /><span>可以携带 iPad</span></label>
+              <label><input type="checkbox" name="device" value="笔记本电脑" /><span>可以携带笔记本电脑</span></label>
+              <label><input type="checkbox" name="device" value="均无" /><span>目前没有上述设备，需要提前协调</span></label>
+            </div>
+            <label class="consent"><input type="checkbox" name="consent" required /><span>我已了解：提交资料不代表录取；付款在初诊通过并确认课程边界后进行；正式展览与销售需要另行评审。</span></label>
+          </fieldset>
+
+          <button class="application-submit" type="submit">生成报名初诊资料</button>
+          <p class="form-status" data-form-status aria-live="polite"></p>
+        </form>
+
+        <section class="application-result" data-application-result hidden>
+          <p class="apply-kicker">APPLICATION / READY</p>
+          <h2>报名资料已生成</h2>
+          <p>请先检查内容。当前版本不会自动发送，请复制后交给课程顾问；连接正式表单后，这一步会改为直接提交。</p>
+          <textarea data-application-summary rows="18" readonly></textarea>
+          <div class="result-actions">
+            <button type="button" data-copy-application>复制初诊资料</button>
+            <button type="button" class="secondary" data-edit-application>返回修改</button>
+          </div>
+          <p class="copy-status" data-copy-status aria-live="polite"></p>
+        </section>
+      </section>
+    </main>
+
+    <script src="./apply.js?v=20260711-v1"></script>
+  </body>
+</html>
