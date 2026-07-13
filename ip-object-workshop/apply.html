@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>报名初诊 | IP 实物化五天实战营</title>
+    <title>课程报名 | IP 实物化五天实战营</title>
     <meta name="theme-color" content="#111214" />
-    <link rel="stylesheet" href="./course.css?v=20260711-v2" />
-    <link rel="stylesheet" href="./apply.css?v=20260711-v1" />
+    <link rel="stylesheet" href="./course.css?v=20260713-v1" />
+    <link rel="stylesheet" href="./apply.css?v=20260713-v1" />
   </head>
   <body class="apply-page">
     <header class="course-header">
@@ -16,16 +16,16 @@
 
     <main class="apply-layout">
       <aside class="apply-intro">
-        <p class="apply-kicker">APPLICATION / 01</p>
-        <h1>先判断项目，<br /><em>再确认名额。</em></h1>
-        <p>这不是考试。我们需要先知道你从哪里出发、五天最想做到什么，以及项目是否适合在现场完成。</p>
+        <p class="apply-kicker">ENROLLMENT / 01</p>
+        <h1>填写报名资料，<br /><em>确认课程席位。</em></h1>
+        <p>无论你已经有作品，还是只有一个想法，都可以直接报名。资料用于安排设备、打印顺序和课前准备。</p>
         <dl>
           <div><dt>填写时间</dt><dd>约 6-10 分钟</dd></div>
-          <div><dt>初诊方式</dt><dd>资料判断 + 15 分钟沟通</dd></div>
-          <div><dt>付款时点</dt><dd>初诊通过、确认边界之后</dd></div>
+          <div><dt>课程时间</dt><dd>2026.10.02-10.06</dd></div>
+          <div><dt>报名人数</dt><dd>每班限 10 人</dd></div>
         </dl>
         <div class="apply-notice">
-          当前为独立站试运行。资料只保存在本设备，不会自动上传；提交后会生成一份初诊摘要，正式收件渠道开放后即可直接接入。
+          填写完成后可选择支付预约金或全款。支付系统尚未开放时，请先生成报名资料并发送给课程联系人。
         </div>
       </aside>
 
@@ -71,26 +71,34 @@
           </fieldset>
 
           <fieldset>
-            <legend><span>04</span>设备与确认</legend>
+            <legend><span>04</span>席位与设备</legend>
+            <p class="field-help">希望选择的报名方式</p>
+            <div class="choice-grid">
+              <label><input type="radio" name="pricePlan" value="创始班早决策价 ¥6,800" required /><span><strong>早决策价 ¥6,800</strong><small>8 月 20 日前完成全款</small></span></label>
+              <label><input type="radio" name="pricePlan" value="标准席 ¥8,800" required /><span><strong>标准席 ¥8,800</strong><small>五天课程与 30 天社群</small></span></label>
+              <label><input type="radio" name="pricePlan" value="精品支持席 ¥12,800" required /><span><strong>精品支持席 ¥12,800</strong><small>限 2 席，增加一对一支持</small></span></label>
+              <label><input type="radio" name="pricePlan" value="先付预约金 ¥999" required /><span><strong>预约金 ¥999</strong><small>锁定名额，可抵学费</small></span></label>
+            </div>
+            <p class="field-help">可以携带的设备</p>
             <div class="check-list">
               <label><input type="checkbox" name="device" value="iPad" /><span>可以携带 iPad</span></label>
               <label><input type="checkbox" name="device" value="笔记本电脑" /><span>可以携带笔记本电脑</span></label>
               <label><input type="checkbox" name="device" value="均无" /><span>目前没有上述设备，需要提前协调</span></label>
             </div>
-            <label class="consent"><input type="checkbox" name="consent" required /><span>我已了解：提交资料不代表录取；付款在初诊通过并确认课程边界后进行；正式展览与销售需要另行评审。</span></label>
+            <label class="consent"><input type="checkbox" name="consent" required /><span>我确认以上报名信息真实，并已了解课程费用边界；正式展览、批量生产与销售服务不包含在基础课程费用中。</span></label>
           </fieldset>
 
-          <button class="application-submit" type="submit">生成报名初诊资料</button>
+          <button class="application-submit" type="submit">生成报名资料</button>
           <p class="form-status" data-form-status aria-live="polite"></p>
         </form>
 
         <section class="application-result" data-application-result hidden>
           <p class="apply-kicker">APPLICATION / READY</p>
-          <h2>报名资料已生成</h2>
-          <p>请先检查内容。当前版本不会自动发送，请复制后交给课程顾问；连接正式表单后，这一步会改为直接提交。</p>
+          <h2>报名资料已整理</h2>
+          <p>请检查内容。当前支付与统一收件后台尚未开放，请复制后发送给课程联系人；正式报名表接入后将改为直接提交。</p>
           <textarea data-application-summary rows="18" readonly></textarea>
           <div class="result-actions">
-            <button type="button" data-copy-application>复制初诊资料</button>
+            <button type="button" data-copy-application>复制报名资料</button>
             <button type="button" class="secondary" data-edit-application>返回修改</button>
           </div>
           <p class="copy-status" data-copy-status aria-live="polite"></p>
@@ -98,6 +106,6 @@
       </section>
     </main>
 
-    <script src="./apply.js?v=20260711-v1"></script>
+    <script src="./apply.js?v=20260713-v1"></script>
   </body>
 </html>

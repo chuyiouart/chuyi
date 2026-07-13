@@ -81,17 +81,16 @@
   function updateStatus(item) {
     const itemDate = startOfDay(parseLocalDate(item.date));
     if (item.published && item.url) return { text: "查看内容", href: item.url };
-    if (item.published) return { text: "已发布" };
-    if (itemDate < today) return { text: "待补发布" };
-    if (itemDate.getTime() === today.getTime()) return { text: "今日计划" };
-    return { text: "即将发布" };
+    if (itemDate.getTime() === today.getTime()) return { text: "今日更新" };
+    return { text: "已更新" };
   }
 
   function renderToday() {
     if (!updates.length) return;
-    const exact = updates.find((item) => startOfDay(parseLocalDate(item.date)).getTime() === today.getTime());
-    const upcoming = updates.find((item) => startOfDay(parseLocalDate(item.date)) >= today);
-    const item = exact || upcoming || updates[updates.length - 1];
+    const available = updates.filter((item) => startOfDay(parseLocalDate(item.date)) <= today);
+    if (!available.length) return;
+    const exact = available.find((item) => startOfDay(parseLocalDate(item.date)).getTime() === today.getTime());
+    const item = exact || available[available.length - 1];
     const status = updateStatus(item);
     const cover = document.querySelector("[data-today-cover]");
     const date = document.querySelector("[data-today-date]");
@@ -119,7 +118,11 @@
   }
 
   function filteredUpdates() {
-    return updates.filter((item) => activeFilter === "全部" || item.type === activeFilter);
+    return updates.filter((item) => {
+      const hasArrived = startOfDay(parseLocalDate(item.date)) <= today;
+      const matchesFilter = activeFilter === "全部" || item.type === activeFilter;
+      return hasArrived && matchesFilter;
+    });
   }
 
   function renderUpdates() {
@@ -171,15 +174,21 @@
   function renderLiveSchedule() {
     const list = document.querySelector("[data-live-list]");
     if (!list) return;
-    let live = updates.filter((item) => item.type === "直播" && parseLocalDate(item.date) >= today).slice(0, 3);
-    if (!live.length) live = updates.filter((item) => item.type === "直播").slice(-3);
+    const live = updates
+      .filter((item) => item.type === "直播" && startOfDay(parseLocalDate(item.date)) <= today)
+      .slice(-3)
+      .reverse();
+    if (!live.length) {
+      list.closest(".live-section").hidden = true;
+      return;
+    }
     list.innerHTML = live
       .map((item) => {
         const status = updateStatus(item);
         return `
           <article class="live-row">
             <time datetime="${item.date}">${formatDisplayDate(item.date)}<br />${item.time}</time>
-            <div><h3>${escapeHtml(item.title)}</h3><p>直播当天仍会同步发布预告图文，结束后补充重点复盘。</p></div>
+            <div><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.summary)}</p></div>
             <span>${status.text}</span>
           </article>`;
       })
@@ -204,11 +213,9 @@
     const methods = document.querySelector("[data-payment-methods]");
     const submit = document.querySelector("[data-payment-submit]");
     const message = document.querySelector("[data-payment-message]");
-    const approval = document.querySelector("[data-approval-code]");
-    const payer = document.querySelector("[data-payer-name]");
-    if (!methods || !submit || !message || !approval || !payer) return;
+    if (!methods || !submit || !message) return;
 
-    if (support) support.textContent = paymentConfig.supportText || "初诊通过、名额确认后开放企业付款通道。";
+    if (support) support.textContent = paymentConfig.supportText || "支付系统正在设计，开放后可选择微信、支付宝或银行转账。";
     const definitions = [
       ["wechat", "微信"],
       ["alipay", "支付宝"],
@@ -219,7 +226,7 @@
       .map(([key, shortLabel]) => {
         const channel = channels[key] || {};
         const available = paymentConfig.enabled && validChannel(channel);
-        const note = available ? "可用" : "初诊通过后开放";
+        const note = available ? "可用" : "暂未开放";
         return `<button type="button" data-channel="${key}" ${available ? "" : "disabled"}><span>${shortLabel}</span>${escapeHtml(channel.label || shortLabel)}<small>${note}</small></button>`;
       })
       .join("");
@@ -228,30 +235,23 @@
       button.addEventListener("click", () => {
         selectedChannel = button.dataset.channel || "";
         methods.querySelectorAll("button").forEach((item) => item.classList.toggle("is-selected", item === button));
-        message.textContent = `已选择${button.textContent.replace("可用", "").trim()}，请核对编号后继续。`;
+        message.textContent = `已选择${button.textContent.replace("可用", "").trim()}。`;
       });
     });
 
     submit.addEventListener("click", () => {
-      if (!approval.value.trim() || !payer.value.trim()) {
-        message.textContent = "请先填写初诊确认编号和付款方名称。";
-        (!approval.value.trim() ? approval : payer).focus();
-        return;
-      }
       if (!paymentConfig.enabled) {
-        message.textContent = "当前网站付款通道尚未开放。请先完成报名初诊，课程团队确认名额后会发送企业付款入口。";
+        message.textContent = "当前支付系统尚未开放，请先填写报名资料。正式支付方式确定后会在这里更新。";
         return;
       }
       if (!selectedChannel) {
-        message.textContent = "请选择一种可用的企业付款方式。";
+        message.textContent = "请选择一种可用的付款方式。";
         return;
       }
 
       const channel = channels[selectedChannel] || {};
       const selectedPrice = document.querySelector('input[name="course-price"]:checked');
       const query = new URLSearchParams({
-        approvalCode: approval.value.trim(),
-        payerName: payer.value.trim(),
         priceType: selectedPrice ? selectedPrice.value : "standard",
       });
       if (channel.checkoutUrl) {
@@ -260,7 +260,7 @@
         return;
       }
       if (selectedChannel === "bank" && validChannel(channel)) {
-        message.innerHTML = `请转账至：${escapeHtml(channel.accountName)} · ${escapeHtml(channel.bankName)} · ${escapeHtml(channel.accountNumber)}。附言请写初诊编号。`;
+        message.innerHTML = `请转账至：${escapeHtml(channel.accountName)} · ${escapeHtml(channel.bankName)} · ${escapeHtml(channel.accountNumber)}。附言请填写报名姓名和手机号。`;
         return;
       }
       message.textContent = "该通道尚未完成安全服务端配置，请联系课程团队处理。";

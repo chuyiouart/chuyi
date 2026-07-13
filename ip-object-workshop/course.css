@@ -898,7 +898,7 @@ a.update-status:hover {
 
 .enrollment-flow {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
   margin: 0 0 72px;
   padding: 28px 0;

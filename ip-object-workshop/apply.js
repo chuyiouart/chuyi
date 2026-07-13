@@ -8,7 +8,7 @@
   const copyStatus = document.querySelector("[data-copy-status]");
   const copyButton = document.querySelector("[data-copy-application]");
   const editButton = document.querySelector("[data-edit-application]");
-  const storageKey = "ip-object-workshop-application-draft";
+  const storageKey = "ip-object-workshop-enrollment-draft";
 
   if (!form || !result || !summary) return;
 
@@ -43,7 +43,7 @@
   function buildSummary() {
     const devices = selectedValues("device");
     return [
-      "【IP 实物化五天实战营 · 报名初诊】",
+      "【IP 实物化五天实战营 · 课程报名】",
       `姓名：${fieldValue("name")}`,
       `城市：${fieldValue("city")}`,
       `电话：${fieldValue("phone")}`,
@@ -55,9 +55,10 @@
       `优先目标：${fieldValue("primaryGoal")}`,
       `建模经验：${fieldValue("modelLevel")}`,
       `绘画 / 涂装经验：${fieldValue("paintLevel")}`,
+      `报名方式：${selectedValues("pricePlan")[0] || "未选择"}`,
       `可携带设备：${devices.length ? devices.join("、") : "未选择"}`,
       "",
-      "已了解：提交资料不代表录取；付款在初诊通过并确认边界后进行；展览与销售另行评审。",
+      "已确认：以上报名信息真实，并已了解课程费用边界；正式展览、批量生产与销售服务不包含在基础课程费用中。",
     ].join("\n");
   }
 

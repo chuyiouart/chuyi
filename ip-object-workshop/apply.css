@@ -160,6 +160,13 @@
   margin-top: 22px;
 }
 
+.field-help {
+  margin: 24px 0 12px;
+  color: #555b63;
+  font-size: 13px;
+  font-weight: 750;
+}
+
 .choice-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
