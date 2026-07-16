@@ -80,9 +80,13 @@
 
   function updateStatus(item) {
     const itemDate = startOfDay(parseLocalDate(item.date));
-    if (item.published && item.url) return { text: "查看内容", href: item.url };
-    if (itemDate.getTime() === today.getTime()) return { text: "今日更新" };
-    return { text: "已更新" };
+    if (item.status === "published" && item.published && item.url) {
+      return { text: "查看内容", href: item.url };
+    }
+    if (item.status === "generated") return { text: "等待发布" };
+    if (item.status === "failed") return { text: "更新延迟" };
+    if (itemDate.getTime() === today.getTime()) return { text: "今日内容准备中" };
+    return { text: "待补充" };
   }
 
   function renderToday() {
@@ -129,14 +133,16 @@
     const list = document.querySelector("[data-updates-list]");
     const more = document.querySelector("[data-load-more]");
     if (!list || !more) return;
-    const filtered = filteredUpdates();
+    const filtered = filteredUpdates().sort(
+      (left, right) => parseLocalDate(right.date) - parseLocalDate(left.date)
+    );
     const visible = filtered.slice(0, visibleCount);
 
     list.innerHTML = visible
       .map((item) => {
         const status = updateStatus(item);
         const statusMarkup = status.href
-          ? `<a class="update-status" href="${escapeHtml(status.href)}" target="_blank" rel="noopener">${status.text}</a>`
+          ? `<a class="update-status" href="${escapeHtml(status.href)}"${/^https?:\/\//.test(status.href) ? ' target="_blank" rel="noopener"' : ""}>${status.text}</a>`
           : `<span class="update-status">${status.text}</span>`;
         return `
           <article class="update-row">

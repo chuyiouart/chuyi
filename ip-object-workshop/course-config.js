@@ -1,7 +1,7 @@
 window.WORKSHOP_CONFIG = {
   applicationFormUrl: "https://wj.qq.com/s2/27296919/9499/",
   course: {
-    name: "IP 实物化与数字展示五天实战营",
+    name: "IP 实物化五天实战营",
     dates: "2026.10.02-10.06",
     city: "青岛",
     classSize: "每班限 10 人",

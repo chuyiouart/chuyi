@@ -1,4 +1,4 @@
-window.WORKSHOP_UPDATES = [
+[
   {
     "date": "2026-07-11",
     "type": "视频",
@@ -791,4 +791,4 @@ window.WORKSHOP_UPDATES = [
     "url": "",
     "status": "planned"
   }
-];
+]
