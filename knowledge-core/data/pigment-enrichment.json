@@ -1,0 +1,282 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "reviewed": "2026-07-16",
+    "scope_zh": "课程核心颜料第一批专业尽调。内容用于艺术材料识别、选色、试色与安全教学，不提供颜料合成配方。",
+    "review_level": "deep-reviewed-v1",
+    "generic_operations": [
+      "先读管身或包装：记录 CI 编码、胶结料、品牌/批次，并查该产品最新版 SDS；商品名不能代替颜料身份。",
+      "做四格试色：原色厚涂、逐级混白、刮薄、透明罩染；使用同一底材、同一工具和近似用量。",
+      "跨一条黑白分界线平涂，干后再判断遮盖力；不要只凭湿色或屏幕色块下结论。",
+      "建立 1、3、7 天观察记录：拍照并注明光源、胶结料、表面光泽、干燥和色相变化，不预设所有品牌表现相同。",
+      "保留一半试片避光，另一半在可控条件下曝光；定期并排比较，作为自己的材料档案。"
+    ],
+    "safety_rules": {
+      "A": "低风险不等于无风险。保持通风，避免入口、扬尘和皮肤长期接触，工作后洗手。",
+      "B": "优先使用已调制的管装/罐装颜料；避免干粉、喷涂和打磨，按产品 SDS 配置防护。",
+      "C": "普通课堂优先采用无该危险成分的替代色；若专业场景必须使用，只用原厂调制品并执行 SDS、污染控制和危险废物管理。",
+      "D": "不进入儿童、家庭和普通培训操作环节；仅保留历史识别、风险教育与替代方案。",
+      "unrated": "资料不足时按较高谨慎等级处理：不使用干粉，不喷涂、不打磨，先取得产品 SDS。"
+    }
+  },
+  "pigments": {
+    "PW6": {
+      "name_zh": "钛白",
+      "summary_zh": "现代绘画中最常见的高遮盖白色颜料。二氧化钛有金红石型和锐钛矿型；艺术家颜料常配入填料或其他白色颜料，因此同为 PW6 的品牌手感、色相和干燥表现仍可能不同。",
+      "identity_notes_zh": "识别重点是管身标注 PW6，而不是只看“Titanium White”商品名。粉末图只说明材料外观，不代表胶结料中的实际白度、遮盖力或色温。",
+      "best_uses": ["提高遮盖力和明度", "建立亮部与厚涂体积", "比较不同颜色的混白偏移"],
+      "mixing_behavior": "着色力和遮盖力通常很强；混色时从少量加入，逐级增加，才能看清原色被推向粉彩色的过程。",
+      "handling": "油画中比较不同品牌时要同时记录胶结料、流变和干燥，因为成品配方不只含二氧化钛。",
+      "limitations": "强混白容易压低色彩饱和度并遮掉透明层次；不能把屏幕上的纯白当作实物色度标准。",
+      "alternatives": "需要更透明的提亮可比较锌白或混合白，但油画中的锌白有独立保存风险，不能简单互换。",
+      "sources": [
+        {"title": "CAMEO: Titanium white", "url": "https://cameo.mfa.org/wiki/Titanium_white"},
+        {"title": "CAMEO: Titanium dioxide", "url": "https://cameo.mfa.org/wiki/Titanium_dioxide"}
+      ]
+    },
+    "PW4": {
+      "name_zh": "锌白",
+      "summary_zh": "氧化锌白色颜料，通常比钛白更透明、着色力更弱，适合细微提亮和冷白比较；但在油画层中与脆化、锌羧酸盐形成、分层等保存问题相关。",
+      "identity_notes_zh": "应确认是单一 PW4、PW4/PW6 混合白，还是商品名中的“混合白”；三者的教学结论不能混为一谈。",
+      "best_uses": ["小比例混白和透明提亮比较", "白色颜料着色力对照实验", "保存科学案例讨论"],
+      "mixing_behavior": "通常推色较慢，适合观察细微色相变化；实际透明度和干燥仍受品牌与胶结料影响。",
+      "handling": "油画试片应薄涂并长期观察；记录底材是否柔性、颜料层厚度和配方。",
+      "limitations": "不建议把高含量锌白用于柔性支撑上的厚底层或大面积承重层。现代保存研究显示其在油性体系中可能导致脆化、开裂和层间剥离。",
+      "alternatives": "需要高遮盖白选 PW6；需要温和混白时优先比较明确标注无锌的混合白，并查看品牌技术资料。",
+      "sources": [
+        {"title": "CAMEO: Zinc white", "url": "https://cameo.mfa.org/wiki/Zinc_white"},
+        {"title": "Smithsonian MCI: Zinc oxide degradation in oil paintings", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043324/"}
+      ]
+    },
+    "PW1": {
+      "name_zh": "铅白",
+      "summary_zh": "历史上重要的碱式碳酸铅白色颜料，在油中具有较强覆盖和促干作用；铅暴露风险使其不适合儿童、家庭或普通课程操作。",
+      "identity_notes_zh": "历史名称很多，必须以 PW1 和成分/SDS 确认。所谓“Flake White Hue”通常是无铅模拟色，不等于 PW1。",
+      "best_uses": ["艺术史与旧作材料识别", "铅白与现代替代白的视觉案例比较", "材料安全教育"],
+      "mixing_behavior": "历史油画层的流变和干燥特征不能只靠现代商品色名推断，必须结合成分与保护科学分析。",
+      "handling": "本库不提供制备或干粉操作。专业机构若保留使用，应执行产品 SDS、专用区域、个人防护、清洁和含铅废物管理。",
+      "safety_override_zh": "专业限制：普通教学、儿童与家庭环境不实际使用 PW1。只做历史识别和无铅替代；专业机构使用时执行含铅材料的专用控制与废物管理。",
+      "limitations": "有毒，吸入或摄入尤其危险；普通教学不应通过实际使用来演示历史效果。",
+      "alternatives": "普通课程使用 PW6 或无铅混合白；讲解历史表面效果时使用已固化样本、高清图像或由专业机构提供的封存样片。",
+      "sources": [
+        {"title": "CAMEO: Lead white", "url": "https://cameo.mfa.org/wiki/Lead_white"},
+        {"title": "CPSC: Art and Craft Safety Guide", "url": "https://www.cpsc.gov/Safety-Education/Safety-Guides/hobbies/art-and-craft-safety-guide"}
+      ]
+    },
+    "PB29": {
+      "name_zh": "群青",
+      "summary_zh": "天然群青来自青金石，现代常用 PB29 多为合成群青。它通常呈偏红的深蓝、透明至半透明且耐光性好；弱酸或含硫环境可能使其受影响。",
+      "identity_notes_zh": "天然与合成材料可共享 PB29 身份，但价格、杂质、颗粒和视觉表现不同；商品名“French Ultramarine”也不能单独证明具体配方。",
+      "best_uses": ["偏红蓝与冷暖对照", "紫色混合", "透明暗部和水彩颗粒感观察"],
+      "mixing_behavior": "与红色容易得到较清晰紫色；与黄色易形成低彩度绿或中性色。水彩中的颗粒表现取决于等级、研磨和胶结料。",
+      "handling": "用原色、混白和薄涂三格比较天然/合成或不同品牌；避免用酸性清洁剂处理含群青颜料层。",
+      "limitations": "酸敏感；不同商品的颗粒度与填料会显著改变覆盖和颗粒感。",
+      "alternatives": "需要更偏绿、着色力更强的蓝可比较 PB15:3；需要较不透明的天空蓝可比较 PB35。",
+      "sources": [
+        {"title": "CAMEO: Ultramarine blue, natural", "url": "https://cameo.mfa.org/wiki/Ultramarine_blue%2C_natural"}
+      ]
+    },
+    "PB28": {
+      "name_zh": "钴蓝",
+      "summary_zh": "钴铝尖晶石蓝色颜料，通常耐光、耐候并具有较稳定的化学性质。它的色相、颗粒和遮盖力与群青和酞菁蓝不同。",
+      "identity_notes_zh": "确认 CI 为 PB28；Cobalt Blue Hue 往往是其他蓝色颜料的混合模拟色。",
+      "best_uses": ["蓝色家族冷暖与颗粒比较", "天空和空气感混色", "与群青、酞菁蓝做着色力对照"],
+      "mixing_behavior": "一般比酞菁蓝着色力温和，较易做层级控制；具体偏红或偏绿随产品而异。",
+      "handling": "优先使用管装颜料；避免钴颜料干粉、喷涂和打磨。做混白阶梯时记录其相对温和的推色过程。",
+      "limitations": "含钴材料需防止粉尘/气溶胶吸入；价格较高，Hue 版本不能作为 PB28 的性质证据。",
+      "alternatives": "课程预算有限时可使用明确标注配方的 Cobalt Blue Hue，但需同时记录实际 CI，并说明它只是视觉替代。",
+      "sources": [
+        {"title": "CAMEO: Cobalt blue", "url": "https://cameo.mfa.org/wiki/Cobalt_blue"},
+        {"title": "CPSC: Art and Craft Safety Guide", "url": "https://www.cpsc.gov/Safety-Education/Safety-Guides/hobbies/art-and-craft-safety-guide"}
+      ]
+    },
+    "PB35": {
+      "name_zh": "天蓝（钴锡蓝）",
+      "summary_zh": "钴锡氧化物蓝色颜料，通常较浅、偏绿、较不透明且耐光稳定；与高着色力的酞菁蓝不是同一种材料。",
+      "identity_notes_zh": "Cerulean Blue Hue 常由其他蓝白混合，不等于 PB35。购买与教学都应核对 CI。",
+      "best_uses": ["天空、空气透视和冷灰色", "不透明蓝与透明蓝对照", "水彩颗粒/沉降观察"],
+      "mixing_behavior": "通常着色力较温和、混白后仍保留空气感；水彩颗粒行为会随品牌配方变化。",
+      "handling": "使用管装成品并避免干粉、喷涂和打磨；用相同白色分别测试 PB35、PB29、PB15:3 的混白强度。",
+      "limitations": "含钴；价格较高，且 Hue 版本的混色与保存性质不能照搬 PB35。",
+      "alternatives": "可用 PB15:3 加白和少量中性色模拟视觉范围，但必须标作混合替代，不能宣称等同。",
+      "sources": [
+        {"title": "CAMEO: Cerulean blue", "url": "https://cameo.mfa.org/wiki/Cerulean_blue"}
+      ]
+    },
+    "PB27": {
+      "name_zh": "普鲁士蓝",
+      "summary_zh": "铁氰化物体系的深蓝颜料，通常透明、着色力强且适合建立深色层次；对碱和高热较敏感。",
+      "identity_notes_zh": "商品名 Antwerp Blue、Berlin Blue 等可能指向相近历史材料，但实际产品仍以 PB27 和配方为准。",
+      "best_uses": ["透明深蓝与暗部", "高着色力控制练习", "与土色混合深灰和绿"],
+      "mixing_behavior": "用量很少就能显著改变混色；从笔尖级小量加入。与黄褐色系可形成自然绿和中性色。",
+      "handling": "避免与强碱性材料直接混用；把 PB27 与 PB29 做等量和等视觉强度两套对照，理解“用量相等”不等于“色力相等”。",
+      "limitations": "碱性条件和高热可能导致变色；不同胶结料中的表面与干燥表现需实测。",
+      "alternatives": "需要更稳定的高彩度偏绿蓝可比较 PB15:3，但其色相、混色和历史语境不同。",
+      "sources": [
+        {"title": "CAMEO: Prussian blue", "url": "https://cameo.mfa.org/wiki/Prussian_blue"}
+      ]
+    },
+    "PB15:3": {
+      "name_zh": "酞菁蓝（绿相）",
+      "summary_zh": "铜酞菁类高着色力蓝色颜料，PB15:3 通常偏绿、透明且耐光性好，是现代调色体系的重要强色。",
+      "identity_notes_zh": "PB15 系列晶型/后缀不同，色相也不同；课程应完整记录 PB15:3，而不是只写“酞青蓝”。",
+      "best_uses": ["高彩度青蓝和绿色混合", "透明罩染", "着色力与用量控制训练"],
+      "mixing_behavior": "色力极强，先用极小量；与白混合会迅速产生强烈浅蓝，与黄混合能获得鲜明绿色。",
+      "handling": "用牙签点量或在调色刀尖上取极少颜料，做 1:1、1:4、1:16 的视觉阶梯；工具应彻底清洁以免污染其他色。",
+      "limitations": "容易压过弱色并污染调色区域；透明深色湿时看似接近黑，需在干燥后判断。",
+      "alternatives": "需要温和、颗粒更明显的蓝可比较 PB28/PB35；需要偏红蓝可比较 PB29。",
+      "sources": [
+        {"title": "CAMEO: Phthalocyanine blue", "url": "https://cameo.mfa.org/wiki/Phthalocyanine_blue"}
+      ]
+    },
+    "PY35": {
+      "name_zh": "镉黄",
+      "summary_zh": "以硫化镉为核心的高彩度、不透明黄色颜料，颜色会随组成和颗粒而变。镉化合物具有严重职业健康风险。",
+      "identity_notes_zh": "Cadmium Yellow Hue 通常是无镉替代混合色；是否含镉必须看 PY35/PY37、成分和 SDS。",
+      "best_uses": ["仅限成人专业材料比较", "不透明高彩度黄的视觉案例", "危险颜料替代方案教学"],
+      "mixing_behavior": "遮盖和着色通常较强，混白可形成高明度暖黄；实际色相随牌号和配方变化。",
+      "handling": "普通课程优先使用 Hue。专业场景若必须使用，只用原厂管装颜料；禁止干粉、喷涂、打磨和产生气溶胶，废料按当地危险废物要求处理。",
+      "safety_override_zh": "专业限制：普通课程采用无镉 Hue。含镉产品不进入儿童、孕期人群、家庭工作室或无污染控制条件的操作；禁止干粉、喷涂、打磨和气溶胶。",
+      "limitations": "镉暴露可造成严重健康损害；不进入儿童、孕期人群、家庭工作室或无污染控制条件的操作环节。",
+      "alternatives": "优先比较 PY154、PY74、PY110 等无镉配方；替代色需按实际 CI 重新测试遮盖力和混色。",
+      "sources": [
+        {"title": "CAMEO: Cadmium yellow", "url": "https://cameo.mfa.org/wiki/Cadmium_yellow"},
+        {"title": "OSHA: Cadmium exposure controls", "url": "https://www.osha.gov/cadmium/exposure-controls"}
+      ]
+    },
+    "PY37": {
+      "name_zh": "镉黄（锌镉硫化物系列）",
+      "summary_zh": "镉黄相关 CI 条目，仍属于需严格控制的含镉材料。商品的具体组成、色相和危险分类必须以产品标签及最新版 SDS 为准。",
+      "identity_notes_zh": "不要用“镉黄色相”中文商品名猜测是否含镉；核对完整 CI、CAS/成分和 SDS。",
+      "best_uses": ["专业材料身份辨识", "镉黄系列差异说明", "安全替代教学"],
+      "mixing_behavior": "通常具有较强遮盖和较高彩度，但不可把 PY35 的具体色相/性质机械套用到所有 PY37 产品。",
+      "handling": "普通课程使用无镉替代。禁止学生接触干粉、喷涂或打磨含镉涂层。",
+      "safety_override_zh": "专业限制：按含镉材料管理。普通课程只使用明确无镉的替代配方，不让学生处理含镉干粉、喷雾或打磨废屑。",
+      "limitations": "含镉风险是优先判断项；本库不提供任何制备或粉体操作步骤。",
+      "alternatives": "从无镉黄中按目标色相、遮盖力和耐光性做试片选择，并保留真实 CI。",
+      "sources": [
+        {"title": "CAMEO: Cadmium yellow", "url": "https://cameo.mfa.org/wiki/Cadmium_yellow"},
+        {"title": "OSHA: Cadmium standard", "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1027"}
+      ]
+    },
+    "PR108": {
+      "name_zh": "镉红",
+      "summary_zh": "镉硫硒化物红色颜料，通常不透明、彩度高且耐光；镉成分带来严重吸入和职业暴露风险。",
+      "identity_notes_zh": "Cadmium Red Hue 是替代混合色，不等于 PR108。是否含镉以完整 CI 和 SDS 为准。",
+      "best_uses": ["仅限成人专业材料比较", "暖红遮盖力案例", "危险颜料替代训练"],
+      "mixing_behavior": "通常覆盖力和着色力较强；与白可形成稳定暖粉色范围，但具体偏橙或偏紫随产品而异。",
+      "handling": "普通教学使用 Hue。专业使用只限原厂调制品；禁止干粉、喷涂和打磨，控制污染并按危险废物处理残留。",
+      "safety_override_zh": "专业限制：即使旧索引只标为 B，本课程仍按含镉高谨慎材料处理。普通教学使用无镉 Hue，禁止干粉、喷涂和打磨。",
+      "limitations": "不适合儿童、家庭或缺少职业卫生控制的课程。",
+      "alternatives": "按目标色相比较 PR254、PR255、PR209 等无镉红；替代配方的透明度和混色不能假定相同。",
+      "sources": [
+        {"title": "CAMEO: Cadmium red", "url": "https://cameo.mfa.org/wiki/Cadmium_red"},
+        {"title": "OSHA: Cadmium exposure controls", "url": "https://www.osha.gov/cadmium/exposure-controls"}
+      ]
+    },
+    "PR101": {
+      "name_zh": "合成氧化铁红",
+      "summary_zh": "稳定、耐光的合成氧化铁红色颜料，色相可从偏黄红到偏蓝红，并可呈现不同透明度。",
+      "identity_notes_zh": "PR101 范围很宽，“透明氧化红”和不透明铁红可能共享 CI；必须记录品牌、具体色名和试片。",
+      "best_uses": ["肤色、砖土与低彩度红", "透明与不透明铁氧化物比较", "耐光基础调色盘"],
+      "mixing_behavior": "通常容易把高彩度颜色压成自然中性色；透明品种适合罩染，不透明品种适合覆盖和打底。",
+      "handling": "在白黑分界线上测试实际遮盖力，再与 PR102 或天然土色并排观察颗粒、色相和透明度。",
+      "limitations": "同一 CI 的制造工艺和粒径差异很大，不能仅凭 PR101 推断透明度。",
+      "alternatives": "需要更天然、变化更复杂的土红可比较 PR102；需要高彩度红则选对应有机颜料并重新评估耐光性。",
+      "sources": [
+        {"title": "CAMEO: Iron oxide red", "url": "https://cameo.mfa.org/wiki/Iron_oxide_red"}
+      ]
+    },
+    "PY42": {
+      "name_zh": "合成氧化铁黄",
+      "summary_zh": "合成水合氧化铁黄色颜料，通常耐光、稳定、彩度适中，是基础调色盘中可靠的土黄色。",
+      "identity_notes_zh": "PY42 常用于合成黄氧化铁；与天然黄赭 PY43 在杂质、颗粒和色相复杂度上可能不同。",
+      "best_uses": ["肤色、土色和自然绿", "基础低彩度调色", "天然/合成土色对照"],
+      "mixing_behavior": "与蓝混合形成自然、低彩度绿色；与红和白适合构建肤色与暖灰。",
+      "handling": "做原色、混白、混蓝三联试片；记录不同品牌是偏橙、偏绿还是更中性。",
+      "limitations": "商品中可能含填料或混合颜料；CI 相同也不保证色相完全一致。",
+      "alternatives": "需要天然颗粒与杂质变化可比较 PY43；需要更高彩度黄色可选耐光有机黄。",
+      "sources": [
+        {"title": "CAMEO: Yellow ocher", "url": "https://cameo.mfa.org/wiki/Yellow_ocher"}
+      ]
+    },
+    "PY43": {
+      "name_zh": "天然黄赭",
+      "summary_zh": "以含水氧化铁为主要着色成分的天然土质黄色颜料，常伴随黏土和矿物杂质，因此产地与加工会造成明显差异。",
+      "identity_notes_zh": "天然黄赭常标 PY43；同名产品也可能用 PY42 或混合配方，需查标签。",
+      "best_uses": ["古典与自然调色盘", "土色颗粒和产地差异观察", "肤色、风景与底色"],
+      "mixing_behavior": "彩度温和，容易形成协调的肤色、土色与自然绿；吸油量和颗粒感可能随矿源变化。",
+      "handling": "把两个产地/品牌并排做厚涂、刮薄和混白试片；记录颗粒、覆盖、色温和用油差异。",
+      "limitations": "“天然”不等于成分完全一致或无需防尘；矿物杂质与批次差异需保留。",
+      "alternatives": "需要批次更稳定、颜色更统一可比较 PY42。",
+      "sources": [
+        {"title": "CAMEO: Yellow ochre sample", "url": "https://cameo.mfa.org/wiki/3.04.30_Yellow_Ochre"}
+      ]
+    },
+    "PG17": {
+      "name_zh": "氧化铬绿",
+      "summary_zh": "三氧化二铬绿色颜料，通常不透明、低彩度且非常稳定，适合自然绿、覆盖层和耐久材料比较。",
+      "identity_notes_zh": "PG17 氧化铬绿与更透明、偏蓝的 PG18 翠绿不同；中文商品名容易混淆，必须看 CI。",
+      "best_uses": ["自然植被与军绿灰绿", "不透明绿与透明绿对照", "耐久基础色"],
+      "mixing_behavior": "色相沉稳，容易形成低彩度绿和中性色；混白后通常呈柔和灰绿。",
+      "handling": "与 PG18 使用同一白、黄、红做三组混色，比较覆盖、透明和色相，而不是只比较色卡。",
+      "limitations": "含铬不代表所有价态风险相同，但仍应避免干粉、喷涂和打磨，并以具体产品 SDS 为准。",
+      "alternatives": "需要透明、高彩度冷绿可比较 PG18 或酞菁绿；替代品需重新判断着色力。",
+      "sources": [
+        {"title": "CAMEO: Chromic oxide", "url": "https://cameo.mfa.org/wiki/Chromic_oxide"}
+      ]
+    },
+    "PG18": {
+      "name_zh": "翠绿（含水氧化铬）",
+      "summary_zh": "含水氧化铬绿色颜料，通常比 PG17 更透明、更偏蓝，耐光与耐化学性良好。",
+      "identity_notes_zh": "Viridian Hue 可能是酞菁绿混合色，不等于 PG18；需核对 CI。",
+      "best_uses": ["透明冷绿罩染", "肤色中和与冷灰", "PG17/PG18 透明度比较"],
+      "mixing_behavior": "透明、色力通常中等；与红色可得复杂中性色，与黄可扩展自然绿色域。",
+      "handling": "做单层和叠层罩染试片，记录每增加一层后的明度与饱和度；避免干粉与气溶胶。",
+      "limitations": "价格与品牌差异明显，Hue 版本不可继承 PG18 的材料结论。",
+      "alternatives": "需要更强着色力可比较酞菁绿；需要不透明、沉稳绿可比较 PG17。",
+      "sources": [
+        {"title": "CAMEO: Viridian", "url": "https://cameo.mfa.org/wiki/Viridian"}
+      ]
+    },
+    "PBK7": {
+      "name_zh": "炭黑",
+      "summary_zh": "高碳含量黑色颜料，稳定且着色力通常很强；在油中可能影响干燥，干粉还涉及呼吸刺激与可燃粉尘风险。",
+      "identity_notes_zh": "PBk7 常对应炭黑/灯黑类现代材料；不同粒径和表面处理会影响色相、色力和流变。",
+      "best_uses": ["强黑与冷灰", "黑色颜料着色力比较", "限制色调色盘"],
+      "mixing_behavior": "少量即可显著压低明度和彩度；从极小量加入，分别与白、黄、蓝观察偏冷或偏暖。",
+      "handling": "油画试片记录 1、3、7 天表干差异；不要用火焰或加热测试，也不要扬起干粉。",
+      "limitations": "容易使混色发闷；油中干燥可能较慢，结果取决于配方和催干体系。",
+      "alternatives": "需要较温和或不同色温可比较 PBk9 骨黑、PBk11 氧化铁黑或综合色黑。",
+      "sources": [
+        {"title": "CAMEO: Carbon black", "url": "https://cameo.mfa.org/wiki/Carbon_black"}
+      ]
+    },
+    "PBK9": {
+      "name_zh": "骨黑",
+      "summary_zh": "由骨质炭化形成的黑色颜料，主要包含碳与羟基磷灰石；通常稳定，视觉与混色表现不同于纯炭黑。",
+      "identity_notes_zh": "Bone Black/Ivory Black 的历史名称不一定对应完全相同原料；现代产品以 PBk9 和制造商说明为准。",
+      "best_uses": ["暖冷黑和混灰比较", "传统材料史", "较温和的暗化练习"],
+      "mixing_behavior": "通常比强炭黑更容易控制，但不同品牌色温和色力差异仍需实测。",
+      "handling": "与 PBk7、PBk11 用同一白色做五级灰阶，记录用量、底色偏向和干燥；避免干粉。",
+      "limitations": "动物来源可能不符合纯素材料选择；悬浮粉尘仍有吸入和可燃风险。",
+      "alternatives": "纯素选项可比较 PBk7 或 PBk11；若要避免单一黑造成失彩，可用互补色调制综合色黑。",
+      "sources": [
+        {"title": "CAMEO: Bone black", "url": "https://cameo.mfa.org/wiki/Bone_black"}
+      ]
+    },
+    "PBR7": {
+      "name_zh": "天然棕色土（生赭/熟赭等）",
+      "summary_zh": "PBr7 覆盖多种天然含铁土色，包括生赭、熟赭等。加热可改变含铁矿物并使颜色趋向更暖、更红，但实际产品受矿源与配方影响。",
+      "identity_notes_zh": "同一 PBr7 可能对应明显不同的商品色名和视觉结果；必须把 CI、商品名、品牌和试片一起记录。",
+      "best_uses": ["肤色、木质、土色与暖暗部", "生赭/熟赭对照", "受限调色盘和综合色"],
+      "mixing_behavior": "与蓝可得丰富灰褐和综合色黑；与白能展示土色内部的黄、红或灰倾向。",
+      "handling": "做生赭与熟赭并排：原色、混白、混群青、刮薄四格；记录干湿色差和透明度。",
+      "limitations": "PBr7 是宽泛身份，不能仅凭 CI 断言色相、透明度或具体矿源。",
+      "alternatives": "需要更统一的合成棕红可比较 PR101；需要透明暖橙棕可查看具体品牌的透明氧化铁配方。",
+      "sources": [
+        {"title": "CAMEO: Sienna", "url": "https://cameo.mfa.org/wiki/Sienna"}
+      ]
+    }
+  }
+}

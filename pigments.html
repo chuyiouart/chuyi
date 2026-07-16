@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>初艺颜料数据库 | OUART Pigment Index</title>
+    <meta
+      name="description"
+      content="可按 Color Index 编码、中文名、英文名、透明度、耐光性与安全等级检索的初艺双语颜料数据库。"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260716-pigments-detail" />
+    <meta name="application-name" content="OUART" />
+    <meta name="apple-mobile-web-app-title" content="OUART" />
+    <meta name="theme-color" content="#191714" />
+    <link rel="icon" type="image/png" href="./assets/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+  </head>
+  <body class="pigment-page">
+    <header class="site-header">
+      <a class="brand" href="./index.html">
+        <img src="./assets/logo-dark.png?v=20260612b" alt="初艺 OUART" />
+        <span><strong>初艺 OUART</strong><small>Knowledge Core</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="主导航">
+        <a href="./courses.html">课程</a>
+        <a class="active" href="./pigments.html">颜料库</a>
+        <a href="./daily-art.html">每日一画</a>
+        <a href="./gallery.html">作品集</a>
+        <a href="./open-class.html">公开课</a>
+        <a href="./contact.html">联系</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="pigment-hero">
+        <div class="pigment-hero-copy">
+          <p class="eyebrow">OUART KNOWLEDGE CORE · 中英双语</p>
+          <h1>先看颜料身份，<br />再判断它怎么用。</h1>
+          <p class="lead">
+            用 Color Index 编码把商品名背后的真实颜料找出来，并把透明度、耐光性、吸油量和材料风险放回绘画课程的实际判断中。
+          </p>
+          <div class="pigment-hero-actions">
+            <a class="button primary" href="#pigment-browser">开始检索</a>
+            <a class="button secondary" href="#rating-guide">读懂性质等级</a>
+          </div>
+        </div>
+        <aside class="pigment-hero-panel" aria-label="数据库概览">
+          <div class="pigment-spectrum" aria-hidden="true">
+            <span style="--tone:#d5ad25"></span><span style="--tone:#d77724"></span>
+            <span style="--tone:#a83b32"></span><span style="--tone:#6d4f82"></span>
+            <span style="--tone:#315f88"></span><span style="--tone:#4f7056"></span>
+            <span style="--tone:#765440"></span><span style="--tone:#292826"></span>
+            <span style="--tone:#e8e3d9"></span>
+          </div>
+          <dl class="pigment-hero-stats">
+            <div><dt id="recordCount">—</dt><dd>条结构化记录</dd></div>
+            <div><dt>10</dt><dd>个颜料与材料门类</dd></div>
+            <div><dt id="curatedCount">—</dt><dd>条常用名人工译审</dd></div>
+          </dl>
+          <p><span id="deepReviewCount">—</span> 个核心 CI 已完成首轮专业尽调；其余条目先提供统一操作卡，并按课程优先级持续复核。</p>
+        </aside>
+      </section>
+
+      <section class="pigment-method" aria-label="使用原则">
+        <p><strong>数据库定位</strong>：这是课程知识底座，不是颜料购物清单。</p>
+        <p><strong>安全边界</strong>：任何干颜料都应避免吸入；C、D 级记录不应转化为儿童或家庭制作步骤。</p>
+        <p><strong>来源原则</strong>：原站用于发现条目，关键教学结论仍需由标准、SDS 与保护科学来源复核。</p>
+      </section>
+
+      <section class="pigment-browser" id="pigment-browser">
+        <div class="pigment-browser-heading">
+          <div>
+            <p class="eyebrow">PIGMENT BROWSER</p>
+            <h2>查编码、中文名、英文名或化学组成</h2>
+          </div>
+          <p id="resultSummary" aria-live="polite">正在载入数据库……</p>
+        </div>
+
+        <div class="pigment-toolbar" aria-label="颜料筛选器">
+          <label class="pigment-search">
+            <span>搜索 / Search</span>
+            <input id="pigmentSearch" type="search" placeholder="例如：PB29、群青、Ultramarine、氧化铁" autocomplete="off" />
+          </label>
+          <label>
+            <span>透明度</span>
+            <select id="opacityFilter">
+              <option value="all">全部</option>
+              <option value="1">不透明</option>
+              <option value="2">半不透明</option>
+              <option value="3">半透明</option>
+              <option value="4">透明</option>
+              <option value="unknown">待核验</option>
+            </select>
+          </label>
+          <label>
+            <span>耐光性</span>
+            <select id="lightFilter">
+              <option value="all">全部</option>
+              <option value="I">I · 优秀</option>
+              <option value="II">II · 很好</option>
+              <option value="III">III · 一般</option>
+              <option value="IV">IV · 较差</option>
+              <option value="V">V · 易褪色</option>
+              <option value="unknown">待核验</option>
+            </select>
+          </label>
+          <label>
+            <span>材料风险</span>
+            <select id="hazardFilter">
+              <option value="all">全部</option>
+              <option value="A">A · 低风险</option>
+              <option value="B">B · 可能有害</option>
+              <option value="C">C · 有害</option>
+              <option value="D">D · 高毒</option>
+              <option value="unrated">待核验</option>
+            </select>
+          </label>
+          <label>
+            <span>中文状态</span>
+            <select id="translationFilter">
+              <option value="all">全部</option>
+              <option value="curated">常用名已译审</option>
+              <option value="ci-generic">CI 通用名初译</option>
+            </select>
+          </label>
+          <label>
+            <span>详情状态</span>
+            <select id="reviewFilter">
+              <option value="all">全部</option>
+              <option value="deep">已尽调 v1</option>
+              <option value="basic">基础操作卡</option>
+            </select>
+          </label>
+          <button class="pigment-reset" id="resetFilters" type="button">清除筛选</button>
+        </div>
+
+        <div class="pigment-family-filters" id="familyFilters" aria-label="按颜色家族筛选"></div>
+
+        <div class="pigment-table-wrap">
+          <table class="pigment-table">
+            <thead>
+              <tr>
+                <th scope="col">色系</th>
+                <th scope="col">CI 编码</th>
+                <th scope="col">中文名 / English name</th>
+                <th scope="col">透明度</th>
+                <th scope="col">耐光性</th>
+                <th scope="col">风险</th>
+                <th scope="col"><span class="sr-only">查看详情</span></th>
+              </tr>
+            </thead>
+            <tbody id="pigmentRows"></tbody>
+          </table>
+          <div class="pigment-empty" id="pigmentEmpty" hidden>没有找到符合条件的记录，请减少筛选条件。</div>
+        </div>
+        <button class="button secondary pigment-more" id="loadMore" type="button" hidden>显示更多</button>
+      </section>
+
+      <section class="pigment-guide" id="rating-guide">
+        <div>
+          <p class="eyebrow">HOW TO READ</p>
+          <h2>三个等级，决定颜料在课程里怎么讲。</h2>
+        </div>
+        <div class="pigment-guide-grid">
+          <article>
+            <span class="guide-number">01</span>
+            <h3>透明度 Opacity</h3>
+            <p>1 不透明 · 2 半不透明 · 3 半透明 · 4 透明。它会影响罩染、覆盖、混白与暗部层次。</p>
+          </article>
+          <article>
+            <span class="guide-number">02</span>
+            <h3>耐光性 Lightfastness</h3>
+            <p>I 优秀 · II 很好 · III 一般 · IV 较差 · V 易褪色。具体表现还会受品牌、颗粒、胶结料与环境影响。</p>
+          </article>
+          <article>
+            <span class="guide-number">03</span>
+            <h3>风险 Hazard</h3>
+            <p>A 到 D 仅是初步风险提示，不等于“可入口”或“儿童安全”。教学材料必须再查当代 SDS。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="pigment-source-note">
+        <div>
+          <p class="eyebrow">SOURCE &amp; REVIEW</p>
+          <h2>保留来源，也保留判断。</h2>
+        </div>
+        <div>
+          <p>
+            本页以 <a href="https://www.artiscreation.com/Color_index_names.html" target="_blank" rel="noopener">The Color of Art Pigment Database</a>
+            作为发现索引，只整理颜料标识和简明事实字段，没有转载其长篇说明、营销名称清单或编辑性旁注。
+          </p>
+          <p>标为“已尽调 v1”的条目已补入当代保护科学或职业安全来源；其他记录的统一操作卡用于建立试片和提出问题，不代表材料结论已经逐条核验。</p>
+          <p>本地颜料图片只采用可核验的开放许可来源，并保留作者、许可和原始页面。粉末照片不能代替实际品牌、胶结料与底材中的涂膜试色。</p>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="pigment-dialog" id="pigmentDialog" aria-labelledby="dialogTitle">
+      <button class="pigment-dialog-close" type="button" aria-label="关闭详情">×</button>
+      <div id="pigmentDetail"></div>
+    </dialog>
+
+    <footer class="site-footer">
+      <p>© 初艺 OUART · 专业知识母库</p>
+    </footer>
+    <script src="./data/pigments-data.js?v=20260716"></script>
+    <script src="./data/pigment-enrichment-data.js?v=20260716-detail-v1"></script>
+    <script src="./pigments.js?v=20260716-detail-v1"></script>
+    <script src="./site.js"></script>
+  </body>
+</html>
