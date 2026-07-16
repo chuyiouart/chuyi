@@ -89,7 +89,7 @@ def release(repo: Path, manifest_path: Path, verify_only: bool = False) -> dict:
     published = json.loads(result.stdout)
     run([sys.executable, str(publisher), "validate", "--root", str(workshop)], repo)
 
-    article_rel = f"ip-object-workshop/{published['article'].replace(os.sep, '/')}"
+    article_rel = Path(published["article"]).resolve().relative_to(repo).as_posix()
     date = manifest["date"]
     allowlist = [
         "ip-object-workshop/course-calendar.json",
