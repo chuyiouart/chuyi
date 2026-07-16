@@ -186,7 +186,8 @@ def validate_public_tree(root: Path | str) -> list[str]:
     for path in root.rglob("*"):
         if not path.is_file() or path.suffix.lower() not in public_suffixes:
             continue
-        if any(part in ignored_parts for part in path.parts):
+        relative_parts = path.relative_to(root).parts
+        if any(part in ignored_parts for part in relative_parts):
             continue
         text = path.read_text(encoding="utf-8", errors="replace")
         if "�" in text:
