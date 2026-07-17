@@ -70,11 +70,11 @@ window.WORKSHOP_UPDATES = [
     "type": "视频",
     "title": "AI 初模为什么不能直接拿去打印",
     "time": "19:30",
-    "summary": "用课程示范和具体判断，说明已有作品与只有想法的人如何进入同一条生产路线。",
-    "cover": "./assets/workshop-hero-v2.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "AI 初模先解决形象与体块方向，进入打印前仍要检查封闭性、厚度、连接、重心和部件关系，并通过人工修模形成可打印文件。",
+    "cover": "./assets/updates/2026-07-17/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-07-17-why-ai-draft-cannot-print-directly.html",
+    "status": "published"
   },
   {
     "date": "2026-07-18",
