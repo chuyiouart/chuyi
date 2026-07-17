@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
+import re
 import subprocess
 import sys
 import time
@@ -14,7 +14,7 @@ import urllib.request
 from pathlib import Path
 
 PUBLIC_BASE = "https://chuyiouart.github.io/chuyi/ip-object-workshop/"
-EXPECTED_REMOTE = "github.com/chuyiouart/chuyi"
+EXPECTED_REPO_PATH = "chuyiouart/chuyi"
 
 
 def run(args: list[str], cwd: Path, check: bool = True) -> subprocess.CompletedProcess[str]:
@@ -31,13 +31,24 @@ def git(repo: Path, *args: str, check: bool = True) -> subprocess.CompletedProce
     return run(["git", *args], repo, check=check)
 
 
+def is_expected_remote(remote: str) -> bool:
+    """Accept any SSH host alias or HTTPS host that targets the expected repo path."""
+    return bool(
+        re.search(
+            rf"(?:[:/]){re.escape(EXPECTED_REPO_PATH)}(?:\.git)?/?$",
+            remote.strip(),
+            flags=re.IGNORECASE,
+        )
+    )
+
+
 def verify_repo(repo: Path, workshop: Path) -> None:
     if not (repo / ".git").exists():
         raise RuntimeError(f"not a git checkout: {repo}")
     if not (workshop / "scripts" / "workshop_publish.py").exists():
         raise RuntimeError("workshop publisher is missing")
     remote = git(repo, "remote", "get-url", "origin").stdout.strip()
-    if EXPECTED_REMOTE not in remote:
+    if not is_expected_remote(remote):
         raise RuntimeError(f"unexpected origin remote: {remote}")
     branch = git(repo, "branch", "--show-current").stdout.strip()
     if branch != "main":

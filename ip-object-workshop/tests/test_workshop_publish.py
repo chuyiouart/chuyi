@@ -9,6 +9,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS_DIR = PROJECT_ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS_DIR))
 
+from release_daily import is_expected_remote  # noqa: E402
 from workshop_publish import build_updates_js, publish_manifest, validate_public_tree  # noqa: E402
 
 
@@ -43,9 +44,15 @@ class WorkshopPublishTests(unittest.TestCase):
     def tearDown(self):
         shutil.rmtree(self.tmp)
 
+    def test_expected_remote_accepts_ssh_alias_used_on_nas(self):
+        self.assertTrue(is_expected_remote("git@github-ouart:chuyiouart/chuyi.git"))
+        self.assertTrue(is_expected_remote("git@github.com:chuyiouart/chuyi.git"))
+        self.assertTrue(is_expected_remote("https://github.com/chuyiouart/chuyi.git"))
+        self.assertFalse(is_expected_remote("git@github.com:someone-else/chuyi.git"))
+
     def test_build_updates_js_preserves_explicit_status(self):
         output = build_updates_js(self.calendar)
-        self.assertIn('window.WORKSHOP_UPDATES', output)
+        self.assertIn("window.WORKSHOP_UPDATES", output)
         self.assertIn('"status": "planned"', output)
         self.assertIn('"published": false', output)
 
