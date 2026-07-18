@@ -81,11 +81,11 @@
     "type": "视频",
     "title": "开放工作室会看到的 7 样真实东西",
     "time": "18:00",
-    "summary": "用课程示范和具体判断，说明已有作品与只有想法的人如何进入同一条生产路线。",
-    "cover": "./assets/workshop-modeling.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用七类可核验的资料、文件、设备、样件与工具，检查一门 IP 实物化课程是否覆盖从视觉输入到实体和发布的完整链路。",
+    "cover": "./assets/updates/2026-07-18/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-07-18-seven-things-in-an-open-workshop.html",
+    "status": "published"
   },
   {
     "date": "2026-07-19",
