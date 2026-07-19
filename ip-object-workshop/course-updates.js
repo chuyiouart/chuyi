@@ -92,11 +92,11 @@ window.WORKSHOP_UPDATES = [
     "type": "直播",
     "title": "公开拆解：现场判断一件作品适合做什么",
     "time": "20:00",
-    "summary": "用课程示范和具体判断，说明已有作品与只有想法的人如何进入同一条生产路线。",
-    "cover": "./assets/workshop-printing-v2.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用用途、轮廓、受力、细节尺度、工艺与时间边界，先判断一件作品更适合完整立体、半身/局部、浮雕或其他降级出口，再决定是否进入三维制作。",
+    "cover": "./assets/updates/2026-07-19/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-07-19-decide-what-a-work-should-become.html",
+    "status": "published"
   },
   {
     "date": "2026-07-20",
