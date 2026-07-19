@@ -1,83 +1,52 @@
 from pathlib import Path
 
-from PIL import Image, ImageDraw
+from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
 CANVAS = 512
-SCALE = 4
 INK = (11, 12, 14, 255)
 WHITE = (255, 255, 255, 255)
 
 
-def scaled(value: int) -> int:
-    return value * SCALE
-
-
-def point(x: int, y: int) -> tuple[int, int]:
-    return scaled(x), scaled(y)
-
-
 def render_master() -> Image.Image:
-    image = Image.new("RGBA", (scaled(CANVAS), scaled(CANVAS)), INK)
-    draw = ImageDraw.Draw(image)
+    source = Image.open(ASSETS / "workshop-logo-gpt-source.png").convert("L")
+    mask = source.point(lambda value: 255 if value >= 128 else 0)
+    bbox = mask.getbbox()
+    if bbox is None:
+        raise RuntimeError("Generated logo source does not contain a white mark.")
 
-    draw.rectangle(
-        [point(78, 166), point(220, 346)],
-        outline=WHITE,
-        width=scaled(28),
-    )
-    draw.line(
-        [point(220, 206), point(278, 256), point(220, 306)],
-        fill=WHITE,
-        width=scaled(24),
-        joint="curve",
-    )
+    mark = mask.crop(bbox)
+    target_width = 340
+    target_height = round(mark.height * target_width / mark.width)
+    mark = mark.resize((target_width, target_height), Image.Resampling.LANCZOS)
 
-    cube = [
-        point(332, 160),
-        point(428, 215),
-        point(428, 326),
-        point(332, 381),
-        point(236, 326),
-        point(236, 215),
-        point(332, 160),
-    ]
-    draw.line(cube, fill=WHITE, width=scaled(24), joint="curve")
-    draw.line(
-        [point(236, 215), point(332, 271), point(428, 215)],
-        fill=WHITE,
-        width=scaled(20),
-        joint="curve",
-    )
-    draw.line(
-        [point(332, 271), point(332, 381)],
-        fill=WHITE,
-        width=scaled(20),
-    )
-    draw.rectangle([point(318, 242), point(346, 270)], fill=WHITE)
-
-    return image.resize((CANVAS, CANVAS), Image.Resampling.LANCZOS)
+    image = Image.new("RGBA", (CANVAS, CANVAS), INK)
+    white_layer = Image.new("RGBA", mark.size, WHITE)
+    position = ((CANVAS - target_width) // 2, (CANVAS - target_height) // 2)
+    image.paste(white_layer, position, mark)
+    return image
 
 
 def main() -> None:
     ASSETS.mkdir(parents=True, exist_ok=True)
     master = render_master()
-    master.save(ASSETS / "icon-512.png")
+    master.save(ASSETS / "workshop-logo-v2.png")
+    master.save(ASSETS / "icon-512-v2.png")
 
     for filename, size in (
-        ("icon-192.png", 192),
-        ("apple-touch-icon.png", 180),
-        ("favicon-48.png", 48),
-        ("favicon-32.png", 32),
+        ("icon-192-v2.png", 192),
+        ("apple-touch-icon-v2.png", 180),
+        ("favicon-48-v2.png", 48),
+        ("favicon-32-v2.png", 32),
     ):
         master.resize((size, size), Image.Resampling.LANCZOS).save(ASSETS / filename)
 
     maskable = Image.new("RGBA", (CANVAS, CANVAS), INK)
     safe_mark = master.resize((410, 410), Image.Resampling.LANCZOS)
     maskable.alpha_composite(safe_mark, (51, 51))
-    maskable.save(ASSETS / "icon-512-maskable.png")
+    maskable.save(ASSETS / "icon-512-maskable-v2.png")
 
     master.save(
         ROOT / "favicon.ico",
