@@ -15,6 +15,17 @@ from pathlib import Path
 
 PUBLIC_BASE = "https://chuyiouart.github.io/chuyi/ip-object-workshop/"
 EXPECTED_REPO_PATH = "chuyiouart/chuyi"
+TRANSIENT_GIT_ERRORS = (
+    "connection closed",
+    "connection reset",
+    "connection timed out",
+    "could not resolve host",
+    "failed to connect",
+    "network is unreachable",
+    "remote end hung up unexpectedly",
+    "ssh_exchange_identification",
+    "tls connection",
+)
 
 
 def run(args: list[str], cwd: Path, check: bool = True) -> subprocess.CompletedProcess[str]:
@@ -29,6 +40,29 @@ def run(args: list[str], cwd: Path, check: bool = True) -> subprocess.CompletedP
 
 def git(repo: Path, *args: str, check: bool = True) -> subprocess.CompletedProcess[str]:
     return run(["git", *args], repo, check=check)
+
+
+def git_with_retry(
+    repo: Path,
+    *args: str,
+    attempts: int = 3,
+    delays: tuple[int, ...] = (5, 15),
+) -> subprocess.CompletedProcess[str]:
+    """Retry only transient Git transport failures; fail fast on logical errors."""
+    last: subprocess.CompletedProcess[str] | None = None
+    for attempt in range(attempts):
+        last = git(repo, *args, check=False)
+        if last.returncode == 0:
+            return last
+        diagnostic = f"{last.stdout}\n{last.stderr}".lower()
+        transient = any(marker in diagnostic for marker in TRANSIENT_GIT_ERRORS)
+        if not transient or attempt == attempts - 1:
+            raise RuntimeError(
+                f"git command failed after {attempt + 1} attempt(s): git {' '.join(args)}\n"
+                f"stdout: {last.stdout.strip()}\nstderr: {last.stderr.strip()}"
+            )
+        time.sleep(delays[min(attempt, len(delays) - 1)])
+    raise RuntimeError(f"git command failed without a result: git {' '.join(args)}")
 
 
 def is_expected_remote(remote: str) -> bool:
@@ -90,7 +124,7 @@ def release(repo: Path, manifest_path: Path, verify_only: bool = False) -> dict:
         return {"status": "verified", "url": live_url, "title": manifest["title"]}
 
     verify_repo(repo, workshop)
-    git(repo, "pull", "--ff-only", "origin", "main")
+    git_with_retry(repo, "pull", "--ff-only", "origin", "main")
 
     publisher = workshop / "scripts" / "workshop_publish.py"
     result = run(
@@ -123,7 +157,7 @@ def release(repo: Path, manifest_path: Path, verify_only: bool = False) -> dict:
 
     if staged:
         git(repo, "commit", "-m", f"content: publish workshop update {date}")
-        git(repo, "push", "origin", "main")
+        git_with_retry(repo, "push", "origin", "main")
     verify_live(live_url, manifest["title"])
     commit = git(repo, "rev-parse", "HEAD").stdout.strip()
     return {
