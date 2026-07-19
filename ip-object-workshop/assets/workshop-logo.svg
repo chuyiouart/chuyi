@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">IP 实物化实战营标志</title>
+  <desc id="desc">一个平面框经过转译节点折叠成为立体物件</desc>
+  <rect width="512" height="512" fill="#0b0c0e"/>
+  <g fill="none" stroke="#fff" stroke-linecap="square" stroke-linejoin="miter">
+    <path stroke-width="28" d="M78 166h142v180H78z"/>
+    <path stroke-width="24" d="m220 206 58 50-58 50"/>
+    <path stroke-width="24" d="m332 160 96 55v111l-96 55-96-55V215z"/>
+    <path stroke-width="20" d="m236 215 96 56 96-56M332 271v110"/>
+  </g>
+  <rect x="318" y="242" width="28" height="28" fill="#fff"/>
+</svg>

@@ -80,6 +80,8 @@ input {
   height: 38px;
   border-radius: 4px;
   object-fit: cover;
+  flex: 0 0 auto;
+  box-shadow: 0 0 0 1px rgba(17, 18, 20, 0.12);
 }
 
 .course-brand strong,
@@ -1245,6 +1247,10 @@ a.update-status:hover {
 .course-brand.inverted small,
 .course-footer p {
   color: #aeb3b9;
+}
+
+.course-brand.inverted img {
+  box-shadow: 0 0 0 1px #45484d;
 }
 
 .course-footer p {
