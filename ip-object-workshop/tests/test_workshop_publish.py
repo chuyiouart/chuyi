@@ -1,15 +1,17 @@
 import json
 import shutil
+import subprocess
 import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS_DIR = PROJECT_ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS_DIR))
 
-from release_daily import is_expected_remote  # noqa: E402
+from release_daily import git_with_retry, is_expected_remote  # noqa: E402
 from workshop_publish import build_updates_js, publish_manifest, validate_public_tree  # noqa: E402
 
 
@@ -49,6 +51,26 @@ class WorkshopPublishTests(unittest.TestCase):
         self.assertTrue(is_expected_remote("git@github.com:chuyiouart/chuyi.git"))
         self.assertTrue(is_expected_remote("https://github.com/chuyiouart/chuyi.git"))
         self.assertFalse(is_expected_remote("git@github.com:someone-else/chuyi.git"))
+
+    def test_git_retry_handles_openssh_connection_to_timed_out_wording(self):
+        attempts = [
+            subprocess.CompletedProcess(
+                ["git", "pull"],
+                1,
+                "",
+                "Connection to 20.205.243.160 port 443 timed out",
+            ),
+            subprocess.CompletedProcess(["git", "pull"], 0, "Already up to date.", ""),
+        ]
+        with patch("release_daily.git", side_effect=attempts) as mocked_git, patch(
+            "release_daily.time.sleep"
+        ) as mocked_sleep:
+            result = git_with_retry(
+                Path("/tmp"), "pull", "--ff-only", "origin", "main", delays=(0, 0)
+            )
+        self.assertEqual(result.returncode, 0)
+        self.assertEqual(mocked_git.call_count, 2)
+        mocked_sleep.assert_called_once_with(0)
 
     def test_build_updates_js_preserves_explicit_status(self):
         output = build_updates_js(self.calendar)

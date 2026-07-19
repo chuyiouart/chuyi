@@ -19,6 +19,7 @@ TRANSIENT_GIT_ERRORS = (
     "connection closed",
     "connection reset",
     "connection timed out",
+    "timed out",
     "could not resolve host",
     "failed to connect",
     "network is unreachable",
