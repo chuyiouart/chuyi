@@ -103,11 +103,11 @@
     "type": "图文",
     "title": "报名之后，你会收到什么",
     "time": "11:30",
-    "summary": "把五天交付、文件用途、项目尺寸和不同完成等级讲清楚。",
-    "cover": "./assets/workshop-printing-v2.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "把报名提交、人工确认、课前准备、五天课程交付与课后延续分开说明，让不同起点的参与者知道每个节点会形成什么资料、文件、样件与下一步。",
+    "cover": "./assets/updates/2026-07-20/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-07-20-what-you-receive-after-applying.html",
+    "status": "published"
   },
   {
     "date": "2026-07-21",
