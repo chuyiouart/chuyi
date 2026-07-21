@@ -114,11 +114,11 @@ window.WORKSHOP_UPDATES = [
     "type": "图文",
     "title": "已有 IP 学员，课前请准备这 6 类资料",
     "time": "11:30",
-    "summary": "把五天交付、文件用途、项目尺寸和不同完成等级讲清楚。",
-    "cover": "./assets/workshop-finishing.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "把已有 IP 的原始作品、角色设定、结构视图、材质参考、实体目标与版权边界整理成六类可核验资料，让 Day 1 能直接判断范围并建立主、备、降级方案。",
+    "cover": "./assets/updates/2026-07-21/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-07-21-six-pre-course-materials-for-existing-ip.html",
+    "status": "published"
   },
   {
     "date": "2026-07-22",
