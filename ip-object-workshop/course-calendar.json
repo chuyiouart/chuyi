@@ -125,11 +125,11 @@
     "type": "视频",
     "title": "没有成熟 IP，怎样从关键词做出第一版主视觉",
     "time": "19:30",
-    "summary": "把五天交付、文件用途、项目尺寸和不同完成等级讲清楚。",
-    "cover": "./assets/workshop-ai-launch.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "把抽象关键词改写成用途、轮廓、姿态、材质与色彩等可见约束，先形成可比较的主视觉方向，再为三维结构补齐后续输入。",
+    "cover": "./assets/updates/2026-07-22/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-07-22-turn-keywords-into-first-key-visual.html",
+    "status": "published"
   },
   {
     "date": "2026-07-23",
