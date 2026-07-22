@@ -88,8 +88,13 @@ class WorkshopPublishTests(unittest.TestCase):
             "heroImage": str(self.tmp / "source.png"),
             "lead": "一张角色图进入三维前，需要先把看不见的结构补清楚。",
             "sections": [
-                {"heading": "先补齐输入", "paragraphs": ["准备正面、侧面、背面和材质参考。"]},
-                {"heading": "再判断结构", "paragraphs": ["检查遮挡、悬空、薄片和重心。"]},
+                {"heading": "具体问题", "paragraphs": ["二维角色只有单视图时，遮挡、背面和材质信息都不足以支持三维判断。"]},
+                {"heading": "核心判断", "paragraphs": ["先补齐可验证输入，再决定结构转译与制作范围。"]},
+                {"heading": "步骤或标准", "bullets": ["确认用途", "补齐视图", "标记材质", "检查结构"]},
+                {"heading": "常见错误", "paragraphs": ["只追求画面好看，却忽略遮挡、悬空、薄片和重心。"]},
+                {"heading": "与五天课程的关系", "paragraphs": ["这一步对应第一天的范围锁定，并为第二天三维初模准备输入。"]},
+                {"heading": "事实 / 案例 / 完成度边界", "paragraphs": ["页面内容是课程方法示意，不是往期学员案例，也不承诺五天量产。"]},
+                {"heading": "报名入口", "paragraphs": ["两类起点都可填写公开报名资料：https://wj.qq.com/s2/27296919/9499/"]},
             ],
             "cta": {"label": "填写报名资料", "url": "https://wj.qq.com/s2/27296919/9499/"},
             "disclaimer": "课程示范内容，不是往期学员案例。",
@@ -113,6 +118,53 @@ class WorkshopPublishTests(unittest.TestCase):
         self.assertEqual(calendar[0]["url"], "./updates/2026-07-15-structure-translation-demo.html")
         self.assertTrue((self.tmp / "assets" / "updates" / "2026-07-15" / "source.png").exists())
         self.assertEqual(result["url"], calendar[0]["url"])
+
+    def test_publish_manifest_rejects_sections_with_headings_but_no_visible_content(self):
+        headings = [
+            "具体问题",
+            "核心判断",
+            "步骤或标准",
+            "常见错误",
+            "与五天课程的关系",
+            "事实 / 案例 / 完成度边界",
+            "报名入口",
+        ]
+        manifest = {
+            "date": "2026-07-15",
+            "type": "图文",
+            "title": "只有标题的空壳文章",
+            "summary": "这个清单必须在发布前被拒绝。",
+            "slug": "empty-section-shell",
+            "heroImage": str(self.tmp / "source.png"),
+            "lead": "引言存在，但七个正文区块为空。",
+            "sections": [{"heading": heading} for heading in headings],
+            "cta": {"label": "填写报名资料", "url": "https://wj.qq.com/s2/27296919/9499/"},
+        }
+        manifest_path = self.tmp.parent / f"{self.tmp.name}-empty-sections.json"
+        manifest_path.write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
+        self.addCleanup(lambda: manifest_path.unlink(missing_ok=True))
+
+        with self.assertRaisesRegex(ValueError, "章节正文为空"):
+            publish_manifest(self.tmp, manifest_path)
+
+    def test_publish_manifest_rejects_missing_required_website_sections(self):
+        manifest = {
+            "date": "2026-07-15",
+            "type": "图文",
+            "title": "缺少完整章节的文章",
+            "summary": "只有一个有内容的章节仍不符合网站合同。",
+            "slug": "missing-required-sections",
+            "heroImage": str(self.tmp / "source.png"),
+            "lead": "引言存在。",
+            "sections": [{"heading": "具体问题", "paragraphs": ["这里有实际问题说明。"]}],
+            "cta": {"label": "填写报名资料", "url": "https://wj.qq.com/s2/27296919/9499/"},
+        }
+        manifest_path = self.tmp.parent / f"{self.tmp.name}-missing-sections.json"
+        manifest_path.write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
+        self.addCleanup(lambda: manifest_path.unlink(missing_ok=True))
+
+        with self.assertRaisesRegex(ValueError, "缺少必需章节"):
+            publish_manifest(self.tmp, manifest_path)
 
     def test_validate_public_tree_rejects_internal_questionnaire_url(self):
         (self.tmp / "leak.html").write_text(

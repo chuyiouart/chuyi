@@ -20,6 +20,15 @@ FORBIDDEN_PUBLIC_MARKERS = (
     "METRION",
     "元维构",
 )
+REQUIRED_SECTION_HEADINGS = (
+    "具体问题",
+    "核心判断",
+    "步骤或标准",
+    "常见错误",
+    "与五天课程的关系",
+    "事实 / 案例 / 完成度边界",
+    "报名入口",
+)
 
 
 def read_json(path: Path) -> Any:
@@ -126,6 +135,16 @@ def publish_manifest(root: Path | str, manifest_path: Path | str) -> dict[str, s
     missing = [key for key in required if not manifest.get(key)]
     if missing:
         raise ValueError(f"manifest 缺少字段: {', '.join(missing)}")
+    section_headings = {str(section.get("heading") or "").strip() for section in manifest["sections"]}
+    missing_sections = [heading for heading in REQUIRED_SECTION_HEADINGS if heading not in section_headings]
+    if missing_sections:
+        raise ValueError(f"缺少必需章节: {', '.join(missing_sections)}")
+    for section in manifest["sections"]:
+        heading = str(section.get("heading") or "").strip()
+        paragraphs = [str(item).strip() for item in section.get("paragraphs", []) if str(item).strip()]
+        bullets = [str(item).strip() for item in section.get("bullets", []) if str(item).strip()]
+        if not paragraphs and not bullets:
+            raise ValueError(f"章节正文为空: {heading or '未命名章节'}")
     if not slug_is_safe(manifest["slug"]):
         raise ValueError("slug 只能使用小写英文、数字和短横线")
     if any(marker in json.dumps(manifest, ensure_ascii=False) for marker in INTERNAL_URL_MARKERS):
