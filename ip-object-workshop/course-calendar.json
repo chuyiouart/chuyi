@@ -136,11 +136,11 @@
     "type": "图文",
     "title": "五天结束，你至少带走这 10 项成果",
     "time": "11:30",
-    "summary": "把五天交付、文件用途、项目尺寸和不同完成等级讲清楚。",
-    "cover": "./assets/workshop-hero-v2.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "把五天成果按判断资料、数字文件、实体验证、产品表达和持续发布五组说明，并明确每项用途、相互依赖关系与基础、标准、进阶完成度边界。",
+    "cover": "./assets/updates/2026-07-23/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-07-23-ten-outcomes-after-five-days.html",
+    "status": "published"
   },
   {
     "date": "2026-07-24",
