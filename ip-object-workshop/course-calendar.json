@@ -147,11 +147,11 @@
     "type": "视频",
     "title": "GLB 和 STL，不只是两个文件后缀",
     "time": "19:30",
-    "summary": "把五天交付、文件用途、项目尺寸和不同完成等级讲清楚。",
-    "cover": "./assets/workshop-modeling.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "区分 GLB 的在线展示用途与 STL 的切片制造用途，并用用途、内容、结构、验证和版本五项标准检查双文件交付。",
+    "cover": "./assets/updates/2026-07-24/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-07-24-glb-and-stl-are-more-than-file-extensions.html",
+    "status": "published"
   },
   {
     "date": "2026-07-25",
