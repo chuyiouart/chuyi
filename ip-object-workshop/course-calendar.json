@@ -158,11 +158,11 @@
     "type": "视频",
     "title": "为什么五天课建议把作品控制在 8-12cm",
     "time": "18:00",
-    "summary": "把五天交付、文件用途、项目尺寸和不同完成等级讲清楚。",
-    "cover": "./assets/workshop-printing-v2.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "把 8-12cm 作为五天首次闭环的建议尺度，用用途、外接尺寸、结构、细节、制造排程和后处理空间判断具体项目是否适合，并保留调整与降级出口。",
+    "cover": "./assets/updates/2026-07-25/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-07-25-why-keep-the-work-between-8-and-12cm.html",
+    "status": "published"
   },
   {
     "date": "2026-07-26",
