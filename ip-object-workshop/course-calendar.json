@@ -169,11 +169,11 @@
     "type": "直播",
     "title": "五天能不能做完：基础、标准、进阶三种出口",
     "time": "20:00",
-    "summary": "把五天交付、文件用途、项目尺寸和不同完成等级讲清楚。",
-    "cover": "./assets/workshop-finishing.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用范围、Gate 证据与可继续性区分基础、标准、进阶三种完成出口，让不同起点的项目在五天内形成真实、可核验且能继续推进的结果。",
+    "cover": "./assets/updates/2026-07-26/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-07-26-three-realistic-outcomes-in-five-days.html",
+    "status": "published"
   },
   {
     "date": "2026-07-27",
