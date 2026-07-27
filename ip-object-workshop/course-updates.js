@@ -180,11 +180,11 @@ window.WORKSHOP_UPDATES = [
     "type": "图文",
     "title": "这门课不是软件课，而是一次完整交付",
     "time": "11:30",
-    "summary": "展示课程的质量控制、打印产能和报名后的真实准备过程。",
-    "cover": "./assets/workshop-finishing.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用交付对象、验收证据、版本关系和下一阶段可继续性，解释五天课程为何不能被拆成若干软件操作，而要把同一项目从方向判断推进到文件、实体、表达与数字发布。",
+    "cover": "./assets/updates/2026-07-27/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-07-27-a-complete-project-handoff-not-a-software-class.html",
+    "status": "published"
   },
   {
     "date": "2026-07-28",
