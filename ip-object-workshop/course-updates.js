@@ -191,11 +191,11 @@ window.WORKSHOP_UPDATES = [
     "type": "视频",
     "title": "Nomad 修模，五天里最关键的 4 个动作",
     "time": "19:30",
-    "summary": "展示课程的质量控制、打印产能和报名后的真实准备过程。",
-    "cover": "./assets/workshop-ai-launch.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用比例轮廓、表面关系、薄弱结构和拆件装配四类可检查动作，说明 AI 三维初模怎样经过人工修正进入 Gate 2。",
+    "cover": "./assets/updates/2026-07-28/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-07-28-four-critical-nomad-sculpting-actions.html",
+    "status": "published"
   },
   {
     "date": "2026-07-29",
