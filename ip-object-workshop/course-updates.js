@@ -202,11 +202,11 @@ window.WORKSHOP_UPDATES = [
     "type": "图文",
     "title": "四个质量闸口，保证项目不一路带病往后走",
     "time": "11:30",
-    "summary": "展示课程的质量控制、打印产能和报名后的真实准备过程。",
-    "cover": "./assets/workshop-hero-v2.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "把 Gate 1 至 Gate 4 定义为有证据的停止、复检与放行机制，分别控制范围输入、模型制造、实体验证和发布一致性。",
+    "cover": "./assets/updates/2026-07-29/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-07-29-four-quality-gates-stop-problems-from-moving-forward.html",
+    "status": "published"
   },
   {
     "date": "2026-07-30",
