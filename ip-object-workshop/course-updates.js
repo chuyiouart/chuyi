@@ -213,11 +213,11 @@ window.WORKSHOP_UPDATES = [
     "type": "视频",
     "title": "为什么必须小班：打印机和一对一支持的真实产能",
     "time": "19:30",
-    "summary": "展示课程的质量控制、打印产能和报名后的真实准备过程。",
-    "cover": "./assets/workshop-modeling.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用完整打印任务、设备与后处理周转、失败重试和关键节点支持解释小班边界；只给出可核算方法，不虚构每日产量或指导时长。",
+    "cover": "./assets/updates/2026-07-30/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-07-30-why-small-classes-match-real-printing-and-support-capacity.html",
+    "status": "published"
   },
   {
     "date": "2026-07-31",
