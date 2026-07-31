@@ -49,44 +49,57 @@ def local_target(root: Path, page: Path, src: str) -> Path:
 def decode_dimensions(path: Path) -> tuple[int, int, str]:
     ffprobe = shutil.which("ffprobe")
     ffmpeg = shutil.which("ffmpeg")
-    if not ffprobe or not ffmpeg:
-        fail("image decode unavailable: ffmpeg and ffprobe are required")
-    probe = subprocess.run(
-        [
-            ffprobe,
-            "-v",
-            "error",
-            "-select_streams",
-            "v:0",
-            "-show_entries",
-            "stream=width,height",
-            "-of",
-            "json",
-            str(path),
-        ],
-        capture_output=True,
-        text=True,
-        timeout=30,
-        check=False,
-    )
-    if probe.returncode != 0:
-        fail(f"image dimension probe failed: {path}: {probe.stderr.strip()}")
+    if ffprobe and ffmpeg:
+        probe = subprocess.run(
+            [
+                ffprobe,
+                "-v",
+                "error",
+                "-select_streams",
+                "v:0",
+                "-show_entries",
+                "stream=width,height",
+                "-of",
+                "json",
+                str(path),
+            ],
+            capture_output=True,
+            text=True,
+            timeout=30,
+            check=False,
+        )
+        if probe.returncode != 0:
+            fail(f"image dimension probe failed: {path}: {probe.stderr.strip()}")
+        try:
+            streams = json.loads(probe.stdout).get("streams", [])
+            width = int(streams[0]["width"])
+            height = int(streams[0]["height"])
+        except (ValueError, KeyError, IndexError, TypeError, json.JSONDecodeError):
+            fail(f"image dimensions missing from decoder output: {path}")
+        decoded = subprocess.run(
+            [ffmpeg, "-v", "error", "-xerror", "-i", str(path), "-f", "null", "-"],
+            capture_output=True,
+            text=True,
+            timeout=60,
+            check=False,
+        )
+        if decoded.returncode != 0:
+            fail(f"full image decode failed: {path}: {decoded.stderr.strip()}")
+        return width, height, "ffmpeg/ffprobe"
+
     try:
-        streams = json.loads(probe.stdout).get("streams", [])
-        width = int(streams[0]["width"])
-        height = int(streams[0]["height"])
-    except (ValueError, KeyError, IndexError, TypeError, json.JSONDecodeError):
-        fail(f"image dimensions missing from decoder output: {path}")
-    decoded = subprocess.run(
-        [ffmpeg, "-v", "error", "-i", str(path), "-f", "null", "-"],
-        capture_output=True,
-        text=True,
-        timeout=60,
-        check=False,
-    )
-    if decoded.returncode != 0:
-        fail(f"full image decode failed: {path}: {decoded.stderr.strip()}")
-    return width, height, "ffmpeg/ffprobe"
+        from PIL import Image
+    except ImportError:
+        fail("image decode unavailable: install Pillow or provide ffmpeg and ffprobe")
+    try:
+        with Image.open(path) as image:
+            image.verify()
+        with Image.open(path) as image:
+            image.load()
+            width, height = image.size
+    except Exception as exc:
+        fail(f"Pillow image decode failed: {path}: {exc}")
+    return int(width), int(height), "Pillow"
 
 
 def valid_image(path: Path) -> dict[str, object]:
@@ -96,8 +109,12 @@ def valid_image(path: Path) -> dict[str, object]:
     suffix = path.suffix.lower()
     if data.startswith(b"\xff\xd8\xff"):
         kind, mime, allowed_suffixes = "jpeg", "image/jpeg", {".jpg", ".jpeg"}
-    elif data.startswith(b"\x89PNG\r\n\x1a\n"):
+        if not data.endswith(b"\xff\xd9"):
+            fail(f"JPEG end-of-image marker is missing: {path}")
+    elif data.startswith(bytes.fromhex("89504e470d0a1a0a")):
         kind, mime, allowed_suffixes = "png", "image/png", {".png"}
+        if len(data) < 12 or data[-8:-4] != b"IEND":
+            fail(f"PNG IEND marker is missing: {path}")
     else:
         fail(f"image has an invalid JPEG/PNG signature: {path}")
     if suffix not in allowed_suffixes:
