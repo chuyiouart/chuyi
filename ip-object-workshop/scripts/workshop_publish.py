@@ -126,7 +126,7 @@ def render_article(manifest: dict[str, Any], hero_href: str, gallery_hrefs: list
 """
 
 
-def publish_manifest(root: Path | str, manifest_path: Path | str) -> dict[str, str]:
+def publish_manifest(root: Path | str, manifest_path: Path | str) -> dict[str, Any]:
     root = Path(root)
     manifest_path = Path(manifest_path)
     manifest = read_json(manifest_path)
@@ -170,6 +170,13 @@ def publish_manifest(root: Path | str, manifest_path: Path | str) -> dict[str, s
             raise FileNotFoundError(f"配图不存在: {source}")
         _, href = public_image_path(root, manifest["date"], source)
         gallery_hrefs.append(href)
+    missing_roles = list(dict.fromkeys(
+        str(role).strip()
+        for role in manifest.get("missingRoles", [])
+        if str(role).strip()
+    ))
+    if "01-website-hero" in missing_roles:
+        raise ValueError("01-website-hero 是网站必需主图，不能作为降级缺失角色发布")
 
     filename = f"{manifest['date']}-{manifest['slug']}.html"
     article_path = root / "updates" / filename
@@ -193,7 +200,13 @@ def publish_manifest(root: Path | str, manifest_path: Path | str) -> dict[str, s
     if errors:
         raise ValueError("发布后检查失败:\n" + "\n".join(errors))
 
-    return {"article": str(article_path), "url": item["url"], "cover": item["cover"]}
+    return {
+        "status": "degraded_success" if missing_roles else "published",
+        "missingRoles": missing_roles,
+        "article": str(article_path),
+        "url": item["url"],
+        "cover": item["cover"],
+    }
 
 
 def validate_public_tree(root: Path | str) -> list[str]:

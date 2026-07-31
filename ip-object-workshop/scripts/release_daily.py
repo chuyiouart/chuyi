@@ -161,8 +161,10 @@ def release(repo: Path, manifest_path: Path, verify_only: bool = False) -> dict:
         git_with_retry(repo, "push", "origin", "main")
     verify_live(live_url, manifest["title"])
     commit = git(repo, "rev-parse", "HEAD").stdout.strip()
+    release_status = published.get("status", "published")
     return {
-        "status": "published" if staged else "already_published",
+        "status": release_status if staged else "already_published",
+        "missing_roles": published.get("missingRoles", []),
         "url": live_url,
         "title": manifest["title"],
         "commit": commit,

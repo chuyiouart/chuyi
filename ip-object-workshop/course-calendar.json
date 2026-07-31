@@ -224,11 +224,11 @@
     "type": "图文",
     "title": "7 月咨询最多的 8 个问题",
     "time": "11:30",
-    "summary": "展示课程的质量控制、打印产能和报名后的真实准备过程。",
-    "cover": "./assets/workshop-printing-v2.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "集中回答两类起点、五天交付、AI 与人工修正、GLB / STL、建议尺寸、完成度、小班产能和报名边界。",
+    "cover": "./assets/updates/2026-07-31/01-website-hero.jpg",
+    "published": true,
+    "url": "./updates/2026-07-31-eight-questions-before-applying.html",
+    "status": "published"
   },
   {
     "date": "2026-08-01",
