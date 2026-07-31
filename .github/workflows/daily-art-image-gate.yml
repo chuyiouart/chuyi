@@ -32,5 +32,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Require one dated local image on home, listing, and article
+      - name: Require the preinstalled ffmpeg image decoder
+        run: ffprobe -version && ffmpeg -version
+      - name: Require one decoded dated local image on home, listing, and article
         run: python scripts/validate_daily_art_images.py --root .
