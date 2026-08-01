@@ -235,11 +235,11 @@
     "type": "视频",
     "title": "报名不是付款结束，而是课前项目已经启动",
     "time": "18:00",
-    "summary": "展示课程的质量控制、打印产能和报名后的真实准备过程。",
-    "cover": "./assets/workshop-finishing.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "把报名提交、人工确认、付款确认与课前项目启动分开说明，并用起点资料、项目卡、版权与范围、设备检查、目录版本和 Gate 1 预检六项记录，为 Day 1 建立可核验输入。",
+    "cover": "./assets/updates/2026-08-01/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-08-01-pre-course-project-starts-after-confirmation.html",
+    "status": "published"
   },
   {
     "date": "2026-08-02",
