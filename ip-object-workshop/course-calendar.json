@@ -246,11 +246,11 @@
     "type": "直播",
     "title": "开放工作室：真实工具、样品和五天流程",
     "time": "20:00",
-    "summary": "展示课程的质量控制、打印产能和报名后的真实准备过程。",
-    "cover": "./assets/workshop-ai-launch.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用同一项目的输入、受控文件、制造设备、阶段样品和发布归档建立可复核观察路径，说明开放工作室应如何证明五天流程关系，而不是只陈列设备。",
+    "cover": "./assets/updates/2026-08-02/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-08-02-open-workshop-tools-samples-and-five-day-evidence.html",
+    "status": "published"
   },
   {
     "date": "2026-08-03",
