@@ -257,11 +257,11 @@ window.WORKSHOP_UPDATES = [
     "type": "图文",
     "title": "Day 1 到底做什么：先把方向做对",
     "time": "11:30",
-    "summary": "进入 Day 1：方向、结构转译、视觉输入和版权状态。",
-    "cover": "./assets/workshop-ai-launch.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用项目卡、用途与尺寸、结构输入、版权状态和主 / 备 / 降级方案说明 Day 1 如何完成 Gate 1 范围锁定，为 Day 2 留下可复核输入。",
+    "cover": "./assets/updates/2026-08-03/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-08-03-day-1-lock-direction-before-making.html",
+    "status": "published"
   },
   {
     "date": "2026-08-04",
