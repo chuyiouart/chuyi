@@ -268,11 +268,11 @@ window.WORKSHOP_UPDATES = [
     "type": "视频",
     "title": "同一门课，两种入口：已有作品和只有想法",
     "time": "19:30",
-    "summary": "进入 Day 1：方向、结构转译、视觉输入和版权状态。",
-    "cover": "./assets/workshop-hero-v2.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "区分已有 IP / 角色资产与只有想法、草图或初步设定的输入准备方式，并说明两者如何在 Day 1 汇入同一项目卡和 Gate 1 标准。",
+    "cover": "./assets/updates/2026-08-04/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-08-04-two-starting-points-one-gate-1-standard.html",
+    "status": "published"
   },
   {
     "date": "2026-08-05",
