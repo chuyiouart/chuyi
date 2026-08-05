@@ -279,11 +279,11 @@ window.WORKSHOP_UPDATES = [
     "type": "图文",
     "title": "结构转译要判断的，不只是像不像",
     "time": "11:30",
-    "summary": "进入 Day 1：方向、结构转译、视觉输入和版权状态。",
-    "cover": "./assets/workshop-modeling.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用轮廓、体块、遮挡、真实厚度、重心、分件与材料对应检查二维形象能否进入三维，并说明 Day 1 / Gate 1 如何为 Day 2 留下可复核输入。",
+    "cover": "./assets/updates/2026-08-05/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-08-05-structure-translation-is-more-than-likeness.html",
+    "status": "published"
   },
   {
     "date": "2026-08-06",
