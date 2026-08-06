@@ -290,11 +290,11 @@ window.WORKSHOP_UPDATES = [
     "type": "视频",
     "title": "AI 视觉输入图，为什么要准备正侧背和材质",
     "time": "19:30",
-    "summary": "进入 Day 1：方向、结构转译、视觉输入和版权状态。",
-    "cover": "./assets/workshop-printing-v2.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用正面、侧面、背面和材质四类输入消除轮廓、厚度、遮挡、连接与表面解释的不确定性，并说明 Day 1 / Gate 1 如何形成 Day 2 可复核的受控输入。",
+    "cover": "./assets/updates/2026-08-06/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-08-06-why-ai-visual-input-needs-front-side-back-and-materials.html",
+    "status": "published"
   },
   {
     "date": "2026-08-07",
