@@ -302,7 +302,7 @@
     "title": "公开展示前，先把版权状态写清楚",
     "time": "11:30",
     "summary": "用来源、权利主体、授权范围、公开边界和受控版本五类记录检查视觉输入，说明 Day 1 / Gate 1 如何为三维制作与后续发布建立可追溯边界。",
-    "cover": "./assets/updates/2026-08-07/01-website-hero.png",
+    "cover": "./assets/updates/2026-08-07/01-website-hero.png?v=5c571f4cc40d",
     "published": true,
     "url": "./updates/2026-08-07-clarify-copyright-status-before-public-display.html",
     "status": "published"
