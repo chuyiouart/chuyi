@@ -301,11 +301,11 @@ window.WORKSHOP_UPDATES = [
     "type": "图文",
     "title": "公开展示前，先把版权状态写清楚",
     "time": "11:30",
-    "summary": "进入 Day 1：方向、结构转译、视觉输入和版权状态。",
-    "cover": "./assets/workshop-finishing.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用来源、权利主体、授权范围、公开边界和受控版本五类记录检查视觉输入，说明 Day 1 / Gate 1 如何为三维制作与后续发布建立可追溯边界。",
+    "cover": "./assets/updates/2026-08-07/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-08-07-clarify-copyright-status-before-public-display.html",
+    "status": "published"
   },
   {
     "date": "2026-08-08",
