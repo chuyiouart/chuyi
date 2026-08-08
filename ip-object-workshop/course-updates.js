@@ -312,11 +312,11 @@ window.WORKSHOP_UPDATES = [
     "type": "视频",
     "title": "从作品筛选到 Gate 1 通过：完整 Day 1 案例",
     "time": "18:00",
-    "summary": "进入 Day 1：方向、结构转译、视觉输入和版权状态。",
-    "cover": "./assets/workshop-ai-launch.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用对象与用途、尺寸视图、结构识别点、版权边界、主 / 备 / 降级方案和 Gate 1 放行六项记录，完整说明 Day 1 怎样为 Day 2 留下可复核输入；所有场景均为课程方向示意，不冒充真实案例。",
+    "cover": "./assets/updates/2026-08-08/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-08-08-from-work-selection-to-gate-1-day-1-walkthrough.html",
+    "status": "published"
   },
   {
     "date": "2026-08-09",
