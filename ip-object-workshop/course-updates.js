@@ -323,11 +323,11 @@ window.WORKSHOP_UPDATES = [
     "type": "直播",
     "title": "Day 1 实战演示：从作品 / 关键词到可做方案",
     "time": "20:00",
-    "summary": "进入 Day 1：方向、结构转译、视觉输入和版权状态。",
-    "cover": "./assets/workshop-hero-v2.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用输入盘点、对象收敛、尺寸与结构预判、主 / 备 / 降级方案和 Gate 1 决定，说明已有作品与早期想法如何形成可进入 Day 2 的受控方案；演示内容只作课程方向说明，不冒充真实学员案例。",
+    "cover": "./assets/updates/2026-08-09/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-08-09-day-1-demo-from-artwork-or-keywords-to-a-workable-plan.html",
+    "status": "published"
   },
   {
     "date": "2026-08-10",
