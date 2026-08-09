@@ -1,0 +1,38 @@
+name: Daily Art image gate
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "daily-art.html"
+      - "content/daily/**"
+      - "assets/daily/**"
+      - "scripts/validate_daily_art_images.py"
+      - ".github/workflows/daily-art-image-gate.yml"
+  pull_request:
+    paths:
+      - "index.html"
+      - "daily-art.html"
+      - "content/daily/**"
+      - "assets/daily/**"
+      - "scripts/validate_daily_art_images.py"
+      - ".github/workflows/daily-art-image-gate.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install portable image decoder fallback
+        run: python -m pip install --disable-pip-version-check "Pillow==12.2.0"
+      - name: Require one decoded dated local image on home, listing, and article
+        run: python scripts/validate_daily_art_images.py --root .

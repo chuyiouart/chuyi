@@ -33,6 +33,7 @@ python scripts/workshop_publish.py publish --root . --manifest /path/to/manifest
 可选：
 
 - `galleryImages`
+- `missingRoles`
 - `disclaimer`
 
 ## 安全规则
@@ -41,4 +42,6 @@ python scripts/workshop_publish.py publish --root . --manifest /path/to/manifest
 - 公开文件不得包含腾讯问卷统计后台地址。
 - 只允许发布日历中已经存在的日期。
 - 文章、图片、日历和 JavaScript 更新由同一次命令完成。
+- 网站发布的硬门槛是完整正文与 `heroImage`。`galleryImages` 是动态可选列表；缺少非主图角色时不得写入不存在的路径，应在 `missingRoles` 中记录，发布结果为 `degraded_success`。
+- `01-website-hero` 不能出现在 `missingRoles`；正文或主图缺失时继续失败关闭。
 - Git 操作必须显式暂存 `ip-object-workshop/` 下允许的文件，禁止使用 `git add .`。

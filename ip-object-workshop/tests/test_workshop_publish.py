@@ -119,6 +119,73 @@ class WorkshopPublishTests(unittest.TestCase):
         self.assertTrue((self.tmp / "assets" / "updates" / "2026-07-15" / "source.png").exists())
         self.assertEqual(result["url"], calendar[0]["url"])
 
+    def test_publish_manifest_allows_missing_optional_gallery_roles(self):
+        manifest = {
+            "date": "2026-07-15",
+            "type": "图文",
+            "title": "只有主图也可安全发布",
+            "summary": "非主图缺失时不生成占位符或破图引用。",
+            "slug": "hero-only-degraded-release",
+            "heroImage": str(self.tmp / "source.png"),
+            "galleryImages": [],
+            "missingRoles": ["02-core-explanation", "04-social-promotion"],
+            "lead": "正文和主图完整，非主图角色按动态画廊降级。",
+            "sections": [
+                {"heading": heading, "paragraphs": [f"{heading}具有可见正文。"]}
+                for heading in (
+                    "具体问题",
+                    "核心判断",
+                    "步骤或标准",
+                    "常见错误",
+                    "与五天课程的关系",
+                    "事实 / 案例 / 完成度边界",
+                    "报名入口",
+                )
+            ],
+        }
+        manifest_path = self.tmp.parent / f"{self.tmp.name}-hero-only.json"
+        manifest_path.write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
+        self.addCleanup(lambda: manifest_path.unlink(missing_ok=True))
+
+        result = publish_manifest(self.tmp, manifest_path)
+
+        article = self.tmp / "updates" / "2026-07-15-hero-only-degraded-release.html"
+        article_text = article.read_text(encoding="utf-8")
+        self.assertEqual(result["status"], "degraded_success")
+        self.assertEqual(result["missingRoles"], ["02-core-explanation", "04-social-promotion"])
+        self.assertNotIn("update-gallery", article_text)
+        self.assertNotIn("04-social-promotion", article_text)
+
+    def test_publish_manifest_rejects_missing_hero_role(self):
+        manifest = {
+            "date": "2026-07-15",
+            "type": "图文",
+            "title": "主图缺失不能降级发布",
+            "summary": "主图属于网站硬门槛。",
+            "slug": "missing-required-hero",
+            "heroImage": str(self.tmp / "source.png"),
+            "missingRoles": ["01-website-hero"],
+            "lead": "即使文件路径存在，角色状态也不能自相矛盾。",
+            "sections": [
+                {"heading": heading, "paragraphs": [f"{heading}具有可见正文。"]}
+                for heading in (
+                    "具体问题",
+                    "核心判断",
+                    "步骤或标准",
+                    "常见错误",
+                    "与五天课程的关系",
+                    "事实 / 案例 / 完成度边界",
+                    "报名入口",
+                )
+            ],
+        }
+        manifest_path = self.tmp.parent / f"{self.tmp.name}-missing-hero.json"
+        manifest_path.write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
+        self.addCleanup(lambda: manifest_path.unlink(missing_ok=True))
+
+        with self.assertRaisesRegex(ValueError, "网站必需主图"):
+            publish_manifest(self.tmp, manifest_path)
+
     def test_publish_manifest_rejects_sections_with_headings_but_no_visible_content(self):
         headings = [
             "具体问题",
