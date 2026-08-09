@@ -2099,6 +2099,25 @@ h3 {
 }
 /* Course map: a public-facing catalog rather than a file listing. */
 .course-map-page { background: #f7f4ef; color: #171614; }
+.course-map-page main { position: relative; isolation: isolate; }
+.course-map-page main::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: clamp(980px, 78vw, 1240px);
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(90deg, rgba(247,244,239,.88) 0%, rgba(247,244,239,.68) 46%, rgba(247,244,239,.84) 100%),
+    linear-gradient(180deg, rgba(247,244,239,.68) 0%, rgba(247,244,239,.54) 52%, rgba(247,244,239,.90) 100%),
+    url("./assets/course-map-impasto-bg-v1.png?v=20260810-bg1");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: saturate(.88) contrast(.95);
+  opacity: .94;
+}
+.course-map-page main > * { position: relative; z-index: 1; }
 .course-map-page .site-header { background: rgba(247,244,239,.92); }
 .course-map-hero { max-width: 1240px; margin: 0 auto; padding: 110px 32px 72px; display: grid; grid-template-columns: minmax(0,1.5fr) minmax(260px,.7fr); gap: 56px; align-items: end; }
 .course-map-hero-copy h1 { max-width: none; margin: 22px 0 28px; font-size: clamp(3.2rem, 6.2vw, 6.25rem); line-height: 1.02; letter-spacing: -.065em; }
@@ -2186,6 +2205,7 @@ h3 {
 .modal-note { border-left: 2px solid #b6402f; padding: 8px 0 8px 12px; color: #8a8178; font-size: .76rem; line-height: 1.65; margin: 8px 0 22px; }
 .modal-open { overflow: hidden; }
 @media (max-width: 900px) {
+  .course-map-page main::before { height: 1500px; }
   .course-map-hero { grid-template-columns: 1fr; gap: 40px; padding-top: 72px; }
   .course-map-hero-note { justify-self: start; max-width: 470px; }
   .course-map-intro { grid-template-columns: 1fr; gap: 22px; }
@@ -2194,9 +2214,11 @@ h3 {
   .course-group-cover { position: relative; top: auto; aspect-ratio: 16/8; }
 }
 @media (max-width: 640px) {
+  .course-map-page main::before { height: 1720px; }
   .course-map-hero, .course-map-intro, .course-map-toolbar, .course-group-switcher, .course-groups, .course-map-cta { margin-left: 18px; margin-right: 18px; }
   .course-map-hero { padding-left: 0; padding-right: 0; }
-  .course-map-hero-copy h1 { font-size: clamp(3rem, 16vw, 5rem); }
+  .course-map-title-line, .course-map-intro-title-line { white-space: nowrap; }
+  .course-map-hero-copy h1 { font-size: clamp(2.35rem, 13vw, 4.7rem); }
   .course-map-toolbar { display: block; }
   .course-search { margin-top: 24px; width: 100%; }
   .course-group { padding-bottom: 45px; }
