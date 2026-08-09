@@ -790,5 +790,126 @@
     "published": false,
     "url": "",
     "status": "planned"
+  },
+  {
+    "date": "2026-09-21",
+    "type": "图文",
+    "title": "绘画思维怎样替模型制作先做一次减法",
+    "time": "11:30",
+    "summary": "用明度、轮廓、边缘、色彩范围和主次，把复杂形象先压成六个可检查的制作判断。",
+    "cover": "./assets/painting-thinking-to-object-v1.png",
+    "published": false,
+    "url": "",
+    "status": "planned"
+  },
+  {
+    "date": "2026-09-22",
+    "type": "视频",
+    "title": "三阶明度怎样决定模型的大中小体块",
+    "time": "19:30",
+    "summary": "在进入面部和服装细节前，先检查模型缩小和逆光时是否仍能读懂。",
+    "cover": "./assets/painting-thinking-to-object-v1.png",
+    "published": false,
+    "url": "",
+    "status": "planned"
+  },
+  {
+    "date": "2026-09-23",
+    "type": "图文",
+    "title": "轮廓与负形：为什么侧面比正面更容易暴露问题",
+    "time": "11:30",
+    "summary": "用正面、侧面和四分之三视角检查姿态、重心、空隙和识别度。",
+    "cover": "./assets/painting-thinking-to-object-v1.png",
+    "published": false,
+    "url": "",
+    "status": "planned"
+  },
+  {
+    "date": "2026-09-24",
+    "type": "视频",
+    "title": "硬边和软边怎样变成锐边、圆角与曲面",
+    "time": "19:30",
+    "summary": "把绘画里的边缘控制翻译为建模和修模动作，判断哪些地方应明确、哪些地方应连续。",
+    "cover": "./assets/painting-thinking-to-object-v1.png",
+    "published": false,
+    "url": "",
+    "status": "planned"
+  },
+  {
+    "date": "2026-09-25",
+    "type": "图文",
+    "title": "先定限色色域，再开始涂模型",
+    "time": "11:30",
+    "summary": "用主色、辅色、强调色和综合色建立涂装系统，避免每个部位都独立选色。",
+    "cover": "./assets/painting-thinking-to-object-v1.png",
+    "published": false,
+    "url": "",
+    "status": "planned"
+  },
+  {
+    "date": "2026-09-26",
+    "type": "视频",
+    "title": "细节预算：打印和手工时间应该花在哪里",
+    "time": "18:00",
+    "summary": "把焦点分为 A、支持区域分为 B、可降级区域分为 C，提前控制五天制作成本。",
+    "cover": "./assets/painting-thinking-to-object-v1.png",
+    "published": false,
+    "url": "",
+    "status": "planned"
+  },
+  {
+    "date": "2026-09-27",
+    "type": "直播",
+    "title": "现场做一张原作视觉语法卡",
+    "time": "20:00",
+    "summary": "从一件二维作品现场提取三阶明度、轮廓、边缘、色彩范围、主次和不可丢失特征。",
+    "cover": "./assets/painting-thinking-to-object-v1.png",
+    "published": false,
+    "url": "",
+    "status": "planned"
+  },
+  {
+    "date": "2026-09-28",
+    "type": "图文",
+    "title": "画层逻辑怎样变成模型涂装工序",
+    "time": "11:30",
+    "summary": "从底层、塑造、透明层和最终调整，安排底漆、铺色、罩色、旧化与保护层。",
+    "cover": "./assets/painting-thinking-to-object-v1.png",
+    "published": false,
+    "url": "",
+    "status": "planned"
+  },
+  {
+    "date": "2026-09-29",
+    "type": "视频",
+    "title": "同一件作品的完整、半身、浮雕和数字四种出口",
+    "time": "19:30",
+    "summary": "项目降级不是失败，而是根据识别度、结构、工艺和五天产能选择可交付结果。",
+    "cover": "./assets/painting-thinking-to-object-v1.png",
+    "published": false,
+    "url": "",
+    "status": "planned"
+  },
+  {
+    "date": "2026-09-30",
+    "type": "图文",
+    "title": "五天课的六张表：从判断到可复现",
+    "time": "11:30",
+    "summary": "公开项目卡、视觉语法卡、结构检查、限色色板、材料护照和细节预算的使用方法。",
+    "cover": "./assets/painting-thinking-to-object-v1.png",
+    "published": false,
+    "url": "",
+    "status": "planned"
+  },
+  {
+    "date": "2026-10-01",
+    "type": "视频",
+    "title": "开课前最后检查：资料、设备、权利和最低成果",
+    "time": "18:00",
+    "summary": "逐项确认项目主备方案、文件夹、设备、材料、安全、版权和五天最低交付。",
+    "cover": "./assets/painting-thinking-to-object-v1.png",
+    "published": false,
+    "url": "",
+    "status": "planned"
   }
 ]
