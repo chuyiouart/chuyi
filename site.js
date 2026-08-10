@@ -146,3 +146,27 @@ window.addEventListener("DOMContentLoaded", () => {
   initProducts().catch(console.error);
   initOuartAssistantWidget();
 });
+
+function initOuartImagePerformance() {
+  document.querySelectorAll("img").forEach((image) => {
+    image.decoding = image.decoding || "async";
+    if (!image.loading) image.loading = "lazy";
+    if (image.loading === "lazy" && image.fetchPriority === "auto") image.fetchPriority = "low";
+    if (image.dataset.imageFallback && !image.dataset.imageFallbackBound) {
+      image.dataset.imageFallbackBound = "true";
+    }
+  });
+}
+
+document.addEventListener("error", (event) => {
+  const image = event.target;
+  if (!(image instanceof HTMLImageElement)) return;
+  const fallback = image.dataset.imageFallback;
+  if (!fallback || image.dataset.imageFallbackUsed) return;
+  image.dataset.imageFallbackUsed = "true";
+  image.removeAttribute("srcset");
+  image.removeAttribute("sizes");
+  image.src = fallback;
+}, true);
+
+window.addEventListener("DOMContentLoaded", initOuartImagePerformance, { once: true });
