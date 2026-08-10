@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>初艺学习与课程助手 | OUART</title>
+    <meta name="description" content="初艺 OUART 学习与课程问答助手，回答四阶段油画主课、DLC、材料与技法、颜料购买和作品学习问题。" />
+    <link rel="stylesheet" href="./styles.css?v=20260810-ouart-agent-v1" />
+  </head>
+  <body class="ouart-agent-page">
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="初艺 OUART 首页"><img src="./assets/logo-dark.png" alt="" /><span><strong>初艺 OUART</strong><small>Art Education &amp; Creative Practice</small></span></a>
+      <nav class="nav" aria-label="主导航">
+        <a href="./courses.html">课程</a><a href="./pigments.html">颜料库</a><a href="./daily-art.html">每日一画</a><a href="./gallery.html">作品集</a><a href="./open-class.html">公开课</a><a class="active" href="./agent.html">问答助手</a><a href="./contact.html">联系</a>
+      </nav>
+    </header>
+    <main class="ouart-agent-shell">
+      <aside class="ouart-agent-intro">
+        <p class="eyebrow">OUART ASSISTANT / 2026</p>
+        <h1>把学习问题，<br /><em>问清楚再开始。</em></h1>
+        <p>这里可以直接了解课程路线、四阶段主课、DLC、材料与技法、颜料购买、作品问题，以及绘画思维如何迁移到 IP 实物营。</p>
+        <div class="ouart-agent-capabilities"><article><span>课程路线</span><strong>从零基础到个人创作</strong></article><article><span>材料决策</span><strong>颜料、工具、媒介与测试</strong></article><article><span>作品诊断</span><strong>先判断问题，再给练习建议</strong></article><article><span>人工入口</span><strong>报价、点评、购买与合作确认</strong></article></div>
+        <div class="ouart-agent-links"><a href="./courses.html">浏览课程地图</a><a href="./pigments.html">打开颜料库</a><a href="./contact.html?from=ouart-agent">联系初艺</a></div>
+      </aside>
+      <section class="ouart-agent-console" aria-label="初艺学习与课程问答">
+        <div class="ouart-agent-toolbar"><div><p class="eyebrow">ASK OUART</p><h2>你现在想解决什么？</h2></div><button type="button" data-ouart-full-clear>清空</button></div>
+        <div class="ouart-agent-full-suggestions" aria-label="推荐问题">
+          <button type="button" data-ouart-full-prompt="零基础应该从哪一阶段开始？">学习路线</button><button type="button" data-ouart-full-prompt="四阶段主课分别解决什么问题？">四阶段</button><button type="button" data-ouart-full-prompt="DLC 专题课适合什么时候学？">DLC</button><button type="button" data-ouart-full-prompt="材料与技法课程讲什么？">材料技法</button><button type="button" data-ouart-full-prompt="初学者第一套油画材料怎么买？">材料采购</button><button type="button" data-ouart-full-prompt="画面总是脏、灰、干或没有厚重感怎么办？">画面诊断</button><button type="button" data-ouart-full-prompt="绘画思维和 IP 实物营有什么关系？">IP 实物营</button>
+        </div>
+        <div class="ouart-agent-full-messages" data-ouart-full-messages aria-live="polite"></div>
+        <form class="ouart-agent-full-form" data-ouart-full-form><label class="sr-only" for="ouartFullQuestion">输入你的问题</label><textarea id="ouartFullQuestion" rows="3" data-ouart-full-input placeholder="例如：我已经会临摹，但颜色总是灰，应该先看哪一类课？"></textarea><button class="button primary" type="submit">发送</button></form>
+        <p class="ouart-agent-disclaimer">本助手用于课程说明和学习分流，不替代具体作品点评、购买建议、报价或合同确认。涉及个人作品时，请通过联系入口补充图片和材料信息。</p>
+      </section>
+    </main>
+    <footer class="site-footer"><span>初艺 OUART</span><span>学习与课程助手｜先观察，再判断，再行动。</span></footer>
+    <script src="./ouart-agent.js?v=20260810-agent-v1"></script>
+  </body>
+</html>

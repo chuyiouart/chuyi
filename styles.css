@@ -2233,3 +2233,114 @@ h3 {
   .course-map-cta .button { margin-top: 24px; }
   .modal-layout { grid-template-columns: 1fr; }
 }
+
+/* OUART learning assistant: a lightweight, knowledge-base-driven entry point. */
+.ouart-assistant-widget {
+  position: fixed;
+  left: 22px;
+  bottom: 22px;
+  z-index: 80;
+  font-family: inherit;
+}
+.ouart-assistant-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  max-width: min(260px, calc(100vw - 44px));
+  border: 1px solid rgba(255,255,255,.26);
+  border-radius: 999px;
+  background: #171614;
+  color: #fffaf2;
+  box-shadow: 0 18px 44px rgba(31,27,21,.24);
+  cursor: pointer;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1;
+  padding: 8px 16px 8px 8px;
+}
+.ouart-assistant-trigger img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; background: #000; }
+.ouart-assistant-panel {
+  position: absolute;
+  left: 0;
+  bottom: 68px;
+  display: grid;
+  grid-template-rows: auto auto minmax(180px,1fr) auto auto;
+  width: min(420px, calc(100vw - 44px));
+  max-height: min(650px, calc(100vh - 120px));
+  overflow: hidden;
+  border: 1px solid #d7cec2;
+  border-radius: 10px;
+  background: #fffaf2;
+  box-shadow: 0 24px 70px rgba(31,27,21,.24);
+}
+.ouart-assistant-panel[hidden] { display: none; }
+.ouart-assistant-panel header { display:flex; align-items:center; justify-content:space-between; gap:12px; border-bottom:1px solid #e0d8ce; padding:14px 16px; }
+.ouart-assistant-panel header span { display:block; color:#b6402f; font-size:11px; font-weight:800; letter-spacing:.14em; }
+.ouart-assistant-panel header strong { display:block; margin-top:4px; color:#171614; font-size:17px; }
+.ouart-assistant-panel header button { width:34px; height:34px; border:1px solid #d7cec2; border-radius:999px; background:transparent; color:#171614; cursor:pointer; font:inherit; font-size:22px; line-height:1; }
+.ouart-assistant-suggestions, .ouart-agent-full-suggestions { display:flex; flex-wrap:wrap; gap:8px; padding:12px 16px; }
+.ouart-assistant-suggestions button, .ouart-agent-full-suggestions button { border:1px solid #d7cec2; border-radius:999px; background:#fff; color:#4e4841; cursor:pointer; font:inherit; font-size:13px; padding:8px 10px; }
+.ouart-assistant-suggestions button:hover, .ouart-agent-full-suggestions button:hover { border-color:#b6402f; color:#b6402f; }
+.ouart-assistant-messages, .ouart-agent-full-messages { min-height:180px; overflow:auto; border-top:1px solid rgba(31,27,21,.08); border-bottom:1px solid rgba(31,27,21,.08); background:#fffdfa; padding:14px; }
+.ouart-message { max-width:92%; margin-bottom:10px; border-radius:8px; padding:12px 13px; }
+.ouart-message.user { margin-left:auto; border:1px solid #b6402f; background:#fff3e8; color:#2b211b; font-weight:700; }
+.ouart-message.agent { margin-right:auto; border:1px solid #e0d8ce; background:#fff; }
+.ouart-message h3 { margin:0 0 8px; font-size:18px; }
+.ouart-message p, .ouart-message li { color:#4c4943; font-size:14px; line-height:1.65; }
+.ouart-message p { margin:0 0 8px; }
+.ouart-message ul { margin:8px 0 0; padding-left:1.15em; }
+.ouart-answer-meta { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:8px; }
+.ouart-answer-meta span { border:1px solid #e0d8ce; border-radius:999px; color:#9a8c7d; font-size:11px; padding:3px 7px; }
+.ouart-answer-template, .ouart-answer-collect { margin:10px 0; border-left:2px solid #b6402f; background:#fff8ef; padding:8px 10px; }
+.ouart-answer-template p { margin:0 0 5px; }
+.ouart-answer-template p:last-child { margin-bottom:0; }
+.ouart-answer-collect strong { display:block; margin-bottom:4px; color:#6b5548; font-size:12px; }
+.ouart-answer-caution, .ouart-answer-related { color:#8b6d5d !important; font-size:12px !important; }
+.ouart-answer-links, .ouart-answer-followups { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+.ouart-answer-links a, .ouart-answer-followups button { border:1px solid #d7cec2; border-radius:999px; background:#fff; color:#b6402f; cursor:pointer; font:inherit; font-size:12px; padding:5px 8px; text-decoration:none; }
+.ouart-answer-followups button:hover, .ouart-answer-links a:hover { background:#b6402f; color:#fff; }
+.ouart-assistant-form, .ouart-agent-full-form { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:8px; padding:12px 14px 8px; }
+.ouart-assistant-form textarea, .ouart-agent-full-form textarea { width:100%; min-height:56px; resize:vertical; border:1px solid #d7cec2; border-radius:8px; background:#fff; color:#171614; font:inherit; font-size:14px; line-height:1.5; padding:10px; }
+.ouart-assistant-form button { align-self:stretch; border:0; border-radius:8px; background:#171614; color:#fff; cursor:pointer; font:inherit; font-weight:700; padding:0 14px; }
+.ouart-assistant-note { margin:0; color:#776e65; font-size:12px; line-height:1.5; padding:0 14px 12px; }
+.ouart-assistant-note a { color:#b6402f; margin-left:5px; }
+
+.ouart-agent-page { background:#f7f4ef; color:#171614; }
+.ouart-agent-shell { max-width:1240px; margin:0 auto; padding:96px 32px 80px; display:grid; grid-template-columns:minmax(300px,.72fr) minmax(0,1.28fr); gap:56px; align-items:start; }
+.ouart-agent-intro { position:sticky; top:110px; }
+.ouart-agent-intro h1 { margin:16px 0 22px; font-size:clamp(3rem,6vw,5.8rem); line-height:.98; letter-spacing:-.07em; }
+.ouart-agent-intro h1 em { color:#b6402f; font-style:normal; }
+.ouart-agent-intro > p:not(.eyebrow) { max-width:440px; color:#6d675e; font-size:1.05rem; line-height:1.85; }
+.ouart-agent-capabilities { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-top:36px; }
+.ouart-agent-capabilities article { border-top:1px solid #d7cec2; padding-top:11px; }
+.ouart-agent-capabilities span { display:block; color:#b6402f; font-size:.72rem; letter-spacing:.12em; }
+.ouart-agent-capabilities strong { display:block; margin-top:6px; font-size:.9rem; line-height:1.55; }
+.ouart-agent-links { display:flex; flex-wrap:wrap; gap:8px; margin-top:28px; }
+.ouart-agent-links a { border-bottom:1px solid #b6402f; color:#b6402f; font-size:.86rem; padding-bottom:2px; text-decoration:none; }
+.ouart-agent-console { border:1px solid #d7cec2; border-radius:10px; background:#fffaf2; box-shadow:0 20px 60px rgba(31,27,21,.10); overflow:hidden; }
+.ouart-agent-toolbar { display:flex; align-items:end; justify-content:space-between; gap:20px; padding:24px 26px 18px; }
+.ouart-agent-toolbar h2 { margin:8px 0 0; font-size:clamp(2rem,4vw,3.5rem); line-height:1; letter-spacing:-.05em; }
+.ouart-agent-toolbar > button { border:1px solid #d7cec2; border-radius:999px; background:#fff; color:#6d675e; cursor:pointer; font:inherit; padding:8px 12px; }
+.ouart-agent-full-messages { min-height:470px; max-height:620px; padding:18px; }
+.ouart-agent-full-form { padding:16px 18px 10px; }
+.ouart-agent-full-form button { align-self:stretch; min-width:92px; }
+.ouart-agent-disclaimer { margin:0; border-top:1px solid #e0d8ce; color:#786f66; font-size:.8rem; line-height:1.6; padding:12px 18px 16px; }
+
+@media (max-width: 900px) {
+  .ouart-agent-shell { grid-template-columns:1fr; gap:34px; padding-top:64px; }
+  .ouart-agent-intro { position:static; }
+  .ouart-agent-intro h1 { font-size:clamp(3rem,12vw,5rem); }
+}
+@media (max-width: 560px) {
+  .ouart-assistant-widget { left:14px; right:14px; bottom:14px; }
+  .ouart-assistant-trigger { max-width:100%; }
+  .ouart-assistant-panel { left:0; right:0; bottom:66px; width:auto; max-height:calc(100vh - 96px); }
+  .ouart-assistant-messages { max-height:calc(100vh - 290px); }
+  .ouart-assistant-form, .ouart-agent-full-form { grid-template-columns:1fr; }
+  .ouart-assistant-form button, .ouart-agent-full-form button { min-height:44px; }
+  .ouart-agent-shell { margin:0 18px; padding-left:0; padding-right:0; }
+  .ouart-agent-capabilities { grid-template-columns:1fr; }
+  .ouart-agent-toolbar { align-items:start; flex-direction:column; }
+  .ouart-agent-full-messages { min-height:360px; }
+}

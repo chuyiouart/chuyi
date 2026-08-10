@@ -131,9 +131,18 @@ const initMenu = () => {
   });
 };
 
+const initOuartAssistantWidget = () => {
+  if (document.querySelector("[data-ouart-assistant-widget]")) return;
+  const script = document.createElement("script");
+  script.src = new URL("./ouart-agent-widget.js?v=20260810-agent-v1", window.location.href).href;
+  script.defer = true;
+  document.head.appendChild(script);
+};
+
 window.addEventListener("DOMContentLoaded", () => {
   initMenu();
   initResources().catch(console.error);
   initOpenClass().catch(console.error);
   initProducts().catch(console.error);
+  initOuartAssistantWidget();
 });
