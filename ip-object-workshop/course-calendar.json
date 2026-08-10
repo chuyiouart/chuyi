@@ -334,11 +334,11 @@
     "type": "图文",
     "title": "Day 2 到底做什么：从初模到双文件输出",
     "time": "11:30",
-    "summary": "进入 Day 2：AI 三维初模、人工修模、双文件输出与打印检查。",
-    "cover": "./assets/workshop-hero-v2.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用初模筛选、受控版本、Nomad 人工修模、拆件装配、GLB / STL 双文件与 Gate 2 检查，说明 Day 2 如何为首轮打印留下可复核交接。",
+    "cover": "./assets/updates/2026-08-10/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-08-10-day-2-from-initial-model-to-dual-file-output.html",
+    "status": "published"
   },
   {
     "date": "2026-08-11",
