@@ -103,7 +103,18 @@
     const link = document.querySelector("[data-today-link]");
 
     if (cover) {
-      cover.src = item.cover;
+      if (item.coverImage) {
+        cover.srcset = item.coverImage.srcset;
+        cover.sizes = item.coverImage.sizes;
+        cover.width = item.coverImage.width;
+        cover.height = item.coverImage.height;
+        cover.dataset.imageFallback = item.coverImage.fallback;
+        cover.src = item.coverImage.fallback;
+      } else {
+        cover.removeAttribute("srcset");
+        cover.removeAttribute("sizes");
+        cover.src = item.cover;
+      }
       cover.alt = item.title;
     }
     if (date) date.textContent = `${formatDisplayDate(item.date)} · ${item.type} · ${item.time}`;

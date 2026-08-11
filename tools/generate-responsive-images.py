@@ -1,65 +1,117 @@
 #!/usr/bin/env python3
-"""Create WebP derivatives for the public static sites without replacing originals."""
-
+"""Build the Daily Art responsive website chain while preserving the museum source."""
 from __future__ import annotations
 
 import argparse
+import json
+import os
+import sys
+import tempfile
+from datetime import date
 from pathlib import Path
 
-from PIL import Image, ImageOps
+HERMES_LIB = Path("/root/.hermes/lib")
+if str(HERMES_LIB) not in sys.path:
+    sys.path.insert(0, str(HERMES_LIB))
+
+from web_image_delivery import (  # noqa: E402
+    DEFAULT_WIDTHS,
+    EFFECTIVE_DATE,
+    build_picture_html,
+    derive_responsive_assets,
+)
+from PIL import Image  # noqa: E402
 
 
-def prepare(source: Path) -> Image.Image:
-    with Image.open(source) as opened:
-        image = ImageOps.exif_transpose(opened)
-        if image.mode in {"RGBA", "LA"} or "transparency" in image.info:
-            return image.convert("RGBA")
-        return image.convert("RGB")
+def atomic_json(path: Path, payload: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fd, temporary = tempfile.mkstemp(prefix=f".{path.name}.", suffix=".tmp", dir=path.parent)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as handle:
+            json.dump(payload, handle, ensure_ascii=False, indent=2, sort_keys=True)
+            handle.write("\n")
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temporary, path)
+    finally:
+        Path(temporary).unlink(missing_ok=True)
 
 
-def write_variant(source: Path, destination: Path, width: int, quality: int, force: bool) -> tuple[int, int]:
-    if not source.is_file():
-        raise FileNotFoundError(source)
-    if not force and destination.is_file() and destination.stat().st_mtime_ns >= source.stat().st_mtime_ns:
-        return source.stat().st_size, destination.stat().st_size
-
-    image = prepare(source)
-    if image.width > width:
-        height = max(1, round(image.height * width / image.width))
-        image = image.resize((width, height), Image.Resampling.LANCZOS)
-    destination.parent.mkdir(parents=True, exist_ok=True)
-    image.save(destination, "WEBP", quality=quality, method=6)
-    return source.stat().st_size, destination.stat().st_size
+def repository_relative(root: Path, value: str) -> str:
+    path = Path(value).resolve()
+    try:
+        return path.relative_to(root).as_posix()
+    except ValueError as exc:
+        raise ValueError(f"generated asset escapes root: {path}") from exc
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, required=True)
-    parser.add_argument("--file", action="append", dest="files", required=True, help="relative source path; repeatable")
-    parser.add_argument("--width", action="append", type=int, dest="widths", default=[480, 960, 1600])
-    parser.add_argument("--quality", type=int, default=78)
-    parser.add_argument("--force", action="store_true")
+    parser.add_argument("--file", action="append", dest="files", required=True, help="repository-relative original JPEG/PNG")
+    parser.add_argument("--date", required=True, help="publication date (YYYY-MM-DD)")
+    parser.add_argument("--role", choices=("hero", "card"), default="hero")
+    parser.add_argument("--original-url")
+    parser.add_argument("--force", action="store_true", help="accepted for durable-worker idempotency")
     args = parser.parse_args()
 
-    # Keep the workspace-facing path intact. Some checked-out site folders are
-    # junctions to another drive; resolving them would bypass the writable root.
+    publication_date = date.fromisoformat(args.date)
+    if publication_date < date.fromisoformat(EFFECTIVE_DATE):
+        raise SystemExit(f"responsive Daily Art chain is effective {EFFECTIVE_DATE}")
     root = args.root.absolute()
-    total_source = 0
-    total_output = 0
     count = 0
     for relative in args.files:
-        source = root / relative
-        if source.absolute().relative_to(root) is None:
-            raise SystemExit(f"source escapes root: {relative}")
-        for width in args.widths:
-            destination = source.with_name(f"{source.stem}-{width}.webp")
-            source_bytes, output_bytes = write_variant(source, destination, width, args.quality, args.force)
-            total_source += source_bytes
-            total_output += output_bytes
-            count += 1
+        source = (root / relative).absolute()
+        try:
+            source.relative_to(root)
+        except ValueError as exc:
+            raise SystemExit(f"source escapes root: {relative}") from exc
+        if not source.name.startswith(f"{args.date}-"):
+            raise SystemExit(f"source filename must start with {args.date}-: {relative}")
+        if source.suffix.lower() not in {".jpg", ".jpeg", ".png"}:
+            raise SystemExit(f"Daily Art original must be JPEG or PNG: {relative}")
+        with Image.open(source) as opened:
+            opened.verify()
 
-    reduction = 100 * (1 - total_output / total_source) if total_source else 0
-    print(f"Generated/verified {count} WebP files: {total_source / 1024 / 1024:.2f} MB -> {total_output / 1024 / 1024:.2f} MB ({reduction:.1f}% smaller).")
+        manifest = derive_responsive_assets(
+            source,
+            source.parent,
+            source.stem,
+            widths=DEFAULT_WIDTHS,
+            page_role=args.role,
+            original_url=args.original_url,
+            require_text_qa=False,
+        )
+        # Manifests are committed and must remain portable across checkout paths.
+        manifest["original_path"] = repository_relative(root, manifest["original_path"])
+        for row in [*manifest["derivatives"], manifest["fallback"]]:
+            row["path"] = repository_relative(root, row["path"])
+        receipt = source.with_name(f"{source.stem}-responsive-vision.json")
+        manifest["qa_policy"] = {
+            "ocr_exact_match": "N/A",
+            "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+            "vision_mobile_readable_required": True,
+            "artifacts_must_be_false": True,
+            "receipt_must_bind_prompt_and_every_asset_sha256": True,
+        }
+        manifest["qa_receipt_path"] = receipt.relative_to(root).as_posix()
+        manifest_path = source.with_name(f"{source.stem}-responsive.json")
+        atomic_json(manifest_path, manifest)
+
+        # Worker-ready snippets; receipt validation still happens in the publication gate.
+        runtime_manifest = dict(manifest)
+        runtime_manifest["original_path"] = str(root / manifest["original_path"])
+        runtime_manifest["derivatives"] = [dict(row, path=str(root / row["path"])) for row in manifest["derivatives"]]
+        runtime_manifest["fallback"] = dict(manifest["fallback"], path=str(root / manifest["fallback"]["path"]))
+        print(json.dumps({
+            "manifest": manifest_path.relative_to(root).as_posix(),
+            "vision_receipt": receipt.relative_to(root).as_posix(),
+            "widths": [row["width"] for row in manifest["derivatives"]],
+            "article_picture_template": build_picture_html(runtime_manifest, alt="REPLACE_WITH_ARTWORK_ALT", lcp=True, relative_prefix="../../assets/daily/"),
+            "card_picture_template": build_picture_html(runtime_manifest, alt="REPLACE_WITH_ARTWORK_ALT", lcp=True, relative_prefix="./assets/daily/"),
+        }, ensure_ascii=False))
+        count += 1
+    print(f"DAILY_ART_RESPONSIVE_ASSETS_READY count={count} widths=480,768,1280 source_preserved=true")
     return 0
 
 

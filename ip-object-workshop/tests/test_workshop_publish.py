@@ -7,12 +7,16 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
+from PIL import Image
+
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS_DIR = PROJECT_ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS_DIR))
+sys.path.insert(0, "/root/.hermes/lib")
 
 from release_daily import git_with_retry, is_expected_remote  # noqa: E402
 from workshop_publish import build_updates_js, publish_manifest, validate_public_tree  # noqa: E402
+from web_image_delivery import derive_responsive_assets  # noqa: E402
 
 
 class WorkshopPublishTests(unittest.TestCase):
@@ -239,6 +243,85 @@ class WorkshopPublishTests(unittest.TestCase):
         )
         errors = validate_public_tree(self.tmp)
         self.assertTrue(any("内部报名数据地址" in error for error in errors))
+
+
+class FutureResponsiveWebsiteTests(unittest.TestCase):
+    DATE = "2026-08-12"
+
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp(prefix="ip-workshop-responsive-"))
+        for directory in ("assets", "updates"):
+            (self.tmp / directory).mkdir()
+        for filename in ("course.css", "update-article.css"):
+            (self.tmp / filename).write_text("body{}", encoding="utf-8")
+        calendar = [{"date": self.DATE, "type": "图文", "title": "计划内容", "time": "11:30", "summary": "计划摘要", "cover": "./assets/old.png", "status": "planned", "published": False, "url": ""}]
+        (self.tmp / "course-calendar.json").write_text(json.dumps(calendar, ensure_ascii=False), encoding="utf-8")
+        self.sources = []
+        for index, name in enumerate(("01-website-hero.png", "02-core-explanation.png", "03-real-application.png", "04-social-promotion.png"), 1):
+            path = self.tmp / f"source-{name}"
+            Image.new("RGB", (1400, 900), (30 * index, 60, 180)).save(path)
+            self.sources.append(path)
+
+    def tearDown(self):
+        shutil.rmtree(self.tmp)
+
+    def manifest(self):
+        headings = ("具体问题", "核心判断", "步骤或标准", "常见错误", "与五天课程的关系", "事实 / 案例 / 完成度边界", "报名入口")
+        roles = ("website_hero", "core_explanation", "real_application", "social_promotion")
+        return {
+            "date": self.DATE, "type": "图文", "title": "未来响应式图片测试", "summary": "四张图必须各自有完整响应式资产。",
+            "slug": "future-responsive-images", "heroImage": str(self.sources[0]), "galleryImages": [str(path) for path in self.sources[1:]],
+            "lead": "验证未来网站图片合同。", "sections": [{"heading": heading, "paragraphs": [f"{heading}正文。"]} for heading in headings],
+            "imageRoles": [{"role": role, "path": str(path), "expected_text": [f"逐字文本{index}"]} for index, (role, path) in enumerate(zip(roles, self.sources), 1)],
+        }
+
+    def write_manifest(self, value):
+        path = self.tmp / "future-manifest.json"
+        path.write_text(json.dumps(value, ensure_ascii=False), encoding="utf-8")
+        return path
+
+    def test_future_publish_fails_closed_without_derivative_sha_qa_receipts(self):
+        with self.assertRaisesRegex(ValueError, "派生.*QA|QA.*派生"):
+            publish_manifest(self.tmp, self.write_manifest(self.manifest()))
+
+    def test_future_article_and_dynamic_cover_use_complete_responsive_assets(self):
+        manifest = self.manifest()
+        manifest["webImageQA"] = {}
+        for index, row in enumerate(manifest["imageRoles"]):
+            preview = derive_responsive_assets(
+                row["path"], self.tmp / f"preview-{index}", Path(row["path"]).stem,
+                widths=(480, 768, 1280), page_role="hero" if index == 0 else "gallery",
+                expected_text=row["expected_text"], require_text_qa=True,
+            )
+            keyed = [(str(asset["width"]), asset) for asset in preview["derivatives"]] + [("fallback", preview["fallback"])]
+            manifest["webImageQA"][row["role"]] = {
+                key: {"image_sha256": asset["sha256"], "ocr_exact_match": True, "vision_mobile_readable": True, "artifacts": False}
+                for key, asset in keyed
+            }
+        result = publish_manifest(self.tmp, self.write_manifest(manifest))
+        article = Path(result["article"]).read_text(encoding="utf-8")
+        self.assertEqual(4, article.count("<picture>"))
+        for marker in ("480w", "768w", "1280w"):
+            self.assertIn(marker, article)
+        self.assertEqual(1, article.count('loading="eager"'))
+        self.assertEqual(1, article.count('fetchpriority="high"'))
+        self.assertEqual(3, article.count('loading="lazy"'))
+        self.assertEqual(4, article.count('decoding="async"'))
+        self.assertEqual(4, article.count('width="1280"'))
+        self.assertEqual(4, len(result["webImageAssets"]))
+        for asset in result["webImageAssets"]:
+            self.assertEqual({480, 768, 1280}, {row["width"] for row in asset["derivatives"]})
+            for key, receipt in asset["qa_receipts"].items():
+                expected = asset["fallback"]["sha256"] if key == "fallback" else next(row["sha256"] for row in asset["derivatives"] if str(row["width"]) == key)
+                self.assertEqual(receipt["image_sha256"], expected)
+        calendar = json.loads((self.tmp / "course-calendar.json").read_text(encoding="utf-8"))
+        self.assertTrue({"srcset", "sizes", "fallback", "width", "height"} <= set(calendar[0]["coverImage"]))
+        self.assertIn('"coverImage"', (self.tmp / "course-updates.js").read_text(encoding="utf-8"))
+
+    def test_dynamic_today_cover_applies_complete_responsive_contract(self):
+        course_js = (PROJECT_ROOT / "course.js").read_text(encoding="utf-8")
+        for marker in ("cover.srcset = item.coverImage.srcset", "cover.sizes = item.coverImage.sizes", "cover.width = item.coverImage.width", "cover.height = item.coverImage.height", "cover.dataset.imageFallback = item.coverImage.fallback"):
+            self.assertIn(marker, course_js)
 
 
 if __name__ == "__main__":

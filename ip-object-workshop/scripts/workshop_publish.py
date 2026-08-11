@@ -4,12 +4,24 @@
 from __future__ import annotations
 
 import argparse
+import fcntl
 import html
 import json
 import re
 import shutil
+import sys
 from pathlib import Path
 from typing import Any
+
+HERMES_LIB = Path("/root/.hermes/lib")
+if str(HERMES_LIB) not in sys.path:
+    sys.path.insert(0, str(HERMES_LIB))
+from web_image_delivery import (  # noqa: E402
+    EFFECTIVE_DATE as WEB_IMAGE_EFFECTIVE_DATE,
+    build_picture_html,
+    derive_responsive_assets,
+    validate_web_image_manifest,
+)
 
 APPLICATION_URL = "https://wj.qq.com/s2/27296919/9499/"
 INTERNAL_URL_MARKERS = (
@@ -57,7 +69,7 @@ def public_image_path(root: Path, date: str, source: Path) -> tuple[Path, str]:
     return target, f"../assets/updates/{date}/{source.name}"
 
 
-def render_article(manifest: dict[str, Any], hero_href: str, gallery_hrefs: list[str]) -> str:
+def render_article(manifest: dict[str, Any], hero_href: str, gallery_hrefs: list[str], *, hero_picture: str | None = None, gallery_pictures: list[str] | None = None) -> str:
     title = html.escape(manifest["title"])
     summary = html.escape(manifest["summary"])
     lead = html.escape(manifest["lead"])
@@ -79,7 +91,9 @@ def render_article(manifest: dict[str, Any], hero_href: str, gallery_hrefs: list
         section_markup.append(f'<section class="update-section"><h2>{heading}</h2>{paragraphs}{bullet_markup}</section>')
 
     gallery_markup = ""
-    if gallery_hrefs:
+    if gallery_pictures:
+        gallery_markup = '<div class="update-gallery">' + "".join(gallery_pictures) + "</div>"
+    elif gallery_hrefs:
         gallery_markup = '<div class="update-gallery">' + "".join(
             f'<img src="{html.escape(href, quote=True)}" alt="{title} 配图" />'
             for href in gallery_hrefs
@@ -107,7 +121,7 @@ def render_article(manifest: dict[str, Any], hero_href: str, gallery_hrefs: list
       <p class="update-lead">{lead}</p>
     </header>
     <figure class="update-hero">
-      <img src="{html.escape(hero_href, quote=True)}" alt="{title}" />
+      {hero_picture or f'<img src="{html.escape(hero_href, quote=True)}" alt="{title}" />'}
       <figcaption>{disclaimer}</figcaption>
     </figure>
     {''.join(section_markup)}
@@ -126,7 +140,48 @@ def render_article(manifest: dict[str, Any], hero_href: str, gallery_hrefs: list
 """
 
 
-def publish_manifest(root: Path | str, manifest_path: Path | str) -> dict[str, Any]:
+def prepare_responsive_images(root: Path, manifest: dict[str, Any]) -> list[dict[str, Any]]:
+    """Derive and gate all four GPT images synchronously inside the publisher call."""
+    roles = manifest.get("imageRoles")
+    expected_roles = ("website_hero", "core_explanation", "real_application", "social_promotion")
+    if not isinstance(roles, list) or [row.get("role") for row in roles if isinstance(row, dict)] != list(expected_roles):
+        raise ValueError("2026-08-12 起必须按顺序提供四张 GPT 图 imageRoles")
+    supplied_qa = manifest.get("webImageQA")
+    if not isinstance(supplied_qa, dict):
+        raise ValueError("2026-08-12 起缺少派生图片 SHA 绑定 OCR/Vision QA 回执")
+    target_dir = root / "assets" / "updates" / manifest["date"]
+    assets: list[dict[str, Any]] = []
+    for index, row in enumerate(roles):
+        role = row["role"]
+        source = Path(str(row.get("path") or ""))
+        expected_text = row.get("expected_text")
+        if not source.is_file() or not isinstance(expected_text, list) or not expected_text:
+            raise ValueError(f"{role} 缺少源图或 OCR exact expected_text")
+        stem = Path(source.name).stem
+        asset = derive_responsive_assets(
+            source, target_dir, stem, widths=(480, 768, 1280),
+            page_role="hero" if index == 0 else "gallery",
+            sizes="(max-width: 680px) 100vw, 760px" if index == 0 else "(max-width: 680px) 100vw, 50vw",
+            expected_text=[str(value) for value in expected_text], require_text_qa=True,
+        )
+        role_qa = supplied_qa.get(role)
+        if not isinstance(role_qa, dict):
+            raise ValueError(f"{role} 缺少派生图片 QA 回执")
+        bound: dict[str, Any] = {}
+        keyed = [(str(item["width"]), item) for item in asset["derivatives"]] + [("fallback", asset["fallback"])]
+        for key, derivative in keyed:
+            receipt = role_qa.get(key)
+            if not isinstance(receipt, dict) or receipt.get("image_sha256") != derivative["sha256"]:
+                raise ValueError(f"{role}:{key} 派生图片 QA 未绑定实际 SHA")
+            bound[key] = dict(receipt)
+        asset["qa_receipts"] = bound
+        asset["role"] = role
+        validate_web_image_manifest(asset, require_qa=True)
+        assets.append(asset)
+    return assets
+
+
+def _publish_manifest_locked(root: Path | str, manifest_path: Path | str) -> dict[str, Any]:
     root = Path(root)
     manifest_path = Path(manifest_path)
     manifest = read_json(manifest_path)
@@ -161,15 +216,32 @@ def publish_manifest(root: Path | str, manifest_path: Path | str) -> dict[str, A
     hero_source = Path(manifest["heroImage"])
     if not hero_source.exists():
         raise FileNotFoundError(f"主图不存在: {hero_source}")
-    _, hero_href = public_image_path(root, manifest["date"], hero_source)
-
-    gallery_hrefs: list[str] = []
-    for image in manifest.get("galleryImages", []):
-        source = Path(image)
-        if not source.exists():
-            raise FileNotFoundError(f"配图不存在: {source}")
-        _, href = public_image_path(root, manifest["date"], source)
-        gallery_hrefs.append(href)
+    web_assets: list[dict[str, Any]] = []
+    hero_picture: str | None = None
+    gallery_pictures: list[str] | None = None
+    if manifest["date"] >= WEB_IMAGE_EFFECTIVE_DATE:
+        web_assets = prepare_responsive_images(root, manifest)
+        # The canonical project manifest records every verified derivative and receipt.
+        # This write occurs synchronously in the caller's daily release lock.
+        manifest["webImageAssets"] = web_assets
+        write_json(manifest_path, manifest)
+        prefix = f"../assets/updates/{manifest['date']}/"
+        hero_picture = build_picture_html(web_assets[0], alt=manifest["title"], lcp=True, relative_prefix=prefix)
+        gallery_pictures = [
+            build_picture_html(asset, alt=f"{manifest['title']} 配图", lcp=False, relative_prefix=prefix)
+            for asset in web_assets[1:]
+        ]
+        hero_href = prefix + Path(web_assets[0]["fallback"]["path"]).name
+        gallery_hrefs = [prefix + Path(asset["fallback"]["path"]).name for asset in web_assets[1:]]
+    else:
+        _, hero_href = public_image_path(root, manifest["date"], hero_source)
+        gallery_hrefs = []
+        for image in manifest.get("galleryImages", []):
+            source = Path(image)
+            if not source.exists():
+                raise FileNotFoundError(f"配图不存在: {source}")
+            _, href = public_image_path(root, manifest["date"], source)
+            gallery_hrefs.append(href)
     missing_roles = list(dict.fromkeys(
         str(role).strip()
         for role in manifest.get("missingRoles", [])
@@ -181,18 +253,35 @@ def publish_manifest(root: Path | str, manifest_path: Path | str) -> dict[str, A
     filename = f"{manifest['date']}-{manifest['slug']}.html"
     article_path = root / "updates" / filename
     article_path.parent.mkdir(parents=True, exist_ok=True)
-    article_path.write_text(render_article(manifest, hero_href, gallery_hrefs), encoding="utf-8")
+    article_path.write_text(
+        render_article(manifest, hero_href, gallery_hrefs, hero_picture=hero_picture, gallery_pictures=gallery_pictures),
+        encoding="utf-8",
+    )
 
-    item.update(
-        {
+    calendar_update: dict[str, Any] = {
             "title": manifest["title"],
             "summary": manifest["summary"],
             "cover": f"./assets/updates/{manifest['date']}/{hero_source.name}",
             "status": "published",
             "published": True,
             "url": f"./updates/{filename}",
+    }
+    if web_assets:
+        hero_asset = web_assets[0]
+        public_prefix = f"./assets/updates/{manifest['date']}/"
+        fallback = hero_asset["fallback"]
+        calendar_update["cover"] = public_prefix + Path(fallback["path"]).name + f"?v={fallback['sha256'][:12]}"
+        calendar_update["coverImage"] = {
+            "srcset": ", ".join(
+                f"{public_prefix}{Path(row['path']).name}?v={row['sha256'][:12]} {row['width']}w"
+                for row in hero_asset["derivatives"]
+            ),
+            "sizes": hero_asset["sizes"],
+            "fallback": calendar_update["cover"],
+            "width": fallback["width"],
+            "height": fallback["height"],
         }
-    )
+    item.update(calendar_update)
     write_json(calendar_path, calendar)
     (root / "course-updates.js").write_text(build_updates_js(calendar), encoding="utf-8")
 
@@ -206,7 +295,21 @@ def publish_manifest(root: Path | str, manifest_path: Path | str) -> dict[str, A
         "article": str(article_path),
         "url": item["url"],
         "cover": item["cover"],
+        "webImageAssets": web_assets,
     }
+
+
+def publish_manifest(root: Path | str, manifest_path: Path | str) -> dict[str, Any]:
+    """Hold one date lock across derivation, QA binding, HTML and card updates."""
+    manifest_path = Path(manifest_path)
+    date = str(read_json(manifest_path).get("date") or "unknown")
+    lock_path = Path("/tmp") / f"ip-object-workshop-publish-{date}.lock"
+    with lock_path.open("a+", encoding="utf-8") as lock:
+        fcntl.flock(lock.fileno(), fcntl.LOCK_EX)
+        try:
+            return _publish_manifest_locked(root, manifest_path)
+        finally:
+            fcntl.flock(lock.fileno(), fcntl.LOCK_UN)
 
 
 def validate_public_tree(root: Path | str) -> list[str]:
