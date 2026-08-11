@@ -345,11 +345,11 @@
     "type": "视频",
     "title": "三维生成失败，通常不是因为你不会用工具",
     "time": "19:30",
-    "summary": "进入 Day 2：AI 三维初模、人工修模、双文件输出与打印检查。",
-    "cover": "./assets/workshop-modeling.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用输入层、身份层、结构层和制造层定位三维生成失败，再决定退回输入、重选候选、人工修模或启用降级方案。",
+    "cover": "./assets/updates/2026-08-11/01-website-hero.png",
+    "published": true,
+    "url": "./updates/2026-08-11-why-3d-generation-fails-beyond-tool-skills.html",
+    "status": "published"
   },
   {
     "date": "2026-08-12",
