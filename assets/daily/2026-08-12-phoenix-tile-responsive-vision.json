@@ -1,0 +1,38 @@
+{
+  "agent_output": "{\"480\":{\"vision_mobile_readable\":true,\"artifacts\":false,\"observation\":\"已真实打开480 WebP；凤凰头部、翅膀、长尾及瓷砖外轮廓在移动端尺度仍清楚，细部按缩放自然简化，未见明显压缩块、色带、振铃、异常模糊、拉伸或比例失真，适合作为响应式主图。\"},\"768\":{\"vision_mobile_readable\":true,\"artifacts\":false,\"observation\":\"已真实打开768 WebP；凤凰主体、羽片层叠、卷云和上下边带清楚可辨，轮廓与比例正常，未见明显压缩或缩放伪影，适合作为响应式主图。\"},\"1280\":{\"vision_mobile_readable\":true,\"artifacts\":false,\"observation\":\"已真实打开1280 WebP；凤凰纹样、釉面细节和边框均清晰，色彩过渡与边缘自然，无明显压缩块、色带、振铃、异常模糊、拉伸或比例失真。\"},\"fallback\":{\"vision_mobile_readable\":true,\"artifacts\":false,\"observation\":\"已真实打开同原格式 fallback；主体与装饰细节清楚，缩放比例正确，未见明显压缩或缩放伪影，适合作为网页回退主图。\"}}",
+  "agent_output_sha256": "ea1dbc7c89c5f0ce78c3ee9e7a4b17a499c103dda0c0f62075276c85aa51492c",
+  "agent_prompt": "你是每日一画响应式图像 QA Agent。请真实查看这张馆藏作品图，按移动端缩放观看标准检查：主体（凤凰纹样与瓷砖轮廓）是否清楚可读；是否存在明显压缩块、色带、振铃、异常模糊、拉伸或比例失真；是否适合作为网页响应式主图。馆藏图无 GPT 生成文字，OCR exact 不适用。请仅输出一行严格 JSON，键为 vision_mobile_readable（布尔）、artifacts（布尔）、observation（中文字符串）。",
+  "agent_prompt_sha256": "30f5eb5c8302f32645a1fba3c7c7766ed3b33b9856902b6c430f0372aee85dda",
+  "date": "2026-08-12",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "79634095d09868aabff27eaca8a311ee36c360b675d73c15540e482a22c6b76d",
+      "observation": "已真实打开1280 WebP；凤凰纹样、釉面细节和边框均清晰，色彩过渡与边缘自然，无明显压缩块、色带、振铃、异常模糊、拉伸或比例失真。",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "7065fafecc486cefba2a63c5b5e315f4751844d23548b508b8bb64d065e9a762",
+      "observation": "已真实打开480 WebP；凤凰头部、翅膀、长尾及瓷砖外轮廓在移动端尺度仍清楚，细部按缩放自然简化，未见明显压缩块、色带、振铃、异常模糊、拉伸或比例失真，适合作为响应式主图。",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "ef8f68eb499c2e3c2d24c30001791e236530ea129db4e7fde696044b220a70b5",
+      "observation": "已真实打开768 WebP；凤凰主体、羽片层叠、卷云和上下边带清楚可辨，轮廓与比例正常，未见明显压缩或缩放伪影，适合作为响应式主图。",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "47cc495f6b34b12607ba40da0898ffbf234181a2b0aee1f09de4a5d5e4736f0f",
+      "observation": "已真实打开同原格式 fallback；主体与装饰细节清楚，缩放比例正确，未见明显压缩或缩放伪影，适合作为网页回退主图。",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}
