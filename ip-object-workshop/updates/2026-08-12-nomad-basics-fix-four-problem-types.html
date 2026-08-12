@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="把 Nomad 修模收敛为比例轮廓、表面网格、薄壁悬空、拆件装配四类可定位问题，并以修前标记、单项动作和修后复检完成 Gate 2 交接。" />
+  <title>Nomad 基础不是学菜单，而是修四类问题 | IP 实物化五天实战营</title>
+  <link rel="stylesheet" href="../course.css" />
+  <link rel="stylesheet" href="../update-article.css" />
+</head>
+<body class="update-page">
+  <header class="update-header">
+    <a href="../#updates">← 返回每日公开更新</a>
+    <a class="update-brand" href="../#course-intro">IP 实物化五天实战营</a>
+  </header>
+  <main class="update-article">
+    <header class="update-article-title">
+      <p class="update-meta"><time datetime="2026-08-12">2026-08-12</time> · 图文</p>
+      <h1>Nomad 基础不是学菜单，而是修四类问题</h1>
+      <p class="update-lead">进入 Nomad 后，最容易出现的偏差是把学习目标写成一串菜单和笔刷名称：会移动、平滑、重构、切割，就以为模型已经完成修正。实际进入实体制作时，问题不会按软件菜单出现，而会表现为整体比例失衡、网格破面或重叠、薄壁与悬空、拆件接口和装配关系不成立。若只记操作，不先判断问题类别，同一个动作可能在错误位置反复使用。
+
+这种偏差会直接影响 Day 2 的 Gate 2。过度平滑可能抹掉角色识别点，局部加厚可能改变装配间隙，随意合并可能让原本可拆的部件无法安排打印方向。Nomad 在五天流程中的价值不是展示掌握了多少功能，而是把可定位的问题修到可复检状态，并留下能进入拆件、双文件输出和切片预检的受控版本。</p>
+    </header>
+    <figure class="update-hero">
+      <picture><source type="image/webp" srcset="../assets/updates/2026-08-12/01-website-hero-480.webp?v=a052493f8a1d 480w, ../assets/updates/2026-08-12/01-website-hero-768.webp?v=7352f6020b60 768w, ../assets/updates/2026-08-12/01-website-hero-1280.webp?v=5953f072b235 1280w" sizes="(max-width: 680px) 100vw, 760px" /><img src="../assets/updates/2026-08-12/01-website-hero-fallback.png?v=4dbb53c4ca38" srcset="../assets/updates/2026-08-12/01-website-hero-480.webp?v=a052493f8a1d 480w, ../assets/updates/2026-08-12/01-website-hero-768.webp?v=7352f6020b60 768w, ../assets/updates/2026-08-12/01-website-hero-1280.webp?v=5953f072b235 1280w" sizes="(max-width: 680px) 100vw, 760px" alt="Nomad 基础不是学菜单，而是修四类问题" width="960" height="540" loading="eager" decoding="async" fetchpriority="high" /></picture>
+      <figcaption>课程流程示意图，不是往期学员案例。</figcaption>
+    </figure>
+    <section class="update-section"><h2>具体问题</h2><p>进入 Nomad 后，最容易出现的偏差是把学习目标写成一串菜单和笔刷名称：会移动、平滑、重构、切割，就以为模型已经完成修正。实际进入实体制作时，问题不会按软件菜单出现，而会表现为整体比例失衡、网格破面或重叠、薄壁与悬空、拆件接口和装配关系不成立。若只记操作，不先判断问题类别，同一个动作可能在错误位置反复使用。</p><p>这种偏差会直接影响 Day 2 的 Gate 2。过度平滑可能抹掉角色识别点，局部加厚可能改变装配间隙，随意合并可能让原本可拆的部件无法安排打印方向。Nomad 在五天流程中的价值不是展示掌握了多少功能，而是把可定位的问题修到可复检状态，并留下能进入拆件、双文件输出和切片预检的受控版本。</p></section><section class="update-section"><h2>核心判断</h2><p>修模前先把问题分为四类。第一类是比例与轮廓：从正面、侧面、背面和四分之三视角检查大体块、姿态、重心与主要负形。第二类是表面与网格：定位破面、孔洞、重叠、粘连和异常起伏。第三类是制造薄弱点：按目标尺寸检查薄壁、尖细件、悬空和易断连接。第四类是拆件与装配：确认分件边界、接口方向、定位结构、接触面和装配顺序。</p><p>动作是否正确，要看修正前后能否用同一证据复核，而不是看表面是否更光滑。每次只处理一个已标记问题，保存版本，再回到多视角、尺寸和装配条件复检；若修正会牵动核心身份或超出五天范围，就退回候选选择，或启用备选、局部样和降级出口。</p></section><section class="update-section"><h2>步骤或标准</h2><p>可按以下六项完成一次受控修模。每项都应产生可检查的视图、尺寸、部件关系或版本记录。</p><ul><li>建立修前快照：锁定模型版本、目标实体尺寸和正侧背视图，标出比例、轮廓、破面、薄壁、悬空及接口问题；未标记的问题不先动。</li><li>先修大体块：在低细节状态调整头身比例、躯干体量、四肢或附属物姿态和主要负形；缩小预览与侧面视图都能读清后再进入局部。</li><li>清理表面与网格：逐处处理孔洞、重叠、粘连、破面和异常凸凹，每完成一处就旋转检查相邻面，避免平滑动作把识别边缘一起消掉。</li><li>复核最小厚度与连接：按真实输出尺寸测量薄片、尖端、承重点和悬空件；不满足材料与打印条件时，选择加厚、缩短、加支撑关系或改为独立分件。</li><li>建立拆件和接口：明确主体、底座与配件边界，检查定位榫、接触面、装配方向和间隙；接口必须能从至少两个视角确认，不用外观遮挡代替结构。</li><li>保存修后版本并复检：对照修前标记逐项勾销，保留未解决项和降级决定；只有身份、网格、厚度、重心、拆件与装配均有证据，才进入 GLB / STL 输出和 Gate 2 检查。</li></ul></section><section class="update-section"><h2>常见错误</h2><p>以下错误都会让“会操作”与“模型可继续制造”之间出现断层。</p><ul><li>一开始就提高细分并雕刻小纹理；后果是大比例和重心仍未稳定，后续调整会破坏已投入的细节并增加修正成本。</li><li>对所有表面连续使用平滑；后果是原作的硬边、转折和识别轮廓被抹掉，模型看似干净却失去对象身份。</li><li>只在放大视图里修薄片和尖端；后果是缩放到真实尺寸后仍可能过薄、易断或无法布置支撑，问题被推迟到切片和打印。</li><li>先合并全部部件再考虑拆件；后果是接口、打印方向和后处理空间难以安排，局部失败时也无法只重打受影响部件。</li><li>覆盖原文件且不保存修前证据；后果是无法比较动作是否有效，也无法退回主、备或降级版本，Gate 2 缺少可复核记录。</li></ul></section><section class="update-section"><h2>与五天课程的关系</h2><p>当天主题对应 Day 2“AI 三维初模与 Nomad 人工修模”及 Gate 2。Day 1 / Gate 1 已锁定对象、用途、尺寸、视觉输入和主 / 备 / 降级范围；Day 2 不要求系统学习 Nomad 的全部菜单，而是围绕比例轮廓、表面网格、薄壁悬空、拆件装配四类问题完成必要修正。</p><p>修正后的受控主模型还要经过 Gate 2 的身份、网格、真实厚度、重心、连接、拆件、装配和切片预检。通过后进入下一阶段 Day 3 的切片、首轮打印、灰模处理与 Gate 3 实体验证；未通过则继续留在 Day 2 修正，或按记录切换备选和降级出口。</p></section><section class="update-section"><h2>事实 / 案例 / 完成度边界</h2><p>本文依据课程主基线中的 Day 2、Gate 2 和 Day 3 交接要求整理。当天规划的原创“栖岬背负兽”四张图片用于示意修前标记、三种姿态比例比较、接口厚度实测与修后交接，均为课程方向示意图；它们不是学员作品、真实课堂、真实委托、已经发生的制作过程或完成成果。真实案例只有在来源、授权、输入版本、模型记录、切片和实物状态均可核验时才会明确标注，示意图不能替代真实案例。</p><p>五天内可推进的是与项目范围匹配的第一版受控模型、必要人工修正、拆件方案、GLB / STL，以及灰模、局部样或小尺寸实体样中的可行出口，不等于完成所有细节。完成度受输入成熟度、结构复杂度、尺寸、材料、设备、打印排程和修正次数影响；课程不承诺学完全部 Nomad 功能、一次修模即通过、一次打印成功、商业级精修、固定实体件数、正式包装印刷、批量生产、正式展览、授权成交或销售结果。</p></section><section class="update-section"><h2>报名入口</h2><p>如果你已有 IP / 角色资产，可以在报名资料中说明现有原画、角色设定、三维文件或实体尝试，目标尺寸、版权状态，以及当前遇到的比例、网格、薄壁、拆件或装配问题。现有模型会按 Day 2 / Gate 2 标准复核，不默认可直接进入打印。</p><p>如果你只有想法、草图或初步设定，也可以如实填写故事、关键词、希望做成的物品和现有设备，不需要先学完建模软件。两类起点都会先在 Day 1 建立受控输入，再进入 Day 2 的必要修模。公开报名地址：https://wj.qq.com/s2/27296919/9499/</p></section>
+    <div class="update-gallery"><picture><source type="image/webp" srcset="../assets/updates/2026-08-12/02-core-explanation-480.webp?v=e2772b7b27b2 480w, ../assets/updates/2026-08-12/02-core-explanation-768.webp?v=9d49481e3fac 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-08-12/02-core-explanation-fallback.png?v=8cee5b4465fc" srcset="../assets/updates/2026-08-12/02-core-explanation-480.webp?v=e2772b7b27b2 480w, ../assets/updates/2026-08-12/02-core-explanation-768.webp?v=9d49481e3fac 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="Nomad 基础不是学菜单，而是修四类问题 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-08-12/03-real-application-480.webp?v=b0949ebc07d5 480w, ../assets/updates/2026-08-12/03-real-application-768.webp?v=41826c786a11 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-08-12/03-real-application-fallback.png?v=7687a3f5271d" srcset="../assets/updates/2026-08-12/03-real-application-480.webp?v=b0949ebc07d5 480w, ../assets/updates/2026-08-12/03-real-application-768.webp?v=41826c786a11 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="Nomad 基础不是学菜单，而是修四类问题 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-08-12/04-social-promotion-480.webp?v=20626a01705c 480w, ../assets/updates/2026-08-12/04-social-promotion-768.webp?v=ea2820cce20d 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-08-12/04-social-promotion-fallback.png?v=f3dc0f937d1d" srcset="../assets/updates/2026-08-12/04-social-promotion-480.webp?v=20626a01705c 480w, ../assets/updates/2026-08-12/04-social-promotion-768.webp?v=ea2820cce20d 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="Nomad 基础不是学菜单，而是修四类问题 配图" width="768" height="960" loading="lazy" decoding="async" /></picture></div>
+    <aside class="update-boundary">
+      <strong>课程边界</strong>
+      <p>五天课程以完成第一版可继续发展的项目闭环为目标，不承诺商业级量产、人人进入正式展览或必然产生销售。</p>
+    </aside>
+    <section class="update-cta">
+      <p>课程时间：2026 年 10 月 2 日至 10 月 6 日｜青岛｜每班限 10 人</p>
+      <a href="https://wj.qq.com/s2/27296919/9499/" target="_blank" rel="noopener">填写报名资料 →</a>
+    </section>
+  </main>
+</body>
+</html>

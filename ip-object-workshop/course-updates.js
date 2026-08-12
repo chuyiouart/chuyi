@@ -356,11 +356,18 @@ window.WORKSHOP_UPDATES = [
     "type": "图文",
     "title": "Nomad 基础不是学菜单，而是修四类问题",
     "time": "11:30",
-    "summary": "进入 Day 2：AI 三维初模、人工修模、双文件输出与打印检查。",
-    "cover": "./assets/workshop-printing-v2.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "把 Nomad 修模收敛为比例轮廓、表面网格、薄壁悬空、拆件装配四类可定位问题，并以修前标记、单项动作和修后复检完成 Gate 2 交接。",
+    "cover": "./assets/updates/2026-08-12/01-website-hero-fallback.png?v=4dbb53c4ca38",
+    "published": true,
+    "url": "./updates/2026-08-12-nomad-basics-fix-four-problem-types.html",
+    "status": "published",
+    "coverImage": {
+      "srcset": "./assets/updates/2026-08-12/01-website-hero-480.webp?v=a052493f8a1d 480w, ./assets/updates/2026-08-12/01-website-hero-768.webp?v=7352f6020b60 768w, ./assets/updates/2026-08-12/01-website-hero-1280.webp?v=5953f072b235 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-08-12/01-website-hero-fallback.png?v=4dbb53c4ca38",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-08-13",
