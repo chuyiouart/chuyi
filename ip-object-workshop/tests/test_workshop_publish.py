@@ -113,6 +113,7 @@ class WorkshopPublishTests(unittest.TestCase):
         self.assertTrue(article.exists())
         article_text = article.read_text(encoding="utf-8")
         self.assertIn("课程示范：一张角色图怎样完成结构转译", article_text)
+        self.assertIn('<link rel="icon" href="../favicon.ico" sizes="any" />', article_text)
         self.assertIn("课程示范内容，不是往期学员案例。", article_text)
         self.assertNotIn("METRION", article_text)
 

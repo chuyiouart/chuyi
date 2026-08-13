@@ -106,6 +106,7 @@ def render_article(manifest: dict[str, Any], hero_href: str, gallery_hrefs: list
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="{summary}" />
   <title>{title} | IP 实物化五天实战营</title>
+  <link rel="icon" href="../favicon.ico" sizes="any" />
   <link rel="stylesheet" href="../course.css" />
   <link rel="stylesheet" href="../update-article.css" />
 </head>
