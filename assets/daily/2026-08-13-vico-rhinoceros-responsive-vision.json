@@ -1,0 +1,34 @@
+{
+  "agent_output": "480: The rhinoceros silhouette, head, horn, legs, and major overlapping armor-like body divisions remain clearly readable at mobile scale. Fine engraved hatching and the small inscriptions are naturally less distinct at this size, but the subject and structural divisions are not obscured. No visible blockiness, ringing, banding, stretching, or other compression/scaling artifacts are apparent. OCR is N/A.\nvision_mobile_readable=true; artifacts=false\n\n768: The rhinoceros subject is crisp and immediately legible, with the horn, facial planes, shoulder plate, ribbed central body panel, hindquarter plate, legs, and surface patterns clearly separated. Fine engraved lines retain good continuity at mobile scaling. No visible compression or scaling artifacts are apparent. OCR is N/A.\nvision_mobile_readable=true; artifacts=false\n\n1280: The rhinoceros and all major contour and armor divisions are sharply readable, including the layered neck plates, shoulder boundary, ribbed torso shell, hindquarter panel, and patterned legs. Fine engraving remains coherent when scaled for mobile display. No visible blockiness, ringing, smearing, distortion, or scaling artifacts are apparent. OCR is N/A.\nvision_mobile_readable=true; artifacts=false\n\nfallback: The rhinoceros subject and its major anatomical and armor-like contour divisions are sharply readable at mobile scale. The layered neck, shoulder plate, ribbed central shell, hindquarter panel, horns, and legs remain distinct, while fine engraved hatching is coherent. No visible compression or scaling artifacts are apparent. OCR is N/A.\nvision_mobile_readable=true; artifacts=false",
+  "agent_output_sha256": "da913e3555317e0b0d6cb58d3f7b6be132859f918a1bb03f523bd66d08bbcc06",
+  "agent_prompt": "OUART Daily Art responsive Vision QA, asset=480. Inspect this exact image visually as it would appear scaled on a mobile screen. Determine whether the rhinoceros subject and its major contour/armor divisions remain clear and readable and whether there are any visible compression or scaling artifacts. There is no GPT-generated text, so OCR is N/A. Return a concise factual assessment and end with exactly: vision_mobile_readable=true|false; artifacts=true|false\n\nOUART Daily Art responsive Vision QA, asset=768. Inspect this exact image visually as it would appear scaled on a mobile screen. Determine whether the rhinoceros subject and its major contour/armor divisions remain clear and readable and whether there are any visible compression or scaling artifacts. There is no GPT-generated text, so OCR is N/A. Return a concise factual assessment and end with exactly: vision_mobile_readable=true|false; artifacts=true|false\n\nOUART Daily Art responsive Vision QA, asset=1280. Inspect this exact image visually as it would appear scaled on a mobile screen. Determine whether the rhinoceros subject and its major contour/armor divisions remain clear and readable and whether there are any visible compression or scaling artifacts. There is no GPT-generated text, so OCR is N/A. Return a concise factual assessment and end with exactly: vision_mobile_readable=true|false; artifacts=true|false\n\nOUART Daily Art responsive Vision QA, asset=fallback. Inspect this exact image visually as it would appear scaled on a mobile screen. Determine whether the rhinoceros subject and its major contour/armor divisions remain clear and readable and whether there are any visible compression or scaling artifacts. There is no GPT-generated text, so OCR is N/A. Return a concise factual assessment and end with exactly: vision_mobile_readable=true|false; artifacts=true|false",
+  "agent_prompt_sha256": "9769ff1e242d430c91954c51d40113b236ba6cfbabd9f94e732ad27e078d1084",
+  "date": "2026-08-13",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "e3abd74f208c5d648a3ab10fbaf0865b7810ec25bd0c3f772832645a78c262a7",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "21a293aaa09bf90b761810e5a6163c185f8203c09a81c05d45ca5b37c99fac89",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "f6545d828c12038b7d9b77402f56a10a5290f20916d1a00da550376fd43c7361",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "6b0a9c6242ec6535f8b53cbf8afb317ee05a6de1144b7269b68eba7c8825bb5e",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 38590,
+      "format": "webp",
+      "height": 346,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-13-vico-rhinoceros-480.webp",
+      "quality": 84,
+      "sha256": "21a293aaa09bf90b761810e5a6163c185f8203c09a81c05d45ca5b37c99fac89",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 104824,
+      "format": "webp",
+      "height": 554,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-13-vico-rhinoceros-768.webp",
+      "quality": 84,
+      "sha256": "f6545d828c12038b7d9b77402f56a10a5290f20916d1a00da550376fd43c7361",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 328930,
+      "format": "webp",
+      "height": 923,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-13-vico-rhinoceros-1280.webp",
+      "quality": 84,
+      "sha256": "e3abd74f208c5d648a3ab10fbaf0865b7810ec25bd0c3f772832645a78c262a7",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 372191,
+    "format": "jpeg",
+    "height": 923,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-08-13-vico-rhinoceros-fallback.jpg",
+    "quality": 84,
+    "sha256": "6b0a9c6242ec6535f8b53cbf8afb317ee05a6de1144b7269b68eba7c8825bb5e",
+    "width": 1280
+  },
+  "original_bytes": 3789501,
+  "original_height": 2628,
+  "original_path": "assets/daily/2026-08-13-vico-rhinoceros.jpg",
+  "original_sha256": "8d5eaa05736e5451e857d8b0e323a35eb1bfb896ea248fbf844f2ee9493d3f9b",
+  "original_url": "https://images.metmuseum.org/CRDImages/dp/original/DP820355.jpg",
+  "original_width": 3645,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-08-13-vico-rhinoceros-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-08-13-vico-rhinoceros-480.webp?v=21a293aaa09b 480w, 2026-08-13-vico-rhinoceros-768.webp?v=f6545d828c12 768w, 2026-08-13-vico-rhinoceros-1280.webp?v=e3abd74f208c 1280w"
+}
