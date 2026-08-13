@@ -374,11 +374,18 @@
     "type": "图文",
     "title": "一个模型怎样通过 Gate 2 可打印检查",
     "time": "11:30",
-    "summary": "进入 Day 2：AI 三维初模、人工修模、双文件输出与打印检查。",
-    "cover": "./assets/workshop-finishing.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用受控版本、封闭网格、真实厚度、重心支撑、拆件装配和切片预检六项证据，判断模型能否通过 Gate 2 进入首轮打印。",
+    "cover": "./assets/updates/2026-08-13/01-website-hero-fallback.png?v=f76547f70d84",
+    "published": true,
+    "url": "./updates/2026-08-13-how-a-model-passes-gate-2-printability-check.html",
+    "status": "published",
+    "coverImage": {
+      "srcset": "./assets/updates/2026-08-13/01-website-hero-480.webp?v=16b70dc2fe27 480w, ./assets/updates/2026-08-13/01-website-hero-768.webp?v=b4666a6dd0c1 768w, ./assets/updates/2026-08-13/01-website-hero-1280.webp?v=604d3280eb65 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-08-13/01-website-hero-fallback.png?v=f76547f70d84",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-08-14",

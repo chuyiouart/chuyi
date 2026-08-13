@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="用受控版本、封闭网格、真实厚度、重心支撑、拆件装配和切片预检六项证据，判断模型能否通过 Gate 2 进入首轮打印。" />
+  <title>一个模型怎样通过 Gate 2 可打印检查 | IP 实物化五天实战营</title>
+  <link rel="stylesheet" href="../course.css" />
+  <link rel="stylesheet" href="../update-article.css" />
+</head>
+<body class="update-page">
+  <header class="update-header">
+    <a href="../#updates">← 返回每日公开更新</a>
+    <a class="update-brand" href="../#course-intro">IP 实物化五天实战营</a>
+  </header>
+  <main class="update-article">
+    <header class="update-article-title">
+      <p class="update-meta"><time datetime="2026-08-13">2026-08-13</time> · 图文</p>
+      <h1>一个模型怎样通过 Gate 2 可打印检查</h1>
+      <p class="update-lead">三维模型在屏幕里看起来完整，并不等于它已经可以打印。渲染视图会隐藏孔洞、非流形边、重叠壳和内部游离面；放大的细节也会让过薄结构显得足够结实。若这些问题没有在真实尺寸和切片预览中被检查，风险会直接进入打印队列。
+
+Gate 2 要解决的是“这个受控版本能否进入首轮打印”。它同时检查网格、厚度、重心、支撑路径、拆件接口和切片条件，并留下通过、待修或降级的证据。没有这些证据，即使已经导出 STL，也不能把文件后缀当作制造许可。</p>
+    </header>
+    <figure class="update-hero">
+      <picture><source type="image/webp" srcset="../assets/updates/2026-08-13/01-website-hero-480.webp?v=16b70dc2fe27 480w, ../assets/updates/2026-08-13/01-website-hero-768.webp?v=b4666a6dd0c1 768w, ../assets/updates/2026-08-13/01-website-hero-1280.webp?v=604d3280eb65 1280w" sizes="(max-width: 680px) 100vw, 760px" /><img src="../assets/updates/2026-08-13/01-website-hero-fallback.png?v=f76547f70d84" srcset="../assets/updates/2026-08-13/01-website-hero-480.webp?v=16b70dc2fe27 480w, ../assets/updates/2026-08-13/01-website-hero-768.webp?v=b4666a6dd0c1 768w, ../assets/updates/2026-08-13/01-website-hero-1280.webp?v=604d3280eb65 1280w" sizes="(max-width: 680px) 100vw, 760px" alt="一个模型怎样通过 Gate 2 可打印检查" width="960" height="540" loading="eager" decoding="async" fetchpriority="high" /></picture>
+      <figcaption>课程流程示意图，不是往期学员案例。</figcaption>
+    </figure>
+    <section class="update-section"><h2>具体问题</h2><p>三维模型在屏幕里看起来完整，并不等于它已经可以打印。渲染视图会隐藏孔洞、非流形边、重叠壳和内部游离面；放大的细节也会让过薄结构显得足够结实。若这些问题没有在真实尺寸和切片预览中被检查，风险会直接进入打印队列。</p><p>Gate 2 要解决的是“这个受控版本能否进入首轮打印”。它同时检查网格、厚度、重心、支撑路径、拆件接口和切片条件，并留下通过、待修或降级的证据。没有这些证据，即使已经导出 STL，也不能把文件后缀当作制造许可。</p></section><section class="update-section"><h2>核心判断</h2><p>可打印检查必须绑定同一个模型版本、目标尺寸、工艺和材料。先确认封闭实体与连续切片层，再按真实尺寸测薄壁和承重点，随后验证重心、支撑触达、拆件接口、装配间隙、空心与排液。任一关键条件变化，都要重新执行相关检查。</p><p>Gate 2 的结论只有三类：通过并进入首轮打印；退回 Day 2 修正后复检；启用备选或降级出口。通过代表模型具备一次受控打印尝试的条件，不代表首轮一定成功，更不代表实体已经完成。</p></section><section class="update-section"><h2>步骤或标准</h2><p>以下六项按顺序执行，每项都要留下可见的模型、尺寸、切片或版本证据。</p><ul><li>锁定受检版本和实体目标：记录模型文件版本、预计成品尺寸、打印工艺与材料；同一轮检查不得中途替换模型或缩放基准。</li><li>检查网格可切片性：确认模型为封闭实体，排除孔洞、非流形边、重复壳、内部游离面与相互穿插；切片预览必须形成连续层。</li><li>按真实尺寸检查最小厚度：测量薄片、尖端、手指、装饰边与承重点；不满足所选工艺时执行加厚、缩短、合并或降级。</li><li>检查重心与支撑路径：确认落地接触、底座关系、悬空角度和受力连接；支撑既能触达关键区域，也要保留拆除与打磨空间。</li><li>检查拆件与装配：逐件确认分件边界、定位榫、插接方向、接触面、间隙与装配顺序；局部失败应允许只重打受影响部件。</li><li>完成切片预检并留证：记录朝向、空心与排液、支撑、层高和预计风险；通过项、待修项与降级决定写入 Gate 2 检查表。</li></ul></section><section class="update-section"><h2>常见错误</h2><p>以下做法会把数字模型中的不确定性推迟到设备、材料和后处理阶段。</p><ul><li>只看渲染图是否完整，不检查封闭体和切片层；后果是模型外观正常，切片时却出现缺层、空洞或异常孤岛。</li><li>在屏幕放大状态判断厚度，不换算真实尺寸；后果是薄片、尖端和连接在打印或拆支撑时断裂。</li><li>把自动支撑当作结构检查结论；后果是支撑遮挡接口、无法触达内凹区域，或拆除时损坏识别细节。</li><li>先合并全部部件再测试装配；后果是打印方向受限、接缝无法处理，局部失败也只能整件重打。</li><li>切片通过就删除问题记录；后果是首轮打印失败后无法定位版本、参数与修正依据，Gate 2 失去可复核性。</li></ul></section><section class="update-section"><h2>与五天课程的关系</h2><p>当天主题对应 Day 2“AI 三维初模与 Nomad 人工修模”的 Gate 2。Day 1 / Gate 1 已锁定对象、用途、尺寸、视觉输入与主 / 备 / 降级范围；Day 2 完成初模筛选、必要人工修正、拆件以及 GLB / STL 双文件准备后，用 Gate 2 判断 STL 是否具备首轮打印条件。</p><p>Gate 2 通过后进入下一阶段 Day 3 的切片、打印、灰模后处理与 Gate 3 实体验证。未通过的模型留在 Day 2 修正网格、厚度、重心、连接或装配，也可以按记录切换备选方案、局部样或小尺寸降级出口。</p></section><section class="update-section"><h2>事实 / 案例 / 完成度边界</h2><p>本文依据课程主基线中的 Day 2、Gate 2 与 Day 3 交接要求整理。当天规划的原创“折页潮痕”个人艺术摆件四图，仅用于示意草图转体块、姿态比较、薄壁接口检查和切片交接；它们是课程方向示意图，不是学员作品、真实课堂、真实委托、已发生的打印过程或完成案例。真实案例必须另有来源、授权、版本、切片与实体状态证据。</p><p>五天内可推进的是范围匹配的第一版受控模型、GLB / STL、拆件方案、首轮打印任务，以及灰模、局部样或小尺寸实体样中的可行出口。Gate 2 通过不承诺首轮打印成功；课程也不承诺商业级精修、固定实体件数、正式包装印刷、批量生产、正式展览、授权成交或销售结果。</p></section><section class="update-section"><h2>报名入口</h2><p>如果你已有 IP / 角色资产，可以在报名资料中说明原画、角色设定、三维文件或实体尝试，以及目标尺寸、材料和当前遇到的网格、薄壁、支撑、拆件或装配问题。现有 STL 也会按 Gate 2 标准复核，不默认可以直接打印。</p><p>如果你只有想法、草图或初步设定，也可以填写故事、关键词、希望做成的物品和现有设备，不需要先准备成熟三维模型。两类起点都会先建立受控输入，再进入 Day 2 的模型与 Gate 2 检查。公开报名地址：https://wj.qq.com/s2/27296919/9499/</p></section>
+    <div class="update-gallery"><picture><source type="image/webp" srcset="../assets/updates/2026-08-13/02-core-explanation-480.webp?v=b809acaaad18 480w, ../assets/updates/2026-08-13/02-core-explanation-768.webp?v=62395e043d1b 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-08-13/02-core-explanation-fallback.png?v=9ebe16658f37" srcset="../assets/updates/2026-08-13/02-core-explanation-480.webp?v=b809acaaad18 480w, ../assets/updates/2026-08-13/02-core-explanation-768.webp?v=62395e043d1b 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="一个模型怎样通过 Gate 2 可打印检查 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-08-13/03-real-application-480.webp?v=a1c7671cdbca 480w, ../assets/updates/2026-08-13/03-real-application-768.webp?v=e530c8451b66 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-08-13/03-real-application-fallback.png?v=a06052597634" srcset="../assets/updates/2026-08-13/03-real-application-480.webp?v=a1c7671cdbca 480w, ../assets/updates/2026-08-13/03-real-application-768.webp?v=e530c8451b66 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="一个模型怎样通过 Gate 2 可打印检查 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-08-13/04-social-promotion-480.webp?v=d0c5dd0bfc17 480w, ../assets/updates/2026-08-13/04-social-promotion-768.webp?v=c8154d9a9694 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-08-13/04-social-promotion-fallback.png?v=ea946c4e68bc" srcset="../assets/updates/2026-08-13/04-social-promotion-480.webp?v=d0c5dd0bfc17 480w, ../assets/updates/2026-08-13/04-social-promotion-768.webp?v=c8154d9a9694 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="一个模型怎样通过 Gate 2 可打印检查 配图" width="768" height="960" loading="lazy" decoding="async" /></picture></div>
+    <aside class="update-boundary">
+      <strong>课程边界</strong>
+      <p>五天课程以完成第一版可继续发展的项目闭环为目标，不承诺商业级量产、人人进入正式展览或必然产生销售。</p>
+    </aside>
+    <section class="update-cta">
+      <p>课程时间：2026 年 10 月 2 日至 10 月 6 日｜青岛｜每班限 10 人</p>
+      <a href="https://wj.qq.com/s2/27296919/9499/" target="_blank" rel="noopener">填写报名资料 →</a>
+    </section>
+  </main>
+</body>
+</html>
