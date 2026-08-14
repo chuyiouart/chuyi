@@ -392,11 +392,18 @@
     "type": "视频",
     "title": "同一件作品如何导出 GLB 和 STL",
     "time": "19:30",
-    "summary": "进入 Day 2：AI 三维初模、人工修模、双文件输出与打印检查。",
-    "cover": "./assets/workshop-ai-launch.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "从同一受控主模型建立数字展示与实体制造两条出口，分别读回 GLB 和 STL，并用版本、用途与 Gate 2 证据完成交接。",
+    "cover": "./assets/updates/2026-08-14/01-website-hero-fallback.png?v=a7540d267930",
+    "published": true,
+    "url": "./updates/2026-08-14-export-glb-and-stl-from-one-controlled-model.html",
+    "status": "published",
+    "coverImage": {
+      "srcset": "./assets/updates/2026-08-14/01-website-hero-480.webp?v=9024668e5c81 480w, ./assets/updates/2026-08-14/01-website-hero-768.webp?v=92f3f58ac720 768w, ./assets/updates/2026-08-14/01-website-hero-1280.webp?v=88ffae6ad9f7 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-08-14/01-website-hero-fallback.png?v=a7540d267930",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-08-15",

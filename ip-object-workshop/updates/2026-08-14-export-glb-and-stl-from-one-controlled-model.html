@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="从同一受控主模型建立数字展示与实体制造两条出口，分别读回 GLB 和 STL，并用版本、用途与 Gate 2 证据完成交接。" />
+  <title>同一件作品如何导出 GLB 和 STL | IP 实物化五天实战营</title>
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="../course.css" />
+  <link rel="stylesheet" href="../update-article.css" />
+</head>
+<body class="update-page">
+  <header class="update-header">
+    <a href="../#updates">← 返回每日公开更新</a>
+    <a class="update-brand" href="../#course-intro">IP 实物化五天实战营</a>
+  </header>
+  <main class="update-article">
+    <header class="update-article-title">
+      <p class="update-meta"><time datetime="2026-08-14">2026-08-14</time> · 视频</p>
+      <h1>同一件作品如何导出 GLB 和 STL</h1>
+      <p class="update-lead">同一件三维作品通常需要同时服务两种后续任务：网页中的在线查看，以及切片、打印或制造沟通。GLB 和 STL 都能从三维软件导出，但它们保存的信息并不相同。若只确认“导出成功”，没有先锁定用途、版本、尺寸、坐标和部件关系，同一对象会在两个文件中出现比例不一致、姿态漂移、材质丢失或拆件关系冲突。
+
+这种不一致会破坏 Day 2 的交接。网页端可能拿到带材质但版本过旧的 GLB，打印端可能拿到尺寸未确认或部件未闭合的 STL；后续发现问题时，又无法判断错误来自主模型、导出设置还是文件被混用。双文件输出的重点不是多生成两个后缀，而是证明它们来自同一受控主模型，并分别满足数字展示与实体制造的检查条件。</p>
+    </header>
+    <figure class="update-hero">
+      <picture><source type="image/webp" srcset="../assets/updates/2026-08-14/01-website-hero-480.webp?v=9024668e5c81 480w, ../assets/updates/2026-08-14/01-website-hero-768.webp?v=92f3f58ac720 768w, ../assets/updates/2026-08-14/01-website-hero-1280.webp?v=88ffae6ad9f7 1280w" sizes="(max-width: 680px) 100vw, 760px" /><img src="../assets/updates/2026-08-14/01-website-hero-fallback.png?v=a7540d267930" srcset="../assets/updates/2026-08-14/01-website-hero-480.webp?v=9024668e5c81 480w, ../assets/updates/2026-08-14/01-website-hero-768.webp?v=92f3f58ac720 768w, ../assets/updates/2026-08-14/01-website-hero-1280.webp?v=88ffae6ad9f7 1280w" sizes="(max-width: 680px) 100vw, 760px" alt="同一件作品如何导出 GLB 和 STL" width="960" height="540" loading="eager" decoding="async" fetchpriority="high" /></picture>
+      <figcaption>课程流程示意图，不是往期学员案例。</figcaption>
+    </figure>
+    <section class="update-section"><h2>具体问题</h2><p>同一件三维作品通常需要同时服务两种后续任务：网页中的在线查看，以及切片、打印或制造沟通。GLB 和 STL 都能从三维软件导出，但它们保存的信息并不相同。若只确认“导出成功”，没有先锁定用途、版本、尺寸、坐标和部件关系，同一对象会在两个文件中出现比例不一致、姿态漂移、材质丢失或拆件关系冲突。</p><p>这种不一致会破坏 Day 2 的交接。网页端可能拿到带材质但版本过旧的 GLB，打印端可能拿到尺寸未确认或部件未闭合的 STL；后续发现问题时，又无法判断错误来自主模型、导出设置还是文件被混用。双文件输出的重点不是多生成两个后缀，而是证明它们来自同一受控主模型，并分别满足数字展示与实体制造的检查条件。</p></section><section class="update-section"><h2>核心判断</h2><p>先建立一个受控主模型，再从同一版本分出两条明确出口。GLB 面向网页与数字展示，应检查对象身份、姿态、层级、坐标、材质或贴图引用、文件体积和目标查看器可读性；STL 面向切片与制造，应检查真实单位、封闭网格、法线、薄壁、拆件、接口、重心和切片可读性。两条出口共享身份和版本证据，但不能用一套检查替代另一套。</p><p>导出完成也不等于 Gate 2 通过。只有文件名与版本可追溯、GLB 在目标查看环境中正确显示、STL 在目标切片环境中保持尺寸和部件关系，并且差异与遗留风险被记录，双文件才具备交接条件。若主模型仍有身份或结构问题，应先退回修正，而不是反复改导出参数掩盖源头问题。</p></section><section class="update-section"><h2>步骤或标准</h2><p>以下六项必须绑定同一主模型版本执行，每项都留下文件、截图、数值或检查记录。</p><ul><li>锁定受控主模型：记录项目名、版本号、目标实体尺寸、坐标方向、姿态、主体与配件清单；导出期间不得静默替换模型或缩放基准。</li><li>整理数字展示出口：为 GLB 清理对象层级与无关数据，确认材质和贴图来源、朝向、原点、动画状态及文件体积；在目标网页查看器中完成旋转、缩放和材质读取检查。</li><li>整理制造出口：为 STL 确认单位、封闭性、法线、最小厚度、部件穿插和拆件边界；每个部件按约定命名，并保留可装配的接口与接触面。</li><li>分别导出并命名：文件名包含项目、用途、版本与日期；GLB 和 STL 不共用模糊的“final”名称，旧版移入明确归档而不是覆盖。</li><li>执行双端读回：GLB 重新导入或在目标查看器打开，核对身份、姿态、材质与层级；STL 在目标切片器打开，核对尺寸、部件、网格与切片连续性。</li><li>建立交接记录：写明两个文件来自哪个主模型、各自通过项、遗留风险和下一责任环节；STL 只有满足 Gate 2 条件后才进入 Day 3 首轮切片与打印。</li></ul></section><section class="update-section"><h2>常见错误</h2><p>以下错误会让两个看似可打开的文件失去共同版本和后续用途。</p><ul><li>分别从两个未标记的模型副本导出 GLB 和 STL；后果是网页展示与打印对象的比例、姿态或细节不同，后续无法用同一问题记录修正。</li><li>把 GLB 能显示当作材质完整，只检查缩略图；后果是外部贴图路径、透明材质、坐标或对象层级在目标网页环境中失效。</li><li>把 STL 能导入切片器当作可打印；后果是单位错误、薄壁、非封闭网格、穿插和接口问题被带入支撑与打印阶段。</li><li>用“final、final2、最新版”命名并覆盖旧文件；后果是主模型、导出设置和实际交付无法追溯，修正也无法准确回写。</li><li>为了减小 GLB 体积直接破坏主模型，再从该副本导出 STL；后果是显示优化污染制造出口，结构细节和打印尺度可能一起改变。</li></ul></section><section class="update-section"><h2>与五天课程的关系</h2><p>当天主题对应 Day 2“AI 三维初模与 Nomad 人工修模”及 Gate 2。Day 1 / Gate 1 已锁定对象、版权状态、视觉输入、目标尺寸和主 / 备 / 降级范围；Day 2 选定并修正受控主模型后，从同一版本导出面向网页展示的 GLB 和面向制造的 STL，并分别完成读回检查。</p><p>GLB / STL 与 Gate 2 记录完成后，下一阶段进入 Day 3。STL 用于切片、支撑、打印与灰模验证，并在 Gate 3 根据实体结果决定继续、局部重打或降级；GLB 保留为数字展示资产，并在 Day 5 进入个人独立站与在线三维查看。</p></section><section class="update-section"><h2>事实 / 案例 / 完成度边界</h2><p>本文依据课程主基线中的 Day 2 双文件输出、Gate 2 和 Day 3 / Day 5 交接要求整理。当天规划的原创“潮瓣巡游者”四图只用于示意主模型锁定、双出口比较、接口与尺寸检查、数字和实体交接，属于课程方向示意图；它们不是学员作品、真实课堂、真实委托、已经完成的导出案例或实体成果。真实案例必须另有来源、授权、源模型版本、导出文件和读回结果证据，示意图不能冒充真实案例。</p><p>五天内可完成的是与项目范围匹配的第一版受控模型、可读回的 GLB / STL、必要拆件与检查记录，以及灰模、局部样或小尺寸实体样中的可行出口。完成度受输入成熟度、模型结构、贴图、尺寸、材料、设备、打印排程和修正次数影响；课程不承诺所有复杂材质完全跨平台一致、一次导出即通过、一次打印成功、商业级精修、正式包装印刷、批量生产、正式展览、授权成交或销售结果。</p></section><section class="update-section"><h2>报名入口</h2><p>如果你已有 IP / 角色资产，可以在报名资料中说明现有原画、角色设定、三维文件、GLB / STL 或实体尝试，以及版权状态、目标尺寸和目前遇到的显示、材质、网格、拆件或打印问题。现有文件会按同一受控主模型和 Gate 2 标准复核，不默认可以直接进入网站或打印。</p><p>如果你只有想法、草图或初步设定，也可以如实填写故事、关键词、希望做成的物品和现有设备，不需要先独自准备成熟三维文件。两类起点都会先在 Day 1 建立受控输入，再于 Day 2 形成主模型和双文件出口。公开报名地址：https://wj.qq.com/s2/27296919/9499/</p></section>
+    <div class="update-gallery"><picture><source type="image/webp" srcset="../assets/updates/2026-08-14/02-core-explanation-480.webp?v=53b24ed2387f 480w, ../assets/updates/2026-08-14/02-core-explanation-768.webp?v=cffaf97c0593 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-08-14/02-core-explanation-fallback.png?v=7d0e129dceda" srcset="../assets/updates/2026-08-14/02-core-explanation-480.webp?v=53b24ed2387f 480w, ../assets/updates/2026-08-14/02-core-explanation-768.webp?v=cffaf97c0593 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="同一件作品如何导出 GLB 和 STL 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-08-14/03-real-application-480.webp?v=c644eb15554a 480w, ../assets/updates/2026-08-14/03-real-application-768.webp?v=cf0ab4538658 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-08-14/03-real-application-fallback.png?v=31bf50190fe3" srcset="../assets/updates/2026-08-14/03-real-application-480.webp?v=c644eb15554a 480w, ../assets/updates/2026-08-14/03-real-application-768.webp?v=cf0ab4538658 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="同一件作品如何导出 GLB 和 STL 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-08-14/04-social-promotion-480.webp?v=32000991cb49 480w, ../assets/updates/2026-08-14/04-social-promotion-768.webp?v=4cbb0656a158 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-08-14/04-social-promotion-fallback.png?v=3bfca11b1a0a" srcset="../assets/updates/2026-08-14/04-social-promotion-480.webp?v=32000991cb49 480w, ../assets/updates/2026-08-14/04-social-promotion-768.webp?v=4cbb0656a158 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="同一件作品如何导出 GLB 和 STL 配图" width="768" height="960" loading="lazy" decoding="async" /></picture></div>
+    <aside class="update-boundary">
+      <strong>课程边界</strong>
+      <p>五天课程以完成第一版可继续发展的项目闭环为目标，不承诺商业级量产、人人进入正式展览或必然产生销售。</p>
+    </aside>
+    <section class="update-cta">
+      <p>课程时间：2026 年 10 月 2 日至 10 月 6 日｜青岛｜每班限 10 人</p>
+      <a href="https://wj.qq.com/s2/27296919/9499/" target="_blank" rel="noopener">填写报名资料 →</a>
+    </section>
+  </main>
+</body>
+</html>
