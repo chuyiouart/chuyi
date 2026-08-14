@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 17908,
+      "format": "webp",
+      "height": 378,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-14-muybridge-animal-motion-480.webp",
+      "quality": 84,
+      "sha256": "e7ed46bfb9afb9da4de5ab4b542e645301ff133159fc192bfe7cbe53d3371c13",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 33346,
+      "format": "webp",
+      "height": 605,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-14-muybridge-animal-motion-768.webp",
+      "quality": 84,
+      "sha256": "dbdbde5d3caf8572627949a9b896be3c1e921f08d7c62fb3b6fb89b3bc4f2301",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 76084,
+      "format": "webp",
+      "height": 1008,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-14-muybridge-animal-motion-1280.webp",
+      "quality": 84,
+      "sha256": "1a061525718962d04742cf17b02be99a19e967ef889f58d9391ccea919a43a26",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 173997,
+    "format": "jpeg",
+    "height": 1008,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-08-14-muybridge-animal-motion-fallback.jpg",
+    "quality": 84,
+    "sha256": "b4de3c35a980975634dc80cfb11d5092acf2de766aa72a5ac34badd40ec8b844",
+    "width": 1280
+  },
+  "original_bytes": 2300272,
+  "original_height": 2744,
+  "original_path": "assets/daily/2026-08-14-muybridge-animal-motion.jpg",
+  "original_sha256": "df141267a1a2c4294ebda97518699a87a62a153add5826bc8d322ef0006b4650",
+  "original_url": "https://images.metmuseum.org/CRDImages/ph/original/DP-2597-211.jpg",
+  "original_width": 3484,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-08-14-muybridge-animal-motion-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-08-14-muybridge-animal-motion-480.webp?v=e7ed46bfb9af 480w, 2026-08-14-muybridge-animal-motion-768.webp?v=dbdbde5d3caf 768w, 2026-08-14-muybridge-animal-motion-1280.webp?v=1a0615257189 1280w"
+}

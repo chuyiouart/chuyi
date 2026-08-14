@@ -1,0 +1,34 @@
+{
+  "agent_output": "asset=480; vision_mobile_readable=true; artifacts=false; OCR exact status=N/A. The exact opened 480 WebP visibly preserves the full museum mount and the central 3-by-4 sequence. Every horse-and-rider silhouette and the changes in leg position remain distinguishable at a mobile-scaled view. The tiny original printed numerals/caption are not treated as an OCR gate. No visible blocking, ringing, banding, severe resampling blur, clipping, corruption, or aspect-ratio distortion is present.\n\nasset=768; vision_mobile_readable=true; artifacts=false; OCR exact status=N/A. The exact opened 768 WebP clearly shows all twelve sequential horse-and-rider panels, with the changing support and airborne phases readily distinguishable at mobile scale. Tonal transitions and panel edges remain clean; there is no visible blocking, ringing, banding, severe blur, clipping, corruption, or aspect-ratio distortion.\n\nasset=1280; vision_mobile_readable=true; artifacts=false; OCR exact status=N/A. The exact opened 1280 WebP clearly preserves the complete mount, the 3-by-4 panel grid, and fine differences among the horse's leg positions. Silhouettes, panel boundaries, and photographic tones remain coherent under mobile scaling, with no visible compression blocks, ringing, banding, severe blur, clipping, corruption, or aspect-ratio distortion.\n\nasset=fallback; vision_mobile_readable=true; artifacts=false; OCR exact status=N/A. The exact opened JPEG fallback clearly preserves all twelve sequential horse-and-rider panels and their changing motion phases at mobile scale. The complete museum mount is present and proportions are natural. No visible blocking, ringing, banding, severe blur, clipping, corruption, or aspect-ratio distortion is present.",
+  "agent_output_sha256": "a5dd64cab0aec43f2160e5b672f78d54220cf106a8dd0d990fdfad7b536b47ef",
+  "agent_prompt": "[asset=480]\nOUART Daily Art responsive QA, asset=480. Open and visually inspect this exact image file as if scaled to a mobile viewport. Determine whether the artwork's main subject and sequential animal-motion panels remain clearly readable, and whether there are any visible compression, resampling, blocking, ringing, banding, severe blur, clipping, corruption, or aspect-ratio distortion artifacts. This is an official museum image with no GPT-generated text, so do not perform or claim OCR exact matching; OCR exact status is N/A. Return a complete plain-text verdict that explicitly states asset=480, vision_mobile_readable=true or false, artifacts=true or false, and briefly grounds both judgments in what is actually visible.\n\n[asset=768]\nOUART Daily Art responsive QA, asset=768. Open and visually inspect this exact image file as if scaled to a mobile viewport. Determine whether the artwork's main subject and sequential animal-motion panels remain clearly readable, and whether there are any visible compression, resampling, blocking, ringing, banding, severe blur, clipping, corruption, or aspect-ratio distortion artifacts. This is an official museum image with no GPT-generated text, so do not perform or claim OCR exact matching; OCR exact status is N/A. Return a complete plain-text verdict that explicitly states asset=768, vision_mobile_readable=true or false, artifacts=true or false, and briefly grounds both judgments in what is actually visible.\n\n[asset=1280]\nOUART Daily Art responsive QA, asset=1280. Open and visually inspect this exact image file as if scaled to a mobile viewport. Determine whether the artwork's main subject and sequential animal-motion panels remain clearly readable, and whether there are any visible compression, resampling, blocking, ringing, banding, severe blur, clipping, corruption, or aspect-ratio distortion artifacts. This is an official museum image with no GPT-generated text, so do not perform or claim OCR exact matching; OCR exact status is N/A. Return a complete plain-text verdict that explicitly states asset=1280, vision_mobile_readable=true or false, artifacts=true or false, and briefly grounds both judgments in what is actually visible.\n\n[asset=fallback]\nOUART Daily Art responsive QA, asset=fallback. Open and visually inspect this exact image file as if scaled to a mobile viewport. Determine whether the artwork's main subject and sequential animal-motion panels remain clearly readable, and whether there are any visible compression, resampling, blocking, ringing, banding, severe blur, clipping, corruption, or aspect-ratio distortion artifacts. This is an official museum image with no GPT-generated text, so do not perform or claim OCR exact matching; OCR exact status is N/A. Return a complete plain-text verdict that explicitly states asset=fallback, vision_mobile_readable=true or false, artifacts=true or false, and briefly grounds both judgments in what is actually visible.",
+  "agent_prompt_sha256": "845ec4eac4e27ff8033562ab3167c11b3505c19580c0a73c51ba0e8f196778cc",
+  "date": "2026-08-14",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "1a061525718962d04742cf17b02be99a19e967ef889f58d9391ccea919a43a26",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "e7ed46bfb9afb9da4de5ab4b542e645301ff133159fc192bfe7cbe53d3371c13",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "dbdbde5d3caf8572627949a9b896be3c1e921f08d7c62fb3b6fb89b3bc4f2301",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "b4de3c35a980975634dc80cfb11d5092acf2de766aa72a5ac34badd40ec8b844",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}
