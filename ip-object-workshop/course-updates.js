@@ -348,7 +348,7 @@ window.WORKSHOP_UPDATES = [
     "summary": "用输入层、身份层、结构层和制造层定位三维生成失败，再决定退回输入、重选候选、人工修模或启用降级方案。",
     "cover": "./assets/updates/2026-08-11/01-website-hero.png",
     "published": true,
-    "url": "./updates/2026-08-11-why-3d-generation-fails-beyond-tool-skills.html",
+    "url": "https://chuyiouart.github.io/chuyi/ip-object-workshop/updates/2026-08-11-why-3d-generation-fails-beyond-tool-skills.html",
     "status": "published"
   },
   {
@@ -359,7 +359,7 @@ window.WORKSHOP_UPDATES = [
     "summary": "把 Nomad 修模收敛为比例轮廓、表面网格、薄壁悬空、拆件装配四类可定位问题，并以修前标记、单项动作和修后复检完成 Gate 2 交接。",
     "cover": "./assets/updates/2026-08-12/01-website-hero-fallback.png?v=4dbb53c4ca38",
     "published": true,
-    "url": "./updates/2026-08-12-nomad-basics-fix-four-problem-types.html",
+    "url": "https://chuyiouart.github.io/chuyi/ip-object-workshop/updates/2026-08-12-nomad-basics-fix-four-problem-types.html",
     "status": "published",
     "coverImage": {
       "srcset": "./assets/updates/2026-08-12/01-website-hero-480.webp?v=a052493f8a1d 480w, ./assets/updates/2026-08-12/01-website-hero-768.webp?v=7352f6020b60 768w, ./assets/updates/2026-08-12/01-website-hero-1280.webp?v=5953f072b235 1280w",
@@ -377,7 +377,7 @@ window.WORKSHOP_UPDATES = [
     "summary": "用受控版本、封闭网格、真实厚度、重心支撑、拆件装配和切片预检六项证据，判断模型能否通过 Gate 2 进入首轮打印。",
     "cover": "./assets/updates/2026-08-13/01-website-hero-fallback.png?v=f76547f70d84",
     "published": true,
-    "url": "./updates/2026-08-13-how-a-model-passes-gate-2-printability-check.html",
+    "url": "https://chuyiouart.github.io/chuyi/ip-object-workshop/updates/2026-08-13-how-a-model-passes-gate-2-printability-check.html",
     "status": "published",
     "coverImage": {
       "srcset": "./assets/updates/2026-08-13/01-website-hero-480.webp?v=16b70dc2fe27 480w, ./assets/updates/2026-08-13/01-website-hero-768.webp?v=b4666a6dd0c1 768w, ./assets/updates/2026-08-13/01-website-hero-1280.webp?v=604d3280eb65 1280w",
@@ -395,7 +395,7 @@ window.WORKSHOP_UPDATES = [
     "summary": "从同一受控主模型建立数字展示与实体制造两条出口，分别读回 GLB 和 STL，并用版本、用途与 Gate 2 证据完成交接。",
     "cover": "./assets/updates/2026-08-14/01-website-hero-fallback.png?v=a7540d267930",
     "published": true,
-    "url": "./updates/2026-08-14-export-glb-and-stl-from-one-controlled-model.html",
+    "url": "https://chuyiouart.github.io/chuyi/ip-object-workshop/updates/2026-08-14-export-glb-and-stl-from-one-controlled-model.html",
     "status": "published",
     "coverImage": {
       "srcset": "./assets/updates/2026-08-14/01-website-hero-480.webp?v=9024668e5c81 480w, ./assets/updates/2026-08-14/01-website-hero-768.webp?v=92f3f58ac720 768w, ./assets/updates/2026-08-14/01-website-hero-1280.webp?v=88ffae6ad9f7 1280w",
@@ -406,15 +406,22 @@ window.WORKSHOP_UPDATES = [
     }
   },
   {
-    "source_id": "workshop:2026-08-15",
     "date": "2026-08-15",
     "type": "视频",
     "title": "打印为什么从 Day 2 晚上就要开始",
+    "time": "18:00",
     "summary": "解释为什么通过 Gate 2 后要在 Day 2 晚上启动首轮关键打印，用不可压缩的设备时间换取 Day 3 可复核的实体证据，同时保留安全、版本与降级边界。",
-    "cover": "./assets/updates/2026-08-15/01-website-hero.png",
+    "cover": "./assets/updates/2026-08-15/01-website-hero-fallback.png?v=ac6b76002a44",
     "published": true,
+    "url": "https://chuyiouart.github.io/chuyi/ip-object-workshop/updates/2026-08-15-why-printing-starts-on-day-2-evening.html",
     "status": "published",
-    "url": "./updates/2026-08-15-why-printing-starts-on-day-2-evening.html"
+    "coverImage": {
+      "srcset": "./assets/updates/2026-08-15/01-website-hero-480.webp?v=cb0c513f9149 480w, ./assets/updates/2026-08-15/01-website-hero-768.webp?v=91a07063768a 768w, ./assets/updates/2026-08-15/01-website-hero-1280.webp?v=4590fc21bf48 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-08-15/01-website-hero-fallback.png?v=ac6b76002a44",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-08-16",
