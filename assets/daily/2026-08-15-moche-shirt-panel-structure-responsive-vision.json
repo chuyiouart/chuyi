@@ -1,0 +1,34 @@
+{
+  "agent_output": "[asset=480]\nThe full shirt silhouette, sleeves, central opening, broad red-and-tan stepped motifs, and lower border remain clearly legible at mobile scale. Fine weave texture is naturally reduced, but edges and motif relationships remain distinct. No visible compression, resizing, ringing, blocking, banding, color, crop, or other rendering artifacts were observed.\nasset=480; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A.\n\n[asset=768]\nThe complete garment and its panel structure are clear; the alternating stepped figures, center seam/opening, worn lower field, and repeated border units remain readable when scaled for mobile. No visible compression, resizing, ringing, blocking, banding, color, crop, or other rendering artifacts were observed.\nasset=768; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A.\n\n[asset=1280]\nThe shirt silhouette and structural details are sharply readable, including the sleeve junctions, central opening, stepped red-and-tan motif paths, small colored inserts, and lower border. The image is uncropped and shows no visible compression, resizing, ringing, blocking, banding, color, or other rendering artifacts.\nasset=1280; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A.\n\n[asset=fallback]\nThe full garment, panel divisions, central opening, repeated stepped motifs, worn areas, and lower border remain clear and readable under mobile scaling. The crop and color are consistent with the inspected responsive versions, with no visible compression, resizing, ringing, blocking, banding, color, crop, or other rendering artifacts.\nasset=fallback; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A.",
+  "agent_output_sha256": "763ff8b90fc4a6b3ffdf29c79a622178f1cc97b59ebc2ef0d5c69729a5ea1c8b",
+  "agent_prompt": "[asset=480]\nOUART Daily Art responsive QA for asset 480. Inspect this exact image visually as it would appear scaled on a mobile screen. Determine whether the artwork’s main subject and structural details remain clear/readable and whether there are any visible compression, resizing, ringing, blocking, banding, color, crop, or other rendering artifacts. This is an official museum collection image with no GPT-generated text, so OCR exact matching is not applicable and must be reported as N/A. Return a concise factual assessment and explicitly state: asset=480; vision_mobile_readable=true or false; artifacts=true or false; ocr_exact_match=N/A.\n\n[asset=768]\nOUART Daily Art responsive QA for asset 768. Inspect this exact image visually as it would appear scaled on a mobile screen. Determine whether the artwork’s main subject and structural details remain clear/readable and whether there are any visible compression, resizing, ringing, blocking, banding, color, crop, or other rendering artifacts. This is an official museum collection image with no GPT-generated text, so OCR exact matching is not applicable and must be reported as N/A. Return a concise factual assessment and explicitly state: asset=768; vision_mobile_readable=true or false; artifacts=true or false; ocr_exact_match=N/A.\n\n[asset=1280]\nOUART Daily Art responsive QA for asset 1280. Inspect this exact image visually as it would appear scaled on a mobile screen. Determine whether the artwork’s main subject and structural details remain clear/readable and whether there are any visible compression, resizing, ringing, blocking, banding, color, crop, or other rendering artifacts. This is an official museum collection image with no GPT-generated text, so OCR exact matching is not applicable and must be reported as N/A. Return a concise factual assessment and explicitly state: asset=1280; vision_mobile_readable=true or false; artifacts=true or false; ocr_exact_match=N/A.\n\n[asset=fallback]\nOUART Daily Art responsive QA for asset fallback. Inspect this exact image visually as it would appear scaled on a mobile screen. Determine whether the artwork’s main subject and structural details remain clear/readable and whether there are any visible compression, resizing, ringing, blocking, banding, color, crop, or other rendering artifacts. This is an official museum collection image with no GPT-generated text, so OCR exact matching is not applicable and must be reported as N/A. Return a concise factual assessment and explicitly state: asset=fallback; vision_mobile_readable=true or false; artifacts=true or false; ocr_exact_match=N/A.",
+  "agent_prompt_sha256": "dfe6e92600e4d9bcd2c51859a4766bb85939bb5b68dc2f8a13f2ae83f34d4323",
+  "date": "2026-08-15",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "cd26cef49502f129a793a682b7487d5e129270990cea5b8bbfc35608a2af4eb5",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "5d15c7070f21f09ab8a112a7965074438b58e60ee3355f540e40e9685dcb3b2f",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "ca26ad3390e86fda685128ab1ca41418f4f217d589e1df2ef2255c3351b88dd7",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "f0b5bb931492e2ef67f139d5b4f04fccc0dedd88d416a6399853e6054484a545",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}

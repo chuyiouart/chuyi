@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 23484,
+      "format": "webp",
+      "height": 384,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-15-moche-shirt-panel-structure-480.webp",
+      "quality": 84,
+      "sha256": "5d15c7070f21f09ab8a112a7965074438b58e60ee3355f540e40e9685dcb3b2f",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 46328,
+      "format": "webp",
+      "height": 614,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-15-moche-shirt-panel-structure-768.webp",
+      "quality": 84,
+      "sha256": "ca26ad3390e86fda685128ab1ca41418f4f217d589e1df2ef2255c3351b88dd7",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 107386,
+      "format": "webp",
+      "height": 1024,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-15-moche-shirt-panel-structure-1280.webp",
+      "quality": 84,
+      "sha256": "cd26cef49502f129a793a682b7487d5e129270990cea5b8bbfc35608a2af4eb5",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 211293,
+    "format": "jpeg",
+    "height": 1024,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-08-15-moche-shirt-panel-structure-fallback.jpg",
+    "quality": 84,
+    "sha256": "f0b5bb931492e2ef67f139d5b4f04fccc0dedd88d416a6399853e6054484a545",
+    "width": 1280
+  },
+  "original_bytes": 2239073,
+  "original_height": 3049,
+  "original_path": "assets/daily/2026-08-15-moche-shirt-panel-structure.jpg",
+  "original_sha256": "cf7f8be4f050a37cdb2c374836d171c981c8613534c8825387b5c33218cd0acc",
+  "original_url": "https://images.metmuseum.org/CRDImages/ao/original/DT1269.jpg",
+  "original_width": 3811,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-08-15-moche-shirt-panel-structure-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-08-15-moche-shirt-panel-structure-480.webp?v=5d15c7070f21 480w, 2026-08-15-moche-shirt-panel-structure-768.webp?v=ca26ad3390e8 768w, 2026-08-15-moche-shirt-panel-structure-1280.webp?v=cd26cef49502 1280w"
+}
