@@ -406,22 +406,15 @@ window.WORKSHOP_UPDATES = [
     }
   },
   {
+    "source_id": "workshop:2026-08-15",
     "date": "2026-08-15",
     "type": "视频",
     "title": "打印为什么从 Day 2 晚上就要开始",
-    "time": "18:00",
     "summary": "解释为什么通过 Gate 2 后要在 Day 2 晚上启动首轮关键打印，用不可压缩的设备时间换取 Day 3 可复核的实体证据，同时保留安全、版本与降级边界。",
-    "cover": "./assets/updates/2026-08-15/01-website-hero-fallback.png?v=ac6b76002a44",
+    "cover": "./assets/updates/2026-08-15/01-website-hero.png",
     "published": true,
-    "url": "./updates/2026-08-15-why-printing-starts-on-day-2-evening.html",
     "status": "published",
-    "coverImage": {
-      "srcset": "./assets/updates/2026-08-15/01-website-hero-480.webp?v=cb0c513f9149 480w, ./assets/updates/2026-08-15/01-website-hero-768.webp?v=91a07063768a 768w, ./assets/updates/2026-08-15/01-website-hero-1280.webp?v=4590fc21bf48 1280w",
-      "sizes": "(max-width: 680px) 100vw, 760px",
-      "fallback": "./assets/updates/2026-08-15/01-website-hero-fallback.png?v=ac6b76002a44",
-      "width": 960,
-      "height": 540
-    }
+    "url": "./updates/2026-08-15-why-printing-starts-on-day-2-evening.html"
   },
   {
     "date": "2026-08-16",
