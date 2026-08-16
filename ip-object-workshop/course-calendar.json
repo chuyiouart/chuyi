@@ -428,11 +428,27 @@
     "type": "直播",
     "title": "AI 初模到可打印模型，现场演示一次",
     "time": "20:00",
-    "summary": "进入 Day 2：AI 三维初模、人工修模、双文件输出与打印检查。",
-    "cover": "./assets/workshop-modeling.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用受控输入、候选筛选、人工修模、STL 读回与 Gate 2 证据，说明 AI 初模怎样成为可进入首轮打印的模型，同时保留主 / 备 / 降级与完成度边界。",
+    "cover": "./assets/updates/2026-08-16/01-website-hero-fallback.png?v=f0501c874506",
+    "published": true,
+    "url": "./updates/2026-08-16-live-demo-ai-draft-to-printable-model.html",
+    "status": "published",
+    "media_status": "partial",
+    "passedRoles": [
+      "website_hero"
+    ],
+    "pendingRoles": [
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-08-16/01-website-hero-480.webp?v=2246f4fef36d 480w, ./assets/updates/2026-08-16/01-website-hero-768.webp?v=d3d2bee8c298 768w, ./assets/updates/2026-08-16/01-website-hero-1280.webp?v=a996e74bdeff 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-08-16/01-website-hero-fallback.png?v=f0501c874506",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-08-17",
