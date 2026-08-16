@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-16",
+  "agent_prompt": "[480 WebP]\n你是 OUART 每日一画响应式图像 QA Vision Agent。请真实查看此 480 WebP 像素内容，并按移动端缩放显示场景检查：主体（韩国高丽青瓷碗）是否清楚可辨、构图是否完整、细部是否保持可读、是否存在明显压缩块/振铃/条带/异常模糊/拉伸或纵横比失真。馆藏图无 GPT 生成文字，OCR exact 必须记为 N/A。请只基于实际视觉观察，明确给出 vision_mobile_readable=true/false 与 artifacts=true/false，并简述依据。\n\n[768 WebP]\n你是 OUART 每日一画响应式图像 QA Vision Agent。请真实查看此 768 WebP 像素内容，并按移动端缩放显示场景检查：主体（韩国高丽青瓷碗）是否清楚可辨、构图是否完整、细部是否保持可读、是否存在明显压缩块/振铃/条带/异常模糊/拉伸或纵横比失真。馆藏图无 GPT 生成文字，OCR exact 必须记为 N/A。请只基于实际视觉观察，明确给出 vision_mobile_readable=true/false 与 artifacts=true/false，并简述依据。\n\n[1280 WebP]\n你是 OUART 每日一画响应式图像 QA Vision Agent。请真实查看此 1280 WebP 像素内容，并按移动端缩放显示场景检查：主体（韩国高丽青瓷碗）是否清楚可辨、构图是否完整、细部是否保持可读、是否存在明显压缩块/振铃/条带/异常模糊/拉伸或纵横比失真。馆藏图无 GPT 生成文字，OCR exact 必须记为 N/A。请只基于实际视觉观察，明确给出 vision_mobile_readable=true/false 与 artifacts=true/false，并简述依据。\n\n[fallback JPEG]\n你是 OUART 每日一画响应式图像 QA Vision Agent。请真实查看此 fallback JPEG 像素内容，并按移动端缩放显示场景检查：主体（韩国高丽青瓷碗）是否清楚可辨、构图是否完整、细部是否保持可读、是否存在明显压缩块/振铃/条带/异常模糊/拉伸或纵横比失真。馆藏图无 GPT 生成文字，OCR exact 必须记为 N/A。请只基于实际视觉观察，明确给出 vision_mobile_readable=true/false 与 artifacts=true/false，并简述依据。",
+  "agent_prompt_sha256": "1a8bcf92fcda305a861c4ffacc0fa14caf0ca8a571a4c9fee107103c89c5efa2",
+  "agent_output": "[480 WebP]\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n主体青绿色高丽青瓷碗居中且完整，口沿、内壁、中央花形和模印人物/莲纹在移动端尺寸下仍可辨。低对比浅浮纹因原作釉色与照明而较柔和，但没有明显压缩块、振铃、条带、异常模糊、拉伸或纵横比失真。\n\n[768 WebP]\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n碗体轮廓、口沿、中央团花及环绕的人物和莲纹均清楚，完整构图和底部投影保留。细节比 480 档更易分辨；未观察到明显压缩块、振铃、色带、异常模糊、拉伸或纵横比失真。\n\n[1280 WebP]\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n青瓷碗主体完整且清晰，釉色层次、中央花形、内壁模印人物与植物纹、器物自身细微裂纹均能自然辨认。边缘与背景过渡正常，无明显压缩块、振铃、条带、异常锐化/模糊、拉伸或纵横比失真。\n\n[fallback JPEG]\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n主体、构图和细节与 1280 WebP 一致可读：圆形碗口完整，青绿色釉面和浅浮纹保留，灰色背景及投影过渡平顺。未见明显 JPEG 方块、振铃、条带、异常模糊、拉伸或纵横比失真。",
+  "agent_output_sha256": "b3819a77af6ee29768c7b0066c170019afbc840861d84b44fded42d2c8ed178f",
+  "results": {
+    "480": {
+      "image_sha256": "66915492623787781a0ad6633aee463372e4913959c4898281301032216f9e22",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "f4c21a7e4eabdb421ef7c6c04c98ec9e978dd4ccac99e5b1619b0d6162c3a2d3",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "f3c709b578bf63f468aff06815f0258edfc98cf0530651b04e14a407fed76404",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "7f28310b52cad68f31e3dae738305dc95748dd6f21f06591d79baaffee2622d5",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 9670,
+      "format": "webp",
+      "height": 361,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-16-korean-celadon-bowl-ellipses-480.webp",
+      "quality": 84,
+      "sha256": "66915492623787781a0ad6633aee463372e4913959c4898281301032216f9e22",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 16542,
+      "format": "webp",
+      "height": 577,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-16-korean-celadon-bowl-ellipses-768.webp",
+      "quality": 84,
+      "sha256": "f4c21a7e4eabdb421ef7c6c04c98ec9e978dd4ccac99e5b1619b0d6162c3a2d3",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 34038,
+      "format": "webp",
+      "height": 962,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-16-korean-celadon-bowl-ellipses-1280.webp",
+      "quality": 84,
+      "sha256": "f3c709b578bf63f468aff06815f0258edfc98cf0530651b04e14a407fed76404",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 95021,
+    "format": "jpeg",
+    "height": 962,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-08-16-korean-celadon-bowl-ellipses-fallback.jpg",
+    "quality": 84,
+    "sha256": "7f28310b52cad68f31e3dae738305dc95748dd6f21f06591d79baaffee2622d5",
+    "width": 1280
+  },
+  "original_bytes": 1551476,
+  "original_height": 2909,
+  "original_path": "assets/daily/2026-08-16-korean-celadon-bowl-ellipses.jpg",
+  "original_sha256": "310384c270b8d94f0473182b4570f4f68a27a6294ca353603eab227c2164f145",
+  "original_url": "https://images.metmuseum.org/CRDImages/as/original/DP342744.jpg",
+  "original_width": 3872,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-08-16-korean-celadon-bowl-ellipses-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-08-16-korean-celadon-bowl-ellipses-480.webp?v=669154926237 480w, 2026-08-16-korean-celadon-bowl-ellipses-768.webp?v=f4c21a7e4eab 768w, 2026-08-16-korean-celadon-bowl-ellipses-1280.webp?v=f3c709b578bf 1280w"
+}
