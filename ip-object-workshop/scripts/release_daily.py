@@ -165,6 +165,9 @@ def release(repo: Path, manifest_path: Path, verify_only: bool = False) -> dict:
     return {
         "status": release_status if staged else "already_published",
         "missing_roles": published.get("missingRoles", []),
+        "media_status": published.get("media_status"),
+        "passed_roles": published.get("passedRoles", []),
+        "pending_roles": published.get("pendingRoles", []),
         "url": live_url,
         "title": manifest["title"],
         "commit": commit,

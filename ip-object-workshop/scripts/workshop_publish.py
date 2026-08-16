@@ -98,6 +98,12 @@ def render_article(manifest: dict[str, Any], hero_href: str, gallery_hrefs: list
             f'<img src="{html.escape(href, quote=True)}" alt="{title} 配图" />'
             for href in gallery_hrefs
         ) + "</div>"
+    hero_markup = ""
+    if hero_picture or hero_href:
+        hero_markup = f'''<figure class="update-hero">
+      {hero_picture or f'<img src="{html.escape(hero_href, quote=True)}" alt="{title}" />'}
+      <figcaption>{disclaimer}</figcaption>
+    </figure>'''
 
     return f"""<!doctype html>
 <html lang="zh-CN">
@@ -121,10 +127,7 @@ def render_article(manifest: dict[str, Any], hero_href: str, gallery_hrefs: list
       <h1>{title}</h1>
       <p class="update-lead">{lead}</p>
     </header>
-    <figure class="update-hero">
-      {hero_picture or f'<img src="{html.escape(hero_href, quote=True)}" alt="{title}" />'}
-      <figcaption>{disclaimer}</figcaption>
-    </figure>
+    {hero_markup}
     {''.join(section_markup)}
     {gallery_markup}
     <aside class="update-boundary">
@@ -142,11 +145,16 @@ def render_article(manifest: dict[str, Any], hero_href: str, gallery_hrefs: list
 
 
 def prepare_responsive_images(root: Path, manifest: dict[str, Any]) -> list[dict[str, Any]]:
-    """Derive and gate all four GPT images synchronously inside the publisher call."""
+    """Derive and gate exactly the QA-passed roles supplied by the manifest."""
     roles = manifest.get("imageRoles")
     expected_roles = ("website_hero", "core_explanation", "real_application", "social_promotion")
-    if not isinstance(roles, list) or [row.get("role") for row in roles if isinstance(row, dict)] != list(expected_roles):
-        raise ValueError("2026-08-12 起必须按顺序提供四张 GPT 图 imageRoles")
+    role_names = [row.get("role") for row in roles if isinstance(row, dict)] if isinstance(roles, list) else []
+    if not isinstance(roles, list) or len(role_names) != len(set(role_names)) or any(role not in expected_roles for role in role_names):
+        raise ValueError("imageRoles 必须是唯一、已知且 QA PASS 的角色")
+    if role_names != [role for role in expected_roles if role in role_names]:
+        raise ValueError("imageRoles 顺序无效")
+    if not roles:
+        return []
     supplied_qa = manifest.get("webImageQA")
     if not isinstance(supplied_qa, dict):
         raise ValueError("2026-08-12 起缺少派生图片 SHA 绑定 OCR/Vision QA 回执")
@@ -161,8 +169,8 @@ def prepare_responsive_images(root: Path, manifest: dict[str, Any]) -> list[dict
         stem = Path(source.name).stem
         asset = derive_responsive_assets(
             source, target_dir, stem, widths=(480, 768, 1280),
-            page_role="hero" if index == 0 else "gallery",
-            sizes="(max-width: 680px) 100vw, 760px" if index == 0 else "(max-width: 680px) 100vw, 50vw",
+            page_role="hero" if role == "website_hero" else "gallery",
+            sizes="(max-width: 680px) 100vw, 760px" if role == "website_hero" else "(max-width: 680px) 100vw, 50vw",
             expected_text=[str(value) for value in expected_text], require_text_qa=True,
         )
         role_qa = supplied_qa.get(role)
@@ -187,7 +195,7 @@ def _publish_manifest_locked(root: Path | str, manifest_path: Path | str) -> dic
     manifest_path = Path(manifest_path)
     manifest = read_json(manifest_path)
 
-    required = ("date", "type", "title", "summary", "slug", "heroImage", "lead", "sections")
+    required = ("date", "type", "title", "summary", "slug", "lead", "sections")
     missing = [key for key in required if not manifest.get(key)]
     if missing:
         raise ValueError(f"manifest 缺少字段: {', '.join(missing)}")
@@ -214,28 +222,29 @@ def _publish_manifest_locked(root: Path | str, manifest_path: Path | str) -> dic
     if item is None:
         raise ValueError(f"公开日历中没有日期 {manifest['date']}")
 
-    hero_source = Path(manifest["heroImage"])
-    if not hero_source.exists():
+    hero_source = Path(manifest["heroImage"]) if manifest.get("heroImage") else None
+    if hero_source is not None and not hero_source.exists():
         raise FileNotFoundError(f"主图不存在: {hero_source}")
     web_assets: list[dict[str, Any]] = []
     hero_picture: str | None = None
     gallery_pictures: list[str] | None = None
     if manifest["date"] >= WEB_IMAGE_EFFECTIVE_DATE:
         web_assets = prepare_responsive_images(root, manifest)
-        # The canonical project manifest records every verified derivative and receipt.
-        # This write occurs synchronously in the caller's daily release lock.
         manifest["webImageAssets"] = web_assets
         write_json(manifest_path, manifest)
         prefix = f"../assets/updates/{manifest['date']}/"
-        hero_picture = build_picture_html(web_assets[0], alt=manifest["title"], lcp=True, relative_prefix=prefix)
+        hero_asset = next((asset for asset in web_assets if asset.get("role") == "website_hero"), None)
+        hero_picture = build_picture_html(hero_asset, alt=manifest["title"], lcp=True, relative_prefix=prefix) if hero_asset else None
         gallery_pictures = [
             build_picture_html(asset, alt=f"{manifest['title']} 配图", lcp=False, relative_prefix=prefix)
-            for asset in web_assets[1:]
+            for asset in web_assets if asset.get("role") != "website_hero"
         ]
-        hero_href = prefix + Path(web_assets[0]["fallback"]["path"]).name
-        gallery_hrefs = [prefix + Path(asset["fallback"]["path"]).name for asset in web_assets[1:]]
+        hero_href = prefix + Path(hero_asset["fallback"]["path"]).name if hero_asset else ""
+        gallery_hrefs = [prefix + Path(asset["fallback"]["path"]).name for asset in web_assets if asset.get("role") != "website_hero"]
     else:
-        _, hero_href = public_image_path(root, manifest["date"], hero_source)
+        hero_href = ""
+        if hero_source is not None:
+            _, hero_href = public_image_path(root, manifest["date"], hero_source)
         gallery_hrefs = []
         for image in manifest.get("galleryImages", []):
             source = Path(image)
@@ -248,8 +257,6 @@ def _publish_manifest_locked(root: Path | str, manifest_path: Path | str) -> dic
         for role in manifest.get("missingRoles", [])
         if str(role).strip()
     ))
-    if "01-website-hero" in missing_roles:
-        raise ValueError("01-website-hero 是网站必需主图，不能作为降级缺失角色发布")
 
     filename = f"{manifest['date']}-{manifest['slug']}.html"
     article_path = root / "updates" / filename
@@ -262,13 +269,16 @@ def _publish_manifest_locked(root: Path | str, manifest_path: Path | str) -> dic
     calendar_update: dict[str, Any] = {
             "title": manifest["title"],
             "summary": manifest["summary"],
-            "cover": f"./assets/updates/{manifest['date']}/{hero_source.name}",
+            "cover": f"./assets/updates/{manifest['date']}/{hero_source.name}" if hero_source else "",
             "status": "published",
             "published": True,
             "url": f"./updates/{filename}",
+            "media_status": manifest.get("media_status", "complete" if not missing_roles else ("none" if not web_assets else "partial")),
+            "passedRoles": list(manifest.get("passedRoles") or []),
+            "pendingRoles": list(manifest.get("pendingRoles") or manifest.get("missingRoles") or []),
     }
-    if web_assets:
-        hero_asset = web_assets[0]
+    hero_asset = next((asset for asset in web_assets if asset.get("role") == "website_hero"), None)
+    if hero_asset:
         public_prefix = f"./assets/updates/{manifest['date']}/"
         fallback = hero_asset["fallback"]
         calendar_update["cover"] = public_prefix + Path(fallback["path"]).name + f"?v={fallback['sha256'][:12]}"
@@ -282,6 +292,8 @@ def _publish_manifest_locked(root: Path | str, manifest_path: Path | str) -> dic
             "width": fallback["width"],
             "height": fallback["height"],
         }
+    else:
+        item.pop("coverImage", None)
     item.update(calendar_update)
     write_json(calendar_path, calendar)
     (root / "course-updates.js").write_text(build_updates_js(calendar), encoding="utf-8")
@@ -291,8 +303,11 @@ def _publish_manifest_locked(root: Path | str, manifest_path: Path | str) -> dic
         raise ValueError("发布后检查失败:\n" + "\n".join(errors))
 
     return {
-        "status": "degraded_success" if missing_roles else "published",
+        "status": "partial_media_published" if missing_roles else "published",
         "missingRoles": missing_roles,
+        "media_status": calendar_update["media_status"],
+        "passedRoles": calendar_update["passedRoles"],
+        "pendingRoles": calendar_update["pendingRoles"],
         "article": str(article_path),
         "url": item["url"],
         "cover": item["cover"],

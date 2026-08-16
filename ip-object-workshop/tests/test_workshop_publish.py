@@ -156,12 +156,12 @@ class WorkshopPublishTests(unittest.TestCase):
 
         article = self.tmp / "updates" / "2026-07-15-hero-only-degraded-release.html"
         article_text = article.read_text(encoding="utf-8")
-        self.assertEqual(result["status"], "degraded_success")
+        self.assertEqual(result["status"], "partial_media_published")
         self.assertEqual(result["missingRoles"], ["02-core-explanation", "04-social-promotion"])
         self.assertNotIn("update-gallery", article_text)
         self.assertNotIn("04-social-promotion", article_text)
 
-    def test_publish_manifest_rejects_missing_hero_role(self):
+    def test_publish_manifest_allows_missing_hero_role_under_text_first_policy(self):
         manifest = {
             "date": "2026-07-15",
             "type": "图文",
@@ -188,8 +188,8 @@ class WorkshopPublishTests(unittest.TestCase):
         manifest_path.write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
         self.addCleanup(lambda: manifest_path.unlink(missing_ok=True))
 
-        with self.assertRaisesRegex(ValueError, "网站必需主图"):
-            publish_manifest(self.tmp, manifest_path)
+        result = publish_manifest(self.tmp, manifest_path)
+        self.assertEqual("partial_media_published", result["status"])
 
     def test_publish_manifest_rejects_sections_with_headings_but_no_visible_content(self):
         headings = [
