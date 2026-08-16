@@ -140,6 +140,7 @@ def release(repo: Path, manifest_path: Path, verify_only: bool = False) -> dict:
     allowlist = [
         "ip-object-workshop/course-calendar.json",
         "ip-object-workshop/course-updates.js",
+        "ip-object-workshop/index.html",
         article_rel,
         f"ip-object-workshop/assets/updates/{date}",
     ]
@@ -148,6 +149,7 @@ def release(repo: Path, manifest_path: Path, verify_only: bool = False) -> dict:
     allowed_prefixes = (
         "ip-object-workshop/course-calendar.json",
         "ip-object-workshop/course-updates.js",
+        "ip-object-workshop/index.html",
         article_rel,
         f"ip-object-workshop/assets/updates/{date}/",
     )

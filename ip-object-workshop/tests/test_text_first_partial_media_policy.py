@@ -25,6 +25,7 @@ class TextFirstPartialMediaPublisherTests(unittest.TestCase):
             (self.tmp / directory).mkdir()
         (self.tmp / "course.css").write_text("body{}", encoding="utf-8")
         (self.tmp / "update-article.css").write_text("body{}", encoding="utf-8")
+        (self.tmp / "index.html").write_text('<script src="./course-updates.js?v=old"></script>', encoding="utf-8")
         calendar = [{"date": self.DATE, "status": "planned", "published": False, "url": ""}]
         (self.tmp / "course-calendar.json").write_text(json.dumps(calendar), encoding="utf-8")
         self.source = self.tmp / "03-real-application.png"
@@ -57,6 +58,7 @@ class TextFirstPartialMediaPublisherTests(unittest.TestCase):
         self.assertEqual(f"workshop:{self.DATE}", calendar["source_id"])
         self.assertEqual([], calendar["passedRoles"])
         self.assertEqual(self.manifest()["missingRoles"], calendar["pendingRoles"])
+        self.assertNotIn("course-updates.js?v=old", (self.tmp / "index.html").read_text(encoding="utf-8"))
 
     def test_v4_partial_derives_only_passed_role_with_strict_receipts(self):
         manifest = self.manifest()

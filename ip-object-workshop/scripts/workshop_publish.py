@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import fcntl
+import hashlib
 import html
 import json
 import re
@@ -297,7 +298,21 @@ def _publish_manifest_locked(root: Path | str, manifest_path: Path | str) -> dic
         item.pop("coverImage", None)
     item.update(calendar_update)
     write_json(calendar_path, calendar)
-    (root / "course-updates.js").write_text(build_updates_js(calendar), encoding="utf-8")
+    updates_payload = build_updates_js(calendar)
+    (root / "course-updates.js").write_text(updates_payload, encoding="utf-8")
+    index_path = root / "index.html"
+    if index_path.is_file():
+        index = index_path.read_text(encoding="utf-8")
+        version = hashlib.sha256(updates_payload.encode("utf-8")).hexdigest()[:16]
+        updated_index, count = re.subn(
+            r'course-updates\.js\?v=[^"\']+',
+            f'course-updates.js?v={version}',
+            index,
+            count=1,
+        )
+        if count != 1:
+            raise ValueError("首页course-updates脚本标签缺失或不唯一")
+        index_path.write_text(updated_index, encoding="utf-8")
 
     errors = validate_public_tree(root)
     if errors:
