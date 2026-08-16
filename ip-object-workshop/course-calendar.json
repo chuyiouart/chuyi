@@ -448,7 +448,8 @@
       "fallback": "./assets/updates/2026-08-16/01-website-hero-fallback.png?v=f0501c874506",
       "width": 960,
       "height": 540
-    }
+    },
+    "source_id": "workshop:2026-08-16"
   },
   {
     "date": "2026-08-17",
