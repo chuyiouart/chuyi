@@ -267,6 +267,7 @@ def _publish_manifest_locked(root: Path | str, manifest_path: Path | str) -> dic
     )
 
     calendar_update: dict[str, Any] = {
+            "source_id": f"workshop:{manifest['date']}",
             "title": manifest["title"],
             "summary": manifest["summary"],
             "cover": f"./assets/updates/{manifest['date']}/{hero_source.name}" if hero_source else "",

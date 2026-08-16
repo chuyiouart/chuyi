@@ -54,6 +54,7 @@ class TextFirstPartialMediaPublisherTests(unittest.TestCase):
         self.assertNotIn("<figure", article)
         calendar = json.loads((self.tmp / "course-calendar.json").read_text(encoding="utf-8"))[0]
         self.assertEqual("none", calendar["media_status"])
+        self.assertEqual(f"workshop:{self.DATE}", calendar["source_id"])
         self.assertEqual([], calendar["passedRoles"])
         self.assertEqual(self.manifest()["missingRoles"], calendar["pendingRoles"])
 
