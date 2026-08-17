@@ -456,11 +456,20 @@ window.WORKSHOP_UPDATES = [
     "type": "图文",
     "title": "Day 3 到底做什么：把 STL 变成真实灰模",
     "time": "11:30",
-    "summary": "进入 Day 3：切片、打印、灰模处理、色彩和基础涂装。",
-    "cover": "./assets/workshop-modeling.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用切片冻结、首轮打印、灰模检查、问题分类与 Gate 3 记录，说明数字文件怎样形成可测量的实体证据，再决定局部修正、降级或进入色彩测试。",
+    "cover": "",
+    "published": true,
+    "url": "./updates/2026-08-17-day-3-turn-stl-into-verifiable-gray-model.html",
+    "status": "published",
+    "source_id": "workshop:2026-08-17",
+    "media_status": "none",
+    "passedRoles": [],
+    "pendingRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ]
   },
   {
     "date": "2026-08-18",
