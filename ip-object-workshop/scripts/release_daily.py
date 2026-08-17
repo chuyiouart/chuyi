@@ -77,7 +77,7 @@ def is_expected_remote(remote: str) -> bool:
     )
 
 
-def verify_repo(repo: Path, workshop: Path) -> None:
+def verify_repo(repo: Path, workshop: Path, *, allow_dirty: bool = False) -> list[str]:
     if not (repo / ".git").exists():
         raise RuntimeError(f"not a git checkout: {repo}")
     if not (workshop / "scripts" / "workshop_publish.py").exists():
@@ -88,9 +88,10 @@ def verify_repo(repo: Path, workshop: Path) -> None:
     branch = git(repo, "branch", "--show-current").stdout.strip()
     if branch != "main":
         raise RuntimeError(f"expected main branch, got: {branch}")
-    dirty = git(repo, "status", "--porcelain", "--", "ip-object-workshop").stdout.strip()
-    if dirty:
+    dirty = git(repo, "status", "--porcelain", "--", "ip-object-workshop").stdout.splitlines()
+    if dirty and not allow_dirty:
         raise RuntimeError(f"workshop tree is not clean before release:\n{dirty}")
+    return dirty
 
 
 def verify_live(url: str, expected_title: str, attempts: int = 18, delay: int = 10) -> None:
@@ -113,6 +114,57 @@ def article_url_from_manifest(manifest: dict) -> str:
     return f"{PUBLIC_BASE}updates/{manifest['date']}-{manifest['slug']}.html"
 
 
+def build_release_allowlist(repo: Path, manifest: dict, published: dict) -> list[str]:
+    """Return exact existing release files; never stage a directory by assumption."""
+    repo = repo.resolve()
+    workshop = repo / "ip-object-workshop"
+    article = Path(str(published.get("article") or "")).resolve()
+    paths = [
+        workshop / "course-calendar.json",
+        workshop / "course-updates.js",
+        workshop / "index.html",
+        article,
+    ]
+    asset_root = (workshop / "assets" / "updates" / str(manifest["date"])).resolve()
+    for asset in published.get("webImageAssets") or manifest.get("webImageAssets") or []:
+        rows = list(asset.get("derivatives") or [])
+        fallback = asset.get("fallback")
+        if isinstance(fallback, dict):
+            rows.append(fallback)
+        for row in rows:
+            path = Path(str(row.get("path") or "")).resolve()
+            try:
+                path.relative_to(asset_root)
+            except ValueError as exc:
+                raise RuntimeError(f"release asset escapes date allowlist: {path}") from exc
+            paths.append(path)
+    result: list[str] = []
+    for path in paths:
+        try:
+            relative = path.relative_to(repo).as_posix()
+        except ValueError as exc:
+            raise RuntimeError(f"release path escapes repository: {path}") from exc
+        if not path.is_file():
+            raise RuntimeError(f"release allowlist file is missing: {relative}")
+        if relative not in result:
+            result.append(relative)
+    return result
+
+
+def classify_checkpoint_dirty_paths(status_lines: list[str], allowlist: list[str]) -> list[str]:
+    """Accept only interrupted-release bytes already in the exact allowlist."""
+    allowed = set(allowlist)
+    observed: list[str] = []
+    for line in status_lines:
+        if len(line) < 4 or " -> " in line:
+            raise RuntimeError(f"unsupported dirty checkpoint status: {line}")
+        path = line[3:].strip()
+        if path not in allowed:
+            raise RuntimeError(f"unexpected dirty checkpoint path: {path}")
+        observed.append(path)
+    return observed
+
+
 def release(repo: Path, manifest_path: Path, verify_only: bool = False) -> dict:
     repo = repo.resolve()
     workshop = repo / "ip-object-workshop"
@@ -124,42 +176,43 @@ def release(repo: Path, manifest_path: Path, verify_only: bool = False) -> dict:
         verify_live(live_url, manifest["title"], attempts=2, delay=2)
         return {"status": "verified", "url": live_url, "title": manifest["title"]}
 
-    verify_repo(repo, workshop)
-    git_with_retry(repo, "pull", "--ff-only", "origin", "main")
+    dirty = verify_repo(repo, workshop, allow_dirty=True)
+    article_path = workshop / "updates" / f"{manifest['date']}-{manifest['slug']}.html"
+    checkpoint_published = {
+        "status": "partial_media_published" if manifest.get("missingRoles") else "published",
+        "missingRoles": manifest.get("missingRoles", []),
+        "media_status": manifest.get("media_status"),
+        "passedRoles": manifest.get("passedRoles", []),
+        "pendingRoles": manifest.get("pendingRoles", manifest.get("missingRoles", [])),
+        "article": str(article_path),
+        "webImageAssets": manifest.get("webImageAssets", []),
+    }
+    checkpoint_allowlist = build_release_allowlist(repo, manifest, checkpoint_published) if dirty else []
+    if dirty:
+        classify_checkpoint_dirty_paths(dirty, checkpoint_allowlist)
+        published = checkpoint_published
+        resumed_checkpoint = True
+    else:
+        git_with_retry(repo, "pull", "--ff-only", "origin", "main")
+        publisher = workshop / "scripts" / "workshop_publish.py"
+        result = run(
+            [sys.executable, str(publisher), "publish", "--root", str(workshop), "--manifest", str(manifest_path)],
+            repo,
+        )
+        published = json.loads(result.stdout)
+        run([sys.executable, str(publisher), "validate", "--root", str(workshop)], repo)
+        resumed_checkpoint = False
 
-    publisher = workshop / "scripts" / "workshop_publish.py"
-    result = run(
-        [sys.executable, str(publisher), "publish", "--root", str(workshop), "--manifest", str(manifest_path)],
-        repo,
-    )
-    published = json.loads(result.stdout)
-    run([sys.executable, str(publisher), "validate", "--root", str(workshop)], repo)
-
-    article_rel = Path(published["article"]).resolve().relative_to(repo).as_posix()
-    date = manifest["date"]
-    allowlist = [
-        "ip-object-workshop/course-calendar.json",
-        "ip-object-workshop/course-updates.js",
-        "ip-object-workshop/index.html",
-        article_rel,
-        f"ip-object-workshop/assets/updates/{date}",
-    ]
+    allowlist = build_release_allowlist(repo, manifest, published)
     git(repo, "add", "--", *allowlist)
     staged = git(repo, "diff", "--cached", "--name-only", "--", "ip-object-workshop").stdout.splitlines()
-    allowed_prefixes = (
-        "ip-object-workshop/course-calendar.json",
-        "ip-object-workshop/course-updates.js",
-        "ip-object-workshop/index.html",
-        article_rel,
-        f"ip-object-workshop/assets/updates/{date}/",
-    )
-    unexpected = [path for path in staged if not path.startswith(allowed_prefixes)]
+    unexpected = [path for path in staged if path not in set(allowlist)]
     if unexpected:
         git(repo, "reset", "--", *staged)
         raise RuntimeError(f"unexpected staged paths: {unexpected}")
 
     if staged:
-        git(repo, "commit", "-m", f"content: publish workshop update {date}")
+        git(repo, "commit", "-m", f"content: publish workshop update {manifest['date']}")
         git_with_retry(repo, "push", "origin", "main")
     verify_live(live_url, manifest["title"])
     commit = git(repo, "rev-parse", "HEAD").stdout.strip()
@@ -174,6 +227,7 @@ def release(repo: Path, manifest_path: Path, verify_only: bool = False) -> dict:
         "title": manifest["title"],
         "commit": commit,
         "staged_paths": staged,
+        "resumed_checkpoint": resumed_checkpoint,
     }
 
 
