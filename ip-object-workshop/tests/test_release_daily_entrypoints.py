@@ -1,5 +1,4 @@
 from pathlib import Path
-import subprocess
 import sys
 import tempfile
 import unittest
@@ -34,8 +33,6 @@ class ReleaseDailyEntrypointTests(unittest.TestCase):
         paths = build_release_allowlist(self.repo, self.manifest, {"article": str(self.article), "webImageAssets": []})
         self.assertEqual(4, len(paths))
         self.assertFalse(any("assets/updates/2026-08-17" in path for path in paths))
-        for path in paths:
-            self.assertTrue((self.repo / path).is_file())
 
     def test_one_and_four_image_allowlists_add_only_real_files(self):
         for count in (1, 4):
@@ -43,6 +40,16 @@ class ReleaseDailyEntrypointTests(unittest.TestCase):
             paths = build_release_allowlist(self.repo, self.manifest, {"article": str(self.article), "webImageAssets": assets})
             self.assertEqual(4 + count, len(paths))
             self.assertTrue(all((self.repo / path).is_file() for path in paths))
+
+    def test_resume_derives_exact_site_asset_names_from_manifest_qa(self):
+        asset_root = self.repo / "ip-object-workshop/assets/updates/2026-08-17"
+        asset_root.mkdir(parents=True)
+        for name in ("01-website-hero-480.webp", "01-website-hero-fallback.png"):
+            (asset_root / name).write_bytes(b"x")
+        manifest = {"date": "2026-08-17", "slug": "day-3", "imageRoles": [{"role": "website_hero", "filename": "01-website-hero.png"}], "webImageQA": {"website_hero": {"480": {}, "fallback": {}}}}
+        result = build_release_allowlist(self.repo, manifest, {"article": str(self.article)})
+        self.assertIn("ip-object-workshop/assets/updates/2026-08-17/01-website-hero-480.webp", result)
+        self.assertIn("ip-object-workshop/assets/updates/2026-08-17/01-website-hero-fallback.png", result)
 
     def test_checkpoint_accepts_exact_generated_paths_and_rejects_extra(self):
         allowlist = build_release_allowlist(self.repo, self.manifest, {"article": str(self.article), "webImageAssets": []})

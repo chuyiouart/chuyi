@@ -126,7 +126,8 @@ def build_release_allowlist(repo: Path, manifest: dict, published: dict) -> list
         article,
     ]
     asset_root = (workshop / "assets" / "updates" / str(manifest["date"])).resolve()
-    for asset in published.get("webImageAssets") or manifest.get("webImageAssets") or []:
+    assets = published.get("webImageAssets") or manifest.get("webImageAssets") or []
+    for asset in assets:
         rows = list(asset.get("derivatives") or [])
         fallback = asset.get("fallback")
         if isinstance(fallback, dict):
@@ -138,6 +139,20 @@ def build_release_allowlist(repo: Path, manifest: dict, published: dict) -> list
             except ValueError as exc:
                 raise RuntimeError(f"release asset escapes date allowlist: {path}") from exc
             paths.append(path)
+    if not assets:
+        qa = manifest.get("webImageQA") if isinstance(manifest.get("webImageQA"), dict) else {}
+        for role in manifest.get("imageRoles") or []:
+            role_name = str(role.get("role") or "")
+            filename = str(role.get("filename") or "")
+            receipts = qa.get(role_name) if isinstance(qa.get(role_name), dict) else {}
+            stem = Path(filename).stem
+            if not role_name or not stem or not receipts:
+                continue
+            for key in receipts:
+                if key == "fallback":
+                    paths.append(asset_root / f"{stem}-fallback.png")
+                elif str(key).isdigit():
+                    paths.append(asset_root / f"{stem}-{key}.webp")
     result: list[str] = []
     for path in paths:
         try:
