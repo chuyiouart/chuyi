@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 122552,
+      "format": "webp",
+      "height": 716,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-17-concourse-birds-grouping-480.webp",
+      "quality": 84,
+      "sha256": "6d24c2fa669d6fe31cacdf89c594ea1b47cc2d713cbbddd9fd6adb6fecdf3736",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 303694,
+      "format": "webp",
+      "height": 1146,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-17-concourse-birds-grouping-768.webp",
+      "quality": 84,
+      "sha256": "eb47980275d57d53596863b9e620eef304eca10553f2c86aba6c95997b47efb5",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 792756,
+      "format": "webp",
+      "height": 1910,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-17-concourse-birds-grouping-1280.webp",
+      "quality": 84,
+      "sha256": "85540830173eab2a5f37b44f8cbea9932e1d322b6aa9977934dd090ab65c97be",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 910233,
+    "format": "jpeg",
+    "height": 1910,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-08-17-concourse-birds-grouping-fallback.jpg",
+    "quality": 78,
+    "sha256": "84a95b79d17d98ebb95ebb4c35c040a2eaa2a925bbfa123dd3af93196b6b07f3",
+    "width": 1280
+  },
+  "original_bytes": 4516122,
+  "original_height": 3876,
+  "original_path": "assets/daily/2026-08-17-concourse-birds-grouping.jpg",
+  "original_sha256": "cdd5f018b0deb28ee41ed46ffc988a15764dfba56d4db9fd9c370129b3b5f9bd",
+  "original_url": "https://images.metmuseum.org/CRDImages/is/original/DP234083.jpg",
+  "original_width": 2597,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-08-17-concourse-birds-grouping-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-08-17-concourse-birds-grouping-480.webp?v=6d24c2fa669d 480w, 2026-08-17-concourse-birds-grouping-768.webp?v=eb47980275d5 768w, 2026-08-17-concourse-birds-grouping-1280.webp?v=85540830173e 1280w"
+}

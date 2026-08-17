@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-17",
+  "agent_prompt": "Asset 480:\nYou are performing fail-closed visual QA for the 2026-08-17 OUART Daily Art museum image. Inspect this exact 480 WebP as if scaled to a mobile viewport. Determine whether the principal subject (the central gathering of birds within the illustrated manuscript page) remains clear and readable, and whether there are any visible compression or scaling artifacts. Do not infer from dimensions or metadata. Reply with exactly two lines: vision_mobile_readable=true or false; artifacts=false or true. Add no other text.\n\nAsset 768:\nYou are performing fail-closed visual QA for the 2026-08-17 OUART Daily Art museum image. Inspect this exact 768 WebP as if scaled to a mobile viewport. Determine whether the principal subject (the central gathering of birds within the illustrated manuscript page) remains clear and readable, and whether there are any visible compression or scaling artifacts. Do not infer from dimensions or metadata. Reply with exactly two lines: vision_mobile_readable=true or false; artifacts=false or true. Add no other text.\n\nAsset 1280:\nYou are performing fail-closed visual QA for the 2026-08-17 OUART Daily Art museum image. Inspect this exact 1280 WebP as if scaled to a mobile viewport. Determine whether the principal subject (the central gathering of birds within the illustrated manuscript page) remains clear and readable, and whether there are any visible compression or scaling artifacts. Do not infer from dimensions or metadata. Reply with exactly two lines: vision_mobile_readable=true or false; artifacts=false or true. Add no other text.\n\nAsset fallback:\nYou are performing fail-closed visual QA for the 2026-08-17 OUART Daily Art museum image. Inspect this exact fallback JPEG as if scaled to a mobile viewport. Determine whether the principal subject (the central gathering of birds within the illustrated manuscript page) remains clear and readable, and whether there are any visible compression or scaling artifacts. Do not infer from dimensions or metadata. Reply with exactly two lines: vision_mobile_readable=true or false; artifacts=false or true. Add no other text.",
+  "agent_prompt_sha256": "3918a0b246db2241e0f84c249e6856179b41667629e5c1d4794ecc3f9190d459",
+  "agent_output": "Asset 480:\nvision_mobile_readable=true\nartifacts=false\n\nAsset 768:\nvision_mobile_readable=true\nartifacts=false\n\nAsset 1280:\nvision_mobile_readable=true\nartifacts=false\n\nAsset fallback:\nvision_mobile_readable=true\nartifacts=false",
+  "agent_output_sha256": "860a70ed26ca565c24cce5d76278b2babefda3f89f9b68d76a7ac31ee9e49e15",
+  "results": {
+    "480": {
+      "image_sha256": "6d24c2fa669d6fe31cacdf89c594ea1b47cc2d713cbbddd9fd6adb6fecdf3736",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "eb47980275d57d53596863b9e620eef304eca10553f2c86aba6c95997b47efb5",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "85540830173eab2a5f37b44f8cbea9932e1d322b6aa9977934dd090ab65c97be",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "84a95b79d17d98ebb95ebb4c35c040a2eaa2a925bbfa123dd3af93196b6b07f3",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
