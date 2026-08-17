@@ -88,7 +88,7 @@ def verify_repo(repo: Path, workshop: Path, *, allow_dirty: bool = False) -> lis
     branch = git(repo, "branch", "--show-current").stdout.strip()
     if branch != "main":
         raise RuntimeError(f"expected main branch, got: {branch}")
-    dirty = git(repo, "status", "--porcelain", "--", "ip-object-workshop").stdout.splitlines()
+    dirty = git(repo, "status", "--porcelain", "-uall", "--", "ip-object-workshop").stdout.splitlines()
     if dirty and not allow_dirty:
         raise RuntimeError(f"workshop tree is not clean before release:\n{dirty}")
     return dirty
