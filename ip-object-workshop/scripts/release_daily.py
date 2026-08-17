@@ -114,7 +114,7 @@ def article_url_from_manifest(manifest: dict) -> str:
     return f"{PUBLIC_BASE}updates/{manifest['date']}-{manifest['slug']}.html"
 
 
-def build_release_allowlist(repo: Path, manifest: dict, published: dict) -> list[str]:
+def build_release_allowlist(repo: Path, manifest: dict, published: dict, *, require_existing: bool = True) -> list[str]:
     """Return exact existing release files; never stage a directory by assumption."""
     repo = repo.resolve()
     workshop = repo / "ip-object-workshop"
@@ -159,7 +159,7 @@ def build_release_allowlist(repo: Path, manifest: dict, published: dict) -> list
             relative = path.relative_to(repo).as_posix()
         except ValueError as exc:
             raise RuntimeError(f"release path escapes repository: {path}") from exc
-        if not path.is_file():
+        if require_existing and not path.is_file():
             raise RuntimeError(f"release allowlist file is missing: {relative}")
         if relative not in result:
             result.append(relative)
@@ -202,21 +202,21 @@ def release(repo: Path, manifest_path: Path, verify_only: bool = False) -> dict:
         "article": str(article_path),
         "webImageAssets": manifest.get("webImageAssets", []),
     }
-    checkpoint_allowlist = build_release_allowlist(repo, manifest, checkpoint_published) if dirty else []
+    checkpoint_allowlist = build_release_allowlist(repo, manifest, checkpoint_published, require_existing=False) if dirty else []
     if dirty:
         classify_checkpoint_dirty_paths(dirty, checkpoint_allowlist)
-        published = checkpoint_published
         resumed_checkpoint = True
     else:
         git_with_retry(repo, "pull", "--ff-only", "origin", "main")
-        publisher = workshop / "scripts" / "workshop_publish.py"
-        result = run(
-            [sys.executable, str(publisher), "publish", "--root", str(workshop), "--manifest", str(manifest_path)],
-            repo,
-        )
-        published = json.loads(result.stdout)
-        run([sys.executable, str(publisher), "validate", "--root", str(workshop)], repo)
         resumed_checkpoint = False
+
+    publisher = workshop / "scripts" / "workshop_publish.py"
+    result = run(
+        [sys.executable, str(publisher), "publish", "--root", str(workshop), "--manifest", str(manifest_path)],
+        cwd=repo,
+    )
+    published = json.loads(result.stdout)
+    run([sys.executable, str(publisher), "validate", "--root", str(workshop)], cwd=repo)
 
     allowlist = build_release_allowlist(repo, manifest, published)
     git(repo, "add", "--", *allowlist)
