@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-21",
+  "agent_prompt": "You are the responsive-image Vision QA agent. Inspect the attached museum artwork asset by actually viewing its pixels and mentally scaling it to a narrow mobile viewport. Determine only: (1) whether the central artwork subject remains clear and visually readable at mobile size, and (2) whether there are visible compression, resampling, banding, blocking, ringing, tearing, corruption, or other scaling artifacts. This is a museum image with no GPT-generated text, so OCR exact match must be the literal string \"N/A\" and must not be inferred as true. Return concise JSON only with keys vision_mobile_readable (boolean), artifacts (boolean), ocr_exact_match (string), and notes (string). Pass only if readable is true and artifacts is false.",
+  "agent_prompt_sha256": "ca6f6a934c22105a6020c525b943b389af07b77ca081c1274628955438b90761",
+  "agent_output": "480:\n{\"vision_mobile_readable\":true,\"artifacts\":false,\"ocr_exact_match\":\"N/A\",\"notes\":\"The centered ivory mask, facial features, crown figures, and lower openwork remain clear at narrow mobile scale; no visible compression or resampling defects.\"}\n\n768:\n{\"vision_mobile_readable\":true,\"artifacts\":false,\"ocr_exact_match\":\"N/A\",\"notes\":\"The full mask remains sharply readable with intact fine bead-like texture and edge ornament; no banding, blocking, ringing, tearing, or corruption is visible.\"}\n\n1280:\n{\"vision_mobile_readable\":true,\"artifacts\":false,\"ocr_exact_match\":\"N/A\",\"notes\":\"The mask subject and fine carved surface details are clear and scale cleanly to mobile viewing; no visible compression or scaling artifacts.\"}\n\nfallback:\n{\"vision_mobile_readable\":true,\"artifacts\":false,\"ocr_exact_match\":\"N/A\",\"notes\":\"The complete centered mask remains clear at mobile size, with natural detail and smooth background gradients; no visible artifacts or corruption.\"}",
+  "agent_output_sha256": "0b349de28e51adde46d79af6dd7cc6283890a725892684df28cdd93cf43e1a52",
+  "results": {
+    "480": {"image_sha256": "dfd8fb7ea83a2b8dfa6074336b0aa40951437d10c1143923265e2db13324d114", "ocr_exact_match": "N/A", "vision_mobile_readable": true, "artifacts": false},
+    "768": {"image_sha256": "9e28932e07a090dae1f9ce3720112561850d042c84c76172fdf0b821775bf508", "ocr_exact_match": "N/A", "vision_mobile_readable": true, "artifacts": false},
+    "1280": {"image_sha256": "7a3538ef03dbced3c516e886d75305b7b8d6b4cb118edab7f80b8904dd8f6af3", "ocr_exact_match": "N/A", "vision_mobile_readable": true, "artifacts": false},
+    "fallback": {"image_sha256": "df505693f3be8b321067db5a474524c032f0cb17b7a58e1de7c30687d1eb5e43", "ocr_exact_match": "N/A", "vision_mobile_readable": true, "artifacts": false}
+  }
+}

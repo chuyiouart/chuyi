@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 31238,
+      "format": "webp",
+      "height": 647,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-21-idia-mask-bead-rhythm-480.webp",
+      "quality": 84,
+      "sha256": "dfd8fb7ea83a2b8dfa6074336b0aa40951437d10c1143923265e2db13324d114",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 69560,
+      "format": "webp",
+      "height": 1036,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-21-idia-mask-bead-rhythm-768.webp",
+      "quality": 84,
+      "sha256": "9e28932e07a090dae1f9ce3720112561850d042c84c76172fdf0b821775bf508",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 152894,
+      "format": "webp",
+      "height": 1726,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-21-idia-mask-bead-rhythm-1280.webp",
+      "quality": 84,
+      "sha256": "7a3538ef03dbced3c516e886d75305b7b8d6b4cb118edab7f80b8904dd8f6af3",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 271362,
+    "format": "jpeg",
+    "height": 1726,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-08-21-idia-mask-bead-rhythm-fallback.jpg",
+    "quality": 84,
+    "sha256": "df505693f3be8b321067db5a474524c032f0cb17b7a58e1de7c30687d1eb5e43",
+    "width": 1280
+  },
+  "original_bytes": 1564771,
+  "original_height": 2000,
+  "original_path": "assets/daily/2026-08-21-idia-mask-bead-rhythm.jpg",
+  "original_sha256": "a32719c8a26c28c27d5052e3e54e73e595066252bcba64b3c3612c84cb45381d",
+  "original_url": "https://images.metmuseum.org/CRDImages/ao/original/DP231460.jpg",
+  "original_width": 1483,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-08-21-idia-mask-bead-rhythm-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-08-21-idia-mask-bead-rhythm-480.webp?v=dfd8fb7ea83a 480w, 2026-08-21-idia-mask-bead-rhythm-768.webp?v=9e28932e07a0 768w, 2026-08-21-idia-mask-bead-rhythm-1280.webp?v=7a3538ef03db 1280w"
+}
