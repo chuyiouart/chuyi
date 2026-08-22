@@ -527,11 +527,27 @@
     "type": "视频",
     "title": "从打印件到可展示灰模：后处理完整过程",
     "time": "18:00",
-    "summary": "进入 Day 3：切片、打印、灰模处理、色彩和基础涂装。",
-    "cover": "./assets/workshop-modeling.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "把取件后的树脂打印件按清洗固化、拆撑、缺陷分级、打磨修补、装配校正和侧光复核推进为可检查、可展示并能进入 Gate 3 判断的灰模。",
+    "cover": "./assets/updates/2026-08-22/01-website-hero-fallback.png?v=8eeb0a6b54b2",
+    "published": true,
+    "url": "./updates/2026-08-22-printed-part-to-display-ready-gray-model-post-processing.html",
+    "status": "published",
+    "source_id": "workshop:2026-08-22",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-08-22/01-website-hero-480.webp?v=08a27f7d4086 480w, ./assets/updates/2026-08-22/01-website-hero-768.webp?v=e09348f905cb 768w, ./assets/updates/2026-08-22/01-website-hero-1280.webp?v=8f472dc75d7d 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-08-22/01-website-hero-fallback.png?v=8eeb0a6b54b2",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-08-23",
