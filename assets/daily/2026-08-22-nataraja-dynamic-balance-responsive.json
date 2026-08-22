@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 38408,
+      "format": "webp",
+      "height": 640,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-22-nataraja-dynamic-balance-480.webp",
+      "quality": 84,
+      "sha256": "e7577b43da390e2c0b9b2698b033f3cdc0300bf20e55fc84def3d791304cc2ac",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 85768,
+      "format": "webp",
+      "height": 1024,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-22-nataraja-dynamic-balance-768.webp",
+      "quality": 84,
+      "sha256": "459103b5e3aa08b53cb688917c53cdbdf3e625d0cdb533682d0fc3a61fbdbb14",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 206982,
+      "format": "webp",
+      "height": 1706,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-22-nataraja-dynamic-balance-1280.webp",
+      "quality": 84,
+      "sha256": "abb648a465efc5f36762070378625968d1dd2fb862a67ea2bbe47f8cecc8d8a8",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 361927,
+    "format": "jpeg",
+    "height": 1706,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-08-22-nataraja-dynamic-balance-fallback.jpg",
+    "quality": 84,
+    "sha256": "7468ff74d767c29bb6f2f7ea21e4914c51add6eaa97e0012bac28c0d499d8947",
+    "width": 1280
+  },
+  "original_bytes": 1972990,
+  "original_height": 3722,
+  "original_path": "assets/daily/2026-08-22-nataraja-dynamic-balance.jpg",
+  "original_sha256": "b9bb904bb36f44743451d360e138700d8b9eb849f3c63e41f2a518405c259df7",
+  "original_url": "https://images.metmuseum.org/CRDImages/as/original/DT240.jpg",
+  "original_width": 2792,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-08-22-nataraja-dynamic-balance-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-08-22-nataraja-dynamic-balance-480.webp?v=e7577b43da39 480w, 2026-08-22-nataraja-dynamic-balance-768.webp?v=459103b5e3aa 768w, 2026-08-22-nataraja-dynamic-balance-1280.webp?v=abb648a465ef 1280w"
+}
