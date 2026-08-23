@@ -1,0 +1,34 @@
+{
+  "agent_output": "VISION_QA_PASS\n\n480: PASS。移动端等比显示时，完整深绿色人形坠主体清楚，外轮廓连续；两枚明亮贝壳眼圈及深色眼心可辨。双臂与躯干之间的左右狭长孔洞、下部两个横向孔洞均可分辨。未见明显压缩块、振铃、条带、异常模糊、拉伸或裁切；细小表面纹理较高分辨率版本有所简化，但不影响主体和结构阅读。OCR exact match: N/A。\n\n768: PASS。主体、头身连接和弯曲四肢清楚；眼部贝壳镶嵌的亮暗边界、左右臂内负形以及下部成对孔洞均明确。背景渐变平顺，边缘自然，未见明显压缩块、振铃、条带、异常模糊、拉伸、裁切或其他缩放伪影。OCR exact match: N/A。\n\n1280: PASS。完整主体在灰色背景上清晰可读，绿石表面的高光、天然色差与局部细线可见；两眼镶嵌、臂内孔洞和下部横孔边界清楚。未见明显压缩块、振铃、条带、异常模糊、拉伸或裁切，移动端缩放后结构仍可辨。OCR exact match: N/A。\n\nfallback: PASS。完整主体、贝壳眼圈、双臂、躯干及四处主要负形均清楚；灰色背景和投影过渡平稳。未见明显 JPEG 块状、振铃、条带、异常模糊、比例拉伸、裁切或其他可见伪影，适合移动端等比显示。OCR exact match: N/A。",
+  "agent_output_sha256": "b2f44db2d33a85400a01c604578832f9384fe6ca27d04f2543960991571fe526",
+  "agent_prompt": "你是本次 OUART 每日一画响应式资产 Vision QA Agent。请真实检查当前提供的 2026-08-23 毛利绿石人形坠馆藏图像，并按移动端等比缩放显示场景评估：主体是否清楚可读；轮廓、眼部贝壳镶嵌、双臂与躯干间孔洞、下部两个横向孔洞是否仍可辨；是否存在明显压缩块、振铃、条带、异常模糊、拉伸、裁切或其他缩放/压缩伪影。馆藏图无 GPT 生成文字，因此 OCR exact 必须记为字符串 N/A，不得判断为 true。请只依据实际图像像素，给出明确 pass/fail 和客观观察；不要以尺寸、文件解码或元数据代替视觉判断。本提示将原文写入 QA receipt。",
+  "agent_prompt_sha256": "237b04b5311bb026a3e2f1a2c7eabd6544f7e35a784dd32451f26d43dc1e8fe6",
+  "date": "2026-08-23",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "aeb6045790b55759f83c4cac39b24ea31bc36552aa060eaa2a1c34077fdd99f2",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "52ee8808ccb113fb2840b36aa7ee47c9d2d47784c3314e8181e7ef9fd81d6568",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "87acc5f0e10488915dd97b805aebf8cb56ebf5536e4cbf1f8419c09a87b9056c",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "07b120cde86aa426d109fd630660a3b8fb868c974214a751861e434a0fb562f8",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}

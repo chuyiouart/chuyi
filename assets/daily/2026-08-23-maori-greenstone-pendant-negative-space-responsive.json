@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 19412,
+      "format": "webp",
+      "height": 640,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-23-maori-greenstone-pendant-negative-space-480.webp",
+      "quality": 84,
+      "sha256": "52ee8808ccb113fb2840b36aa7ee47c9d2d47784c3314e8181e7ef9fd81d6568",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 35626,
+      "format": "webp",
+      "height": 1024,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-23-maori-greenstone-pendant-negative-space-768.webp",
+      "quality": 84,
+      "sha256": "87acc5f0e10488915dd97b805aebf8cb56ebf5536e4cbf1f8419c09a87b9056c",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 77264,
+      "format": "webp",
+      "height": 1707,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-23-maori-greenstone-pendant-negative-space-1280.webp",
+      "quality": 84,
+      "sha256": "aeb6045790b55759f83c4cac39b24ea31bc36552aa060eaa2a1c34077fdd99f2",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 174116,
+    "format": "jpeg",
+    "height": 1707,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-08-23-maori-greenstone-pendant-negative-space-fallback.jpg",
+    "quality": 84,
+    "sha256": "07b120cde86aa426d109fd630660a3b8fb868c974214a751861e434a0fb562f8",
+    "width": 1280
+  },
+  "original_bytes": 1283917,
+  "original_height": 4000,
+  "original_path": "assets/daily/2026-08-23-maori-greenstone-pendant-negative-space.jpg",
+  "original_sha256": "5650f91f729cee52790fdeaa91fbaf779c4feb5add3006ca214f127e2a4c065d",
+  "original_url": "https://images.metmuseum.org/CRDImages/as/original/DP-24136-001.jpg",
+  "original_width": 3000,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-08-23-maori-greenstone-pendant-negative-space-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-08-23-maori-greenstone-pendant-negative-space-480.webp?v=52ee8808ccb1 480w, 2026-08-23-maori-greenstone-pendant-negative-space-768.webp?v=87acc5f0e104 768w, 2026-08-23-maori-greenstone-pendant-negative-space-1280.webp?v=aeb6045790b5 1280w"
+}
