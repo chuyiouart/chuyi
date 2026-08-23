@@ -554,11 +554,27 @@ window.WORKSHOP_UPDATES = [
     "type": "直播",
     "title": "灰模到基础涂装，现场完成一个重点局部",
     "time": "20:00",
-    "summary": "进入 Day 3：切片、打印、灰模处理、色彩和基础涂装。",
-    "cover": "./assets/workshop-printing-v2.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用同底材样片、三阶明度、三种涂层层序、曲面遮盖和双光源读回，把灰模上的一个高识别局部验证为可交接 Day 4 的涂装依据。",
+    "cover": "./assets/updates/2026-08-23/01-website-hero-fallback.png?v=72ebe60b8439",
+    "published": true,
+    "url": "./updates/2026-08-23-gray-model-to-basic-paint-validate-one-focal-area.html",
+    "status": "published",
+    "source_id": "workshop:2026-08-23",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-08-23/01-website-hero-480.webp?v=534ce4f9a8a3 480w, ./assets/updates/2026-08-23/01-website-hero-768.webp?v=6e1486ec23c0 768w, ./assets/updates/2026-08-23/01-website-hero-1280.webp?v=bda4543e39f7 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-08-23/01-website-hero-fallback.png?v=72ebe60b8439",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-08-24",
