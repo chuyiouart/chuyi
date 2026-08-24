@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 55832,
+      "format": "webp",
+      "height": 640,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-24-thai-manuscript-cabinet-gold-silhouette-480.webp",
+      "quality": 84,
+      "sha256": "3c9787cdb4bc0492b84dd1ba60d4f742a6280e1652138610eecca2ade9366f2f",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 136456,
+      "format": "webp",
+      "height": 1024,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-24-thai-manuscript-cabinet-gold-silhouette-768.webp",
+      "quality": 84,
+      "sha256": "bf5b26da3c23edb664cc1a1b249ef8c631fb1a07fddefb962f9765f9e2e1cf38",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 357868,
+      "format": "webp",
+      "height": 1706,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-24-thai-manuscript-cabinet-gold-silhouette-1280.webp",
+      "quality": 84,
+      "sha256": "db6b83ea2eb1dc41ea0454f5f795229531819bdee0f759498db168c75a53d2b3",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 524160,
+    "format": "jpeg",
+    "height": 1706,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-08-24-thai-manuscript-cabinet-gold-silhouette-fallback.jpg",
+    "quality": 84,
+    "sha256": "041a5f00a3f5738fee9aa3443d65ed10739740b5366dd0326913312e022d82c9",
+    "width": 1280
+  },
+  "original_bytes": 2871818,
+  "original_height": 3880,
+  "original_path": "assets/daily/2026-08-24-thai-manuscript-cabinet-gold-silhouette.jpg",
+  "original_sha256": "57fcadd2bd27c265da7e7b7371c4856ce2663fe1205bb96e2928a9316fa5c450",
+  "original_url": "https://images.metmuseum.org/CRDImages/as/original/DP369866.jpg",
+  "original_width": 2911,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-08-24-thai-manuscript-cabinet-gold-silhouette-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-08-24-thai-manuscript-cabinet-gold-silhouette-480.webp?v=3c9787cdb4bc 480w, 2026-08-24-thai-manuscript-cabinet-gold-silhouette-768.webp?v=bf5b26da3c23 768w, 2026-08-24-thai-manuscript-cabinet-gold-silhouette-1280.webp?v=db6b83ea2eb1 1280w"
+}

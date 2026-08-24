@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-24",
+  "agent_prompt": "Inspect the attached responsive asset as it would appear scaled to a mobile viewport. This is a museum collection photograph with no GPT-generated text, so OCR exact match is N/A. Determine from the actual pixels whether the artwork's main subject remains clearly readable and whether there are any visible compression, resizing, ringing, blocking, banding, or other delivery artifacts. Report exactly: mobile_readable=true|false; artifacts=true|false; then a concise visual justification.",
+  "agent_prompt_sha256": "9ebd474e42de3e70765d64448e1a00416925a9e7b1d4b62f1e8b0456c9d7a5d3",
+  "agent_output": "480: mobile_readable=true; artifacts=false; The complete tall cabinet, paired gold doors, dark supporting stand, and major decorative figure groups remain clearly distinguishable at mobile scale; fine ornament is naturally reduced, with no visible blocking, ringing, banding, or resizing damage.\n768: mobile_readable=true; artifacts=false; The cabinet silhouette, door division, gilded narrative figures, borders, drawers, carved apron, and legs are clear; edges and tonal gradients remain clean without visible compression or scaling artifacts.\n1280: mobile_readable=true; artifacts=false; The full subject and intricate gold-on-dark decoration are crisp and readable, with smooth neutral background gradients and no visible ringing, blocking, banding, or resampling defects.\nfallback: mobile_readable=true; artifacts=false; The museum object remains sharply identifiable from the overall furniture form down to the gilded figures and carved lower panels; no visible JPEG blocking, haloing, banding, or scaling artifacts are present.",
+  "agent_output_sha256": "f46d93a21fb5c01f852a65e9ec87bd8c705abd2dffd4f40e116bbdfbf2b1ecb6",
+  "results": {
+    "480": {
+      "image_sha256": "3c9787cdb4bc0492b84dd1ba60d4f742a6280e1652138610eecca2ade9366f2f",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "bf5b26da3c23edb664cc1a1b249ef8c631fb1a07fddefb962f9765f9e2e1cf38",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "db6b83ea2eb1dc41ea0454f5f795229531819bdee0f759498db168c75a53d2b3",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "041a5f00a3f5738fee9aa3443d65ed10739740b5366dd0326913312e022d82c9",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
