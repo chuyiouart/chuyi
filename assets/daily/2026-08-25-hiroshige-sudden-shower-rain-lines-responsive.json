@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 69652,
+      "format": "webp",
+      "height": 686,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-25-hiroshige-sudden-shower-rain-lines-480.webp",
+      "quality": 84,
+      "sha256": "282a11e9be55ded2cff4342d8378a51c5953480087a665682c9b225852364d27",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 180274,
+      "format": "webp",
+      "height": 1098,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-25-hiroshige-sudden-shower-rain-lines-768.webp",
+      "quality": 84,
+      "sha256": "eb3481a15e75852c0266b59fb34120047d64a1d240739f7bddade6b1107fbeff",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 462202,
+      "format": "webp",
+      "height": 1829,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-25-hiroshige-sudden-shower-rain-lines-1280.webp",
+      "quality": 84,
+      "sha256": "795ea62c02a9f42c0f4a9c9485989db6a531b7fe5573260f0e5a6244fb013a49",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 661972,
+    "format": "jpeg",
+    "height": 1829,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-08-25-hiroshige-sudden-shower-rain-lines-fallback.jpg",
+    "quality": 84,
+    "sha256": "2048661d585fa3615c0ef16458dec034250d7a38051479024911ec713d84d16c",
+    "width": 1280
+  },
+  "original_bytes": 2401764,
+  "original_height": 1908,
+  "original_path": "assets/daily/2026-08-25-hiroshige-sudden-shower-rain-lines.jpg",
+  "original_sha256": "94f50331d96a44b6fa522fe40928c61f5a423d60a309f19dcac1c637d1065fde",
+  "original_url": "https://images.metmuseum.org/CRDImages/as/original/DP121525.jpg",
+  "original_width": 1335,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-08-25-hiroshige-sudden-shower-rain-lines-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-08-25-hiroshige-sudden-shower-rain-lines-480.webp?v=282a11e9be55 480w, 2026-08-25-hiroshige-sudden-shower-rain-lines-768.webp?v=eb3481a15e75 768w, 2026-08-25-hiroshige-sudden-shower-rain-lines-1280.webp?v=795ea62c02a9 1280w"
+}
