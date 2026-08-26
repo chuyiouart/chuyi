@@ -636,11 +636,27 @@ window.WORKSHOP_UPDATES = [
     "type": "图文",
     "title": "AI 怎样辅助包装，但不能替代哪些判断",
     "time": "11:30",
-    "summary": "进入 Day 4：涂装、包装、说明卡、拍摄和产品化表达。",
-    "cover": "./assets/workshop-ai-launch.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "把 AI 的作用限定为包装视觉候选、信息整理和版式比较，再用事实、结构与制作三次读回确认哪些判断必须由人和实体证据完成。",
+    "cover": "./assets/updates/2026-08-26/01-website-hero-fallback.png?v=f6bbc3f7d87c",
+    "published": true,
+    "url": "./updates/2026-08-26-how-ai-assists-packaging-without-replacing-human-judgment.html",
+    "status": "published",
+    "source_id": "workshop:2026-08-26",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-08-26/01-website-hero-480.webp?v=febf6cbeb675 480w, ./assets/updates/2026-08-26/01-website-hero-768.webp?v=690a1e7fc1fe 768w, ./assets/updates/2026-08-26/01-website-hero-1280.webp?v=788f914fab0d 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-08-26/01-website-hero-fallback.png?v=f6bbc3f7d87c",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-08-27",
