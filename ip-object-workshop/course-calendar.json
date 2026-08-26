@@ -608,11 +608,21 @@
     "type": "视频",
     "title": "四种包装路线，分别适合什么作品",
     "time": "19:30",
-    "summary": "进入 Day 4：涂装、包装、说明卡、拍摄和产品化表达。",
-    "cover": "./assets/workshop-finishing.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用对象尺寸、突出部件、接触禁区、取放路径、信息容量和完成阶段，判断简易贴纸盒、潮流盒装、挂卡 / 吸塑与精装收藏盒的适用条件。",
+    "cover": "",
+    "published": true,
+    "url": "./updates/2026-08-25-four-packaging-routes-for-different-ip-objects.html",
+    "status": "published",
+    "source_id": "workshop:2026-08-25",
+    "media_status": "partial",
+    "passedRoles": [
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [
+      "website_hero"
+    ]
   },
   {
     "date": "2026-08-26",
