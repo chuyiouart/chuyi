@@ -319,6 +319,42 @@ class FutureResponsiveWebsiteTests(unittest.TestCase):
         self.assertTrue({"srcset", "sizes", "fallback", "width", "height"} <= set(calendar[0]["coverImage"]))
         self.assertIn('"coverImage"', (self.tmp / "course-updates.js").read_text(encoding="utf-8"))
 
+    def test_partial_release_without_hero_uses_first_verified_gallery_asset_only_as_list_cover(self):
+        manifest = self.manifest()
+        manifest["heroImage"] = ""
+        manifest["galleryImages"] = [str(path) for path in self.sources[1:]]
+        manifest["imageRoles"] = manifest["imageRoles"][1:]
+        manifest["media_status"] = "partial"
+        manifest["passedRoles"] = ["core_explanation", "real_application", "social_promotion"]
+        manifest["pendingRoles"] = ["website_hero"]
+        manifest["missingRoles"] = ["website_hero"]
+        manifest["webImageQA"] = {}
+        for index, row in enumerate(manifest["imageRoles"], start=1):
+            preview = derive_responsive_assets(
+                row["path"], self.tmp / f"partial-preview-{index}", Path(row["path"]).stem,
+                widths=(480, 768, 1280), page_role="gallery",
+                expected_text=row["expected_text"], require_text_qa=True,
+            )
+            keyed = [(str(asset["width"]), asset) for asset in preview["derivatives"]] + [("fallback", preview["fallback"])]
+            manifest["webImageQA"][row["role"]] = {
+                key: {"image_sha256": asset["sha256"], "ocr_exact_match": True, "vision_mobile_readable": True, "artifacts": False}
+                for key, asset in keyed
+            }
+
+        result = publish_manifest(self.tmp, self.write_manifest(manifest))
+
+        self.assertEqual("partial_media_published", result["status"])
+        article = Path(result["article"]).read_text(encoding="utf-8")
+        self.assertEqual(3, article.count("<picture>"))
+        self.assertEqual(0, article.count('fetchpriority="high"'))
+        calendar = json.loads((self.tmp / "course-calendar.json").read_text(encoding="utf-8"))
+        item = calendar[0]
+        self.assertTrue(item["cover"])
+        self.assertIn("core-explanation", item["cover"])
+        self.assertTrue({"srcset", "sizes", "fallback", "width", "height"} <= set(item["coverImage"]))
+        self.assertEqual("partial", item["media_status"])
+        self.assertEqual(["website_hero"], item["pendingRoles"])
+
     def test_dynamic_today_cover_applies_complete_responsive_contract(self):
         course_js = (PROJECT_ROOT / "course.js").read_text(encoding="utf-8")
         for marker in ("cover.srcset = item.coverImage.srcset", "cover.sizes = item.coverImage.sizes", "cover.width = item.coverImage.width", "cover.height = item.coverImage.height", "cover.dataset.imageFallback = item.coverImage.fallback"):

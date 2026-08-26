@@ -280,16 +280,21 @@ def _publish_manifest_locked(root: Path | str, manifest_path: Path | str) -> dic
             "pendingRoles": list(manifest.get("pendingRoles") or manifest.get("missingRoles") or []),
     }
     hero_asset = next((asset for asset in web_assets if asset.get("role") == "website_hero"), None)
-    if hero_asset:
+    # A missing website_hero remains pending media, but it must not leave an
+    # otherwise published list/calendar item without a usable image. Reuse the
+    # first strictly verified gallery derivative only as the card cover; do not
+    # promote it to hero in the article or alter role/pending-role evidence.
+    cover_asset = hero_asset or next(iter(web_assets), None)
+    if cover_asset:
         public_prefix = f"./assets/updates/{manifest['date']}/"
-        fallback = hero_asset["fallback"]
+        fallback = cover_asset["fallback"]
         calendar_update["cover"] = public_prefix + Path(fallback["path"]).name + f"?v={fallback['sha256'][:12]}"
         calendar_update["coverImage"] = {
             "srcset": ", ".join(
                 f"{public_prefix}{Path(row['path']).name}?v={row['sha256'][:12]} {row['width']}w"
-                for row in hero_asset["derivatives"]
+                for row in cover_asset["derivatives"]
             ),
-            "sizes": hero_asset["sizes"],
+            "sizes": cover_asset["sizes"],
             "fallback": calendar_update["cover"],
             "width": fallback["width"],
             "height": fallback["height"],
