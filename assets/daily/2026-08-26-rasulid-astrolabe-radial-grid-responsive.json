@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 32412,
+      "format": "webp",
+      "height": 641,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-26-rasulid-astrolabe-radial-grid-480.webp",
+      "quality": 84,
+      "sha256": "d95879b7ebc4cb585ba8a76e6c5ac4556a05086b88235945e8bafcfda3344144",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 72550,
+      "format": "webp",
+      "height": 1026,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-26-rasulid-astrolabe-radial-grid-768.webp",
+      "quality": 84,
+      "sha256": "c0da6573ec559e2fe2af2518521d8faef410cc183859890387a8ac6a18051b11",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 176882,
+      "format": "webp",
+      "height": 1710,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-26-rasulid-astrolabe-radial-grid-1280.webp",
+      "quality": 84,
+      "sha256": "f639589bce01951d5fa474a32f78c4e91c95981ad1732ea3cb36df05a9fdb25b",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 288928,
+    "format": "jpeg",
+    "height": 1710,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-08-26-rasulid-astrolabe-radial-grid-fallback.jpg",
+    "quality": 84,
+    "sha256": "91e80ac9fbf163e15e0088c6ee43381f65872c181bb863c07aad5d376ded935b",
+    "width": 1280
+  },
+  "original_bytes": 1658072,
+  "original_height": 4000,
+  "original_path": "assets/daily/2026-08-26-rasulid-astrolabe-radial-grid.jpg",
+  "original_sha256": "2dd61fa7f1aa79f0fa78dc195fddb2e3c2e5bfdbc9384cbcd8cf23d71e482562",
+  "original_url": "https://images.metmuseum.org/CRDImages/is/original/DP170386.jpg",
+  "original_width": 2995,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-08-26-rasulid-astrolabe-radial-grid-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-08-26-rasulid-astrolabe-radial-grid-480.webp?v=d95879b7ebc4 480w, 2026-08-26-rasulid-astrolabe-radial-grid-768.webp?v=c0da6573ec55 768w, 2026-08-26-rasulid-astrolabe-radial-grid-1280.webp?v=f639589bce01 1280w"
+}
