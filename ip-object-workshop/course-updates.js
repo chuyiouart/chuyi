@@ -609,7 +609,7 @@ window.WORKSHOP_UPDATES = [
     "title": "四种包装路线，分别适合什么作品",
     "time": "19:30",
     "summary": "用对象尺寸、突出部件、接触禁区、取放路径、信息容量和完成阶段，判断简易贴纸盒、潮流盒装、挂卡 / 吸塑与精装收藏盒的适用条件。",
-    "cover": "",
+    "cover": "./assets/updates/2026-08-25/02-core-explanation-fallback.png?v=a13005bc73f0",
     "published": true,
     "url": "./updates/2026-08-25-four-packaging-routes-for-different-ip-objects.html",
     "status": "published",
@@ -622,7 +622,14 @@ window.WORKSHOP_UPDATES = [
     ],
     "pendingRoles": [
       "website_hero"
-    ]
+    ],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-08-25/02-core-explanation-480.webp?v=e05fe4356478 480w, ./assets/updates/2026-08-25/02-core-explanation-768.webp?v=e3d68cc06bab 768w",
+      "sizes": "(max-width: 680px) 100vw, 50vw",
+      "fallback": "./assets/updates/2026-08-25/02-core-explanation-fallback.png?v=a13005bc73f0",
+      "width": 768,
+      "height": 768
+    }
   },
   {
     "date": "2026-08-26",
