@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-27",
+  "agent_prompt": "[480]\nAsset 480. Inspect this exact responsive artwork file visually at mobile-display scale. Determine whether the artwork's main subject and major tonal/structural details remain clearly readable, and whether there are any visible compression or resizing artifacts (blocking, ringing, banding, smearing, severe blur, malformed geometry, or corruption). This is an official collection image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Return a complete concise assessment explicitly stating: asset=480; vision_mobile_readable=true or false; artifacts=true or false; ocr_exact_match=N/A; and visual evidence.\n\n[768]\nAsset 768. Inspect this exact responsive artwork file visually at mobile-display scale. Determine whether the artwork's main subject and major tonal/structural details remain clearly readable, and whether there are any visible compression or resizing artifacts (blocking, ringing, banding, smearing, severe blur, malformed geometry, or corruption). This is an official collection image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Return a complete concise assessment explicitly stating: asset=768; vision_mobile_readable=true or false; artifacts=true or false; ocr_exact_match=N/A; and visual evidence.\n\n[1280]\nAsset 1280. Inspect this exact responsive artwork file visually at mobile-display scale. Determine whether the artwork's main subject and major tonal/structural details remain clearly readable, and whether there are any visible compression or resizing artifacts (blocking, ringing, banding, smearing, severe blur, malformed geometry, or corruption). This is an official collection image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Return a complete concise assessment explicitly stating: asset=1280; vision_mobile_readable=true or false; artifacts=true or false; ocr_exact_match=N/A; and visual evidence.\n\n[fallback]\nAsset fallback. Inspect this exact responsive artwork file visually at mobile-display scale. Determine whether the artwork's main subject and major tonal/structural details remain clearly readable, and whether there are any visible compression or resizing artifacts (blocking, ringing, banding, smearing, severe blur, malformed geometry, or corruption). This is an official collection image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Return a complete concise assessment explicitly stating: asset=fallback; vision_mobile_readable=true or false; artifacts=true or false; ocr_exact_match=N/A; and visual evidence.",
+  "agent_prompt_sha256": "8f80249a11e951202a6e4c103fd6fe4e4d7b109a3b262723ae18d91c31a89668",
+  "agent_output": "asset=480; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A; visual evidence: At mobile scale, the seated profile figure remains unmistakable; the head, folded arms, crossed legs, chair, shoes, and surrounding sheet boundary are readable. The drawing is intentionally pale and lightly worked, but contours and broad graphite value masses remain coherent. No blocking, ringing, banding, resizing smear, malformed geometry, or corruption is visible.\nasset=768; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A; visual evidence: The seated connoisseur is clearly readable in profile, including facial contour, coat mass, folded hands, crossed legs, chair supports, and feet. Faint wall studies remain appropriately subtle. Tonal transitions and paper texture are continuous, with no visible blocking, ringing, banding, severe blur, deformation, or corruption.\nasset=1280; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A; visual evidence: The principal seated figure and its full pose are clear, and finer graphite modeling around the face, jacket, hands, chair, knees, and footwear remains visible. The pale upper studies and paper marks look native to the source. No compression blocks, halos, banding, smearing, malformed geometry, or file corruption are visible.\nasset=fallback; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A; visual evidence: The fallback clearly preserves the seated profile figure, folded-arm silhouette, crossed-leg rhythm, chair structure, shoes, and pale surrounding studies at mobile scale. Source paper texture and age marks remain natural; there is no visible blocking, ringing, banding, resize smear, severe blur, geometric damage, or corruption.",
+  "agent_output_sha256": "ec4a48e3772cb80009b54769cb45d4575f343c70b0b530abb6a68417f8ea6a04",
+  "results": {
+    "480": {
+      "image_sha256": "ca18be461bf9bd3007bae29ed0cba7c7e4b3d7404d8981aedcf246d2b17e2893",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "b7f980c0ee99bce6ef098d187c12a8bd63a7a2e759c71301a26677ea7b06399b",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "5a7616c407fd24b32cfcd3629d194c07219d0741b65dbd1096148291400c631d",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "84dd34950352361cc017e44932591dd9b22737450b23ec46d903e6e3a43028ac",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}

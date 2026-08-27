@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 15660,
+      "format": "webp",
+      "height": 565,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-27-daumier-connoisseur-value-masses-480.webp",
+      "quality": 84,
+      "sha256": "ca18be461bf9bd3007bae29ed0cba7c7e4b3d7404d8981aedcf246d2b17e2893",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 46686,
+      "format": "webp",
+      "height": 904,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-27-daumier-connoisseur-value-masses-768.webp",
+      "quality": 84,
+      "sha256": "b7f980c0ee99bce6ef098d187c12a8bd63a7a2e759c71301a26677ea7b06399b",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 171944,
+      "format": "webp",
+      "height": 1506,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-27-daumier-connoisseur-value-masses-1280.webp",
+      "quality": 84,
+      "sha256": "5a7616c407fd24b32cfcd3629d194c07219d0741b65dbd1096148291400c631d",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 282523,
+    "format": "jpeg",
+    "height": 1506,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-08-27-daumier-connoisseur-value-masses-fallback.jpg",
+    "quality": 84,
+    "sha256": "84dd34950352361cc017e44932591dd9b22737450b23ec46d903e6e3a43028ac",
+    "width": 1280
+  },
+  "original_bytes": 3386673,
+  "original_height": 3554,
+  "original_path": "assets/daily/2026-08-27-daumier-connoisseur-value-masses.jpg",
+  "original_sha256": "8435adc7893dab2d0d757787712162322584f353563885ba7f05e8e8f25753e7",
+  "original_url": "https://images.metmuseum.org/CRDImages/dp/original/DP-34275-001.jpg",
+  "original_width": 3020,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-08-27-daumier-connoisseur-value-masses-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-08-27-daumier-connoisseur-value-masses-480.webp?v=ca18be461bf9 480w, 2026-08-27-daumier-connoisseur-value-masses-768.webp?v=b7f980c0ee99 768w, 2026-08-27-daumier-connoisseur-value-masses-1280.webp?v=5a7616c407fd 1280w"
+}
