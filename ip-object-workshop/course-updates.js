@@ -663,11 +663,27 @@ window.WORKSHOP_UPDATES = [
     "type": "图文",
     "title": "一个产品说明卡必须写清的 8 项信息",
     "time": "11:30",
-    "summary": "进入 Day 4：涂装、包装、说明卡、拍摄和产品化表达。",
-    "cover": "./assets/workshop-hero-v2.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用同一受控实体逐项核对作品名称、版本、尺寸、材质、作者、编号逻辑、版权和注意事项，让说明卡成为 Gate 4 可追溯的版本索引。",
+    "cover": "./assets/updates/2026-08-27/01-website-hero-fallback.png?v=101654c8e3d7",
+    "published": true,
+    "url": "./updates/2026-08-27-eight-fields-every-product-information-card-must-clarify.html",
+    "status": "published",
+    "source_id": "workshop:2026-08-27",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-08-27/01-website-hero-480.webp?v=d2adb5b4c2bc 480w, ./assets/updates/2026-08-27/01-website-hero-768.webp?v=e7f04be6d554 768w, ./assets/updates/2026-08-27/01-website-hero-1280.webp?v=55d0976973ea 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-08-27/01-website-hero-fallback.png?v=101654c8e3d7",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-08-28",
