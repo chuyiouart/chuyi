@@ -690,11 +690,27 @@ window.WORKSHOP_UPDATES = [
     "type": "视频",
     "title": "课程现场怎样拍出可用的过程与成品素材",
     "time": "19:30",
-    "summary": "进入 Day 4：涂装、包装、说明卡、拍摄和产品化表达。",
-    "cover": "./assets/workshop-modeling.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用镜头清单、受控版本、全貌与动作及细节证据、光色复核和横方竖比例检查，把现场拍摄整理为可交接 Day 5 的素材包。",
+    "cover": "./assets/updates/2026-08-28/01-website-hero-fallback.png?v=e654b20ac7f6",
+    "published": true,
+    "url": "./updates/2026-08-28-capture-usable-process-and-finished-work-materials-in-class.html",
+    "status": "published",
+    "source_id": "workshop:2026-08-28",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-08-28/01-website-hero-480.webp?v=7f5ea3e36f7e 480w, ./assets/updates/2026-08-28/01-website-hero-768.webp?v=09cc84e95dc1 768w, ./assets/updates/2026-08-28/01-website-hero-1280.webp?v=0c07b934e422 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-08-28/01-website-hero-fallback.png?v=e654b20ac7f6",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-08-29",
