@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-28",
+  "agent_prompt": "[480]\nOUART Daily Art responsive Vision QA, asset=480. Inspect the actual image pixels as they would appear scaled on a mobile screen. Determine whether the artwork's main subject and important incised contours remain clearly readable, and whether there are any visible compression, resampling, ringing, blocking, banding, blur, stretching, cropping, or other artifacts. This is an official collection image with no GPT-generated text, so OCR exact matching is N/A. Return the complete assessment and end with exactly: vision_mobile_readable=true|false; artifacts=true|false.\n\n[768]\nOUART Daily Art responsive Vision QA, asset=768. Inspect the actual image pixels as they would appear scaled on a mobile screen. Determine whether the artwork's main subject and important incised contours remain clearly readable, and whether there are any visible compression, resampling, ringing, blocking, banding, blur, stretching, cropping, or other artifacts. This is an official collection image with no GPT-generated text, so OCR exact matching is N/A. Return the complete assessment and end with exactly: vision_mobile_readable=true|false; artifacts=true|false.\n\n[1280]\nOUART Daily Art responsive Vision QA, asset=1280. Inspect the actual image pixels as they would appear scaled on a mobile screen. Determine whether the artwork's main subject and important incised contours remain clearly readable, and whether there are any visible compression, resampling, ringing, blocking, banding, blur, stretching, cropping, or other artifacts. This is an official collection image with no GPT-generated text, so OCR exact matching is N/A. Return the complete assessment and end with exactly: vision_mobile_readable=true|false; artifacts=true|false.\n\n[fallback]\nOUART Daily Art responsive Vision QA, asset=fallback. Inspect the actual image pixels as they would appear scaled on a mobile screen. Determine whether the artwork's main subject and important incised contours remain clearly readable, and whether there are any visible compression, resampling, ringing, blocking, banding, blur, stretching, cropping, or other artifacts. This is an official collection image with no GPT-generated text, so OCR exact matching is N/A. Return the complete assessment and end with exactly: vision_mobile_readable=true|false; artifacts=true|false.",
+  "agent_prompt_sha256": "f59e0e358f7ecfb20d3f8b3b0dd699311f59ec1df3936498439d8573b3151f05",
+  "agent_output": "[480]\nThe full shell plaque remains clearly recognizable at mobile scale. The seated noble, animal/serpent-headed shell, hands, limbs, headdress, and the major incised glyph groups remain legible. The finest low-contrast surface scratches and smallest glyph details are naturally less distinct at 480 px, but this does not obscure the main subject or important contour structure. Proportions and framing are intact, with no visible blocking, ringing, banding, stretching, unintended cropping, resampling damage, or objectionable compression blur. OCR exact matching is N/A.\nvision_mobile_readable=true; artifacts=false.\n\n[768]\nThe vertically framed shell plaque and seated noble are clear at mobile scale. Facial profile, headdress, arms, crossed lower body, hands, feet, the serpent-headed shell, and surrounding incised glyph groups retain readable contour separation. Fine shallow engraving remains visible without halos or stair-stepping. There is no visible blocking, ringing, banding, stretching, unintended cropping, resampling damage, or objectionable compression blur. OCR exact matching is N/A.\nvision_mobile_readable=true; artifacts=false.\n\n[1280]\nThe main subject and fine incised structure are clearly readable when scaled for mobile display. The noble’s profile, jewelry, headdress, torso and limb contours, the lower-left serpent-headed shell, and the upper, side, and lower glyph groups all remain distinct. Natural shell texture and shallow carving are preserved without confusing them with codec damage. No visible blocking, ringing, banding, stretching, unintended cropping, resampling damage, or compression artifacts are present. OCR exact matching is N/A.\nvision_mobile_readable=true; artifacts=false.\n\n[fallback]\nThe JPEG fallback presents the complete shell plaque with the seated noble and all major incised contours clearly readable on a mobile screen. The shallow relief, facial profile, headdress, hands, feet, serpent-headed shell, and glyph groupings retain clean tonal and edge separation. The image is correctly proportioned and fully framed, with no visible blocking, ringing, banding, stretching, unintended cropping, resampling damage, or objectionable JPEG artifacts. OCR exact matching is N/A.\nvision_mobile_readable=true; artifacts=false.",
+  "agent_output_sha256": "c76a3c1c08102dfe3683ed08b56587aabc6ade7f8c7392657e2087bb9686a8d9",
+  "results": {
+    "480": {
+      "image_sha256": "228dd936cca497822c7191570c41c7d6d94e0d1fcf9326487d7da2bc06cebb01",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "02c4ed52a7a402bf64dae2f2276592770ef18a0935fe5ac5ddf01fa9b7d38435",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "36922b40ed05ddc32938c0943c9d0fb4294e786b5b879c33dad8c1496040252d",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "1bc3ecfb1a30d02dc8c7c1945a69cfbef920833c59a45ea236c6f7c97db4c333",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
