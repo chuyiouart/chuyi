@@ -717,11 +717,27 @@
     "type": "视频",
     "title": "从灰模到包装：一件作品的产品化案例",
     "time": "18:00",
-    "summary": "进入 Day 4：涂装、包装、说明卡、拍摄和产品化表达。",
-    "cover": "./assets/workshop-printing-v2.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用同一受控对象的灰模、表面处理、包装取放、说明卡与 Gate 4 证据链，解释作品如何形成可归档的产品化方向。",
+    "cover": "./assets/updates/2026-08-29/01-website-hero-fallback.png?v=ea27d4e14b35",
+    "published": true,
+    "url": "./updates/2026-08-29-gray-model-to-packaging-a-productization-walkthrough.html",
+    "status": "published",
+    "source_id": "workshop:2026-08-29",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-08-29/01-website-hero-480.webp?v=284c10f050c4 480w, ./assets/updates/2026-08-29/01-website-hero-768.webp?v=40cb267d1510 768w, ./assets/updates/2026-08-29/01-website-hero-1280.webp?v=f464e7717ca8 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-08-29/01-website-hero-fallback.png?v=ea27d4e14b35",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-08-30",
