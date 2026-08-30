@@ -1,0 +1,34 @@
+{
+  "agent_output": "480: The opened 480 WebP preserves the complete vertical composition. The red amaryllis blossoms, pale stamens, upright green stems, long leaves, translucent mauve vessel/background shapes, and watercolor wash transitions remain clearly distinguishable at mobile scale. Fine pencil contours are naturally subtle but still coherent; there is no visible blocking, ringing, banding, smearing, aliasing, unintended crop, or scaling damage. ocr_exact_match=N/A. vision_mobile_readable=true; artifacts=false.\n\n768: The opened 768 WebP shows the complete composition with clear flower silhouettes, petal overlaps, stamens, buds, stems, leaves, vessel contours, and layered translucent washes. Important edges and paper texture remain natural at mobile scaling, with no visible blocking, ringing, banding, smearing, aliasing, unintended crop, or other compression artifact. ocr_exact_match=N/A. vision_mobile_readable=true; artifacts=false.\n\n1280: The opened 1280 WebP retains the full sheet and all principal botanical and vessel forms. Petal color modulation, thin floral filaments, green stem and leaf boundaries, graphite underdrawing, and soft watercolor granulation are cleanly readable; no visible blocking, ringing, banding, smearing, aliasing, unintended crop, or scaling artifact is present. ocr_exact_match=N/A. vision_mobile_readable=true; artifacts=false.\n\nfallback: The opened JPEG fallback retains the full artwork and clearly resolves the red blossoms, pale centers and stamens, green stems and leaves, vessel silhouette, layered washes, and subtle pencil contours when scaled for mobile. Compression does not introduce visible blocking, ringing, banding, smearing, aliasing, unintended crop, or other distracting artifact. ocr_exact_match=N/A. vision_mobile_readable=true; artifacts=false.",
+  "agent_output_sha256": "d5230213a2c07674d6a44807d284219b19d9d6cdff4cdae2e7a717d5926a5e58",
+  "agent_prompt": "Inspect this exact responsive asset as it would appear scaled to a mobile viewport. This is an official museum image of Charles Demuth's watercolor Amaryllis, not a generated text image. Determine whether the flower subject, stems, leaves, vessel, color washes, and important edges remain clearly readable, and whether compression or scaling introduces any visible blocking, ringing, banding, smearing, aliasing, unintended crop, or other artifact. Do not infer quality from dimensions or metadata; judge the opened pixels. Return a concise but complete visual assessment, ending with exactly: vision_mobile_readable=true|false; artifacts=true|false. OCR is not applicable and must be reported as ocr_exact_match=N/A.",
+  "agent_prompt_sha256": "48a253d34ab465f607a8e10b2942bb2421cb23475647f75825bc276ae1537401",
+  "date": "2026-08-30",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "becd18a5249a58f9dd3841c325573f810880b7fc0c750ffca6f2658f98ce1297",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "d6e086a7c2bdc59c7836e8be43913f88716f7aa5e81cccac77068f05734ff774",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "bcdaf779d8413cf8e4288da14ac034055752e0fed0e92e873aebb3f5a2db874a",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "f6fb4c23e501015a7cff8f2a3561906999a924942f4dc333e3c84d47b04c5d92",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}
