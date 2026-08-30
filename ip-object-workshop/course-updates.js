@@ -744,11 +744,28 @@ window.WORKSHOP_UPDATES = [
     "type": "直播",
     "title": "包装、版本和价格测试：作品怎样第一次面对市场",
     "time": "20:00",
-    "summary": "进入 Day 4：涂装、包装、说明卡、拍摄和产品化表达。",
-    "cover": "./assets/workshop-finishing.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "用同一受控雕塑的三个版本、真实成本边界、包装取放和有限反馈记录，说明作品第一次面对市场时怎样避免把兴趣信号写成销售事实。",
+    "cover": "./assets/updates/2026-08-30/01-website-hero-fallback.png?v=97a0db66b95d",
+    "published": true,
+    "url": "./updates/2026-08-30-packaging-versions-and-price-test-first-market-feedback.html",
+    "status": "published",
+    "source_id": "workshop:2026-08-30",
+    "media_status": "partial",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application"
+    ],
+    "pendingRoles": [
+      "social_promotion"
+    ],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-08-30/01-website-hero-480.webp?v=0f20bbe70f81 480w, ./assets/updates/2026-08-30/01-website-hero-768.webp?v=7bd68071a5c0 768w, ./assets/updates/2026-08-30/01-website-hero-1280.webp?v=5b76bda04e6b 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-08-30/01-website-hero-fallback.png?v=97a0db66b95d",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-08-31",
