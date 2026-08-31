@@ -1,0 +1,34 @@
+{
+  "agent_output": "480: The opened 480 WebP preserves the complete album sheet and the full vertical fountain composition. At mobile scale the arched niche, paired columns, upper reclining figures, central statue, basin, dark foreground, surrounding buildings, and foliage remain distinguishable; the broad light/dark organization and important architectural edges read clearly. The naturally faint printed inscriptions are not part of the subject-readability gate. No visible blocking, ringing, banding, smearing, aliasing, unintended crop, or scaling damage is present. ocr_exact_match=N/A. vision_mobile_readable=true; artifacts=false.\n\n768: The opened 768 WebP shows the complete sheet without crop. The pediment, sculptural figures, masonry divisions, niche, central figure, basin steps, foliage, and background buildings are clear at mobile scaling, with stable sepia tonal gradations and legible structural edges. I see no visible blocking, ringing, banding, smearing, aliasing, or other compression/scaling artifact. ocr_exact_match=N/A. vision_mobile_readable=true; artifacts=false.\n\n1280: The opened 1280 WebP retains the full museum image and resolves the fountain's pediment, columns, stone textures, reclining and central figures, basin, foreground shadows, trees, and neighboring architecture cleanly. Fine photographic grain and pale paper tone remain natural; there is no unintended crop, blocking, ringing, banding, smearing, aliasing, or scaling damage. ocr_exact_match=N/A. vision_mobile_readable=true; artifacts=false.\n\nfallback: The opened JPEG fallback retains the complete album sheet and clearly shows the architectural niche, columns, statues, water-basin structure, foliage, surrounding buildings, and full tonal hierarchy when scaled for mobile. The image preserves natural salted-print texture and fine edges without visible blocking, ringing, banding, smearing, aliasing, unintended crop, or distracting JPEG artifact. ocr_exact_match=N/A. vision_mobile_readable=true; artifacts=false.",
+  "agent_output_sha256": "04ab26a4659bc177579fef343cd9b31499d4fc1fddc0e4f5ab1ddec25a078682",
+  "agent_prompt": "Inspect this exact responsive asset as it would appear scaled to a mobile viewport. This is an official museum image of Charles Marville's salted paper print Fontaine du Jardin du Luxembourg (grotte de Marie de Médécis), not a generated text image. Determine whether the fountain, architectural niche, statues, water basin, surrounding foliage, tonal structure, and important edges remain clearly readable, and whether compression or scaling introduces any visible blocking, ringing, banding, smearing, aliasing, unintended crop, or other artifact. Do not infer quality from dimensions or metadata; judge the opened pixels. Return a concise but complete visual assessment, ending with exactly: vision_mobile_readable=true|false; artifacts=true|false. OCR is not applicable and must be reported as ocr_exact_match=N/A.",
+  "agent_prompt_sha256": "76ca5503be958b9e891105540218bb186ee3a0f3adce3c18e342bcbfde041d52",
+  "date": "2026-08-31",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "15d88d34920e37197d86771751da877aec482ffb60d95d7d9fcafd42b387de8e",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "8e767a7975d747388c31d1528a8abdde38e3b1a8bbab42464c003de456dbade4",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "15d42e8ccdcc81f4b277809be545173a77aaf610c8e3574f3647aa61e16bd2f0",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "87edf576b9a0dd08aa0f3a9be8865928c6336e5fd424e976734dae1b31cdcb1d",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}

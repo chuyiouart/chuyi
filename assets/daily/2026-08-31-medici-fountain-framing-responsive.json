@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 34622,
+      "format": "webp",
+      "height": 580,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-31-medici-fountain-framing-480.webp",
+      "quality": 84,
+      "sha256": "8e767a7975d747388c31d1528a8abdde38e3b1a8bbab42464c003de456dbade4",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 87080,
+      "format": "webp",
+      "height": 929,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-31-medici-fountain-framing-768.webp",
+      "quality": 84,
+      "sha256": "15d42e8ccdcc81f4b277809be545173a77aaf610c8e3574f3647aa61e16bd2f0",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 248642,
+      "format": "webp",
+      "height": 1548,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-08-31-medici-fountain-framing-1280.webp",
+      "quality": 84,
+      "sha256": "15d88d34920e37197d86771751da877aec482ffb60d95d7d9fcafd42b387de8e",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 381278,
+    "format": "jpeg",
+    "height": 1548,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-08-31-medici-fountain-framing-fallback.jpg",
+    "quality": 84,
+    "sha256": "87edf576b9a0dd08aa0f3a9be8865928c6336e5fd424e976734dae1b31cdcb1d",
+    "width": 1280
+  },
+  "original_bytes": 3024655,
+  "original_height": 3400,
+  "original_path": "assets/daily/2026-08-31-medici-fountain-framing.jpg",
+  "original_sha256": "68ae85e9278b44f488723495144b4a3838f242db8c60dad7915a67752bc1c059",
+  "original_url": "https://openaccess-cdn.clevelandart.org/2021.65/2021.65_print.jpg",
+  "original_width": 2812,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-08-31-medici-fountain-framing-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-08-31-medici-fountain-framing-480.webp?v=8e767a7975d7 480w, 2026-08-31-medici-fountain-framing-768.webp?v=15d42e8ccdcc 768w, 2026-08-31-medici-fountain-framing-1280.webp?v=15d88d34920e 1280w"
+}
