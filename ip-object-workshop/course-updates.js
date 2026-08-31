@@ -772,11 +772,27 @@ window.WORKSHOP_UPDATES = [
     "type": "图文",
     "title": "Day 5 到底做什么：把五天成果变成个人数字阵地",
     "time": "11:30",
-    "summary": "进入 Day 5：用 Codex 搭建个人独立站、发布 3D 展示，并用 AI 建立可持续的内容推广工作流。",
-    "cover": "./assets/workshop-finishing.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "把同一项目的实体、图片、GLB、文字与权利边界整理为可读回、可继续编辑的个人项目页，并以 Gate 5 检查在线三维和后续更新结构。",
+    "cover": "./assets/updates/2026-08-31/01-website-hero-fallback.png?v=b2ff99ab2520",
+    "published": true,
+    "url": "./updates/2026-08-31-day-5-turn-five-day-results-into-a-personal-digital-home.html",
+    "status": "published",
+    "source_id": "workshop:2026-08-31",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-08-31/01-website-hero-480.webp?v=3edf8e853e52 480w, ./assets/updates/2026-08-31/01-website-hero-768.webp?v=70c9e158e538 768w, ./assets/updates/2026-08-31/01-website-hero-1280.webp?v=18c5eb539f24 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-08-31/01-website-hero-fallback.png?v=b2ff99ab2520",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-01",
