@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 13306,
+      "format": "webp",
+      "height": 409,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-01-pull-toy-motion-structure-480.webp",
+      "quality": 84,
+      "sha256": "db382b36e1bd4ad05d5470cb9d43497afd0644efbf0d3ff896903157bcaab34d",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 24180,
+      "format": "webp",
+      "height": 655,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-01-pull-toy-motion-structure-768.webp",
+      "quality": 84,
+      "sha256": "c4a4ea62258434ffd1c3daacdd4b9be0225f5786ae95205d20bb102f7094ddea",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 50594,
+      "format": "webp",
+      "height": 1091,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-01-pull-toy-motion-structure-1280.webp",
+      "quality": 84,
+      "sha256": "4c222f90651ad98d93188e14ce033ef47bce3334cf07823ab47ebd2a2d0377b9",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 128169,
+    "format": "jpeg",
+    "height": 1091,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-01-pull-toy-motion-structure-fallback.jpg",
+    "quality": 84,
+    "sha256": "c86577c06153cb283b627675b9b55ca71cd0492e04bea4b543fb3e6d8cfe4278",
+    "width": 1280
+  },
+  "original_bytes": 1914442,
+  "original_height": 1705,
+  "original_path": "assets/daily/2026-09-01-pull-toy-motion-structure.jpg",
+  "original_sha256": "e0881cf1dd92018082742727b853ee0203688754206d12057185d9c7d565b50a",
+  "original_url": "https://images.metmuseum.org/CRDImages/as/original/DP102314.jpg",
+  "original_width": 2000,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-01-pull-toy-motion-structure-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-01-pull-toy-motion-structure-480.webp?v=db382b36e1bd 480w, 2026-09-01-pull-toy-motion-structure-768.webp?v=c4a4ea622584 768w, 2026-09-01-pull-toy-motion-structure-1280.webp?v=4c222f90651a 1280w"
+}

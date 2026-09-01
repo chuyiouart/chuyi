@@ -1,0 +1,34 @@
+{
+  "agent_output": "480: I opened the 480 WebP and inspected its pixels. The full bronze cart is visible, including the seated driver, both wheels, long drawbar, looped end, frame rails, cross-braces, and their overlaps. No draft animal is depicted in this museum view; the empty drawbar is fully within frame, so this is not evidence of an unintended crop. At mobile scale the silhouette and wheel/shaft relationships remain clear. I see no visible blocking, ringing, banding, smearing, aliasing, scaling damage, or unintended crop. ocr_exact_match=N/A. vision_mobile_readable=true; artifacts=false.\n\n768: I opened the 768 WebP and inspected its pixels. The complete cart, driver, paired wheels, axle area, long drawbar, looped tip, side rails, and diagonal braces remain distinct, with readable bronze patina and stable separation from the neutral background. No draft animal appears in the depicted object, while the complete drawbar confirms that the composition itself is intact. I see no visible blocking, ringing, banding, smearing, aliasing, scaling damage, or unintended crop. ocr_exact_match=N/A. vision_mobile_readable=true; artifacts=false.\n\n1280: I opened the 1280 WebP and inspected its pixels. The driver, wheel rims and spokes, cart frame, intersecting braces, long shaft, terminal loop, patinated bronze surface, cast shadows, and front-to-back overlaps are all cleanly resolved. The museum photograph depicts no draft animal, and the object is shown without an unintended crop. Tonal transitions and important edges remain natural, with no visible blocking, ringing, banding, smearing, aliasing, or other compression/scaling artifact. ocr_exact_match=N/A. vision_mobile_readable=true; artifacts=false.\n\nfallback: I opened the JPEG fallback and inspected its pixels. It retains the full museum composition and clearly shows the seated driver, two wheels and spokes, axle/frame relationships, crossing rails, long drawbar and end loop, bronze patina, and cast shadow at mobile scaling. No draft animal is present in this object view; the complete shaft is visible. I see no unintended crop and no distracting JPEG blocking, ringing, banding, smearing, aliasing, or scaling artifact. ocr_exact_match=N/A. vision_mobile_readable=true; artifacts=false.",
+  "agent_output_sha256": "91c190abfd8e9d0aa58c049731838518034b475e814d7ab033bb2a18fcc453a2",
+  "agent_prompt": "Inspect this exact responsive asset as it would appear scaled to a mobile viewport. This is an official museum image of a fifteenth-century East Javanese bronze Pull Toy of a Cart and Driver, not a generated text image. Determine whether the cart, driver, wheels, draft animal, connecting shafts, bronze silhouette, spatial overlaps, tonal structure, and important edges remain clearly readable, and whether compression or scaling introduces any visible blocking, ringing, banding, smearing, aliasing, unintended crop, or other artifact. Do not infer quality from dimensions or metadata; judge the opened pixels. Return a concise but complete visual assessment, ending with exactly: vision_mobile_readable=true|false; artifacts=true|false. OCR is not applicable and must be reported as ocr_exact_match=N/A.",
+  "agent_prompt_sha256": "74d174de33df2fabb9a23a8ac410288eb8fc54a7c5cc2ac33ca24c4efeeb9145",
+  "date": "2026-09-01",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "4c222f90651ad98d93188e14ce033ef47bce3334cf07823ab47ebd2a2d0377b9",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "db382b36e1bd4ad05d5470cb9d43497afd0644efbf0d3ff896903157bcaab34d",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "c4a4ea62258434ffd1c3daacdd4b9be0225f5786ae95205d20bb102f7094ddea",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "c86577c06153cb283b627675b9b55ca71cd0492e04bea4b543fb3e6d8cfe4278",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}
