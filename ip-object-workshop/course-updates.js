@@ -799,11 +799,27 @@ window.WORKSHOP_UPDATES = [
     "type": "视频",
     "title": "Codex 怎样从零搭建个人独立站",
     "time": "19:30",
-    "summary": "进入 Day 5：用 Codex 搭建个人独立站、发布 3D 展示，并用 AI 建立可持续的内容推广工作流。",
-    "cover": "./assets/workshop-ai-launch.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "先冻结真实素材、页面任务和公开边界，再用 Codex 小步生成并逐页读回源码，以 Gate 5 建立可继续编辑的个人独立站基础。",
+    "cover": "./assets/updates/2026-09-01/01-website-hero-fallback.png?v=6d21cd960a37",
+    "published": true,
+    "url": "./updates/2026-09-01-how-codex-builds-a-personal-site-from-zero.html",
+    "status": "published",
+    "source_id": "workshop:2026-09-01",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-01/01-website-hero-480.webp?v=68e59c4be876 480w, ./assets/updates/2026-09-01/01-website-hero-768.webp?v=9dfd1b22f12d 768w, ./assets/updates/2026-09-01/01-website-hero-1280.webp?v=b767dd6dc545 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-01/01-website-hero-fallback.png?v=6d21cd960a37",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-02",
