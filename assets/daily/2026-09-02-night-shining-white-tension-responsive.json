@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 22986,
+      "format": "webp",
+      "height": 360,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-02-night-shining-white-tension-480.webp",
+      "quality": 84,
+      "sha256": "bf2022006e3d22928a4f107f5cb1c9eb7e3ddca6ce6eedbe85dc84b26a6745db",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 66720,
+      "format": "webp",
+      "height": 576,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-02-night-shining-white-tension-768.webp",
+      "quality": 84,
+      "sha256": "ab75cbb2a456b6eea321ff104304dbefd0f26d5ca6dbcd7bb09d20ff2e9bf202",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 200136,
+      "format": "webp",
+      "height": 961,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-02-night-shining-white-tension-1280.webp",
+      "quality": 84,
+      "sha256": "8143a060056cb72e1cf11a2182709031fbfe7554aea9e05ba018960acd41e569",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 278660,
+    "format": "jpeg",
+    "height": 961,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-02-night-shining-white-tension-fallback.jpg",
+    "quality": 84,
+    "sha256": "642c30bd0cd5f2140dfa09cf7dc7ffc32b856e5f22a1610604038d6479a72ae7",
+    "width": 1280
+  },
+  "original_bytes": 2596061,
+  "original_height": 1501,
+  "original_path": "assets/daily/2026-09-02-night-shining-white-tension.jpg",
+  "original_sha256": "ed928933208636f30a428b462fe307fd4b5931dd323e21d866a6ea9183cc4b35",
+  "original_url": "https://images.metmuseum.org/CRDImages/as/original/DP153705.jpg",
+  "original_width": 2000,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-02-night-shining-white-tension-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-02-night-shining-white-tension-480.webp?v=bf2022006e3d 480w, 2026-09-02-night-shining-white-tension-768.webp?v=ab75cbb2a456 768w, 2026-09-02-night-shining-white-tension-1280.webp?v=8143a060056c 1280w"
+}
