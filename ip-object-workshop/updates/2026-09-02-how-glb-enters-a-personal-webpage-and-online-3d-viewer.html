@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="把同一受控 GLB 经过模型读回、网页容器、桌面与移动双出口、静态降级和 Gate 5 检查，形成可访问、可解释、可继续更新的在线三维展示。" />
+  <title>GLB 怎样进入个人网页和在线 3D 展示 | IP 实物化五天实战营</title>
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="../course.css" />
+  <link rel="stylesheet" href="../update-article.css" />
+</head>
+<body class="update-page">
+  <header class="update-header">
+    <a href="../#updates">← 返回每日公开更新</a>
+    <a class="update-brand" href="../#course-intro">IP 实物化五天实战营</a>
+  </header>
+  <main class="update-article">
+    <header class="update-article-title">
+      <p class="update-meta"><time datetime="2026-09-02">2026-09-02</time> · 图文</p>
+      <h1>GLB 怎样进入个人网页和在线 3D 展示</h1>
+      <p class="update-lead">把 GLB 放进个人网页，不是上传一个文件、出现可旋转物体就结束。模型的单位、朝向、旋转中心、材质、文件大小和版本如果没有先冻结，网页可能显示错误对象、错误比例或失效材质；桌面端看似正常，也可能在手机上加载迟缓或无法操作。
+
+当天要解决的是一条可复核的在线三维交接：同一受控 GLB 经过模型读回、网页容器、桌面与移动双出口、失败降级和 Gate 5 检查，最终与项目文字、图片和权利说明保持一致。这样在线展示才是项目档案的一部分，而不是孤立的技术效果。</p>
+    </header>
+    <figure class="update-hero">
+      <picture><source type="image/webp" srcset="../assets/updates/2026-09-02/01-website-hero-480.webp?v=677f96c81c55 480w, ../assets/updates/2026-09-02/01-website-hero-768.webp?v=c8d197ec0c5d 768w, ../assets/updates/2026-09-02/01-website-hero-1280.webp?v=03efb2ed5cf8 1280w" sizes="(max-width: 680px) 100vw, 760px" /><img src="../assets/updates/2026-09-02/01-website-hero-fallback.png?v=18717523dccf" srcset="../assets/updates/2026-09-02/01-website-hero-480.webp?v=677f96c81c55 480w, ../assets/updates/2026-09-02/01-website-hero-768.webp?v=c8d197ec0c5d 768w, ../assets/updates/2026-09-02/01-website-hero-1280.webp?v=03efb2ed5cf8 1280w" sizes="(max-width: 680px) 100vw, 760px" alt="GLB 怎样进入个人网页和在线 3D 展示" width="960" height="540" loading="eager" decoding="async" fetchpriority="high" /></picture>
+      <figcaption>课程流程示意图，不是往期学员案例。</figcaption>
+    </figure>
+    <section class="update-section"><h2>具体问题</h2><p>把 GLB 放进个人网页，不是上传一个文件、出现可旋转物体就结束。模型的单位、朝向、旋转中心、材质、文件大小和版本如果没有先冻结，网页可能显示错误对象、错误比例或失效材质；桌面端看似正常，也可能在手机上加载迟缓或无法操作。</p><p>当天要解决的是一条可复核的在线三维交接：同一受控 GLB 经过模型读回、网页容器、桌面与移动双出口、失败降级和 Gate 5 检查，最终与项目文字、图片和权利说明保持一致。这样在线展示才是项目档案的一部分，而不是孤立的技术效果。</p></section><section class="update-section"><h2>核心判断</h2><p>在线三维是否成立，应同时看“模型身份正确”和“访问条件成立”。前者检查版本、单位、朝向、材质、结构与旋转中心；后者检查加载时间、设备适配、触控边界、背景对比、操作说明和降级路径。任一侧缺失，都不能把展示标记为可交付。</p><p>GLB 是展示出口，不替代用于制造的 STL，也不证明实体已经完成。网页应明确模型版本和用途，并为不支持 WebGL、网络不稳定或性能不足的访问提供同版本静态海报。可旋转只是功能证据，真实文件读回与 Gate 5 才是发布判断。</p></section><section class="update-section"><h2>步骤或标准</h2><p>按“冻结文件—模型读回—网页容器—双出口比较—降级准备—Gate 5”的顺序推进，每一步都留下可以再次检查的文件或记录。</p><ul><li>先冻结展示文件：为 GLB、网页用图片、模型说明和降级海报建立同一版本号；记录文件大小、单位、朝向、材质数量和权利状态，来源不清或版本不一致的文件不得上线。</li><li>检查模型出口：在本地查看器中验证模型能完整载入、正面朝向正确、旋转中心落在主体、比例单位合理、材质与透明区域可辨；任何破面、错贴图或漂浮部件都退回模型文件修正。</li><li>建立网页容器：为在线三维设置明确宽高、相机初始位、受控灯光、旋转缩放边界、加载提示和键盘或触控操作说明，并用真实 GLB 相对路径接入，不使用本地绝对路径。</li><li>做双出口测试：至少比较桌面高质量版与移动轻量版两种配置，检查首屏加载、触控旋转、缩放、背景对比和文字遮挡；记录选择依据，而不是默认所有设备使用同一参数。</li><li>准备可验证降级：当浏览器、网络或设备不能稳定显示三维时，显示与同一模型版本绑定的静态海报、文件说明和重试提示；降级内容不得伪装成仍可交互的三维。</li><li>执行 Gate 5 读回：用新会话逐项检查页面 URL、GLB 请求、模型身份、移动端操作、降级路径、版权与完成度说明，并保存问题清单；通过后才进入多平台内容转译和持续更新。</li></ul></section><section class="update-section"><h2>常见错误</h2><p>以下错误常把局部演示误判为完整在线展示，并把问题留到真实访问阶段。</p><ul><li>只确认 GLB 在建模软件里能打开，就直接接入网页；后果是坐标、旋转中心、材质或浏览器兼容问题会在访客端暴露，且难以判断错误来自模型还是页面。</li><li>为了追求细节把高面数、大贴图和多个透明材质原样上线；后果是移动端加载缓慢、内存占用升高，甚至出现黑屏、崩溃或触控迟滞。</li><li>只做自动旋转，不限制相机距离也不说明操作；后果是访客容易把模型缩到看不见、穿入模型内部，或误以为页面没有交互。</li><li>三维加载失败时只留下空白容器；后果是用户无法确认作品内容、版本和下一步，也无法区分网络问题与文件损坏。</li><li>把课程方向示意页面写成已上线客户项目或真实学员成果；后果是事实与授权边界失真，破坏网站归档的可核验性。</li></ul></section><section class="update-section"><h2>与五天课程的关系</h2><p>当天主题对应 Day 5“Codex 独立站、3D 展示与 AI 推广”，并使用 Gate 5 检查真实 GLB、页面容器、移动端交互、降级路径、权利边界和可继续编辑性。它承接 Day 2 输出的受控 GLB，也依赖 Day 4 / Gate 4 已核对的作品说明、图片和公开范围。</p><p>本阶段通过后，下一阶段进入同一项目资料的朋友圈、小红书、短视频与长内容转译，以及课后三十天持续更新；若 Gate 5 发现模型错版、移动端失效或降级缺失，应退回模型或网页修正，不直接扩大传播。</p></section><section class="update-section"><h2>事实 / 案例 / 完成度边界</h2><p>本文依据课程主基线 Day 2 双文件出口、Day 5 在线三维与 Gate 5 要求编写。当天规划的原创“岚洞拾光者”四图均为课程方向示意图，用于解释 GLB 读回、双出口比较、网页交互检查与降级交接；它们不是真实案例，不是学员作品、真实课堂、真实委托、真实网页截图或已经上线的项目。真实案例必须另有来源、授权、原始 GLB、页面和公开记录。</p><p>五天内可完成与项目范围相匹配的基础 GLB 在线查看、受控相机与灯光、移动端基础操作、静态降级和版本说明；实际完成度受模型复杂度、贴图大小、透明材质、设备性能、网络和返工影响。课程不承诺五天内完成商业级高性能三维引擎、所有浏览器零故障、复杂动画、电商支付、稳定流量、订单、批量生产、正式展览或销售结果。</p></section><section class="update-section"><h2>报名入口</h2><p>如果你已有 IP / 角色资产，可以提交原画、角色设定、已有模型或实体样，并说明版权状态与希望实现的在线展示；课程会从真实资产判断 GLB、网页与实体交接范围。</p><p>如果你只有想法、草图或初步设定，也可以提交个人故事、关键词、手绘和希望形成的实体类型。两类起点都会进入同一条从方向判断、三维与实体到个人网站和持续发布的链路。公开报名地址：https://wj.qq.com/s2/27296919/9499/</p></section>
+    <div class="update-gallery"><picture><source type="image/webp" srcset="../assets/updates/2026-09-02/02-core-explanation-480.webp?v=5f5897401c9c 480w, ../assets/updates/2026-09-02/02-core-explanation-768.webp?v=ac6563eed461 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-09-02/02-core-explanation-fallback.png?v=e4b1366514d4" srcset="../assets/updates/2026-09-02/02-core-explanation-480.webp?v=5f5897401c9c 480w, ../assets/updates/2026-09-02/02-core-explanation-768.webp?v=ac6563eed461 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="GLB 怎样进入个人网页和在线 3D 展示 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-09-02/03-real-application-480.webp?v=421b6a12f2a3 480w, ../assets/updates/2026-09-02/03-real-application-768.webp?v=9f849105fbf1 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-09-02/03-real-application-fallback.png?v=ace8483f64ac" srcset="../assets/updates/2026-09-02/03-real-application-480.webp?v=421b6a12f2a3 480w, ../assets/updates/2026-09-02/03-real-application-768.webp?v=9f849105fbf1 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="GLB 怎样进入个人网页和在线 3D 展示 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-09-02/04-social-promotion-480.webp?v=40933a2ad18c 480w, ../assets/updates/2026-09-02/04-social-promotion-768.webp?v=df569dfd2557 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-09-02/04-social-promotion-fallback.png?v=f5eb93751a7f" srcset="../assets/updates/2026-09-02/04-social-promotion-480.webp?v=40933a2ad18c 480w, ../assets/updates/2026-09-02/04-social-promotion-768.webp?v=df569dfd2557 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="GLB 怎样进入个人网页和在线 3D 展示 配图" width="480" height="600" loading="lazy" decoding="async" /></picture></div>
+    <aside class="update-boundary">
+      <strong>课程边界</strong>
+      <p>五天课程以完成第一版可继续发展的项目闭环为目标，不承诺商业级量产、人人进入正式展览或必然产生销售。</p>
+    </aside>
+    <section class="update-cta">
+      <p>课程时间：2026 年 10 月 2 日至 10 月 6 日｜青岛｜每班限 10 人</p>
+      <a href="https://wj.qq.com/s2/27296919/9499/" target="_blank" rel="noopener">填写报名资料 →</a>
+    </section>
+  </main>
+</body>
+</html>

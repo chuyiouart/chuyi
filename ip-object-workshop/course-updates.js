@@ -826,11 +826,27 @@ window.WORKSHOP_UPDATES = [
     "type": "图文",
     "title": "GLB 怎样进入个人网页和在线 3D 展示",
     "time": "11:30",
-    "summary": "进入 Day 5：用 Codex 搭建个人独立站、发布 3D 展示，并用 AI 建立可持续的内容推广工作流。",
-    "cover": "./assets/workshop-hero-v2.png",
-    "published": false,
-    "url": "",
-    "status": "planned"
+    "summary": "把同一受控 GLB 经过模型读回、网页容器、桌面与移动双出口、静态降级和 Gate 5 检查，形成可访问、可解释、可继续更新的在线三维展示。",
+    "cover": "./assets/updates/2026-09-02/01-website-hero-fallback.png?v=18717523dccf",
+    "published": true,
+    "url": "./updates/2026-09-02-how-glb-enters-a-personal-webpage-and-online-3d-viewer.html",
+    "status": "published",
+    "source_id": "workshop:2026-09-02",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-02/01-website-hero-480.webp?v=677f96c81c55 480w, ./assets/updates/2026-09-02/01-website-hero-768.webp?v=c8d197ec0c5d 768w, ./assets/updates/2026-09-02/01-website-hero-1280.webp?v=03efb2ed5cf8 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-02/01-website-hero-fallback.png?v=18717523dccf",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-03",
