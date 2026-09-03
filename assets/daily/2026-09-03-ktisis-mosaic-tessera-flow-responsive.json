@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 53358,
+      "format": "webp",
+      "height": 426,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-03-ktisis-mosaic-tessera-flow-480.webp",
+      "quality": 84,
+      "sha256": "eddf91653e7fb66de46e1d41919016d4228b0e72ddf71056d678783c7e8dc1ee",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 128254,
+      "format": "webp",
+      "height": 682,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-03-ktisis-mosaic-tessera-flow-768.webp",
+      "quality": 84,
+      "sha256": "82a064dfd331cec581c1440fb8a230221499549c81dca10a592d7d3ebb9b482f",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 340088,
+      "format": "webp",
+      "height": 1137,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-03-ktisis-mosaic-tessera-flow-1280.webp",
+      "quality": 84,
+      "sha256": "e0ae383e0af07c5dc2995f8f1fc9e2cddf674bfebb1caf2e02cb157b4c64bfbf",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 446195,
+    "format": "jpeg",
+    "height": 1137,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-03-ktisis-mosaic-tessera-flow-fallback.jpg",
+    "quality": 84,
+    "sha256": "cf2e01c17182d7f98173ee576bc045c3ff0f477aeac235d29489de394beffc05",
+    "width": 1280
+  },
+  "original_bytes": 6051540,
+  "original_height": 3552,
+  "original_path": "assets/daily/2026-09-03-ktisis-mosaic-tessera-flow.jpg",
+  "original_sha256": "0b426c1172aa35cd566644a1d893b0cefee54105028a03b4c7cc2d7b2ce1bad1",
+  "original_url": "https://images.metmuseum.org/CRDImages/md/original/DP-37759-001.jpg",
+  "original_width": 4000,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-03-ktisis-mosaic-tessera-flow-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-03-ktisis-mosaic-tessera-flow-480.webp?v=eddf91653e7f 480w, 2026-09-03-ktisis-mosaic-tessera-flow-768.webp?v=82a064dfd331 768w, 2026-09-03-ktisis-mosaic-tessera-flow-1280.webp?v=e0ae383e0af0 1280w"
+}
