@@ -112,7 +112,7 @@ def render_article(manifest: dict[str, Any], hero_href: str, gallery_hrefs: list
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="{summary}" />
-  <title>{title} | IP 实物化五天实战营</title>
+  <title>{title} | IP 实物化实战营</title>
   <link rel="icon" href="../favicon.ico" sizes="any" />
   <link rel="stylesheet" href="../course.css" />
   <link rel="stylesheet" href="../update-article.css" />
@@ -120,7 +120,7 @@ def render_article(manifest: dict[str, Any], hero_href: str, gallery_hrefs: list
 <body class="update-page">
   <header class="update-header">
     <a href="../#updates">← 返回每日公开更新</a>
-    <a class="update-brand" href="../#course-intro">IP 实物化五天实战营</a>
+    <a class="update-brand" href="../#course-intro">IP 实物化实战营</a>
   </header>
   <main class="update-article">
     <header class="update-article-title">
@@ -133,10 +133,10 @@ def render_article(manifest: dict[str, Any], hero_href: str, gallery_hrefs: list
     {gallery_markup}
     <aside class="update-boundary">
       <strong>课程边界</strong>
-      <p>五天课程以完成第一版可继续发展的项目闭环为目标，不承诺商业级量产、人人进入正式展览或必然产生销售。</p>
+      <p>3–5 天短训按起点确认范围：3 天聚焦一个优先目标，4–5 天串联首版项目流程；不承诺商业级量产、人人进入正式展览或必然产生销售。</p>
     </aside>
     <section class="update-cta">
-      <p>课程时间：2026 年 10 月 2 日至 10 月 6 日｜青岛｜每班限 10 人</p>
+      <p>长期招生｜青岛｜3–5 天短训｜评估后预约跟班｜每班最多 10 人。<a href="../#enrollment">查看当前学习方案与费用</a></p>
       <a href="{cta_url}" target="_blank" rel="noopener">{cta_label} →</a>
     </section>
   </main>
@@ -208,7 +208,8 @@ def _publish_manifest_locked(root: Path | str, manifest_path: Path | str) -> dic
     if missing:
         raise ValueError(f"manifest 缺少字段: {', '.join(missing)}")
     section_headings = {str(section.get("heading") or "").strip() for section in manifest["sections"]}
-    missing_sections = [heading for heading in REQUIRED_SECTION_HEADINGS if heading not in section_headings]
+    required_headings = tuple("与短期课程的关系" if heading == "与五天课程的关系" and manifest["date"] >= "2026-09-06" else heading for heading in REQUIRED_SECTION_HEADINGS)
+    missing_sections = [heading for heading in required_headings if heading not in section_headings]
     if missing_sections:
         raise ValueError(f"缺少必需章节: {', '.join(missing_sections)}")
     for section in manifest["sections"]:

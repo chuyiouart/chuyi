@@ -43,7 +43,7 @@
   function buildSummary() {
     const devices = selectedValues("device");
     return [
-      "【IP 实物化五天实战营 · 课程报名】",
+      "【IP 实物化实战营 · 长期招生预约资料（尚未提交）】",
       `姓名：${fieldValue("name")}`,
       `城市：${fieldValue("city")}`,
       `电话：${fieldValue("phone")}`,
@@ -53,6 +53,8 @@
       `项目介绍：${fieldValue("projectIntro")}`,
       `参考链接：${fieldValue("referenceUrl") || "无"}`,
       `优先目标：${fieldValue("primaryGoal")}`,
+      `期望时长：${fieldValue("duration")}`,
+      `可到课时间：${fieldValue("availability")}`,
       `建模经验：${fieldValue("modelLevel")}`,
       `绘画 / 涂装经验：${fieldValue("paintLevel")}`,
       `报名方式：${selectedValues("pricePlan")[0] || "未选择"}`,

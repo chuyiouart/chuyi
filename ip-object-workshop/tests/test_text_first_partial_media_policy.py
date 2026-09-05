@@ -35,7 +35,7 @@ class TextFirstPartialMediaPublisherTests(unittest.TestCase):
         shutil.rmtree(self.tmp)
 
     def manifest(self):
-        headings = ("具体问题", "核心判断", "步骤或标准", "常见错误", "与五天课程的关系", "事实 / 案例 / 完成度边界", "报名入口")
+        headings = ("具体问题", "核心判断", "步骤或标准", "常见错误", "与短期课程的关系", "事实 / 案例 / 完成度边界", "报名入口")
         return {"date": self.DATE, "type": "图文", "title": "正文优先", "summary": "无图也发布", "slug": "text-first", "heroImage": "", "galleryImages": [], "lead": "正文有效。", "sections": [{"heading": heading, "paragraphs": ["有效正文。"]} for heading in headings], "imageRoles": [], "passedRoles": [], "missingRoles": ["website_hero", "core_explanation", "real_application", "social_promotion"], "media_status": "none", "content_validated": True}
 
     def write_manifest(self, manifest):
@@ -48,6 +48,16 @@ class TextFirstPartialMediaPublisherTests(unittest.TestCase):
         self.assertNotIn("<figure", article)
         self.assertNotIn("<picture", article)
         self.assertNotIn('<img src=""', article)
+
+    def test_evergreen_template_and_legacy_heading_rejected_for_future(self):
+        manifest = self.manifest()
+        article = render_article(manifest, "", [])
+        self.assertIn("长期招生", article)
+        self.assertIn("3–5 天", article)
+        self.assertNotIn("2026 年 10 月", article)
+        manifest['sections'][4]['heading'] = '与五天课程的关系'
+        with self.assertRaisesRegex(ValueError, '缺少必需章节'):
+            publish_manifest(self.tmp, self.write_manifest(manifest))
 
     def test_zero_image_publish_records_none_media(self):
         result = publish_manifest(self.tmp, self.write_manifest(self.manifest()))

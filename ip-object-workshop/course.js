@@ -103,6 +103,8 @@
     const link = document.querySelector("[data-today-link]");
 
     if (cover) {
+      const media = cover.closest(".today-media");
+      if (media) media.hidden = !item.coverImage && !item.cover;
       if (item.coverImage) {
         cover.srcset = item.coverImage.srcset;
         cover.sizes = item.coverImage.sizes;
@@ -113,7 +115,8 @@
       } else {
         cover.removeAttribute("srcset");
         cover.removeAttribute("sizes");
-        cover.src = item.cover;
+        if (item.cover) cover.src = item.cover;
+        else cover.removeAttribute("src");
       }
       cover.alt = item.title;
     }
@@ -213,8 +216,7 @@
   }
 
   function setDefaultPrice() {
-    const earlyBirdEnd = parseLocalDate("2026-08-20");
-    const value = today <= earlyBirdEnd ? "founder" : "standard";
+    const value = "standard"; // Evergreen reference plan; no date-based offer selection.
     const option = document.querySelector(`input[name="course-price"][value="${value}"]`);
     if (option) option.checked = true;
   }

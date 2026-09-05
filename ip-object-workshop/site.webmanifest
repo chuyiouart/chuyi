@@ -1,7 +1,7 @@
 {
-  "name": "IP 实物化五天实战营",
+  "name": "IP 实物化实战营",
   "short_name": "IP实物营",
-  "description": "从设计输入、三维模型到实体制作、包装发布的五天线下实战课程。",
+  "description": "长期招生，青岛 3–5 天短训，评估后预约跟班：AI 辅助建模、实物验证与持续发布。",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
