@@ -165,7 +165,12 @@ def prepare_responsive_images(root: Path, manifest: dict[str, Any]) -> list[dict
         role = row["role"]
         source = Path(str(row.get("path") or ""))
         expected_text = row.get("expected_text")
-        if not source.is_file() or not isinstance(expected_text, list) or not expected_text:
+        no_text = (manifest.get("image_text_policy") == "ip-workshop-no-image-text-v1"
+                   and manifest.get("date", "") >= "2026-09-05"
+                   and row.get("image_text_policy") == "ip-workshop-no-image-text-v1"
+                   and row.get("native_text_required") is False
+                   and expected_text == [])
+        if not source.is_file() or not isinstance(expected_text, list) or (not expected_text and not no_text):
             raise ValueError(f"{role} 缺少源图或 OCR exact expected_text")
         stem = Path(source.name).stem
         asset = derive_responsive_assets(
@@ -183,6 +188,8 @@ def prepare_responsive_images(root: Path, manifest: dict[str, Any]) -> list[dict
             receipt = role_qa.get(key)
             if not isinstance(receipt, dict) or receipt.get("image_sha256") != derivative["sha256"]:
                 raise ValueError(f"{role}:{key} 派生图片 QA 未绑定实际 SHA")
+            if no_text and (receipt.get("detected_text") != [] or receipt.get("no_editorial_text") is not True or receipt.get("no_pseudo_text") is not True):
+                raise ValueError(f"{role}:{key} 无字图片 QA 未通过")
             bound[key] = dict(receipt)
         asset["qa_receipts"] = bound
         asset["role"] = role
