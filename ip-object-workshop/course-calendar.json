@@ -892,19 +892,26 @@
     "title": "个人独立站需要准备的图片、模型和文字清单",
     "time": "11:30",
     "summary": "把个人独立站所需的图片、GLB、静态降级与项目文字整理成可追溯清单，再以 Gate 5 检查页面任务、双端访问和权利边界。",
-    "cover": "",
+    "cover": "./assets/updates/2026-09-05/01-website-hero-fallback.png?v=ca410209f783",
     "published": true,
     "url": "./updates/2026-09-05-personal-site-image-model-and-copy-checklist.html",
     "status": "published",
     "source_id": "workshop:2026-09-05",
-    "media_status": "none",
-    "passedRoles": [],
-    "pendingRoles": [
+    "media_status": "complete",
+    "passedRoles": [
       "website_hero",
       "core_explanation",
       "real_application",
       "social_promotion"
-    ]
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-05/01-website-hero-480.webp?v=ebecd9a15fbe 480w, ./assets/updates/2026-09-05/01-website-hero-768.webp?v=8a4dc547d3f8 768w, ./assets/updates/2026-09-05/01-website-hero-1280.webp?v=3c760c545f32 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-05/01-website-hero-fallback.png?v=ca410209f783",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-06",
