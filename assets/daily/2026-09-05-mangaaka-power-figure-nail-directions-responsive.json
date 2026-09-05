@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 8272,
+      "format": "webp",
+      "height": 360,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-05-mangaaka-power-figure-nail-directions-480.webp",
+      "quality": 84,
+      "sha256": "a8cbc6909010385e1363469c2a01ca73987df0b691ef16739a97e0e7e5ac1572",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 17940,
+      "format": "webp",
+      "height": 576,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-05-mangaaka-power-figure-nail-directions-768.webp",
+      "quality": 84,
+      "sha256": "5f1fa198086448286cf925b4500129aeaf7c62054cc5cea4e593f375f1618fe2",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 41930,
+      "format": "webp",
+      "height": 960,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-05-mangaaka-power-figure-nail-directions-1280.webp",
+      "quality": 84,
+      "sha256": "10e7d523012667cf1a3c9f654b4a31c77dd8971f3cae5298cb0ef34d8e046d7d",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 96100,
+    "format": "jpeg",
+    "height": 960,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-05-mangaaka-power-figure-nail-directions-fallback.jpg",
+    "quality": 84,
+    "sha256": "71add9bbee34ecf5808c665899d6376fb91f69510af82ac0d868335734258791",
+    "width": 1280
+  },
+  "original_bytes": 1115971,
+  "original_height": 2947,
+  "original_path": "assets/daily/2026-09-05-mangaaka-power-figure-nail-directions.jpg",
+  "original_sha256": "0057d38cf96a33a92e43d6cd7daca470d8226ed9d17808d375ec5b85468d4008",
+  "original_url": "https://images.metmuseum.org/CRDImages/ao/original/DP351868.jpg",
+  "original_width": 3929,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-05-mangaaka-power-figure-nail-directions-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-05-mangaaka-power-figure-nail-directions-480.webp?v=a8cbc6909010 480w, 2026-09-05-mangaaka-power-figure-nail-directions-768.webp?v=5f1fa1980864 768w, 2026-09-05-mangaaka-power-figure-nail-directions-1280.webp?v=10e7d5230126 1280w"
+}

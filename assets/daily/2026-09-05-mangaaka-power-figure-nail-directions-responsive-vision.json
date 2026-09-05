@@ -1,0 +1,34 @@
+{
+  "agent_output": "[480]\nThe actual 480 WebP opened successfully. At mobile scale, the complete standing figure is clearly readable against the dark neutral background; the head, white eyes, bent arms, abdominal cavity, nail-covered torso, legs, and block-like feet remain recognizable. The image is not damagingly cropped. I see no blockiness, ringing, severe blur, banding, corruption, broken rendering, or other visible compression/scaling artifact.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n\n[768]\nThe actual 768 WebP opened successfully. At mobile scale, the complete standing figure and its main features are clear: carved head and eyes, bent arms, central cavity, dense projecting nails and blades, legs, and feet. Edges and tonal transitions remain clean, with no damaging crop. I see no blockiness, ringing, severe blur, banding, corruption, broken rendering, or other visible compression/scaling artifact.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n\n[1280]\nThe actual 1280 WebP opened successfully. The figure is sharply and clearly readable when scaled for mobile display, including the facial carving, white eyes, torso cavity, individual projecting metal elements, arms, legs, and feet. The full subject is retained without damaging crop. I see no blockiness, ringing, severe blur, banding, corruption, broken rendering, or other visible compression/scaling artifact.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n\n[fallback]\nThe actual fallback JPEG opened successfully. The complete figure remains clearly readable when scaled for mobile display; its silhouette, face and white eyes, bent arms, central cavity, dense metal projections, legs, and feet are distinct. The crop preserves the full subject. I see no blockiness, ringing, severe blur, banding, corruption, broken rendering, or other visible compression/scaling artifact.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A",
+  "agent_output_sha256": "573c15f0887d36f87675a11fef54a204bcf472a155f6fb531edceae5e9f7b593",
+  "agent_prompt": "[480]\nOUART Daily Art responsive Vision QA. Asset: 480 WebP for 2026-09-05, an official museum photograph of the Mangaaka Power Figure (Nkisi N’Kondi). Inspect the actual opened image visually as it would appear scaled on a mobile screen. Determine whether the central artwork remains clearly readable, with recognizable overall silhouette and major features, and whether there are any visible compression or scaling artifacts (blockiness, ringing, severe blur, banding, corruption, broken rendering, or damaging crop). This museum image contains no GPT-generated text, so OCR exact matching is not applicable and must be reported exactly as N/A. Return a concise factual assessment and explicit fields: vision_mobile_readable=true/false; artifacts=true/false; ocr_exact_match=N/A. Fail rather than infer from metadata if the image cannot actually be viewed.\n\n[768]\nOUART Daily Art responsive Vision QA. Asset: 768 WebP for 2026-09-05, an official museum photograph of the Mangaaka Power Figure (Nkisi N’Kondi). Inspect the actual opened image visually as it would appear scaled on a mobile screen. Determine whether the central artwork remains clearly readable, with recognizable overall silhouette and major features, and whether there are any visible compression or scaling artifacts (blockiness, ringing, severe blur, banding, corruption, broken rendering, or damaging crop). This museum image contains no GPT-generated text, so OCR exact matching is not applicable and must be reported exactly as N/A. Return a concise factual assessment and explicit fields: vision_mobile_readable=true/false; artifacts=true/false; ocr_exact_match=N/A. Fail rather than infer from metadata if the image cannot actually be viewed.\n\n[1280]\nOUART Daily Art responsive Vision QA. Asset: 1280 WebP for 2026-09-05, an official museum photograph of the Mangaaka Power Figure (Nkisi N’Kondi). Inspect the actual opened image visually as it would appear scaled on a mobile screen. Determine whether the central artwork remains clearly readable, with recognizable overall silhouette and major features, and whether there are any visible compression or scaling artifacts (blockiness, ringing, severe blur, banding, corruption, broken rendering, or damaging crop). This museum image contains no GPT-generated text, so OCR exact matching is not applicable and must be reported exactly as N/A. Return a concise factual assessment and explicit fields: vision_mobile_readable=true/false; artifacts=true/false; ocr_exact_match=N/A. Fail rather than infer from metadata if the image cannot actually be viewed.\n\n[fallback]\nOUART Daily Art responsive Vision QA. Asset: same-format fallback JPEG for 2026-09-05, an official museum photograph of the Mangaaka Power Figure (Nkisi N’Kondi). Inspect the actual opened image visually as it would appear scaled on a mobile screen. Determine whether the central artwork remains clearly readable, with recognizable overall silhouette and major features, and whether there are any visible compression or scaling artifacts (blockiness, ringing, severe blur, banding, corruption, broken rendering, or damaging crop). This museum image contains no GPT-generated text, so OCR exact matching is not applicable and must be reported exactly as N/A. Return a concise factual assessment and explicit fields: vision_mobile_readable=true/false; artifacts=true/false; ocr_exact_match=N/A. Fail rather than infer from metadata if the image cannot actually be viewed.",
+  "agent_prompt_sha256": "187d1fe8b07e617cad79f5e74b1b9ce05d791bafe556094bcff8b5abce33ab2e",
+  "date": "2026-09-05",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "10e7d523012667cf1a3c9f654b4a31c77dd8971f3cae5298cb0ef34d8e046d7d",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "a8cbc6909010385e1363469c2a01ca73987df0b691ef16739a97e0e7e5ac1572",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "5f1fa198086448286cf925b4500129aeaf7c62054cc5cea4e593f375f1618fe2",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "71add9bbee34ecf5808c665899d6376fb91f69510af82ac0d868335734258791",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}
