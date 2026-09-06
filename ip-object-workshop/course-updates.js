@@ -918,14 +918,30 @@ window.WORKSHOP_UPDATES = [
     "type": "直播",
     "title": "讨论短训结课后的下一个验证目标｜交付复核",
     "time": "20:00",
-    "summary": "围绕学习路线与复盘中的具体问题，用输入、判断、验证证据与下一步形成长期可用的方法；3–5 天范围按起点评估。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "用当前版本、Gate 证据、单一阻塞风险和最小验证件，把短训结课后的“继续优化”改写为可检查、可退回、可预约跟班的下一目标。",
+    "cover": "./assets/updates/2026-09-06/01-website-hero-fallback.png?v=91ca0e5910d6",
+    "published": true,
+    "url": "./updates/2026-09-06-choose-the-next-verification-target-after-short-training.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 1–5 / 阶段验收",
-    "editorial_angle": "交付复核"
+    "editorial_angle": "交付复核",
+    "source_id": "workshop:2026-09-06",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-06/01-website-hero-480.webp?v=63f2b1c17a67 480w, ./assets/updates/2026-09-06/01-website-hero-768.webp?v=dbcaea82cf5e 768w, ./assets/updates/2026-09-06/01-website-hero-1280.webp?v=9e2fba58291d 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-06/01-website-hero-fallback.png?v=91ca0e5910d6",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-07",
