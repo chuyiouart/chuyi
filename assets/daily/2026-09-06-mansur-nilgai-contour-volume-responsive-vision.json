@@ -1,0 +1,34 @@
+{
+  "agent_output": "[480]\nThe actual 480 WebP opened successfully. At mobile scale, the complete nilgai is clearly readable in side profile: head, ears and short horns, neck, dark rounded torso, four slender legs, hooves, pale rump, and tail remain distinct. The surrounding floral album border and inner painted field are intact, with no damaging crop. I see no blockiness, ringing, severe blur, banding, corruption, broken rendering, or other visible compression/scaling artifact.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n\n[768]\nThe actual 768 WebP opened successfully. At mobile scale, the nilgai's full side-profile silhouette and major features are clear, including the head, ears, horns, eye, white throat patch, broad dark body, legs, hooves, pale rump, and tail. The complete floral border remains visible. I see no blockiness, ringing, severe blur, banding, corruption, broken rendering, damaging crop, or other visible compression/scaling artifact.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n\n[1280]\nThe actual 1280 WebP opened successfully. When scaled for mobile display, the full nilgai remains sharply readable, with the facial profile, horns and ears, tonal modeling across the body, individual legs and hooves, pale rump, and tail all distinguishable. The decorated album border and painted ground are retained without damaging crop. I see no blockiness, ringing, severe blur, banding, corruption, broken rendering, or other visible compression/scaling artifact.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n\n[fallback]\nThe actual fallback JPEG opened successfully. At mobile scale, the complete side-profile nilgai is clearly readable; its head, ears, horns, white throat patch, dark torso, four legs, hooves, pale rump, and tail remain distinct. The floral border is complete and the subject is not damagingly cropped. I see no blockiness, ringing, severe blur, banding, corruption, broken rendering, or other visible compression/scaling artifact.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A",
+  "agent_output_sha256": "23b943b2c5d0a11382603d58d56815211fc3cb4d64d46b4888037be3e36bf934",
+  "agent_prompt": "[480]\nOUART Daily Art responsive Vision QA. Asset: 480 WebP for 2026-09-06, an official museum image of Mansur's Study of a Nilgai (Blue Bull). Inspect the actual opened image visually as it would appear scaled on a mobile screen. Determine whether the central artwork remains clearly readable, with recognizable overall silhouette and major features, and whether there are any visible compression or scaling artifacts (blockiness, ringing, severe blur, banding, corruption, broken rendering, or damaging crop). This museum image contains no GPT-generated text, so OCR exact matching is not applicable and must be reported exactly as N/A. Return a concise factual assessment and explicit fields: vision_mobile_readable=true/false; artifacts=true/false; ocr_exact_match=N/A. Fail rather than infer from metadata if the image cannot actually be viewed.\n\n[768]\nOUART Daily Art responsive Vision QA. Asset: 768 WebP for 2026-09-06, an official museum image of Mansur's Study of a Nilgai (Blue Bull). Inspect the actual opened image visually as it would appear scaled on a mobile screen. Determine whether the central artwork remains clearly readable, with recognizable overall silhouette and major features, and whether there are any visible compression or scaling artifacts (blockiness, ringing, severe blur, banding, corruption, broken rendering, or damaging crop). This museum image contains no GPT-generated text, so OCR exact matching is not applicable and must be reported exactly as N/A. Return a concise factual assessment and explicit fields: vision_mobile_readable=true/false; artifacts=true/false; ocr_exact_match=N/A. Fail rather than infer from metadata if the image cannot actually be viewed.\n\n[1280]\nOUART Daily Art responsive Vision QA. Asset: 1280 WebP for 2026-09-06, an official museum image of Mansur's Study of a Nilgai (Blue Bull). Inspect the actual opened image visually as it would appear scaled on a mobile screen. Determine whether the central artwork remains clearly readable, with recognizable overall silhouette and major features, and whether there are any visible compression or scaling artifacts (blockiness, ringing, severe blur, banding, corruption, broken rendering, or damaging crop). This museum image contains no GPT-generated text, so OCR exact matching is not applicable and must be reported exactly as N/A. Return a concise factual assessment and explicit fields: vision_mobile_readable=true/false; artifacts=true/false; ocr_exact_match=N/A. Fail rather than infer from metadata if the image cannot actually be viewed.\n\n[fallback]\nOUART Daily Art responsive Vision QA. Asset: fallback JPEG for 2026-09-06, an official museum image of Mansur's Study of a Nilgai (Blue Bull). Inspect the actual opened image visually as it would appear scaled on a mobile screen. Determine whether the central artwork remains clearly readable, with recognizable overall silhouette and major features, and whether there are any visible compression or scaling artifacts (blockiness, ringing, severe blur, banding, corruption, broken rendering, or damaging crop). This museum image contains no GPT-generated text, so OCR exact matching is not applicable and must be reported exactly as N/A. Return a concise factual assessment and explicit fields: vision_mobile_readable=true/false; artifacts=true/false; ocr_exact_match=N/A. Fail rather than infer from metadata if the image cannot actually be viewed.",
+  "agent_prompt_sha256": "32961509fdf6edbfad8b35fa2d1abb165847bd037ce7ba1a12c9b6b724dac8f5",
+  "date": "2026-09-06",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "dd1283b31e541d068c2e42e5e165212de09dbe3e1c06276c8d2af1d7d257cdd7",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "1061a4b62b9aa0f3bf6527b913acaf481f1a72d7e603c15b0ff7fc9d419d7c3a",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "120e975b76ba420ab0c0c455b8dfea855f17b89be619a43d15fa96fb9a5d5791",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "9f6e75630e74f923a7789eef7b41b4b33fe176c1a54694a38acd2c0a8ad6f350",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}

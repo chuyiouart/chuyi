@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 34382,
+      "format": "webp",
+      "height": 312,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-06-mansur-nilgai-contour-volume-480.webp",
+      "quality": 84,
+      "sha256": "1061a4b62b9aa0f3bf6527b913acaf481f1a72d7e603c15b0ff7fc9d419d7c3a",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 81014,
+      "format": "webp",
+      "height": 500,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-06-mansur-nilgai-contour-volume-768.webp",
+      "quality": 84,
+      "sha256": "120e975b76ba420ab0c0c455b8dfea855f17b89be619a43d15fa96fb9a5d5791",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 223226,
+      "format": "webp",
+      "height": 833,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-06-mansur-nilgai-contour-volume-1280.webp",
+      "quality": 84,
+      "sha256": "dd1283b31e541d068c2e42e5e165212de09dbe3e1c06276c8d2af1d7d257cdd7",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 322928,
+    "format": "jpeg",
+    "height": 833,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-06-mansur-nilgai-contour-volume-fallback.jpg",
+    "quality": 84,
+    "sha256": "9f6e75630e74f923a7789eef7b41b4b33fe176c1a54694a38acd2c0a8ad6f350",
+    "width": 1280
+  },
+  "original_bytes": 3465205,
+  "original_height": 2572,
+  "original_path": "assets/daily/2026-09-06-mansur-nilgai-contour-volume.jpg",
+  "original_sha256": "1e8f1d0e647e7375b2e4ca6587e07a22ccd69b1a94830f12866e6078a7ed4a7f",
+  "original_url": "https://images.metmuseum.org/CRDImages/is/original/DP240655.jpg",
+  "original_width": 3952,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-06-mansur-nilgai-contour-volume-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-06-mansur-nilgai-contour-volume-480.webp?v=1061a4b62b9a 480w, 2026-09-06-mansur-nilgai-contour-volume-768.webp?v=120e975b76ba 768w, 2026-09-06-mansur-nilgai-contour-volume-1280.webp?v=dd1283b31e54 1280w"
+}
