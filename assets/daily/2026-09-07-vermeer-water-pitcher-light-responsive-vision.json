@@ -1,0 +1,34 @@
+{
+  "agent_output": "[480]\nThe actual 480 WebP opened successfully. At mobile scale, the woman, open leaded-glass window, white head covering, blue skirt, water pitcher, basin, patterned table covering, wall map, and chair remain clearly recognizable in the complete composition. I see no blockiness, ringing, severe blur, banding, corruption, broken rendering, or damaging crop.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n\n[768]\nThe actual 768 WebP opened successfully. At mobile scale, the full interior composition and the woman's gesture between the window and pitcher are clear; facial features, fabric folds, window panes, basin, map, and table pattern remain readable. I see no blockiness, ringing, severe blur, banding, corruption, broken rendering, or damaging crop.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n\n[1280]\nThe actual 1280 WebP opened successfully. When scaled for mobile display, the complete composition remains clearly readable, including the woman's face and hands, softly modeled white head covering, window structure, pitcher and basin, wall map, chair finial, and textile pattern. I see no blockiness, ringing, severe blur, banding, corruption, broken rendering, or damaging crop.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n\n[fallback]\nThe actual fallback JPEG opened successfully. At mobile scale, the woman and all major compositional elements remain clear: the open window, pale wall, map, white head covering, blue skirt, pitcher, basin, chair, and patterned table covering. I see no blockiness, ringing, severe blur, banding, corruption, broken rendering, or damaging crop.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A",
+  "agent_output_sha256": "62b14f17304b12890dbdff7d695fe295fea368d356c05fcd3fd27c6aead5d0d5",
+  "agent_prompt": "[480]\nOUART Daily Art responsive Vision QA. Asset: 480 WebP for 2026-09-07, an official museum image of Johannes Vermeer's Young Woman with a Water Pitcher. Inspect the actual opened image visually as it would appear scaled on a mobile screen. Determine whether the central artwork remains clearly readable, with recognizable overall composition and major features, and whether there are any visible compression or scaling artifacts (blockiness, ringing, severe blur, banding, corruption, broken rendering, or damaging crop). This museum image contains no GPT-generated text, so OCR exact matching is not applicable and must be reported exactly as N/A. Return a concise factual assessment and explicit fields: vision_mobile_readable=true/false; artifacts=true/false; ocr_exact_match=N/A. Fail rather than infer from metadata if the image cannot actually be viewed.\n\n[768]\nOUART Daily Art responsive Vision QA. Asset: 768 WebP for 2026-09-07, an official museum image of Johannes Vermeer's Young Woman with a Water Pitcher. Inspect the actual opened image visually as it would appear scaled on a mobile screen. Determine whether the central artwork remains clearly readable, with recognizable overall composition and major features, and whether there are any visible compression or scaling artifacts (blockiness, ringing, severe blur, banding, corruption, broken rendering, or damaging crop). This museum image contains no GPT-generated text, so OCR exact matching is not applicable and must be reported exactly as N/A. Return a concise factual assessment and explicit fields: vision_mobile_readable=true/false; artifacts=true/false; ocr_exact_match=N/A. Fail rather than infer from metadata if the image cannot actually be viewed.\n\n[1280]\nOUART Daily Art responsive Vision QA. Asset: 1280 WebP for 2026-09-07, an official museum image of Johannes Vermeer's Young Woman with a Water Pitcher. Inspect the actual opened image visually as it would appear scaled on a mobile screen. Determine whether the central artwork remains clearly readable, with recognizable overall composition and major features, and whether there are any visible compression or scaling artifacts (blockiness, ringing, severe blur, banding, corruption, broken rendering, or damaging crop). This museum image contains no GPT-generated text, so OCR exact matching is not applicable and must be reported exactly as N/A. Return a concise factual assessment and explicit fields: vision_mobile_readable=true/false; artifacts=true/false; ocr_exact_match=N/A. Fail rather than infer from metadata if the image cannot actually be viewed.\n\n[fallback]\nOUART Daily Art responsive Vision QA. Asset: fallback JPEG for 2026-09-07, an official museum image of Johannes Vermeer's Young Woman with a Water Pitcher. Inspect the actual opened image visually as it would appear scaled on a mobile screen. Determine whether the central artwork remains clearly readable, with recognizable overall composition and major features, and whether there are any visible compression or scaling artifacts (blockiness, ringing, severe blur, banding, corruption, broken rendering, or damaging crop). This museum image contains no GPT-generated text, so OCR exact matching is not applicable and must be reported exactly as N/A. Return a concise factual assessment and explicit fields: vision_mobile_readable=true/false; artifacts=true/false; ocr_exact_match=N/A. Fail rather than infer from metadata if the image cannot actually be viewed.",
+  "agent_prompt_sha256": "a14d5121a81080bec27bd80bab99c100c4881eb9385cc02eff58525d4bab00e2",
+  "date": "2026-09-07",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "cf198a974d092d01abae3b8234c702f5d5526fe4abb6293b66773a716186a484",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "69c4857cd6ed4b241750e63c0105b1c007061cd54e5a2c56797e7ede3922aa84",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "dde1dede379e52d401919f8ed05a842f8c657d32f0cffe5c7d260521f9928bb0",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "11afbdc09209c5923d2b70df9a849af90c786e7dfbb3d1262bfcbef711a30c4b",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}
