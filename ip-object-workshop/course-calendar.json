@@ -948,15 +948,31 @@
     "type": "图文",
     "title": "只有一个想法，第一件作品先做多大？",
     "time": "11:30",
-    "summary": "今天聊聊只有一个想法，第一件作品先做多大。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "只有想法或草图时，先别凭感觉把第一件作品做大。用用途、真实空间、结构小样和制作条件，选一个能做、能测、失败后也改得动的大小。",
+    "cover": "./assets/updates/2026-09-07/01-website-hero-fallback.png?v=952bf295f7f2",
+    "published": true,
+    "url": "./updates/2026-09-07-how-large-should-your-first-ip-object-be.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 1 / Gate 1",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-09-07",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-07/01-website-hero-480.webp?v=68bbb8bfffd2 480w, ./assets/updates/2026-09-07/01-website-hero-768.webp?v=14017592ad7c 768w, ./assets/updates/2026-09-07/01-website-hero-1280.webp?v=ea496c7f6ba5 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-07/01-website-hero-fallback.png?v=952bf295f7f2",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-08",
@@ -2292,5 +2308,20 @@
     "course_stage": "Day 1 / Gate 1",
     "editorial_angle": "约束比较",
     "writing_policy_version": "ip-workshop-plain-language-v1"
+  },
+  {
+    "date": "2026-12-06",
+    "type": "直播",
+    "time": "20:00",
+    "title": "已有作品或只有想法，3–5 天分别先学什么？",
+    "summary": "今天聊聊已有作品或只有想法，3–5 天分别先学什么。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 1 / Gate 1",
+    "editorial_angle": "约束比较"
   }
 ]
