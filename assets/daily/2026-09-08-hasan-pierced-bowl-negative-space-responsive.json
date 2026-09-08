@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 14232,
+      "format": "webp",
+      "height": 485,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-08-hasan-pierced-bowl-negative-space-480.webp",
+      "quality": 84,
+      "sha256": "61613bac7788bd73801ef71f7590df433666f4b56d1416e29c107b916f7103b5",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 30098,
+      "format": "webp",
+      "height": 777,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-08-hasan-pierced-bowl-negative-space-768.webp",
+      "quality": 84,
+      "sha256": "9d1c7525203b71fd4ba86586bf50ad82192baea3bdf9da77e74be3413fa8bcca",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 69630,
+      "format": "webp",
+      "height": 1295,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-08-hasan-pierced-bowl-negative-space-1280.webp",
+      "quality": 84,
+      "sha256": "3c995c8510dca2dc4ce045246ccd73604a377a99db403be4c006bcaae10436e7",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 167181,
+    "format": "jpeg",
+    "height": 1295,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-08-hasan-pierced-bowl-negative-space-fallback.jpg",
+    "quality": 84,
+    "sha256": "a3e5530b9f87513a9d64600a9b96f33817b9c584ef3fd62e3662466a53c227f1",
+    "width": 1280
+  },
+  "original_bytes": 1004710,
+  "original_height": 3204,
+  "original_path": "assets/daily/2026-09-08-hasan-pierced-bowl-negative-space.jpg",
+  "original_sha256": "72b35778ef80fe830d4b9b642165713e44b5225c4385d6cd08da1287d011549e",
+  "original_url": "https://images.metmuseum.org/CRDImages/is/original/DP123181.jpg",
+  "original_width": 3168,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-08-hasan-pierced-bowl-negative-space-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-08-hasan-pierced-bowl-negative-space-480.webp?v=61613bac7788 480w, 2026-09-08-hasan-pierced-bowl-negative-space-768.webp?v=9d1c7525203b 768w, 2026-09-08-hasan-pierced-bowl-negative-space-1280.webp?v=3c995c8510dc 1280w"
+}

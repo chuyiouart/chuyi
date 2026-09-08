@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-08",
+  "agent_prompt": "Inspect the attached official museum artwork image as a responsive web asset displayed at mobile width. Verify visually—not from metadata—that the complete ceramic bowl remains clearly recognizable and readable, including its rim, openwork wall, foot, repeated pierced pattern, glaze tonal variation, and silhouette against the background. Look for compression artifacts, ringing, blocking, banding, aliasing, accidental crop, distortion, blur caused by scaling, or broken/corrupt rendering. There is no GPT-generated text in this museum image, so OCR exact-match is not applicable and must be reported as the literal string \"N/A\". Return a concise but complete assessment stating: vision_mobile_readable=true or false; artifacts=true or false; ocr_exact_match=\"N/A\"; and the visual evidence for the decision.",
+  "agent_prompt_sha256": "ac15509334483de1d4756b1bd1ea7525bbfa0e1a91b3aa3314ddffd6d09a8404",
+  "agent_output": "480: vision_mobile_readable=true; artifacts=false; ocr_exact_match=\"N/A\". Visual evidence: the complete bowl is visible with an uncut rim, rounded body, and full foot; the repeated pierced/relief pattern and dark blue vertical accents remain distinguishable at mobile scale; cream glaze variation, silhouette, and ground shadow are readable. No visible blocking, ringing, banding, aliasing, distortion, scaling blur, corruption, or accidental crop was observed.\n768: vision_mobile_readable=true; artifacts=false; ocr_exact_match=\"N/A\". Visual evidence: the entire ceramic vessel, including both rim ends, the patterned upper wall, curved lower body, and complete foot, is clear. Repeated pierced details, raised ornament, blue strokes, glaze tonal shifts, and the edge against the neutral background remain legible. No visible compression blocks, halos, banding, jagged scaling, distortion, blur, corruption, or crop was observed.\n1280: vision_mobile_readable=true; artifacts=false; ocr_exact_match=\"N/A\". Visual evidence: the complete bowl is sharply recognizable; rim thickness, repeated openwork/relief units, small pierced points, blue vertical divisions, glaze texture, body curvature, foot, and shadow are all clear when scaled for mobile viewing. The image shows no visible ringing, blocking, banding, aliasing, unintended blur, geometric distortion, broken rendering, or accidental crop.\nfallback: vision_mobile_readable=true; artifacts=false; ocr_exact_match=\"N/A\". Visual evidence: the fallback renders the whole bowl without cropping, preserving the rim, ornamented and pierced wall, rounded profile, short foot, cream glaze variation, blue accents, and clean silhouette against the background. No visible JPEG blocking, ringing, banding, aliasing, scaling blur, distortion, corruption, or other rendering artifact was observed.",
+  "agent_output_sha256": "31ba0d2b416d1b726ef61726c623e9841919d2faec41536df3997b7e8cffe45b",
+  "results": {
+    "480": {
+      "image_sha256": "61613bac7788bd73801ef71f7590df433666f4b56d1416e29c107b916f7103b5",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "agent_output": "vision_mobile_readable=true; artifacts=false; ocr_exact_match=\"N/A\". Visual evidence: the complete bowl is visible with an uncut rim, rounded body, and full foot; the repeated pierced/relief pattern and dark blue vertical accents remain distinguishable at mobile scale; cream glaze variation, silhouette, and ground shadow are readable. No visible blocking, ringing, banding, aliasing, distortion, scaling blur, corruption, or accidental crop was observed."
+    },
+    "768": {
+      "image_sha256": "9d1c7525203b71fd4ba86586bf50ad82192baea3bdf9da77e74be3413fa8bcca",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "agent_output": "vision_mobile_readable=true; artifacts=false; ocr_exact_match=\"N/A\". Visual evidence: the entire ceramic vessel, including both rim ends, the patterned upper wall, curved lower body, and complete foot, is clear. Repeated pierced details, raised ornament, blue strokes, glaze tonal shifts, and the edge against the neutral background remain legible. No visible compression blocks, halos, banding, jagged scaling, distortion, blur, corruption, or crop was observed."
+    },
+    "1280": {
+      "image_sha256": "3c995c8510dca2dc4ce045246ccd73604a377a99db403be4c006bcaae10436e7",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "agent_output": "vision_mobile_readable=true; artifacts=false; ocr_exact_match=\"N/A\". Visual evidence: the complete bowl is sharply recognizable; rim thickness, repeated openwork/relief units, small pierced points, blue vertical divisions, glaze texture, body curvature, foot, and shadow are all clear when scaled for mobile viewing. The image shows no visible ringing, blocking, banding, aliasing, unintended blur, geometric distortion, broken rendering, or accidental crop."
+    },
+    "fallback": {
+      "image_sha256": "a3e5530b9f87513a9d64600a9b96f33817b9c584ef3fd62e3662466a53c227f1",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "agent_output": "vision_mobile_readable=true; artifacts=false; ocr_exact_match=\"N/A\". Visual evidence: the fallback renders the whole bowl without cropping, preserving the rim, ornamented and pierced wall, rounded profile, short foot, cream glaze variation, blue accents, and clean silhouette against the background. No visible JPEG blocking, ringing, banding, aliasing, scaling blur, distortion, corruption, or other rendering artifact was observed."
+    }
+  }
+}
