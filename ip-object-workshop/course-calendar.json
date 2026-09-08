@@ -979,15 +979,32 @@
     "type": "视频",
     "title": "用 GPT-6 看参考图，先理清作品怎么搭起来",
     "time": "19:30",
-    "summary": "今天聊聊用 GPT-6 看参考图，先理清作品怎么搭起来。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "参考图只能告诉我们一部分外形。用 GPT-6 辅助列出可见部件、遮挡和疑问，再用多角度草模与连接小样确认作品真正怎样搭起来。",
+    "cover": "./assets/updates/2026-09-08/03-real-application-fallback.png?v=724655353dc6",
+    "published": true,
+    "url": "./updates/2026-09-08-use-gpt-6-to-map-how-an-ip-object-fits-together.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 1 / Gate 1",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-09-08",
+    "media_status": "partial",
+    "passedRoles": [
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [
+      "website_hero",
+      "core_explanation"
+    ],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-08/03-real-application-480.webp?v=2631411cebc1 480w, ./assets/updates/2026-09-08/03-real-application-768.webp?v=9168b29163f2 768w",
+      "sizes": "(max-width: 680px) 100vw, 50vw",
+      "fallback": "./assets/updates/2026-09-08/03-real-application-fallback.png?v=724655353dc6",
+      "width": 768,
+      "height": 768
+    }
   },
   {
     "date": "2026-09-09",
@@ -2322,6 +2339,21 @@
     "status": "planned",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 1 / Gate 1",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2026-12-07",
+    "type": "图文",
+    "time": "11:30",
+    "title": "尺寸先说清楚，模型才知道该怎么做",
+    "summary": "今天聊聊尺寸先说清楚，模型才知道该怎么做。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 2 / Gate 2",
     "editorial_angle": "约束比较"
   }
 ]
