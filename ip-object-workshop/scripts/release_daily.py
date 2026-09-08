@@ -12,6 +12,7 @@ import time
 import urllib.error
 import urllib.request
 from pathlib import Path
+from typing import Callable
 
 PUBLIC_BASE = "https://chuyiouart.github.io/chuyi/ip-object-workshop/"
 EXPECTED_REPO_PATH = "chuyiouart/chuyi"
@@ -88,10 +89,138 @@ def verify_repo(repo: Path, workshop: Path, *, allow_dirty: bool = False) -> lis
     branch = git(repo, "branch", "--show-current").stdout.strip()
     if branch != "main":
         raise RuntimeError(f"expected main branch, got: {branch}")
-    dirty = git(repo, "status", "--porcelain", "-uall", "--", "ip-object-workshop").stdout.splitlines()
+    require_no_git_operation(repo)
+    # This checkout is shared by several lanes. A plain git commit includes
+    # the entire index, not just the path used by a previous diff command.
+    dirty = git(repo, "status", "--porcelain", "-uall").stdout.splitlines()
     if dirty and not allow_dirty:
         raise RuntimeError(f"workshop tree is not clean before release:\n{dirty}")
     return dirty
+
+
+def require_no_git_operation(repo: Path) -> None:
+    """An interrupted merge/rebase is not an ordinary publication checkpoint."""
+    for marker in ("MERGE_HEAD", "CHERRY_PICK_HEAD", "REVERT_HEAD", "rebase-merge", "rebase-apply"):
+        state = Path(git(repo, "rev-parse", "--git-path", marker).stdout.strip())
+        if not state.is_absolute():
+            state = repo / state
+        if state.exists():
+            raise RuntimeError(f"unfinished Git operation; manual review required: {marker}")
+
+
+def require_clean_git_state(repo: Path) -> None:
+    """Never stash, reset, or inherit another writer's operation/index."""
+    require_no_git_operation(repo)
+    if git(repo, "status", "--porcelain", "-uall").stdout.strip():
+        raise RuntimeError("shared checkout is dirty; preserving all files and index")
+    if git(repo, "branch", "--show-current").stdout.strip() != "main":
+        raise RuntimeError("shared checkout is no longer on main")
+
+
+def is_ancestor(repo: Path, ancestor: str, descendant: str) -> bool:
+    result = git(repo, "merge-base", "--is-ancestor", ancestor, descendant, check=False)
+    if result.returncode not in (0, 1):
+        raise RuntimeError(f"cannot establish Git ancestry: {result.stderr.strip()}")
+    return result.returncode == 0
+
+
+def preflight_merge_tree(repo: Path, left: str, right: str) -> str:
+    """Git >= 2.38 computes the merge without touching HEAD/index/worktree."""
+    preview = git(repo, "merge-tree", "--write-tree", left, right, check=False)
+    if preview.returncode:
+        raise RuntimeError(
+            "upstream reconciliation blocked; merge conflict or unsupported merge-tree; "
+            "HEAD/index/worktree unchanged, manual review required:\n"
+            + preview.stdout.strip() + "\n" + preview.stderr.strip()
+        )
+    tree = preview.stdout.splitlines()[0].strip() if preview.stdout.strip() else ""
+    if not re.fullmatch(r"[0-9a-f]{40,64}", tree):
+        raise RuntimeError("merge-tree returned no verifiable tree; refusing merge")
+    return tree
+
+
+def verify_pending_release_commits(repo: Path, upstream: str, allowlist: list[str], day: str) -> None:
+    """Only recover this manifest's commits; never auto-push arbitrary user work."""
+    allowed = set(allowlist)
+    content_subject = f"content: publish workshop update {day}"
+    merge_subject = f"sync: reconcile workshop release {day} with origin/main"
+    commits = git(repo, "rev-list", f"{upstream}..HEAD").stdout.splitlines()
+    for commit in commits:
+        subject = git(repo, "show", "-s", "--format=%s", commit).stdout.strip()
+        parents = git(repo, "show", "-s", "--format=%P", commit).stdout.split()
+        if len(parents) == 2 and subject == merge_subject:
+            expected_tree = preflight_merge_tree(repo, parents[0], parents[1])
+            actual_tree = git(repo, "rev-parse", f"{commit}^{{tree}}").stdout.strip()
+            if expected_tree != actual_tree or not is_ancestor(repo, parents[1], upstream):
+                raise RuntimeError(f"unrecognized pending reconciliation commit: {commit}")
+            continue
+        if len(parents) != 1 or subject != content_subject:
+            raise RuntimeError(f"unrecognized unpublished commit {commit}: {subject}; preserving it for review")
+        paths = git(repo, "diff-tree", "--no-commit-id", "--name-only", "-r", commit).stdout.splitlines()
+        if not paths or any(path not in allowed for path in paths):
+            raise RuntimeError(f"unpublished commit exceeds current release allowlist: {commit}: {paths}")
+
+
+def reconcile_upstream(repo: Path, allowlist: list[str], day: str) -> dict:
+    """Run under the existing ouart-content-publish.lock held by the wrapper.
+
+    Preserve both histories: fast-forward when possible, otherwise perform only
+    a previewed, conflict-free merge of recognized current-day release commits.
+    No force-push, rebase, stash, reset, or automatic conflict resolution.
+    """
+    require_clean_git_state(repo)
+    git_with_retry(repo, "fetch", "--no-tags", "origin", "main")
+    upstream = git(repo, "rev-parse", "FETCH_HEAD").stdout.strip()
+    before = git(repo, "rev-parse", "HEAD").stdout.strip()
+    verify_pending_release_commits(repo, upstream, allowlist, day)
+    if is_ancestor(repo, upstream, before):
+        return {"action": "already_integrated", "upstream": upstream, "head": before}
+    if is_ancestor(repo, before, upstream):
+        git(repo, "merge", "--ff-only", "--no-autostash", upstream)
+        return {"action": "fast_forward", "upstream": upstream, "head": upstream}
+    expected_tree = preflight_merge_tree(repo, before, upstream)
+    # Hooks or an uncoordinated writer must not silently change the preflight.
+    require_clean_git_state(repo)
+    if git(repo, "rev-parse", "HEAD").stdout.strip() != before:
+        raise RuntimeError("HEAD changed during reconciliation; refusing merge")
+    merged = git(
+        repo, "merge", "--no-ff", "--no-edit", "--no-autostash", "-m",
+        f"sync: reconcile workshop release {day} with origin/main", upstream, check=False,
+    )
+    if merged.returncode:
+        # Do not abort someone else's subsequent edits. Leave exact evidence.
+        raise RuntimeError(f"preflighted merge failed; manual review required: {merged.stdout}\n{merged.stderr}")
+    if git(repo, "rev-parse", "HEAD^{tree}").stdout.strip() != expected_tree:
+        raise RuntimeError("merged tree differs from preflight; refusing push")
+    require_clean_git_state(repo)
+    return {"action": "verified_merge", "upstream": upstream, "head": git(repo, "rev-parse", "HEAD").stdout.strip()}
+
+
+def push_release_with_reconciliation(
+    repo: Path, allowlist: list[str], day: str, validate: Callable[[], object], attempts: int = 3,
+) -> dict:
+    """Retry a bounded push race even when this invocation created no commit."""
+    if attempts < 1:
+        raise ValueError("attempts must be positive")
+    actions = []
+    for attempt in range(attempts):
+        sync = reconcile_upstream(repo, allowlist, day)
+        actions.append(sync)
+        validate()
+        require_clean_git_state(repo)
+        if sync["upstream"] == git(repo, "rev-parse", "HEAD").stdout.strip():
+            return {"pushed": False, "already_remote": True, "attempts": attempt + 1, "sync": actions}
+        pushed = git(repo, "push", "--porcelain", "origin", "HEAD:refs/heads/main", check=False)
+        if pushed.returncode == 0:
+            return {"pushed": True, "already_remote": False, "attempts": attempt + 1, "sync": actions}
+        diagnostic = f"{pushed.stdout}\n{pushed.stderr}".lower()
+        race = "[rejected]" in diagnostic and any(word in diagnostic for word in ("fetch first", "non-fast-forward"))
+        transient = any(word in diagnostic for word in TRANSIENT_GIT_ERRORS)
+        if not (race or transient) or attempt == attempts - 1:
+            raise RuntimeError(f"release push failed after {attempt + 1} attempt(s); local commit preserved:\n{pushed.stdout}\n{pushed.stderr}")
+        if transient:
+            time.sleep((5, 15)[min(attempt, 1)])
+    raise RuntimeError("release push retry exhausted")
 
 
 def verify_live(url: str, expected_title: str, attempts: int = 18, delay: int = 10) -> None:
@@ -202,12 +331,12 @@ def release(repo: Path, manifest_path: Path, verify_only: bool = False) -> dict:
         "article": str(article_path),
         "webImageAssets": manifest.get("webImageAssets", []),
     }
-    checkpoint_allowlist = build_release_allowlist(repo, manifest, checkpoint_published, require_existing=False) if dirty else []
+    checkpoint_allowlist = build_release_allowlist(repo, manifest, checkpoint_published, require_existing=False)
     if dirty:
         classify_checkpoint_dirty_paths(dirty, checkpoint_allowlist)
         resumed_checkpoint = True
     else:
-        git_with_retry(repo, "pull", "--ff-only", "origin", "main")
+        reconcile_upstream(repo, checkpoint_allowlist, str(manifest["date"]))
         resumed_checkpoint = False
 
     publisher = workshop / "scripts" / "workshop_publish.py"
@@ -220,15 +349,17 @@ def release(repo: Path, manifest_path: Path, verify_only: bool = False) -> dict:
 
     allowlist = build_release_allowlist(repo, manifest, published)
     git(repo, "add", "--", *allowlist)
-    staged = git(repo, "diff", "--cached", "--name-only", "--", "ip-object-workshop").stdout.splitlines()
+    staged = git(repo, "diff", "--cached", "--name-only").stdout.splitlines()
     unexpected = [path for path in staged if path not in set(allowlist)]
     if unexpected:
-        git(repo, "reset", "--", *staged)
         raise RuntimeError(f"unexpected staged paths: {unexpected}")
 
     if staged:
         git(repo, "commit", "-m", f"content: publish workshop update {manifest['date']}")
-        git_with_retry(repo, "push", "origin", "main")
+    git_delivery = push_release_with_reconciliation(
+        repo, allowlist, str(manifest["date"]),
+        validate=lambda: run([sys.executable, str(publisher), "validate", "--root", str(workshop)], cwd=repo),
+    )
     verify_live(live_url, manifest["title"])
     commit = git(repo, "rev-parse", "HEAD").stdout.strip()
     release_status = published.get("status", "published")
@@ -243,6 +374,7 @@ def release(repo: Path, manifest_path: Path, verify_only: bool = False) -> dict:
         "commit": commit,
         "staged_paths": staged,
         "resumed_checkpoint": resumed_checkpoint,
+        "git_delivery": git_delivery,
     }
 
 
