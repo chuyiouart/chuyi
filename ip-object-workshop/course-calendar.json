@@ -980,7 +980,7 @@
     "title": "用 GPT-6 看参考图，先理清作品怎么搭起来",
     "time": "19:30",
     "summary": "参考图只能告诉我们一部分外形。用 GPT-6 辅助列出可见部件、遮挡和疑问，再用多角度草模与连接小样确认作品真正怎样搭起来。",
-    "cover": "./assets/updates/2026-09-08/03-real-application-fallback.png?v=724655353dc6",
+    "cover": "./assets/updates/2026-09-08/01-website-hero-fallback.png?v=7af39ecfb209",
     "published": true,
     "url": "./updates/2026-09-08-use-gpt-6-to-map-how-an-ip-object-fits-together.html",
     "status": "published",
@@ -989,21 +989,20 @@
     "editorial_angle": "入门判断",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "source_id": "workshop:2026-09-08",
-    "media_status": "partial",
+    "media_status": "complete",
     "passedRoles": [
+      "website_hero",
+      "core_explanation",
       "real_application",
       "social_promotion"
     ],
-    "pendingRoles": [
-      "website_hero",
-      "core_explanation"
-    ],
+    "pendingRoles": [],
     "coverImage": {
-      "srcset": "./assets/updates/2026-09-08/03-real-application-480.webp?v=2631411cebc1 480w, ./assets/updates/2026-09-08/03-real-application-768.webp?v=9168b29163f2 768w",
-      "sizes": "(max-width: 680px) 100vw, 50vw",
-      "fallback": "./assets/updates/2026-09-08/03-real-application-fallback.png?v=724655353dc6",
-      "width": 768,
-      "height": 768
+      "srcset": "./assets/updates/2026-09-08/01-website-hero-480.webp?v=491db6db19f0 480w, ./assets/updates/2026-09-08/01-website-hero-768.webp?v=faad7a8d5bbd 768w, ./assets/updates/2026-09-08/01-website-hero-1280.webp?v=9e5b9646846f 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-08/01-website-hero-fallback.png?v=7af39ecfb209",
+      "width": 960,
+      "height": 540
     }
   },
   {
