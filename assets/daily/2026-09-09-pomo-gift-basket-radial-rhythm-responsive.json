@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 21122,
+      "format": "webp",
+      "height": 342,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-09-pomo-gift-basket-radial-rhythm-480.webp",
+      "quality": 84,
+      "sha256": "1d1fc57f19501e4e5c8ba95f4edd51e433514179a4f3b4aff10a6831479dc050",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 47154,
+      "format": "webp",
+      "height": 547,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-09-pomo-gift-basket-radial-rhythm-768.webp",
+      "quality": 84,
+      "sha256": "cdf8fa2c981d1932f29b957e1a3e53c38d4ae124dc2a15e54749124931f9dd42",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 112230,
+      "format": "webp",
+      "height": 911,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-09-pomo-gift-basket-radial-rhythm-1280.webp",
+      "quality": 84,
+      "sha256": "37807b814e7fc9fb806bbafa874e55410c3419e24367d55f36ba6cfb200e3907",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 181066,
+    "format": "jpeg",
+    "height": 911,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-09-pomo-gift-basket-radial-rhythm-fallback.jpg",
+    "quality": 84,
+    "sha256": "1c40c904509e9bc2e4d29e184b5bec4860e891279d0d3b93c156a0c33058d9bc",
+    "width": 1280
+  },
+  "original_bytes": 2457167,
+  "original_height": 2847,
+  "original_path": "assets/daily/2026-09-09-pomo-gift-basket-radial-rhythm.jpg",
+  "original_sha256": "f83bd43e182ad824aacf899ac0e0031e31a036f08d4508754179689cc06c4a0e",
+  "original_url": "https://images.metmuseum.org/CRDImages/ad/original/DP-15301-027.jpg",
+  "original_width": 4000,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-09-pomo-gift-basket-radial-rhythm-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-09-pomo-gift-basket-radial-rhythm-480.webp?v=1d1fc57f1950 480w, 2026-09-09-pomo-gift-basket-radial-rhythm-768.webp?v=cdf8fa2c981d 768w, 2026-09-09-pomo-gift-basket-radial-rhythm-1280.webp?v=37807b814e7f 1280w"
+}
