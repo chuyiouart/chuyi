@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-09",
+  "agent_prompt": "[\"OUART 每日一画响应式资产 Vision QA。请真实查看这张 480w WebP 在移动端缩放观看时的视觉质量，只判断：主体（浅色编织礼篮及其放射纹样、珠饰与贝壳饰物）是否清楚可读，以及是否存在明显压缩、缩放、重采样、破损、色带或其他视觉伪影。图中没有 GPT 生成文字，OCR 不适用。请只返回一行严格 JSON：{\\\"asset\\\":\\\"480\\\",\\\"vision_mobile_readable\\\":true或false,\\\"artifacts\\\":true或false,\\\"assessment\\\":\\\"具体、诚实的中文观察\\\"}\",\"OUART 每日一画响应式资产 Vision QA。请真实查看这张 768w WebP 在移动端缩放观看时的视觉质量，只判断：主体（浅色编织礼篮及其放射纹样、珠饰与贝壳饰物）是否清楚可读，以及是否存在明显压缩、缩放、重采样、破损、色带或其他视觉伪影。图中没有 GPT 生成文字，OCR 不适用。请只返回一行严格 JSON：{\\\"asset\\\":\\\"768\\\",\\\"vision_mobile_readable\\\":true或false,\\\"artifacts\\\":true或false,\\\"assessment\\\":\\\"具体、诚实的中文观察\\\"}\",\"OUART 每日一画响应式资产 Vision QA。请真实查看这张 1280w WebP 在移动端缩放观看时的视觉质量，只判断：主体（浅色编织礼篮及其放射纹样、珠饰与贝壳饰物）是否清楚可读，以及是否存在明显压缩、缩放、重采样、破损、色带或其他视觉伪影。图中没有 GPT 生成文字，OCR 不适用。请只返回一行严格 JSON：{\\\"asset\\\":\\\"1280\\\",\\\"vision_mobile_readable\\\":true或false,\\\"artifacts\\\":true或false,\\\"assessment\\\":\\\"具体、诚实的中文观察\\\"}\",\"OUART 每日一画响应式资产 Vision QA。请真实查看这张同原格式 fallback JPEG 在移动端缩放观看时的视觉质量，只判断：主体（浅色编织礼篮及其放射纹样、珠饰与贝壳饰物）是否清楚可读，以及是否存在明显压缩、缩放、重采样、破损、色带或其他视觉伪影。图中没有 GPT 生成文字，OCR 不适用。请只返回一行严格 JSON：{\\\"asset\\\":\\\"fallback\\\",\\\"vision_mobile_readable\\\":true或false,\\\"artifacts\\\":true或false,\\\"assessment\\\":\\\"具体、诚实的中文观察\\\"}\"]",
+  "agent_prompt_sha256": "8f33533b6cda92345d0329a2b119a95fba4570b868ca9de47d6659324866faa1",
+  "agent_output": "{\"asset\":\"480\",\"vision_mobile_readable\":true,\"artifacts\":false,\"assessment\":\"礼篮整体轮廓、椭圆口沿、红褐编织纹、垂挂珠串与贝壳饰物在移动端尺度下均可辨；细小珠粒有所缩小但不影响主体阅读，未见明显压缩块、重采样锯齿、破损或色带。\"}\n{\"asset\":\"768\",\"vision_mobile_readable\":true,\"artifacts\":false,\"assessment\":\"礼篮主体清晰，口沿编织、成排珠饰、中央浅色点阵和垂挂贝壳的形状均可读；灰色背景渐变平顺，边缘与纹理无明显压缩、缩放或重采样伪影。\"}\n{\"asset\":\"1280\",\"vision_mobile_readable\":true,\"artifacts\":false,\"assessment\":\"礼篮编织单元、红黄横带、黑白珠串与虹彩贝壳细节清楚，主体边缘自然，背景与投影过渡连续；未见破损、色带、压缩块或异常锐化和缩放伪影。\"}\n{\"asset\":\"fallback\",\"vision_mobile_readable\":true,\"artifacts\":false,\"assessment\":\"fallback JPEG 中礼篮、椭圆口沿、密集编织纹、珠饰和贝壳均清楚可读，移动端缩放后主体识别稳定；背景渐变和细节边缘无明显 JPEG 块状、色带、破损或重采样伪影。\"}",
+  "agent_output_sha256": "46e9dac5c31781924fb40a79c3ddc3c471f52a7925082eb9668d7414415b8932",
+  "results": {
+    "480": {
+      "image_sha256": "1d1fc57f19501e4e5c8ba95f4edd51e433514179a4f3b4aff10a6831479dc050",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "assessment": "礼篮整体轮廓、椭圆口沿、红褐编织纹、垂挂珠串与贝壳饰物在移动端尺度下均可辨；细小珠粒有所缩小但不影响主体阅读，未见明显压缩块、重采样锯齿、破损或色带。"
+    },
+    "768": {
+      "image_sha256": "cdf8fa2c981d1932f29b957e1a3e53c38d4ae124dc2a15e54749124931f9dd42",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "assessment": "礼篮主体清晰，口沿编织、成排珠饰、中央浅色点阵和垂挂贝壳的形状均可读；灰色背景渐变平顺，边缘与纹理无明显压缩、缩放或重采样伪影。"
+    },
+    "1280": {
+      "image_sha256": "37807b814e7fc9fb806bbafa874e55410c3419e24367d55f36ba6cfb200e3907",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "assessment": "礼篮编织单元、红黄横带、黑白珠串与虹彩贝壳细节清楚，主体边缘自然，背景与投影过渡连续；未见破损、色带、压缩块或异常锐化和缩放伪影。"
+    },
+    "fallback": {
+      "image_sha256": "1c40c904509e9bc2e4d29e184b5bec4860e891279d0d3b93c156a0c33058d9bc",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "assessment": "fallback JPEG 中礼篮、椭圆口沿、密集编织纹、珠饰和贝壳均清楚可读，移动端缩放后主体识别稳定；背景渐变和细节边缘无明显 JPEG 块状、色带、破损或重采样伪影。"
+    }
+  }
+}
