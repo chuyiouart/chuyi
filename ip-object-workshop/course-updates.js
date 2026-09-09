@@ -1008,17 +1008,33 @@ window.WORKSHOP_UPDATES = [
   {
     "date": "2026-09-09",
     "type": "图文",
-    "title": "同一个角色，从正面、侧面和背面怎么看？",
+    "title": "同一个角色，换个角度还能认出来吗？",
     "time": "11:30",
-    "summary": "今天聊聊同一个角色，从正面、侧面和背面怎么看。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "正面、侧面和背面要共享同一组识别点、身体高度、厚度和动作。用三视图与三维草模来回核对，再用局部小样确认连接和支撑。",
+    "cover": "./assets/updates/2026-09-09/01-website-hero-fallback.png?v=da66775bce77",
+    "published": true,
+    "url": "./updates/2026-09-09-keep-one-character-consistent-from-front-side-and-back.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 1 / Gate 1",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-09-09",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-09/01-website-hero-480.webp?v=377980dfe9dd 480w, ./assets/updates/2026-09-09/01-website-hero-768.webp?v=52a76fd18b38 768w, ./assets/updates/2026-09-09/01-website-hero-1280.webp?v=1a912a7d0476 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-09/01-website-hero-fallback.png?v=da66775bce77",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-10",
@@ -2346,6 +2362,21 @@ window.WORKSHOP_UPDATES = [
     "time": "11:30",
     "title": "尺寸先说清楚，模型才知道该怎么做",
     "summary": "今天聊聊尺寸先说清楚，模型才知道该怎么做。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 2 / Gate 2",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2026-12-08",
+    "type": "视频",
+    "time": "19:30",
+    "title": "让 AI 帮忙写 Blender 脚本，先搭一个初版模型",
+    "summary": "今天聊聊让 AI 帮忙写 Blender 脚本，先搭一个初版模型。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,
