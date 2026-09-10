@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-10",
+  "agent_prompt": "[480]\nOUART 每日一画 2026-09-10 响应式图片 Vision QA。资产标签：480；文件：2026-09-10-queen-kunigunde-lead-line-shapes-480.webp。请真实查看该文件，并按移动端缩放展示标准检查：主体（彩色玻璃中的昆贡德王后立像、建筑形边框与铅条分区）是否清楚可读；是否存在明显压缩块、振铃、色带、异常模糊、拉伸、比例错误、裁切或其他生成/缩放伪影。该馆藏图无 GPT 生成文字，OCR exact 固定为 N/A，不要尝试把图中文字转写。请只返回一行严格 JSON：{\"asset\":\"480\",\"vision_mobile_readable\":true或false,\"artifacts\":true或false,\"assessment\":\"完整、具体的中文判断\"}。只有确实通过才写 readable=true 且 artifacts=false。\n\n[768]\nOUART 每日一画 2026-09-10 响应式图片 Vision QA。资产标签：768；文件：2026-09-10-queen-kunigunde-lead-line-shapes-768.webp。请真实查看该文件，并按移动端缩放展示标准检查：主体（彩色玻璃中的昆贡德王后立像、建筑形边框与铅条分区）是否清楚可读；是否存在明显压缩块、振铃、色带、异常模糊、拉伸、比例错误、裁切或其他生成/缩放伪影。该馆藏图无 GPT 生成文字，OCR exact 固定为 N/A，不要尝试把图中文字转写。请只返回一行严格 JSON：{\"asset\":\"768\",\"vision_mobile_readable\":true或false,\"artifacts\":true或false,\"assessment\":\"完整、具体的中文判断\"}。只有确实通过才写 readable=true 且 artifacts=false。\n\n[1280]\nOUART 每日一画 2026-09-10 响应式图片 Vision QA。资产标签：1280；文件：2026-09-10-queen-kunigunde-lead-line-shapes-1280.webp。请真实查看该文件，并按移动端缩放展示标准检查：主体（彩色玻璃中的昆贡德王后立像、建筑形边框与铅条分区）是否清楚可读；是否存在明显压缩块、振铃、色带、异常模糊、拉伸、比例错误、裁切或其他生成/缩放伪影。该馆藏图无 GPT 生成文字，OCR exact 固定为 N/A，不要尝试把图中文字转写。请只返回一行严格 JSON：{\"asset\":\"1280\",\"vision_mobile_readable\":true或false,\"artifacts\":true或false,\"assessment\":\"完整、具体的中文判断\"}。只有确实通过才写 readable=true 且 artifacts=false。\n\n[fallback]\nOUART 每日一画 2026-09-10 响应式图片 Vision QA。资产标签：fallback；文件：2026-09-10-queen-kunigunde-lead-line-shapes-fallback.jpg。请真实查看该文件，并按移动端缩放展示标准检查：主体（彩色玻璃中的昆贡德王后立像、建筑形边框与铅条分区）是否清楚可读；是否存在明显压缩块、振铃、色带、异常模糊、拉伸、比例错误、裁切或其他生成/缩放伪影。该馆藏图无 GPT 生成文字，OCR exact 固定为 N/A，不要尝试把图中文字转写。请只返回一行严格 JSON：{\"asset\":\"fallback\",\"vision_mobile_readable\":true或false,\"artifacts\":true或false,\"assessment\":\"完整、具体的中文判断\"}。只有确实通过才写 readable=true 且 artifacts=false。",
+  "agent_prompt_sha256": "9284cf31e8b5587de0ddf6695bbb873a2df9731343bd21b1c5aa82b063694111",
+  "agent_output": "{\"asset\":\"480\",\"vision_mobile_readable\":true,\"artifacts\":false,\"assessment\":\"已真实查看 480 WebP；高窄彩色玻璃板按原比例完整呈现，昆贡德王后的冠饰、面部、举手、长杖和红黄衣袍均清楚，蓝色圆饰、绿色枝叶、建筑形边框及深色铅条分区在移动端尺度下仍可辨；未见明显压缩块、振铃、色带、异常模糊、拉伸、比例错误或裁切。\"}\n{\"asset\":\"768\",\"vision_mobile_readable\":true,\"artifacts\":false,\"assessment\":\"已真实查看 768 WebP；王后立像、冠饰、双手与长杖轮廓清楚，红黄主色块和蓝绿背景分区边界稳定，铅条与建筑形框架保持锐利且没有破碎；画面比例与取景一致，未见明显压缩、缩放或重采样伪影。\"}\n{\"asset\":\"1280\",\"vision_mobile_readable\":true,\"artifacts\":false,\"assessment\":\"已真实查看 1280 WebP；人物面部、手指、衣褶、长杖以及周围圆叶饰和枝叶细节均清晰，铅条线网连续，明暗与饱和色过渡自然；高窄画幅没有拉伸或异常裁切，未见压缩块、振铃、色带或其他缩放伪影。\"}\n{\"asset\":\"fallback\",\"vision_mobile_readable\":true,\"artifacts\":false,\"assessment\":\"已真实查看 fallback JPEG；昆贡德王后完整立像及其冠饰、双手、长杖、红黄衣袍、蓝色圆饰、绿色枝叶和建筑形边框均清楚可读，铅条边缘完整；图像比例、取景和色彩正常，未见明显 JPEG 块效应、振铃、色带、异常模糊、拉伸或裁切。\"}",
+  "agent_output_sha256": "e505e0785493a1e579fd545f47c099754195cfe85c63a384cdeed2d22bc48a79",
+  "results": {
+    "480": {
+      "image_sha256": "183e211d4dadeeca8f6eae9cd80da29c9cf6af3d0119d23fe3ed766a15b97371",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "assessment": "已真实查看 480 WebP；高窄彩色玻璃板按原比例完整呈现，昆贡德王后的冠饰、面部、举手、长杖和红黄衣袍均清楚，蓝色圆饰、绿色枝叶、建筑形边框及深色铅条分区在移动端尺度下仍可辨；未见明显压缩块、振铃、色带、异常模糊、拉伸、比例错误或裁切。"
+    },
+    "768": {
+      "image_sha256": "a6f72fda66c552029c9ef83e690b9ab484bcc783f910dbb0a1fd6574bcbfb50a",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "assessment": "已真实查看 768 WebP；王后立像、冠饰、双手与长杖轮廓清楚，红黄主色块和蓝绿背景分区边界稳定，铅条与建筑形框架保持锐利且没有破碎；画面比例与取景一致，未见明显压缩、缩放或重采样伪影。"
+    },
+    "1280": {
+      "image_sha256": "a85542291c7478ba1b913f312c7cb51a023cb8c86fb465b83553268978483466",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "assessment": "已真实查看 1280 WebP；人物面部、手指、衣褶、长杖以及周围圆叶饰和枝叶细节均清晰，铅条线网连续，明暗与饱和色过渡自然；高窄画幅没有拉伸或异常裁切，未见压缩块、振铃、色带或其他缩放伪影。"
+    },
+    "fallback": {
+      "image_sha256": "317cbb74dfb2f365e476d977c5da645add66ddba853ca3f50a9d0018bd9f33f0",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "assessment": "已真实查看 fallback JPEG；昆贡德王后完整立像及其冠饰、双手、长杖、红黄衣袍、蓝色圆饰、绿色枝叶和建筑形边框均清楚可读，铅条边缘完整；图像比例、取景和色彩正常，未见明显 JPEG 块效应、振铃、色带、异常模糊、拉伸或裁切。"
+    }
+  }
+}

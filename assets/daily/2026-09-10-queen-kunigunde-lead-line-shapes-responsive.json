@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 119116,
+      "format": "webp",
+      "height": 964,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-10-queen-kunigunde-lead-line-shapes-480.webp",
+      "quality": 84,
+      "sha256": "183e211d4dadeeca8f6eae9cd80da29c9cf6af3d0119d23fe3ed766a15b97371",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 236634,
+      "format": "webp",
+      "height": 1543,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-10-queen-kunigunde-lead-line-shapes-768.webp",
+      "quality": 84,
+      "sha256": "a6f72fda66c552029c9ef83e690b9ab484bcc783f910dbb0a1fd6574bcbfb50a",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 458916,
+      "format": "webp",
+      "height": 2571,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-10-queen-kunigunde-lead-line-shapes-1280.webp",
+      "quality": 84,
+      "sha256": "a85542291c7478ba1b913f312c7cb51a023cb8c86fb465b83553268978483466",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 868774,
+    "format": "jpeg",
+    "height": 2571,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-10-queen-kunigunde-lead-line-shapes-fallback.jpg",
+    "quality": 84,
+    "sha256": "317cbb74dfb2f365e476d977c5da645add66ddba853ca3f50a9d0018bd9f33f0",
+    "width": 1280
+  },
+  "original_bytes": 1570973,
+  "original_height": 3782,
+  "original_path": "assets/daily/2026-09-10-queen-kunigunde-lead-line-shapes.jpg",
+  "original_sha256": "6a5f2642533351757d8415c47114f0452dfcedf271f5931d922d7819312ee1d2",
+  "original_url": "https://images.metmuseum.org/CRDImages/cl/original/DP103910.jpg",
+  "original_width": 1883,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-10-queen-kunigunde-lead-line-shapes-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-10-queen-kunigunde-lead-line-shapes-480.webp?v=183e211d4dad 480w, 2026-09-10-queen-kunigunde-lead-line-shapes-768.webp?v=a6f72fda66c5 768w, 2026-09-10-queen-kunigunde-lead-line-shapes-1280.webp?v=a85542291c74 1280w"
+}
