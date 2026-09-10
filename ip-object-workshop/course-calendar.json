@@ -1039,17 +1039,33 @@
   {
     "date": "2026-09-10",
     "type": "视频",
-    "title": "哪些设计决定还得自己来？",
+    "title": "AI 给出三个方案，最后该谁拍板？",
     "time": "19:30",
-    "summary": "今天聊聊哪些设计决定还得自己来。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "角色身份、动作目的和制作范围会被改变时，最后的选择必须由创作者完成。AI 可以整理条件和比较版本，草模、小样与人工检查负责确认结果。",
+    "cover": "./assets/updates/2026-09-10/01-website-hero-fallback.png?v=d0d938d8c877",
+    "published": true,
+    "url": "./updates/2026-09-10-who-makes-the-final-design-decision-after-ai-options.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 1 / Gate 1",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-09-10",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-10/01-website-hero-480.webp?v=ee5e40ebf88e 480w, ./assets/updates/2026-09-10/01-website-hero-768.webp?v=9130c80c2d86 768w, ./assets/updates/2026-09-10/01-website-hero-1280.webp?v=ce9c55715ab9 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-10/01-website-hero-fallback.png?v=d0d938d8c877",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-11",
@@ -2377,6 +2393,21 @@
     "time": "19:30",
     "title": "让 AI 帮忙写 Blender 脚本，先搭一个初版模型",
     "summary": "今天聊聊让 AI 帮忙写 Blender 脚本，先搭一个初版模型。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 2 / Gate 2",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2026-12-09",
+    "type": "图文",
+    "time": "11:30",
+    "title": "模型看着很光滑，为什么还是打不出来？",
+    "summary": "今天聊聊模型看着很光滑，为什么还是打不出来。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,
