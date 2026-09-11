@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 26916,
+      "format": "webp",
+      "height": 600,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-11-tutankhamun-head-profile-planes-480.webp",
+      "quality": 84,
+      "sha256": "92919056b37f84a17d5f344cb498cb25a5e5d4ae7ae7a5ac644bab9dd1cf1642",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 56506,
+      "format": "webp",
+      "height": 960,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-11-tutankhamun-head-profile-planes-768.webp",
+      "quality": 84,
+      "sha256": "f4917849f4f5e11e6529b542e2c7dc4fe63c3d240315018fb418c06e60cd334d",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 126758,
+      "format": "webp",
+      "height": 1600,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-11-tutankhamun-head-profile-planes-1280.webp",
+      "quality": 84,
+      "sha256": "8c0dbf42bcaaa4c54e07c66274f0e46c3f589c837c7e8163228eea506995cb3c",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 272004,
+    "format": "jpeg",
+    "height": 1600,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-11-tutankhamun-head-profile-planes-fallback.jpg",
+    "quality": 84,
+    "sha256": "dfaff7f7721e99674b399d27ba1bd5ec1ed943d8f1f49132fa8c999960a6c944",
+    "width": 1280
+  },
+  "original_bytes": 1624516,
+  "original_height": 3722,
+  "original_path": "assets/daily/2026-09-11-tutankhamun-head-profile-planes.jpg",
+  "original_sha256": "c12f88695e8ed7f3e4a096b61ae9829fb9351f0f0533db4ad0cd5507121cedae",
+  "original_url": "https://images.metmuseum.org/CRDImages/eg/original/DT546.jpg",
+  "original_width": 2978,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-11-tutankhamun-head-profile-planes-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-11-tutankhamun-head-profile-planes-480.webp?v=92919056b37f 480w, 2026-09-11-tutankhamun-head-profile-planes-768.webp?v=f4917849f4f5 768w, 2026-09-11-tutankhamun-head-profile-planes-1280.webp?v=8c0dbf42bcaa 1280w"
+}
