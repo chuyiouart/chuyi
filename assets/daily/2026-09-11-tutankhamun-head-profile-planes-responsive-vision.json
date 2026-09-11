@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-11",
+  "agent_prompt": "OUART 每日一画 2026-09-11 响应式馆藏图 Vision QA。请仅依据你真实打开的当前图像，模拟其在移动端按比例缩放后的观感，检查：1）作品主体是否清楚可读；2）是否存在明显压缩伪影、锯齿、条带、异常模糊、拉伸或比例失真；3）是否有破图、裁切导致主体不可辨或其他视觉故障。馆藏图不含 GPT 生成文字，OCR exact 不适用。请完整输出简洁中文结论，并明确写出“vision_mobile_readable=true/false”和“artifacts=true/false”；若失败请说明具体原因。不要根据文件尺寸或元数据推断。",
+  "agent_prompt_sha256": "ad335c581a058aede07dbf017d6d402eb63db2ddc9ba565aca5dc2fd93d92068",
+  "agent_output": "480 WebP：已真实打开查看。图中浅色石灰岩王头像与高冠完整居中，眼、鼻、口、冠带和冠面圆点纹样在移动端缩放观感下仍清楚；背景渐变与左侧投影自然。未见明显压缩块、锯齿、条带、异常模糊、拉伸、比例失真、破图或妨碍识别的裁切。vision_mobile_readable=true；artifacts=false。\n\n768 WebP：已真实打开查看。王头像、高冠及中央冠饰完整可辨，面部损伤和石材表面细节清楚，按比例缩放到移动端后主体仍有明确轮廓与层次。未见明显压缩伪影、锯齿、条带、异常模糊、拉伸、比例失真或破图。vision_mobile_readable=true；artifacts=false。\n\n1280 WebP：已真实打开查看。作品主体完整、清晰，高冠纹理、眉眼、鼻部损伤、嘴部与石材肌理均可读；构图和比例正常，移动端缩放不会使主体失去辨识度。未见明显压缩伪影、锯齿、条带、异常模糊、拉伸、比例失真、破图或故障性裁切。vision_mobile_readable=true；artifacts=false。\n\nfallback JPEG：已真实打开查看。王头像与高冠完整居中，轮廓、冠面重复凹点、面部转折和材质细节清晰，移动端按比例缩放后主体可读。未见明显 JPEG 压缩块、锯齿、条带、异常模糊、拉伸、比例失真、破图或主体不可辨的裁切。vision_mobile_readable=true；artifacts=false。",
+  "agent_output_sha256": "69dd44e17b7f34c4e4c17b2454dbb00c3fae32a0cacac12a81705e5039061950",
+  "results": {
+    "480": {
+      "image_sha256": "92919056b37f84a17d5f344cb498cb25a5e5d4ae7ae7a5ac644bab9dd1cf1642",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "f4917849f4f5e11e6529b542e2c7dc4fe63c3d240315018fb418c06e60cd334d",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "8c0dbf42bcaaa4c54e07c66274f0e46c3f589c837c7e8163228eea506995cb3c",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "dfaff7f7721e99674b399d27ba1bd5ec1ed943d8f1f49132fa8c999960a6c944",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
