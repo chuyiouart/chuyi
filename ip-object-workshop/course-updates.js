@@ -1070,17 +1070,33 @@ window.WORKSHOP_UPDATES = [
   {
     "date": "2026-09-11",
     "type": "图文",
-    "title": "先试一个局部，还是先做一个缩小版？",
+    "title": "局部小样和缩小版，先做哪个？",
     "time": "11:30",
-    "summary": "今天聊聊先试一个局部，还是先做一个缩小版。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "整体比例和动作没定时，先看完整缩小版；方向已经稳定、只剩连接或材料风险时，先做真实大小的局部小样。两种测试各自回答一个问题。",
+    "cover": "./assets/updates/2026-09-11/01-website-hero-fallback.png?v=06a1513f4b81",
+    "published": true,
+    "url": "./updates/2026-09-11-local-sample-or-scale-model-which-comes-first.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 1 / Gate 1",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-09-11",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-11/01-website-hero-480.webp?v=7ab72fa5ecc3 480w, ./assets/updates/2026-09-11/01-website-hero-768.webp?v=63e729385ef9 768w, ./assets/updates/2026-09-11/01-website-hero-1280.webp?v=6e96128e9a18 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-11/01-website-hero-fallback.png?v=06a1513f4b81",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-12",
@@ -2408,6 +2424,21 @@ window.WORKSHOP_UPDATES = [
     "time": "11:30",
     "title": "模型看着很光滑，为什么还是打不出来？",
     "summary": "今天聊聊模型看着很光滑，为什么还是打不出来。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 2 / Gate 2",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2026-12-10",
+    "type": "视频",
+    "time": "19:30",
+    "title": "Blender 脚本报错，怎么让 GPT-6 帮忙找原因？",
+    "summary": "今天聊聊Blender 脚本报错，怎么让 GPT-6 帮忙找原因。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,
