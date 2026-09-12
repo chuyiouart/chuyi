@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-12",
+  "agent_prompt": "OUART 每日一画 2026-09-12 响应式馆藏图 Vision QA。逐一真实打开 480 WebP、768 WebP、1280 WebP 与 fallback JPEG；仅依据当前图像，模拟其在移动端按比例缩放后的观感，分别检查：1）作品主体是否清楚可读；2）是否存在明显压缩伪影、锯齿、条带、异常模糊、拉伸或比例失真；3）是否有破图、裁切导致主体不可辨或其他视觉故障。馆藏图不含 GPT 生成文字，OCR exact 不适用。对每项完整输出简洁中文结论，并明确写出“vision_mobile_readable=true/false”和“artifacts=true/false”；若失败请说明具体原因。不要根据文件尺寸或元数据推断。",
+  "agent_prompt_sha256": "0c3c5cbdbfbc5ffb8b7719b63b72b0c4d3fc0e1f5515694dfa4585132d8dba94",
+  "agent_output": "480 WebP：已真实打开查看。横向羽饰板完整呈现，蓝色与黄色四个错位大色面、顶部棕色包边和两侧细绳均可辨；移动端缩放下整体构图及色面关系清楚。羽片细节因档位尺寸而简化，但未见明显压缩块、锯齿、条带、异常模糊、拉伸、比例失真、破图或妨碍主体识别的裁切。vision_mobile_readable=true；artifacts=false。\n\n768 WebP：已真实打开查看。羽饰板的横向轮廓、四个蓝黄色面、中央竖向接缝、水平交界与边缘绳带清楚，羽片形成的细密表面在移动端缩放观感下仍可读。未见明显压缩伪影、锯齿、条带、异常模糊、拉伸、比例失真、破图或故障性裁切。vision_mobile_readable=true；artifacts=false。\n\n1280 WebP：已真实打开查看。作品完整清晰，蓝黄错位色面、微微起伏的顶部包边、中央接缝、羽片层叠方向及左右边绳均可辨；按比例缩放到移动端后主体与主要材质特征仍明确。未见明显压缩块、锯齿、条带、异常模糊、拉伸、比例失真、破图或主体不可辨的裁切。vision_mobile_readable=true；artifacts=false。\n\nfallback JPEG：已真实打开查看。横向羽饰板完整置于灰色背景中，蓝黄四区、棕色顶边、中央错位接缝和羽片质感清楚，移动端按比例缩放后主体可读。未见明显 JPEG 压缩块、锯齿、条带、异常模糊、拉伸、比例失真、破图或故障性裁切。vision_mobile_readable=true；artifacts=false。",
+  "agent_output_sha256": "29f96e5a65b8631cf8f0a98066045decc9bcbdd417ccbb8a39abb6738c0e5560",
+  "results": {
+    "480": {
+      "image_sha256": "32a55261989fde467a4d7c9ee0c4506b96358132c8a05ebe00faade78b7c41c7",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "26d5d44b7e31cf8aaddcc1bdfbec4b36c2c0e0eb7dfcae8eff9d972afd3e192c",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "e123303b6db0450ee920473ecac606b01cc3aeb1fb1b72fa63b8c34b83779eba",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "2029e65d2067619387b06e03ec3cb641abe5642004409d51766dabf8278ee978",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
