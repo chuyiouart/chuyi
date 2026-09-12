@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 9084,
+      "format": "webp",
+      "height": 214,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-12-wari-feathered-panel-offset-fields-480.webp",
+      "quality": 84,
+      "sha256": "32a55261989fde467a4d7c9ee0c4506b96358132c8a05ebe00faade78b7c41c7",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 21602,
+      "format": "webp",
+      "height": 342,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-12-wari-feathered-panel-offset-fields-768.webp",
+      "quality": 84,
+      "sha256": "26d5d44b7e31cf8aaddcc1bdfbec4b36c2c0e0eb7dfcae8eff9d972afd3e192c",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 55388,
+      "format": "webp",
+      "height": 571,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-12-wari-feathered-panel-offset-fields-1280.webp",
+      "quality": 84,
+      "sha256": "e123303b6db0450ee920473ecac606b01cc3aeb1fb1b72fa63b8c34b83779eba",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 120062,
+    "format": "jpeg",
+    "height": 571,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-12-wari-feathered-panel-offset-fields-fallback.jpg",
+    "quality": 84,
+    "sha256": "2029e65d2067619387b06e03ec3cb641abe5642004409d51766dabf8278ee978",
+    "width": 1280
+  },
+  "original_bytes": 1819786,
+  "original_height": 1783,
+  "original_path": "assets/daily/2026-09-12-wari-feathered-panel-offset-fields.jpg",
+  "original_sha256": "612e3c7d7ed0e8ad0497b5436a16af030bde70f7ba45db6671ab072faa7e5650",
+  "original_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-15008-008.jpg",
+  "original_width": 4000,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-12-wari-feathered-panel-offset-fields-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-12-wari-feathered-panel-offset-fields-480.webp?v=32a55261989f 480w, 2026-09-12-wari-feathered-panel-offset-fields-768.webp?v=26d5d44b7e31 768w, 2026-09-12-wari-feathered-panel-offset-fields-1280.webp?v=e123303b6db0 1280w"
+}
