@@ -1134,15 +1134,32 @@
     "type": "直播",
     "title": "已有作品或只有想法，3–5 天分别先学什么？",
     "time": "20:00",
-    "summary": "今天聊聊已有作品或只有想法，3–5 天分别先学什么。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "手里已有原画、模型或实物，就从当前缺口开始；只有想法或草图，就先说清角色、用途和第一版范围。3–5 天只定一个能检查的目标，再按结果进入下一阶段。",
+    "cover": "./assets/updates/2026-09-13/03-real-application-fallback.png?v=ad7c78ff198a",
+    "published": true,
+    "url": "./updates/2026-09-13-different-starting-points-for-three-to-five-day-ip-workshop.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 1 / Gate 1",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-09-13",
+    "media_status": "partial",
+    "passedRoles": [
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [
+      "website_hero",
+      "core_explanation"
+    ],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-13/03-real-application-480.webp?v=b1b9a842f1e8 480w, ./assets/updates/2026-09-13/03-real-application-768.webp?v=24c4c3e22f5c 768w",
+      "sizes": "(max-width: 680px) 100vw, 50vw",
+      "fallback": "./assets/updates/2026-09-13/03-real-application-fallback.png?v=ad7c78ff198a",
+      "width": 768,
+      "height": 768
+    }
   },
   {
     "date": "2026-09-14",
@@ -2470,6 +2487,21 @@
     "time": "11:30",
     "title": "零件怎么拆、怎么接，为什么要先做小样？",
     "summary": "今天聊聊零件怎么拆、怎么接，为什么要先做小样。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 2 / Gate 2",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2026-12-12",
+    "type": "视频",
+    "time": "18:00",
+    "title": "换三个角度，检查作品站不站得稳、空隙和边缘对不对",
+    "summary": "今天聊聊换三个角度，检查作品站不站得稳、空隙和边缘对不对。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,
