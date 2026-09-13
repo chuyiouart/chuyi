@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-13",
+  "agent_prompt": "OUART Daily Art responsive Vision QA. Four exact local assets were opened separately with the current launcher's real Vision tool: 480 WebP, 768 WebP, 1280 WebP, and fallback JPEG. For each asset, inspect it visually as it would appear scaled on a mobile screen. Determine whether the artwork's main subject and composition remain clearly readable and whether there are any visible compression artifacts, scaling artifacts, corruption, severe blur, banding, blockiness, halos, or broken rendering. This is an official museum collection image with no GPT-generated text, so OCR exact-match is N/A. Report an explicit verdict using vision_mobile_readable=true|false and artifacts=true|false, then explain what is visibly shown and the reason.",
+  "agent_prompt_sha256": "be30ab8f7763df52944898d00be741c97f764385fc9190873be85d20ab1b1a4a",
+  "agent_output": "480: vision_mobile_readable=true; artifacts=false. The exact 480 WebP visibly shows the full tall hanging scroll, with the dark plum trunk, branching sprays and blossoms remaining clearly distinguishable against the warm brown silk ground at mobile scale. The pale mounting, top calligraphy, left inscription and red seals remain part of the readable composition. No corruption, severe blur, banding, blockiness, halos, broken rendering, or obvious compression/scaling artifacts are visible; the subdued contrast is inherent to the photographed historical work.\n\n768: vision_mobile_readable=true; artifacts=false. The exact 768 WebP visibly preserves the full vertical scroll and clearly resolves the main bent trunk, fine branch rhythm, blossom clusters, mounting borders, inscriptions and seals. Tonal transitions remain smooth and the subject is legible when scaled for mobile viewing. No corruption, severe blur, banding, blockiness, halos, broken rendering, or visible compression/scaling artifacts are present.\n\n1280: vision_mobile_readable=true; artifacts=false. The exact 1280 WebP visibly shows the complete hanging-scroll composition with strong trunk silhouette, long descending branch, many fine twigs and blossoms, surrounding calligraphy and red seals. Fine ink edges and low-contrast silk tone remain coherent at mobile scaling. No corruption, severe blur, banding, blockiness, halos, broken rendering, or visible compression/scaling artifacts are present.\n\nfallback: vision_mobile_readable=true; artifacts=false. The exact fallback JPEG visibly preserves the same complete composition and aspect ratio: dark central plum trunk, spreading blossom branches, warm silk field, pale mount, calligraphy and seals. The main subject and compositional movement remain clear on mobile, with no corruption, severe blur, banding, blockiness, halos, broken rendering, or visible compression/scaling artifacts.",
+  "agent_output_sha256": "dc2c1ee09b88fb8d113b34994c1c1b27ded6756dc864f010e96a1eb74b0c00b6",
+  "results": {
+    "480": {
+      "image_sha256": "cb005c396676b1dfff5c55db72c13ee45ee5af2b7be719c9f529fd95556f9d84",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "0963ef145570cbb721c6be81520e892680d2ba59b32d384a9958d107d709be1c",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "ea93bf2146bb6a8dca207318da3343189ccee4e37090a97abe5a9493789efe37",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "987c7b92d68c73dbd4180cae150a08ecdddaa603249e2adf4f567c62e9ec59c2",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
