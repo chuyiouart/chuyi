@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 24390,
+      "format": "webp",
+      "height": 903,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-13-wang-mian-fragrant-snow-ink-density-480.webp",
+      "quality": 84,
+      "sha256": "cb005c396676b1dfff5c55db72c13ee45ee5af2b7be719c9f529fd95556f9d84",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 57394,
+      "format": "webp",
+      "height": 1444,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-13-wang-mian-fragrant-snow-ink-density-768.webp",
+      "quality": 84,
+      "sha256": "0963ef145570cbb721c6be81520e892680d2ba59b32d384a9958d107d709be1c",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 163288,
+      "format": "webp",
+      "height": 2407,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-13-wang-mian-fragrant-snow-ink-density-1280.webp",
+      "quality": 84,
+      "sha256": "ea93bf2146bb6a8dca207318da3343189ccee4e37090a97abe5a9493789efe37",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 424220,
+    "format": "jpeg",
+    "height": 2407,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-13-wang-mian-fragrant-snow-ink-density-fallback.jpg",
+    "quality": 84,
+    "sha256": "987c7b92d68c73dbd4180cae150a08ecdddaa603249e2adf4f567c62e9ec59c2",
+    "width": 1280
+  },
+  "original_bytes": 1916338,
+  "original_height": 3876,
+  "original_path": "assets/daily/2026-09-13-wang-mian-fragrant-snow-ink-density.jpg",
+  "original_sha256": "9cf565738d8f3e155b00ddba0439d5a5a49f9ef8fe2ba5b9531252ddbdcccdaa",
+  "original_url": "https://images.metmuseum.org/CRDImages/as/original/DP258037.jpg",
+  "original_width": 2061,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-13-wang-mian-fragrant-snow-ink-density-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-13-wang-mian-fragrant-snow-ink-density-480.webp?v=cb005c396676 480w, 2026-09-13-wang-mian-fragrant-snow-ink-density-768.webp?v=0963ef145570 768w, 2026-09-13-wang-mian-fragrant-snow-ink-density-1280.webp?v=ea93bf2146bb 1280w"
+}
