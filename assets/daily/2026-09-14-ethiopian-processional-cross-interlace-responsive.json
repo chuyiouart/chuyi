@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 11928,
+      "format": "webp",
+      "height": 575,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-14-ethiopian-processional-cross-interlace-480.webp",
+      "quality": 84,
+      "sha256": "adee2d1535d40307da5bf3e27decc034392ac05d833c4239ab49a253b6974e3c",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 24268,
+      "format": "webp",
+      "height": 919,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-14-ethiopian-processional-cross-interlace-768.webp",
+      "quality": 84,
+      "sha256": "e83c6cdca14369014b78b4f45887a0e4c3fe61ccf35bbb76b9b42a2eea3996ad",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 56972,
+      "format": "webp",
+      "height": 1532,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-14-ethiopian-processional-cross-interlace-1280.webp",
+      "quality": 84,
+      "sha256": "04cd8d0a7cafa5a36fe2bd6f16c359942c2388d599a622cd753ded62acb0e235",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 132028,
+    "format": "jpeg",
+    "height": 1532,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-14-ethiopian-processional-cross-interlace-fallback.jpg",
+    "quality": 84,
+    "sha256": "48f5a311169c0254e49fa60d8973a065d1bfc5a32b0c0543a9df062779d021c7",
+    "width": 1280
+  },
+  "original_bytes": 1280930,
+  "original_height": 2000,
+  "original_path": "assets/daily/2026-09-14-ethiopian-processional-cross-interlace.jpg",
+  "original_sha256": "51328a6044f460d20442957aad7fbb699d03236db2ed64d2f2658509a56ad191",
+  "original_url": "https://images.metmuseum.org/CRDImages/md/original/DP257320.jpg",
+  "original_width": 1671,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-14-ethiopian-processional-cross-interlace-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-14-ethiopian-processional-cross-interlace-480.webp?v=adee2d1535d4 480w, 2026-09-14-ethiopian-processional-cross-interlace-768.webp?v=e83c6cdca143 768w, 2026-09-14-ethiopian-processional-cross-interlace-1280.webp?v=04cd8d0a7caf 1280w"
+}
