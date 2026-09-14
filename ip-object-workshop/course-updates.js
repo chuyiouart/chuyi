@@ -1164,17 +1164,33 @@ window.WORKSHOP_UPDATES = [
   {
     "date": "2026-09-14",
     "type": "图文",
-    "title": "尺寸先说清楚，模型才知道该怎么做",
+    "title": "尺寸说不清，模型就容易从第一步做错",
     "time": "11:30",
-    "summary": "今天聊聊尺寸先说清楚，模型才知道该怎么做。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "建模前要把整体高度、关键部位大小、摆放空间和允许偏差说清楚。AI 可以协助整理单位、比例和检查脚本，最后仍要靠人工修模、切片和实物测量确认。",
+    "cover": "./assets/updates/2026-09-14/01-website-hero-fallback.png?v=ec63dd898a15",
+    "published": true,
+    "url": "./updates/2026-09-14-define-model-size-before-modeling.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 2 / Gate 2",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-09-14",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-14/01-website-hero-480.webp?v=43d79800890d 480w, ./assets/updates/2026-09-14/01-website-hero-768.webp?v=858924684f43 768w, ./assets/updates/2026-09-14/01-website-hero-1280.webp?v=892d4201133e 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-14/01-website-hero-fallback.png?v=ec63dd898a15",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-15",
@@ -2502,6 +2518,21 @@ window.WORKSHOP_UPDATES = [
     "time": "18:00",
     "title": "换三个角度，检查作品站不站得稳、空隙和边缘对不对",
     "summary": "今天聊聊换三个角度，检查作品站不站得稳、空隙和边缘对不对。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 2 / Gate 2",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2026-12-13",
+    "type": "直播",
+    "time": "20:00",
+    "title": "AI 做完初版模型，哪些地方还得手工改？",
+    "summary": "今天聊聊AI 做完初版模型，哪些地方还得手工改。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,
