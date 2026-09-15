@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 37576,
+      "format": "webp",
+      "height": 462,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-15-boscoreale-cubiculum-depth-planes-480.webp",
+      "quality": 84,
+      "sha256": "629f06ef3c3d17dcfa347744a1e00c4117f764024521a79be02dc0fb0d14c592",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 92914,
+      "format": "webp",
+      "height": 740,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-15-boscoreale-cubiculum-depth-planes-768.webp",
+      "quality": 84,
+      "sha256": "c7b7e5b682301346fb8b4464cf0fb998d513f27726e474abab545559339d5aec",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 239136,
+      "format": "webp",
+      "height": 1233,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-15-boscoreale-cubiculum-depth-planes-1280.webp",
+      "quality": 84,
+      "sha256": "85ae1daf53a3fe6c92385d22d523114b26df0060f68b92302c608c2aec686781",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 381197,
+    "format": "jpeg",
+    "height": 1233,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-15-boscoreale-cubiculum-depth-planes-fallback.jpg",
+    "quality": 84,
+    "sha256": "6ba077c9d9fd73f5401e5b90c6195c678768ef76b39dc099d2e3dc637122553a",
+    "width": 1280
+  },
+  "original_bytes": 3251235,
+  "original_height": 3713,
+  "original_path": "assets/daily/2026-09-15-boscoreale-cubiculum-depth-planes.jpg",
+  "original_sha256": "1b4ddfc6bfd209c4537601f66b7b2c943405715f9116446eff8aca70eea08707",
+  "original_url": "https://images.metmuseum.org/CRDImages/gr/original/DP143704.jpg",
+  "original_width": 3855,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-15-boscoreale-cubiculum-depth-planes-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-15-boscoreale-cubiculum-depth-planes-480.webp?v=629f06ef3c3d 480w, 2026-09-15-boscoreale-cubiculum-depth-planes-768.webp?v=c7b7e5b68230 768w, 2026-09-15-boscoreale-cubiculum-depth-planes-1280.webp?v=85ae1daf53a3 1280w"
+}
