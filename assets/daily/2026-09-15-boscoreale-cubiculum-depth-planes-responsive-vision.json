@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-15",
+  "agent_prompt": "你是 OUART 每日一画响应式图像 Vision QA Agent。请真实查看本次提供的图像文件，并只依据像素判断：在手机宽度缩放显示时，罗马博斯科雷阿莱卧室壁画的整体房间、中央窗格、拱顶、两侧红/青墙面与建筑式壁画是否主体清楚可读；是否存在明显压缩块、重影、条带、异常模糊、拉伸、裁切或缩放伪影。该图不是 GPT 生成文字图，OCR exact 必须记为字符串 N/A。请对当前资产给出明确 PASS/FAIL、vision_mobile_readable=true/false、artifacts=true/false，并写一段客观依据。不得根据尺寸、文件名、解码结果或其他资产推断，必须实际查看当前文件。",
+  "agent_prompt_sha256": "fb74b835158229c3d7c5be5caed7306c517647a78baa289fac2776a2041ef261",
+  "agent_output": "480: PASS；vision_mobile_readable=true；artifacts=false；ocr_exact_match=N/A。实际查看后，整体房间轮廓、中央亮窗及黑色窗格、上下两道拱顶、两侧红色与青绿色墙面分区均清楚；建筑式壁画的小构件虽因手机尺度简化，但主体和纵深关系可辨。未见明显压缩块、重影、条带、异常模糊、拉伸、裁切或缩放伪影。\n768: PASS；vision_mobile_readable=true；artifacts=false；ocr_exact_match=N/A。实际查看后，中央窗格、拱顶轮廓、侧墙向后收拢的边界和红/青色块均清晰，柱、檐与壁画建筑层次在缩小显示时仍可辨。未见明显压缩块、重影、条带、异常模糊、拉伸、裁切或缩放伪影。\n1280: PASS；vision_mobile_readable=true；artifacts=false；ocr_exact_match=N/A。实际查看后，房间整体、中央窗、拱顶、两侧壁面及建筑式壁画细节清楚，线条与色块边缘自然，缩小到手机宽度仍能稳定读出主体和空间层次。未见明显压缩块、重影、条带、异常模糊、拉伸、裁切或缩放伪影。\nfallback: PASS；vision_mobile_readable=true；artifacts=false；ocr_exact_match=N/A。实际查看后，构图完整，中央窗和拱顶是明确视觉锚点，两侧红/青墙面、柱列与建筑式壁画保持可读；缩小显示没有破坏主体辨识。未见明显压缩块、重影、条带、异常模糊、拉伸、裁切或缩放伪影。",
+  "agent_output_sha256": "98e8a2e171da830c8bbbc61338fdacd14d7e53641e3b33a141c61a10e8f0a665",
+  "results": {
+    "480": {
+      "image_sha256": "629f06ef3c3d17dcfa347744a1e00c4117f764024521a79be02dc0fb0d14c592",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "c7b7e5b682301346fb8b4464cf0fb998d513f27726e474abab545559339d5aec",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "85ae1daf53a3fe6c92385d22d523114b26df0060f68b92302c608c2aec686781",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "6ba077c9d9fd73f5401e5b90c6195c678768ef76b39dc099d2e3dc637122553a",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
