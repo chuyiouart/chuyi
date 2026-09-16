@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 15106,
+      "format": "webp",
+      "height": 235,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-16-hoitsu-cherry-trees-asymmetrical-masses-480.webp",
+      "quality": 84,
+      "sha256": "a3b34523cbb79c4544ffd4ea521ca70b9e73b2dd80be20d433a64f298c521478",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 34424,
+      "format": "webp",
+      "height": 376,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-16-hoitsu-cherry-trees-asymmetrical-masses-768.webp",
+      "quality": 84,
+      "sha256": "82ea36fc7c9b3a748816a831f62fbdde8bed00913fc2ed1a222b5febfdb7427e",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 87552,
+      "format": "webp",
+      "height": 627,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-16-hoitsu-cherry-trees-asymmetrical-masses-1280.webp",
+      "quality": 84,
+      "sha256": "fd572e80eb89e3de57626e691f4c6a21ac4efd5647f952fdd7ecbbb41374a058",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 158840,
+    "format": "jpeg",
+    "height": 627,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-16-hoitsu-cherry-trees-asymmetrical-masses-fallback.jpg",
+    "quality": 84,
+    "sha256": "cde19b17496372d6e44b3edce6eb599f24953f32a5df3d51a0930a9f675618b3",
+    "width": 1280
+  },
+  "original_bytes": 2163589,
+  "original_height": 1959,
+  "original_path": "assets/daily/2026-09-16-hoitsu-cherry-trees-asymmetrical-masses.jpg",
+  "original_sha256": "048d3e2bec8c7b58e612ba5089145fbd07847d7d0c7404746db72cc930757c24",
+  "original_url": "https://images.metmuseum.org/CRDImages/as/original/DP704936.jpg",
+  "original_width": 4000,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-16-hoitsu-cherry-trees-asymmetrical-masses-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-16-hoitsu-cherry-trees-asymmetrical-masses-480.webp?v=a3b34523cbb7 480w, 2026-09-16-hoitsu-cherry-trees-asymmetrical-masses-768.webp?v=82ea36fc7c9b 768w, 2026-09-16-hoitsu-cherry-trees-asymmetrical-masses-1280.webp?v=fd572e80eb89 1280w"
+}
