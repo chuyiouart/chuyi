@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="模型看起来光滑，不代表文件内部适合打印。要检查封闭性、面朝向、内部重叠和真实壁厚，再用逐层切片与局部小样确认。" />
+  <title>表面很光滑，模型为什么还是打不出来？ | IP 实物化实战营</title>
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="../course.css" />
+  <link rel="stylesheet" href="../update-article.css" />
+</head>
+<body class="update-page">
+  <header class="update-header">
+    <a href="../#updates">← 返回每日公开更新</a>
+    <a class="update-brand" href="../#course-intro">IP 实物化实战营</a>
+  </header>
+  <main class="update-article">
+    <header class="update-article-title">
+      <p class="update-meta"><time datetime="2026-09-16">2026-09-16</time> · 图文</p>
+      <h1>表面很光滑，模型为什么还是打不出来？</h1>
+      <p class="update-lead">三维模型在屏幕上看起来很光滑，转一圈也没有明显破面，送进切片软件后却可能出现空层、缺面、薄片消失或内部多出一团材料。原因往往不在表面够不够顺，而在模型内部是否封闭、面朝向是否正确、零件有没有重叠，以及最薄处是否达到设备和材料能做出的厚度。
+
+光滑通常只是显示效果。建模软件可以用平滑着色把少量大面显示得更圆，也能让互相穿插的零件暂时看不出接缝，但这些设置不会自动补好破洞、清掉内部面或增加真实壁厚。若只凭屏幕外观判断，问题会一直带到切片、支撑和打印，最后浪费时间与材料。</p>
+    </header>
+    <figure class="update-hero">
+      <picture><source type="image/webp" srcset="../assets/updates/2026-09-16/01-website-hero-480.webp?v=91230e0a8aba 480w, ../assets/updates/2026-09-16/01-website-hero-768.webp?v=939a2503ed34 768w, ../assets/updates/2026-09-16/01-website-hero-1280.webp?v=d7bf714c38ea 1280w" sizes="(max-width: 680px) 100vw, 760px" /><img src="../assets/updates/2026-09-16/01-website-hero-fallback.png?v=8c83b4c8ff56" srcset="../assets/updates/2026-09-16/01-website-hero-480.webp?v=91230e0a8aba 480w, ../assets/updates/2026-09-16/01-website-hero-768.webp?v=939a2503ed34 768w, ../assets/updates/2026-09-16/01-website-hero-1280.webp?v=d7bf714c38ea 1280w" sizes="(max-width: 680px) 100vw, 760px" alt="表面很光滑，模型为什么还是打不出来？" width="960" height="540" loading="eager" decoding="async" fetchpriority="high" /></picture>
+      <figcaption>课程流程示意图，不是往期学员案例。</figcaption>
+    </figure>
+    <section class="update-section"><h2>具体问题</h2><p>三维模型在屏幕上看起来很光滑，转一圈也没有明显破面，送进切片软件后却可能出现空层、缺面、薄片消失或内部多出一团材料。原因往往不在表面够不够顺，而在模型内部是否封闭、面朝向是否正确、零件有没有重叠，以及最薄处是否达到设备和材料能做出的厚度。</p><p>光滑通常只是显示效果。建模软件可以用平滑着色把少量大面显示得更圆，也能让互相穿插的零件暂时看不出接缝，但这些设置不会自动补好破洞、清掉内部面或增加真实壁厚。若只凭屏幕外观判断，问题会一直带到切片、支撑和打印，最后浪费时间与材料。</p></section><section class="update-section"><h2>核心判断</h2><p>模型能不能进入打印测试，要看切片软件能否把它读成连续、封闭、厚度足够的实体。检查时至少要确认没有开口边和重复面，面的正反方向一致，相交零件已经按计划合并或保留装配间隙，薄衣片、手指、道具和场景连接没有低于当前工艺的实际能力。</p><p>另一个可靠判断是把外观检查和结构检查分开。平滑着色可以留作观看效果，真正用于打印的文件还要经过网格检查、剖面查看、切片预览和局部小样。AI 可以协助编写检查脚本、列出可疑部位和解释报错，但自动修复可能封错洞或删掉需要的细节，最后仍要人工修模并用实物测试确认。</p></section><section class="update-section"><h2>步骤或标准</h2><p>下面六项从文件内部一路检查到真实小样。每一项都应留下修复前后的模型、切片截图或实测结果。</p><ul><li>保存一份原始可编辑文件，再复制出打印检查版。确认单位、整体尺寸和零件数量，不在唯一原文件上直接做自动修复。</li><li>关闭只影响显示的平滑效果，查看线框和面朝向。找出开口边、重复面、零面积面、孤立小片和反向面；修复后重新检查，数量应回到可解释的范围。</li><li>用剖面或隐藏外壳的方式检查内部。相交零件若要成为一体，应做可靠合并并清理内部面；若要拆装，则保留明确的分件边界、插接方向和实际间隙。</li><li>测量最薄位置，不只看平均厚度。重点检查手指、衣摆、发梢、道具细杆、脚底接触面和角色与场景的连接；低于设备、材料或受力要求时，加厚、改形或拆件。</li><li>导出 STL 等打印文件后重新导入，并在切片软件里逐层预览。确认没有突然消失的轮廓、封死的孔、悬空小岛、异常实心区或漏层，再决定打印方向和支撑。</li><li>选最危险的一处做真实大小局部样。记录材料、层高或曝光、装配松紧和受力结果；文件检查与小样都通过后，才安排完整打印。</li></ul></section><section class="update-section"><h2>常见错误</h2><p>光滑外观很容易让人跳过结构检查，下面这些做法会把问题拖到打印阶段。</p><ul><li>只打开平滑着色就认为表面已经修好。后果是破洞、反向面和相交零件仍然存在，切片时会缺层、封错区域或生成异常路径。</li><li>对整个模型一键自动修复，却不看修复前后差异。后果是软件可能封住本来要保留的开口、删除细小部件，或把装配结构错误地并成一体。</li><li>只看模型外壳，不检查内部面和重复几何。后果是切片后内部出现多余实心区，材料、打印时间和受力判断都会失真。</li><li>只按屏幕比例判断薄片和细杆。后果是衣摆、手指或道具在切片中消失，打印出来也容易断裂。</li><li>网格检查通过后直接打印整件。后果是支撑方向、装配间隙和材料变形尚未实测，一次失败就会浪费更多时间和材料。</li></ul></section><section class="update-section"><h2>与短期课程的关系</h2><p>这个主题属于第二阶段，也就是 AI 辅助建模与人工修模。做完后要检查单位和尺寸、封闭性、面朝向、真实壁厚、零件关系、连接与重心；文件还要重新导入并通过逐层切片预览。达到这些条件，下一阶段才进入打印、灰模和色彩测试。</p><p>3 天路线可以集中修好一个主模型的网格，并打印一个最危险部位的小样；4–5 天可以在结构检查通过后继续做分件、局部打印和灰模复核。进入下一阶段前，屏幕上“看起来光滑”不能作为验收结果，至少要有可解释的网格检查、切片预览和实物小样；未通过就回到人工修模。</p></section><section class="update-section"><h2>事实 / 案例 / 完成度边界</h2><p>本文依据课程第二阶段的模型检查与人工修模方法整理。本页计划用原创人形角色“潮壳巡检员”展示光滑外壳、开口边、内部重叠和真实壁厚怎样影响切片。当天四张图都是课程方向示意图，不是真实案例，也不是学员作品、真实课堂、真实委托或已经完成的项目。真实案例必须另有清楚来源、公开许可、原始模型、修复记录、切片文件和实物测试结果。</p><p>3–5 天能完成到哪一步取决于现有模型、错误数量、角色复杂度、设备、材料、打印时间和返工次数。3 天通常只修复并验证一个重点模型或关键部位；4–5 天可完成首版流程的一部分，结果可能是可继续编辑的模型、局部样或灰模，仍需人工修模和实物验证。课程不承诺 AI 自动修成可打印文件，不承诺一次检查排除所有风险，也不承诺从零同时完成完整模型、整件打印、商业级涂装、正式包装、批量生产或成熟网站，更不承诺流量、订单、展览或销售结果。</p></section><section class="update-section"><h2>报名入口</h2><p>如果你已有 IP / 角色资产，可以提交原画、三维模型、切片截图或失败打印件，并说明目标尺寸、设备材料、最常出现的问题和可到课时间。我们会先检查现有文件，再从合适的阶段安排青岛跟班。</p><p>如果你只有想法、草图或初步设定，也可以提交故事、关键词或手绘，并说明想做成哪类实物、角色的主要动作和可到课时间。我们会先把第一版结构和检查范围说清，再安排青岛 3–5 天短训。公开报名地址：https://wj.qq.com/s2/27296919/9499/</p></section>
+    <div class="update-gallery"><picture><source type="image/webp" srcset="../assets/updates/2026-09-16/02-core-explanation-480.webp?v=95535b875a11 480w, ../assets/updates/2026-09-16/02-core-explanation-768.webp?v=da92147f042a 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-09-16/02-core-explanation-fallback.png?v=a9d4bcb02907" srcset="../assets/updates/2026-09-16/02-core-explanation-480.webp?v=95535b875a11 480w, ../assets/updates/2026-09-16/02-core-explanation-768.webp?v=da92147f042a 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="表面很光滑，模型为什么还是打不出来？ 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-09-16/03-real-application-480.webp?v=91422fb184fd 480w, ../assets/updates/2026-09-16/03-real-application-768.webp?v=5b99371afdf7 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-09-16/03-real-application-fallback.png?v=391b7dc78999" srcset="../assets/updates/2026-09-16/03-real-application-480.webp?v=91422fb184fd 480w, ../assets/updates/2026-09-16/03-real-application-768.webp?v=5b99371afdf7 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="表面很光滑，模型为什么还是打不出来？ 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-09-16/04-social-promotion-480.webp?v=dc4d6bd05907 480w, ../assets/updates/2026-09-16/04-social-promotion-768.webp?v=fd233b77c203 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-09-16/04-social-promotion-fallback.png?v=c5428d557cee" srcset="../assets/updates/2026-09-16/04-social-promotion-480.webp?v=dc4d6bd05907 480w, ../assets/updates/2026-09-16/04-social-promotion-768.webp?v=fd233b77c203 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="表面很光滑，模型为什么还是打不出来？ 配图" width="480" height="600" loading="lazy" decoding="async" /></picture></div>
+    <aside class="update-boundary">
+      <strong>课程边界</strong>
+      <p>3–5 天短训按起点确认范围：3 天聚焦一个优先目标，4–5 天串联首版项目流程；不承诺商业级量产、人人进入正式展览或必然产生销售。</p>
+    </aside>
+    <section class="update-cta">
+      <p>长期招生｜青岛｜3–5 天短训｜评估后预约跟班｜每班最多 10 人。<a href="../#enrollment">查看当前学习方案与费用</a></p>
+      <a href="https://wj.qq.com/s2/27296919/9499/" target="_blank" rel="noopener">填写报名资料 →</a>
+    </section>
+  </main>
+</body>
+</html>
