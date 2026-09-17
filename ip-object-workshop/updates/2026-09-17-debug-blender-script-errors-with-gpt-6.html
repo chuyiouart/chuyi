@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="把 Blender 版本、完整报错、最小代码、场景条件和预期结果放在一起，GPT-6 / Codex 才能少猜；修复后还要检查脚本和模型。" />
+  <title>Blender 脚本报错，怎么让 GPT-6 帮忙找原因？ | IP 实物化实战营</title>
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="../course.css" />
+  <link rel="stylesheet" href="../update-article.css" />
+</head>
+<body class="update-page">
+  <header class="update-header">
+    <a href="../#updates">← 返回每日公开更新</a>
+    <a class="update-brand" href="../#course-intro">IP 实物化实战营</a>
+  </header>
+  <main class="update-article">
+    <header class="update-article-title">
+      <p class="update-meta"><time datetime="2026-09-17">2026-09-17</time> · 图文</p>
+      <h1>Blender 脚本报错，怎么让 GPT-6 帮忙找原因？</h1>
+      <p class="update-lead">Blender 脚本一运行就停住时，很多人只把“报错了”发给 AI，却没有附上 Blender 版本、完整报错、出错行附近的代码和原本想得到的结果。AI 看不到本机文件、插件状态和场景内容，只能猜，常会给出一段看似合理、实际不适合当前文件的改法。
+
+另一个麻烦是脚本报错往往只是表面现象。对象名称变了、运行环境不对、数据为空、单位不一致，或者前一步没有创建成功，都可能让后面同一行出错。若每次都让 AI 重写整份脚本，已经正确的部分也会一起变化，问题更难定位，还可能改坏现有模型。</p>
+    </header>
+    <figure class="update-hero">
+      <picture><source type="image/webp" srcset="../assets/updates/2026-09-17/01-website-hero-480.webp?v=4aba7d18e261 480w, ../assets/updates/2026-09-17/01-website-hero-768.webp?v=3dde1d96a0a8 768w, ../assets/updates/2026-09-17/01-website-hero-1280.webp?v=f96a261becc0 1280w" sizes="(max-width: 680px) 100vw, 760px" /><img src="../assets/updates/2026-09-17/01-website-hero-fallback.png?v=6d4940ca09c3" srcset="../assets/updates/2026-09-17/01-website-hero-480.webp?v=4aba7d18e261 480w, ../assets/updates/2026-09-17/01-website-hero-768.webp?v=3dde1d96a0a8 768w, ../assets/updates/2026-09-17/01-website-hero-1280.webp?v=f96a261becc0 1280w" sizes="(max-width: 680px) 100vw, 760px" alt="Blender 脚本报错，怎么让 GPT-6 帮忙找原因？" width="960" height="540" loading="eager" decoding="async" fetchpriority="high" /></picture>
+      <figcaption>课程流程示意图，不是往期学员案例。</figcaption>
+    </figure>
+    <section class="update-section"><h2>具体问题</h2><p>Blender 脚本一运行就停住时，很多人只把“报错了”发给 AI，却没有附上 Blender 版本、完整报错、出错行附近的代码和原本想得到的结果。AI 看不到本机文件、插件状态和场景内容，只能猜，常会给出一段看似合理、实际不适合当前文件的改法。</p><p>另一个麻烦是脚本报错往往只是表面现象。对象名称变了、运行环境不对、数据为空、单位不一致，或者前一步没有创建成功，都可能让后面同一行出错。若每次都让 AI 重写整份脚本，已经正确的部分也会一起变化，问题更难定位，还可能改坏现有模型。</p></section><section class="update-section"><h2>核心判断</h2><p>一次排错是否有效，要看能不能把问题缩到一个能重复出现的最小范围：在原文件副本或新的测试文件里，用相同 Blender 版本运行同一小段代码，得到同样的完整报错，并能指出执行到哪一步、场景里当时有哪些对象。只有这些条件清楚，GPT-6 / Codex 才有足够信息解释原因和提出小范围修改。</p><p>修复是否通过，也不能只看红色报错消失。脚本还要完成原本的任务，不能多建对象、删掉无关内容、改变单位或覆盖手工修改；在干净文件里连续运行两次，结果应当可解释。AI 可以帮助读报错、检查接口用法、比较修改前后代码和补充检查语句，最终仍要由人核对模型、人工修模、切片并做实物测试。</p></section><section class="update-section"><h2>步骤或标准</h2><p>下面六项把一句“帮我修脚本”整理成可以执行、可以检查的排错过程。</p><ul><li>先另存原始 Blender 文件和脚本副本，不在唯一文件上试改。记下 Blender 版本、操作系统、脚本从文本编辑器还是命令行运行，以及原本希望它完成的具体动作。</li><li>完整复制报错信息，包括错误类型、文件名、行号和调用顺序。不要只截最后一行；同时保存出错行前后约二十行代码，并说明运行到报错前，场景里已经出现了什么。</li><li>在新的测试文件里删除与问题无关的代码和对象，每次只缩小一部分，直到保留最少代码仍能稳定复现同一报错。若不能复现，就记录原文件还依赖哪些对象、插件或前置步骤。</li><li>把 Blender 版本、完整报错、最小代码、场景前置条件和预期结果一起交给 GPT-6 / Codex，请它先解释最可能的原因，再给出只改相关行的小补丁，并列出需要人工确认的假设。</li><li>应用修改后，先比较改动前后代码，确认没有扩大删除、重命名或合并范围。运行一次检查目标动作，再在干净文件中连续运行两次，确认不会重复堆出对象，也不会碰触无关内容。</li><li>打开生成的模型，核对单位、尺寸、命名、层级、比例、穿插、连接和支撑。导出后重新导入并查看切片；关键部位仍要人工修模和做真实大小小样，不能用“脚本不报错”代替制作检查。</li></ul></section><section class="update-section"><h2>常见错误</h2><p>排错时最容易浪费时间的，不是错误本身，而是每一轮都改变太多条件。</p><ul><li>只把“Python 报错”或最后一行发给 AI。后果是缺少调用顺序、行号和环境信息，AI 只能猜测，给出的代码可能修错位置。</li><li>在唯一的项目文件里直接试 AI 给出的修改。后果是脚本可能删除对象、改名或覆盖手工调整，出错前的状态也无法恢复比较。</li><li>每次都要求重写整份脚本。后果是已经正确的单位、命名和对象关系一起变化，新错误与旧错误混在一起，无法判断哪一处修改有效。</li><li>报错消失后不检查实际结果。后果是脚本可能跳过了关键步骤，或生成尺寸错误、重复、悬空和互相穿插的部件，只是没有继续抛出错误。</li><li>只在当前复杂场景里测试，不做最小复现。后果是插件、旧对象和前一次运行残留会持续干扰判断，换一台电脑或新文件后仍不能稳定运行。</li></ul></section><section class="update-section"><h2>与短期课程的关系</h2><p>这个主题属于第二阶段，也就是 AI 辅助建模与人工修模。做完后要检查：报错可以稳定复现，修改范围清楚，脚本在干净文件里能安全重复运行，单位、尺寸、对象层级和模型结果都符合输入。满足这些条件后，才进入下一阶段的切片、打印、灰模与色彩测试。</p><p>3 天路线可以集中修好一个会稳定报错的脚本，并把它整理成可重复运行、可继续人工修改的版本；4–5 天可以在代码与模型检查通过后继续做局部切片和实物小样。进入下一阶段前，必须同时保留原文件、完整报错、最小复现、修改记录和模型检查结果；若模型结构或小样未通过，就回到脚本输入或人工修模。</p></section><section class="update-section"><h2>事实 / 案例 / 完成度边界</h2><p>本文依据课程第二阶段的 AI 辅助排错与人工检查方法整理。本页计划用原创人形角色“折桥检修员”表现脚本报错、最小复现、局部修改和结果复核。当天四张图都是课程方向示意图，不是真实案例，也不是学员作品、真实课堂、真实委托或已经完成的项目。真实案例必须另有清楚来源、公开许可、原始文件、完整报错、脚本版本、人工修模、切片与实物测试记录。</p><p>3–5 天能完成到哪一步取决于现有脚本、错误数量、Blender 与 AI 工具的实际可用情况、角色复杂度、设备、材料、打印时间和返工次数。3 天通常只修复并验证一个重点脚本或关键结构；4–5 天可完成首版流程的一部分，结果可能是可重复运行的脚本、可继续编辑的模型、局部样或灰模。课程不承诺 GPT-6 / Codex 自动找到所有原因，不承诺脚本不报错就能打印，也不承诺从零同时完成完整模型、整件打印、商业级涂装、正式包装、批量生产或成熟网站，更不承诺流量、订单、展览或销售结果。</p></section><section class="update-section"><h2>报名入口</h2><p>如果你已有 IP / 角色资产，可以提交原画、现有 Blender 文件、脚本、完整报错和失败结果，并说明最想修好的动作与可到课时间。我们会先检查资料和复现条件，再从合适的阶段安排青岛跟班。</p><p>如果你只有想法、草图或初步设定，也可以提交故事、关键词或手绘，并说明想做成哪类实物、角色的主要动作和可到课时间。我们会先把第一版结构、脚本任务和检查范围说清，再安排青岛 3–5 天短训。公开报名地址：https://wj.qq.com/s2/27296919/9499/</p></section>
+    
+    <aside class="update-boundary">
+      <strong>课程边界</strong>
+      <p>3–5 天短训按起点确认范围：3 天聚焦一个优先目标，4–5 天串联首版项目流程；不承诺商业级量产、人人进入正式展览或必然产生销售。</p>
+    </aside>
+    <section class="update-cta">
+      <p>长期招生｜青岛｜3–5 天短训｜评估后预约跟班｜每班最多 10 人。<a href="../#enrollment">查看当前学习方案与费用</a></p>
+      <a href="https://wj.qq.com/s2/27296919/9499/" target="_blank" rel="noopener">填写报名资料 →</a>
+    </section>
+  </main>
+</body>
+</html>

@@ -1259,15 +1259,32 @@
     "type": "图文",
     "title": "Blender 脚本报错，怎么让 GPT-6 帮忙找原因？",
     "time": "11:30",
-    "summary": "今天聊聊Blender 脚本报错，怎么让 GPT-6 帮忙找原因。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "把 Blender 版本、完整报错、最小代码、场景条件和预期结果放在一起，GPT-6 / Codex 才能少猜；修复后还要检查脚本和模型。",
+    "cover": "./assets/updates/2026-09-17/01-website-hero-fallback.png?v=6d4940ca09c3",
+    "published": true,
+    "url": "./updates/2026-09-17-debug-blender-script-errors-with-gpt-6.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 2 / Gate 2",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-09-17",
+    "media_status": "partial",
+    "passedRoles": [
+      "website_hero"
+    ],
+    "pendingRoles": [
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-17/01-website-hero-480.webp?v=4aba7d18e261 480w, ./assets/updates/2026-09-17/01-website-hero-768.webp?v=3dde1d96a0a8 768w, ./assets/updates/2026-09-17/01-website-hero-1280.webp?v=f96a261becc0 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-17/01-website-hero-fallback.png?v=6d4940ca09c3",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-18",
@@ -2595,6 +2612,21 @@
     "time": "19:30",
     "title": "打印前，让 AI 帮忙列一张检查清单",
     "summary": "今天聊聊打印前，让 AI 帮忙列一张检查清单。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 3 / Gate 3",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2026-12-16",
+    "type": "图文",
+    "time": "11:30",
+    "title": "看打印留下的支撑痕迹，怎么调整摆放方向？",
+    "summary": "今天聊聊看打印留下的支撑痕迹，怎么调整摆放方向。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,
