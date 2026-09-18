@@ -1291,15 +1291,32 @@
     "type": "视频",
     "title": "零件怎么拆、怎么接，为什么要先做小样？",
     "time": "19:30",
-    "summary": "今天聊聊零件怎么拆、怎么接，为什么要先做小样。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "拆件要同时考虑接缝、装配方向、支撑、涂装和承重。风险最高的接口先做真实大小小样，用实物结果决定间隙。",
+    "cover": "./assets/updates/2026-09-18/01-website-hero-fallback.png?v=d6dd7ff3bfa3",
+    "published": true,
+    "url": "./updates/2026-09-18-part-splitting-joints-and-full-scale-samples.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 2 / Gate 2",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-09-18",
+    "media_status": "partial",
+    "passedRoles": [
+      "website_hero",
+      "real_application"
+    ],
+    "pendingRoles": [
+      "core_explanation",
+      "social_promotion"
+    ],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-18/01-website-hero-480.webp?v=cd671700f2f1 480w, ./assets/updates/2026-09-18/01-website-hero-768.webp?v=fe42dc368fea 768w, ./assets/updates/2026-09-18/01-website-hero-1280.webp?v=521511e4690f 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-18/01-website-hero-fallback.png?v=d6dd7ff3bfa3",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-19",
@@ -2627,6 +2644,21 @@
     "time": "11:30",
     "title": "看打印留下的支撑痕迹，怎么调整摆放方向？",
     "summary": "今天聊聊看打印留下的支撑痕迹，怎么调整摆放方向。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 3 / Gate 3",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2026-12-17",
+    "type": "视频",
+    "time": "19:30",
+    "title": "这次测试的结果，怎么用来改下一版模型？",
+    "summary": "今天聊聊这次测试的结果，怎么用来改下一版模型。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,

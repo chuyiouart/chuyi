@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="拆件要同时考虑接缝、装配方向、支撑、涂装和承重。风险最高的接口先做真实大小小样，用实物结果决定间隙。" />
+  <title>零件怎么拆、怎么接，为什么要先做小样？ | IP 实物化实战营</title>
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="../course.css" />
+  <link rel="stylesheet" href="../update-article.css" />
+</head>
+<body class="update-page">
+  <header class="update-header">
+    <a href="../#updates">← 返回每日公开更新</a>
+    <a class="update-brand" href="../#course-intro">IP 实物化实战营</a>
+  </header>
+  <main class="update-article">
+    <header class="update-article-title">
+      <p class="update-meta"><time datetime="2026-09-18">2026-09-18</time> · 视频</p>
+      <h1>零件怎么拆、怎么接，为什么要先做小样？</h1>
+      <p class="update-lead">一个角色模型准备打印时，常要把头、手臂、衣摆、道具和场景拆成零件。若只看切片软件能不能放进打印机，却没有考虑接缝位置、装配方向、支撑痕迹和涂装顺序，打印完成后可能出现脸部横着一条缝、手掌塞不进道具，或者两个零件互相挡住，根本装不到位。
+
+电脑里看着严丝合缝的插接结构，到了实物也会受材料收缩、打印方向、清洗、打磨和涂层厚度影响。接口做得太紧会开裂或装不进去，太松又会晃动。直接打印整件角色才发现问题，返工会同时浪费时间、材料和已经完成的表面处理。</p>
+    </header>
+    <figure class="update-hero">
+      <picture><source type="image/webp" srcset="../assets/updates/2026-09-18/01-website-hero-480.webp?v=cd671700f2f1 480w, ../assets/updates/2026-09-18/01-website-hero-768.webp?v=fe42dc368fea 768w, ../assets/updates/2026-09-18/01-website-hero-1280.webp?v=521511e4690f 1280w" sizes="(max-width: 680px) 100vw, 760px" /><img src="../assets/updates/2026-09-18/01-website-hero-fallback.png?v=d6dd7ff3bfa3" srcset="../assets/updates/2026-09-18/01-website-hero-480.webp?v=cd671700f2f1 480w, ../assets/updates/2026-09-18/01-website-hero-768.webp?v=fe42dc368fea 768w, ../assets/updates/2026-09-18/01-website-hero-1280.webp?v=521511e4690f 1280w" sizes="(max-width: 680px) 100vw, 760px" alt="零件怎么拆、怎么接，为什么要先做小样？" width="960" height="540" loading="eager" decoding="async" fetchpriority="high" /></picture>
+      <figcaption>课程流程示意图，不是往期学员案例。</figcaption>
+    </figure>
+    <section class="update-section"><h2>具体问题</h2><p>一个角色模型准备打印时，常要把头、手臂、衣摆、道具和场景拆成零件。若只看切片软件能不能放进打印机，却没有考虑接缝位置、装配方向、支撑痕迹和涂装顺序，打印完成后可能出现脸部横着一条缝、手掌塞不进道具，或者两个零件互相挡住，根本装不到位。</p><p>电脑里看着严丝合缝的插接结构，到了实物也会受材料收缩、打印方向、清洗、打磨和涂层厚度影响。接口做得太紧会开裂或装不进去，太松又会晃动。直接打印整件角色才发现问题，返工会同时浪费时间、材料和已经完成的表面处理。</p></section><section class="update-section"><h2>核心判断</h2><p>每一条拆分线都要回答一个具体问题：它是为了放进设备、减少难拆的支撑、方便涂装、保证装配，还是便于运输和维修。判断时同时查看接缝是否避开脸部与主要视线、零件能否沿一个清楚方向装入、接口周围有没有足够厚度，以及装好后由哪里承担重量。理由说不清的拆分，不要急着定稿。</p><p>接口能否使用，不能只靠屏幕里的尺寸。先把风险最高的接口按真实大小做成局部小样，保持预计的打印方向、材料和后处理方法，再实际插拔、轻晃并观察裂纹、变形与缝隙。AI 或脚本可以辅助列拆件方案、标记碰撞和检查尺寸，最终仍要由人修模，并用真实打印结果决定间隙。</p></section><section class="update-section"><h2>步骤或标准</h2><p>可以按下面六项，把“看起来能拆”变成能打印、能装配、能复查的零件方案。</p><ul><li>列出整体高度、打印设备可用空间、材料、角色姿势、涂装顺序和运输需求；把必须拆的部位与只是为了方便而考虑拆的部位分开。</li><li>为每条拆分线写明理由，优先放在衣褶、护肩下沿、发片交界或场景遮挡处，避开脸部、手部表情面和主要受力点。</li><li>给每个零件确定唯一、清楚的装配方向。在三维软件里沿这个方向移动零件，检查衣摆、手臂、道具和场景是否会提前碰撞。</li><li>根据材料与尺寸选择定位结构，并检查插入深度、周围壁厚、边角圆滑程度和承重路径。连接件不能只靠一根过细的柱，也不能留下无法清理的封闭空腔。</li><li>挑风险最高的一个接口做真实大小局部小样。使用预计的打印方向、清洗、打磨和底漆流程，至少完成多次插拔、轻晃、对缝和裂纹检查，并记录实际间隙。</li><li>按小样结果修改接口后，重新检查整套零件的编号关系、装配顺序、切片支撑和重心；保留修改前后文件与测试记录，再决定是否打印完整角色。</li></ul></section><section class="update-section"><h2>常见错误</h2><p>拆件时最容易忽略的，是模型里的几何关系和手里真实装配的动作并不完全一样。</p><ul><li>只按打印机容量自动切开模型。后果是接缝可能落在脸部、手指或主受力处，后期难以补缝，也更容易断裂。</li><li>接口在电脑里做成完全同尺寸。后果是材料收缩、打印误差、打磨和底漆会吃掉空间，实物可能压不进去，强装还会把薄壁撑裂。</li><li>每个零件单独看都没问题，却不模拟装配方向。后果是衣摆、道具或场景组件会互相挡住，最后一个零件没有路径可以装入。</li><li>用缩小版代替真实大小接口测试。后果是壁厚、间隙和连接强度随比例一起改变，小模型能装好，正式尺寸仍可能松动或开裂。</li><li>小样通过后不回到整套模型复查。后果是局部接口虽然合适，整体重心、支撑、装配顺序或切片方向仍可能让完整作品失败。</li></ul></section><section class="update-section"><h2>与短期课程的关系</h2><p>这个主题属于第二阶段，也就是 AI 辅助建模与人工修模。做完后要检查每条拆分线都有理由，装配方向没有碰撞，接口周围厚度和承重方式说得清，真实大小小样也完成了插拔、对缝和裂纹检查。达到这些条件，才进入下一阶段的切片、打印、灰模与色彩测试。</p><p>3 天路线可以集中解决一个最影响制作的拆件与接口问题，得到可继续修改的模型和一组真实大小局部小样；4–5 天可以在接口测试通过后继续做完整切片、局部打印或灰模检查。进入下一阶段前，要保留拆件理由、装配顺序、间隙记录和小样结果；若实物过紧、松动或开裂，就回到接口尺寸与人工修模。</p></section><section class="update-section"><h2>事实 / 案例 / 完成度边界</h2><p>本文依据课程第二阶段的拆件、连接和实物检查方法整理。本页计划用原创人形角色“庭架育苗师”展示衣片、手臂托盘、脚底与种植架的拆分和接口小样。当天四张图都是课程方向示意图，不是真实案例，也不是学员作品、真实课堂、真实委托或已经完成的项目。真实案例需要另有清楚来源、使用许可、模型版本、切片参数和实物测试记录。</p><p>3–5 天能完成到哪一步，取决于已有模型、角色复杂度、零件数量、材料、设备、打印时间和返工次数。3 天通常只完成一个重点拆件方案和关键接口小样；4–5 天可继续到完整切片、局部打印或首版灰模，但仍要根据实物结果修改。课程不承诺一次小样就解决所有公差，不承诺 AI 自动产出可制造模型，也不承诺从零同时完成完整模型、整件打印、商业级涂装、正式包装、批量生产或成熟网站，更不承诺流量、订单、展览或销售结果。</p></section><section class="update-section"><h2>报名入口</h2><p>如果你已有 IP / 角色资产，可以提交原画、现有三维文件、计划尺寸、打印材料和最担心的连接部位，并说明一个优先目标与可到课时间。我们会先看模型目前做到哪一步，再从合适的阶段安排青岛跟班。</p><p>如果你只有想法、草图或初步设定，也可以提交角色动作、道具、场景设想和想做成的大小。我们会先确定第一版范围，说明哪些部位需要拆分与小样，再安排青岛 3–5 天短训。公开报名地址：https://wj.qq.com/s2/27296919/9499/</p></section>
+    <div class="update-gallery"><picture><source type="image/webp" srcset="../assets/updates/2026-09-18/03-real-application-480.webp?v=89e1f7306273 480w, ../assets/updates/2026-09-18/03-real-application-768.webp?v=3819b3506656 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-09-18/03-real-application-fallback.png?v=d74d6f82232d" srcset="../assets/updates/2026-09-18/03-real-application-480.webp?v=89e1f7306273 480w, ../assets/updates/2026-09-18/03-real-application-768.webp?v=3819b3506656 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="零件怎么拆、怎么接，为什么要先做小样？ 配图" width="768" height="768" loading="lazy" decoding="async" /></picture></div>
+    <aside class="update-boundary">
+      <strong>课程边界</strong>
+      <p>3–5 天短训按起点确认范围：3 天聚焦一个优先目标，4–5 天串联首版项目流程；不承诺商业级量产、人人进入正式展览或必然产生销售。</p>
+    </aside>
+    <section class="update-cta">
+      <p>长期招生｜青岛｜3–5 天短训｜评估后预约跟班｜每班最多 10 人。<a href="../#enrollment">查看当前学习方案与费用</a></p>
+      <a href="https://wj.qq.com/s2/27296919/9499/" target="_blank" rel="noopener">填写报名资料 →</a>
+    </section>
+  </main>
+</body>
+</html>
