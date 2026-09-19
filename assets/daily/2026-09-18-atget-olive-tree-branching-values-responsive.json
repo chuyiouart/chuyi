@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 81402,
+      "format": "webp",
+      "height": 591,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-18-atget-olive-tree-branching-values-480.webp",
+      "quality": 84,
+      "sha256": "5ead20c408ecf24d23d7d02facbbdc9382c80c220780f4d9be74c882c3e6bada",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 186764,
+      "format": "webp",
+      "height": 946,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-18-atget-olive-tree-branching-values-768.webp",
+      "quality": 84,
+      "sha256": "95b7bfd47f9c641f5eeb206e8d1192c533eeda6aef7f7d5fab3550fbd0bafa9d",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 424180,
+      "format": "webp",
+      "height": 1577,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-18-atget-olive-tree-branching-values-1280.webp",
+      "quality": 84,
+      "sha256": "64a2b75d10ffe58f2e37dd4641da09b354448fdc757b100813ee22fae72bfa7a",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 582481,
+    "format": "jpeg",
+    "height": 1577,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-18-atget-olive-tree-branching-values-fallback.jpg",
+    "quality": 84,
+    "sha256": "58d8ef98995a3b5f933b21496b34e0ce5ac0fcf0f888036aadc8fb202ba7607e",
+    "width": 1280
+  },
+  "original_bytes": 2438074,
+  "original_height": 3000,
+  "original_path": "assets/daily/2026-09-18-atget-olive-tree-branching-values.jpg",
+  "original_sha256": "c4f4722efd69409a351aa94d0b86f83de01e67e572084aad5a8883277cf5305a",
+  "original_url": "https://www.artic.edu/iiif/2/8c24d3c9-c89a-7aa9-deed-1ee95811d24b/full/2435,/0/default.jpg",
+  "original_width": 2435,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-18-atget-olive-tree-branching-values-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-18-atget-olive-tree-branching-values-480.webp?v=5ead20c408ec 480w, 2026-09-18-atget-olive-tree-branching-values-768.webp?v=95b7bfd47f9c 768w, 2026-09-18-atget-olive-tree-branching-values-1280.webp?v=64a2b75d10ff 1280w"
+}
