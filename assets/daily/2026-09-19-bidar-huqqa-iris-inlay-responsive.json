@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 18470,
+      "format": "webp",
+      "height": 641,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-19-bidar-huqqa-iris-inlay-480.webp",
+      "quality": 84,
+      "sha256": "77d74f8be973230c3955c6ea3d5951134c94eb1e1679d09b0057d7666a55bea5",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 37442,
+      "format": "webp",
+      "height": 1026,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-19-bidar-huqqa-iris-inlay-768.webp",
+      "quality": 84,
+      "sha256": "18f4562aaee78c22cc888b5f62e98f1f1b455ec8e9d2f02e9d9a4fc0beedf092",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 81348,
+      "format": "webp",
+      "height": 1710,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-19-bidar-huqqa-iris-inlay-1280.webp",
+      "quality": 84,
+      "sha256": "63f1427bbbbac87fad959e780a739befe302bf22437de0c6d612796a8bd356a7",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 179017,
+    "format": "jpeg",
+    "height": 1710,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-19-bidar-huqqa-iris-inlay-fallback.jpg",
+    "quality": 84,
+    "sha256": "d9d458f409835c15e339719591aff6dda58cb1f51580c0d311b1a9f05dd2a942",
+    "width": 1280
+  },
+  "original_bytes": 1017401,
+  "original_height": 4000,
+  "original_path": "assets/daily/2026-09-19-bidar-huqqa-iris-inlay.jpg",
+  "original_sha256": "319b50f66b0f6c704d455eaed58258b90a047a4d01e6edf2f69e652af4d5c1bd",
+  "original_url": "https://images.metmuseum.org/CRDImages/is/original/DP214317.jpg",
+  "original_width": 2995,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-19-bidar-huqqa-iris-inlay-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-19-bidar-huqqa-iris-inlay-480.webp?v=77d74f8be973 480w, 2026-09-19-bidar-huqqa-iris-inlay-768.webp?v=18f4562aaee7 768w, 2026-09-19-bidar-huqqa-iris-inlay-1280.webp?v=63f1427bbbba 1280w"
+}

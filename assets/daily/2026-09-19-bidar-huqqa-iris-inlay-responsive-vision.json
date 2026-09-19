@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-19",
+  "agent_prompt": "[480]\nOUART Daily Art responsive-image Vision QA for 2026-09-19. Inspect this exact 480w WebP as if scaled to a mobile viewport. Determine whether the museum object’s silhouette, neck/rim structure, dark body, and brass floral inlay remain clearly readable, and whether compression or scaling artifacts (blockiness, ringing, banding, blur, malformed geometry, clipping beyond the source composition, or corruption) are present. This is an official collection image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Return a concise asset-specific assessment and explicit fields: vision_mobile_readable=true|false, artifacts=true|false, ocr_exact_match=N/A. Do not infer metadata.\n\n[768]\nOUART Daily Art responsive-image Vision QA for 2026-09-19. Inspect this exact 768w WebP as if scaled to a mobile viewport. Determine whether the museum object’s silhouette, neck/rim structure, dark body, and brass floral inlay remain clearly readable, and whether compression or scaling artifacts (blockiness, ringing, banding, blur, malformed geometry, clipping beyond the source composition, or corruption) are present. This is an official collection image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Return a concise asset-specific assessment and explicit fields: vision_mobile_readable=true|false, artifacts=true|false, ocr_exact_match=N/A. Do not infer metadata.\n\n[1280]\nOUART Daily Art responsive-image Vision QA for 2026-09-19. Inspect this exact 1280w WebP as if scaled to a mobile viewport. Determine whether the museum object’s silhouette, neck/rim structure, dark body, and brass floral inlay remain clearly readable, and whether compression or scaling artifacts (blockiness, ringing, banding, blur, malformed geometry, clipping beyond the source composition, or corruption) are present. This is an official collection image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Return a concise asset-specific assessment and explicit fields: vision_mobile_readable=true|false, artifacts=true|false, ocr_exact_match=N/A. Do not infer metadata.\n\n[fallback]\nOUART Daily Art responsive-image Vision QA for 2026-09-19. Inspect this exact fallback JPEG as if scaled to a mobile viewport. Determine whether the museum object’s silhouette, neck/rim structure, dark body, and brass floral inlay remain clearly readable, and whether compression or scaling artifacts (blockiness, ringing, banding, blur, malformed geometry, clipping beyond the source composition, or corruption) are present. This is an official collection image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Return a concise asset-specific assessment and explicit fields: vision_mobile_readable=true|false, artifacts=true|false, ocr_exact_match=N/A. Do not infer metadata.",
+  "agent_prompt_sha256": "654b125e68dc19e46537934ecbfa0b74762d51f1cae52440356a734557ac5378",
+  "agent_output": "[480]\nThe exact 480w WebP remains clearly readable at mobile scale. The rounded dark vessel silhouette, short neck, projecting rim and shoulder rings are distinct, while the brass-colored central iris, side flower clusters and small shoulder leaves remain coherent. No blockiness, ringing, banding, blur, malformed geometry, extra clipping, or corruption is visible.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n\n[768]\nThe exact 768w WebP is clearly readable at mobile scale. The dark globular body, stepped neck and open rim retain clean contours, and the brass floral stems, leaves, blossoms and shoulder border remain distinct against the body. I see no compression blocks, halos, banding, scaling distortion, unintended clipping, or corruption.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n\n[1280]\nThe exact 1280w WebP remains clearly readable when scaled to a mobile viewport. The vessel silhouette and neck/rim structure are crisp; the dark body preserves its modeled curvature, and both the large brass iris motifs and finer encircling bands are legible. No visible blockiness, ringing, banding, blur, malformed geometry, added clipping, or corruption is present.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n\n[fallback]\nThe exact fallback JPEG remains clearly readable at mobile scale. The rounded body, narrowed neck, projecting rings and open rim are intact, with strong dark-versus-brass contrast and clearly separated floral inlay. Tonal gradients and edges show no visible blockiness, ringing, banding, scaling distortion, unintended clipping, or corruption.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A",
+  "agent_output_sha256": "a391f1b4d675b891b01f94085a10eb16c95d6e8f19606040cbd8972306139d69",
+  "results": {
+    "480": {
+      "image_sha256": "77d74f8be973230c3955c6ea3d5951134c94eb1e1679d09b0057d7666a55bea5",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "18f4562aaee78c22cc888b5f62e98f1f1b455ec8e9d2f02e9d9a4fc0beedf092",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "63f1427bbbbac87fad959e780a739befe302bf22437de0c6d612796a8bd356a7",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "d9d458f409835c15e339719591aff6dda58cb1f51580c0d311b1a9f05dd2a942",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
