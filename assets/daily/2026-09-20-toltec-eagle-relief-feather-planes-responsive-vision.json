@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-20",
+  "agent_prompt": "[480]\nOUART Daily Art responsive-image Vision QA for 2026-09-20. Inspect this exact 480w WebP as if scaled to a mobile viewport. Determine whether the eagle relief’s overall silhouette, hooked beak and eye, layered wing feathers, tail/leg forms, shallow-relief edges, and surviving red/blue-green pigment remain clearly readable, and whether compression or scaling artifacts (blockiness, ringing, banding, blur, malformed geometry, clipping beyond the source composition, or corruption) are present. This is an official collection image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Return a concise asset-specific assessment and explicit fields: vision_mobile_readable=true|false, artifacts=true|false, ocr_exact_match=N/A. Do not infer metadata.\n\n[768]\nOUART Daily Art responsive-image Vision QA for 2026-09-20. Inspect this exact 768w WebP as if scaled to a mobile viewport. Determine whether the eagle relief’s overall silhouette, hooked beak and eye, layered wing feathers, tail/leg forms, shallow-relief edges, and surviving red/blue-green pigment remain clearly readable, and whether compression or scaling artifacts (blockiness, ringing, banding, blur, malformed geometry, clipping beyond the source composition, or corruption) are present. This is an official collection image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Return a concise asset-specific assessment and explicit fields: vision_mobile_readable=true|false, artifacts=true|false, ocr_exact_match=N/A. Do not infer metadata.\n\n[1280]\nOUART Daily Art responsive-image Vision QA for 2026-09-20. Inspect this exact 1280w WebP as if scaled to a mobile viewport. Determine whether the eagle relief’s overall silhouette, hooked beak and eye, layered wing feathers, tail/leg forms, shallow-relief edges, and surviving red/blue-green pigment remain clearly readable, and whether compression or scaling artifacts (blockiness, ringing, banding, blur, malformed geometry, clipping beyond the source composition, or corruption) are present. This is an official collection image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Return a concise asset-specific assessment and explicit fields: vision_mobile_readable=true|false, artifacts=true|false, ocr_exact_match=N/A. Do not infer metadata.\n\n[fallback]\nOUART Daily Art responsive-image Vision QA for 2026-09-20. Inspect this exact fallback JPEG as if scaled to a mobile viewport. Determine whether the eagle relief’s overall silhouette, hooked beak and eye, layered wing feathers, tail/leg forms, shallow-relief edges, and surviving red/blue-green pigment remain clearly readable, and whether compression or scaling artifacts (blockiness, ringing, banding, blur, malformed geometry, clipping beyond the source composition, or corruption) are present. This is an official collection image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Return a concise asset-specific assessment and explicit fields: vision_mobile_readable=true|false, artifacts=true|false, ocr_exact_match=N/A. Do not infer metadata.",
+  "agent_prompt_sha256": "e561661bd58c0ddd3051022fa950a07c397b449860049ff4a970c16edcbb7241",
+  "agent_output": "[480]\nThe exact 480w WebP remains clearly readable at mobile scale. The eagle’s left-facing silhouette, hooked beak and circular eye are distinct; the raised wing feathers remain separated in overlapping rows, and the legs, claws and long tail forms remain coherent. Shallow-relief edges and surviving muted red and blue-green pigment patches are visible. No blockiness, ringing, banding, blur, malformed geometry, unintended clipping, or corruption is visible.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n\n[768]\nThe exact 768w WebP is clearly readable at mobile scale. The head, hooked beak, eye, body contour, layered wing feathers, legs, claws and tail are all distinguishable, while recessed channels preserve the shallow-relief hierarchy. Muted red ground and scattered blue-green pigment remain visible. I see no compression blocks, ringing, banding, scaling distortion, extra clipping, or corruption.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n\n[1280]\nThe exact 1280w WebP remains clearly readable when scaled to a mobile viewport. The eagle silhouette and facial profile are crisp, individual overlapping feather plates and the longer tail feathers retain clean separation, and the lower leg and claw forms remain legible. Relief edges, worn stone texture, and surviving red and blue-green color traces are preserved without visible blockiness, halos, banding, blur, malformed geometry, unintended clipping, or corruption.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\n\n[fallback]\nThe exact fallback JPEG remains clearly readable at mobile scale. The eagle’s hooked beak, eye, body silhouette, overlapping wing-feather rows, legs, claws and tail are intact; recessed outlines clearly separate relief levels, and the residual red and blue-green pigments remain visible. No visible blockiness, ringing, banding, scaling distortion, unintended clipping, malformed geometry, or corruption is present.\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A",
+  "agent_output_sha256": "674662556b5507d5e862115fa9380be3350ae87a1212cb168001c43953232f0c",
+  "results": {
+    "480": {
+      "image_sha256": "12231444b1b899615009eb3cb1406665979752967802d3ed8b5dd961b0d75aa8",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "b71e092681e82907c3ac6ebd1b463837b8c6645106e97bbe30c180b774a5f0dd",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "19fdfa504fa3e4e756862d22c366a5274c2e2a7614c45452d5742c7cbeb197f9",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "04b871a5c44a3fa73dc8ad3a39332b7dc3462f91756704b7fef0b032616b4b9b",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
