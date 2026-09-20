@@ -1352,17 +1352,33 @@ window.WORKSHOP_UPDATES = [
   {
     "date": "2026-09-20",
     "type": "图文",
-    "title": "AI 做完初版模型，哪些地方还得手工改？",
+    "title": "AI 初版模型，手工要改哪些地方？",
     "time": "11:30",
-    "summary": "今天聊聊AI 做完初版模型，哪些地方还得手工改。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "AI 初版先解决有没有，再由人工核对角色身份、姿态、关节、厚度和连接。修改后还要通过重新导入、逐层切片与真实大小局部样。",
+    "cover": "./assets/updates/2026-09-20/01-website-hero-fallback.png?v=21a0768399db",
+    "published": true,
+    "url": "./updates/2026-09-20-what-to-fix-by-hand-after-ai-first-model.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 2 / Gate 2",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-09-20",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-20/01-website-hero-480.webp?v=e64ddda0f0d8 480w, ./assets/updates/2026-09-20/01-website-hero-768.webp?v=66d5b159d102 768w, ./assets/updates/2026-09-20/01-website-hero-1280.webp?v=dd4fe385a64c 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-20/01-website-hero-fallback.png?v=21a0768399db",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-21",
@@ -2690,6 +2706,21 @@ window.WORKSHOP_UPDATES = [
     "time": "11:30",
     "title": "厚度、站稳和小细节，不能兼顾时怎么选？",
     "summary": "今天聊聊厚度、站稳和小细节，不能兼顾时怎么选。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 3 / Gate 3",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2026-12-19",
+    "type": "视频",
+    "time": "18:00",
+    "title": "试完一个连接小样，哪些结果要记下来？",
+    "summary": "今天聊聊试完一个连接小样，哪些结果要记下来。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,
