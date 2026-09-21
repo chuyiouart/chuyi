@@ -1,0 +1,34 @@
+{
+  "agent_output": "PASS — all four files were opened and inspected individually from their actual pixels.\n480: At native size and at phone-width presentation, both rounded faces remain distinct; the smaller figure overlaps the larger figure at the right shoulder, the enclosing arms and carved hands remain readable, and the compact seated silhouette is clear. The stone texture is naturally coarse but not confused with compression. No visible blocking, ringing, banding, color shift, unintended crop, scaling distortion, or other rendering artifact was observed. OCR exact match: N/A.\n768: Both faces, their cheek-to-cheek overlap, the crossing/enclosing arm forms, finger grooves, lower limbs, and complete outer silhouette remain clear at mobile scale. Fine stone texture is retained without false sharpening or smeared edges. No visible blocking, ringing, banding, color shift, unintended crop, scaling distortion, or other rendering artifact was observed. OCR exact match: N/A.\n1280: The paired faces, nested bodies, hands and arms, base, and full silhouette are clearly readable at native and mobile-scaled viewing. Surface pits and tonal transitions remain natural. No visible blocking, ringing, banding, color shift, unintended crop, scaling distortion, or other rendering artifact was observed. OCR exact match: N/A.\nfallback: The JPEG fallback clearly preserves the same paired faces, overlap, enclosing arm/hand relationships, lower contours, and full sculpture silhouette at mobile scale. The neutral background gradient and stone surface render cleanly. No visible blocking, ringing, banding, color shift, unintended crop, scaling distortion, or other rendering artifact was observed. OCR exact match: N/A.\nOverall: vision_mobile_readable=true and artifacts=false for 480, 768, 1280, and fallback.",
+  "agent_output_sha256": "622839ba3cfb9d1d716ddf9db387d9f5d4be2a55111a2380d1d3420747f8ada5",
+  "agent_prompt": "You are performing fail-closed visual QA for four responsive derivatives of the same museum artwork on a mobile display. Inspect the attached asset at native resolution and mentally scale it to a phone-width presentation. The four required assets are labeled 480, 768, 1280, and fallback; this call attaches one of them and its filename identifies the label. For the attached asset, determine whether the mother-and-child stone sculpture remains clearly readable (both faces, their overlap, hands/arms, and overall silhouette), and whether there are any visible compression, resizing, ringing, blocking, banding, color, crop, or other rendering artifacts. Do not infer quality from dimensions, metadata, hashes, or prior versions: judge the pixels actually opened. There is no GPT-generated text in the museum image, so OCR exact match must be the literal string N/A. Return a factual assessment for this attached label suitable for later aggregation into one receipt; fail if uncertain.",
+  "agent_prompt_sha256": "2f3cfa0cb8354811651bff718b53fd7f971ca9d20b9cfcfb217a26b5ce87bb35",
+  "date": "2026-09-21",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "246e8066967c50a0285010860eacb9720a07116f8debe97816929d0a72083dc5",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "ace6c9a7b132cf99ff2b564859f4e90c3586f4f413582984a4725f21952a8521",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "8a10ddcce0f68676272ca07ea38c2a436f47a5751bf975570dba0efb136e7c8e",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "3c398a2dff603d636491e24352a324cd3b54e12ee23d83dd1d7a8f359b4e4c6b",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}

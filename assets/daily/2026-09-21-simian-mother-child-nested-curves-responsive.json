@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 11774,
+      "format": "webp",
+      "height": 384,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-21-simian-mother-child-nested-curves-480.webp",
+      "quality": 84,
+      "sha256": "ace6c9a7b132cf99ff2b564859f4e90c3586f4f413582984a4725f21952a8521",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 31036,
+      "format": "webp",
+      "height": 614,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-21-simian-mother-child-nested-curves-768.webp",
+      "quality": 84,
+      "sha256": "8a10ddcce0f68676272ca07ea38c2a436f47a5751bf975570dba0efb136e7c8e",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 86292,
+      "format": "webp",
+      "height": 1024,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-21-simian-mother-child-nested-curves-1280.webp",
+      "quality": 84,
+      "sha256": "246e8066967c50a0285010860eacb9720a07116f8debe97816929d0a72083dc5",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 131754,
+    "format": "jpeg",
+    "height": 1024,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-21-simian-mother-child-nested-curves-fallback.jpg",
+    "quality": 84,
+    "sha256": "3c398a2dff603d636491e24352a324cd3b54e12ee23d83dd1d7a8f359b4e4c6b",
+    "width": 1280
+  },
+  "original_bytes": 1100383,
+  "original_height": 2400,
+  "original_path": "assets/daily/2026-09-21-simian-mother-child-nested-curves.jpg",
+  "original_sha256": "d158e6d5ac39681f915f099dd1e35825a62bf88ae08c86459610204997f1e1e2",
+  "original_url": "https://www.artic.edu/iiif/2/59ec102c-3c49-db9a-a02a-bf253bb57a48/full/3000,/0/default.jpg",
+  "original_width": 3000,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-21-simian-mother-child-nested-curves-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-21-simian-mother-child-nested-curves-480.webp?v=ace6c9a7b132 480w, 2026-09-21-simian-mother-child-nested-curves-768.webp?v=8a10ddcce0f6 768w, 2026-09-21-simian-mother-child-nested-curves-1280.webp?v=246e8066967c 1280w"
+}
