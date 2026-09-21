@@ -1383,17 +1383,33 @@ window.WORKSHOP_UPDATES = [
   {
     "date": "2026-09-21",
     "type": "图文",
-    "title": "模型里的单位弄错了，打印出来会怎样？",
+    "title": "模型单位错了，打印结果会完全变样",
     "time": "11:30",
-    "summary": "今天聊聊模型里的单位弄错了，打印出来会怎样。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "同一个模型若在建模、导出和切片时用了不同单位，整体大小、壁厚和接口都会一起改变。用重新导入、切片读数与真实大小小样把尺寸对齐。",
+    "cover": "./assets/updates/2026-09-21/01-website-hero-fallback.png?v=490dc0f2f7b6",
+    "published": true,
+    "url": "./updates/2026-09-21-wrong-model-units-change-3d-print-result.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 3 / Gate 3",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-09-21",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-21/01-website-hero-480.webp?v=0c1424521934 480w, ./assets/updates/2026-09-21/01-website-hero-768.webp?v=02a23056d58d 768w, ./assets/updates/2026-09-21/01-website-hero-1280.webp?v=b076804021a0 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-21/01-website-hero-fallback.png?v=490dc0f2f7b6",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-22",
@@ -2721,6 +2737,21 @@ window.WORKSHOP_UPDATES = [
     "time": "18:00",
     "title": "试完一个连接小样，哪些结果要记下来？",
     "summary": "今天聊聊试完一个连接小样，哪些结果要记下来。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 3 / Gate 3",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2026-12-20",
+    "type": "直播",
+    "time": "20:00",
+    "title": "结构出了问题，怎么先用小测试少花点成本？",
+    "summary": "今天聊聊结构出了问题，怎么先用小测试少花点成本。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,
