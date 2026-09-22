@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-22",
+  "agent_prompt": "请真实检查当前打开的这一张馆藏图响应式资产，按手机端缩放显示场景评估：主体是否清楚可读，是否存在可见的压缩、缩放、块状、振铃、重影、异常锐化或其他伪影。馆藏图没有 GPT 生成文字，OCR exact 必须记为字符串 N/A，不要猜测文字。请明确给出 vision_mobile_readable=true/false、artifacts=true/false，并简述视觉依据；若有任何疑点必须判失败。",
+  "agent_prompt_sha256": "c7f4fe96279c61e3edf3d4924ed127c2612fc463c46ae161abfcde8b68befedd",
+  "agent_output": "480：vision_mobile_readable=true；artifacts=false；ocr_exact_match=\"N/A\"。在手机端显示尺度下，两座麦垛、右大左小的空间关系、地面长投影与远处树带均清楚可辨。笔触本身呈印象派的柔和颗粒感，但未见压缩块、振铃、重影、异常锐化或缩放破损。\n768：vision_mobile_readable=true；artifacts=false；ocr_exact_match=\"N/A\"。两座麦垛的轮廓、右侧麦垛受光暖边、斜向长影和背景丘陵层次清晰；细碎色触连续自然，未见可见的块状压缩、边缘光晕、重影或异常锐化。\n1280：vision_mobile_readable=true；artifacts=false；ocr_exact_match=\"N/A\"。主体、长投影、近景冷暖色触与远景树丛均完整清楚，画面细节在缩放下保持自然；未见压缩、缩放、块状、振铃、重影或异常锐化伪影。\nfallback：vision_mobile_readable=true；artifacts=false；ocr_exact_match=\"N/A\"。两座麦垛及其长影在手机端缩放下清楚可读，暖色受光面、蓝紫阴影和背景层次保持完整；未见 JPEG 块状、振铃、重影、异常锐化或其他可见伪影。",
+  "agent_output_sha256": "b92960f664e55760053604427071d7086b9c102793385cff8b0e070c46c9f0c5",
+  "results": {
+    "480": {
+      "image_sha256": "17f574b20c6d006ba1552585fc07f56eadfd4c638a11935d691def4b2f65d0c4",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "eb5ece82d147e92cdae5a6f85684a31d22e729c81797f3676372fafe834f4480",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "a75795ee1e5125538d6d11f1b690daa46778ec756f2ffae3645db60926b1edfb",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "bc4c9243629e5db4f1c0d9a6c18f138f5d4d6ddd083773e78c0a225802a14499",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
