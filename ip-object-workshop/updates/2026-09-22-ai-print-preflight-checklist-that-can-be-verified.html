@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="打印前的 AI 清单要用真实尺寸、材料、设备和结构来定制，每一项都写清检查动作与通过条件。最终由人用重新导入、逐层切片和真实大小局部样确认。" />
+  <title>打印前，让 AI 帮忙把漏项找出来 | IP 实物化实战营</title>
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="../course.css" />
+  <link rel="stylesheet" href="../update-article.css" />
+</head>
+<body class="update-page">
+  <header class="update-header">
+    <a href="../#updates">← 返回每日公开更新</a>
+    <a class="update-brand" href="../#course-intro">IP 实物化实战营</a>
+  </header>
+  <main class="update-article">
+    <header class="update-article-title">
+      <p class="update-meta"><time datetime="2026-09-22">2026-09-22</time> · 视频</p>
+      <h1>打印前，让 AI 帮忙把漏项找出来</h1>
+      <p class="update-lead">角色模型准备打印时，要检查的事情很多：文件单位、整体尺寸、开口边、反向面、薄壁、悬空部位、拆件、接口、支撑方向和设备范围都可能影响结果。只凭记忆逐项查看，很容易在反复修改后漏掉一两项，把尚未解决的问题带进切片或打印。
+
+同一张通用清单也不能直接套在所有模型上。站立人形要重点看脚底接触和重心，长衣摆要看薄边与支撑，道具和场景连接要看装配路径。若 AI 不知道模型的真实尺寸、材料、设备和当前完成程度，它列出的内容可能很长，却没有指出今天最需要处理的风险。</p>
+    </header>
+    <figure class="update-hero">
+      <picture><source type="image/webp" srcset="../assets/updates/2026-09-22/01-website-hero-480.webp?v=f8ab6b17ad9b 480w, ../assets/updates/2026-09-22/01-website-hero-768.webp?v=e4fb585011ca 768w, ../assets/updates/2026-09-22/01-website-hero-1280.webp?v=cc120636c2bb 1280w" sizes="(max-width: 680px) 100vw, 760px" /><img src="../assets/updates/2026-09-22/01-website-hero-fallback.png?v=1a013721bd2b" srcset="../assets/updates/2026-09-22/01-website-hero-480.webp?v=f8ab6b17ad9b 480w, ../assets/updates/2026-09-22/01-website-hero-768.webp?v=e4fb585011ca 768w, ../assets/updates/2026-09-22/01-website-hero-1280.webp?v=cc120636c2bb 1280w" sizes="(max-width: 680px) 100vw, 760px" alt="打印前，让 AI 帮忙把漏项找出来" width="960" height="540" loading="eager" decoding="async" fetchpriority="high" /></picture>
+      <figcaption>课程流程示意图，不是往期学员案例。</figcaption>
+    </figure>
+    <section class="update-section"><h2>具体问题</h2><p>角色模型准备打印时，要检查的事情很多：文件单位、整体尺寸、开口边、反向面、薄壁、悬空部位、拆件、接口、支撑方向和设备范围都可能影响结果。只凭记忆逐项查看，很容易在反复修改后漏掉一两项，把尚未解决的问题带进切片或打印。</p><p>同一张通用清单也不能直接套在所有模型上。站立人形要重点看脚底接触和重心，长衣摆要看薄边与支撑，道具和场景连接要看装配路径。若 AI 不知道模型的真实尺寸、材料、设备和当前完成程度，它列出的内容可能很长，却没有指出今天最需要处理的风险。</p></section><section class="update-section"><h2>核心判断</h2><p>一张有用的打印前清单，必须把每一项写成能实际检查的问题，并说明用什么文件、画面、数值或小样来判断。比如不能只写“检查结构”，而要写“逐层查看切片，确认手指、衣边和连接柱没有消失或断开”。</p><p>AI 可以根据项目资料整理清单、补充容易遗漏的检查项，也可以把检查结果分成“已确认、待修改、需要实物测试”。但它看不到未提供的文件和现场条件，不能替人判断模型已经能打印。清单最终要由人对照源文件、切片结果和真实大小局部样逐项确认。</p></section><section class="update-section"><h2>步骤或标准</h2><p>先把项目资料和检查目标整理成一份短输入，再让 AI 输出可以逐项打勾的清单。每项都要有明确对象、检查动作和通过条件。</p><ul><li>提供角色的目标高宽深、打印材料、设备成型范围、计划姿态、拆件方式和当前文件格式；缺少的数据标成“待确认”，不要让 AI 自行补数值。</li><li>请 AI 按文件、结构、拆件装配、切片和实物测试五类列项，每一项都写清检查动作、看到什么算通过、失败后回到哪一步修改。</li><li>人工删除与当前项目无关的条目，再补上角色自己的风险，例如脚底接触、衣边厚度、道具握持、场景连接或最后一个零件的装入路径。</li><li>在新导出的文件上实际执行清单：重新导入复测尺寸，查看封闭性和面朝向，逐层检查切片，并记录每项结果，不能只让 AI 根据文字宣布通过。</li><li>选择风险最高的薄片或接口做真实大小局部样，记录材料、方向、松紧和受力；实物结果与文件记录一致后，才把这一项标为完成。</li><li>模型每次改动后重查受影响的条目，并保存清单版本。尺寸、拆件或材料发生变化时，旧结论不能直接沿用。</li></ul></section><section class="update-section"><h2>常见错误</h2><p>打印前清单的作用是减少漏项，不是制造“已经检查过”的错觉。下面这些做法会让清单失去作用。</p><ul><li>只让 AI 根据一句“帮我检查能不能打印”列清单。后果是它缺少尺寸、材料和设备条件，只能给出泛泛建议，真正危险的部位可能没有出现。</li><li>把“检查模型”“确认结构”当成可执行项目。后果是不同人理解不同，完成打勾也无法证明查看过哪些位置和结果。</li><li>AI 输出后不删改，直接全部打勾。后果是与项目无关的项目占满清单，脚底、薄边或装配路径等特有问题反而被忽略。</li><li>只看建模软件，不重新导入和逐层看切片。后果是导出单位、破面、内部重叠或切片后消失的薄片仍可能进入打印。</li><li>把屏幕检查当成最终结论，不做真实大小局部样。后果是材料收缩、打印误差、打磨和涂层造成的松紧与强度问题无法提前发现。</li></ul></section><section class="update-section"><h2>与短期课程的关系</h2><p>这个主题属于第三阶段，也就是切片、打印、灰模与色彩测试。内部记录为 Day 3，完成条件是能拿出项目专用清单、重新导入后的尺寸记录、逐层切片结果和一个关键部位的实物测试记录；这些结果互相一致，才进入涂装、包装与产品表达阶段。</p><p>3 天路线可以围绕一个现有模型，完成资料整理、项目专用清单、切片检查和一个关键局部样；4–5 天可继续处理发现的问题，并推进局部打印或首版灰模。进入下一阶段前，清单中的关键项必须由人实际确认，所有“待修改”和“待实测”都有去向，不能用 AI 的文字结论代替文件和实物检查。</p></section><section class="update-section"><h2>事实 / 案例 / 完成度边界</h2><p>本文依据课程第三阶段的打印前检查方法整理。本页计划用原创陶瓷釉面人形“庭雨送信人”展示资料输入、两版清单比较、局部厚度与连接检查，以及完成检查后的交接。当天四张图都是课程方向示意图，不是真实案例，也不是学员作品、真实课堂、已烧制陶瓷、真实委托或完成项目。真实案例必须另有清楚来源、使用许可、原始文件、切片记录和实物测试结果。</p><p>3–5 天能完成到哪一步，取决于现有模型、错误数量、设备、材料、打印时间和返工次数。3 天通常聚焦一个模型和一个高风险部位；4–5 天可继续到局部打印或首版灰模，但仍需按实物结果修改。陶瓷釉面形式只作方向示意，不表示课程会在 3–5 天内完成陶瓷烧制。课程不承诺 AI 自动发现所有问题，不承诺一张清单或一次小样排除全部风险，也不承诺完整成品、商业级涂装、正式包装、批量生产、流量、订单、展览或销售结果。</p></section><section class="update-section"><h2>报名入口</h2><p>如果你已有 IP / 角色资产，可以提交原画、三维文件、切片截图或失败样件，并说明目标尺寸、材料设备、最担心的打印问题和可到课时间。我们会先看现有资料，再从合适的阶段安排青岛跟班。</p><p>如果你只有想法、草图或初步设定，也可以提交角色外形、动作、道具和场景设想，并说明希望先验证什么。我们会先把第一版范围和检查目标说清，再安排青岛 3–5 天短训。公开报名地址：https://wj.qq.com/s2/27296919/9499/</p></section>
+    <div class="update-gallery"><picture><source type="image/webp" srcset="../assets/updates/2026-09-22/02-core-explanation-480.webp?v=9ad1143ea3f6 480w, ../assets/updates/2026-09-22/02-core-explanation-768.webp?v=1fd21c3deacf 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-09-22/02-core-explanation-fallback.png?v=84b778a2bf18" srcset="../assets/updates/2026-09-22/02-core-explanation-480.webp?v=9ad1143ea3f6 480w, ../assets/updates/2026-09-22/02-core-explanation-768.webp?v=1fd21c3deacf 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="打印前，让 AI 帮忙把漏项找出来 配图" width="480" height="480" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-09-22/03-real-application-480.webp?v=a4b055cc323f 480w, ../assets/updates/2026-09-22/03-real-application-768.webp?v=6092eb165f9e 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-09-22/03-real-application-fallback.png?v=852da742de78" srcset="../assets/updates/2026-09-22/03-real-application-480.webp?v=a4b055cc323f 480w, ../assets/updates/2026-09-22/03-real-application-768.webp?v=6092eb165f9e 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="打印前，让 AI 帮忙把漏项找出来 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-09-22/04-social-promotion-480.webp?v=3e01fa744733 480w, ../assets/updates/2026-09-22/04-social-promotion-768.webp?v=b94f90bf60bb 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-09-22/04-social-promotion-fallback.png?v=9670a5978af1" srcset="../assets/updates/2026-09-22/04-social-promotion-480.webp?v=3e01fa744733 480w, ../assets/updates/2026-09-22/04-social-promotion-768.webp?v=b94f90bf60bb 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="打印前，让 AI 帮忙把漏项找出来 配图" width="480" height="600" loading="lazy" decoding="async" /></picture></div>
+    <aside class="update-boundary">
+      <strong>课程边界</strong>
+      <p>3–5 天短训按起点确认范围：3 天聚焦一个优先目标，4–5 天串联首版项目流程；不承诺商业级量产、人人进入正式展览或必然产生销售。</p>
+    </aside>
+    <section class="update-cta">
+      <p>长期招生｜青岛｜3–5 天短训｜评估后预约跟班｜每班最多 10 人。<a href="../#enrollment">查看当前学习方案与费用</a></p>
+      <a href="https://wj.qq.com/s2/27296919/9499/" target="_blank" rel="noopener">填写报名资料 →</a>
+    </section>
+  </main>
+</body>
+</html>
