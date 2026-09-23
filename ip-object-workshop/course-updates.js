@@ -1445,17 +1445,33 @@ window.WORKSHOP_UPDATES = [
   {
     "date": "2026-09-23",
     "type": "图文",
-    "title": "看打印留下的支撑痕迹，怎么调整摆放方向？",
+    "title": "支撑痕迹留在哪，下一版就从哪里调整",
     "time": "11:30",
-    "summary": "今天聊聊看打印留下的支撑痕迹，怎么调整摆放方向。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "支撑痕迹的位置能帮助判断下一版该怎样摆放。比较方向时不能只看表面是否干净，还要逐层检查悬空、截面、排液和受力，并用关键局部样确认。",
+    "cover": "./assets/updates/2026-09-23/01-website-hero-fallback.png?v=46e5882fb11f",
+    "published": true,
+    "url": "./updates/2026-09-23-support-marks-guide-next-print-orientation.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 3 / Gate 3",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-09-23",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-23/01-website-hero-480.webp?v=8d06cb689cac 480w, ./assets/updates/2026-09-23/01-website-hero-768.webp?v=84707f34b230 768w, ./assets/updates/2026-09-23/01-website-hero-1280.webp?v=c1e3e8987899 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-23/01-website-hero-fallback.png?v=46e5882fb11f",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-24",
@@ -2783,6 +2799,21 @@ window.WORKSHOP_UPDATES = [
     "time": "11:30",
     "title": "上色前先选好几种颜色，别一开始就涂太多",
     "summary": "今天聊聊上色前先选好几种颜色，别一开始就涂太多。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 4 / Gate 4",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2026-12-22",
+    "type": "视频",
+    "time": "19:30",
+    "title": "让 AI 帮忙比较几种包装，看看哪种更合适",
+    "summary": "今天聊聊让 AI 帮忙比较几种包装，看看哪种更合适。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,
