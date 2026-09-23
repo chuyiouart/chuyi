@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 19340,
+      "format": "webp",
+      "height": 284,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-22-monet-wheat-stacks-long-shadows-480.webp",
+      "quality": 84,
+      "sha256": "17f574b20c6d006ba1552585fc07f56eadfd4c638a11935d691def4b2f65d0c4",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 48488,
+      "format": "webp",
+      "height": 454,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-22-monet-wheat-stacks-long-shadows-768.webp",
+      "quality": 84,
+      "sha256": "eb5ece82d147e92cdae5a6f85684a31d22e729c81797f3676372fafe834f4480",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 129460,
+      "format": "webp",
+      "height": 756,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-22-monet-wheat-stacks-long-shadows-1280.webp",
+      "quality": 84,
+      "sha256": "a75795ee1e5125538d6d11f1b690daa46778ec756f2ffae3645db60926b1edfb",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 227472,
+    "format": "jpeg",
+    "height": 756,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-22-monet-wheat-stacks-long-shadows-fallback.jpg",
+    "quality": 84,
+    "sha256": "bc4c9243629e5db4f1c0d9a6c18f138f5d4d6ddd083773e78c0a225802a14499",
+    "width": 1280
+  },
+  "original_bytes": 1835467,
+  "original_height": 1773,
+  "original_path": "assets/daily/2026-09-22-monet-wheat-stacks-long-shadows.jpg",
+  "original_sha256": "4f5d19e2f246e4ff84899ee33e32efc7acb91fcbc83cf679504dcdbe591477d9",
+  "original_url": "https://www.artic.edu/iiif/2/a38e2828-ec6f-ece1-a30f-70243449197b/full/3000,/0/default.jpg",
+  "original_width": 3000,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-22-monet-wheat-stacks-long-shadows-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-22-monet-wheat-stacks-long-shadows-480.webp?v=17f574b20c6d 480w, 2026-09-22-monet-wheat-stacks-long-shadows-768.webp?v=eb5ece82d147 768w, 2026-09-22-monet-wheat-stacks-long-shadows-1280.webp?v=a75795ee1e51 1280w"
+}
