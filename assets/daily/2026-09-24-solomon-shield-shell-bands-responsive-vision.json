@@ -1,0 +1,34 @@
+{
+  "agent_output": "480: mobile_readable=true; artifacts=false. The complete tall shield silhouette, central figure, face, raised arms, long vertical shell bands, and lower curved pattern remain clearly distinguishable at mobile scale. The small shell segments and worn surface remain coherent, with no visible blockiness, ringing, banding, severe blur, distortion, clipping, or corruption.\n768: mobile_readable=true; artifacts=false. The full shield and its central figure, facial features, repeated light shell strips, dark and red-brown fields, border, and lower concentric curves are clear. Edges and surface texture appear natural, with no visible compression or scaling defects.\n1280: mobile_readable=true; artifacts=false. The principal figure and layered geometric organization are sharply readable, including individual shell tesserae, surface cracks, edge binding, and the two small lower faces. No visible blockiness, ringing, banding, severe blur, distortion, clipping, or corruption is present.\nfallback: mobile_readable=true; artifacts=false. The shield’s complete silhouette and all principal figure and band structures are clear at mobile scale; tonal transitions, shell highlights, and worn material texture remain natural. No visible compression or scaling artifacts, clipping, or corruption is present.",
+  "agent_output_sha256": "86742d930a6447e0125f2f65922ada733b40c23e7e1a46fda8feecc1ba26c90e",
+  "agent_prompt": "Inspect this exact Daily Art responsive asset visually at mobile-display scale. Determine whether the artwork’s main subject remains clear and readable, and whether there are any visible compression or scaling artifacts (blockiness, ringing, banding, severe blur, distortion, clipping, or corruption). Do not infer from metadata or dimensions. Return a concise factual assessment that explicitly states mobile_readable=true or false and artifacts=true or false, with the visual reasons. This is an official collection image with no GPT-generated text, so OCR exact matching is not applicable.",
+  "agent_prompt_sha256": "5fadabdb2f9888d806baa156a524a27cb936faa4bd17a80bf6d7389d1b9494fb",
+  "date": "2026-09-24",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "40ac0f03e4e7132f0fd9a0fecd3b43914aebfef4ef856d9d954fb5b484c8c2b2",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "fdb9390ddc2e5d360af185c116ff76ab9546ad9ccc05f52ff2b59a9cefed694c",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "9b9cf1154d0edaac5b6163a61b61f1978451b2f664a7409fa56aa459d366bb31",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "f7cf934d554445c55e2aa628c35cfce28eef3b50f67a47c3a74537d4019e9ddb",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}
