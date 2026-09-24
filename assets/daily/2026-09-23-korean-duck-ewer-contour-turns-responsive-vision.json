@@ -1,0 +1,34 @@
+{
+  "agent_output": "480: mobile_readable=true; artifacts=false. The duck-shaped celadon vessel, raised head and beak, seated figure, forward wing, and arched handle remain clearly distinguishable at mobile scale. Edges and glaze transitions appear clean, with no visible blockiness, ringing, banding, severe blur, distortion, clipping, or corruption.\n768: mobile_readable=true; artifacts=false. The complete vessel silhouette and its figure, opening, wing, and segmented handle are clear; incised surface details remain legible without visible compression or scaling defects.\n1280: mobile_readable=true; artifacts=false. The subject is sharply readable, including fine incised feather lines, glaze craquelure, modeled figure, and handle joints. No visible blockiness, ringing, banding, severe blur, distortion, clipping, or corruption is present.\nfallback: mobile_readable=true; artifacts=false. The duck-form ewer and all principal components are clear at mobile scale, tonal transitions are smooth, and fine surface marks remain natural. No visible compression or scaling artifacts, clipping, or corruption is present.",
+  "agent_output_sha256": "8caab9e6ea4889f6f5150355eacf877b5c47044363692471d00d44d2640997b6",
+  "agent_prompt": "Inspect this exact Daily Art responsive asset visually at mobile-display scale. Determine whether the artwork’s main subject remains clear and readable, and whether there are any visible compression or scaling artifacts (blockiness, ringing, banding, severe blur, distortion, clipping, or corruption). Do not infer from metadata or dimensions. Return a concise factual assessment that explicitly states mobile_readable=true or false and artifacts=true or false, with the visual reasons. This is an official collection image with no GPT-generated text, so OCR exact matching is not applicable.",
+  "agent_prompt_sha256": "5fadabdb2f9888d806baa156a524a27cb936faa4bd17a80bf6d7389d1b9494fb",
+  "date": "2026-09-23",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "2f5007d5cf38886d0fdea4b2a1f71a459bff615554b9ecfc72ae50e667f7ce7e",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "c9944e652af066ee1efa6ada01b6af7b6dc1ac8aa44ee0cc98ef008965828f30",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "5680cf8e6a3036df07bd791c74213e7d4f13994d7de88762c3a5e21ac375fa7b",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "05889c9b9acf7f9c03fd2f9a5cca8bcfeba8f76214d29e79cb382969a69ddecf",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}

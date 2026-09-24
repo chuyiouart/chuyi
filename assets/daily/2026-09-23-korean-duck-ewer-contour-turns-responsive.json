@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 8692,
+      "format": "webp",
+      "height": 454,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-23-korean-duck-ewer-contour-turns-480.webp",
+      "quality": 84,
+      "sha256": "c9944e652af066ee1efa6ada01b6af7b6dc1ac8aa44ee0cc98ef008965828f30",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 18926,
+      "format": "webp",
+      "height": 726,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-23-korean-duck-ewer-contour-turns-768.webp",
+      "quality": 84,
+      "sha256": "5680cf8e6a3036df07bd791c74213e7d4f13994d7de88762c3a5e21ac375fa7b",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 43928,
+      "format": "webp",
+      "height": 1210,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-23-korean-duck-ewer-contour-turns-1280.webp",
+      "quality": 84,
+      "sha256": "2f5007d5cf38886d0fdea4b2a1f71a459bff615554b9ecfc72ae50e667f7ce7e",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 105225,
+    "format": "jpeg",
+    "height": 1210,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-23-korean-duck-ewer-contour-turns-fallback.jpg",
+    "quality": 84,
+    "sha256": "05889c9b9acf7f9c03fd2f9a5cca8bcfeba8f76214d29e79cb382969a69ddecf",
+    "width": 1280
+  },
+  "original_bytes": 905413,
+  "original_height": 2837,
+  "original_path": "assets/daily/2026-09-23-korean-duck-ewer-contour-turns.jpg",
+  "original_sha256": "a406a7e25763983763af13d2937b4cd00b3f73fab55cbe8318e35c4f87047d29",
+  "original_url": "https://www.artic.edu/iiif/2/97cc0bab-666f-dcee-02e9-0d2e1d3e0d7b/full/3000,/0/default.jpg",
+  "original_width": 3000,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-23-korean-duck-ewer-contour-turns-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-23-korean-duck-ewer-contour-turns-480.webp?v=c9944e652af0 480w, 2026-09-23-korean-duck-ewer-contour-turns-768.webp?v=5680cf8e6a30 768w, 2026-09-23-korean-duck-ewer-contour-turns-1280.webp?v=2f5007d5cf38 1280w"
+}

@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 63494,
+      "format": "webp",
+      "height": 952,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-24-solomon-shield-shell-bands-480.webp",
+      "quality": 84,
+      "sha256": "fdb9390ddc2e5d360af185c116ff76ab9546ad9ccc05f52ff2b59a9cefed694c",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 140948,
+      "format": "webp",
+      "height": 1524,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-24-solomon-shield-shell-bands-768.webp",
+      "quality": 84,
+      "sha256": "9b9cf1154d0edaac5b6163a61b61f1978451b2f664a7409fa56aa459d366bb31",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 346034,
+      "format": "webp",
+      "height": 2540,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-24-solomon-shield-shell-bands-1280.webp",
+      "quality": 84,
+      "sha256": "40ac0f03e4e7132f0fd9a0fecd3b43914aebfef4ef856d9d954fb5b484c8c2b2",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 623038,
+    "format": "jpeg",
+    "height": 2540,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-24-solomon-shield-shell-bands-fallback.jpg",
+    "quality": 84,
+    "sha256": "f7cf934d554445c55e2aa628c35cfce28eef3b50f67a47c3a74537d4019e9ddb",
+    "width": 1280
+  },
+  "original_bytes": 2469502,
+  "original_height": 4000,
+  "original_path": "assets/daily/2026-09-24-solomon-shield-shell-bands.jpg",
+  "original_sha256": "ef2fce021c62d0ea13fd71f45ed79cd3451af7b029334b8a6df47483d56573dc",
+  "original_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-23190-001.jpg",
+  "original_width": 2016,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-24-solomon-shield-shell-bands-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-24-solomon-shield-shell-bands-480.webp?v=fdb9390ddc2e 480w, 2026-09-24-solomon-shield-shell-bands-768.webp?v=9b9cf1154d0e 768w, 2026-09-24-solomon-shield-shell-bands-1280.webp?v=40ac0f03e4e7 1280w"
+}
