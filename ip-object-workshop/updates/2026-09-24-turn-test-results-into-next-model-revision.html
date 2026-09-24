@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="测试结果要能对应到模型的具体位置和下一次修改。保留原条件、一次只改一个主要问题，再用同样方法复测，才能判断修改是否有效。" />
+  <title>测完这一轮，下一版模型该改什么 | IP 实物化实战营</title>
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="../course.css" />
+  <link rel="stylesheet" href="../update-article.css" />
+</head>
+<body class="update-page">
+  <header class="update-header">
+    <a href="../#updates">← 返回每日公开更新</a>
+    <a class="update-brand" href="../#course-intro">IP 实物化实战营</a>
+  </header>
+  <main class="update-article">
+    <header class="update-article-title">
+      <p class="update-meta"><time datetime="2026-09-24">2026-09-24</time> · 视频</p>
+      <h1>测完这一轮，下一版模型该改什么</h1>
+      <p class="update-lead">打印件装不上、关节一推就松、薄边轻轻受力就裂，测试已经告诉我们哪里有问题。但如果记录里只有“太松”“不稳”或“这里坏了”，回到三维模型时仍然不知道该改哪个尺寸、哪段厚度或哪个连接位置。下一版很可能靠猜。
+
+更常见的情况是，一看到失败就把间隙、厚度、角度和分件位置一起改掉。第二次测试即使好了一些，也说不清究竟是哪项修改起了作用；如果又出现新问题，也很难退回到最后一个可靠版本。</p>
+    </header>
+    <figure class="update-hero">
+      <picture><source type="image/webp" srcset="../assets/updates/2026-09-24/01-website-hero-480.webp?v=6f11e699e48b 480w, ../assets/updates/2026-09-24/01-website-hero-768.webp?v=b96178e20df0 768w, ../assets/updates/2026-09-24/01-website-hero-1280.webp?v=ff8114c3b4c2 1280w" sizes="(max-width: 680px) 100vw, 760px" /><img src="../assets/updates/2026-09-24/01-website-hero-fallback.png?v=134385899388" srcset="../assets/updates/2026-09-24/01-website-hero-480.webp?v=6f11e699e48b 480w, ../assets/updates/2026-09-24/01-website-hero-768.webp?v=b96178e20df0 768w, ../assets/updates/2026-09-24/01-website-hero-1280.webp?v=ff8114c3b4c2 1280w" sizes="(max-width: 680px) 100vw, 760px" alt="测完这一轮，下一版模型该改什么" width="960" height="540" loading="eager" decoding="async" fetchpriority="high" /></picture>
+      <figcaption>课程流程示意图，不是往期学员案例。</figcaption>
+    </figure>
+    <section class="update-section"><h2>具体问题</h2><p>打印件装不上、关节一推就松、薄边轻轻受力就裂，测试已经告诉我们哪里有问题。但如果记录里只有“太松”“不稳”或“这里坏了”，回到三维模型时仍然不知道该改哪个尺寸、哪段厚度或哪个连接位置。下一版很可能靠猜。</p><p>更常见的情况是，一看到失败就把间隙、厚度、角度和分件位置一起改掉。第二次测试即使好了一些，也说不清究竟是哪项修改起了作用；如果又出现新问题，也很难退回到最后一个可靠版本。</p></section><section class="update-section"><h2>核心判断</h2><p>测试结果能不能指导下一版，要看它是否能回答五个问题：测的是哪个版本，哪些条件保持不变，问题发生在哪里，观察到什么现象或数值，以及下一次只准备改什么。照片、测量值和手感描述能互相对上，记录才有用。</p><p>修改也必须能复查。先排除装配手法、清洗固化和测量方式造成的误差，再选一个影响最大的原因。下一版沿用同样材料、方向和检查动作复测；目标问题改善，而且没有把风险推到旁边的位置，这项修改才算有效。AI 可以帮助整理记录、比较版本和生成检查清单，但根因判断、人工修模和实物复测不能交给 AI 代替。</p></section><section class="update-section"><h2>步骤或标准</h2><p>把测试结果变成下一版修改时，重点不是写得多，而是让别人按记录能找到同一位置、重复同一动作，并看懂为什么要这样改。</p><ul><li>保存测试所用的模型版本、切片文件和实物照片，记下材料、方向、设备与处理方法；缺失的数据标成待确认，不凭记忆补写。</li><li>把结果写成具体观察：哪个位置发生松动、变形、开裂或干涉，偏差有多大，在什么动作或受力下出现；不要只写“失败”或“不稳”。</li><li>区分模型问题和测试误差。复查装配方向、清洗固化、测量工具与操作方法；必要时在相同条件下重复一次，确认现象可以重现。</li><li>从影响最大的原因中选一个，写成下一版修改项，例如把插接间隙增加0.2毫米、把薄边局部加厚或调整受力连接的位置；同时写清暂时不改的项目。</li><li>复制新版本并记录版本号，修改后重新导出、重新导入，复测整体尺寸、面朝向、连接与切片，避免修改带来新的问题。</li><li>使用相同材料、方向、处理流程和检查动作复测。只有目标问题改善，且没有新增松动、干涉、变形或开裂，才把这项修改保留到下一轮。</li></ul></section><section class="update-section"><h2>常见错误</h2><p>测试不是给模型判一个简单的“好”或“坏”。下面这些做法会让已经付出的打印和检查时间失去参考价值。</p><ul><li>测试后同时改厚度、角度、尺寸和分件位置。后果是下一次即使变好，也无法知道是哪项修改起作用，后续版本还会重复试错。</li><li>只保留口头印象，不保存版本、照片和数值。后果是过几天无法还原测试条件，团队也不能复查同一个问题。</li><li>把一次异常直接当成模型结论。后果是清洗、固化、装配手法或测量误差可能被误判为模型缺陷，下一版会改错地方。</li><li>只修测试中最显眼的破损，不检查相邻连接和受力路径。后果是局部变厚后，问题可能转移到旁边更薄的位置。</li><li>修改后换了材料、摆放方向或处理流程，却直接比较两次结果。后果是变量混在一起，无法证明模型修改是否有效。</li></ul></section><section class="update-section"><h2>与短期课程的关系</h2><p>这个主题属于第三阶段，也就是打印、灰模与实物测试。做完后要能拿出测试所用的版本、问题位置照片、条件与数值记录、一个明确修改项，以及同条件复测结果。目标问题得到改善，并且没有新增松动、干涉、变形或开裂，才进入涂装、包装与产品表达阶段。</p><p>3 天路线可以围绕一个现有模型，完成一个优先问题的记录、修改和局部复测；4–5 天可继续检查相邻结构、更新切片并推进首版灰模。进入下一阶段前，模型文件、切片和实物结果必须能互相对应。复测失败时要回到原因判断和模型修改，不能用涂装或包装把结构问题盖住。</p></section><section class="update-section"><h2>事实 / 案例 / 完成度边界</h2><p>本文依据课程第三阶段的测试记录与版本修改方法整理。本页计划用原创金属人形“港台调灯员”表现旧连接样、两个修改方案、手部复测和下一版交接。当天四张图都是课程方向示意图，不是真实案例，也不是学员作品、真实课堂、真实金属铸造记录、真实委托或已经完成的项目。真实案例必须另有清楚来源、使用许可、模型版本、测试条件、照片和实物测量记录。</p><p>3–5 天能做到哪一步，取决于已有模型、问题范围、材料、设备、打印时长和返工次数。通常只围绕一个优先问题完成记录、修改和局部复测；复杂结构、多轮整件打印、金属铸造、正式涂装与商业级成品需另行评估。课程不承诺 AI 自动找到根因，不承诺一次修改解决全部问题，也不承诺批量生产、流量、订单、展览或销售结果。</p></section><section class="update-section"><h2>报名入口</h2><p>如果你已有 IP / 角色资产，可以提交原画、三维文件、切片、测试件照片和现有记录，并说明最想解决的问题与可到课时间。我们会先判断问题属于模型、制作还是测试环节，再从合适阶段安排青岛跟班。</p><p>如果你只有想法、草图或初步设定，也可以提交角色外形、动作、道具和希望做成的尺寸，并说明最想先验证什么。我们会先把第一版范围与检查方法说清，再安排青岛 3–5 天短训。公开报名地址：https://wj.qq.com/s2/27296919/9499/</p></section>
+    <div class="update-gallery"><picture><source type="image/webp" srcset="../assets/updates/2026-09-24/02-core-explanation-480.webp?v=5ab78a15c5d8 480w, ../assets/updates/2026-09-24/02-core-explanation-768.webp?v=3d1ae6246de6 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-09-24/02-core-explanation-fallback.png?v=3f0265046d22" srcset="../assets/updates/2026-09-24/02-core-explanation-480.webp?v=5ab78a15c5d8 480w, ../assets/updates/2026-09-24/02-core-explanation-768.webp?v=3d1ae6246de6 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="测完这一轮，下一版模型该改什么 配图" width="480" height="480" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-09-24/03-real-application-480.webp?v=53836a13dd9a 480w, ../assets/updates/2026-09-24/03-real-application-768.webp?v=9ec7575700f4 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-09-24/03-real-application-fallback.png?v=57ad8be781bd" srcset="../assets/updates/2026-09-24/03-real-application-480.webp?v=53836a13dd9a 480w, ../assets/updates/2026-09-24/03-real-application-768.webp?v=9ec7575700f4 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="测完这一轮，下一版模型该改什么 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-09-24/04-social-promotion-480.webp?v=f2b9803c6775 480w, ../assets/updates/2026-09-24/04-social-promotion-768.webp?v=4228b2da7027 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-09-24/04-social-promotion-fallback.png?v=34a1a50211e9" srcset="../assets/updates/2026-09-24/04-social-promotion-480.webp?v=f2b9803c6775 480w, ../assets/updates/2026-09-24/04-social-promotion-768.webp?v=4228b2da7027 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="测完这一轮，下一版模型该改什么 配图" width="480" height="600" loading="lazy" decoding="async" /></picture></div>
+    <aside class="update-boundary">
+      <strong>课程边界</strong>
+      <p>3–5 天短训按起点确认范围：3 天聚焦一个优先目标，4–5 天串联首版项目流程；不承诺商业级量产、人人进入正式展览或必然产生销售。</p>
+    </aside>
+    <section class="update-cta">
+      <p>长期招生｜青岛｜3–5 天短训｜评估后预约跟班｜每班最多 10 人。<a href="../#enrollment">查看当前学习方案与费用</a></p>
+      <a href="https://wj.qq.com/s2/27296919/9499/" target="_blank" rel="noopener">填写报名资料 →</a>
+    </section>
+  </main>
+</body>
+</html>

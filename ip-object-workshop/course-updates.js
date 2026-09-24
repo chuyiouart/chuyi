@@ -1476,17 +1476,33 @@ window.WORKSHOP_UPDATES = [
   {
     "date": "2026-09-24",
     "type": "视频",
-    "title": "这次测试的结果，怎么用来改下一版模型？",
+    "title": "测完这一轮，下一版模型该改什么",
     "time": "19:30",
-    "summary": "今天聊聊这次测试的结果，怎么用来改下一版模型。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "测试结果要能对应到模型的具体位置和下一次修改。保留原条件、一次只改一个主要问题，再用同样方法复测，才能判断修改是否有效。",
+    "cover": "./assets/updates/2026-09-24/01-website-hero-fallback.png?v=134385899388",
+    "published": true,
+    "url": "./updates/2026-09-24-turn-test-results-into-next-model-revision.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 3 / Gate 3",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-09-24",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-24/01-website-hero-480.webp?v=6f11e699e48b 480w, ./assets/updates/2026-09-24/01-website-hero-768.webp?v=b96178e20df0 768w, ./assets/updates/2026-09-24/01-website-hero-1280.webp?v=ff8114c3b4c2 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-24/01-website-hero-fallback.png?v=134385899388",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-25",
@@ -2814,6 +2830,21 @@ window.WORKSHOP_UPDATES = [
     "time": "19:30",
     "title": "让 AI 帮忙比较几种包装，看看哪种更合适",
     "summary": "今天聊聊让 AI 帮忙比较几种包装，看看哪种更合适。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 4 / Gate 4",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2026-12-23",
+    "type": "图文",
+    "time": "11:30",
+    "title": "包装会不会磕碰、好不好拿，怎么试？",
+    "summary": "今天聊聊包装会不会磕碰、好不好拿，怎么试。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,
