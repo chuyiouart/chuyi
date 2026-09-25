@@ -1507,17 +1507,33 @@ window.WORKSHOP_UPDATES = [
   {
     "date": "2026-09-25",
     "type": "图文",
-    "title": "厚度、站稳和小细节，不能兼顾时怎么选？",
+    "title": "细节、厚度和站稳，怎么取舍",
     "time": "11:30",
-    "summary": "今天聊聊厚度、站稳和小细节，不能兼顾时怎么选。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "角色做成实物时，薄边、站姿和识别细节常会互相冲突。先排清目标，再用两个方案和真实大小小样检查，才能知道该保留什么、该简化什么。",
+    "cover": "./assets/updates/2026-09-25/01-website-hero-fallback.png?v=67ceb534640a",
+    "published": true,
+    "url": "./updates/2026-09-25-balance-thickness-stability-and-character-detail.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 3 / Gate 3",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-09-25",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-25/01-website-hero-480.webp?v=dd82e5c3a681 480w, ./assets/updates/2026-09-25/01-website-hero-768.webp?v=8bca4e17c2ea 768w, ./assets/updates/2026-09-25/01-website-hero-1280.webp?v=34c51b11bc38 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-25/01-website-hero-fallback.png?v=67ceb534640a",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-26",
@@ -2845,6 +2861,21 @@ window.WORKSHOP_UPDATES = [
     "time": "11:30",
     "title": "包装会不会磕碰、好不好拿，怎么试？",
     "summary": "今天聊聊包装会不会磕碰、好不好拿，怎么试。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 4 / Gate 4",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2026-12-24",
+    "type": "视频",
+    "time": "19:30",
+    "title": "让 AI 帮忙核对说明和实物是不是同一版",
+    "summary": "今天聊聊让 AI 帮忙核对说明和实物是不是同一版。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,
