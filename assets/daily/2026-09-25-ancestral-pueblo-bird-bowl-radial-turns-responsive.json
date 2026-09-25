@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 29796,
+      "format": "webp",
+      "height": 469,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-25-ancestral-pueblo-bird-bowl-radial-turns-480.webp",
+      "quality": 84,
+      "sha256": "ad27645f429db5dc18eb5cb09acb69d7c846569cc5d4fea1f01771d2144a9b2c",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 64228,
+      "format": "webp",
+      "height": 751,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-25-ancestral-pueblo-bird-bowl-radial-turns-768.webp",
+      "quality": 84,
+      "sha256": "2ce9d777eb59c0ee67b9b827d3df2c7945781a6e80c06dde7ef38e682438e0ff",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 162270,
+      "format": "webp",
+      "height": 1252,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-25-ancestral-pueblo-bird-bowl-radial-turns-1280.webp",
+      "quality": 84,
+      "sha256": "d905861ad190b87c63823235aa313d2b8cfff0c90ae52f766f8f921638a5ebc5",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 288993,
+    "format": "jpeg",
+    "height": 1252,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-25-ancestral-pueblo-bird-bowl-radial-turns-fallback.jpg",
+    "quality": 84,
+    "sha256": "d2b107d4955e288d634651db8098c722f7cf42b967ef1628fa5d05d07f98c9cf",
+    "width": 1280
+  },
+  "original_bytes": 4398090,
+  "original_height": 3911,
+  "original_path": "assets/daily/2026-09-25-ancestral-pueblo-bird-bowl-radial-turns.jpg",
+  "original_sha256": "69d7796dccb77a4544b914179527eab6114bcbafe87c5af900eba406550d74e8",
+  "original_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-24285-003.jpg",
+  "original_width": 4000,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-25-ancestral-pueblo-bird-bowl-radial-turns-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-25-ancestral-pueblo-bird-bowl-radial-turns-480.webp?v=ad27645f429d 480w, 2026-09-25-ancestral-pueblo-bird-bowl-radial-turns-768.webp?v=2ce9d777eb59 768w, 2026-09-25-ancestral-pueblo-bird-bowl-radial-turns-1280.webp?v=d905861ad190 1280w"
+}
