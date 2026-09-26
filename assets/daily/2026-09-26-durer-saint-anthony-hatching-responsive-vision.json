@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-26",
+  "agent_prompt": "Asset 480 prompt: OUART Daily Art responsive QA for asset 480. Inspect the actual image as if displayed at mobile width. Determine whether the artwork’s main subject and important engraved forms remain clear and readable, and whether there are any visible compression, resizing, ringing, blocking, banding, blur, or other artifacts. Do not infer from dimensions or metadata. Return a concise factual assessment and explicitly state `vision_mobile_readable=true|false` and `artifacts=true|false`. OCR is not applicable because this is an official collection image without GPT-generated text.\n\nAsset 768 prompt: OUART Daily Art responsive QA for asset 768. Inspect the actual image as if displayed at mobile width. Determine whether the artwork’s main subject and important engraved forms remain clear and readable, and whether there are any visible compression, resizing, ringing, blocking, banding, blur, or other artifacts. Do not infer from dimensions or metadata. Return a concise factual assessment and explicitly state `vision_mobile_readable=true|false` and `artifacts=true|false`. OCR is not applicable because this is an official collection image without GPT-generated text.\n\nAsset 1280 prompt: OUART Daily Art responsive QA for asset 1280. Inspect the actual image as if displayed at mobile width. Determine whether the artwork’s main subject and important engraved forms remain clear and readable, and whether there are any visible compression, resizing, ringing, blocking, banding, blur, or other artifacts. Do not infer from dimensions or metadata. Return a concise factual assessment and explicitly state `vision_mobile_readable=true|false` and `artifacts=true|false`. OCR is not applicable because this is an official collection image without GPT-generated text.\n\nAsset fallback prompt: OUART Daily Art responsive QA for asset fallback. Inspect the actual image as if displayed at mobile width. Determine whether the artwork’s main subject and important engraved forms remain clear and readable, and whether there are any visible compression, resizing, ringing, blocking, banding, blur, or other artifacts. Do not infer from dimensions or metadata. Return a concise factual assessment and explicitly state `vision_mobile_readable=true|false` and `artifacts=true|false`. OCR is not applicable because this is an official collection image without GPT-generated text.",
+  "agent_prompt_sha256": "60f120ed1ba72c94fa6514a58b8023647b72ceb8e18701d4b99f82a57ff9b810",
+  "agent_output": "480: The seated hooded reader, staff, moat, foreground buildings, and hilltop city remain clearly distinguishable at mobile scale. Fine engraving lines are naturally reduced but major hatching groups and silhouettes remain coherent. No visible blocking, ringing, banding, resizing distortion, or abnormal blur. vision_mobile_readable=true; artifacts=false.\n768: The reader’s face, hands and book, folds, architectural layers, water, vegetation, and cross-topped staff are clear. Fine hatch directions remain legible without visible compression breakup, halos, banding, or scaling artifacts. vision_mobile_readable=true; artifacts=false.\n1280: The principal figure and dense city architecture are sharply readable, with fine cross-hatching, masonry, roof textures, foliage, and contour transitions preserved. No visible blocking, ringing, banding, blur, or resize artifacts. vision_mobile_readable=true; artifacts=false.\nfallback: The seated reader, book, staff, layered fortress buildings, water, and foreground textures are all clear at mobile scaling. Engraved line work remains clean and coherent with no visible compression blocks, halos, banding, distortion, or abnormal blur. vision_mobile_readable=true; artifacts=false.",
+  "agent_output_sha256": "96937ed5de44b746b38306114f2744fe5fc6a495b82bb2fb6f2c21946d324081",
+  "results": {
+    "480": {
+      "image_sha256": "205f54ee16646e75494c6bc8916ea14d3c72ffa9fc4f01cbbea5d49779155cab",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "bee12d45e27afc31402bdd659a1383d726417464c5e9be9d822e9e112c60d2a5",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "d28ab91adbf004279bfbf0b05fadf3829d2e63ac3ee8ae6777b4473391cc7d74",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "b3fdf4743e1ebdedf493e780255a284e26ef47833b0e36e4f90335708a33c847",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}

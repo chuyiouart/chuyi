@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 38196,
+      "format": "webp",
+      "height": 331,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-26-durer-saint-anthony-hatching-480.webp",
+      "quality": 84,
+      "sha256": "205f54ee16646e75494c6bc8916ea14d3c72ffa9fc4f01cbbea5d49779155cab",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 106560,
+      "format": "webp",
+      "height": 529,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-26-durer-saint-anthony-hatching-768.webp",
+      "quality": 84,
+      "sha256": "bee12d45e27afc31402bdd659a1383d726417464c5e9be9d822e9e112c60d2a5",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 330498,
+      "format": "webp",
+      "height": 882,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-26-durer-saint-anthony-hatching-1280.webp",
+      "quality": 84,
+      "sha256": "d28ab91adbf004279bfbf0b05fadf3829d2e63ac3ee8ae6777b4473391cc7d74",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 376262,
+    "format": "jpeg",
+    "height": 882,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-26-durer-saint-anthony-hatching-fallback.jpg",
+    "quality": 84,
+    "sha256": "b3fdf4743e1ebdedf493e780255a284e26ef47833b0e36e4f90335708a33c847",
+    "width": 1280
+  },
+  "original_bytes": 3226892,
+  "original_height": 2635,
+  "original_path": "assets/daily/2026-09-26-durer-saint-anthony-hatching.jpg",
+  "original_sha256": "ee20dade7a7cbfd7927294c2821ddeeec2ba7fb412216972b85b88d9b17738ef",
+  "original_url": "https://images.metmuseum.org/CRDImages/dp/original/DP815905.jpg",
+  "original_width": 3822,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-26-durer-saint-anthony-hatching-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-26-durer-saint-anthony-hatching-480.webp?v=205f54ee1664 480w, 2026-09-26-durer-saint-anthony-hatching-768.webp?v=bee12d45e27a 768w, 2026-09-26-durer-saint-anthony-hatching-1280.webp?v=d28ab91adbf0 1280w"
+}
