@@ -1569,17 +1569,33 @@ window.WORKSHOP_UPDATES = [
   {
     "date": "2026-09-27",
     "type": "直播",
-    "title": "结构出了问题，怎么先用小测试少花点成本？",
+    "title": "整件重做太贵，先试最危险的那一小块",
     "time": "20:00",
-    "summary": "今天聊聊结构出了问题，怎么先用小测试少花点成本。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "结构有疑点时，不必立刻重做整件。挑出最影响后续的一处，保留真实尺寸、材料和受力做小样，先用同样动作比较方案，再决定是否扩大制作。",
+    "cover": "./assets/updates/2026-09-27/01-website-hero-fallback.png?v=e19a65915c7f",
+    "published": true,
+    "url": "./updates/2026-09-27-test-the-riskiest-structure-before-remaking-all.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 3 / Gate 3",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-09-27",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-27/01-website-hero-480.webp?v=d9d6dea912ce 480w, ./assets/updates/2026-09-27/01-website-hero-768.webp?v=6389a44a37ef 768w, ./assets/updates/2026-09-27/01-website-hero-1280.webp?v=4b98f60d1b59 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-27/01-website-hero-fallback.png?v=e19a65915c7f",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-28",
@@ -2907,6 +2923,21 @@ window.WORKSHOP_UPDATES = [
     "time": "11:30",
     "title": "涂层还没干，几天的课程该怎么安排？",
     "summary": "今天聊聊涂层还没干，几天的课程该怎么安排。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 4 / Gate 4",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2026-12-26",
+    "type": "视频",
+    "time": "18:00",
+    "title": "拍作品时，怎么让人看出大小和材质？",
+    "summary": "今天聊聊拍作品时，怎么让人看出大小和材质。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,
