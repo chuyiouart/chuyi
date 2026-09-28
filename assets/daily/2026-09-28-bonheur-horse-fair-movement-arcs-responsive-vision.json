@@ -1,0 +1,34 @@
+{
+  "agent_output": "Asset 480: At mobile display scale, the framed panoramic horse-market scene remains clearly readable: the central white horses, darker horses, handlers/riders, dusty ground, tree line, and cloudy sky are distinguishable, though fine faces and brushwork are naturally reduced. No visible blockiness, ringing, banding, tearing, resizing distortion, or objectionable compression blur. vision_mobile_readable: true; artifacts: false; ocr_exact_match: N/A.\n\nAsset 768: At mobile display scale, the same framed horse-market scene is clearly readable, with the central rearing and moving horses, surrounding handlers, crowd depth, dust, trees, and cloud masses retaining coherent edges and tonal separation. No visible blockiness, ringing, banding, tearing, resizing distortion, or objectionable compression blur. vision_mobile_readable: true; artifacts: false; ocr_exact_match: N/A.\n\nAsset 1280: At mobile display scale, the museum artwork is clearly readable as Rosa Bonheur's crowded horse-fair scene: white and dark horses turn and surge across the foreground while handlers and riders control them beneath trees and a cloudy sky. Horse anatomy, overlapping groups, dust, shadows, and the frame remain coherent. No visible blockiness, ringing, banding, tearing, resizing distortion, or objectionable compression blur. vision_mobile_readable: true; artifacts: false; ocr_exact_match: N/A.\n\nAsset fallback: At mobile display scale, the fallback JPEG clearly preserves the same framed horse-fair composition, including the central white horses, dark horse and rider, handlers, flanking groups, dusty ground, tree line, and cloudy sky. Edges and tonal gradients remain natural, with no visible blockiness, ringing, banding, tearing, resizing distortion, or objectionable compression blur. vision_mobile_readable: true; artifacts: false; ocr_exact_match: N/A.",
+  "agent_output_sha256": "95974716585b4cf7bb1ebef64b1db2baeb950d5671caa97d87f1c5fd177a2a97",
+  "agent_prompt": "Asset 480. Inspect this exact responsive museum artwork file visually at a mobile-display scale. Confirm whether the main subjects and composition remain clearly readable, describe the visible artwork identity/content, and look specifically for compression, resizing, ringing, blockiness, banding, blur, tearing, or other artifacts. This is a museum image with no GPT-generated text, so OCR exact match is N/A. Return a concise factual verdict including `vision_mobile_readable: true|false` and `artifacts: true|false`; do not infer quality from dimensions or metadata.\n\nAsset 768. Inspect this exact responsive museum artwork file visually at a mobile-display scale. Confirm whether the main subjects and composition remain clearly readable, describe the visible artwork identity/content, and look specifically for compression, resizing, ringing, blockiness, banding, blur, tearing, or other artifacts. This is a museum image with no GPT-generated text, so OCR exact match is N/A. Return a concise factual verdict including `vision_mobile_readable: true|false` and `artifacts: true|false`; do not infer quality from dimensions or metadata.\n\nAsset 1280. Inspect this exact responsive museum artwork file visually at a mobile-display scale. Confirm whether the main subjects and composition remain clearly readable, describe the visible artwork identity/content, and look specifically for compression, resizing, ringing, blockiness, banding, blur, tearing, or other artifacts. This is a museum image with no GPT-generated text, so OCR exact match is N/A. Return a concise factual verdict including `vision_mobile_readable: true|false` and `artifacts: true|false`; do not infer quality from dimensions or metadata.\n\nAsset fallback. Inspect this exact responsive museum artwork file visually at a mobile-display scale. Confirm whether the main subjects and composition remain clearly readable, describe the visible artwork identity/content, and look specifically for compression, resizing, ringing, blockiness, banding, blur, tearing, or other artifacts. This is a museum image with no GPT-generated text, so OCR exact match is N/A. Return a concise factual verdict including `vision_mobile_readable: true|false` and `artifacts: true|false`; do not infer quality from dimensions or metadata.",
+  "agent_prompt_sha256": "dd7fdd83c0766429484607dd1c7b53d5e32d622726479ea78827597ead024674",
+  "date": "2026-09-28",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "6c8c83adc13a0441d3fc5657afb8c23c4a45a984c4e6921a345100fb27526f5c",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "b9e674f9e705d1cf510eb819c878207031e148207b1d5457f2d9a3a710ee7c28",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "343d564ea2a262f55b692ea60158956152e7480e2e675f6588719764243c5a59",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "9b2f9671d31ae81313d002f6c8e5b20f78ab858cdf3bab86d932e077644fa8dc",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}

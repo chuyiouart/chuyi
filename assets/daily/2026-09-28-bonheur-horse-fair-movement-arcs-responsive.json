@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 21134,
+      "format": "webp",
+      "height": 245,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-28-bonheur-horse-fair-movement-arcs-480.webp",
+      "quality": 84,
+      "sha256": "b9e674f9e705d1cf510eb819c878207031e148207b1d5457f2d9a3a710ee7c28",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 41840,
+      "format": "webp",
+      "height": 392,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-28-bonheur-horse-fair-movement-arcs-768.webp",
+      "quality": 84,
+      "sha256": "343d564ea2a262f55b692ea60158956152e7480e2e675f6588719764243c5a59",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 97222,
+      "format": "webp",
+      "height": 654,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-28-bonheur-horse-fair-movement-arcs-1280.webp",
+      "quality": 84,
+      "sha256": "6c8c83adc13a0441d3fc5657afb8c23c4a45a984c4e6921a345100fb27526f5c",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 185955,
+    "format": "jpeg",
+    "height": 654,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-28-bonheur-horse-fair-movement-arcs-fallback.jpg",
+    "quality": 84,
+    "sha256": "9b2f9671d31ae81313d002f6c8e5b20f78ab858cdf3bab86d932e077644fa8dc",
+    "width": 1280
+  },
+  "original_bytes": 2692523,
+  "original_height": 2043,
+  "original_path": "assets/daily/2026-09-28-bonheur-horse-fair-movement-arcs.jpg",
+  "original_sha256": "c905acf8e02c24c5b30f90ad040a8afe43b7b8d2c65faf75b81ac3c53b535be2",
+  "original_url": "https://images.metmuseum.org/CRDImages/ep/original/DP-23550-001.jpg",
+  "original_width": 4000,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-28-bonheur-horse-fair-movement-arcs-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-28-bonheur-horse-fair-movement-arcs-480.webp?v=b9e674f9e705 480w, 2026-09-28-bonheur-horse-fair-movement-arcs-768.webp?v=343d564ea2a2 768w, 2026-09-28-bonheur-horse-fair-movement-arcs-1280.webp?v=6c8c83adc13a 1280w"
+}
