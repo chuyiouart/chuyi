@@ -1600,17 +1600,33 @@ window.WORKSHOP_UPDATES = [
   {
     "date": "2026-09-28",
     "type": "图文",
-    "title": "上色前先选好几种颜色，别一开始就涂太多",
+    "title": "颜色先收住，角色才不会越涂越乱",
     "time": "11:30",
-    "summary": "今天聊聊上色前先选好几种颜色，别一开始就涂太多。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "上色前先分清主色、辅助色和少量强调色，再把两三个方案放到真实材料与同一光线下比较，能减少整件涂完以后才发现重点混乱的返工。",
+    "cover": "./assets/updates/2026-09-28/01-website-hero-fallback.png?v=121d1de41039",
+    "published": true,
+    "url": "./updates/2026-09-28-limit-colors-before-painting-the-whole-character.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 4 / Gate 4",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-09-28",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-28/01-website-hero-480.webp?v=431b1a5015ba 480w, ./assets/updates/2026-09-28/01-website-hero-768.webp?v=4b5cf0ffce64 768w, ./assets/updates/2026-09-28/01-website-hero-1280.webp?v=b9da2c7079e0 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-28/01-website-hero-fallback.png?v=121d1de41039",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-29",
@@ -2938,6 +2954,21 @@ window.WORKSHOP_UPDATES = [
     "time": "18:00",
     "title": "拍作品时，怎么让人看出大小和材质？",
     "summary": "今天聊聊拍作品时，怎么让人看出大小和材质。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 4 / Gate 4",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2026-12-27",
+    "type": "直播",
+    "time": "20:00",
+    "title": "拿一件实物，聊聊包装和说明要做到哪一步",
+    "summary": "今天聊聊拿一件实物，聊聊包装和说明要做到哪一步。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,
