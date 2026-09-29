@@ -1631,17 +1631,33 @@ window.WORKSHOP_UPDATES = [
   {
     "date": "2026-09-29",
     "type": "视频",
-    "title": "让 AI 帮忙比较几种包装，看看哪种更合适",
+    "title": "三种包装都好看，哪一种真的装得下角色",
     "time": "19:30",
-    "summary": "今天聊聊让 AI 帮忙比较几种包装，看看哪种更合适。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "把角色尺寸、配件、脆弱部位和拿取顺序交给 AI，让它整理两到三个包装方向；最后仍要靠真实大小小样完成装入、合盒、轻晃和取出测试。",
+    "cover": "./assets/updates/2026-09-29/01-website-hero-fallback.png?v=b27f48697dbf",
+    "published": true,
+    "url": "./updates/2026-09-29-compare-ai-packaging-options-with-physical-fit-tests.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 4 / Gate 4",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-09-29",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-09-29/01-website-hero-480.webp?v=a5444d41c0b1 480w, ./assets/updates/2026-09-29/01-website-hero-768.webp?v=7552f63436bf 768w, ./assets/updates/2026-09-29/01-website-hero-1280.webp?v=5bb86801a746 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-09-29/01-website-hero-fallback.png?v=b27f48697dbf",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-09-30",
@@ -2976,6 +2992,21 @@ window.WORKSHOP_UPDATES = [
     "status": "planned",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 4 / Gate 4",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2026-12-28",
+    "type": "图文",
+    "time": "11:30",
+    "title": "作品上网前，图片、模型和说明怎么整理？",
+    "summary": "今天聊聊作品上网前，图片、模型和说明怎么整理。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 5 / 发布验收",
     "editorial_angle": "约束比较"
   }
 ];
