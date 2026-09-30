@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 93202,
+      "format": "webp",
+      "height": 751,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-30-muhammad-zaman-night-gathering-light-pools-480.webp",
+      "quality": 84,
+      "sha256": "be3164c41c253f978bd4798b5f4b3a04ce80008786b7858bbd619ec0c9c0e777",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 223788,
+      "format": "webp",
+      "height": 1202,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-30-muhammad-zaman-night-gathering-light-pools-768.webp",
+      "quality": 84,
+      "sha256": "e89fa6a3429a19b3d3e89157b969d44de0df99b21fdfa9a6863a85be76d54b99",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 607312,
+      "format": "webp",
+      "height": 2003,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-09-30-muhammad-zaman-night-gathering-light-pools-1280.webp",
+      "quality": 84,
+      "sha256": "2c734dd0fd23d63656e12cd5f5af37e75d7f22c3b8bd0f97f47e4e67bc8b9915",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 843787,
+    "format": "jpeg",
+    "height": 2003,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-09-30-muhammad-zaman-night-gathering-light-pools-fallback.jpg",
+    "quality": 84,
+    "sha256": "fc71550a8222de9618c0d84e76482dec2a1000ba3c99797f70a79f47be3082c5",
+    "width": 1280
+  },
+  "original_bytes": 3151313,
+  "original_height": 3815,
+  "original_path": "assets/daily/2026-09-30-muhammad-zaman-night-gathering-light-pools.jpg",
+  "original_sha256": "21b4463406f515c40564ba0d4d2ad8f48d53624700d9e7c0357461012ecf1d9c",
+  "original_url": "https://images.metmuseum.org/CRDImages/is/original/DP107558.jpg",
+  "original_width": 2438,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-09-30-muhammad-zaman-night-gathering-light-pools-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-09-30-muhammad-zaman-night-gathering-light-pools-480.webp?v=be3164c41c25 480w, 2026-09-30-muhammad-zaman-night-gathering-light-pools-768.webp?v=e89fa6a3429a 768w, 2026-09-30-muhammad-zaman-night-gathering-light-pools-1280.webp?v=2c734dd0fd23 1280w"
+}

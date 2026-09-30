@@ -1,0 +1,34 @@
+{
+  "agent_output": "[480]\nasset_key=480; image_identity=Muhammad Zaman, A Night-time Gathering; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A; observations=At mobile scale the full album page remains readable: the two central seated figures, left standing group, right-edge face, dark trees and distant horizon, nested blue/pink borders, and large upper flowers are distinct. The yellow, green, blue-purple, white, and red focal shapes remain separated from the connected dark landscape. No visible blockiness, ringing, banding, color breakup, unintended resampling blur, clipping, malformed scaling, or corruption is present.\n\n[768]\nasset_key=768; image_identity=Muhammad Zaman, A Night-time Gathering; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A; observations=The complete vertical composition is clear at mobile scaling. Faces and opposing poses of the central seated figures remain legible, surrounding figures retain separation, the dark garden and pale horizon preserve their value hierarchy, and both floral border systems remain continuous. Fine floral and garment edges show no visible compression blocks, halos, banding, color breakup, harmful blur, clipping, distortion, or corrupt regions.\n\n[1280]\nasset_key=1280; image_identity=Muhammad Zaman, A Night-time Gathering; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A; observations=The seated pair, standing and partially hidden figures, foreground red cage-like object and books, tree trunks, foliage, distant landscape, and layered floral borders are all clearly readable when scaled for mobile viewing. Dark tonal transitions remain smooth and the colored garments and flowers retain clean separation. No visible ringing, blockiness, banding, color breakup, malformed scaling, unintended blur, clipping, or corruption is present.\n\n[fallback]\nasset_key=fallback; image_identity=Muhammad Zaman, A Night-time Gathering; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A; observations=The fallback JPEG preserves the same complete album page and mobile-readable hierarchy: bright flowers and borders frame a connected dark landscape, while the central seated pair and surrounding figures remain recognizable through faces, poses, headwear, and colored garments. Edges and gradients show no visible JPEG blocking, ringing, banding, color breakup, damaging blur, scaling distortion, clipping, or corruption.",
+  "agent_output_sha256": "62264d684fb14930f7c31f2698af2a090c6067a134d6783c33866250ff75b305",
+  "agent_prompt": "[480]\nOUART Daily Art responsive-image Vision QA for 2026-09-30. Inspect the actually opened 480 WebP at a mobile-style display scale. Determine whether the complete artwork remains clearly readable, especially the central seated figures, surrounding figures, dark landscape, nested floral borders, and major color/value hierarchy. Look for compression artifacts, ringing, blockiness, banding, color breakup, unintended blur, malformed scaling, clipping, or corruption. This museum image contains no GPT-generated text, so OCR exact-match must be reported exactly as the string \"N/A\", never as true. Return a concise asset-specific verdict stating image identity, mobile readability, artifact status, OCR value, and visible evidence. Pass only if vision_mobile_readable=true and artifacts=false.\n\n[768]\nOUART Daily Art responsive-image Vision QA for 2026-09-30. Inspect the actually opened 768 WebP at a mobile-style display scale. Determine whether the complete artwork remains clearly readable, especially the central seated figures, surrounding figures, dark landscape, nested floral borders, and major color/value hierarchy. Look for compression artifacts, ringing, blockiness, banding, color breakup, unintended blur, malformed scaling, clipping, or corruption. This museum image contains no GPT-generated text, so OCR exact-match must be reported exactly as the string \"N/A\", never as true. Return a concise asset-specific verdict stating image identity, mobile readability, artifact status, OCR value, and visible evidence. Pass only if vision_mobile_readable=true and artifacts=false.\n\n[1280]\nOUART Daily Art responsive-image Vision QA for 2026-09-30. Inspect the actually opened 1280 WebP at a mobile-style display scale. Determine whether the complete artwork remains clearly readable, especially the central seated figures, surrounding figures, dark landscape, nested floral borders, and major color/value hierarchy. Look for compression artifacts, ringing, blockiness, banding, color breakup, unintended blur, malformed scaling, clipping, or corruption. This museum image contains no GPT-generated text, so OCR exact-match must be reported exactly as the string \"N/A\", never as true. Return a concise asset-specific verdict stating image identity, mobile readability, artifact status, OCR value, and visible evidence. Pass only if vision_mobile_readable=true and artifacts=false.\n\n[fallback]\nOUART Daily Art responsive-image Vision QA for 2026-09-30. Inspect the actually opened fallback JPEG at a mobile-style display scale. Determine whether the complete artwork remains clearly readable, especially the central seated figures, surrounding figures, dark landscape, nested floral borders, and major color/value hierarchy. Look for compression artifacts, ringing, blockiness, banding, color breakup, unintended blur, malformed scaling, clipping, or corruption. This museum image contains no GPT-generated text, so OCR exact-match must be reported exactly as the string \"N/A\", never as true. Return a concise asset-specific verdict stating image identity, mobile readability, artifact status, OCR value, and visible evidence. Pass only if vision_mobile_readable=true and artifacts=false.",
+  "agent_prompt_sha256": "8349088fcabea6b4ab08884febe4581318ad1b2b1e7b4e3ff2b70c8357bb7141",
+  "date": "2026-09-30",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "2c734dd0fd23d63656e12cd5f5af37e75d7f22c3b8bd0f97f47e4e67bc8b9915",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "be3164c41c253f978bd4798b5f4b3a04ce80008786b7858bbd619ec0c9c0e777",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "e89fa6a3429a19b3d3e89157b969d44de0df99b21fdfa9a6863a85be76d54b99",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "fc71550a8222de9618c0d84e76482dec2a1000ba3c99797f70a79f47be3082c5",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}
