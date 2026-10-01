@@ -1693,17 +1693,33 @@
   {
     "date": "2026-10-01",
     "type": "视频",
-    "title": "让 AI 帮忙核对说明和实物是不是同一版",
+    "title": "让 AI 找出说明和实物对不上的地方",
     "time": "18:00",
-    "summary": "今天聊聊让 AI 帮忙核对说明和实物是不是同一版。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "summary": "把同一版实物的照片、尺寸和配件记录放在一起，让 AI 先标出差别，再由人工逐项确认，避免旧说明跟着新实物继续使用。",
+    "cover": "./assets/updates/2026-10-01/01-website-hero-fallback.png?v=a57355fadbdf",
+    "published": true,
+    "url": "./updates/2026-10-01-use-ai-to-check-document-against-physical-version.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 4 / Gate 4",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-10-01",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-10-01/01-website-hero-480.webp?v=b0ff255f2bd8 480w, ./assets/updates/2026-10-01/01-website-hero-768.webp?v=09797b80dac0 768w, ./assets/updates/2026-10-01/01-website-hero-1280.webp?v=aa1ae482fa91 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-10-01/01-website-hero-fallback.png?v=a57355fadbdf",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-10-02",
@@ -3031,6 +3047,21 @@
     "time": "19:30",
     "title": "用 Codex 帮忙搭一个以后还能改的作品页",
     "summary": "今天聊聊用 Codex 帮忙搭一个以后还能改的作品页。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 5 / 发布验收",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2026-12-30",
+    "type": "图文",
+    "time": "11:30",
+    "title": "三维模型能打开了，还要检查什么？",
+    "summary": "今天聊聊三维模型能打开了，还要检查什么。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,
