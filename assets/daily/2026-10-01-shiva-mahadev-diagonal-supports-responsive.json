@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 48766,
+      "format": "webp",
+      "height": 607,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-01-shiva-mahadev-diagonal-supports-480.webp",
+      "quality": 84,
+      "sha256": "b2d8edc54de465f6801c69cc3912a58d12a9b5e77ff561de32a55e55f5864f25",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 127714,
+      "format": "webp",
+      "height": 971,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-01-shiva-mahadev-diagonal-supports-768.webp",
+      "quality": 84,
+      "sha256": "be4f6cd81b91c011c33c4ae96cd8f78d68bfdb51ab04ce98c0fbc6ab71521ed0",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 384910,
+      "format": "webp",
+      "height": 1618,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-01-shiva-mahadev-diagonal-supports-1280.webp",
+      "quality": 84,
+      "sha256": "a0e8c96bd47bf0cf438b0be13ff20969b948f2d1e17c4006bce97c71d7c10cb0",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 524186,
+    "format": "jpeg",
+    "height": 1618,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-01-shiva-mahadev-diagonal-supports-fallback.jpg",
+    "quality": 84,
+    "sha256": "1377086a00b5b8d1cc247e3ba1eacc4ed868504ec040a211f63fa2613d2dce23",
+    "width": 1280
+  },
+  "original_bytes": 4298511,
+  "original_height": 3678,
+  "original_path": "assets/daily/2026-10-01-shiva-mahadev-diagonal-supports.jpg",
+  "original_sha256": "45a4d719962637c9951c2a71745546a026d6396ef90348bdc022f1a32f60525f",
+  "original_url": "https://images.metmuseum.org/CRDImages/as/original/DP-22767-001.jpg",
+  "original_width": 2910,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-01-shiva-mahadev-diagonal-supports-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-01-shiva-mahadev-diagonal-supports-480.webp?v=b2d8edc54de4 480w, 2026-10-01-shiva-mahadev-diagonal-supports-768.webp?v=be4f6cd81b91 768w, 2026-10-01-shiva-mahadev-diagonal-supports-1280.webp?v=a0e8c96bd47b 1280w"
+}
