@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-02",
+  "agent_prompt": "资产键 480：OUART 每日一画响应式图像 Vision QA（资产键 480）。请真实查看本次附带的 480px WebP，并按移动端缩放展示评估：主体（埃塞俄比亚双联画及成组人物）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。\n\n资产键 768：OUART 每日一画响应式图像 Vision QA（资产键 768）。请真实查看本次附带的 768px WebP，并按移动端缩放展示评估：主体（埃塞俄比亚双联画及成组人物）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。\n\n资产键 1280：OUART 每日一画响应式图像 Vision QA（资产键 1280）。请真实查看本次附带的 1280px WebP，并按移动端缩放展示评估：主体（埃塞俄比亚双联画及成组人物）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。\n\n资产键 fallback：OUART 每日一画响应式图像 Vision QA（资产键 fallback）。请真实查看本次附带的 1280px JPEG fallback，并按移动端缩放展示评估：主体（埃塞俄比亚双联画及成组人物）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。",
+  "agent_output": "资产键：480\n实际看到的画面：完整的埃塞俄比亚双联画，两块木板各分上下两组，共十三位带光环、双手靠近胸前的人物；红、绿、黄、灰蓝衣袍及中央铰接缝清楚，边框完整。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：在 480px 移动端尺度下，双联结构、人物分组、脸部与衣袍大色形仍清楚可辨；未见明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。细小题记不作为 OCR 门禁。\n\n资产键：768\n实际看到的画面：完整双联画及灰色背景可见；左右面板、上下人物组、十三位人物的光环、面部差异、交握双手和衣袍纹样均清楚。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：主体和成组节奏在移动端缩放下清晰，细部比 480px 更稳定；边缘、纹样和色面没有可见编码破坏，也无拉伸、裁切或比例异常。\n\n资产键：1280\n实际看到的画面：两扇并置木板、中央铰接与磨损边缘完整呈现；十三位人物分为四组，光环、脸型、发式、手势和红绿灰蓝服饰纹样均可辨。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：高分辨率版本主体清楚、线条和色面自然；馆藏物本身的裂缝与磨损属于原作状态，不是压缩或缩放伪影。未见明显块效应、色带、振铃、异常模糊、裁切、拉伸或纵横比失真。\n\n资产键：fallback\n实际看到的画面：1280px JPEG 完整显示埃塞俄比亚双联画，左右木板与中央连接处、四组人物、光环、手势、服装轮廓和装饰纹样清楚。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：移动端缩放后主体与群组关系仍明确；JPEG 细节自然，没有明显压缩块、色带、振铃、异常模糊、拉伸、裁切或比例失真，原作磨损可与编码伪影区分。",
+  "results": {
+    "480": {
+      "image_sha256": "78aa084df6a1b74e4c982d16f2bdcdb1ea7a38e49fb9882b7355f42ff7995218",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "bec97bfef9c61714d221dabb538026c7fcc2cff4f91bfefbeab081abf58ef334",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "315282873063e1b82e0737609bb14992ab0a1da2e3ab3a016f0333b41d610e13",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "d9e63b151a8d61bb2f65f2712b208d2125caea5b3f8f34dcb44a4df603c062b5",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  },
+  "agent_prompt_sha256": "41cd6993570dd88dd2dedc91a29ae4ea38a30d7a87c9aeffdd3f63a697068b9c",
+  "agent_output_sha256": "f356ff70955ddfd48f15fb5f51456e37b03c0dd906c37e513fe30a0398e035b8"
+}

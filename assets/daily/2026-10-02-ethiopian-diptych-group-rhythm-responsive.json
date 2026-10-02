@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 57436,
+      "format": "webp",
+      "height": 442,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-02-ethiopian-diptych-group-rhythm-480.webp",
+      "quality": 84,
+      "sha256": "78aa084df6a1b74e4c982d16f2bdcdb1ea7a38e49fb9882b7355f42ff7995218",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 130620,
+      "format": "webp",
+      "height": 707,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-02-ethiopian-diptych-group-rhythm-768.webp",
+      "quality": 84,
+      "sha256": "bec97bfef9c61714d221dabb538026c7fcc2cff4f91bfefbeab081abf58ef334",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 351484,
+      "format": "webp",
+      "height": 1178,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-02-ethiopian-diptych-group-rhythm-1280.webp",
+      "quality": 84,
+      "sha256": "315282873063e1b82e0737609bb14992ab0a1da2e3ab3a016f0333b41d610e13",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 501382,
+    "format": "jpeg",
+    "height": 1178,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-02-ethiopian-diptych-group-rhythm-fallback.jpg",
+    "quality": 84,
+    "sha256": "d9e63b151a8d61bb2f65f2712b208d2125caea5b3f8f34dcb44a4df603c062b5",
+    "width": 1280
+  },
+  "original_bytes": 5527410,
+  "original_height": 3128,
+  "original_path": "assets/daily/2026-10-02-ethiopian-diptych-group-rhythm.jpg",
+  "original_sha256": "85696e7f47d8705e1fa7d5a54439889c8dae3ab81906adbbbdd04eeac3cbf9b3",
+  "original_url": "https://openaccess-cdn.clevelandart.org/2023.4/2023.4_print.jpg",
+  "original_width": 3400,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-02-ethiopian-diptych-group-rhythm-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-02-ethiopian-diptych-group-rhythm-480.webp?v=78aa084df6a1 480w, 2026-10-02-ethiopian-diptych-group-rhythm-768.webp?v=bec97bfef9c6 768w, 2026-10-02-ethiopian-diptych-group-rhythm-1280.webp?v=315282873063 1280w"
+}
