@@ -1725,16 +1725,33 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-10-02",
     "type": "图文",
     "time": "11:30",
-    "title": "涂层还没干，几天的课程该怎么安排？",
-    "summary": "今天聊聊涂层还没干，几天的课程该怎么安排。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "涂层没干，课程时间怎么排",
+    "summary": "涂装不只占操作时间，等待表干、固化和复查也要算进计划。把等待期提前排清楚，才不会为了赶进度碰坏表面。",
+    "cover": "./assets/updates/2026-10-02/01-website-hero-fallback.png?v=392fd51edf54",
+    "published": true,
+    "url": "./updates/2026-10-02-plan-course-time-around-coating-drying.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 4 / Gate 4",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-10-02",
+    "media_status": "partial",
+    "passedRoles": [
+      "website_hero",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [
+      "core_explanation"
+    ],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-10-02/01-website-hero-480.webp?v=870370e2d5c3 480w, ./assets/updates/2026-10-02/01-website-hero-768.webp?v=576b5c554bfb 768w, ./assets/updates/2026-10-02/01-website-hero-1280.webp?v=d4d7c82ca1b0 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-10-02/01-website-hero-fallback.png?v=392fd51edf54",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-10-03",
@@ -3062,6 +3079,21 @@ window.WORKSHOP_UPDATES = [
     "time": "11:30",
     "title": "三维模型能打开了，还要检查什么？",
     "summary": "今天聊聊三维模型能打开了，还要检查什么。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 5 / 发布验收",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2026-12-31",
+    "type": "视频",
+    "time": "19:30",
+    "title": "同一份作品资料，怎么让 AI 改成不同平台的文案？",
+    "summary": "今天聊聊同一份作品资料，怎么让 AI 改成不同平台的文案。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,
