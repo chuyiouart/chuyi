@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-03",
+  "agent_prompt": "资产键 480：OUART 每日一画响应式图像 Vision QA。请真实查看本次附带的 480px WebP，并按移动端缩放展示评估：主体（中国战国时期《鹤与蛇》漆木鼓架：两只高腿鸟立于盘曲蛇形之上）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。\n\n资产键 768：OUART 每日一画响应式图像 Vision QA。请真实查看本次附带的 768px WebP，并按移动端缩放展示评估：主体（中国战国时期《鹤与蛇》漆木鼓架：两只高腿鸟立于盘曲蛇形之上）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。\n\n资产键 1280：OUART 每日一画响应式图像 Vision QA。请真实查看本次附带的 1280px WebP，并按移动端缩放展示评估：主体（中国战国时期《鹤与蛇》漆木鼓架：两只高腿鸟立于盘曲蛇形之上）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。\n\n资产键 fallback：OUART 每日一画响应式图像 Vision QA。请真实查看本次附带的 1280px JPEG fallback，并按移动端缩放展示评估：主体（中国战国时期《鹤与蛇》漆木鼓架：两只高腿鸟立于盘曲蛇形之上）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。",
+  "agent_prompt_sha256": "b5c8d59db3a4895bc1f5899b94e0781b305cfe43da185a0e25abd0e07fa0c2de",
+  "agent_output": "资产键：480\n实际看到的画面：深灰渐变背景前，一对细长高腿、高颈的漆木鸟左右相向站立；两鸟身上红黑彩绘纹样可辨，足下可见盘曲的双蛇和黑色底座，构图与边缘完整。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：在 480px 移动端尺度下，两只鸟、相向姿态、长颈轮廓和下方蛇形主体清楚可辨；未见明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。细小漆纹有所缩小但不妨碍主体阅读。\n\n资产键：768\n实际看到的画面：左右对称但细节略有差异的两只长颈鸟相向而立，鸟身、翅尾、细腿及底部两条盘曲蛇完整呈现；红、黑、黄色漆纹和器物磨损均可辨。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：主体轮廓与鸟蛇关系在移动端缩放下稳定清楚，漆绘纹样比 480px 更明确；未见编码块、色带、振铃、异常模糊、拉伸、裁切或比例失真。\n\n资产键：1280\n实际看到的画面：完整的战国时期漆木鼓架占据画面中央，两只高腿长颈鸟左右相向，足立于盘曲蛇形结构，鸟颈、翼尾和蛇身上的细密红黑漆绘纹样以及表面年代磨损都清楚。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：高分辨率版本的主体、轮廓和装饰细节清晰自然；背景渐变平滑，未见明显压缩块、色带、振铃、异常模糊、裁切、拉伸或纵横比失真。器物自身的磨损不是图像伪影。\n\n资产键：fallback\n实际看到的画面：1280px JPEG 完整显示一对相向的长颈漆木鸟及其下方盘曲双蛇和黑色底座，鸟首、长颈、翼尾、腿部、蛇首与漆绘纹样均清楚可辨。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：移动端缩放后器物身份与鸟蛇结构仍明确，边缘和纹样自然；未见明显 JPEG 块效应、色带、振铃、异常模糊、拉伸、裁切或比例失真。",
+  "agent_output_sha256": "1bc811559968320c126dd5e114fabfd3efc6e8251975baa6d5cb60bad0707010",
+  "results": {
+    "480": {
+      "image_sha256": "9ea183be6fd5ac9092fe7ed31200f5763f241a6a7a8324f42051fa58cb76426c",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "e56808911d7289cc48cc6105ef3951d3c9072422054c8c21d84cd79ffeb5c7f0",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "e4c5df1b6fd4e5bb2a42baab3f05329c93e7c216ea2b76584e7740f8efdb6ade",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "ee80a6de3c8e893583f3b40b6d68c0089dd545ef083e96beac2948b912c7cdc3",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
