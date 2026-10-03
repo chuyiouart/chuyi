@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 14974,
+      "format": "webp",
+      "height": 561,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-03-cranes-serpents-counter-curves-480.webp",
+      "quality": 84,
+      "sha256": "9ea183be6fd5ac9092fe7ed31200f5763f241a6a7a8324f42051fa58cb76426c",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 30974,
+      "format": "webp",
+      "height": 898,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-03-cranes-serpents-counter-curves-768.webp",
+      "quality": 84,
+      "sha256": "e56808911d7289cc48cc6105ef3951d3c9072422054c8c21d84cd79ffeb5c7f0",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 78126,
+      "format": "webp",
+      "height": 1496,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-03-cranes-serpents-counter-curves-1280.webp",
+      "quality": 84,
+      "sha256": "e4c5df1b6fd4e5bb2a42baab3f05329c93e7c216ea2b76584e7740f8efdb6ade",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 183482,
+    "format": "jpeg",
+    "height": 1496,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-03-cranes-serpents-counter-curves-fallback.jpg",
+    "quality": 84,
+    "sha256": "ee80a6de3c8e893583f3b40b6d68c0089dd545ef083e96beac2948b912c7cdc3",
+    "width": 1280
+  },
+  "original_bytes": 2134843,
+  "original_height": 3400,
+  "original_path": "assets/daily/2026-10-03-cranes-serpents-counter-curves.jpg",
+  "original_sha256": "4f1c381f316138907eafd24a4abaf4923bd1671f8146fd2f37de9c98e25f2f4a",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1938.9/1938.9_print.jpg",
+  "original_width": 2909,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-03-cranes-serpents-counter-curves-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-03-cranes-serpents-counter-curves-480.webp?v=9ea183be6fd5 480w, 2026-10-03-cranes-serpents-counter-curves-768.webp?v=e56808911d72 768w, 2026-10-03-cranes-serpents-counter-curves-1280.webp?v=e4c5df1b6fd4 1280w"
+}
