@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-05",
+  "agent_prompt": "资产键 480：OUART 每日一画响应式图像 Vision QA。请真实查看本次附带的 480px WebP，并按移动端缩放展示评估：主体（阿尔弗雷德·斯蒂格利茨 1907 年摄影《统舱》，上下两层甲板、斜向舷梯、圆形草帽与成组人物）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。\n\n资产键 768：OUART 每日一画响应式图像 Vision QA。请真实查看本次附带的 768px WebP，并按移动端缩放展示评估：主体（阿尔弗雷德·斯蒂格利茨 1907 年摄影《统舱》，上下两层甲板、斜向舷梯、圆形草帽与成组人物）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。\n\n资产键 1280：OUART 每日一画响应式图像 Vision QA。请真实查看本次附带的 1280px WebP，并按移动端缩放展示评估：主体（阿尔弗雷德·斯蒂格利茨 1907 年摄影《统舱》，上下两层甲板、斜向舷梯、圆形草帽与成组人物）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。\n\n资产键 fallback：OUART 每日一画响应式图像 Vision QA。请真实查看本次附带的 1280px JPEG fallback，并按移动端缩放展示评估：主体（阿尔弗雷德·斯蒂格利茨 1907 年摄影《统舱》，上下两层甲板、斜向舷梯、圆形草帽与成组人物）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。",
+  "agent_prompt_sha256": "474f0a63e2abcebcacaf7f91206d54ee6dd3b84f63b0a2f0de676f26d21c5324",
+  "agent_output": "资产键：480\n实际看到的画面：暖灰褐色相纸边框内是一幅竖幅船上场景；上层甲板聚集戴帽人物，中央斜向舷梯与多道绳索栏杆横贯画面，下层暗部也有成组人物，左下圆形草帽清楚可见。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：在 480px 移动端尺度下，上下甲板、斜向舷梯、栏杆绳索和两组人物仍清楚可辨；画幅及相纸边缘完整，未见明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。人物面部细节因原作尺度较小而简化，但不妨碍主体阅读。\n\n资产键：768\n实际看到的画面：完整的竖幅棕褐色摄影印相呈现在浅色相纸上；上层密集人物沿栏杆排列，中央明亮舷梯由左下斜向右上切分空间，下层人物、衣物、圆帽和右侧梯子均可辨认。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：移动端缩放下，甲板层级、主要对角线、人物群组与圆形草帽的关系明确，绳索和栏杆连续自然；未见编码块、色带、振铃、异常模糊、拉伸、裁切或比例失真。原作颗粒与柔和调子属于摄影印相特征，并非衍生图伪影。\n\n资产键：1280\n实际看到的画面：浅色装裱纸中央保留完整摄影画面；上方人物群、斜向舷梯与绳索栏杆、下方较暗的人物群形成清楚的三段结构，圆帽、披巾、栏杆立柱和右缘梯子细节可辨。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：高分辨率版本在移动端缩放时主体身份与几何分区清楚，明暗过渡、人物轮廓和重复绳索稳定；未见明显压缩块、色带、振铃、异常模糊、裁切、拉伸或纵横比失真。相纸上的轻微斑点与边缘旧痕属于馆藏原件状态。\n\n资产键：fallback\n实际看到的画面：1280px JPEG 完整显示带浅色相纸边框的《统舱》摄影；上层甲板拥挤人物、中央斜向舷梯和栏杆、下层暗部人物以及左下圆帽均清楚可辨，四周没有异常缺边。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：移动端缩放后主体、上下空间和关键对角线仍明确，栏杆与人物边缘自然；未见明显 JPEG 块效应、色带、振铃、异常模糊、拉伸、裁切或比例失真。",
+  "agent_output_sha256": "acd500e3c6c0bfd9054d341673a23544b81c1fddb59c643205347ddf054e1ce5",
+  "results": {
+    "480": {
+      "image_sha256": "0fcc0da016bdef09b8100014a62e4bc2e114f893e0e93234db5a0daa89b57fee",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "def8302a0c1acd499cf583f83b8b4eaf923c042a10e73de30f577e78fcf57eea",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "f85094f06c77082c4087e457a8f06c410169af903d5063e77fa169f21c94cea4",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "0ed937211e80c229305f4f77148965471c12e6518fd8f4e7d408c68b63e55beb",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
