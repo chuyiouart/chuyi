@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="用 Codex 搭作品页时，先把内容、组件和更新入口分开，再由人检查手机显示、链接和文件来源，避免第一次上线后只能整页重做。" />
+  <title>作品页要留出以后修改的位置 | IP 实物化实战营</title>
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="../course.css" />
+  <link rel="stylesheet" href="../update-article.css" />
+</head>
+<body class="update-page">
+  <header class="update-header">
+    <a href="../#updates">← 返回每日公开更新</a>
+    <a class="update-brand" href="../#course-intro">IP 实物化实战营</a>
+  </header>
+  <main class="update-article">
+    <header class="update-article-title">
+      <p class="update-meta"><time datetime="2026-10-06">2026-10-06</time> · 视频</p>
+      <h1>作品页要留出以后修改的位置</h1>
+      <p class="update-lead">作品页第一次打开正常，不代表以后好维护。标题、图片、三维模型和报名入口如果全写死在同一个页面文件里，下一次换图、补尺寸或增加一个版本，就可能要从头翻代码；改动一处，还容易带坏手机排版或旧链接。
+
+今天处理的是怎样让 Codex 帮忙搭一个能继续修改的作品页。重点不是让 AI 一次生成漂亮页面，而是先给它清楚的内容清单、文件位置、组件边界和验收条件，再由人逐项检查真实页面。资料不全时保留待补位置，不能让 Codex 猜尺寸、材料、作者或完成状态。</p>
+    </header>
+    <figure class="update-hero">
+      <picture><source type="image/webp" srcset="../assets/updates/2026-10-06/01-website-hero-480.webp?v=479407f151d4 480w, ../assets/updates/2026-10-06/01-website-hero-768.webp?v=77cf8eb332d0 768w, ../assets/updates/2026-10-06/01-website-hero-1280.webp?v=9d9fcfd3eb38 1280w" sizes="(max-width: 680px) 100vw, 760px" /><img src="../assets/updates/2026-10-06/01-website-hero-fallback.png?v=39d8a85807ea" srcset="../assets/updates/2026-10-06/01-website-hero-480.webp?v=479407f151d4 480w, ../assets/updates/2026-10-06/01-website-hero-768.webp?v=77cf8eb332d0 768w, ../assets/updates/2026-10-06/01-website-hero-1280.webp?v=9d9fcfd3eb38 1280w" sizes="(max-width: 680px) 100vw, 760px" alt="作品页要留出以后修改的位置" width="960" height="540" loading="eager" decoding="async" fetchpriority="high" /></picture>
+      <figcaption>课程流程示意图，不是往期学员案例。</figcaption>
+    </figure>
+    <section class="update-section"><h2>具体问题</h2><p>作品页第一次打开正常，不代表以后好维护。标题、图片、三维模型和报名入口如果全写死在同一个页面文件里，下一次换图、补尺寸或增加一个版本，就可能要从头翻代码；改动一处，还容易带坏手机排版或旧链接。</p><p>今天处理的是怎样让 Codex 帮忙搭一个能继续修改的作品页。重点不是让 AI 一次生成漂亮页面，而是先给它清楚的内容清单、文件位置、组件边界和验收条件，再由人逐项检查真实页面。资料不全时保留待补位置，不能让 Codex 猜尺寸、材料、作者或完成状态。</p></section><section class="update-section"><h2>核心判断</h2><p>一个便于继续修改的作品页，内容与页面结构要分开。标题、摘要、图片、尺寸、材料、版本和链接有明确来源；页面把首图、作品说明、图集、三维展示和行动入口拆成可替换的区域。更换一张图或一段说明时，不需要改动无关部分，才算具备基本维护能力。</p><p>Codex 可以根据已确认的文件树和字段清单生成页面骨架、样式与检查脚本，也可以提示缺失资源。人工仍要在真实桌面和手机宽度打开页面，检查文字、图片、模型、链接、加载失败时的提示和版权说明。发现问题时只改对应组件并重新检查；看起来像网页的代码，不等于已经可上线。</p></section><section class="update-section"><h2>步骤或标准</h2><p>作品页从真实资料、清楚结构和可复查的更新动作开始，生成代码只是其中一步。</p><ul><li>整理同一版作品资料：标题、简短说明、尺寸、材料、完成状态、作者与来源、首图、图集、三维文件和行动链接。每项写清真实文件位置；缺失内容标为待补，不让 Codex 编造。</li><li>先画出页面顺序，至少区分首屏、作品说明、图集或细节、可选三维展示、版本与边界说明、行动入口。把经常更新的内容放进独立数据或配置，不把所有文字和路径散写在页面代码里。</li><li>把现有项目技术、目录限制、目标设备和字段清单交给 Codex，请它只在约定目录内生成或修改页面骨架、可复用组件和样式；要求保留清楚的文件名，并列出它无法确认的资料。</li><li>逐项读回改动，确认没有删除旧内容、引用不存在的图片、换错模型或新增未经确认的事实。先在本地打开，再检查浏览器控制台和网络请求；代码能运行不等于内容正确。</li><li>用桌面和约 390 像素手机宽度检查首图、段落、按钮、图集和三维区域。逐个点击站内外链接，测试图片或模型缺失时是否有清楚退路，并检查键盘操作、替代文字和基本加载速度。</li><li>做一次最小更新测试：只替换一张图、一个尺寸或一个链接，确认无关区域不变。保存改动依据、待补项和下一次更新入口；测试失败就回到对应组件或数据，不整页盲改。</li></ul></section><section class="update-section"><h2>常见错误</h2><p>AI 能加快搭建，但输入、结构和验收没有说清楚，返工只会更快发生。</p><ul><li>只告诉 Codex“做一个高级作品页”，不给真实内容和目录限制。后果是它可能编造说明、引用错误文件，页面外观完整却无法对应实际作品。</li><li>把标题、图片路径、尺寸和链接全部写死在多个页面位置。后果是一次更新要重复修改，漏改后同一页面会出现互相冲突的版本。</li><li>看到本地桌面端能打开就算完成。后果是手机溢出、触控按钮过小、模型加载失败和断链可能直到公开后才被发现。</li><li>让 Codex 为缺失资料自动补数值和成果描述。后果是猜测会被当成事实公开，作品尺寸、材料、完成度与真实对象对不上。</li><li>一次同时改结构、配色、内容和资源路径。后果是出错后找不到原因，也无法证明以后能安全地只更新一个部分。</li></ul></section><section class="update-section"><h2>与短期课程的关系</h2><p>这个主题对应第五阶段，也就是独立站、三维展示与持续发布。做完后要有来源清楚的作品资料、可替换的页面区域、一次本地真实浏览器检查和一次最小更新测试。桌面与手机都能阅读，图片、模型和链接指向正确版本，缺失内容没有被编造，才通过发布前检查。</p><p>3 天路线可以围绕一个明确目标，完成现有作品页骨架或修好一个最影响使用的更新入口；4–5 天可继续接入图集、可选三维展示、移动端检查和版本记录。进入持续发布前，页面仍需按实际部署环境复核；域名、第三方费用、长期维护和持续运营另行安排。</p></section><section class="update-section"><h2>事实 / 案例 / 完成度边界</h2><p>本文依据第五阶段的作品页搭建与发布验收方法整理。本页规划用原创木质与布皮混合人形“折页巡修员”，表现角色在可折叠流动修复车旁整理作品模块、比较三种页面区域关系、检查木榫式模块接口，并完成一次可更新页面交接。当天四张图都是课程方向示意图，不是真实网站案例，也不是学员作品、真实课堂、已完成木作项目、真实委托或商业成果。真实案例必须另有来源、使用许可、页面文件和公开验证记录。</p><p>3–5 天能做到哪一步，取决于已有资料、页面基础、图片和模型体积、账号权限与修改次数。通常可围绕一个作品完成资料清单、页面骨架、若干可替换区域和首轮桌面与手机检查；复杂交互、专业无障碍审计、正式部署、域名、长期运维和持续内容更新要另行评估。课程不承诺 Codex 一次生成可直接上线的网站，也不承诺流量、订单、展览或销售结果。</p></section><section class="update-section"><h2>报名入口</h2><p>如果你已有 IP / 角色资产，可以提交原画、三维文件、现有实物照片、已有页面或代码，并说明最想修好的更新问题、计划用途和可到课时间。我们会先看资料与权限是否足够，再从合适阶段安排青岛跟班。</p><p>如果你只有想法、草图或初步设定，也可以提交角色方向、准备展示的内容和希望读者完成的动作。我们会先把第一页缩小到能整理、能检查、能继续修改的范围，再安排青岛 3–5 天短训。公开报名地址：https://wj.qq.com/s2/27296919/9499/</p></section>
+    <div class="update-gallery"><picture><source type="image/webp" srcset="../assets/updates/2026-10-06/03-real-application-480.webp?v=21c3f806ca78 480w, ../assets/updates/2026-10-06/03-real-application-768.webp?v=41fba5075b6c 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-10-06/03-real-application-fallback.png?v=489dc2ac8a4f" srcset="../assets/updates/2026-10-06/03-real-application-480.webp?v=21c3f806ca78 480w, ../assets/updates/2026-10-06/03-real-application-768.webp?v=41fba5075b6c 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="作品页要留出以后修改的位置 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-10-06/04-social-promotion-480.webp?v=b91e87b1f1b7 480w, ../assets/updates/2026-10-06/04-social-promotion-768.webp?v=a19f4f2c663f 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-10-06/04-social-promotion-fallback.png?v=9c8d648106f0" srcset="../assets/updates/2026-10-06/04-social-promotion-480.webp?v=b91e87b1f1b7 480w, ../assets/updates/2026-10-06/04-social-promotion-768.webp?v=a19f4f2c663f 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="作品页要留出以后修改的位置 配图" width="480" height="600" loading="lazy" decoding="async" /></picture></div>
+    <aside class="update-boundary">
+      <strong>课程边界</strong>
+      <p>3–5 天短训按起点确认范围：3 天聚焦一个优先目标，4–5 天串联首版项目流程；不承诺商业级量产、人人进入正式展览或必然产生销售。</p>
+    </aside>
+    <section class="update-cta">
+      <p>长期招生｜青岛｜3–5 天短训｜评估后预约跟班｜每班最多 10 人。<a href="../#enrollment">查看当前学习方案与费用</a></p>
+      <a href="https://wj.qq.com/s2/27296919/9499/" target="_blank" rel="noopener">填写报名资料 →</a>
+    </section>
+  </main>
+</body>
+</html>

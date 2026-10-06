@@ -1827,16 +1827,33 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-10-06",
     "type": "视频",
     "time": "19:30",
-    "title": "用 Codex 帮忙搭一个以后还能改的作品页",
-    "summary": "今天聊聊用 Codex 帮忙搭一个以后还能改的作品页。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "作品页要留出以后修改的位置",
+    "summary": "用 Codex 搭作品页时，先把内容、组件和更新入口分开，再由人检查手机显示、链接和文件来源，避免第一次上线后只能整页重做。",
+    "cover": "./assets/updates/2026-10-06/01-website-hero-fallback.png?v=39d8a85807ea",
+    "published": true,
+    "url": "./updates/2026-10-06-build-a-work-page-that-stays-editable.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 5 / 发布验收",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-10-06",
+    "media_status": "partial",
+    "passedRoles": [
+      "website_hero",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [
+      "core_explanation"
+    ],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-10-06/01-website-hero-480.webp?v=479407f151d4 480w, ./assets/updates/2026-10-06/01-website-hero-768.webp?v=77cf8eb332d0 768w, ./assets/updates/2026-10-06/01-website-hero-1280.webp?v=9d9fcfd3eb38 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-10-06/01-website-hero-fallback.png?v=39d8a85807ea",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-10-07",
@@ -3149,6 +3166,21 @@ window.WORKSHOP_UPDATES = [
     "time": "18:00",
     "title": "网页上的作品，对应的是哪一版原始文件？",
     "summary": "今天聊聊网页上的作品，对应的是哪一版原始文件。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 5 / 发布验收",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2027-01-03",
+    "type": "直播",
+    "time": "20:00",
+    "title": "作品页做好后，怎么接着更新、整理素材？",
+    "summary": "今天聊聊作品页做好后，怎么接着更新、整理素材。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,
