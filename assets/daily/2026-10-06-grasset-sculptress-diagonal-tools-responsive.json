@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 68668,
+      "format": "webp",
+      "height": 681,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-06-grasset-sculptress-diagonal-tools-480.webp",
+      "quality": 84,
+      "sha256": "238d81317d257b8e9cf8189f31255716ccdb80cdd3dbc47b3088020978838db9",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 152240,
+      "format": "webp",
+      "height": 1090,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-06-grasset-sculptress-diagonal-tools-768.webp",
+      "quality": 84,
+      "sha256": "267ba24ed512fad1868a6132fc39e8fab4391a7745dbe9b877e050ea96946395",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 378786,
+      "format": "webp",
+      "height": 1816,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-06-grasset-sculptress-diagonal-tools-1280.webp",
+      "quality": 84,
+      "sha256": "8756424162430c8c75c00d41e01dfa34dcfe004bc4c43713b8ea5e9d8afc04b2",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 566466,
+    "format": "jpeg",
+    "height": 1816,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-06-grasset-sculptress-diagonal-tools-fallback.jpg",
+    "quality": 84,
+    "sha256": "d1da28feeda7e2c190ea9d2383f4d5776a41d0398895c788b18715f97e39b4bc",
+    "width": 1280
+  },
+  "original_bytes": 2258017,
+  "original_height": 3400,
+  "original_path": "assets/daily/2026-10-06-grasset-sculptress-diagonal-tools.jpg",
+  "original_sha256": "10026c3cf75e2e789c46f3c8c98230f04d07868bca1fb054f9263309f29f92de",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1986.136/1986.136_print.jpg",
+  "original_width": 2396,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-06-grasset-sculptress-diagonal-tools-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-06-grasset-sculptress-diagonal-tools-480.webp?v=238d81317d25 480w, 2026-10-06-grasset-sculptress-diagonal-tools-768.webp?v=267ba24ed512 768w, 2026-10-06-grasset-sculptress-diagonal-tools-1280.webp?v=875642416243 1280w"
+}

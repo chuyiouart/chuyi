@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-06",
+  "agent_prompt": "资产键 480：OUART 每日一画响应式图像 Vision QA。请真实查看本次附带的 480px WebP，并按移动端缩放展示评估：主体（欧仁·格拉塞 1897 年《女雕塑家》，戴浅色头巾的女性手持锤与凿，在橙色背景前雕刻石质头像）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。\n\n资产键 768：OUART 每日一画响应式图像 Vision QA。请真实查看本次附带的 768px WebP，并按移动端缩放展示评估：主体（欧仁·格拉塞 1897 年《女雕塑家》，戴浅色头巾的女性手持锤与凿，在橙色背景前雕刻石质头像）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。\n\n资产键 1280：OUART 每日一画响应式图像 Vision QA。请真实查看本次附带的 1280px WebP，并按移动端缩放展示评估：主体（欧仁·格拉塞 1897 年《女雕塑家》，戴浅色头巾的女性手持锤与凿，在橙色背景前雕刻石质头像）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。\n\n资产键 fallback：OUART 每日一画响应式图像 Vision QA。请真实查看本次附带的 1280px JPEG fallback，并按移动端缩放展示评估：主体（欧仁·格拉塞 1897 年《女雕塑家》，戴浅色头巾的女性手持锤与凿，在橙色背景前雕刻石质头像）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。",
+  "agent_prompt_sha256": "65d6667acfc9468e6ffa427f0c682d55b44f3c99cef81cd6c67efaa92cd35bcc",
+  "agent_output": "资产键：480\n实际看到的画面：竖幅彩色版画中，戴浅色头巾、穿深色衣服的女性位于左侧，左手握竖直锤柄，右手持斜向凿具；下方两个浅灰石质头像占据前景，背景为橙色块面，人物、工具与石雕关系完整可见。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：在 480px 移动端尺度下，女性脸部、双臂、锤、凿和石雕主体均清楚可辨；边框和画面内容完整，线条与平涂色块自然，未见明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。\n\n资产键：768\n实际看到的画面：完整竖幅画面内，女性的浅色头巾、深色长发和衣服、握锤的左手、持凿的右手，以及下方带密集刻线的两个石质头像均清晰；橙色背景轮廓和四周黑色边框完整。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：移动端缩放下，动作方向和工具接触关系明确，人物轮廓、石雕刻线及背景色面稳定；未见编码块、色带、振铃、异常模糊、拉伸、裁切或比例失真。纸张纹理与线条轻微不均属于原作和馆藏图像特征。\n\n资产键：1280\n实际看到的画面：高分辨率竖幅版画完整呈现；人物面部、头巾褶线、深色衣纹、锤头和凿具轮廓清楚，下方两尊石雕的面部与交叉刻线可辨，橙色背景及右上角记号均保留。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：在移动端缩放展示中，人物身份、双手动作、两件工具和石雕主体清楚，线描边缘与色彩过渡自然；未见明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。\n\n资产键：fallback\n实际看到的画面：1280px JPEG 完整显示《女雕塑家》竖幅画面；戴浅色头巾的女性一手握锤、一手持凿，前景两个浅灰石质头像及橙色背景均清晰，画面边框没有异常缺失。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：移动端缩放后主体、工具方向与石雕纹理仍明确，色块和线条自然；未见明显 JPEG 块效应、色带、振铃、异常模糊、拉伸、裁切或比例失真。",
+  "agent_output_sha256": "e85bf1359ef65f8ae1c4824a2a51358dd8c0e2b1b4149dd809a71837278823e0",
+  "results": {
+    "480": {
+      "image_sha256": "238d81317d257b8e9cf8189f31255716ccdb80cdd3dbc47b3088020978838db9",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "267ba24ed512fad1868a6132fc39e8fab4391a7745dbe9b877e050ea96946395",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "8756424162430c8c75c00d41e01dfa34dcfe004bc4c43713b8ea5e9d8afc04b2",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "d1da28feeda7e2c190ea9d2383f4d5776a41d0398895c788b18715f97e39b4bc",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
