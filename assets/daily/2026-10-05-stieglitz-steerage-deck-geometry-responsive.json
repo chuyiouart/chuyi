@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 25380,
+      "format": "webp",
+      "height": 636,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-05-stieglitz-steerage-deck-geometry-480.webp",
+      "quality": 84,
+      "sha256": "0fcc0da016bdef09b8100014a62e4bc2e114f893e0e93234db5a0daa89b57fee",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 48366,
+      "format": "webp",
+      "height": 1018,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-05-stieglitz-steerage-deck-geometry-768.webp",
+      "quality": 84,
+      "sha256": "def8302a0c1acd499cf583f83b8b4eaf923c042a10e73de30f577e78fcf57eea",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 107654,
+      "format": "webp",
+      "height": 1696,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-05-stieglitz-steerage-deck-geometry-1280.webp",
+      "quality": 84,
+      "sha256": "f85094f06c77082c4087e457a8f06c410169af903d5063e77fa169f21c94cea4",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 281293,
+    "format": "jpeg",
+    "height": 1696,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-05-stieglitz-steerage-deck-geometry-fallback.jpg",
+    "quality": 84,
+    "sha256": "0ed937211e80c229305f4f77148965471c12e6518fd8f4e7d408c68b63e55beb",
+    "width": 1280
+  },
+  "original_bytes": 1858037,
+  "original_height": 3400,
+  "original_path": "assets/daily/2026-10-05-stieglitz-steerage-deck-geometry.jpg",
+  "original_sha256": "cb68569210ae0c6dc5e108dd005268231239c8e7d3e8d1aae814a807ec149b24",
+  "original_url": "https://openaccess-cdn.clevelandart.org/2019.22/2019.22_print.jpg",
+  "original_width": 2566,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-05-stieglitz-steerage-deck-geometry-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-05-stieglitz-steerage-deck-geometry-480.webp?v=0fcc0da016bd 480w, 2026-10-05-stieglitz-steerage-deck-geometry-768.webp?v=def8302a0c1a 768w, 2026-10-05-stieglitz-steerage-deck-geometry-1280.webp?v=f85094f06c77 1280w"
+}
