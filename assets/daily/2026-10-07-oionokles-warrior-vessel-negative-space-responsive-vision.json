@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-07",
+  "agent_prompt": "资产键 480：OUART 每日一画响应式图像 Vision QA。请真实查看本次附带的 480px WebP，并按移动端缩放展示评估：主体（约公元前480至470年、归于 Oionokles Painter 的阿提卡红绘油瓶《剪发的战士》；高颈陶瓶中央为弯身剪发的裸体战士，周围可见头盔、长矛、衣物和铭文）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。\n\n资产键 768：OUART 每日一画响应式图像 Vision QA。请真实查看本次附带的 768px WebP，并按移动端缩放展示评估：主体（约公元前480至470年、归于 Oionokles Painter 的阿提卡红绘油瓶《剪发的战士》；高颈陶瓶中央为弯身剪发的裸体战士，周围可见头盔、长矛、衣物和铭文）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。\n\n资产键 1280：OUART 每日一画响应式图像 Vision QA。请真实查看本次附带的 1280px WebP，并按移动端缩放展示评估：主体（约公元前480至470年、归于 Oionokles Painter 的阿提卡红绘油瓶《剪发的战士》；高颈陶瓶中央为弯身剪发的裸体战士，周围可见头盔、长矛、衣物和铭文）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。\n\n资产键 fallback：OUART 每日一画响应式图像 Vision QA。请真实查看本次附带的 1280px JPEG fallback，并按移动端缩放展示评估：主体（约公元前480至470年、归于 Oionokles Painter 的阿提卡红绘油瓶《剪发的战士》；高颈陶瓶中央为弯身剪发的裸体战士，周围可见头盔、长矛、衣物和铭文）是否清楚可辨，是否存在明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。馆藏原图不是 GPT 生成文字，OCR exact match 不适用。请完整输出：资产键；你实际看到的画面；mobile_readable=true/false；artifacts=true/false；结论 PASS/FAIL；理由。只有主体清楚且无上述伪影才可 PASS。",
+  "agent_prompt_sha256": "b3056817d4072123537f3171960af74b7a6240b82404c340e82ce8458b88b5e5",
+  "agent_output": "资产键：480\n实际看到的画面：灰色背景前完整呈现一件黑色高颈油瓶；瓶腹左侧站立一名橙红色战士，手靠近面部，右侧集中着圆盾、带高冠的头盔与装具，两根细长矛线向上穿过画面；肩部和瓶腹上下边缘的回纹、卷草纹仍可辨认。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：在 480px 移动端尺度下，油瓶整体轮廓、人物、圆盾、头盔和长矛关系清楚，器物未被裁切；未见明显压缩块、色带、振铃、异常模糊、拉伸或纵横比失真。器表擦痕和缺损属于原物状态。\n\n资产键：768\n实际看到的画面：高颈黑色油瓶完整居中，瓶腹左侧战士的卷发、手势、甲裙与护腿可辨，右侧圆盾包围头盔及垂挂装具，长矛与上下回纹边带保持清晰。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：移动端缩放下主体和主要线描细节稳定，人物与武具间的黑色负形清楚；没有发现编码块、色带、振铃、异常模糊、拉伸、裁切或比例失真。\n\n资产键：1280\n实际看到的画面：竖幅馆藏照中油瓶从口沿到底足完整可见；人物面部、卷发、手臂、甲片与腿部线描清晰，圆盾内的头盔、装具纹样及肩部花叶和回纹边带都有明确边缘。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：缩放到移动端时整体识别明确，放大查看的细线和黑橙色边界自然；未见明显压缩块、色带、振铃、异常模糊、拉伸、裁切或纵横比失真。可见斑驳为器物表面年代痕迹，并非压缩伪影。\n\n资产键：fallback\n实际看到的画面：1280px JPEG 完整展示黑色高颈油瓶，左侧战士和右侧圆盾、头盔、长矛及装具均清楚，瓶肩花叶纹与瓶腹上下回纹边带没有异常缺失。\nmobile_readable=true\nartifacts=false\n结论：PASS\n理由：移动端缩放后主体、人物动作和武具组合仍可辨，灰色背景过渡与器物边缘平稳；未见明显 JPEG 块效应、色带、振铃、异常模糊、拉伸、裁切或比例失真。",
+  "agent_output_sha256": "fa4a7649347fdd51ea7dedc4822d761e811eb8f7ce96dac89efa2ce60a735d14",
+  "results": {
+    "480": {
+      "image_sha256": "ec8e5ffbbd08e61dbaf0278daf7bb59bd057e7db6d455e4ab5d36043cc5dc402",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "ea733eef9e51b911903a75ef46ec2d6b99252aec1f24a13e972c180f5d3a3c2a",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "30b69afeca6e6521bb2d881227305c2fdf74324aa57b4d4c85c57e0201c5d075",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "f21a5a7205ca4deca5f4042d012cebe9037b90a200c0f330f8087ad7e52f2198",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
