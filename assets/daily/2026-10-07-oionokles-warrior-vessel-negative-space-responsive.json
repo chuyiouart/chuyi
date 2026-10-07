@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 27302,
+      "format": "webp",
+      "height": 799,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-07-oionokles-warrior-vessel-negative-space-480.webp",
+      "quality": 84,
+      "sha256": "ec8e5ffbbd08e61dbaf0278daf7bb59bd057e7db6d455e4ab5d36043cc5dc402",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 56592,
+      "format": "webp",
+      "height": 1279,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-07-oionokles-warrior-vessel-negative-space-768.webp",
+      "quality": 84,
+      "sha256": "ea733eef9e51b911903a75ef46ec2d6b99252aec1f24a13e972c180f5d3a3c2a",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 122256,
+      "format": "webp",
+      "height": 2131,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-07-oionokles-warrior-vessel-negative-space-1280.webp",
+      "quality": 84,
+      "sha256": "30b69afeca6e6521bb2d881227305c2fdf74324aa57b4d4c85c57e0201c5d075",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 257533,
+    "format": "jpeg",
+    "height": 2131,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-07-oionokles-warrior-vessel-negative-space-fallback.jpg",
+    "quality": 84,
+    "sha256": "f21a5a7205ca4deca5f4042d012cebe9037b90a200c0f330f8087ad7e52f2198",
+    "width": 1280
+  },
+  "original_bytes": 3387103,
+  "original_height": 3400,
+  "original_path": "assets/daily/2026-10-07-oionokles-warrior-vessel-negative-space.jpg",
+  "original_sha256": "8c883278d6dcc631216ab3be83ba633a473c414a5945dfa97e4787fb506572ed",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1928.660/1928.660_print.jpg",
+  "original_width": 2042,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-07-oionokles-warrior-vessel-negative-space-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-07-oionokles-warrior-vessel-negative-space-480.webp?v=ec8e5ffbbd08 480w, 2026-10-07-oionokles-warrior-vessel-negative-space-768.webp?v=ea733eef9e51 768w, 2026-10-07-oionokles-warrior-vessel-negative-space-1280.webp?v=30b69afeca6e 1280w"
+}
