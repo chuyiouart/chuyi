@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="展示模型能打开只是起点。还要核对版本、各个角度、材质与部件，再到桌面和手机页面实测，并把网页展示与打印检查分开。" />
+  <title>模型能打开，还要转一圈再检查 | IP 实物化实战营</title>
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="../course.css" />
+  <link rel="stylesheet" href="../update-article.css" />
+</head>
+<body class="update-page">
+  <header class="update-header">
+    <a href="../#updates">← 返回每日公开更新</a>
+    <a class="update-brand" href="../#course-intro">IP 实物化实战营</a>
+  </header>
+  <main class="update-article">
+    <header class="update-article-title">
+      <p class="update-meta"><time datetime="2026-10-07">2026-10-07</time> · 图文</p>
+      <h1>模型能打开，还要转一圈再检查</h1>
+      <p class="update-lead">三维模型在电脑或网页里顺利打开，只能说明文件被软件读到了。角色可能用了旧版本，朝向和比例可能不对，材质贴图可能丢失，关节或场景部件也可能与实物资料对不上。访客看见一个会转动的模型，不等于这份模型已经适合公开展示，更不等于它能直接打印。
+
+今天把检查范围收在一个准备上作品页的 GLB 展示模型。要从版本、外观、尺度方向、部件关系、加载表现和说明边界逐项核对，再单独确认是否另有经过检查的打印文件。这样能避免页面上线后才发现错模型、黑材质、穿插部件或手机打不开。</p>
+    </header>
+    <figure class="update-hero">
+      <picture><source type="image/webp" srcset="../assets/updates/2026-10-07/01-website-hero-480.webp?v=9afc50f4a229 480w, ../assets/updates/2026-10-07/01-website-hero-768.webp?v=83409642b2c6 768w, ../assets/updates/2026-10-07/01-website-hero-1280.webp?v=306a1493b038 1280w" sizes="(max-width: 680px) 100vw, 760px" /><img src="../assets/updates/2026-10-07/01-website-hero-fallback.png?v=ffdbc7ca4776" srcset="../assets/updates/2026-10-07/01-website-hero-480.webp?v=9afc50f4a229 480w, ../assets/updates/2026-10-07/01-website-hero-768.webp?v=83409642b2c6 768w, ../assets/updates/2026-10-07/01-website-hero-1280.webp?v=306a1493b038 1280w" sizes="(max-width: 680px) 100vw, 760px" alt="模型能打开，还要转一圈再检查" width="960" height="540" loading="eager" decoding="async" fetchpriority="high" /></picture>
+      <figcaption>课程流程示意图，不是往期学员案例。</figcaption>
+    </figure>
+    <section class="update-section"><h2>具体问题</h2><p>三维模型在电脑或网页里顺利打开，只能说明文件被软件读到了。角色可能用了旧版本，朝向和比例可能不对，材质贴图可能丢失，关节或场景部件也可能与实物资料对不上。访客看见一个会转动的模型，不等于这份模型已经适合公开展示，更不等于它能直接打印。</p><p>今天把检查范围收在一个准备上作品页的 GLB 展示模型。要从版本、外观、尺度方向、部件关系、加载表现和说明边界逐项核对，再单独确认是否另有经过检查的打印文件。这样能避免页面上线后才发现错模型、黑材质、穿插部件或手机打不开。</p></section><section class="update-section"><h2>核心判断</h2><p>可以进入发布准备的展示模型，首先要与当天确认的图片、尺寸、配色、配件和完成状态属于同一版。正面、侧面、背面和转动过程都没有缺件、明显穿插、翻面或悬空连接；默认视角能看清主体，尺度和朝向也符合页面说明。</p><p>随后要在真实浏览器里检查桌面和手机宽度：首屏能出现，旋转缩放可用，加载失败时有清楚退路，文件体积与等待时间没有让页面失去基本可用性。GLB 通过这些检查，只能证明它适合当前展示用途；STL 等打印文件仍要另外检查单位、封闭性、壁厚、连接、支撑和切片结果。</p></section><section class="update-section"><h2>步骤或标准</h2><p>模型打开后，按同一版资料、多角度外观、页面实测和用途边界四部分检查。</p><ul><li>把准备展示的 GLB、同版角色图片、尺寸材料记录、配件清单和完成状态放在一起。核对文件修改时间与版本来源；无法确认的模型先不进入页面。</li><li>在三维查看器里依次看正面、侧面、背面、顶部和底部，再慢速转一圈。检查主体是否完整，法线是否翻面，表面有没有突然变黑、透明错误、破洞、重叠或悬空部件。</li><li>对照已确认记录检查单位、整体比例、上下方向、中心位置和默认镜头。角色、道具与场景接口要属于同一版，不能用缩放视图掩盖实际比例错误。</li><li>逐项检查材质与贴图是否随文件一起加载，颜色、金属粗糙度和透明部分是否符合当前方向。缺失贴图、错误反光或被软件默认材质替代时，先修资源引用再复查。</li><li>把模型放进真实页面，在桌面和约 390 像素手机宽度分别打开。检查首次显示、旋转、缩放、触控、加载提示、失败退路和页面其他内容，记录实际问题，不只看开发电脑。</li><li>单独写清用途边界：GLB 用于网页展示；如果还要打印，另取 STL 或其他制造文件检查单位、封闭性、壁厚、连接、重心、支撑和切片。展示模型通过不能替代实物与打印验证。</li></ul></section><section class="update-section"><h2>常见错误</h2><p>查看器里的第一眼正常，很容易掩盖版本、结构和公开页面上的问题。</p><ul><li>文件能打开就直接上传，不核对版本。后果是页面可能展示旧配色、旧配件或旧尺寸，与图片和说明互相冲突。</li><li>只看默认正面，不转到背面和底部。后果是破面、穿插、悬空连接和缺失部件会被藏在看不到的角度。</li><li>把查看器里的自动缩放当成尺寸正确。后果是模型单位和真实比例错误仍会保留，后续包装、打印或说明继续用错数据。</li><li>只在制作电脑上测试，不看手机和加载失败状态。后果是公开页面可能出现长时间空白、触控失效或模型挡住正文。</li><li>把 GLB 展示正常写成可以打印。后果是壁厚、封闭性、连接和支撑没有经过检查，却被读者误认为已经能制造。</li></ul></section><section class="update-section"><h2>与短期课程的关系</h2><p>这个主题对应第五阶段，也就是独立站、三维展示与持续发布。做完后要留下同版资料清单、展示模型多角度检查、桌面与手机浏览器结果，以及展示用途和打印用途的清楚区分。模型、图片、说明和页面交互都对得上，才通过发布前检查。</p><p>3 天路线可以围绕一个已有展示模型，完成版本核对、多角度检查和一轮页面测试；4–5 天可继续修资源、整理图片与说明，并按需要单独检查打印文件。正式部署、复杂交互、模型深度优化、打印和实物制作要按现有资料与时间另行安排。</p></section><section class="update-section"><h2>事实 / 案例 / 完成度边界</h2><p>本文依据第五阶段的三维展示与发布检查方法整理。本页规划用原创金属人形“潮汐测向员”，表现它在港湾步道组件旁经历阶段样检查、部件与材质铺开、接口定位和完整工作台复核。当天四张图都是课程方向示意图，不是真实网站案例，也不是学员作品、真实课堂、已经完成的金属铸造、真实委托或商业成果。真实案例必须另有来源、许可、文件和公开验证记录。</p><p>3–5 天能做到哪一步，取决于模型基础、文件体积、贴图数量、页面技术、设备和修改次数。通常可完成一个展示模型的版本清单、多角度检查、首轮桌面手机测试和用途说明；复杂减面、动画修复、正式部署、金属加工、打印与长期运维另行评估。课程不承诺文件打开就能打印，也不承诺一次检查解决全部兼容问题、商业级成品、流量、订单、展览或销售结果。</p></section><section class="update-section"><h2>报名入口</h2><p>如果你已有 IP / 角色资产，可以提交原画、三维文件、实物或样件照片、尺寸材料记录和现有页面，并说明最想解决的展示问题与可到课时间。我们会先看版本和文件基础，再从合适阶段安排青岛跟班。</p><p>如果你只有想法、草图或初步设定，也可以提交角色方向、希望展示的动作、目标尺寸和使用场景。我们会先把第一版缩小到能建模、能检查、能展示的范围，再安排青岛 3–5 天短训。公开报名地址：https://wj.qq.com/s2/27296919/9499/</p></section>
+    <div class="update-gallery"><picture><source type="image/webp" srcset="../assets/updates/2026-10-07/02-core-explanation-480.webp?v=d443dcdb3ff7 480w, ../assets/updates/2026-10-07/02-core-explanation-768.webp?v=3dec68ce45c3 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-10-07/02-core-explanation-fallback.png?v=5ae35ab93191" srcset="../assets/updates/2026-10-07/02-core-explanation-480.webp?v=d443dcdb3ff7 480w, ../assets/updates/2026-10-07/02-core-explanation-768.webp?v=3dec68ce45c3 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="模型能打开，还要转一圈再检查 配图" width="480" height="480" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-10-07/03-real-application-480.webp?v=b06723857a9a 480w, ../assets/updates/2026-10-07/03-real-application-768.webp?v=97ceb0fede6a 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-10-07/03-real-application-fallback.png?v=1b4282d6065c" srcset="../assets/updates/2026-10-07/03-real-application-480.webp?v=b06723857a9a 480w, ../assets/updates/2026-10-07/03-real-application-768.webp?v=97ceb0fede6a 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="模型能打开，还要转一圈再检查 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-10-07/04-social-promotion-480.webp?v=ad7b2a1e3ef9 480w, ../assets/updates/2026-10-07/04-social-promotion-768.webp?v=29739235360b 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-10-07/04-social-promotion-fallback.png?v=e69df357bae7" srcset="../assets/updates/2026-10-07/04-social-promotion-480.webp?v=ad7b2a1e3ef9 480w, ../assets/updates/2026-10-07/04-social-promotion-768.webp?v=29739235360b 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="模型能打开，还要转一圈再检查 配图" width="480" height="600" loading="lazy" decoding="async" /></picture></div>
+    <aside class="update-boundary">
+      <strong>课程边界</strong>
+      <p>3–5 天短训按起点确认范围：3 天聚焦一个优先目标，4–5 天串联首版项目流程；不承诺商业级量产、人人进入正式展览或必然产生销售。</p>
+    </aside>
+    <section class="update-cta">
+      <p>长期招生｜青岛｜3–5 天短训｜评估后预约跟班｜每班最多 10 人。<a href="../#enrollment">查看当前学习方案与费用</a></p>
+      <a href="https://wj.qq.com/s2/27296919/9499/" target="_blank" rel="noopener">填写报名资料 →</a>
+    </section>
+  </main>
+</body>
+</html>

@@ -1868,16 +1868,32 @@
     "date": "2026-10-07",
     "type": "图文",
     "time": "11:30",
-    "title": "三维模型能打开了，还要检查什么？",
-    "summary": "今天聊聊三维模型能打开了，还要检查什么。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "模型能打开，还要转一圈再检查",
+    "summary": "展示模型能打开只是起点。还要核对版本、各个角度、材质与部件，再到桌面和手机页面实测，并把网页展示与打印检查分开。",
+    "cover": "./assets/updates/2026-10-07/01-website-hero-fallback.png?v=ffdbc7ca4776",
+    "published": true,
+    "url": "./updates/2026-10-07-check-a-3d-model-after-it-opens.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 5 / 发布验收",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-10-07",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-10-07/01-website-hero-480.webp?v=9afc50f4a229 480w, ./assets/updates/2026-10-07/01-website-hero-768.webp?v=83409642b2c6 768w, ./assets/updates/2026-10-07/01-website-hero-1280.webp?v=306a1493b038 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-10-07/01-website-hero-fallback.png?v=ffdbc7ca4776",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-10-08",
@@ -3197,6 +3213,36 @@
     "status": "planned",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 5 / 发布验收",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2027-01-04",
+    "type": "图文",
+    "time": "11:30",
+    "title": "只有 3 天，怎么选出最值得先做的一件事？",
+    "summary": "今天聊聊只有 3 天，怎么选出最值得先做的一件事。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 1–5 / 阶段验收",
+    "editorial_angle": "约束比较"
+  },
+  {
+    "date": "2027-01-05",
+    "type": "视频",
+    "time": "19:30",
+    "title": "做完后记下的问题，怎么让 AI 帮忙整理成修改清单？",
+    "summary": "今天聊聊做完后记下的问题，怎么让 AI 帮忙整理成修改清单。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 1–5 / 阶段验收",
     "editorial_angle": "约束比较"
   }
 ]
