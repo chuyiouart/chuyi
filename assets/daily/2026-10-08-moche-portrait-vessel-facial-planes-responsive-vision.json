@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-08",
+  "agent_prompt": "[480]\nOUART Daily Art responsive QA for date 2026-10-08, asset key 480. Inspect the actual attached 480px WebP as if displayed scaled to a narrow mobile viewport. Determine whether the artwork's main subject remains clear and visually readable and whether there are any compression or scaling artifacts (including blockiness, ringing, banding, severe blur, distortion, corruption, or broken rendering). This is an official museum collection image with no GPT-generated text, so OCR exact match is N/A. Return a concise plain-text verdict that explicitly includes: asset_key=480; vision_mobile_readable=true or false; artifacts=true or false; ocr_exact_match=N/A; and a factual visual observation. Do not infer quality from dimensions or metadata; judge only the opened pixels.\n\n[768]\nOUART Daily Art responsive QA for date 2026-10-08, asset key 768. Inspect the actual attached 768px WebP as if displayed scaled to a narrow mobile viewport. Determine whether the artwork's main subject remains clear and visually readable and whether there are any compression or scaling artifacts (including blockiness, ringing, banding, severe blur, distortion, corruption, or broken rendering). This is an official museum collection image with no GPT-generated text, so OCR exact match is N/A. Return a concise plain-text verdict that explicitly includes: asset_key=768; vision_mobile_readable=true or false; artifacts=true or false; ocr_exact_match=N/A; and a factual visual observation. Do not infer quality from dimensions or metadata; judge only the opened pixels.\n\n[1280]\nOUART Daily Art responsive QA for date 2026-10-08, asset key 1280. Inspect the actual attached 1280px WebP as if displayed scaled to a narrow mobile viewport. Determine whether the artwork's main subject remains clear and visually readable and whether there are any compression or scaling artifacts (including blockiness, ringing, banding, severe blur, distortion, corruption, or broken rendering). This is an official museum collection image with no GPT-generated text, so OCR exact match is N/A. Return a concise plain-text verdict that explicitly includes: asset_key=1280; vision_mobile_readable=true or false; artifacts=true or false; ocr_exact_match=N/A; and a factual visual observation. Do not infer quality from dimensions or metadata; judge only the opened pixels.\n\n[fallback]\nOUART Daily Art responsive QA for date 2026-10-08, asset key fallback. Inspect the actual attached fallback JPEG as if displayed scaled to a narrow mobile viewport. Determine whether the artwork's main subject remains clear and visually readable and whether there are any compression or scaling artifacts (including blockiness, ringing, banding, severe blur, distortion, corruption, or broken rendering). This is an official museum collection image with no GPT-generated text, so OCR exact match is N/A. Return a concise plain-text verdict that explicitly includes: asset_key=fallback; vision_mobile_readable=true or false; artifacts=true or false; ocr_exact_match=N/A; and a factual visual observation. Do not infer quality from dimensions or metadata; judge only the opened pixels.",
+  "agent_prompt_sha256": "e2474341eb534900b97be3ba851029e07bde48590e499f93f24590b885b70bc3",
+  "agent_output": "asset_key=480; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A; the full portrait vessel, facial features, patterned headdress, stirrup handle, and spout remain clearly distinguishable at narrow mobile scale, with smooth gradients and no visible blockiness, ringing, distortion, corruption, or severe blur.\nasset_key=768; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A; the frontal face, eye and nose modeling, geometric headdress pattern, side flaps, handle, and spout are crisp and readable, with no visible compression or scaling defects.\nasset_key=1280; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A; fine surface texture, the facial crack, painted marks, curved handle, and headdress motifs remain clear when scaled down, without banding, halos, broken rendering, or other artifacts.\nasset_key=fallback; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A; the JPEG cleanly renders the complete vessel and preserves readable facial planes, painted geometry, ceramic texture, and silhouette with no visible blockiness, ringing, severe blur, distortion, or corruption.",
+  "agent_output_sha256": "4b35907c22c7ace19e23e7e00244391104d2e360984f1014b73c0502e258a7bc",
+  "results": {
+    "480": {
+      "image_sha256": "f05d867ba6c759bb1ae88bdb6c915c53d882b66b529e75438f8205f734a32c39",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "9e5bd9346e7dfb0424523063fb731437d11d14df45494d3d1825c1da8b239cc0",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "b92157eb282bcc9e839713f9467f78d91eb34ad15087b983b93cf221cce4bd0f",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "3a1f2415db3c73792c91e18a7cb1b4bd1e07df02262ce7b623ee9bfdb2ea2c23",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}

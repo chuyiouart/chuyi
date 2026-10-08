@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 21542,
+      "format": "webp",
+      "height": 739,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-08-moche-portrait-vessel-facial-planes-480.webp",
+      "quality": 84,
+      "sha256": "f05d867ba6c759bb1ae88bdb6c915c53d882b66b529e75438f8205f734a32c39",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 50418,
+      "format": "webp",
+      "height": 1183,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-08-moche-portrait-vessel-facial-planes-768.webp",
+      "quality": 84,
+      "sha256": "9e5bd9346e7dfb0424523063fb731437d11d14df45494d3d1825c1da8b239cc0",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 141222,
+      "format": "webp",
+      "height": 1971,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-08-moche-portrait-vessel-facial-planes-1280.webp",
+      "quality": 84,
+      "sha256": "b92157eb282bcc9e839713f9467f78d91eb34ad15087b983b93cf221cce4bd0f",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 268823,
+    "format": "jpeg",
+    "height": 1971,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-08-moche-portrait-vessel-facial-planes-fallback.jpg",
+    "quality": 84,
+    "sha256": "3a1f2415db3c73792c91e18a7cb1b4bd1e07df02262ce7b623ee9bfdb2ea2c23",
+    "width": 1280
+  },
+  "original_bytes": 1165720,
+  "original_height": 3000,
+  "original_path": "assets/daily/2026-10-08-moche-portrait-vessel-facial-planes.jpg",
+  "original_sha256": "3e90f0d0bff19ad5e75be6b86672c4a435e676968b60e538b48c9f87d61d0570",
+  "original_url": "https://www.artic.edu/iiif/2/239e0072-de08-cb26-1484-4776fc27b0fb/full/3000,/0/default.jpg",
+  "original_width": 1948,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-08-moche-portrait-vessel-facial-planes-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-08-moche-portrait-vessel-facial-planes-480.webp?v=f05d867ba6c7 480w, 2026-10-08-moche-portrait-vessel-facial-planes-768.webp?v=9e5bd9346e7d 768w, 2026-10-08-moche-portrait-vessel-facial-planes-1280.webp?v=b92157eb282b 1280w"
+}
