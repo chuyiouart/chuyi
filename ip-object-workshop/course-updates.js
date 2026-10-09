@@ -1931,16 +1931,32 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-10-09",
     "type": "图文",
     "time": "11:30",
-    "title": "为什么还要用手机检查网页上的模型和图片？",
-    "summary": "今天聊聊为什么还要用手机检查网页上的模型和图片。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "手机上再走一遍，才知道作品页能不能用",
+    "summary": "电脑上正常的作品页，到了手机上还要检查图片裁切、模型手势、加载退路和行动入口，确认访客真的看得清、点得到、转得动。",
+    "cover": "./assets/updates/2026-10-09/01-website-hero-fallback.png?v=67bc7baa898f",
+    "published": true,
+    "url": "./updates/2026-10-09-check-models-and-images-on-a-real-phone.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 5 / 发布验收",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-10-09",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-10-09/01-website-hero-480.webp?v=eea575fcc1e6 480w, ./assets/updates/2026-10-09/01-website-hero-768.webp?v=836d412c1a67 768w, ./assets/updates/2026-10-09/01-website-hero-1280.webp?v=143df8387590 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-10-09/01-website-hero-fallback.png?v=67bc7baa898f",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-10-10",
