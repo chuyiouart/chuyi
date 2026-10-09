@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 13626,
+      "format": "webp",
+      "height": 123,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-09-tayuhenutmut-papyrus-registers-480.webp",
+      "quality": 84,
+      "sha256": "a1509956840437498f223052d63d6d72eb9ef5019ec9d0cb67d1c087873ca8cb",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 35056,
+      "format": "webp",
+      "height": 196,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-09-tayuhenutmut-papyrus-registers-768.webp",
+      "quality": 84,
+      "sha256": "f491f31182ae5d56701f8640506823c12a308a1daf56e599fd9736b1d8172d8e",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 101800,
+      "format": "webp",
+      "height": 327,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-09-tayuhenutmut-papyrus-registers-1280.webp",
+      "quality": 84,
+      "sha256": "30028f094c690d4bcd93c348a6623a09ac5e9409afd64e47d70df8b851e88995",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 130868,
+    "format": "jpeg",
+    "height": 327,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-09-tayuhenutmut-papyrus-registers-fallback.jpg",
+    "quality": 84,
+    "sha256": "9135c0ec027c27683e835548262c5ad42e3a19c52afa19fe2fc093519e20b311",
+    "width": 1280
+  },
+  "original_bytes": 1077902,
+  "original_height": 767,
+  "original_path": "assets/daily/2026-10-09-tayuhenutmut-papyrus-registers.jpg",
+  "original_sha256": "181bd943989e760fde416d03763f8a7d12ca739bfe84220af78fdf07a565628d",
+  "original_url": "https://www.artic.edu/iiif/2/6cb56687-a433-ae6b-ab07-af71dd755ec9/full/3000,/0/default.jpg",
+  "original_width": 3000,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-09-tayuhenutmut-papyrus-registers-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-09-tayuhenutmut-papyrus-registers-480.webp?v=a15099568404 480w, 2026-10-09-tayuhenutmut-papyrus-registers-768.webp?v=f491f31182ae 768w, 2026-10-09-tayuhenutmut-papyrus-registers-1280.webp?v=30028f094c69 1280w"
+}

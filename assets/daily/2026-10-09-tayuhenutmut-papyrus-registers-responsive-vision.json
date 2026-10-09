@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-09",
+  "agent_prompt": "请真实查看这张馆藏作品响应式资产，并以移动端宽度缩放阅读为标准进行视觉 QA。判断：1）主体（横向纸草画、人物与主要色块/线条）是否清楚可辨；2）有无明显压缩、缩放、色带、块状、重影、断裂或其他视觉伪影；3）是否适合网页移动端展示。不要根据文件尺寸或元数据推断，只依据当前打开的图像。请明确输出 MOBILE_READABLE=true/false 与 ARTIFACTS=true/false，并简述所见。馆藏图没有 GPT 生成文字，OCR exact 不作判断，记为 N/A。",
+  "agent_prompt_sha256": "7b07e2115d571d011931cad2e5c7e2b64627685cd072f77b1a454eb797eb7c17",
+  "agent_output": "480 WebP：MOBILE_READABLE=true；ARTIFACTS=false；OCR_EXACT_MATCH=N/A。实际打开后可见完整横向纸草卷，右端两个人物、神像/座台、青绿色与红色主要色块均可辨；中部墨书在此档位只能读作成排线迹而非逐字符阅读，这符合整件作品在移动端完整展示的尺度。未见明显块状、色带、重影、断裂或异常锐化，适合移动端概览。\n\n768 WebP：MOBILE_READABLE=true；ARTIFACTS=false；OCR_EXACT_MATCH=N/A。实际打开后，纸草纤维、分栏墨书、右端人物轮廓和蓝绿边框比 480 档更清楚，整卷主体与主要色块可稳定辨认。未见压缩块、缩放锯齿、重影、断裂或色带，适合移动端展示。\n\n1280 WebP：MOBILE_READABLE=true；ARTIFACTS=false；OCR_EXACT_MATCH=N/A。实际打开后，横卷结构、纸草接缝与纤维、三段密集墨书、右端神像和站立人物及其细部线条都清楚；画面边缘和原作缺损保持自然。未见明显压缩、缩放、块状、色带、重影或断裂伪影，适合移动端缩放展示。\n\nfallback JPEG：MOBILE_READABLE=true；ARTIFACTS=false；OCR_EXACT_MATCH=N/A。实际打开后，主体、人物、墨书栏与主要综合色块清楚，细节水平与 1280 WebP 一致，纸草自然纹理和原有破损没有被误判为编码伪影。未见明显 JPEG 块状、色带、重影、断裂或缩放异常，适合网页移动端回退展示。",
+  "agent_output_sha256": "580d6ac25630c414b00d2313b9303eaac6166a681f2df50a934d014f69e7e50e",
+  "results": {
+    "480": {
+      "image_sha256": "a1509956840437498f223052d63d6d72eb9ef5019ec9d0cb67d1c087873ca8cb",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "f491f31182ae5d56701f8640506823c12a308a1daf56e599fd9736b1d8172d8e",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "30028f094c690d4bcd93c348a6623a09ac5e9409afd64e47d70df8b851e88995",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "9135c0ec027c27683e835548262c5ad42e3a19c52afa19fe2fc093519e20b311",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
