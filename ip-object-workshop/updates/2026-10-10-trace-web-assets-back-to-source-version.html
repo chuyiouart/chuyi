@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="页面能打开还不够。今天从真实网页反向找到图片和模型的源文件，用版本记录与一个独特细节交叉核对，避免下一次更新拿错文件。" />
+  <title>网页上的作品，原始文件是哪一版 | IP 实物化实战营</title>
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="../course.css" />
+  <link rel="stylesheet" href="../update-article.css" />
+</head>
+<body class="update-page">
+  <header class="update-header">
+    <a href="../#updates">← 返回每日公开更新</a>
+    <a class="update-brand" href="../#course-intro">IP 实物化实战营</a>
+  </header>
+  <main class="update-article">
+    <header class="update-article-title">
+      <p class="update-meta"><time datetime="2026-10-10">2026-10-10</time> · 视频</p>
+      <h1>网页上的作品，原始文件是哪一版</h1>
+      <p class="update-lead">网页里已经放上图片和三维模型，过几天再回来修改时，常见麻烦不是页面打不开，而是不知道它们分别来自哪一版原始文件。文件名相近、导出次数多、手机和电脑还有缓存，页面看起来正常，也可能仍在展示旧模型、旧配色或旧尺寸。
+
+今天要解决的是网页作品怎样和原始文件对上。目标不是把所有文件堆进一个文件夹，而是让每个公开资源都能回到一个明确来源：哪份工作文件导出的、何时确认的、页面实际加载的是哪一份，以及换版后旧文件怎样退出。</p>
+    </header>
+    <figure class="update-hero">
+      <picture><source type="image/webp" srcset="../assets/updates/2026-10-10/01-website-hero-480.webp?v=7938f3e07c6d 480w, ../assets/updates/2026-10-10/01-website-hero-768.webp?v=0baab8124a78 768w, ../assets/updates/2026-10-10/01-website-hero-1280.webp?v=3071273b1f7b 1280w" sizes="(max-width: 680px) 100vw, 760px" /><img src="../assets/updates/2026-10-10/01-website-hero-fallback.png?v=006d3506ca2c" srcset="../assets/updates/2026-10-10/01-website-hero-480.webp?v=7938f3e07c6d 480w, ../assets/updates/2026-10-10/01-website-hero-768.webp?v=0baab8124a78 768w, ../assets/updates/2026-10-10/01-website-hero-1280.webp?v=3071273b1f7b 1280w" sizes="(max-width: 680px) 100vw, 760px" alt="网页上的作品，原始文件是哪一版" width="960" height="540" loading="eager" decoding="async" fetchpriority="high" /></picture>
+      <figcaption>课程流程示意图，不是往期学员案例。</figcaption>
+    </figure>
+    <section class="update-section"><h2>具体问题</h2><p>网页里已经放上图片和三维模型，过几天再回来修改时，常见麻烦不是页面打不开，而是不知道它们分别来自哪一版原始文件。文件名相近、导出次数多、手机和电脑还有缓存，页面看起来正常，也可能仍在展示旧模型、旧配色或旧尺寸。</p><p>今天要解决的是网页作品怎样和原始文件对上。目标不是把所有文件堆进一个文件夹，而是让每个公开资源都能回到一个明确来源：哪份工作文件导出的、何时确认的、页面实际加载的是哪一份，以及换版后旧文件怎样退出。</p></section><section class="update-section"><h2>核心判断</h2><p>判断是否同版，要同时对照内容特征和文件记录。角色姿势、配件、颜色、尺寸与完成状态先能互相对应，再核对文件名、版本号、导出时间和页面实际地址。只看“最新修改时间”不够，因为复制、下载或重新导出都可能改变时间。</p><p>可靠的做法是从网页反向走回源文件：打开公开页面，记下实际加载的图片和模型，再去项目目录找到对应导出件与工作文件，最后用一个看得见的细节复核。路径、记录和画面三者一致，才算这条关系清楚。</p></section><section class="update-section"><h2>步骤或标准</h2><p>从公开页面反向找到源文件，再用资源记录和一个独特细节交叉核对。</p><ul><li>选定当天要核对的一个作品页，列出首图、图集、三维展示和正文里提到的版本特征；先停止继续改名或重复导出，避免检查过程中又出现新版本。</li><li>为当前工作文件和导出件写清项目名、用途与版本号，并记录确认日期。图片、GLB 和打印文件分开管理，不能因为都来自同一角色就共用一个含糊的“最终版”名称。</li><li>在浏览器里打开真实页面，查看它实际加载的资源地址；清除缓存或换一个无缓存窗口再开一次，避免本机旧缓存把已经替换的文件继续显示出来。</li><li>把页面画面与源文件逐项对照：检查角色姿势、配件、配色、尺寸说明和完成状态，再转动三维模型查看背面或底部的一个独特细节。</li><li>做一次受控换版：只替换一个已经确认的资源，重新打开页面，确认新细节出现、旧资源不再被调用，同时检查其他图片、模型和链接没有跟着错位。</li><li>保存当前页面资源与原始文件的对应清单。以后更新时从这份清单继续，旧版移到清楚的归档位置，不删除仍需追溯的来源，也不把未确认文件推到公开页面。</li></ul></section><section class="update-section"><h2>常见错误</h2><p>版本关系最容易坏在看似省事的命名、缓存和局部替换上。</p><ul><li>所有文件都叫“最终版”“最终版2”。后果是下一次更新时无法判断哪份用于网页、哪份用于打印，也容易把较旧文件覆盖成当前版本。</li><li>只看文件的修改时间，不看画面与模型细节。后果是复制或重新导出后的时间会误导判断，内容不一致仍可能被当成同一版。</li><li>本机刷新后看到新图就算完成。后果是浏览器缓存可能掩盖真实资源地址，其他设备仍可能加载旧文件。</li><li>图片换了新配色，三维模型和正文说明没有一起核对。后果是同一个页面同时出现多个版本，访客无法判断作品现在是什么状态。</li><li>为了整理目录直接删掉旧源文件。后果是以后发现页面引用错误时没有办法回查，也无法说明某次公开内容从哪里来。</li></ul></section><section class="update-section"><h2>与短期课程的关系</h2><p>这个主题对应第五阶段，也就是独立站、三维展示与持续发布。做完后要留下当前页面资源与原始文件的对应清单，并用真实页面、无缓存打开和一个独特细节完成复核。图片、模型、说明与来源一致后，才进入下一次公开更新。</p><p>3 天路线可以围绕一个现有作品页，完成当前资源盘点、版本命名和一次换版检查；4–5 天可以继续整理图片、展示模型、打印文件与归档关系，并检查桌面和手机。正式部署、长期维护和大量历史文件清理仍按项目范围另行确认。</p></section><section class="update-section"><h2>事实 / 案例 / 完成度边界</h2><p>本文依据第五阶段的网页发布与版本检查方法编写。当天规划用原创软胶人形“回环接力员”和彩色圆环地面，把原始体块、三种版本状态、分件接口和页面交接连成四步。四张图都是课程方向示意图，不是真实网站案例、学员作品、真实课堂、已经量产的软胶玩具或商业项目；真实案例必须另有来源、许可和公开记录。</p><p>3–5 天能整理到哪一步，取决于现有目录是否清楚、历史版本数量、网页权限和资源复杂度。通常可围绕一个页面建立可继续使用的对应关系并完成一次换版复核；大规模资产迁移、正式部署、软胶开模量产和长期运维另行评估。课程不承诺自动找回缺失源文件，也不承诺流量、订单、展览或销售结果。</p></section><section class="update-section"><h2>报名入口</h2><p>如果你已有 IP / 角色资产，可以提交现有作品页、工作文件、导出图片或模型、一个最容易混淆的版本问题和可到课时间。我们会先看资料之间能否对应，再从合适阶段安排青岛跟班。</p><p>如果你只有想法、草图或初步设定，也可以提交角色方向、准备制作的内容、一个优先目标和可到课时间。我们会先建立一套小而清楚的命名与版本关系，再安排青岛 3–5 天短训。公开报名地址：https://wj.qq.com/s2/27296919/9499/</p></section>
+    <div class="update-gallery"><picture><source type="image/webp" srcset="../assets/updates/2026-10-10/02-core-explanation-480.webp?v=66363ce974da 480w, ../assets/updates/2026-10-10/02-core-explanation-768.webp?v=007e5da33bd5 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-10-10/02-core-explanation-fallback.png?v=a2c7611cdd61" srcset="../assets/updates/2026-10-10/02-core-explanation-480.webp?v=66363ce974da 480w, ../assets/updates/2026-10-10/02-core-explanation-768.webp?v=007e5da33bd5 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="网页上的作品，原始文件是哪一版 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-10-10/03-real-application-480.webp?v=0ea32384c81e 480w, ../assets/updates/2026-10-10/03-real-application-768.webp?v=8606db922c53 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-10-10/03-real-application-fallback.png?v=eb98010a72d1" srcset="../assets/updates/2026-10-10/03-real-application-480.webp?v=0ea32384c81e 480w, ../assets/updates/2026-10-10/03-real-application-768.webp?v=8606db922c53 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="网页上的作品，原始文件是哪一版 配图" width="768" height="768" loading="lazy" decoding="async" /></picture></div>
+    <aside class="update-boundary">
+      <strong>课程边界</strong>
+      <p>3–5 天短训按起点确认范围：3 天聚焦一个优先目标，4–5 天串联首版项目流程；不承诺商业级量产、人人进入正式展览或必然产生销售。</p>
+    </aside>
+    <section class="update-cta">
+      <p>长期招生｜青岛｜3–5 天短训｜评估后预约跟班｜每班最多 10 人。<a href="../#enrollment">查看当前学习方案与费用</a></p>
+      <a href="https://wj.qq.com/s2/27296919/9499/" target="_blank" rel="noopener">填写报名资料 →</a>
+    </section>
+  </main>
+</body>
+</html>
