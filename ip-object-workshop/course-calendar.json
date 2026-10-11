@@ -1996,7 +1996,7 @@
     "time": "20:00",
     "title": "作品说明要让别人知道怎么用",
     "summary": "只写作品名和创作想法还不够。用途、完整尺寸、真实材料和维护方法要来自同一版记录，并让第一次接触作品的人能够照着执行。",
-    "cover": "",
+    "cover": "./assets/updates/2026-10-11/01-website-hero-fallback.png?v=91837d886369",
     "published": true,
     "url": "./updates/2026-10-11-write-use-size-material-and-care-notes.html",
     "status": "published",
@@ -2005,14 +2005,21 @@
     "editorial_angle": "入门判断",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "source_id": "workshop:2026-10-11",
-    "media_status": "none",
-    "passedRoles": [],
-    "pendingRoles": [
+    "media_status": "complete",
+    "passedRoles": [
       "website_hero",
       "core_explanation",
       "real_application",
       "social_promotion"
-    ]
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-10-11/01-website-hero-480.webp?v=aa137f374916 480w, ./assets/updates/2026-10-11/01-website-hero-768.webp?v=120c479b4f62 768w, ./assets/updates/2026-10-11/01-website-hero-1280.webp?v=c423f5b6f1ef 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-10-11/01-website-hero-fallback.png?v=91837d886369",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-10-12",
