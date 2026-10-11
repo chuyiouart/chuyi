@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-11",
+  "agent_prompt": "Asset 480: Inspect this exact responsive asset visually at a mobile-style displayed size. Determine whether the Crazy Quilt remains clearly readable as the same artwork, with the central irregular patchwork, gold-brown border, lace edge, color contrasts, embroidered seams and major motifs legible enough for mobile viewing. Check for visible compression artifacts, ringing, blockiness, banding, unintended blur, stretching, clipping, or aspect-ratio distortion. This is an official collection image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Return a concise factual assessment and explicit values for vision_mobile_readable and artifacts.\n\nAsset 768: Inspect this exact responsive asset visually at a mobile-style displayed size. Determine whether the Crazy Quilt remains clearly readable as the same artwork, with the central irregular patchwork, gold-brown border, lace edge, color contrasts, embroidered seams and major motifs legible enough for mobile viewing. Check for visible compression artifacts, ringing, blockiness, banding, unintended blur, stretching, clipping, or aspect-ratio distortion. This is an official collection image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Return a concise factual assessment and explicit values for vision_mobile_readable and artifacts.\n\nAsset 1280: Inspect this exact responsive asset visually at a mobile-style displayed size. Determine whether the Crazy Quilt remains clearly readable as the same artwork, with the central irregular patchwork, gold-brown border, lace edge, color contrasts, embroidered seams and major motifs legible enough for mobile viewing. Check for visible compression artifacts, ringing, blockiness, banding, unintended blur, stretching, clipping, or aspect-ratio distortion. This is an official collection image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Return a concise factual assessment and explicit values for vision_mobile_readable and artifacts.\n\nAsset fallback: Inspect this exact responsive asset visually at a mobile-style displayed size. Determine whether the Crazy Quilt remains clearly readable as the same artwork, with the central irregular patchwork, gold-brown border, lace edge, color contrasts, embroidered seams and major motifs legible enough for mobile viewing. Check for visible compression artifacts, ringing, blockiness, banding, unintended blur, stretching, clipping, or aspect-ratio distortion. This is an official collection image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Return a concise factual assessment and explicit values for vision_mobile_readable and artifacts.",
+  "agent_prompt_sha256": "82a81ee6c1a9069da792fae4b35383342c7ee4d70bcd2b948c60da5f4beb9eca",
+  "agent_output": "Asset 480: The complete quilt is visible at a mobile-style size. The irregular central patchwork, broad gold-brown border, pale lace edge, strong light/dark and warm/cool contrasts, embroidered seam network, and several larger floral and butterfly-like motifs remain distinguishable. Very fine embroidery is naturally reduced at this size, but the work's identity and composition are clear. No visible ringing, blockiness, banding, unintended blur, stretching, clipping, or aspect-ratio distortion was observed. ocr_exact_match=N/A; vision_mobile_readable=true; artifacts=false.\n\nAsset 768: The complete quilt remains clearly readable. Individual irregular patches, decorative seam stitches, the gold-brown velvet-like border, pale lace perimeter, black motif-bearing pieces, and bright pink, blue, cream, red, and yellow accents are all distinct. The image is sharp and proportionally correct, with no visible compression artifacts, ringing, blockiness, banding, unintended blur, stretching, clipping, or aspect-ratio distortion. ocr_exact_match=N/A; vision_mobile_readable=true; artifacts=false.\n\nAsset 1280: The complete artwork and its layered structure are clearly readable. Patch boundaries, varied embroidery stitches, floral motifs, striped scraps, central dark fields, gold-brown framing band, and lace edge retain clear detail and color separation. No visible compression artifacts, ringing, blockiness, banding, unintended blur, stretching, clipping, or aspect-ratio distortion was observed. ocr_exact_match=N/A; vision_mobile_readable=true; artifacts=false.\n\nAsset fallback: The complete quilt is clear and matches the responsive WebP views. The irregular multicolor patchwork, embroidered joins, larger botanical motifs, broad gold-brown border, and outer lace are all legible at mobile-style scaling. Detail, proportions, and color transitions appear intact; no visible compression artifacts, ringing, blockiness, banding, unintended blur, stretching, clipping, or aspect-ratio distortion was observed. ocr_exact_match=N/A; vision_mobile_readable=true; artifacts=false.",
+  "agent_output_sha256": "0c3f9b1ea8752880531c41249f2e91d47c99be42838e15b16f2d19a3b982dfb1",
+  "results": {
+    "480": {
+      "image_sha256": "d9301523a31e1ba916568c8450052a39e584b661083816ea808964e2a3164b4f",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "5ff3c6ddaa3f62d2a2fd2b5a1dbe4e8e444601885ea1e14f4524c20295b542d6",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "e49f0e453652d4b4b91ff11af510c370cf7816552dc4e658331333ded322a233",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "aec22f851f12de480d2f83ebbdf7cb33a00137ab397ec9b1f57013f24d1f912f",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}

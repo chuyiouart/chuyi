@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 91168,
+      "format": "webp",
+      "height": 471,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-11-joiner-crazy-quilt-color-paths-480.webp",
+      "quality": 84,
+      "sha256": "d9301523a31e1ba916568c8450052a39e584b661083816ea808964e2a3164b4f",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 203976,
+      "format": "webp",
+      "height": 753,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-11-joiner-crazy-quilt-color-paths-768.webp",
+      "quality": 84,
+      "sha256": "5ff3c6ddaa3f62d2a2fd2b5a1dbe4e8e444601885ea1e14f4524c20295b542d6",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 463824,
+      "format": "webp",
+      "height": 1256,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-11-joiner-crazy-quilt-color-paths-1280.webp",
+      "quality": 84,
+      "sha256": "e49f0e453652d4b4b91ff11af510c370cf7816552dc4e658331333ded322a233",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 673435,
+    "format": "jpeg",
+    "height": 1256,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-11-joiner-crazy-quilt-color-paths-fallback.jpg",
+    "quality": 84,
+    "sha256": "aec22f851f12de480d2f83ebbdf7cb33a00137ab397ec9b1f57013f24d1f912f",
+    "width": 1280
+  },
+  "original_bytes": 4627264,
+  "original_height": 3335,
+  "original_path": "assets/daily/2026-10-11-joiner-crazy-quilt-color-paths.jpg",
+  "original_sha256": "70f715dd4e309f092236302c810c069d3b94d35ab3a26715d6e15b594b1edb5d",
+  "original_url": "https://openaccess-cdn.clevelandart.org/2000.63/2000.63_print.jpg",
+  "original_width": 3400,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-11-joiner-crazy-quilt-color-paths-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-11-joiner-crazy-quilt-color-paths-480.webp?v=d9301523a31e 480w, 2026-10-11-joiner-crazy-quilt-color-paths-768.webp?v=5ff3c6ddaa3f 768w, 2026-10-11-joiner-crazy-quilt-color-paths-1280.webp?v=e49f0e453652 1280w"
+}
