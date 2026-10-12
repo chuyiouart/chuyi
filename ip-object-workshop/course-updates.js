@@ -2025,16 +2025,32 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-10-12",
     "type": "图文",
     "time": "11:30",
-    "title": "只有 3 天，怎么选出最值得先做的一件事？",
-    "summary": "今天聊聊只有 3 天，怎么选出最值得先做的一件事。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "3 天只做一件，怎么选",
+    "summary": "把现有资料、最大的未知风险、3 天能留下的结果放在一起比较，选出做完后最能决定下一步的一件事。",
+    "cover": "./assets/updates/2026-10-12/01-website-hero-fallback.png?v=e5082668f9d2",
+    "published": true,
+    "url": "./updates/2026-10-12-choose-one-priority-for-three-days.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 1–5 / 阶段验收",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-10-12",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-10-12/01-website-hero-480.webp?v=b8e22dd23ab4 480w, ./assets/updates/2026-10-12/01-website-hero-768.webp?v=5cf8f655e0f4 768w, ./assets/updates/2026-10-12/01-website-hero-1280.webp?v=1d7465d79a17 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-10-12/01-website-hero-fallback.png?v=e5082668f9d2",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-10-13",
