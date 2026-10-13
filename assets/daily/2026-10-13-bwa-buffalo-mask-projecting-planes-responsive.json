@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 29014,
+      "format": "webp",
+      "height": 720,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-13-bwa-buffalo-mask-projecting-planes-480.webp",
+      "quality": 84,
+      "sha256": "8fad9920a04d8e04020b288c61b739d77d2ff21915c7ed8bae7012be5de3828e",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 61978,
+      "format": "webp",
+      "height": 1152,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-13-bwa-buffalo-mask-projecting-planes-768.webp",
+      "quality": 84,
+      "sha256": "b2b6f757738249af6d0b4923224fad84853d13427056548e00099b5518113d5d",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 139868,
+      "format": "webp",
+      "height": 1920,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-13-bwa-buffalo-mask-projecting-planes-1280.webp",
+      "quality": 84,
+      "sha256": "5edec603934a21757ab13d882d75c5a66cef76072ac38c646404cfd9ee539945",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 266689,
+    "format": "jpeg",
+    "height": 1920,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-13-bwa-buffalo-mask-projecting-planes-fallback.jpg",
+    "quality": 84,
+    "sha256": "b5220955854ced8e6a1001f12a88f10492fdf680bd536c3d2419d062bb63287b",
+    "width": 1280
+  },
+  "original_bytes": 957246,
+  "original_height": 3400,
+  "original_path": "assets/daily/2026-10-13-bwa-buffalo-mask-projecting-planes.jpg",
+  "original_sha256": "67be9c433f7085e6e45237cda1e586e1e92044dd00cfaa021110baf863c533e5",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1969.2/1969.2_print.jpg",
+  "original_width": 2267,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-13-bwa-buffalo-mask-projecting-planes-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-13-bwa-buffalo-mask-projecting-planes-480.webp?v=8fad9920a04d 480w, 2026-10-13-bwa-buffalo-mask-projecting-planes-768.webp?v=b2b6f7577382 768w, 2026-10-13-bwa-buffalo-mask-projecting-planes-1280.webp?v=5edec603934a 1280w"
+}
