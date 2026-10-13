@@ -2056,16 +2056,32 @@
     "date": "2026-10-13",
     "type": "视频",
     "time": "19:30",
-    "title": "做完后记下的问题，怎么让 AI 帮忙整理成修改清单？",
-    "summary": "今天聊聊做完后记下的问题，怎么让 AI 帮忙整理成修改清单。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "AI 整理修改清单，先补齐这些记录",
+    "summary": "问题先写清对象、实际表现、依据、影响和验收方式，再让 AI 归类去重；最后仍由人核对优先级和修改结果。",
+    "cover": "./assets/updates/2026-10-13/01-website-hero-fallback.png?v=733821d2ea23",
+    "published": true,
+    "url": "./updates/2026-10-13-ai-organize-revision-list-from-evidence.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 1–5 / 阶段验收",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-10-13",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-10-13/01-website-hero-480.webp?v=ab34ab70efef 480w, ./assets/updates/2026-10-13/01-website-hero-768.webp?v=7c2b9dfe1322 768w, ./assets/updates/2026-10-13/01-website-hero-1280.webp?v=5fd0d28bc4aa 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-10-13/01-website-hero-fallback.png?v=733821d2ea23",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-10-14",
