@@ -1,0 +1,34 @@
+{
+  "agent_output": "[480]\nasset=480; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A. The complete six-panel screen is visible at mobile scale; the red cockscomb forms, central and right maize stalks, green leaves, pale tassels, gold ground, panel folds, and outer border remain clearly distinguishable. No blockiness, ringing, banding, severe blur, broken geometry, or corruption is visible.\n\n[768]\nasset=768; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A. The entire screen and its six folded panels remain clear; red cockscombs on the left, the taller red flower near center-left, clustered maize leaves and ears in the center and right, pale tassels, gold ground, and patterned border are readable. Edges and tonal transitions show no visible compression or scaling artifacts.\n\n[1280]\nasset=1280; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A. The artwork is sharply readable when scaled for mobile: individual cockscomb silhouettes, overlapping maize leaves, ears and tassels, gold-leaf texture, panel seams, and decorative border are all coherent. There is no visible blockiness, ringing, banding, severe blur, malformed structure, or corruption.\n\n[fallback]\nasset=fallback; vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A. The fallback preserves the complete six-panel composition and clear separation of red cockscombs, green-brown maize plants, fine pale tassels, gold ground, folds, and border at mobile scale. Detail and gradients remain natural with no visible compression blocks, halos, banding, severe blur, broken geometry, or corruption.",
+  "agent_output_sha256": "5f0a388623f910bda7ab3a4264e90aed984555cdd278dff24d2069ca0524bd7d",
+  "agent_prompt": "[480]\nOUART Daily Art responsive visual QA for asset 480. Inspect the actual attached image as it would appear scaled on a mobile screen. Determine whether the artwork’s main subject remains clear and readable and whether there are any visible compression or scaling artifacts (blockiness, ringing, banding, severe blur, broken geometry, or corruption). This is an official museum collection image with no GPT-generated text, so OCR exact match is N/A. Return a concise but complete assessment explicitly stating: asset=480; vision_mobile_readable=true or false; artifacts=true or false; ocr_exact_match=N/A; and the visual evidence supporting the decision.\n\n[768]\nOUART Daily Art responsive visual QA for asset 768. Inspect the actual attached image as it would appear scaled on a mobile screen. Determine whether the artwork’s main subject remains clear and readable and whether there are any visible compression or scaling artifacts (blockiness, ringing, banding, severe blur, broken geometry, or corruption). This is an official museum collection image with no GPT-generated text, so OCR exact match is N/A. Return a concise but complete assessment explicitly stating: asset=768; vision_mobile_readable=true or false; artifacts=true or false; ocr_exact_match=N/A; and the visual evidence supporting the decision.\n\n[1280]\nOUART Daily Art responsive visual QA for asset 1280. Inspect the actual attached image as it would appear scaled on a mobile screen. Determine whether the artwork’s main subject remains clear and readable and whether there are any visible compression or scaling artifacts (blockiness, ringing, banding, severe blur, broken geometry, or corruption). This is an official museum collection image with no GPT-generated text, so OCR exact match is N/A. Return a concise but complete assessment explicitly stating: asset=1280; vision_mobile_readable=true or false; artifacts=true or false; ocr_exact_match=N/A; and the visual evidence supporting the decision.\n\n[fallback]\nOUART Daily Art responsive visual QA for asset fallback. Inspect the actual attached image as it would appear scaled on a mobile screen. Determine whether the artwork’s main subject remains clear and readable and whether there are any visible compression or scaling artifacts (blockiness, ringing, banding, severe blur, broken geometry, or corruption). This is an official museum collection image with no GPT-generated text, so OCR exact match is N/A. Return a concise but complete assessment explicitly stating: asset=fallback; vision_mobile_readable=true or false; artifacts=true or false; ocr_exact_match=N/A; and the visual evidence supporting the decision.",
+  "agent_prompt_sha256": "04074a062338322948f70a24c28d3af656120b1fcc04d80e76b3c35b18b55cfa",
+  "date": "2026-10-14",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "eea7ef5bf911fa92ab98733c6c32221cc1c170ac211f38e9884065a8073c8aa6",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "4e6920ac264fa7e05527e5cff9d94f438441fbd503c1748859e278263e4e3490",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "a9833f082b167cda6ce026fb48ce9bbb0c34b64c9d87c2987acf90c70cd155ad",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "ef9dd814d5255cc64440e4718ec6d39f29689fc082926cfa10a5c329f3ea2a48",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}
