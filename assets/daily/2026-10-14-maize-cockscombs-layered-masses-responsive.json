@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 20892,
+      "format": "webp",
+      "height": 269,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-14-maize-cockscombs-layered-masses-480.webp",
+      "quality": 84,
+      "sha256": "4e6920ac264fa7e05527e5cff9d94f438441fbd503c1748859e278263e4e3490",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 46288,
+      "format": "webp",
+      "height": 430,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-14-maize-cockscombs-layered-masses-768.webp",
+      "quality": 84,
+      "sha256": "a9833f082b167cda6ce026fb48ce9bbb0c34b64c9d87c2987acf90c70cd155ad",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 120362,
+      "format": "webp",
+      "height": 717,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-14-maize-cockscombs-layered-masses-1280.webp",
+      "quality": 84,
+      "sha256": "eea7ef5bf911fa92ab98733c6c32221cc1c170ac211f38e9884065a8073c8aa6",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 204235,
+    "format": "jpeg",
+    "height": 717,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-14-maize-cockscombs-layered-masses-fallback.jpg",
+    "quality": 84,
+    "sha256": "ef9dd814d5255cc64440e4718ec6d39f29689fc082926cfa10a5c329f3ea2a48",
+    "width": 1280
+  },
+  "original_bytes": 1106967,
+  "original_height": 1680,
+  "original_path": "assets/daily/2026-10-14-maize-cockscombs-layered-masses.jpg",
+  "original_sha256": "76964d7c539c43af047777ccdf453612cd37726167bc138bcc06101f59e3612a",
+  "original_url": "https://www.artic.edu/iiif/2/1914a6cb-8ec7-064e-4c99-de41637f889c/full/3000,/0/default.jpg",
+  "original_width": 3000,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-14-maize-cockscombs-layered-masses-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-14-maize-cockscombs-layered-masses-480.webp?v=4e6920ac264f 480w, 2026-10-14-maize-cockscombs-layered-masses-768.webp?v=a9833f082b16 768w, 2026-10-14-maize-cockscombs-layered-masses-1280.webp?v=eea7ef5bf911 1280w"
+}
