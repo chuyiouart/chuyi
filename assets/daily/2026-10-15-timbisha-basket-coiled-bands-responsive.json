@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 27284,
+      "format": "webp",
+      "height": 380,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-15-timbisha-basket-coiled-bands-480.webp",
+      "quality": 84,
+      "sha256": "45f1da5923b1cd4976e6ee1a47b329f7e87f6dd3565c2a9c5353c5dcf31b07ce",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 72162,
+      "format": "webp",
+      "height": 609,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-15-timbisha-basket-coiled-bands-768.webp",
+      "quality": 84,
+      "sha256": "d9b01db626abb6792c3262b519b603046b6fd83cbd687ee68f0235d84540cbb7",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 184884,
+      "format": "webp",
+      "height": 1015,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-15-timbisha-basket-coiled-bands-1280.webp",
+      "quality": 84,
+      "sha256": "1f7f10935a81064d18f569e4ab51e56eb34b70e979be4d27a8b731e5fe74b9ab",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 265563,
+    "format": "jpeg",
+    "height": 1015,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-15-timbisha-basket-coiled-bands-fallback.jpg",
+    "quality": 84,
+    "sha256": "0116fb7d5a8e87cea7afcac7934cd5f8364fd90245d56c7c578fbaac22fbbaea",
+    "width": 1280
+  },
+  "original_bytes": 6485947,
+  "original_height": 2695,
+  "original_path": "assets/daily/2026-10-15-timbisha-basket-coiled-bands.jpg",
+  "original_sha256": "c7e36d3c042c82a7360b30c2cf57dfc519a492bf3c57186e90a8a0b1e6259cb3",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1917.466/1917.466_print.jpg",
+  "original_width": 3400,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-15-timbisha-basket-coiled-bands-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-15-timbisha-basket-coiled-bands-480.webp?v=45f1da5923b1 480w, 2026-10-15-timbisha-basket-coiled-bands-768.webp?v=d9b01db626ab 768w, 2026-10-15-timbisha-basket-coiled-bands-1280.webp?v=1f7f10935a81 1280w"
+}

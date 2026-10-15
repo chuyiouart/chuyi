@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-15",
+  "agent_prompt": "[480]\nAsset: 480 WebP. Inspect this exact museum artwork derivative as it would appear scaled on a mobile screen. Report whether the main basket remains clearly readable, whether compression or scaling introduces visible artifacts, and briefly describe the visible composition. Do not infer from metadata; judge the opened pixels. End with exactly: vision_mobile_readable=true|false; artifacts=true|false\n\n[768]\nAsset: 768 WebP. Inspect this exact museum artwork derivative as it would appear scaled on a mobile screen. Report whether the main basket remains clearly readable, whether compression or scaling introduces visible artifacts, and briefly describe the visible composition. Do not infer from metadata; judge the opened pixels. End with exactly: vision_mobile_readable=true|false; artifacts=true|false\n\n[1280]\nAsset: 1280 WebP. Inspect this exact museum artwork derivative as it would appear scaled on a mobile screen. Report whether the main basket remains clearly readable, whether compression or scaling introduces visible artifacts, and briefly describe the visible composition. Do not infer from metadata; judge the opened pixels. End with exactly: vision_mobile_readable=true|false; artifacts=true|false\n\n[fallback]\nAsset: fallback JPEG. Inspect this exact museum artwork fallback as it would appear scaled on a mobile screen. Report whether the main basket remains clearly readable, whether compression or scaling introduces visible artifacts, and briefly describe the visible composition. Do not infer from metadata; judge the opened pixels. End with exactly: vision_mobile_readable=true|false; artifacts=true|false",
+  "agent_prompt_sha256": "237563fef1903a56d9b67c1bd4bb8d946085f30b1fc7beac43f194853ab21d78",
+  "agent_output": "[480]\nThe basket remains clearly readable at mobile scale: its wide rounded body, narrowed neck, flared rim, horizontal coils, and dark brown geometric bands are all distinct. Fine fiber texture is naturally reduced at this size, but edges and motifs remain coherent, with no visible blocking, ringing, banding, or scaling distortion. The composition shows a tan jar-shaped woven basket centered against a neutral gray studio background with a soft grounding shadow.\nvision_mobile_readable=true; artifacts=false\n\n[768]\nThe main basket is clear and legible on a mobile display. The alternating dark motifs, stepped shoulder band, rim wrapping, and individual coiled rows retain good separation. I see no visible compression breakup, halos, jagged scaling, or smeared pattern edges. The centered tan basket fills most of the frame against a smooth gray background.\nvision_mobile_readable=true; artifacts=false\n\n[1280]\nThe artwork remains highly readable when scaled to mobile size. The vessel silhouette, low rounded shoulder, short neck, outward rim, coiled fiber texture, and repeated dark brown vertical and angular motifs are sharply resolved. Tonal transitions in the gray background and the basket shadow are smooth, with no visible compression or resize artifacts.\nvision_mobile_readable=true; artifacts=false\n\n[fallback]\nThe fallback clearly presents the same centered woven basket at mobile scale. Its tan coils, dark geometric pattern bands, flared rim, and rounded profile remain distinct and natural. There are no visible JPEG blocks, ringing, color breakup, or scaling artifacts; the neutral gray background and soft shadow also remain smooth.\nvision_mobile_readable=true; artifacts=false",
+  "agent_output_sha256": "c73c20a0b60095745a80953215cd97fd77cb454c1062817cb0323c3b1356b5b9",
+  "results": {
+    "480": {
+      "image_sha256": "45f1da5923b1cd4976e6ee1a47b329f7e87f6dd3565c2a9c5353c5dcf31b07ce",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "d9b01db626abb6792c3262b519b603046b6fd83cbd687ee68f0235d84540cbb7",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "1f7f10935a81064d18f569e4ab51e56eb34b70e979be4d27a8b731e5fe74b9ab",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "0116fb7d5a8e87cea7afcac7934cd5f8364fd90245d56c7c578fbaac22fbbaea",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
