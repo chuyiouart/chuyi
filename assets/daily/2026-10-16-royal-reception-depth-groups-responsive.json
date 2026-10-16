@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 87970,
+      "format": "webp",
+      "height": 694,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-16-royal-reception-depth-groups-480.webp",
+      "quality": 84,
+      "sha256": "d05cf022a2bb8a649663048f9d5c9c1a36eef09cb290fb3e85510ae343c8106c",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 201698,
+      "format": "webp",
+      "height": 1111,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-16-royal-reception-depth-groups-768.webp",
+      "quality": 84,
+      "sha256": "d1b8867e0c1cd58a3b8dea2971daa437e2bfb729baf0f56f16831033352d5ed5",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 483544,
+      "format": "webp",
+      "height": 1851,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-16-royal-reception-depth-groups-1280.webp",
+      "quality": 84,
+      "sha256": "9c39c231d5923b11a72bb78490081551f017963f508fd8cc0c27513a60e28b9b",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 714885,
+    "format": "jpeg",
+    "height": 1851,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-16-royal-reception-depth-groups-fallback.jpg",
+    "quality": 84,
+    "sha256": "c08c04826c9d838132171bc47819631557c7b7821aab205a23dd9858430ee684",
+    "width": 1280
+  },
+  "original_bytes": 3232772,
+  "original_height": 3400,
+  "original_path": "assets/daily/2026-10-16-royal-reception-depth-groups.jpg",
+  "original_sha256": "0f46c70c6ae69793d8775c0f10f4a6a778405020895130b4c86e73c9ce755196",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1956.10.a/1956.10.a_print.jpg",
+  "original_width": 2351,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-16-royal-reception-depth-groups-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-16-royal-reception-depth-groups-480.webp?v=d05cf022a2bb 480w, 2026-10-16-royal-reception-depth-groups-768.webp?v=d1b8867e0c1c 768w, 2026-10-16-royal-reception-depth-groups-1280.webp?v=9c39c231d592 1280w"
+}
