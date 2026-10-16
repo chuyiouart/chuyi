@@ -2149,16 +2149,33 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-10-16",
     "type": "图文",
     "time": "11:30",
-    "title": "已经有模型了，从哪一阶段跟着学比较合适？",
-    "summary": "今天聊聊已经有模型了，从哪一阶段跟着学比较合适。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "有模型了，先判断从哪一步接上",
+    "summary": "把来源、真实文件、结构、样件和展示资料逐项对照，找到最早一个还没通过的关键条件，再决定从建模、打印还是发布阶段继续。",
+    "cover": "./assets/updates/2026-10-16/02-core-explanation-fallback.png?v=a64d5fb03a28",
+    "published": true,
+    "url": "./updates/2026-10-16-choose-entry-stage-for-existing-model.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 1–5 / 阶段验收",
     "editorial_angle": "入门判断",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-10-16",
+    "media_status": "partial",
+    "passedRoles": [
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [
+      "website_hero"
+    ],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-10-16/02-core-explanation-480.webp?v=24aa892b922b 480w, ./assets/updates/2026-10-16/02-core-explanation-768.webp?v=c1e2ba6059ef 768w",
+      "sizes": "(max-width: 680px) 100vw, 50vw",
+      "fallback": "./assets/updates/2026-10-16/02-core-explanation-fallback.png?v=a64d5fb03a28",
+      "width": 768,
+      "height": 768
+    }
   },
   {
     "date": "2026-10-17",
