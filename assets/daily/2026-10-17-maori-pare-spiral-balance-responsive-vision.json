@@ -1,0 +1,34 @@
+{
+  "agent_output": "[480]\nThe complete lintel remains clearly legible at this smallest derivative: the frontal central figure, both outward-facing flanking guardians, the major paired spirals, openwork, and dark-brown-to-highlight tonal separation are all distinguishable at mobile display scale. Very fine incised surface lines are naturally reduced, but the reduction does not obscure the subject or structural relationships. I see no visible blocking, ringing, banding, smearing, resizing distortion, or objectionable compression artifacts.\nvision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A.\n\n[768]\nThe central figure and both profile guardian figures are sharply identifiable, and the nested spiral carving, open negative spaces, border grip, and tonal modeling remain clear when scaled for mobile viewing. Curved edges and fine carved lines are clean without visible halos or breakup. I see no visible blocking, ringing, banding, smearing, resizing distortion, or objectionable compression artifacts.\nvision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A.\n\n[1280]\nThe artwork is highly readable: the central frontal figure, symmetric overall arch, outward-facing guardians, repeated spiral motifs, fine incised textures, openwork, and wood-tone highlights are all clearly resolved. Edges and gradients remain natural and stable under mobile scaling. I see no visible blocking, ringing, banding, smearing, resizing distortion, or objectionable compression artifacts.\nvision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A.\n\n[fallback]\nThe JPEG fallback clearly resolves the central figure, the two flanking profile guardians, major and minor spirals, carved texture, open negative spaces, and tonal separation across the dark wooden surface. Mobile scaling preserves the subject and visual hierarchy. I see no visible blocking, ringing, banding, smearing, resizing distortion, or objectionable compression artifacts.\nvision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A.",
+  "agent_output_sha256": "29a6acf7213684d6acc4db0229604671f2af73a83f616cb86f5832aab4c5aa3f",
+  "agent_prompt": "[480]\nAsset 480. Inspect this exact museum artwork derivative as it would appear scaled on a mobile screen. Determine whether the main carved Māori door lintel, central figure, flanking profile guardian figures, spiral forms, and tonal/color separation remain clearly readable, and whether there are any visible compression, resizing, ringing, blocking, banding, smearing, or other artifacts. This is an official collection image with no GPT-generated text, so OCR exact match is N/A. Return a direct factual assessment and an explicit final line: vision_mobile_readable=true/false; artifacts=true/false; ocr_exact_match=N/A.\n\n[768]\nAsset 768. Inspect this exact museum artwork derivative as it would appear scaled on a mobile screen. Determine whether the main carved Māori door lintel, central figure, flanking profile guardian figures, spiral forms, and tonal/color separation remain clearly readable, and whether there are any visible compression, resizing, ringing, blocking, banding, smearing, or other artifacts. This is an official collection image with no GPT-generated text, so OCR exact match is N/A. Return a direct factual assessment and an explicit final line: vision_mobile_readable=true/false; artifacts=true/false; ocr_exact_match=N/A.\n\n[1280]\nAsset 1280. Inspect this exact museum artwork derivative as it would appear scaled on a mobile screen. Determine whether the main carved Māori door lintel, central figure, flanking profile guardian figures, spiral forms, and tonal/color separation remain clearly readable, and whether there are any visible compression, resizing, ringing, blocking, banding, smearing, or other artifacts. This is an official collection image with no GPT-generated text, so OCR exact match is N/A. Return a direct factual assessment and an explicit final line: vision_mobile_readable=true/false; artifacts=true/false; ocr_exact_match=N/A.\n\n[fallback]\nAsset fallback. Inspect this exact museum artwork fallback as it would appear scaled on a mobile screen. Determine whether the main carved Māori door lintel, central figure, flanking profile guardian figures, spiral forms, and tonal/color separation remain clearly readable, and whether there are any visible compression, resizing, ringing, blocking, banding, smearing, or other artifacts. This is an official collection image with no GPT-generated text, so OCR exact match is N/A. Return a direct factual assessment and an explicit final line: vision_mobile_readable=true/false; artifacts=true/false; ocr_exact_match=N/A.",
+  "agent_prompt_sha256": "aa5662393d2bd4dc64f365037ca726637c2f98a972a63effbeecd903fbd9bff4",
+  "date": "2026-10-17",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "0472245dfe3c0a8a1db3aee00ce2385cf429ea2a2b8b949aa4fd45bd323a0a0c",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "3649184b1a58a422b362cdb6638261adc530906fccd6e03bd222988ff5843501",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "cc14ac40ce12f34f82aa6df6dab2276f7a8eae6dda1bab06d5d01b156cd805b4",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "cba18fdfd0aa1d3d01ef91d2914361678ff80a82184a8837950eccfa6f9165ba",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}
