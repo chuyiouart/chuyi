@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-18",
+  "agent_prompt": "480 WebP prompt:\nOUART Daily Art responsive-image QA for the 480 WebP. Inspect the actual pixels as if displayed on a mobile screen. Determine whether the artwork's main subject (the profile figure and surrounding forms) remains clearly readable and whether there are any visible compression, resampling, ringing, blocking, banding, blur, stretching, aspect-ratio, or other rendering artifacts. This is an official collection image with no GPT-generated text, so OCR exact match is N/A. Return a concise but complete factual assessment and an explicit verdict for vision_mobile_readable and artifacts.\n\n768 WebP prompt:\nOUART Daily Art responsive-image QA for the 768 WebP. Inspect the actual pixels as if displayed on a mobile screen. Determine whether the artwork's main subject (the profile figure and surrounding forms) remains clearly readable and whether there are any visible compression, resampling, ringing, blocking, banding, blur, stretching, aspect-ratio, or other rendering artifacts. This is an official collection image with no GPT-generated text, so OCR exact match is N/A. Return a concise but complete factual assessment and an explicit verdict for vision_mobile_readable and artifacts.\n\n1280 WebP prompt:\nOUART Daily Art responsive-image QA for the 1280 WebP. Inspect the actual pixels as if displayed on a mobile screen. Determine whether the artwork's main subject (the profile figure and surrounding forms) remains clearly readable and whether there are any visible compression, resampling, ringing, blocking, banding, blur, stretching, aspect-ratio, or other rendering artifacts. This is an official collection image with no GPT-generated text, so OCR exact match is N/A. Return a concise but complete factual assessment and an explicit verdict for vision_mobile_readable and artifacts.\n\nFallback JPEG prompt:\nOUART Daily Art responsive-image QA for the limited original-format fallback JPEG. Inspect the actual pixels as if displayed on a mobile screen. Determine whether the artwork's main subject (the profile figure and surrounding forms) remains clearly readable and whether there are any visible compression, resampling, ringing, blocking, banding, blur, stretching, aspect-ratio, or other rendering artifacts. This is an official collection image with no GPT-generated text, so OCR exact match is N/A. Return a concise but complete factual assessment and an explicit verdict for vision_mobile_readable and artifacts.",
+  "agent_prompt_sha256": "10ce6a96594aaa359844b1f2edd22f75f8bbf6adb2d18bb589da6cd8f10cdfba",
+  "agent_output": "480 WebP: The complete mural fragment is visible at the expected landscape aspect ratio. On a mobile-sized rendering, the central left-facing profile figure, large feathered headdress, mouth-scroll/curving form, outstretched arm, upper geometric band, and repeated lower side forms remain distinguishable. Fine incised lines are necessarily less detailed at this smallest rendition, but this is normal downscaling rather than destructive blur. The original fresco's worn, mottled, cracked, and abraded surface remains visible and should not be mistaken for encoding damage. I see no blocking, ringing halos, banding, stretching, aspect-ratio distortion, or anomalous resampling artifacts. Verdict: vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A.\n\n768 WebP: The profile figure and surrounding ritual forms are clearly readable at mobile scale, with the face, headdress feathers, curved scroll, necklace, hand, upper border, and flanking repeated shapes retaining coherent edges and tonal separation. Surface wear belongs to the historic wall fragment. No visible block artifacts, ringing, posterization/banding, geometric distortion, stretching, or scaling damage is present. Verdict: vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A.\n\n1280 WebP: The main subject is clear and detailed: the left-facing profile, facial features, layered feather headdress, arm and hand, circular ornaments, geometric upper border, and repeated side elements are all legible. The image preserves the mural's natural irregular perimeter and aged, abraded pigment without introducing visible compression blocks, ringing, banding, blur, stretching, or aspect-ratio errors. Verdict: vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A.\n\nFallback JPEG: The subject and composition are clear at mobile scale, and the figure, headdress, profile, hand, border patterns, and surrounding motifs remain readable. The fallback has the same correct landscape proportions as the WebP chain. Visible speckling, losses, cracks, and uneven edges are intrinsic to the fresco fragment; I see no added JPEG blocking, ringing, banding, resampling distortion, stretching, or problematic blur. Verdict: vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A.",
+  "agent_output_sha256": "27ca8ca56e990e6b2aad45ada69e8f75116cc20245f22061e1505d0308d2132d",
+  "results": {
+    "480": {
+      "image_sha256": "d421b18011425634084b887300715b4ed86bd6176e533f4dda73becdb0368fb2",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "23cb29f22e41504d1349017cc9324fbc85e72eb30027ebea93cfb9ca232f1443",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "beee4ae9ab9a21806bcd9d870cfd3a6024234fbfd6d6006dd456a5ab0fdd2797",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "87cd38bfe22e9095f80823563da0aac7edfab2f549631110c02dd1246bc348c7",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
