@@ -2243,16 +2243,32 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-10-19",
     "type": "图文",
     "time": "11:30",
-    "title": "只有一个想法，第一件作品先做多大？",
-    "summary": "今天聊聊只有一个想法，第一件作品先做多大。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "第一件作品，多大才做得动",
+    "summary": "先定这件作品要验证的问题，再看关键轮廓、最薄部位、连接、摆放和设备条件，用三档比较与一个局部样选出本轮做得动的尺寸范围。",
+    "cover": "./assets/updates/2026-10-19/01-website-hero-fallback.png?v=ff3a37cb357a",
+    "published": true,
+    "url": "./updates/2026-10-19-choose-a-workable-first-object-scale.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 1 / Gate 1",
     "editorial_angle": "失败排查",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-10-19",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-10-19/01-website-hero-480.webp?v=84fc1ad408e1 480w, ./assets/updates/2026-10-19/01-website-hero-768.webp?v=6718de5916b9 768w, ./assets/updates/2026-10-19/01-website-hero-1280.webp?v=c37d3a3d4694 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-10-19/01-website-hero-fallback.png?v=ff3a37cb357a",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-10-20",
