@@ -1,0 +1,34 @@
+{
+  "agent_output": "asset=480; opened=true; subject_clear=true; mobile_readable=true; artifacts=false; ocr_exact_match=N/A; verdict=PASS; notes=The complete two-panel ink painting opened without cropping or distortion. Dark foreground bamboo, pale rocks and water, the fine bamboo-and-village cluster at right, distant washed forms, panel seam, and tonal recession remain distinguishable at mobile scale. Fine village lines are naturally delicate but readable; no blockiness, ringing, banding, scaling blur, or broken rendering is visible.\nasset=768; opened=true; subject_clear=true; mobile_readable=true; artifacts=false; ocr_exact_match=N/A; verdict=PASS; notes=The complete two-panel composition is clear. Foreground bamboo silhouettes are crisp, rock and stream contours remain separated, the village amid fine bamboo is legible, and pale distant forms preserve the intended atmospheric hierarchy. No visible compression blocks, halos, banding, unintended blur, crop, distortion, or rendering defect is present.\nasset=1280; opened=true; subject_clear=true; mobile_readable=true; artifacts=false; ocr_exact_match=N/A; verdict=PASS; notes=The full museum image opened correctly with crisp bamboo leaves, readable rock and water marks, clearly resolved village architecture within the bamboo, subtle distant mountain washes, and intact tonal gradation. The panel seam is part of the artwork. No compression, ringing, blockiness, banding, scaling, crop, distortion, or rendering artifact is visible.\nasset=fallback; opened=true; subject_clear=true; mobile_readable=true; artifacts=false; ocr_exact_match=N/A; verdict=PASS; notes=The fallback JPEG opens as the complete two-panel work. Principal bamboo, rocks, stream, village, pale mountains, inscriptions, and tonal structure remain clear when scaled for mobile viewing. Fine lines and washes are retained without visible JPEG blocking, ringing, banding, unintended blur, cropping, distortion, or broken rendering.",
+  "agent_output_sha256": "924ea2b5441ba89ad135677c073da0ee2a07fd2937ed17d1b9ae1d2279ad075f",
+  "agent_prompt": "[1/4]\nOUART Daily Art responsive visual QA for the 480px WebP. Inspect the actual opened image as it would appear scaled on a mobile viewport. Identify the artwork, assess whether the principal bamboo, rocks, water, village, tonal structure, and important contours remain clearly readable, and check for compression artifacts, ringing, blockiness, banding, blur caused by scaling, cropping, distortion, broken rendering, or other visible defects. There is no GPT-generated text in this museum image, so OCR exact-match is not applicable and must be reported as N/A. Return a concise evidence-based verdict containing exactly these explicit fields: asset=480; opened=true|false; subject_clear=true|false; mobile_readable=true|false; artifacts=true|false; ocr_exact_match=N/A; verdict=PASS|FAIL; notes=<visual observations>.\n\n[2/4]\nOUART Daily Art responsive visual QA for the 768px WebP. Inspect the actual opened image as it would appear scaled on a mobile viewport. Identify the artwork, assess whether the principal bamboo, rocks, water, village, tonal structure, and important contours remain clearly readable, and check for compression artifacts, ringing, blockiness, banding, blur caused by scaling, cropping, distortion, broken rendering, or other visible defects. There is no GPT-generated text in this museum image, so OCR exact-match is not applicable and must be reported as N/A. Return a concise evidence-based verdict containing exactly these explicit fields: asset=768; opened=true|false; subject_clear=true|false; mobile_readable=true|false; artifacts=true|false; ocr_exact_match=N/A; verdict=PASS|FAIL; notes=<visual observations>.\n\n[3/4]\nOUART Daily Art responsive visual QA for the 1280px WebP. Inspect the actual opened image as it would appear scaled on a mobile viewport. Identify the artwork, assess whether the principal bamboo, rocks, water, village, tonal structure, and important contours remain clearly readable, and check for compression artifacts, ringing, blockiness, banding, blur caused by scaling, cropping, distortion, broken rendering, or other visible defects. There is no GPT-generated text in this museum image, so OCR exact-match is not applicable and must be reported as N/A. Return a concise evidence-based verdict containing exactly these explicit fields: asset=1280; opened=true|false; subject_clear=true|false; mobile_readable=true|false; artifacts=true|false; ocr_exact_match=N/A; verdict=PASS|FAIL; notes=<visual observations>.\n\n[4/4]\nOUART Daily Art responsive visual QA for the limited original-format fallback JPEG. Inspect the actual opened image as it would appear scaled on a mobile viewport. Identify the artwork, assess whether the principal bamboo, rocks, water, village, tonal structure, and important contours remain clearly readable, and check for compression artifacts, ringing, blockiness, banding, blur caused by scaling, cropping, distortion, broken rendering, or other visible defects. There is no GPT-generated text in this museum image, so OCR exact-match is not applicable and must be reported as N/A. Return a concise evidence-based verdict containing exactly these explicit fields: asset=fallback; opened=true|false; subject_clear=true|false; mobile_readable=true|false; artifacts=true|false; ocr_exact_match=N/A; verdict=PASS|FAIL; notes=<visual observations>.",
+  "agent_prompt_sha256": "3a2239fa47eaca86899fb1e3a3b319dd75d3e8f43b05ad806b2f5d40df2a71d4",
+  "date": "2026-10-19",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "8d5f6427307a4dbbb770cf6e4edb960a56cf4d1cb5718e8cc693f5f3a917db00",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "266fc71f8913711cc938c18e99413e5f4a2814c68cb794c52ba54b2da3c3dac3",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "6d2cd4cbc373d0e7aadadc9ea47f34e9f1838fd983441321ef7f0f0e25731601",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "2745abead4fb5b8f9b21ea7f10e06ede6a87948b4f0898626eabf87ad9c7fa44",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}

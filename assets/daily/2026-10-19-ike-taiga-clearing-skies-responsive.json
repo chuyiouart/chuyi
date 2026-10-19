@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 34546,
+      "format": "webp",
+      "height": 431,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-19-ike-taiga-clearing-skies-480.webp",
+      "quality": 84,
+      "sha256": "266fc71f8913711cc938c18e99413e5f4a2814c68cb794c52ba54b2da3c3dac3",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 69882,
+      "format": "webp",
+      "height": 689,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-19-ike-taiga-clearing-skies-768.webp",
+      "quality": 84,
+      "sha256": "6d2cd4cbc373d0e7aadadc9ea47f34e9f1838fd983441321ef7f0f0e25731601",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 147552,
+      "format": "webp",
+      "height": 1149,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-19-ike-taiga-clearing-skies-1280.webp",
+      "quality": 84,
+      "sha256": "8d5f6427307a4dbbb770cf6e4edb960a56cf4d1cb5718e8cc693f5f3a917db00",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 268929,
+    "format": "jpeg",
+    "height": 1149,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-19-ike-taiga-clearing-skies-fallback.jpg",
+    "quality": 84,
+    "sha256": "2745abead4fb5b8f9b21ea7f10e06ede6a87948b4f0898626eabf87ad9c7fa44",
+    "width": 1280
+  },
+  "original_bytes": 2008347,
+  "original_height": 3051,
+  "original_path": "assets/daily/2026-10-19-ike-taiga-clearing-skies.jpg",
+  "original_sha256": "607fd25fe4039661094380701128b7f1cc10a420eb11f27a4de8e10f28f14b19",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1958.337/1958.337_print.jpg",
+  "original_width": 3400,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-19-ike-taiga-clearing-skies-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-19-ike-taiga-clearing-skies-480.webp?v=266fc71f8913 480w, 2026-10-19-ike-taiga-clearing-skies-768.webp?v=6d2cd4cbc373 768w, 2026-10-19-ike-taiga-clearing-skies-1280.webp?v=8d5f6427307a 1280w"
+}
