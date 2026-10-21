@@ -2305,16 +2305,32 @@
     "date": "2026-10-21",
     "type": "图文",
     "time": "11:30",
-    "title": "同一个角色，从正面、侧面和背面怎么看？",
-    "summary": "今天聊聊同一个角色，从正面、侧面和背面怎么看。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "三面放一起，角色才站得住",
+    "summary": "正面、侧面和背面要共用同一套高度、识别点与连续体积；再用转角草模或局部样补上看不见的部分。",
+    "cover": "./assets/updates/2026-10-21/01-website-hero-fallback.png?v=931df4bc9e24",
+    "published": true,
+    "url": "./updates/2026-10-21-check-one-character-from-front-side-and-back.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 1 / Gate 1",
     "editorial_angle": "失败排查",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-10-21",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-10-21/01-website-hero-480.webp?v=ab18130f6192 480w, ./assets/updates/2026-10-21/01-website-hero-768.webp?v=13c445ddb579 768w, ./assets/updates/2026-10-21/01-website-hero-1280.webp?v=84ded3f2c9ad 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-10-21/01-website-hero-fallback.png?v=931df4bc9e24",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-10-22",
