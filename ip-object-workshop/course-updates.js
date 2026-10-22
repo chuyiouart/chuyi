@@ -2336,16 +2336,32 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-10-22",
     "type": "视频",
     "time": "19:30",
-    "title": "哪些设计决定还得自己来？",
-    "summary": "今天聊聊哪些设计决定还得自己来。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "AI 给了三个方案，最后谁来定",
+    "summary": "AI 可以整理方案差异、风险和缺少的证据；角色意图、不能改变的特点、取舍理由与停止条件，仍要由创作者本人确认。",
+    "cover": "./assets/updates/2026-10-22/01-website-hero-fallback.png?v=fdedce701585",
+    "published": true,
+    "url": "./updates/2026-10-22-human-decisions-after-ai-design-options.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 1 / Gate 1",
     "editorial_angle": "失败排查",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-10-22",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-10-22/01-website-hero-480.webp?v=92f917b8eb6f 480w, ./assets/updates/2026-10-22/01-website-hero-768.webp?v=9cfcd14bc6a4 768w, ./assets/updates/2026-10-22/01-website-hero-1280.webp?v=ac289c765197 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-10-22/01-website-hero-fallback.png?v=fdedce701585",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-10-23",
