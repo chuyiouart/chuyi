@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 22308,
+      "format": "webp",
+      "height": 353,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-22-mamluk-bowl-radial-panels-480.webp",
+      "quality": 84,
+      "sha256": "22868ed86ec12cacb7e0bd6ee1dd7caaef654133fd59bcbe7aa6eef0aededfc8",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 51172,
+      "format": "webp",
+      "height": 565,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-22-mamluk-bowl-radial-panels-768.webp",
+      "quality": 84,
+      "sha256": "da267f3f67ae99940a938f55195601cdd84c807f90f4d381317864e54deaef54",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 122048,
+      "format": "webp",
+      "height": 942,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-22-mamluk-bowl-radial-panels-1280.webp",
+      "quality": 84,
+      "sha256": "4285ad92ad8d2c377364fc8f485b8dee85bfc9a6da0117ab7341ca641f7e9160",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 187126,
+    "format": "jpeg",
+    "height": 942,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-22-mamluk-bowl-radial-panels-fallback.jpg",
+    "quality": 84,
+    "sha256": "d0bfec97b0efbf9c9c7e9be7118978bf645448f9b6f5ef9ab09197c911d8742c",
+    "width": 1280
+  },
+  "original_bytes": 4199558,
+  "original_height": 2502,
+  "original_path": "assets/daily/2026-10-22-mamluk-bowl-radial-panels.jpg",
+  "original_sha256": "fa45df4d92c7f30d996b6aa2ab4e63ea26ad623248e54133c0cdb22e270b7328",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1945.133/1945.133_print.jpg",
+  "original_width": 3400,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-22-mamluk-bowl-radial-panels-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-22-mamluk-bowl-radial-panels-480.webp?v=22868ed86ec1 480w, 2026-10-22-mamluk-bowl-radial-panels-768.webp?v=da267f3f67ae 768w, 2026-10-22-mamluk-bowl-radial-panels-1280.webp?v=4285ad92ad8d 1280w"
+}

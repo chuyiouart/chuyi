@@ -1,0 +1,34 @@
+{
+  "agent_output": "asset=480; vision_mobile_readable=true; artifacts=false; observation=黄铜碗主体、口沿、连续边带与主要尖拱分格清楚可辨，细密镶嵌线在移动端尺寸下略有柔化但仍具合理可读性，未见明显压缩、缩放、色带、块状、振铃、破图或异常裁切。\nasset=768; vision_mobile_readable=true; artifacts=false; observation=黄铜碗主体与器腹拱形分格清楚，交织边带和格内几何线条在移动端缩放下可读，明暗与金属质感自然，未见明显压缩、缩放、色带、块状、振铃、破图或异常裁切。\nasset=1280; vision_mobile_readable=true; artifacts=false; observation=黄铜碗轮廓、口沿磨损、交织边带、尖拱边框及格内镶嵌纹均清楚可读，细节和层次完整，未见明显压缩、缩放、色带、块状、振铃、破图或异常裁切。\nasset=fallback; vision_mobile_readable=true; artifacts=false; observation=JPEG fallback 中黄铜碗主体及密集几何镶嵌纹清楚，边缘与灰色背景过渡自然，移动端缩放可读，未见明显压缩、缩放、色带、块状、振铃、破图或异常裁切。",
+  "agent_output_sha256": "8ea8028e33009f3db346f017955dd371c48096e5ac502eb82cff1c4d80f3637e",
+  "agent_prompt": "[1/4]\nOUART 每日一画响应式图片 Vision QA。资产键：480；文件 SHA-256：22868ed86ec12cacb7e0bd6ee1dd7caaef654133fd59bcbe7aa6eef0aededfc8。请真实查看当前图片，并按移动端展示场景判断：1）主体（马穆鲁克时期几何纹黄铜碗）是否清楚可辨；2）细节在该分辨率下是否达到合理可读性；3）是否存在明显压缩、缩放、色带、块状、振铃、破图或异常裁切伪影。馆藏图无 GPT 生成文字，OCR 不在本次判断范围。请用中文输出一行严格结论，格式为“asset=480; vision_mobile_readable=true|false; artifacts=false|true; observation=...”，不得省略字段。\n\n[2/4]\nOUART 每日一画响应式图片 Vision QA。资产键：768；文件 SHA-256：da267f3f67ae99940a938f55195601cdd84c807f90f4d381317864e54deaef54。请真实查看当前图片，并按移动端展示场景判断：1）主体（马穆鲁克时期几何纹黄铜碗）是否清楚可辨；2）细节在该分辨率下是否达到合理可读性；3）是否存在明显压缩、缩放、色带、块状、振铃、破图或异常裁切伪影。馆藏图无 GPT 生成文字，OCR 不在本次判断范围。请用中文输出一行严格结论，格式为“asset=768; vision_mobile_readable=true|false; artifacts=false|true; observation=...”，不得省略字段。\n\n[3/4]\nOUART 每日一画响应式图片 Vision QA。资产键：1280；文件 SHA-256：4285ad92ad8d2c377364fc8f485b8dee85bfc9a6da0117ab7341ca641f7e9160。请真实查看当前图片，并按移动端展示场景判断：1）主体（马穆鲁克时期几何纹黄铜碗）是否清楚可辨；2）细节在该分辨率下是否达到合理可读性；3）是否存在明显压缩、缩放、色带、块状、振铃、破图或异常裁切伪影。馆藏图无 GPT 生成文字，OCR 不在本次判断范围。请用中文输出一行严格结论，格式为“asset=1280; vision_mobile_readable=true|false; artifacts=false|true; observation=...”，不得省略字段。\n\n[4/4]\nOUART 每日一画响应式图片 Vision QA。资产键：fallback；文件 SHA-256：d0bfec97b0efbf9c9c7e9be7118978bf645448f9b6f5ef9ab09197c911d8742c。请真实查看当前图片，并按移动端展示场景判断：1）主体（马穆鲁克时期几何纹黄铜碗）是否清楚可辨；2）细节在该分辨率下是否达到合理可读性；3）是否存在明显压缩、缩放、色带、块状、振铃、破图或异常裁切伪影。馆藏图无 GPT 生成文字，OCR 不在本次判断范围。请用中文输出一行严格结论，格式为“asset=fallback; vision_mobile_readable=true|false; artifacts=false|true; observation=...”，不得省略字段。",
+  "agent_prompt_sha256": "c49431629a7cbe12601f3968ad31db82d9c021790c433395e5c8d9f4acd7ca70",
+  "date": "2026-10-22",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "4285ad92ad8d2c377364fc8f485b8dee85bfc9a6da0117ab7341ca641f7e9160",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "22868ed86ec12cacb7e0bd6ee1dd7caaef654133fd59bcbe7aa6eef0aededfc8",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "da267f3f67ae99940a938f55195601cdd84c807f90f4d381317864e54deaef54",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "d0bfec97b0efbf9c9c7e9be7118978bf645448f9b6f5ef9ab09197c911d8742c",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}
