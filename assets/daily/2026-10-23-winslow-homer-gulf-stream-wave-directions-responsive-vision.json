@@ -1,0 +1,34 @@
+{
+  "agent_output": "asset=480; vision_mobile_readable=true; artifacts=false; observation=失去桅杆的小船、斜躺的男子、前景鲨鱼与翻涌海浪均清楚可辨，远方船只和右上水龙卷虽小但不影响主体阅读；移动端缩放下色块、轮廓和主要动作关系完整，未见明显压缩、缩放、色带、块状、振铃、破图或异常裁切。\nasset=768; vision_mobile_readable=true; artifacts=false; observation=小船、男子、甘蔗、环绕鲨鱼、浪峰及远方船只和水龙卷均清楚，笔触层次和海面方向在移动端显示中具有合理可读性，未见明显压缩、缩放、色带、块状、振铃、破图或异常裁切。\nasset=1280; vision_mobile_readable=true; artifacts=false; observation=画中小船结构、男子姿态、船内物件、鲨鱼口部与鳍、海浪笔触、远方船只及水龙卷均清楚可读，色彩与边缘自然，未见明显压缩、缩放、色带、块状、振铃、破图或异常裁切。\nasset=fallback; vision_mobile_readable=true; artifacts=false; observation=JPEG fallback 中小船、男子、鲨鱼群、浪峰、远方船只和水龙卷完整清楚，移动端缩放下主体与主要空间层次保持可读，未见明显压缩、缩放、色带、块状、振铃、破图或异常裁切。",
+  "agent_output_sha256": "d62ee726711faeac55352bb0cb390821fe524b1eb223bf80969b077b3af4cd58",
+  "agent_prompt": "[1/4]\nOUART 每日一画响应式图片 Vision QA。资产键：480；文件 SHA-256：bfb34cc4cf5f0916f88d1f5af363742ec35bdbfdbd56f48b59e2b578b9b9d6ed。请真实查看当前图片，并按移动端展示场景判断：1）主体（温斯洛·霍默《湾流》中失去桅杆的小船、船上男子、海浪与鲨鱼）是否清楚可辨；2）细节在该分辨率下是否达到合理可读性；3）是否存在明显压缩、缩放、色带、块状、振铃、破图或异常裁切伪影。馆藏图无 GPT 生成文字，OCR 不在本次判断范围。请用中文输出一行严格结论，格式为“asset=480; vision_mobile_readable=true|false; artifacts=false|true; observation=...”，不得省略字段。\n\n[2/4]\nOUART 每日一画响应式图片 Vision QA。资产键：768；文件 SHA-256：2d98bba67ee5add771891e5994e0a119c8bba563df319fddacc4939776966f26。请真实查看当前图片，并按移动端展示场景判断：1）主体（温斯洛·霍默《湾流》中失去桅杆的小船、船上男子、海浪与鲨鱼）是否清楚可辨；2）细节在该分辨率下是否达到合理可读性；3）是否存在明显压缩、缩放、色带、块状、振铃、破图或异常裁切伪影。馆藏图无 GPT 生成文字，OCR 不在本次判断范围。请用中文输出一行严格结论，格式为“asset=768; vision_mobile_readable=true|false; artifacts=false|true; observation=...”，不得省略字段。\n\n[3/4]\nOUART 每日一画响应式图片 Vision QA。资产键：1280；文件 SHA-256：be5435e94d69c5084c8cb4007673521c69046c77907504278868b69f2a9365d1。请真实查看当前图片，并按移动端展示场景判断：1）主体（温斯洛·霍默《湾流》中失去桅杆的小船、船上男子、海浪与鲨鱼）是否清楚可辨；2）细节在该分辨率下是否达到合理可读性；3）是否存在明显压缩、缩放、色带、块状、振铃、破图或异常裁切伪影。馆藏图无 GPT 生成文字，OCR 不在本次判断范围。请用中文输出一行严格结论，格式为“asset=1280; vision_mobile_readable=true|false; artifacts=false|true; observation=...”，不得省略字段。\n\n[4/4]\nOUART 每日一画响应式图片 Vision QA。资产键：fallback；文件 SHA-256：6a2e8f2c81594bbd6020866b447d8cf4bdb1c2e6138974c15ab98ba4cf901847。请真实查看当前图片，并按移动端展示场景判断：1）主体（温斯洛·霍默《湾流》中失去桅杆的小船、船上男子、海浪与鲨鱼）是否清楚可辨；2）细节在该分辨率下是否达到合理可读性；3）是否存在明显压缩、缩放、色带、块状、振铃、破图或异常裁切伪影。馆藏图无 GPT 生成文字，OCR 不在本次判断范围。请用中文输出一行严格结论，格式为“asset=fallback; vision_mobile_readable=true|false; artifacts=false|true; observation=...”，不得省略字段。",
+  "agent_prompt_sha256": "b37ab5d3a8ad1d414a5500b8225a28427cf19df30b022fb24bd6a3fc5f9ec771",
+  "date": "2026-10-23",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "be5435e94d69c5084c8cb4007673521c69046c77907504278868b69f2a9365d1",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "bfb34cc4cf5f0916f88d1f5af363742ec35bdbfdbd56f48b59e2b578b9b9d6ed",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "2d98bba67ee5add771891e5994e0a119c8bba563df319fddacc4939776966f26",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "6a2e8f2c81594bbd6020866b447d8cf4bdb1c2e6138974c15ab98ba4cf901847",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}
