@@ -1,0 +1,38 @@
+{
+  "agent_output": "asset=480；vision_mobile_readable=true；artifacts=false；ocr_exact_match=N/A；移动端缩放下，四组浅色蕨叶标本在蓝色感光底上轮廓分明，长叶尖端、叶缘起伏和细茎均可辨。整幅纸边完整，无异常裁切、拉伸、重影、块状压缩或明显缩放锯齿；叶片内部较淡的纹理仍自然连续。\n\nasset=768；vision_mobile_readable=true；artifacts=false；ocr_exact_match=N/A；蓝底与浅色叶片保持稳定对比，两枚长叶与右侧两组较小叶片的位置、轮廓和细茎清楚；纸张边缘完整。未见压缩块、条带、重影、异常模糊、裁切或比例失真，叶缘过渡自然。\n\nasset=1280；vision_mobile_readable=true；artifacts=false；ocr_exact_match=N/A；主体四组植物负形及其尺寸差异清楚可读，长叶边缘细小缺口、中央脉理和下方细茎均保持可辨，蓝底层次连续。画面四边及纸边完整，未见压缩块、条带、重影、异常模糊、拉伸或缩放伪影。\n\nasset=fallback；vision_mobile_readable=true；artifacts=false；ocr_exact_match=N/A；浅色植物标本在均匀蓝底上具有清楚轮廓，四组叶片、细茎和纸张边界均完整可见，移动端缩放后主体仍易辨。未见块状压缩、条带、重影、异常模糊、裁切、拉伸或其他缩放伪影。",
+  "agent_output_sha256": "ef9ab15d765c97312305c75eb6b67fbb6dfeb184929e3b95d3557704abbc627d",
+  "agent_prompt": "[480]\n请对这一个明确指定的响应式馆藏图资产做真实视觉 QA。按移动端缩放观看，检查主体（中央蕨叶标本及蓝底明暗关系）是否清楚可读，是否存在压缩块、条带、重影、异常模糊、裁切、拉伸或缩放伪影。馆藏图无 GPT 生成文字，OCR exact 必须记为字符串 N/A，不要评价或转录图中文字。请明确返回：asset=480；vision_mobile_readable=true/false；artifacts=true/false；ocr_exact_match=N/A；以及简短但具体的视觉观察。只有确实从像素看到且通过时才写 readable=true、artifacts=false。\n\n[768]\n请对这一个明确指定的响应式馆藏图资产做真实视觉 QA。按移动端缩放观看，检查主体（中央蕨叶标本及蓝底明暗关系）是否清楚可读，是否存在压缩块、条带、重影、异常模糊、裁切、拉伸或缩放伪影。馆藏图无 GPT 生成文字，OCR exact 必须记为字符串 N/A，不要评价或转录图中文字。请明确返回：asset=768；vision_mobile_readable=true/false；artifacts=true/false；ocr_exact_match=N/A；以及简短但具体的视觉观察。只有确实从像素看到且通过时才写 readable=true、artifacts=false。\n\n[1280]\n请对这一个明确指定的响应式馆藏图资产做真实视觉 QA。按移动端缩放观看，检查主体（中央蕨叶标本及蓝底明暗关系）是否清楚可读，是否存在压缩块、条带、重影、异常模糊、裁切、拉伸或缩放伪影。馆藏图无 GPT 生成文字，OCR exact 必须记为字符串 N/A，不要评价或转录图中文字。请明确返回：asset=1280；vision_mobile_readable=true/false；artifacts=true/false；ocr_exact_match=N/A；以及简短但具体的视觉观察。只有确实从像素看到且通过时才写 readable=true、artifacts=false。\n\n[fallback]\n请对这一个明确指定的响应式馆藏图资产做真实视觉 QA。按移动端缩放观看，检查主体（中央蕨叶标本及蓝底明暗关系）是否清楚可读，是否存在压缩块、条带、重影、异常模糊、裁切、拉伸或缩放伪影。馆藏图无 GPT 生成文字，OCR exact 必须记为字符串 N/A，不要评价或转录图中文字。请明确返回：asset=fallback；vision_mobile_readable=true/false；artifacts=true/false；ocr_exact_match=N/A；以及简短但具体的视觉观察。只有确实从像素看到且通过时才写 readable=true、artifacts=false。",
+  "agent_prompt_sha256": "97c365a524ac691b20412a6d489b84346e2d635d21311ec212f59b931c2a4c27",
+  "date": "2026-10-24",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "89132752b4b43467aaca920f83d594ac69bbdeffcd14603a42e91c601cbf9df8",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "vision_observation": "asset=1280；vision_mobile_readable=true；artifacts=false；ocr_exact_match=N/A；主体四组植物负形及其尺寸差异清楚可读，长叶边缘细小缺口、中央脉理和下方细茎均保持可辨，蓝底层次连续。画面四边及纸边完整，未见压缩块、条带、重影、异常模糊、拉伸或缩放伪影。"
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "b25d37704bd9b38fcf0973f1318bd454ede8057ee00807cbbd2e66ba5bb963bc",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "vision_observation": "asset=480；vision_mobile_readable=true；artifacts=false；ocr_exact_match=N/A；移动端缩放下，四组浅色蕨叶标本在蓝色感光底上轮廓分明，长叶尖端、叶缘起伏和细茎均可辨。整幅纸边完整，无异常裁切、拉伸、重影、块状压缩或明显缩放锯齿；叶片内部较淡的纹理仍自然连续。"
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "5ca411b48639f6374c81aedb6b71d75bbf8f99ca6dd9e677745786d567ad70a4",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "vision_observation": "asset=768；vision_mobile_readable=true；artifacts=false；ocr_exact_match=N/A；蓝底与浅色叶片保持稳定对比，两枚长叶与右侧两组较小叶片的位置、轮廓和细茎清楚；纸张边缘完整。未见压缩块、条带、重影、异常模糊、裁切或比例失真，叶缘过渡自然。"
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "4d4b880cd906fb5e41250f81b9fd53a31866282d60a45eefe184ec846c382334",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "vision_observation": "asset=fallback；vision_mobile_readable=true；artifacts=false；ocr_exact_match=N/A；浅色植物标本在均匀蓝底上具有清楚轮廓，四组叶片、细茎和纸张边界均完整可见，移动端缩放后主体仍易辨。未见块状压缩、条带、重影、异常模糊、裁切、拉伸或其他缩放伪影。"
+    }
+  },
+  "schema_version": 1
+}
