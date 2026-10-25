@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 8768,
+      "format": "webp",
+      "height": 85,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-25-mi-youren-cloudy-mountains-ink-masses-480.webp",
+      "quality": 84,
+      "sha256": "fa2766b33861a3c156218a13d7d430076c6a32f393e74dcc1a86dff2379e01b2",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 15616,
+      "format": "webp",
+      "height": 137,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-25-mi-youren-cloudy-mountains-ink-masses-768.webp",
+      "quality": 84,
+      "sha256": "0e4e968716cc57d395893e831b07d8b8b307fddcc489a4e88a81bef448072364",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 34902,
+      "format": "webp",
+      "height": 228,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-25-mi-youren-cloudy-mountains-ink-masses-1280.webp",
+      "quality": 84,
+      "sha256": "cbc80f21b9c0bacd73fd4184579c96f927630887d3ff9bc65428ceb544581860",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 59975,
+    "format": "jpeg",
+    "height": 228,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-25-mi-youren-cloudy-mountains-ink-masses-fallback.jpg",
+    "quality": 84,
+    "sha256": "ab22d4b7ffe4843993be24fe00aa7337a4aed4831038f5eaeac700f0824cfca4",
+    "width": 1280
+  },
+  "original_bytes": 1450267,
+  "original_height": 605,
+  "original_path": "assets/daily/2026-10-25-mi-youren-cloudy-mountains-ink-masses.jpg",
+  "original_sha256": "7b19896e7cbea12187cf1f37293e20363364a6937ded514fb92066eb1f74adeb",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1933.220/1933.220_print.jpg",
+  "original_width": 3400,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-25-mi-youren-cloudy-mountains-ink-masses-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-25-mi-youren-cloudy-mountains-ink-masses-480.webp?v=fa2766b33861 480w, 2026-10-25-mi-youren-cloudy-mountains-ink-masses-768.webp?v=0e4e968716cc 768w, 2026-10-25-mi-youren-cloudy-mountains-ink-masses-1280.webp?v=cbc80f21b9c0 1280w"
+}

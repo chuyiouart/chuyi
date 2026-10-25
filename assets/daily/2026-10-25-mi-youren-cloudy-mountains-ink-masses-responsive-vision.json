@@ -1,0 +1,42 @@
+{
+  "agent_output": "[480]\nasset=480; vision_mobile_readable=true; artifacts=false; notes=The long horizontal landscape remains identifiable at mobile scale: the dark foreground island, layered mountain silhouettes, pale mist bands, and left inscription block are distinct. Fine inscriptions are naturally too small to read at this rendition, but no blocking, ringing, banding, edge halos, or malformed scaling is visible.\n\n[768]\nasset=768; vision_mobile_readable=true; artifacts=false; notes=The foreground tree mass, receding mountain groups, water, and horizontal mist separations remain clear at mobile scale. Tonal transitions are smooth and the scroll proportions are intact, with no visible compression blocks, ringing, banding, or resizing distortion.\n\n[1280]\nasset=1280; vision_mobile_readable=true; artifacts=false; notes=The principal dark island and trees, middle-distance ridges, pale distant peaks, mist channels, inscriptions, and seals are visually coherent at mobile scale. Ink textures and soft edges are preserved without visible blocking, ringing, banding, sharpening halos, or aspect-ratio distortion.\n\n[fallback]\nasset=fallback; vision_mobile_readable=true; artifacts=false; notes=The full scroll is clear and correctly proportioned at mobile scale; the layered ink masses and intervening pale mist remain separable, with stable tonal gradation. No visible JPEG blocking, ringing, banding, scaling artifacts, or malformed edges are present.",
+  "agent_output_sha256": "b058c7f9aedae6c16f5efbf5fb3411b7a473f56b7823df71765759caf7830930",
+  "agent_prompt": "[480]\nOUART Daily Art responsive visual QA for asset 480. Inspect the actual image at mobile display scale. Determine whether the artwork's main subject and layered ink masses remain clearly readable and whether there are any visible compression, resizing, ringing, blocking, banding, or other artifacts. Do not infer from metadata. Return a concise verdict with exactly these fields: asset=480; vision_mobile_readable=true|false; artifacts=true|false; notes=<specific visual observations>.\n\n[768]\nOUART Daily Art responsive visual QA for asset 768. Inspect the actual image at mobile display scale. Determine whether the artwork's main subject and layered ink masses remain clearly readable and whether there are any visible compression, resizing, ringing, blocking, banding, or other artifacts. Do not infer from metadata. Return a concise verdict with exactly these fields: asset=768; vision_mobile_readable=true|false; artifacts=true|false; notes=<specific visual observations>.\n\n[1280]\nOUART Daily Art responsive visual QA for asset 1280. Inspect the actual image at mobile display scale. Determine whether the artwork's main subject and layered ink masses remain clearly readable and whether there are any visible compression, resizing, ringing, blocking, banding, or other artifacts. Do not infer from metadata. Return a concise verdict with exactly these fields: asset=1280; vision_mobile_readable=true|false; artifacts=true|false; notes=<specific visual observations>.\n\n[fallback]\nOUART Daily Art responsive visual QA for asset fallback. Inspect the actual image at mobile display scale. Determine whether the artwork's main subject and layered ink masses remain clearly readable and whether there are any visible compression, resizing, ringing, blocking, banding, or other artifacts. Do not infer from metadata. Return a concise verdict with exactly these fields: asset=fallback; vision_mobile_readable=true|false; artifacts=true|false; notes=<specific visual observations>.",
+  "agent_prompt_sha256": "ea48b5eefa628db14b71239c290a542ba615a97b26bb98c4d03c44e804fee488",
+  "date": "2026-10-25",
+  "results": {
+    "1280": {
+      "agent_output": "asset=1280; vision_mobile_readable=true; artifacts=false; notes=The principal dark island and trees, middle-distance ridges, pale distant peaks, mist channels, inscriptions, and seals are visually coherent at mobile scale. Ink textures and soft edges are preserved without visible blocking, ringing, banding, sharpening halos, or aspect-ratio distortion.",
+      "agent_prompt": "OUART Daily Art responsive visual QA for asset 1280. Inspect the actual image at mobile display scale. Determine whether the artwork's main subject and layered ink masses remain clearly readable and whether there are any visible compression, resizing, ringing, blocking, banding, or other artifacts. Do not infer from metadata. Return a concise verdict with exactly these fields: asset=1280; vision_mobile_readable=true|false; artifacts=true|false; notes=<specific visual observations>.",
+      "artifacts": false,
+      "image_sha256": "cbc80f21b9c0bacd73fd4184579c96f927630887d3ff9bc65428ceb544581860",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "agent_output": "asset=480; vision_mobile_readable=true; artifacts=false; notes=The long horizontal landscape remains identifiable at mobile scale: the dark foreground island, layered mountain silhouettes, pale mist bands, and left inscription block are distinct. Fine inscriptions are naturally too small to read at this rendition, but no blocking, ringing, banding, edge halos, or malformed scaling is visible.",
+      "agent_prompt": "OUART Daily Art responsive visual QA for asset 480. Inspect the actual image at mobile display scale. Determine whether the artwork's main subject and layered ink masses remain clearly readable and whether there are any visible compression, resizing, ringing, blocking, banding, or other artifacts. Do not infer from metadata. Return a concise verdict with exactly these fields: asset=480; vision_mobile_readable=true|false; artifacts=true|false; notes=<specific visual observations>.",
+      "artifacts": false,
+      "image_sha256": "fa2766b33861a3c156218a13d7d430076c6a32f393e74dcc1a86dff2379e01b2",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "agent_output": "asset=768; vision_mobile_readable=true; artifacts=false; notes=The foreground tree mass, receding mountain groups, water, and horizontal mist separations remain clear at mobile scale. Tonal transitions are smooth and the scroll proportions are intact, with no visible compression blocks, ringing, banding, or resizing distortion.",
+      "agent_prompt": "OUART Daily Art responsive visual QA for asset 768. Inspect the actual image at mobile display scale. Determine whether the artwork's main subject and layered ink masses remain clearly readable and whether there are any visible compression, resizing, ringing, blocking, banding, or other artifacts. Do not infer from metadata. Return a concise verdict with exactly these fields: asset=768; vision_mobile_readable=true|false; artifacts=true|false; notes=<specific visual observations>.",
+      "artifacts": false,
+      "image_sha256": "0e4e968716cc57d395893e831b07d8b8b307fddcc489a4e88a81bef448072364",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "agent_output": "asset=fallback; vision_mobile_readable=true; artifacts=false; notes=The full scroll is clear and correctly proportioned at mobile scale; the layered ink masses and intervening pale mist remain separable, with stable tonal gradation. No visible JPEG blocking, ringing, banding, scaling artifacts, or malformed edges are present.",
+      "agent_prompt": "OUART Daily Art responsive visual QA for asset fallback. Inspect the actual image at mobile display scale. Determine whether the artwork's main subject and layered ink masses remain clearly readable and whether there are any visible compression, resizing, ringing, blocking, banding, or other artifacts. Do not infer from metadata. Return a concise verdict with exactly these fields: asset=fallback; vision_mobile_readable=true|false; artifacts=true|false; notes=<specific visual observations>.",
+      "artifacts": false,
+      "image_sha256": "ab22d4b7ffe4843993be24fe00aa7337a4aed4831038f5eaeac700f0824cfca4",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}
