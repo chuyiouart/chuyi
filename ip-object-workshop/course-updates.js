@@ -2429,16 +2429,32 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-10-25",
     "type": "直播",
     "time": "20:00",
-    "title": "已有作品或只有想法，3–5 天分别先学什么？",
-    "summary": "今天聊聊已有作品或只有想法，3–5 天分别先学什么。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "起点不同，3–5 天的第一步也不同",
+    "summary": "先盘点手里的真实资料和最想验证的问题，再把 3–5 天缩成一个做得到、验得出、知道何时停止的目标。",
+    "cover": "./assets/updates/2026-10-25/01-website-hero-fallback.png?v=aa54d9502f19",
+    "published": true,
+    "url": "./updates/2026-10-25-choose-a-3-to-5-day-starting-path.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 1 / Gate 1",
     "editorial_angle": "失败排查",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-10-25",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-10-25/01-website-hero-480.webp?v=61f60548694c 480w, ./assets/updates/2026-10-25/01-website-hero-768.webp?v=d276f20dd22b 768w, ./assets/updates/2026-10-25/01-website-hero-1280.webp?v=4c2ab630c4dd 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-10-25/01-website-hero-fallback.png?v=aa54d9502f19",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-10-26",
