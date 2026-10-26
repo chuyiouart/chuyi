@@ -2460,16 +2460,32 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-10-26",
     "type": "图文",
     "time": "11:30",
-    "title": "尺寸先说清楚，模型才知道该怎么做",
-    "summary": "今天聊聊尺寸先说清楚，模型才知道该怎么做。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "尺寸写清楚，模型才不会各做各的",
+    "summary": "把总高、关键位置和真实单位写进同一份说明，再用简单体块与局部样复核，避免屏幕里的“差不多”变成实物返工。",
+    "cover": "./assets/updates/2026-10-26/01-website-hero-fallback.png?v=2b32f63e3fa7",
+    "published": true,
+    "url": "./updates/2026-10-26-define-model-dimensions-before-modeling.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 2 / Gate 2",
     "editorial_angle": "失败排查",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-10-26",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-10-26/01-website-hero-480.webp?v=278ac3629fa8 480w, ./assets/updates/2026-10-26/01-website-hero-768.webp?v=c053dc5b12c1 768w, ./assets/updates/2026-10-26/01-website-hero-1280.webp?v=25e04305c6c1 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-10-26/01-website-hero-fallback.png?v=2b32f63e3fa7",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-10-27",
