@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-26",
+  "agent_prompt": "OUART Daily Art responsive-image Vision QA for 2026-10-26. Inspect this exact local asset at a mobile-scale presentation. The artwork is an official museum collection image, not GPT-generated and has no generated text, so OCR exact-match is N/A. Determine whether the elephant remains clearly recognizable and the important contour, eye, ear, trunk, tusk, leg, rope, and fine hatching details remain sufficiently readable at this size. Look specifically for compression artifacts, ringing, blockiness, banding, unintended blur, aliasing, geometric distortion, cropping, or scaling damage. Report an honest asset-specific observation and a PASS/FAIL for vision_mobile_readable and artifacts. Do not infer quality merely from dimensions or metadata.",
+  "agent_prompt_sha256": "bfd9d8efb559e818aa568835d42df5db01bbde4db5d70ba6bc6981a9ebb5b6a0",
+  "agent_output": "Vision QA result: PASS for all four exact local assets opened in this session.\n\n480 WebP: The complete side-view elephant remains immediately recognizable at mobile scale. The long back contour, head, eye, ear, curled trunk, white tusks with gold bands, four legs, ankle bindings, and connecting rope are all readable. The finest body hatching is necessarily subtler at this size but remains visible around the head, ear, neck, belly, legs, and trunk. No visible blockiness, ringing, banding, aliasing, geometric distortion, unintended crop, or scaling damage was observed. vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A.\n\n768 WebP: The elephant and full rectangular composition are clear. Eye and ear contours, trunk ridges and curl, tusk edges and bands, leg overlaps, ankle wraps, rope, tail, and directional hatching are readily distinguishable. The aged paper marks remain natural rather than compression defects. No visible ringing, macroblocking, banding, unintended blur, aliasing, distortion, or crop was observed. vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A.\n\n1280 WebP: The complete artwork is sharp and undistorted. Fine parallel hatching across the forehead, ear, neck, trunk, belly, joints, and feet is well resolved; the eye, tusks, gold bands, rope twist, border, and paper texture remain legible. No compression blocks, halos, banding, jagged edges, malformed geometry, or missing edges were observed. vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A.\n\nFallback JPEG: The complete elephant and border are clearly presented. The eye, folded ear, curled trunk, tusks, leg contours, ankle bindings, rope, tail, and fine hatching remain readable at mobile scaling. Natural stains, creases, and faded areas belong to the photographed sheet and do not appear to be delivery artifacts. No visible blockiness, ringing, banding, aliasing, geometric distortion, unintended blur, or crop was observed. vision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A.",
+  "agent_output_sha256": "157146f9f65c3bf2f8c3afcb8c839115524343fae04097ecd1b6c6952406a457",
+  "results": {
+    "480": {
+      "image_sha256": "ec19568a2586f5237341927cd3210657dd88e2a0b7ab2456ca1729f97d1d5765",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "observation": "Complete elephant is recognizable; eye, ear, curled trunk, tusks, legs, ankle bindings, rope and principal hatching remain readable. Fine body hatching is subtler but visible; no delivery artifacts observed."
+    },
+    "768": {
+      "image_sha256": "8fac7090fffe963a37ff796ba9d1ec5031281c602ddbb566788cdbf3ae7f5061",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "observation": "Full composition is clear; eye and ear contours, trunk ridges, tusks, leg overlaps, ankle wraps, rope, tail and directional hatching are distinguishable; no delivery artifacts observed."
+    },
+    "1280": {
+      "image_sha256": "19d3fd485b1a1820dfbce302ff5aad83ebcbcc319493598fc61ad2f3c6fecc35",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "observation": "Complete artwork is sharp; fine hatching, eye, tusks, gold bands, rope twist, border and paper texture are well resolved; no delivery artifacts observed."
+    },
+    "fallback": {
+      "image_sha256": "815b14b67c42c78e1ffe6d812c1e9798d9079e0586d38a0757aa0d99847b4a78",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "observation": "Complete elephant and border are clear; eye, ear, trunk, tusks, legs, bindings, rope, tail and hatching remain readable. Historic stains and creases are source condition, not delivery artifacts."
+    }
+  }
+}

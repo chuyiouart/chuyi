@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 25088,
+      "format": "webp",
+      "height": 334,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-26-mughal-elephant-contour-weight-480.webp",
+      "quality": 84,
+      "sha256": "ec19568a2586f5237341927cd3210657dd88e2a0b7ab2456ca1729f97d1d5765",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 58762,
+      "format": "webp",
+      "height": 534,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-26-mughal-elephant-contour-weight-768.webp",
+      "quality": 84,
+      "sha256": "8fac7090fffe963a37ff796ba9d1ec5031281c602ddbb566788cdbf3ae7f5061",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 164082,
+      "format": "webp",
+      "height": 890,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-26-mughal-elephant-contour-weight-1280.webp",
+      "quality": 84,
+      "sha256": "19d3fd485b1a1820dfbce302ff5aad83ebcbcc319493598fc61ad2f3c6fecc35",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 251768,
+    "format": "jpeg",
+    "height": 890,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-26-mughal-elephant-contour-weight-fallback.jpg",
+    "quality": 84,
+    "sha256": "815b14b67c42c78e1ffe6d812c1e9798d9079e0586d38a0757aa0d99847b4a78",
+    "width": 1280
+  },
+  "original_bytes": 2294569,
+  "original_height": 2365,
+  "original_path": "assets/daily/2026-10-26-mughal-elephant-contour-weight.jpg",
+  "original_sha256": "99e802d85db6b576b1ed8ed026a9124408085939eada8a0bcf814822ba55a34a",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1969.65/1969.65_print.jpg",
+  "original_width": 3400,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-26-mughal-elephant-contour-weight-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-26-mughal-elephant-contour-weight-480.webp?v=ec19568a2586 480w, 2026-10-26-mughal-elephant-contour-weight-768.webp?v=8fac7090fffe 768w, 2026-10-26-mughal-elephant-contour-weight-1280.webp?v=19d3fd485b1a 1280w"
+}
