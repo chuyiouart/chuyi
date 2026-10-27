@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 26740,
+      "format": "webp",
+      "height": 598,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-27-hevajra-overlapping-arms-480.webp",
+      "quality": 84,
+      "sha256": "9a1b5e2e15a6d7a7413a4ad4b6900d7815c7cf114156a7972a3db3999a342096",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 58166,
+      "format": "webp",
+      "height": 957,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-27-hevajra-overlapping-arms-768.webp",
+      "quality": 84,
+      "sha256": "e2682215ae08f58211adaf93a6ed0df594ba4200974f6220ca5319bd96678f62",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 139266,
+      "format": "webp",
+      "height": 1595,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-27-hevajra-overlapping-arms-1280.webp",
+      "quality": 84,
+      "sha256": "919fea403999c79cfe131dffd8d2563f72d0729a5a9105a44ef025e8d9454433",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 246095,
+    "format": "jpeg",
+    "height": 1595,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-27-hevajra-overlapping-arms-fallback.jpg",
+    "quality": 84,
+    "sha256": "1db1792c918119ad09b839c93178a79f29a7e28345ff7f43be58af9e26d4ffb4",
+    "width": 1280
+  },
+  "original_bytes": 908029,
+  "original_height": 3400,
+  "original_path": "assets/daily/2026-10-27-hevajra-overlapping-arms.jpg",
+  "original_sha256": "ae5a9e941f3769e12f6484f692abdd0caa256a3e55ed2481d70126bccdc2bd38",
+  "original_url": "https://openaccess-cdn.clevelandart.org/2011.143/2011.143_print.jpg",
+  "original_width": 2729,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-27-hevajra-overlapping-arms-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-27-hevajra-overlapping-arms-480.webp?v=9a1b5e2e15a6 480w, 2026-10-27-hevajra-overlapping-arms-768.webp?v=e2682215ae08 768w, 2026-10-27-hevajra-overlapping-arms-1280.webp?v=919fea403999 1280w"
+}

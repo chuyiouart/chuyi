@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-27",
+  "agent_prompt": "[480]\nAsset 480. Inspect this exact museum-art derivative as it would appear scaled on a mobile screen. Determine whether the full artwork's main subject remains clearly readable and whether there are any visible compression or scaling artifacts. This is an official collection photograph with no GPT-generated text, so OCR exact match must be reported as the literal string \"N/A\" and must not be inferred as true. Return a concise JSON object with keys asset, vision_mobile_readable (boolean), artifacts (boolean), ocr_exact_match (string), and observations. Fail rather than guessing if the image is unavailable.\n\n[768]\nAsset 768. Inspect this exact museum-art derivative as it would appear scaled on a mobile screen. Determine whether the full artwork's main subject remains clearly readable and whether there are any visible compression or scaling artifacts. This is an official collection photograph with no GPT-generated text, so OCR exact match must be reported as the literal string \"N/A\" and must not be inferred as true. Return a concise JSON object with keys asset, vision_mobile_readable (boolean), artifacts (boolean), ocr_exact_match (string), and observations. Fail rather than guessing if the image is unavailable.\n\n[1280]\nAsset 1280. Inspect this exact museum-art derivative as it would appear scaled on a mobile screen. Determine whether the full artwork's main subject remains clearly readable and whether there are any visible compression or scaling artifacts. This is an official collection photograph with no GPT-generated text, so OCR exact match must be reported as the literal string \"N/A\" and must not be inferred as true. Return a concise JSON object with keys asset, vision_mobile_readable (boolean), artifacts (boolean), ocr_exact_match (string), and observations. Fail rather than guessing if the image is unavailable.\n\n[fallback]\nAsset fallback. Inspect this exact museum-art derivative as it would appear scaled on a mobile screen. Determine whether the full artwork's main subject remains clearly readable and whether there are any visible compression or scaling artifacts. This is an official collection photograph with no GPT-generated text, so OCR exact match must be reported as the literal string \"N/A\" and must not be inferred as true. Return a concise JSON object with keys asset, vision_mobile_readable (boolean), artifacts (boolean), ocr_exact_match (string), and observations. Fail rather than guessing if the image is unavailable.",
+  "agent_prompt_sha256": "118428e44b2255f6aeac56f94acf8c5805a09cfb87392f57d3965088819a0b0f",
+  "agent_output": "{\"asset\":\"480\",\"vision_mobile_readable\":true,\"artifacts\":false,\"ocr_exact_match\":\"N/A\",\"observations\":\"The complete sculpture remains clearly recognizable at mobile scale: the central dancing figure, fan of arms, stacked heads, lower attendants, and circular base are distinct. Fine surface detail is reduced as expected, with no visible blocking, ringing, banding, stretching, or other compression/scaling artifact.\"}\n{\"asset\":\"768\",\"vision_mobile_readable\":true,\"artifacts\":false,\"ocr_exact_match\":\"N/A\",\"observations\":\"The full sculpture and its hierarchy remain clear on a mobile display; arm spacing, faces, bent legs, surrounding smaller figures, and base are readable. Edges and tonal gradients appear natural, with no visible compression or scaling artifact.\"}\n{\"asset\":\"1280\",\"vision_mobile_readable\":true,\"artifacts\":false,\"ocr_exact_match\":\"N/A\",\"observations\":\"The central deity, radiating arms, stacked heads, lower dancing figures, and patinated base are all clearly readable when scaled for mobile. Surface texture and contours remain crisp without visible ringing, blockiness, smearing, distortion, or scaling artifact.\"}\n{\"asset\":\"fallback\",\"vision_mobile_readable\":true,\"artifacts\":false,\"ocr_exact_match\":\"N/A\",\"observations\":\"The fallback preserves the complete composition and clear subject identity at mobile scale, including the arm fan and lower figure group. Tonal transitions, contours, and fine details show no visible compression or scaling artifact.\"}",
+  "agent_output_sha256": "ba9f8546e5253197fdc56ac2ca432fad3617795dd0604c063bac29dabf16218c",
+  "results": {
+    "480": {
+      "image_sha256": "9a1b5e2e15a6d7a7413a4ad4b6900d7815c7cf114156a7972a3db3999a342096",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "observations": "The complete sculpture remains clearly recognizable at mobile scale: the central dancing figure, fan of arms, stacked heads, lower attendants, and circular base are distinct. Fine surface detail is reduced as expected, with no visible blocking, ringing, banding, stretching, or other compression/scaling artifact."
+    },
+    "768": {
+      "image_sha256": "e2682215ae08f58211adaf93a6ed0df594ba4200974f6220ca5319bd96678f62",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "observations": "The full sculpture and its hierarchy remain clear on a mobile display; arm spacing, faces, bent legs, surrounding smaller figures, and base are readable. Edges and tonal gradients appear natural, with no visible compression or scaling artifact."
+    },
+    "1280": {
+      "image_sha256": "919fea403999c79cfe131dffd8d2563f72d0729a5a9105a44ef025e8d9454433",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "observations": "The central deity, radiating arms, stacked heads, lower dancing figures, and patinated base are all clearly readable when scaled for mobile. Surface texture and contours remain crisp without visible ringing, blockiness, smearing, distortion, or scaling artifact."
+    },
+    "fallback": {
+      "image_sha256": "1db1792c918119ad09b839c93178a79f29a7e28345ff7f43be58af9e26d4ffb4",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false,
+      "observations": "The fallback preserves the complete composition and clear subject identity at mobile scale, including the arm fan and lower figure group. Tonal transitions, contours, and fine details show no visible compression or scaling artifact."
+    }
+  }
+}
