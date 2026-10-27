@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="把角色用途、真实尺寸、主要体块和识别点写成脚本任务，让 AI 先搭可编辑初版；运行、旋转和局部检查仍由人完成。" />
+  <title>AI 写 Blender 脚本，先交一个能改的初版 | IP 实物化实战营</title>
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="../course.css" />
+  <link rel="stylesheet" href="../update-article.css" />
+</head>
+<body class="update-page">
+  <header class="update-header">
+    <a href="../#updates">← 返回每日公开更新</a>
+    <a class="update-brand" href="../#course-intro">IP 实物化实战营</a>
+  </header>
+  <main class="update-article">
+    <header class="update-article-title">
+      <p class="update-meta"><time datetime="2026-10-27">2026-10-27</time> · 视频</p>
+      <h1>AI 写 Blender 脚本，先交一个能改的初版</h1>
+      <p class="update-lead">把一张角色图交给 AI，再说一句“帮我写 Blender 脚本”，往往会得到一段看似完整的代码。它可能能运行，却没有真实单位、清楚原点和对象命名；头、躯干、衣服与场景也可能全部合成一块，后面想改比例时无从下手。
+
+脚本报错只是问题的一部分。更常见的是代码没有报错，模型却偏离原目标：正面轮廓像，侧面过薄；细节很多，主要体块和负形反而看不清；物件摆进场景后尺寸不对。第一轮若没有明确停止范围，AI 很容易继续堆功能，而不是留下一个可检查的起点。</p>
+    </header>
+    <figure class="update-hero">
+      <picture><source type="image/webp" srcset="../assets/updates/2026-10-27/01-website-hero-480.webp?v=2017c580b481 480w, ../assets/updates/2026-10-27/01-website-hero-768.webp?v=7109569f19cc 768w, ../assets/updates/2026-10-27/01-website-hero-1280.webp?v=47fbf6939c0a 1280w" sizes="(max-width: 680px) 100vw, 760px" /><img src="../assets/updates/2026-10-27/01-website-hero-fallback.png?v=48532ef3298e" srcset="../assets/updates/2026-10-27/01-website-hero-480.webp?v=2017c580b481 480w, ../assets/updates/2026-10-27/01-website-hero-768.webp?v=7109569f19cc 768w, ../assets/updates/2026-10-27/01-website-hero-1280.webp?v=47fbf6939c0a 1280w" sizes="(max-width: 680px) 100vw, 760px" alt="AI 写 Blender 脚本，先交一个能改的初版" width="960" height="540" loading="eager" decoding="async" fetchpriority="high" /></picture>
+      <figcaption>课程流程示意图，不是往期学员案例。</figcaption>
+    </figure>
+    <section class="update-section"><h2>具体问题</h2><p>把一张角色图交给 AI，再说一句“帮我写 Blender 脚本”，往往会得到一段看似完整的代码。它可能能运行，却没有真实单位、清楚原点和对象命名；头、躯干、衣服与场景也可能全部合成一块，后面想改比例时无从下手。</p><p>脚本报错只是问题的一部分。更常见的是代码没有报错，模型却偏离原目标：正面轮廓像，侧面过薄；细节很多，主要体块和负形反而看不清；物件摆进场景后尺寸不对。第一轮若没有明确停止范围，AI 很容易继续堆功能，而不是留下一个可检查的起点。</p></section><section class="update-section"><h2>核心判断</h2><p>AI 写脚本的第一轮任务，是交付一个能编辑、能旋转、能指出问题的初版，不是自动完成角色。输入至少要写清用途、真实单位、总尺寸、主要体块、不能改变的识别点，以及这一轮明确不做什么。</p><p>初版是否可用，要由人在 Blender 里实际运行并复查。对象名和参数要清楚，头、躯干、手臂、服装与场景应按需要分开；正面、侧面和背面要能解释同一个体积；重心、占地和关键负形要讲得通。代码运行成功只是开始，不是验收结论。</p></section><section class="update-section"><h2>步骤或标准</h2><p>把任务收小到一个可运行、可编辑、可复查的体块初版，再逐项核对脚本和模型。</p><ul><li>先写清初版用途和本轮停止范围，例如只验证轮廓、头身与站立占地，不同时要求精雕、骨骼、材质、渲染和打印。</li><li>给出统一真实单位、总高或总宽、主要体块、不能改变的识别点，以及可以简化的细节；没有证据的背面和厚度标成待确认。</li><li>要求脚本使用少量基础体块、清楚对象名和集中参数，保留可编辑结构；不要把所有动作压进一段无法排查的代码。</li><li>在独立副本中运行脚本，先看是否报错、单位与原点是否正确，再旋转检查正侧背轮廓、负形、重心和场景占地。</li><li>挑最影响角色识别的一处做人工修改或局部体块样，比较修改前后；初版不对时回到输入或参数，不让AI继续堆细节。</li><li>保存提示、脚本、软件版本、运行结果、人工修改和未通过项；只有初版可编辑且主要体块能读回原目标，才进入完整修模。</li></ul></section><section class="update-section"><h2>常见错误</h2><p>AI 脚本最容易带来的错觉，是“代码写完了”看起来像“模型已经成立”。</p><ul><li>一句话要求AI完成整个角色。后果是建模、材质、骨骼和渲染混在一起，任何一处失败都难以定位。</li><li>不写单位、总尺寸和原点。后果是模型导出或进入切片时比例错乱，摆放与打印条件无法核对。</li><li>脚本只生成一个合并对象且没有清楚命名。后果是头、躯干、服装和场景不能单独调整，所谓初版并不可编辑。</li><li>代码运行成功就当成模型通过。后果是侧面厚度、负形、重心和遮挡问题被忽略，后续精修建立在错误体块上。</li><li>报错后反复让AI整段重写。后果是已正确部分也被替换，错误范围越来越大，版本关系无法追踪。</li></ul></section><section class="update-section"><h2>与短期课程的关系</h2><p>这项练习属于阶段 2 的 AI 辅助建模与人工修模。阶段 1 已经确定角色方向、来源和不能改变的识别点；阶段 2 把这些条件写进脚本任务，运行后检查单位、原点、对象层级、体块、负形和重心。进入下一阶段前，必须留下可编辑初版、脚本版本、运行环境、人工修改和未通过项。</p><p>3 天路线可聚焦一个角色，完成输入整理、最小脚本、一次真实运行和一处人工修正；4–5 天可在初版通过后继续完整修模、封闭性、壁厚、分件或局部实测。复杂雕刻、骨骼、渲染、打印、陶瓷成形烧制和反复返工另行评估，不能把所有环节压进第一段脚本。</p></section><section class="update-section"><h2>事实 / 案例 / 完成度边界</h2><p>本文依据长期课程的 AI 辅助建模、脚本排错和人工验收方法编写。当天四张视觉规划使用原创陶瓷人物“弧面编排者”，表现脚本输入、三种可编辑体块比较、躯干负形局部样和通过检查后的初版交接；这些都是课程方向示意图，不是真实学员作品、真实课堂、已经烧成的陶瓷成品、已完成 Blender 项目或商业案例。真实案例必须另有来源、许可、同版脚本与运行记录。</p><p>3–5 天通常可以围绕一个明确问题完成脚本初版、运行检查和有限人工修改，但结果取决于输入完整度、软件版本、模型复杂度、设备与测试次数。课程不承诺 AI 原生生成可制造模型，不承诺脚本一次成功，也不承诺短训内完成商业级成品、订单、流量、展览或销售结果。</p></section><section class="update-section"><h2>报名入口</h2><p>如果你已有 IP / 角色资产，可以提交同版正侧背、当前模型、目标尺寸、现有 Blender 文件、最想自动搭建的部分和可到课时间。我们会先把任务收小，再判断哪些体块适合脚本生成，哪些必须人工修。</p><p>如果你只有想法、草图或初步设定，也可以提交角色特点、用途、预期大小、最想验证的问题和可到课时间。我们会先建立最小输入和简单体块，再安排青岛 3–5 天短训。公开报名地址：https://wj.qq.com/s2/27296919/9499/</p></section>
+    <div class="update-gallery"><picture><source type="image/webp" srcset="../assets/updates/2026-10-27/02-core-explanation-480.webp?v=7e3c75fa3f96 480w, ../assets/updates/2026-10-27/02-core-explanation-768.webp?v=9f2c0575d718 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-10-27/02-core-explanation-fallback.png?v=4f6fd16a7b93" srcset="../assets/updates/2026-10-27/02-core-explanation-480.webp?v=7e3c75fa3f96 480w, ../assets/updates/2026-10-27/02-core-explanation-768.webp?v=9f2c0575d718 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="AI 写 Blender 脚本，先交一个能改的初版 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-10-27/03-real-application-480.webp?v=d80aae2a4d27 480w, ../assets/updates/2026-10-27/03-real-application-768.webp?v=461a5ba159e7 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-10-27/03-real-application-fallback.png?v=18dc49e28f3f" srcset="../assets/updates/2026-10-27/03-real-application-480.webp?v=d80aae2a4d27 480w, ../assets/updates/2026-10-27/03-real-application-768.webp?v=461a5ba159e7 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="AI 写 Blender 脚本，先交一个能改的初版 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-10-27/04-social-promotion-480.webp?v=7eac8dcf872e 480w, ../assets/updates/2026-10-27/04-social-promotion-768.webp?v=e9a8db2052a6 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-10-27/04-social-promotion-fallback.png?v=d40d8de294ed" srcset="../assets/updates/2026-10-27/04-social-promotion-480.webp?v=7eac8dcf872e 480w, ../assets/updates/2026-10-27/04-social-promotion-768.webp?v=e9a8db2052a6 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="AI 写 Blender 脚本，先交一个能改的初版 配图" width="480" height="600" loading="lazy" decoding="async" /></picture></div>
+    <aside class="update-boundary">
+      <strong>课程边界</strong>
+      <p>3–5 天短训按起点确认范围：3 天聚焦一个优先目标，4–5 天串联首版项目流程；不承诺商业级量产、人人进入正式展览或必然产生销售。</p>
+    </aside>
+    <section class="update-cta">
+      <p>长期招生｜青岛｜3–5 天短训｜评估后预约跟班｜每班最多 10 人。<a href="../#enrollment">查看当前学习方案与费用</a></p>
+      <a href="https://wj.qq.com/s2/27296919/9499/" target="_blank" rel="noopener">填写报名资料 →</a>
+    </section>
+  </main>
+</body>
+</html>
