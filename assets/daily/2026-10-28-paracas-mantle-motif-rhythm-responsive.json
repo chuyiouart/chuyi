@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 35588,
+      "format": "webp",
+      "height": 259,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-28-paracas-mantle-motif-rhythm-480.webp",
+      "quality": 84,
+      "sha256": "8936c686ac99857c9d52fc1a32fa4390906f520f3eba8920ab93cc50c957e864",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 84202,
+      "format": "webp",
+      "height": 414,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-28-paracas-mantle-motif-rhythm-768.webp",
+      "quality": 84,
+      "sha256": "bb445a60c4fc982c60268d1f19b47c0478508ff1a5fd9a4607034a0502b54286",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 235126,
+      "format": "webp",
+      "height": 691,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-28-paracas-mantle-motif-rhythm-1280.webp",
+      "quality": 84,
+      "sha256": "390134cd8aa922149553940bd4372d138529ff77526d03d57b9ba255062b4837",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 321210,
+    "format": "jpeg",
+    "height": 691,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-28-paracas-mantle-motif-rhythm-fallback.jpg",
+    "quality": 84,
+    "sha256": "344d85d5fbc694e4482c3d5ff7f56da5a973e122e720f8faba58a61c9abfa910",
+    "width": 1280
+  },
+  "original_bytes": 5942820,
+  "original_height": 1835,
+  "original_path": "assets/daily/2026-10-28-paracas-mantle-motif-rhythm.jpg",
+  "original_sha256": "816539260457ec6e873eaa64aad1d7ddcc3d902220e0e939b009bc714ffb8024",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1946.226/1946.226_print.jpg",
+  "original_width": 3400,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-28-paracas-mantle-motif-rhythm-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-28-paracas-mantle-motif-rhythm-480.webp?v=8936c686ac99 480w, 2026-10-28-paracas-mantle-motif-rhythm-768.webp?v=bb445a60c4fc 768w, 2026-10-28-paracas-mantle-motif-rhythm-1280.webp?v=390134cd8aa9 1280w"
+}
