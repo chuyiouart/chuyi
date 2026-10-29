@@ -1,0 +1,38 @@
+{
+  "agent_output": "[480]\nThe complete carved mask remains clearly recognizable at mobile scale. The eye openings, projecting nose, mouth, cheek stripes, forehead pattern, and outer contour are all distinguishable. Edges and tonal gradients look clean; no visible compression, resizing, ringing, blocking, banding, unintended blur, or crop artifacts are present.\nvision_mobile_readable=true; artifacts=false\n\n[768]\nThe full mask and its important structure remain clearly readable at mobile scale, including the asymmetrical eye surrounds, long nose, mouth, cheek markings, forehead incisions, and lower rim. Surface texture and gradients are preserved without visible compression, resizing, ringing, blocking, banding, unintended blur, or crop artifacts.\nvision_mobile_readable=true; artifacts=false\n\n[1280]\nThe complete mask is sharply and clearly readable when scaled for mobile. Fine carved and painted details across the forehead, eyes, cheeks, mouth, and lower border remain coherent. There is no visible ringing, blocking, banding, resizing damage, unintended blur, crop, or other rendering artifact.\nvision_mobile_readable=true; artifacts=false\n\n[fallback]\nThe full mask remains clear and visually coherent at mobile scale. Major planes and smaller painted or incised details are readable, while the background gradient is smooth. No visible compression, ringing, blocking, banding, unintended blur, scaling damage, crop, or other rendering artifact is present.\nvision_mobile_readable=true; artifacts=false",
+  "agent_output_sha256": "5a15c8b6c9eb69de16643179f5e1d1cb05f7b73d82c88c1fa227d5ea3c12ed49",
+  "agent_prompt": "[480]\nAsset 480. Perform a real visual QA of this exact museum-art image as it would appear scaled on a mobile screen. Determine whether the artwork's main subject and important visual structure remain clearly readable, and whether there are any visible compression, resizing, ringing, blocking, banding, blur, crop, or other rendering artifacts. Do not infer from dimensions or metadata. Return a concise factual assessment and explicitly end with exactly: vision_mobile_readable=true|false; artifacts=true|false\n\n[768]\nAsset 768. Perform a real visual QA of this exact museum-art image as it would appear scaled on a mobile screen. Determine whether the artwork's main subject and important visual structure remain clearly readable, and whether there are any visible compression, resizing, ringing, blocking, banding, blur, crop, or other rendering artifacts. Do not infer from dimensions or metadata. Return a concise factual assessment and explicitly end with exactly: vision_mobile_readable=true|false; artifacts=true|false\n\n[1280]\nAsset 1280. Perform a real visual QA of this exact museum-art image as it would appear scaled on a mobile screen. Determine whether the artwork's main subject and important visual structure remain clearly readable, and whether there are any visible compression, resizing, ringing, blocking, banding, blur, crop, or other rendering artifacts. Do not infer from dimensions or metadata. Return a concise factual assessment and explicitly end with exactly: vision_mobile_readable=true|false; artifacts=true|false\n\n[fallback]\nAsset fallback. Perform a real visual QA of this exact museum-art image as it would appear scaled on a mobile screen. Determine whether the artwork's main subject and important visual structure remain clearly readable, and whether there are any visible compression, resizing, ringing, blocking, banding, blur, crop, or other rendering artifacts. Do not infer from dimensions or metadata. Return a concise factual assessment and explicitly end with exactly: vision_mobile_readable=true|false; artifacts=true|false",
+  "agent_prompt_sha256": "2129680dec9dec6cdcf07b93ad0bb6297bdac0b3d4789a0b2c704ece2ce7f336",
+  "date": "2026-10-29",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "ef98fa01bb84ed198ef7b9f1f88ccb109a87e1339abedd33e644668afd6ca11b",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "vision_output": "The complete mask is sharply and clearly readable when scaled for mobile. Fine carved and painted details across the forehead, eyes, cheeks, mouth, and lower border remain coherent. There is no visible ringing, blocking, banding, resizing damage, unintended blur, crop, or other rendering artifact.\nvision_mobile_readable=true; artifacts=false"
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "873cdd7498ca5bda4b4badb3728f6ff1087500b2b73cf8131d0985bd86fe6251",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "vision_output": "The complete carved mask remains clearly recognizable at mobile scale. The eye openings, projecting nose, mouth, cheek stripes, forehead pattern, and outer contour are all distinguishable. Edges and tonal gradients look clean; no visible compression, resizing, ringing, blocking, banding, unintended blur, or crop artifacts are present.\nvision_mobile_readable=true; artifacts=false"
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "568f1d12da1ecf27fa36386d4bf70e2c17080a8bd655fbfe2dd4cc32f4052e10",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "vision_output": "The full mask and its important structure remain clearly readable at mobile scale, including the asymmetrical eye surrounds, long nose, mouth, cheek markings, forehead incisions, and lower rim. Surface texture and gradients are preserved without visible compression, resizing, ringing, blocking, banding, unintended blur, or crop artifacts.\nvision_mobile_readable=true; artifacts=false"
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "9386f7625d071d65a667c56e24954617ee720701e29d302a79eb89adb795ee44",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "vision_output": "The full mask remains clear and visually coherent at mobile scale. Major planes and smaller painted or incised details are readable, while the background gradient is smooth. No visible compression, ringing, blocking, banding, unintended blur, scaling damage, crop, or other rendering artifact is present.\nvision_mobile_readable=true; artifacts=false"
+    }
+  },
+  "schema_version": 1
+}
