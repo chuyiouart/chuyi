@@ -2553,16 +2553,33 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-10-29",
     "type": "视频",
     "time": "19:30",
-    "title": "Blender 脚本报错，怎么让 GPT-6 帮忙找原因？",
-    "summary": "今天聊聊Blender 脚本报错，怎么让 GPT-6 帮忙找原因。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "Blender 脚本报错，先把问题缩小",
+    "summary": "把版本、完整报错和触发步骤整理成最小复现，再让 GPT-6 解释原因、提出小修改；每次运行仍要由人检查模型有没有被改坏。",
+    "cover": "./assets/updates/2026-10-29/02-core-explanation-fallback.png?v=55d70efee9fa",
+    "published": true,
+    "url": "./updates/2026-10-29-blender-script-error-minimal-reproduction.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 2 / Gate 2",
     "editorial_angle": "失败排查",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-10-29",
+    "media_status": "partial",
+    "passedRoles": [
+      "core_explanation",
+      "social_promotion"
+    ],
+    "pendingRoles": [
+      "website_hero",
+      "real_application"
+    ],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-10-29/02-core-explanation-480.webp?v=c673f036ca38 480w, ./assets/updates/2026-10-29/02-core-explanation-768.webp?v=2056b4758529 768w",
+      "sizes": "(max-width: 680px) 100vw, 50vw",
+      "fallback": "./assets/updates/2026-10-29/02-core-explanation-fallback.png?v=55d70efee9fa",
+      "width": 768,
+      "height": 768
+    }
   },
   {
     "date": "2026-10-30",

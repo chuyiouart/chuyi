@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="把版本、完整报错和触发步骤整理成最小复现，再让 GPT-6 解释原因、提出小修改；每次运行仍要由人检查模型有没有被改坏。" />
+  <title>Blender 脚本报错，先把问题缩小 | IP 实物化实战营</title>
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="../course.css" />
+  <link rel="stylesheet" href="../update-article.css" />
+</head>
+<body class="update-page">
+  <header class="update-header">
+    <a href="../#updates">← 返回每日公开更新</a>
+    <a class="update-brand" href="../#course-intro">IP 实物化实战营</a>
+  </header>
+  <main class="update-article">
+    <header class="update-article-title">
+      <p class="update-meta"><time datetime="2026-10-29">2026-10-29</time> · 视频</p>
+      <h1>Blender 脚本报错，先把问题缩小</h1>
+      <p class="update-lead">Blender 脚本报错时，最显眼的是终端或信息区最后一行，但真正原因常在前面的调用记录、对象状态或版本差异里。把整份脚本丢给 GPT-6，再说一句‘帮我修’，它可能改掉很多没有问题的代码，最后虽然不报原来的错，却出现新的对象、比例或层级问题。
+
+今天处理的是怎样把报错整理成一个能重复、能比较的小问题。AI 可以帮忙解释 traceback、列出可能原因和提出小补丁；运行环境、对象状态、修改范围，以及补丁有没有破坏模型，仍要由人实际检查。</p>
+    </header>
+    
+    <section class="update-section"><h2>具体问题</h2><p>Blender 脚本报错时，最显眼的是终端或信息区最后一行，但真正原因常在前面的调用记录、对象状态或版本差异里。把整份脚本丢给 GPT-6，再说一句‘帮我修’，它可能改掉很多没有问题的代码，最后虽然不报原来的错，却出现新的对象、比例或层级问题。</p><p>今天处理的是怎样把报错整理成一个能重复、能比较的小问题。AI 可以帮忙解释 traceback、列出可能原因和提出小补丁；运行环境、对象状态、修改范围，以及补丁有没有破坏模型，仍要由人实际检查。</p></section><section class="update-section"><h2>核心判断</h2><p>排错的关键不是让 AI 猜得更多，而是让输入更完整、测试范围更小。至少要提供 Blender 与插件版本、完整报错、最小相关代码、触发步骤、预期结果和最后一个正常状态。能删掉无关部分后仍稳定复现，才说明问题已经被抓住。</p><p>每次只改一个原因，并在独立副本中运行。报错消失后还要检查对象名、层级、单位、原点、主要体块和导出结果；这些都没有被意外改变，补丁才算通过。AI 给的是待验证建议，不是验收结论。</p></section><section class="update-section"><h2>步骤或标准</h2><p>把报错从一大段混合任务收成一个最小测试，再用同一输入逐次验证。</p><ul><li>复制脚本和场景到独立测试文件，记下 Blender 版本、插件版本、系统环境、完整报错和最后一个正常结果；不要在唯一文件上直接试。</li><li>把问题缩成最小可复现步骤：只保留触发报错的对象、输入和操作，暂时移除渲染、材质、批量循环与无关场景。</li><li>把完整 traceback，也就是从报错位置向前追溯的调用记录，连同相关代码片段和预期结果交给 GPT-6；明确哪些文件、对象和操作不能改。</li><li>让 AI 先解释错误可能来自语法、对象状态、上下文、数据类型还是版本差异，再给一个最小修改；不要一次重写整段脚本。</li><li>在独立副本中只运行这一处修改，比较报错前后、对象层级、单位和形体是否变化；失败时保留新回执，再缩小一个变量。</li><li>保存原脚本、最小复现文件、每次修改、运行环境和人工确认结果。只有同一输入能稳定重复运行且没有破坏模型，才合回主文件。</li></ul></section><section class="update-section"><h2>常见错误</h2><p>脚本排错最容易被‘错误信息消失了’误导，而忽略模型和场景是否仍然正确。</p><ul><li>只把最后一行报错发给 AI。后果是调用路径、对象状态和真正出错位置缺失，得到的解释容易对错问题。</li><li>让 AI 直接重写整段脚本。后果是已经正确的部分也被替换，新旧错误混在一起，无法判断哪次修改有效。</li><li>不说明 Blender 和插件版本。后果是 AI 可能给出当前环境不存在的接口或旧写法，脚本继续报错。</li><li>在正式场景里反复试补丁。后果是对象名、层级或参数被意外改动，报错即使消失也可能损坏模型。</li><li>脚本跑完就当作修好。后果是单位、原点、体块、负形或导出结果可能已经偏离，后续制作仍会返工。</li></ul></section><section class="update-section"><h2>与短期课程的关系</h2><p>这项练习属于阶段 2 的 AI 辅助建模与人工修模。阶段 2 要留下同版脚本、软件环境、完整报错、最小复现文件、修改记录和模型复查结果。进入下一阶段前，不只是代码能运行，还要确认对象层级、单位、体块和输出没有被补丁破坏。</p><p>3 天路线可以围绕一个明确报错，完成问题复现、一次最小修改、真实运行和模型复查；4–5 天可在修复稳定后继续结构检查、分件、切片或局部样。复杂插件冲突、底层依赖、长期脚本重构、反复打印与外协另行评估，不能承诺一次对话解决全部问题。</p></section><section class="update-section"><h2>事实 / 案例 / 完成度边界</h2><p>本文依据长期课程的 AI 辅助脚本排错、版本记录和人工验收方法编写。当天四张视觉规划使用原创树脂人物‘补丁拾光者’，表现从完整场景找到报错起点、比较三个最小测试状态、手修一枚异常发束体块样，以及通过复查后的脚本与样件交接；这些都是课程方向示意图，不是真实学员、真实课堂、已运行的 GPT-6 会话、真实报错修复或商业项目。真实案例必须另有来源、许可、同版脚本和运行记录。</p><p>3–5 天通常可以围绕一个清楚报错完成有限排查、修改和模型复核，但结果取决于代码规模、软件版本、插件、文件状态和测试次数。课程不承诺 GPT-6 自动修好脚本，不承诺一次运行成功，也不承诺短训内完成商业级成品、订单、流量、展览或销售结果。</p></section><section class="update-section"><h2>报名入口</h2><p>如果你已有 IP / 角色资产，可以提交脱敏后的 Blender 文件、脚本、软件与插件版本、完整报错、触发步骤、目标用途和可到课时间。我们会先确认能否复现，再决定从哪一段代码和哪个对象开始查。</p><p>如果你只有想法、草图或初步设定，也可以提交角色特点、想让脚本先完成的一个小任务、现有设备和可到课时间。我们会先建立简单体块和可检查的脚本范围，再安排青岛 3–5 天短训。公开报名地址：https://wj.qq.com/s2/27296919/9499/</p></section>
+    <div class="update-gallery"><picture><source type="image/webp" srcset="../assets/updates/2026-10-29/02-core-explanation-480.webp?v=c673f036ca38 480w, ../assets/updates/2026-10-29/02-core-explanation-768.webp?v=2056b4758529 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-10-29/02-core-explanation-fallback.png?v=55d70efee9fa" srcset="../assets/updates/2026-10-29/02-core-explanation-480.webp?v=c673f036ca38 480w, ../assets/updates/2026-10-29/02-core-explanation-768.webp?v=2056b4758529 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="Blender 脚本报错，先把问题缩小 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-10-29/04-social-promotion-480.webp?v=dda35790cde6 480w, ../assets/updates/2026-10-29/04-social-promotion-768.webp?v=b8075a56c633 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-10-29/04-social-promotion-fallback.png?v=1d169760d0f4" srcset="../assets/updates/2026-10-29/04-social-promotion-480.webp?v=dda35790cde6 480w, ../assets/updates/2026-10-29/04-social-promotion-768.webp?v=b8075a56c633 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="Blender 脚本报错，先把问题缩小 配图" width="768" height="960" loading="lazy" decoding="async" /></picture></div>
+    <aside class="update-boundary">
+      <strong>课程边界</strong>
+      <p>3–5 天短训按起点确认范围：3 天聚焦一个优先目标，4–5 天串联首版项目流程；不承诺商业级量产、人人进入正式展览或必然产生销售。</p>
+    </aside>
+    <section class="update-cta">
+      <p>长期招生｜青岛｜3–5 天短训｜评估后预约跟班｜每班最多 10 人。<a href="../#enrollment">查看当前学习方案与费用</a></p>
+      <a href="https://wj.qq.com/s2/27296919/9499/" target="_blank" rel="noopener">填写报名资料 →</a>
+    </section>
+  </main>
+</body>
+</html>
