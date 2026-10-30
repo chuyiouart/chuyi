@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-30",
+  "agent_prompt": "OUART Daily Art responsive Vision QA for the attached exact asset. Inspect the actual pixels as they would appear scaled on a mobile viewport. Determine whether the artwork's principal subject and spatial organization remain clearly readable and whether there are any visible compression, resizing, ringing, blocking, banding, blur, stretching, aspect-ratio, or other rendering artifacts. This is an official museum collection image with no GPT-generated text, so OCR exact match is N/A and must not be inferred. Return exactly: asset label; PASS or FAIL; mobile_readable=true/false; artifacts=true/false; then a concise but specific visual observation supporting the decision.",
+  "agent_prompt_sha256": "bf666c199f167189ec9c43924c516cf7aaab85e664fe6074610bf522a61a0a4e",
+  "agent_output": "480: PASS; mobile_readable=true; artifacts=false; The full ten-panel screen and its repeated shelf grid remain immediately legible at mobile scale; gold book stacks and colored vessels separate cleanly from the dark blue compartments, with intact proportions and no visible ringing, blocking, banding, stretching, or compression damage.\n768: PASS; mobile_readable=true; artifacts=false; The long screen, shelf divisions, stacked books, flowers, vessels, and alternating recesses are all clearly readable; diagonal shelf planes and fine red-gold borders remain stable, with no visible blur, resizing distortion, or compression artifacts.\n1280: PASS; mobile_readable=true; artifacts=false; The complete screen is sharp and proportionally correct, with clear shelf depth, book edges, vessel silhouettes, panel seams, and dark-blue negative spaces; no ringing, blocking, banding, stretching, or other rendering artifacts are visible.\nfallback: PASS; mobile_readable=true; artifacts=false; The JPEG fallback preserves the same clear full-screen composition, shelf geometry, layered books, vessels, and flowers at mobile scaling; aspect ratio and edges are correct, with no visible JPEG blocking, halos, banding, blur, or scaling artifacts.",
+  "agent_output_sha256": "41f8157c37104e2ea5ffc0807aeeddef6fb21ea4f636d29e0f747710ea6ca00d",
+  "results": {
+    "480": {"image_sha256": "5776f178549358966863a10f278b5a116b1093db4b2c10d36f86002d34972eb1", "ocr_exact_match": "N/A", "vision_mobile_readable": true, "artifacts": false},
+    "768": {"image_sha256": "62651a749a48fefa367e64b7dd16396561290bc00b1da1f62e04fcb7f7d4b0c3", "ocr_exact_match": "N/A", "vision_mobile_readable": true, "artifacts": false},
+    "1280": {"image_sha256": "630c4e711657e662bdac9c250905646ca0eaa1c6e783ece410da0343ef9d2f86", "ocr_exact_match": "N/A", "vision_mobile_readable": true, "artifacts": false},
+    "fallback": {"image_sha256": "c48cb02c882a4c996037389f3a6f46cfa3adb842da109ecf97a4e3af24709d3c", "ocr_exact_match": "N/A", "vision_mobile_readable": true, "artifacts": false}
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 16452,
+      "format": "webp",
+      "height": 270,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-30-books-scholars-shelf-depth-480.webp",
+      "quality": 84,
+      "sha256": "5776f178549358966863a10f278b5a116b1093db4b2c10d36f86002d34972eb1",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 38006,
+      "format": "webp",
+      "height": 433,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-30-books-scholars-shelf-depth-768.webp",
+      "quality": 84,
+      "sha256": "62651a749a48fefa367e64b7dd16396561290bc00b1da1f62e04fcb7f7d4b0c3",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 92156,
+      "format": "webp",
+      "height": 721,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-30-books-scholars-shelf-depth-1280.webp",
+      "quality": 84,
+      "sha256": "630c4e711657e662bdac9c250905646ca0eaa1c6e783ece410da0343ef9d2f86",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 206983,
+    "format": "jpeg",
+    "height": 721,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-30-books-scholars-shelf-depth-fallback.jpg",
+    "quality": 84,
+    "sha256": "c48cb02c882a4c996037389f3a6f46cfa3adb842da109ecf97a4e3af24709d3c",
+    "width": 1280
+  },
+  "original_bytes": 1047967,
+  "original_height": 1915,
+  "original_path": "assets/daily/2026-10-30-books-scholars-shelf-depth.jpg",
+  "original_sha256": "d108f0bcae36a5a573e7c4c03367124c22a91a24e6cce129af9b37989a294b8a",
+  "original_url": "https://openaccess-cdn.clevelandart.org/2011.37/2011.37_print.jpg",
+  "original_width": 3400,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-30-books-scholars-shelf-depth-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-30-books-scholars-shelf-depth-480.webp?v=5776f1785493 480w, 2026-10-30-books-scholars-shelf-depth-768.webp?v=62651a749a48 768w, 2026-10-30-books-scholars-shelf-depth-1280.webp?v=630c4e711657 1280w"
+}
