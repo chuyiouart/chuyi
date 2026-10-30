@@ -2585,16 +2585,33 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-10-30",
     "type": "图文",
     "time": "11:30",
-    "title": "零件怎么拆、怎么接，为什么要先做小样？",
-    "summary": "今天聊聊零件怎么拆、怎么接，为什么要先做小样。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "零件拆得开，也要接得稳",
+    "summary": "分件线要兼顾制造、装配和外观，连接还要说明定位、防转与受力；先做一组真实小样，再决定是否放回完整模型。",
+    "cover": "./assets/updates/2026-10-30/01-website-hero-fallback.png?v=e50eb61bd153",
+    "published": true,
+    "url": "./updates/2026-10-30-parts-split-connect-prototype-test.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 2 / Gate 2",
     "editorial_angle": "失败排查",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-10-30",
+    "media_status": "partial",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "social_promotion"
+    ],
+    "pendingRoles": [
+      "real_application"
+    ],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-10-30/01-website-hero-480.webp?v=295517d44ec5 480w, ./assets/updates/2026-10-30/01-website-hero-768.webp?v=8516dd277786 768w, ./assets/updates/2026-10-30/01-website-hero-1280.webp?v=19eae42f52e1 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-10-30/01-website-hero-fallback.png?v=e50eb61bd153",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-10-31",
