@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 43900,
+      "format": "webp",
+      "height": 365,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-31-rembrandt-three-trees-line-density-480.webp",
+      "quality": 84,
+      "sha256": "98b0d5fce778d1e7d560942edab0d02698808c1225038a48309062e84a4197a3",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 123648,
+      "format": "webp",
+      "height": 583,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-31-rembrandt-three-trees-line-density-768.webp",
+      "quality": 84,
+      "sha256": "c2e76ce70462b30dfeedd59f5c96719a16a7528a8f073ce61bff0587845849a0",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 369606,
+      "format": "webp",
+      "height": 972,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-10-31-rembrandt-three-trees-line-density-1280.webp",
+      "quality": 84,
+      "sha256": "ca83b6754cd480f5ae09f9040d76d5670cf402b6189f5d6bb61045b89490580c",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 382490,
+    "format": "jpeg",
+    "height": 972,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-10-31-rembrandt-three-trees-line-density-fallback.jpg",
+    "quality": 84,
+    "sha256": "4e143fd9c698b059c8eb9046a095d105d38c93bcdb73e986f5ade4bf92c1289e",
+    "width": 1280
+  },
+  "original_bytes": 3675853,
+  "original_height": 2583,
+  "original_path": "assets/daily/2026-10-31-rembrandt-three-trees-line-density.jpg",
+  "original_sha256": "26574ceae581d2f711219f95f6a4a3509ad9316eaf08ca90dbf079654a8ae01b",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1966.334/1966.334_print.jpg",
+  "original_width": 3400,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-10-31-rembrandt-three-trees-line-density-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-10-31-rembrandt-three-trees-line-density-480.webp?v=98b0d5fce778 480w, 2026-10-31-rembrandt-three-trees-line-density-768.webp?v=c2e76ce70462 768w, 2026-10-31-rembrandt-three-trees-line-density-1280.webp?v=ca83b6754cd4 1280w"
+}

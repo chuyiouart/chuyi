@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-31",
+  "agent_prompt": "Asset key 480\nOUART Daily Art responsive QA for asset key 480. Inspect the actual opened image visually as it would appear scaled on a mobile screen. Determine whether the artwork’s main subject and important etched forms remain clear and readable, and whether there are any visible compression or scaling artifacts (blocking, ringing, banding, severe blur, malformed geometry, or corruption). This is an official collection image with no GPT-generated text, so OCR exact match is N/A. Return a concise factual assessment and an explicit final line exactly in this form: vision_mobile_readable=true|false; artifacts=true|false; ocr_exact_match=N/A\n\nAsset key 768\nOUART Daily Art responsive QA for asset key 768. Inspect the actual opened image visually as it would appear scaled on a mobile screen. Determine whether the artwork’s main subject and important etched forms remain clear and readable, and whether there are any visible compression or scaling artifacts (blocking, ringing, banding, severe blur, malformed geometry, or corruption). This is an official collection image with no GPT-generated text, so OCR exact match is N/A. Return a concise factual assessment and an explicit final line exactly in this form: vision_mobile_readable=true|false; artifacts=true|false; ocr_exact_match=N/A\n\nAsset key 1280\nOUART Daily Art responsive QA for asset key 1280. Inspect the actual opened image visually as it would appear scaled on a mobile screen. Determine whether the artwork’s main subject and important etched forms remain clear and readable, and whether there are any visible compression or scaling artifacts (blocking, ringing, banding, severe blur, malformed geometry, or corruption). This is an official collection image with no GPT-generated text, so OCR exact match is N/A. Return a concise factual assessment and an explicit final line exactly in this form: vision_mobile_readable=true|false; artifacts=true|false; ocr_exact_match=N/A\n\nAsset key fallback\nOUART Daily Art responsive QA for asset key fallback. Inspect the actual opened image visually as it would appear scaled on a mobile screen. Determine whether the artwork’s main subject and important etched forms remain clear and readable, and whether there are any visible compression or scaling artifacts (blocking, ringing, banding, severe blur, malformed geometry, or corruption). This is an official collection image with no GPT-generated text, so OCR exact match is N/A. Return a concise factual assessment and an explicit final line exactly in this form: vision_mobile_readable=true|false; artifacts=true|false; ocr_exact_match=N/A",
+  "agent_prompt_sha256": "2315aa292988a31b46e09d25b0b8af0a20e1b398f2ecb5b1a2ae35457bd993e4",
+  "agent_output": "Asset key 480\nThe three-tree group, dark foreground, low horizon, and storm mass remain clearly distinguishable at mobile scale. Fine etched hatching is naturally reduced at 480 pixels but remains coherent, with no visible blocking, ringing, banding, severe blur, malformed geometry, or corruption.\nvision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A\n\nAsset key 768\nThe three trees and their trunks, the dark foreground path, distant horizontal fields, and the storm cloud remain clear at mobile scale. Etched line direction and tonal separation are readable, with no visible compression or scaling artifacts, malformed geometry, or corruption.\nvision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A\n\nAsset key 1280\nThe principal tree group, individual trunks and foliage masses, sweeping dark sky hatching, storm cloud, distant fields, and foreground textures are all clearly readable. Fine etched lines remain well resolved, and no blocking, ringing, banding, severe blur, malformed geometry, or corruption is visible.\nvision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A\n\nAsset key fallback\nThe principal tree group, trunks, foliage, storm cloud, distant landscape, and foreground tonal structure remain clear when scaled for mobile display. Fine etched hatching is preserved without visible blocking, ringing, banding, severe blur, malformed geometry, or corruption.\nvision_mobile_readable=true; artifacts=false; ocr_exact_match=N/A",
+  "agent_output_sha256": "3064f133c0359bf0cbb0cae8c4f0cc0a5aed5519933a4ad8b5b9fc56f9cf797e",
+  "results": {
+    "480": {
+      "image_sha256": "98b0d5fce778d1e7d560942edab0d02698808c1225038a48309062e84a4197a3",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "c2e76ce70462b30dfeedd59f5c96719a16a7528a8f073ce61bff0587845849a0",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "ca83b6754cd480f5ae09f9040d76d5670cf402b6189f5d6bb61045b89490580c",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "4e143fd9c698b059c8eb9046a095d105d38c93bcdb73e986f5ade4bf92c1289e",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
