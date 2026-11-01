@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 10526,
+      "format": "webp",
+      "height": 611,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-01-amenemope-paint-box-compartments-480.webp",
+      "quality": 84,
+      "sha256": "667a0d28919cf220be422f02d3e1819c775bb1248b409c6e2c2700babe31602f",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 19414,
+      "format": "webp",
+      "height": 978,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-01-amenemope-paint-box-compartments-768.webp",
+      "quality": 84,
+      "sha256": "1bee6c1f6a35906bce5b99c92d79f293145e3f5a04e4794ff07fdc513a028775",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 46986,
+      "format": "webp",
+      "height": 1629,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-01-amenemope-paint-box-compartments-1280.webp",
+      "quality": 84,
+      "sha256": "6f5a97c0c394ec2a3d117b4a7434fd84e30c4530b0e7cb96bdec1e126ec29b79",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 114181,
+    "format": "jpeg",
+    "height": 1629,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-11-01-amenemope-paint-box-compartments-fallback.jpg",
+    "quality": 84,
+    "sha256": "a4a4a8ab38ce84156a66a1538dc5ae128b9e6b814dd515ffae050f69b197bff6",
+    "width": 1280
+  },
+  "original_bytes": 911316,
+  "original_height": 3400,
+  "original_path": "assets/daily/2026-11-01-amenemope-paint-box-compartments.jpg",
+  "original_sha256": "0b6d2e0bcc0a301a23b24d384ae39911d2778ae3888740a5bea21619fb87f75d",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1914.680/1914.680_print.jpg",
+  "original_width": 2671,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-11-01-amenemope-paint-box-compartments-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-11-01-amenemope-paint-box-compartments-480.webp?v=667a0d28919c 480w, 2026-11-01-amenemope-paint-box-compartments-768.webp?v=1bee6c1f6a35 768w, 2026-11-01-amenemope-paint-box-compartments-1280.webp?v=6f5a97c0c394 1280w"
+}
