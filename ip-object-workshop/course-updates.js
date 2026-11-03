@@ -2711,16 +2711,32 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-11-03",
     "type": "视频",
     "time": "19:30",
-    "title": "打印前，让 AI 帮忙列一张检查清单",
-    "summary": "今天聊聊打印前，让 AI 帮忙列一张检查清单。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "打印前，先让 AI 把检查项问完整",
+    "summary": "把模型版本、尺寸、材料和设备条件交代清楚，让 AI 整理检查顺序，再由人回到同一版模型、切片和局部样逐项确认。",
+    "cover": "./assets/updates/2026-11-03/01-website-hero-fallback.png?v=28600fa478df",
+    "published": true,
+    "url": "./updates/2026-11-03-ask-ai-for-a-complete-pre-print-checklist.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 3 / Gate 3",
     "editorial_angle": "失败排查",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-11-03",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-11-03/01-website-hero-480.webp?v=1da35b770aea 480w, ./assets/updates/2026-11-03/01-website-hero-768.webp?v=503f02f6198e 768w, ./assets/updates/2026-11-03/01-website-hero-1280.webp?v=5a2ba3bd0f6e 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-11-03/01-website-hero-fallback.png?v=28600fa478df",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-11-04",

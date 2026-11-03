@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="把模型版本、尺寸、材料和设备条件交代清楚，让 AI 整理检查顺序，再由人回到同一版模型、切片和局部样逐项确认。" />
+  <title>打印前，先让 AI 把检查项问完整 | IP 实物化实战营</title>
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="../course.css" />
+  <link rel="stylesheet" href="../update-article.css" />
+</head>
+<body class="update-page">
+  <header class="update-header">
+    <a href="../#updates">← 返回每日公开更新</a>
+    <a class="update-brand" href="../#course-intro">IP 实物化实战营</a>
+  </header>
+  <main class="update-article">
+    <header class="update-article-title">
+      <p class="update-meta"><time datetime="2026-11-03">2026-11-03</time> · 视频</p>
+      <h1>打印前，先让 AI 把检查项问完整</h1>
+      <p class="update-lead">打印前最容易漏掉的，不是某一个按钮，而是检查条件没有写全。模型看起来完整，如果单位、目标尺寸、壁厚、重心、分件、摆放方向和设备条件没有放进同一张清单，开机后才可能发现零件太薄、支撑挡住表面，或拿错了文件版本。
+
+今天讨论怎样让 AI 先把检查项整理出来，再由人逐项核对同一版模型。AI 适合把分散信息排成顺序、补问缺失条件和提醒危险位置；它不能隔着屏幕证明真实材料、设备和打印结果已经通过。</p>
+    </header>
+    <figure class="update-hero">
+      <picture><source type="image/webp" srcset="../assets/updates/2026-11-03/01-website-hero-480.webp?v=1da35b770aea 480w, ../assets/updates/2026-11-03/01-website-hero-768.webp?v=503f02f6198e 768w, ../assets/updates/2026-11-03/01-website-hero-1280.webp?v=5a2ba3bd0f6e 1280w" sizes="(max-width: 680px) 100vw, 760px" /><img src="../assets/updates/2026-11-03/01-website-hero-fallback.png?v=28600fa478df" srcset="../assets/updates/2026-11-03/01-website-hero-480.webp?v=1da35b770aea 480w, ../assets/updates/2026-11-03/01-website-hero-768.webp?v=503f02f6198e 768w, ../assets/updates/2026-11-03/01-website-hero-1280.webp?v=5a2ba3bd0f6e 1280w" sizes="(max-width: 680px) 100vw, 760px" alt="打印前，先让 AI 把检查项问完整" width="960" height="540" loading="eager" decoding="async" fetchpriority="high" /></picture>
+      <figcaption>课程流程示意图，不是往期学员案例。</figcaption>
+    </figure>
+    <section class="update-section"><h2>具体问题</h2><p>打印前最容易漏掉的，不是某一个按钮，而是检查条件没有写全。模型看起来完整，如果单位、目标尺寸、壁厚、重心、分件、摆放方向和设备条件没有放进同一张清单，开机后才可能发现零件太薄、支撑挡住表面，或拿错了文件版本。</p><p>今天讨论怎样让 AI 先把检查项整理出来，再由人逐项核对同一版模型。AI 适合把分散信息排成顺序、补问缺失条件和提醒危险位置；它不能隔着屏幕证明真实材料、设备和打印结果已经通过。</p></section><section class="update-section"><h2>核心判断</h2><p>一张有用的打印前清单，要同时写清输入、检查位置、检查方法和停止条件。只有“检查壁厚”不够；还要说明目标尺寸是多少、最薄处在哪里、用什么工具或切片视图看，以及低于当前设备与材料要求时先停止打印。</p><p>AI 的作用是帮助整理和追问，不是替人签字。封闭网格、法线、壁厚、分件、重心和支撑要回到同一版模型与切片预览中核对；材料收缩、设备状态、接触强度和最终表面仍需小样、实测与人工验收。</p></section><section class="update-section"><h2>步骤或标准</h2><p>从完整输入开始，让每条提醒都能落到一个具体位置和动作。</p><ul><li>把输入写完整：模型文件与版本、真实单位、目标尺寸、打印方式、材料、设备和用途。缺少这些条件时，AI 只能给通用提醒。</li><li>让 AI 按固定顺序列检查项：封闭网格与法线、壁厚与细小突出物、重心与接触面、分件与装配、摆放方向与支撑、切片预览与文件导出。</li><li>要求每一项都带“看哪里、怎样检查、什么情况要停下”。例如不要只写“检查壁厚”，还要指出最薄边、悬空衣片和容易破损的末端。</li><li>把清单逐项落回同一版模型。旋转正侧背视图，放大危险局部，再进入切片预览；不能拿不同版本的截图拼成一次检查。</li><li>选一处风险做最小验证。本例用同一人物衣摆边缘的厚实连续样、过薄尖边样和开口毛边样作对照，再用手清理一块局部样观察边缘是否仍完整。</li><li>把结果分成已确认、待修改和仍需实测。AI 的勾选不能代替切片、材料小样、设备参数和人工复核；有阻断项就先改模型，不急着开机。</li></ul></section><section class="update-section"><h2>常见错误</h2><p>清单失效，常见原因是条件太少、条目太空，或者把 AI 的文字回答当成真实通过。</p><ul><li>只把模型名字发给 AI，就要求给出完整打印结论。后果是清单脱离尺寸、材料和设备，漏掉真正影响当前文件的问题。</li><li>清单只有“检查壁厚、检查支撑”这类短词。后果是执行者不知道看哪个位置、怎样判断，也无法记录修改前后的差异。</li><li>用不同版本的视图和切片结果完成同一次检查。后果是正面、背面和局部证据互相对不上，错误文件仍可能被送去打印。</li><li>AI 写了“通过”就直接开机。后果是非封闭网格、薄边、悬空、支撑遮挡或设备限制没有经过真实切片与人工确认。</li><li>发现问题却不写回文件版本和处理结果。后果是下一次仍会拿旧文件检查，清单看似完成，实际风险没有关闭。</li></ul></section><section class="update-section"><h2>与短期课程的关系</h2><p>这项练习对应阶段 3 的打印准备与实物测试。阶段 3 要留下同版模型、打印条件、逐项检查结果、切片预览、阻断问题和最小验证记录；做完后能说明哪些位置已确认、哪些要改、哪些仍需实测。</p><p>3 天路线可以围绕一个明确模型完成输入整理、AI 辅助清单、人工预检和一处局部样；4–5 天可继续修改、复查、切片并安排有限打印测试。进入下一阶段前，单位和版本要一致，阻断项已处理，未确认的材料与设备条件也已明确记录。</p></section><section class="update-section"><h2>事实 / 案例 / 完成度边界</h2><p>本文依据长期课程阶段 3 的打印前检查方法编写。当天四张视觉规划使用原创木质与织物混合人物“侧光校对者”，表现无字模型起点、三种衣摆边缘风险对照、手工清理局部毛边和检查后的完整交接；这些都是课程方向示意图，不是真实学员、真实课堂、已完成打印、木作测试或商业项目。真实案例必须另有来源、许可、同版模型、设备参数和实测记录。</p><p>3–5 天通常可围绕一个明确模型完成检查清单、人工预检和有限局部验证，但进度取决于输入、结构、材料、设备和修改次数。课程不承诺 AI 自动发现全部问题，不承诺一次打印成功，也不承诺短训内完成商业级成品、批量生产、订单、流量、展览或销售结果。</p></section><section class="update-section"><h2>报名入口</h2><p>如果你已有 IP / 角色资产，可以提交当前模型、文件版本、目标尺寸、计划材料、设备条件、最担心的打印位置和可到课时间。我们会先把输入补齐，再把 AI 清单改成能逐项执行的检查。</p><p>如果你只有想法、草图或初步设定，也可以提交角色特点、希望做成的形式、预期大小、材料方向和可到课时间。我们会先建立可检查的小范围模型，再安排青岛 3–5 天短训。公开报名地址：https://wj.qq.com/s2/27296919/9499/</p></section>
+    <div class="update-gallery"><picture><source type="image/webp" srcset="../assets/updates/2026-11-03/02-core-explanation-480.webp?v=36fd0abcfcfa 480w, ../assets/updates/2026-11-03/02-core-explanation-768.webp?v=95c20758897b 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-11-03/02-core-explanation-fallback.png?v=c0998e8764ac" srcset="../assets/updates/2026-11-03/02-core-explanation-480.webp?v=36fd0abcfcfa 480w, ../assets/updates/2026-11-03/02-core-explanation-768.webp?v=95c20758897b 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="打印前，先让 AI 把检查项问完整 配图" width="480" height="480" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-11-03/03-real-application-480.webp?v=777670be630a 480w, ../assets/updates/2026-11-03/03-real-application-768.webp?v=f34bb1eb2dbf 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-11-03/03-real-application-fallback.png?v=75b66519e155" srcset="../assets/updates/2026-11-03/03-real-application-480.webp?v=777670be630a 480w, ../assets/updates/2026-11-03/03-real-application-768.webp?v=f34bb1eb2dbf 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="打印前，先让 AI 把检查项问完整 配图" width="768" height="768" loading="lazy" decoding="async" /></picture><picture><source type="image/webp" srcset="../assets/updates/2026-11-03/04-social-promotion-480.webp?v=2a02085a9ef1 480w, ../assets/updates/2026-11-03/04-social-promotion-768.webp?v=4f8eff7786ce 768w" sizes="(max-width: 680px) 100vw, 50vw" /><img src="../assets/updates/2026-11-03/04-social-promotion-fallback.png?v=89473dd3922e" srcset="../assets/updates/2026-11-03/04-social-promotion-480.webp?v=2a02085a9ef1 480w, ../assets/updates/2026-11-03/04-social-promotion-768.webp?v=4f8eff7786ce 768w" sizes="(max-width: 680px) 100vw, 50vw" alt="打印前，先让 AI 把检查项问完整 配图" width="480" height="600" loading="lazy" decoding="async" /></picture></div>
+    <aside class="update-boundary">
+      <strong>课程边界</strong>
+      <p>3–5 天短训按起点确认范围：3 天聚焦一个优先目标，4–5 天串联首版项目流程；不承诺商业级量产、人人进入正式展览或必然产生销售。</p>
+    </aside>
+    <section class="update-cta">
+      <p>长期招生｜青岛｜3–5 天短训｜评估后预约跟班｜每班最多 10 人。<a href="../#enrollment">查看当前学习方案与费用</a></p>
+      <a href="https://wj.qq.com/s2/27296919/9499/" target="_blank" rel="noopener">填写报名资料 →</a>
+    </section>
+  </main>
+</body>
+</html>
