@@ -2742,16 +2742,32 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-11-04",
     "type": "图文",
     "time": "11:30",
-    "title": "看打印留下的支撑痕迹，怎么调整摆放方向？",
-    "summary": "今天聊聊看打印留下的支撑痕迹，怎么调整摆放方向。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "支撑痕留在哪一面，摆放方向就要跟着改",
+    "summary": "同一版模型比较三种摆放方向，把支撑接触、悬空和表面痕迹放在一起看，再用局部样确认主要观看面是否容易处理。",
+    "cover": "./assets/updates/2026-11-04/01-website-hero-fallback.png?v=8efef6c2d885",
+    "published": true,
+    "url": "./updates/2026-11-04-choose-print-orientation-by-support-marks.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 3 / Gate 3",
     "editorial_angle": "失败排查",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-11-04",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-11-04/01-website-hero-480.webp?v=86ca7d782b5c 480w, ./assets/updates/2026-11-04/01-website-hero-768.webp?v=8a595f7afc7e 768w, ./assets/updates/2026-11-04/01-website-hero-1280.webp?v=2db8b1f8cdb3 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-11-04/01-website-hero-fallback.png?v=8efef6c2d885",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-11-05",
@@ -4071,6 +4087,36 @@ window.WORKSHOP_UPDATES = [
     "status": "planned",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 3 / Gate 3",
+    "editorial_angle": "交付复核"
+  },
+  {
+    "date": "2027-02-01",
+    "type": "图文",
+    "time": "11:30",
+    "title": "上色前先选好几种颜色，别一开始就涂太多",
+    "summary": "今天聊聊上色前先选好几种颜色，别一开始就涂太多。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 4 / Gate 4",
+    "editorial_angle": "交付复核"
+  },
+  {
+    "date": "2027-02-02",
+    "type": "视频",
+    "time": "19:30",
+    "title": "让 AI 帮忙比较几种包装，看看哪种更合适",
+    "summary": "今天聊聊让 AI 帮忙比较几种包装，看看哪种更合适。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 4 / Gate 4",
     "editorial_angle": "交付复核"
   }
 ];
