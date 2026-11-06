@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 27018,
+      "format": "webp",
+      "height": 354,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-06-gericault-fighting-horses-gesture-480.webp",
+      "quality": 84,
+      "sha256": "43cf61b4c3a5ab4b88ef78ca41694ff6348c6711941c556aa39d15f6d33b8b1a",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 63594,
+      "format": "webp",
+      "height": 566,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-06-gericault-fighting-horses-gesture-768.webp",
+      "quality": 84,
+      "sha256": "62689ae56e720e71085b51fb1754abfde83447443385fa385fc17ab2852d09d9",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 174952,
+      "format": "webp",
+      "height": 943,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-06-gericault-fighting-horses-gesture-1280.webp",
+      "quality": 84,
+      "sha256": "27dd0ec4247a03e824e7a5576ca4079c9559d39564a913200759306f54d45bca",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 268509,
+    "format": "jpeg",
+    "height": 943,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-11-06-gericault-fighting-horses-gesture-fallback.jpg",
+    "quality": 84,
+    "sha256": "a2739b051bfdc610b9daf2e22e812c0a817f4a0a7d6761b5dde08de2c5a15cf6",
+    "width": 1280
+  },
+  "original_bytes": 7805722,
+  "original_height": 2505,
+  "original_path": "assets/daily/2026-11-06-gericault-fighting-horses-gesture.jpg",
+  "original_sha256": "885d6956e76ce2e7a840c8c3c4e0d3914cb56e701479b4ade67007c8cc88d85a",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1929.13/1929.13_print.jpg",
+  "original_width": 3400,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-11-06-gericault-fighting-horses-gesture-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-11-06-gericault-fighting-horses-gesture-480.webp?v=43cf61b4c3a5 480w, 2026-11-06-gericault-fighting-horses-gesture-768.webp?v=62689ae56e72 768w, 2026-11-06-gericault-fighting-horses-gesture-1280.webp?v=27dd0ec4247a 1280w"
+}

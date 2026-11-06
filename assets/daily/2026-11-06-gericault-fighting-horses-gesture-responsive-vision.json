@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-06",
+  "agent_prompt": "Four exact-file Vision inspections were performed for OUART Daily Art responsive QA on 2026-11-06.\n\n480: OUART Daily Art responsive QA for 2026-11-06. Inspect this exact 480 WebP at mobile-display scale. Determine whether the artwork's main subjects and action remain clearly readable and whether there are visible compression or scaling artifacts (blocking, ringing, banding, smearing, jagged edges, broken geometry). This is an official museum image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Report only evidence actually visible in this opened file; fail if uncertain.\n\n768: OUART Daily Art responsive QA for 2026-11-06. Inspect this exact 768 WebP at mobile-display scale. Determine whether the artwork's main subjects and action remain clearly readable and whether there are visible compression or scaling artifacts (blocking, ringing, banding, smearing, jagged edges, broken geometry). This is an official museum image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Report only evidence actually visible in this opened file; fail if uncertain.\n\n1280: OUART Daily Art responsive QA for 2026-11-06. Inspect this exact 1280 WebP at mobile-display scale. Determine whether the artwork's main subjects and action remain clearly readable and whether there are visible compression or scaling artifacts (blocking, ringing, banding, smearing, jagged edges, broken geometry). This is an official museum image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Report only evidence actually visible in this opened file; fail if uncertain.\n\nfallback: OUART Daily Art responsive QA for 2026-11-06. Inspect this exact fallback JPEG at mobile-display scale. Determine whether the artwork's main subjects and action remain clearly readable and whether there are visible compression or scaling artifacts (blocking, ringing, banding, smearing, jagged edges, broken geometry). This is an official museum image with no GPT-generated text, so OCR exact match must be reported as the literal string N/A. Report only evidence actually visible in this opened file; fail if uncertain.",
+  "agent_prompt_sha256": "e4128e2c8df94ce5320024cdc5c33a86ac9127488ece9a8e82391cdbd516411c",
+  "agent_output": "PASS. All four exact assets were opened with Vision and inspected individually at mobile-display scale.\n\n480 WebP: The central light horse, the dark horse rising at right, the clustered horses at left, and the groom above them remain clearly distinguishable. The opposing body directions and overlap that establish the struggle are readable even at this smallest size. Watercolor edges retain their intended soft character; no visible blocking, ringing, banding, compression smearing, jagged edges, or broken anatomy/geometry was observed. OCR exact match: N/A.\n\n768 WebP: The central light horse's braced legs, the right horse's raised head and forequarters, the groom's raised arm, and the layered horses behind are clearly readable. Mane, reins, limbs, and major wash boundaries remain coherent. No visible blocking, ringing, banding, compression smearing, jagged edges, or scaling damage was observed. OCR exact match: N/A.\n\n1280 WebP: The full action, overlapping horse bodies, graphite-like construction lines, watercolor washes, foreground equipment, and background figure are clear. Fine edges and tonal transitions remain natural to the source. No visible compression or scaling artifacts were observed. OCR exact match: N/A.\n\nfallback JPEG: The subjects, action, overlap, contours, and tonal/color organization are clear at mobile scale, with detail comparable to the 1280 WebP. No visible blocking, ringing, banding, compression smearing, jagged edges, or broken geometry was observed. OCR exact match: N/A.\n\nConclusion: vision_mobile_readable=true and artifacts=false for 480, 768, 1280, and fallback.",
+  "agent_output_sha256": "47b7318ec513014e2b5277e71a4dcc8e1eaee194ba215cba3eddecb75f115371",
+  "results": {
+    "480": {
+      "image_sha256": "43cf61b4c3a5ab4b88ef78ca41694ff6348c6711941c556aa39d15f6d33b8b1a",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "62689ae56e720e71085b51fb1754abfde83447443385fa385fc17ab2852d09d9",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "27dd0ec4247a03e824e7a5576ca4079c9559d39564a913200759306f54d45bca",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "a2739b051bfdc610b9daf2e22e812c0a817f4a0a7d6761b5dde08de2c5a15cf6",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
