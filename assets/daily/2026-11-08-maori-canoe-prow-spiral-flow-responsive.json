@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 26414,
+      "format": "webp",
+      "height": 663,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-08-maori-canoe-prow-spiral-flow-480.webp",
+      "quality": 84,
+      "sha256": "d22520c6f37f56726e18c26bb265daf75bf5b53fdb4609bede73d7f62f2d0a25",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 57310,
+      "format": "webp",
+      "height": 1061,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-08-maori-canoe-prow-spiral-flow-768.webp",
+      "quality": 84,
+      "sha256": "9e831916936bb1a0299d6c8878ed97925763fb0e25895b1098b492d7b5d89aaa",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 140010,
+      "format": "webp",
+      "height": 1768,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-08-maori-canoe-prow-spiral-flow-1280.webp",
+      "quality": 84,
+      "sha256": "5d0be2170370d0664f5f5e4f5b3ac1b67f3934c3f7803199e01cfd62f5b8d478",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 241045,
+    "format": "jpeg",
+    "height": 1768,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-11-08-maori-canoe-prow-spiral-flow-fallback.jpg",
+    "quality": 84,
+    "sha256": "8cfd203f2da7f3d682d4bbecf70d2d8d1813d512a9bdb715e69701f1eccf5a0e",
+    "width": 1280
+  },
+  "original_bytes": 1360965,
+  "original_height": 3400,
+  "original_path": "assets/daily/2026-11-08-maori-canoe-prow-spiral-flow.jpg",
+  "original_sha256": "126caac9bc7332643c8e98c8ebce08242ada5c4db93f0853721339581cad89fd",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1967.231/1967.231_print.jpg",
+  "original_width": 2462,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-11-08-maori-canoe-prow-spiral-flow-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-11-08-maori-canoe-prow-spiral-flow-480.webp?v=d22520c6f37f 480w, 2026-11-08-maori-canoe-prow-spiral-flow-768.webp?v=9e831916936b 768w, 2026-11-08-maori-canoe-prow-spiral-flow-1280.webp?v=5d0be2170370 1280w"
+}

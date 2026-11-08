@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-08",
+  "agent_prompt": "[480]\nOUART 每日一画响应式资产 Vision QA。请真实查看这张 480w WebP（按手机端宽度缩放理解），只依据像素检查：1) 主体（毛利木雕独木舟船首）是否清楚可辨、构图未被错误裁切；2) 木雕面部、旋涡纹与贝壳镶嵌是否在移动端仍具可读性；3) 是否存在明显压缩块、振铃、色带、异常模糊、拉伸或缩放伪影。该馆藏图没有 GPT 生成文字，OCR exact 必须记为字符串 N/A。请完整输出一段简洁中文结论，并明确给出 vision_mobile_readable=true/false、artifacts=true/false、ocr_exact_match=\"N/A\"；若失败请说明具体区域。\n\n[768]\nOUART 每日一画响应式资产 Vision QA。请真实查看这张 768w WebP（按手机端宽度缩放理解），只依据像素检查：1) 主体（毛利木雕独木舟船首）是否清楚可辨、构图未被错误裁切；2) 木雕面部、旋涡纹与贝壳镶嵌是否在移动端仍具可读性；3) 是否存在明显压缩块、振铃、色带、异常模糊、拉伸或缩放伪影。该馆藏图没有 GPT 生成文字，OCR exact 必须记为字符串 N/A。请完整输出一段简洁中文结论，并明确给出 vision_mobile_readable=true/false、artifacts=true/false、ocr_exact_match=\"N/A\"；若失败请说明具体区域。\n\n[1280]\nOUART 每日一画响应式资产 Vision QA。请真实查看这张 1280w WebP（按手机端宽度缩放理解），只依据像素检查：1) 主体（毛利木雕独木舟船首）是否清楚可辨、构图未被错误裁切；2) 木雕面部、旋涡纹与贝壳镶嵌是否在移动端仍具可读性；3) 是否存在明显压缩块、振铃、色带、异常模糊、拉伸或缩放伪影。该馆藏图没有 GPT 生成文字，OCR exact 必须记为字符串 N/A。请完整输出一段简洁中文结论，并明确给出 vision_mobile_readable=true/false、artifacts=true/false、ocr_exact_match=\"N/A\"；若失败请说明具体区域。\n\n[fallback]\nOUART 每日一画响应式资产 Vision QA。请真实查看这张 fallback JPEG（按手机端宽度缩放理解），只依据像素检查：1) 主体（毛利木雕独木舟船首）是否清楚可辨、构图未被错误裁切；2) 木雕面部、旋涡纹与贝壳镶嵌是否在移动端仍具可读性；3) 是否存在明显压缩块、振铃、色带、异常模糊、拉伸或缩放伪影。该馆藏图没有 GPT 生成文字，OCR exact 必须记为字符串 N/A。请完整输出一段简洁中文结论，并明确给出 vision_mobile_readable=true/false、artifacts=true/false、ocr_exact_match=\"N/A\"；若失败请说明具体区域。",
+  "agent_prompt_sha256": "21609633f9e60d04ed781995ae2d6002930424a57fd7b87eff3a1faf1f0c802b",
+  "agent_output": "[480]\n已真实打开并检查 480w WebP。毛利木雕独木舟船首完整居中，头顶、双眼、面部、颈部和下方两侧支脚均未被错误裁切；正面人物身份清楚。额头放射刻线、鼻梁细纹、双颊旋涡和双眼贝壳镶嵌在手机端尺度下仍可分辨，右眼绿色虹彩与左眼浅色反光保持清楚。背景黑灰渐变和地面投影平滑；未见明显压缩块、振铃、色带、异常模糊、拉伸或缩放伪影。vision_mobile_readable=true; artifacts=false; ocr_exact_match=\"N/A\"。\n\n[768]\n已真实打开并检查 768w WebP。船首木雕从头顶到支脚完整可见，四周留有合理背景，构图没有异常截断。五官轮廓、额头成束曲线、鼻部刻纹、面颊旋涡以及贝壳眼部的色泽与边缘在移动端缩放后均清楚可读；木材表面磨损也与主体纹理自然一致。未见明显压缩块、振铃、色带、异常模糊、几何拉伸或缩放伪影。vision_mobile_readable=true; artifacts=false; ocr_exact_match=\"N/A\"。\n\n[1280]\n已真实打开并检查 1280w WebP。主体完整居中，头部、颈部、船首内腔与两侧尖端均保留，未发生错误裁切。面部刻线层次清晰，额头线束、鼻梁回纹、双颊同心旋涡和眼部贝壳镶嵌均有充分细节，在手机端缩放时主体与关键纹样仍能清楚辨认。黑色背景、灰色地面和木雕边缘过渡自然，未见压缩块、振铃、假色带、异常模糊、拉伸或缩放伪影。vision_mobile_readable=true; artifacts=false; ocr_exact_match=\"N/A\"。\n\n[fallback]\n已真实打开并检查 fallback JPEG。整件船首木雕完整呈现，顶部和下方支脚没有被裁去，正面人物构图稳定。额头与面颊的细密曲线、鼻口结构、贝壳双眼及木材质感在移动端缩放下仍清楚；馆藏对象自身的磨损、缺口和颈部标记属于被摄物，并非传输或压缩错误。未见明显 JPEG 方块、振铃、色带、异常模糊、拉伸或缩放伪影。vision_mobile_readable=true; artifacts=false; ocr_exact_match=\"N/A\"。",
+  "agent_output_sha256": "e48c95bceeb21f7a5690b847bd3d4d09c18d3bc7c360206745904eb155ac857f",
+  "results": {
+    "480": {
+      "image_sha256": "d22520c6f37f56726e18c26bb265daf75bf5b53fdb4609bede73d7f62f2d0a25",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "9e831916936bb1a0299d6c8878ed97925763fb0e25895b1098b492d7b5d89aaa",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "5d0be2170370d0664f5f5e4f5b3ac1b67f3934c3f7803199e01cfd62f5b8d478",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "8cfd203f2da7f3d682d4bbecf70d2d8d1813d512a9bdb715e69701f1eccf5a0e",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
