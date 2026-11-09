@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 22672,
+      "format": "webp",
+      "height": 424,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-09-wade-cup-animated-script-480.webp",
+      "quality": 84,
+      "sha256": "016b0e586278ea94e9b3164bc0110dd002e1a61be6d18bd22a72251ae38e9c77",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 53888,
+      "format": "webp",
+      "height": 678,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-09-wade-cup-animated-script-768.webp",
+      "quality": 84,
+      "sha256": "20800b1f00bc62a7f404cfd037388d8e41625cd970bafc65f645852a92bef445",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 143168,
+      "format": "webp",
+      "height": 1129,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-09-wade-cup-animated-script-1280.webp",
+      "quality": 84,
+      "sha256": "0d80f6c35f88887f1dade085db8229331b791266dff66ca4d100a5943374da15",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 204938,
+    "format": "jpeg",
+    "height": 1129,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-11-09-wade-cup-animated-script-fallback.jpg",
+    "quality": 84,
+    "sha256": "20f2792b986be9b8850a8c78d20705c55de29de082b1098fc643a0a88b071eee",
+    "width": 1280
+  },
+  "original_bytes": 2103136,
+  "original_height": 3000,
+  "original_path": "assets/daily/2026-11-09-wade-cup-animated-script.jpg",
+  "original_sha256": "edeb0d492ef2386cc91cf1f4f1a06c759bb6196e4e535f6f5ad083c5b5373f18",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1944.485/1944.485_print.jpg",
+  "original_width": 3400,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-11-09-wade-cup-animated-script-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-11-09-wade-cup-animated-script-480.webp?v=016b0e586278 480w, 2026-11-09-wade-cup-animated-script-768.webp?v=20800b1f00bc 768w, 2026-11-09-wade-cup-animated-script-1280.webp?v=0d80f6c35f88 1280w"
+}
