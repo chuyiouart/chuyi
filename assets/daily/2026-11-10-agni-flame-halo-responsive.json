@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 58598,
+      "format": "webp",
+      "height": 732,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-10-agni-flame-halo-480.webp",
+      "quality": 84,
+      "sha256": "beff607d3a4e81e8315a77acddda8ed3d7810531c322e3fc2f84c25617424409",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 139738,
+      "format": "webp",
+      "height": 1172,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-10-agni-flame-halo-768.webp",
+      "quality": 84,
+      "sha256": "59aa0ccd25f639e79819791cb21ea0ccecb1d7120ebc08432e2f0452b3fe9854",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 389644,
+      "format": "webp",
+      "height": 1953,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-10-agni-flame-halo-1280.webp",
+      "quality": 84,
+      "sha256": "3d020f6f7ee6def8fe82b87cce63a98c58b4b2a7a96d218fedd2a593a489454d",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 517125,
+    "format": "jpeg",
+    "height": 1953,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-11-10-agni-flame-halo-fallback.jpg",
+    "quality": 84,
+    "sha256": "e49b5fb67aa6ccb6ca3f9fac34f89a8c0cb77e290bbe7a4a20581b0e4c334dc2",
+    "width": 1280
+  },
+  "original_bytes": 2529227,
+  "original_height": 3400,
+  "original_path": "assets/daily/2026-11-10-agni-flame-halo.jpg",
+  "original_sha256": "599e348500fa2aeb76c16b016be0056d2323c207e57d2ce63965b2a8ec54db41",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1955.51/1955.51_print.jpg",
+  "original_width": 2228,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-11-10-agni-flame-halo-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-11-10-agni-flame-halo-480.webp?v=beff607d3a4e 480w, 2026-11-10-agni-flame-halo-768.webp?v=59aa0ccd25f6 768w, 2026-11-10-agni-flame-halo-1280.webp?v=3d020f6f7ee6 1280w"
+}
