@@ -2928,16 +2928,32 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-11-10",
     "type": "视频",
     "time": "19:30",
-    "title": "让 AI 帮忙比较几种包装，看看哪种更合适",
-    "summary": "今天聊聊让 AI 帮忙比较几种包装，看看哪种更合适。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "比较包装，先把保护条件说清楚",
+    "summary": "把尺寸、重量、突出部位、表面和取放方式交给AI统一比较，再用同一件实物做样盒检查，才能看出过松、夹紧和承托位置的差别。",
+    "cover": "./assets/updates/2026-11-10/01-website-hero-fallback.png?v=2cf2b1239ab5",
+    "published": true,
+    "url": "./updates/2026-11-10-compare-packaging-after-defining-protection-conditions.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 4 / Gate 4",
     "editorial_angle": "失败排查",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-11-10",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-11-10/01-website-hero-480.webp?v=dade5c9cee72 480w, ./assets/updates/2026-11-10/01-website-hero-768.webp?v=7710f0542da1 768w, ./assets/updates/2026-11-10/01-website-hero-1280.webp?v=6161cc62c3d2 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-11-10/01-website-hero-fallback.png?v=2cf2b1239ab5",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-11-11",
