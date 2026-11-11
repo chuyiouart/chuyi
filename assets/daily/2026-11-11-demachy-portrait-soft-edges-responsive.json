@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 13478,
+      "format": "webp",
+      "height": 606,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-11-demachy-portrait-soft-edges-480.webp",
+      "quality": 84,
+      "sha256": "3df754b768be61a12f01eda720798249cbfc6923d5bce52f6b864be6ec45819a",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 40156,
+      "format": "webp",
+      "height": 970,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-11-demachy-portrait-soft-edges-768.webp",
+      "quality": 84,
+      "sha256": "faa6ac68be14a9cb050ead4b61e44f056fcd65b63ab9e076ab8716ae3659f831",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 147948,
+      "format": "webp",
+      "height": 1617,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-11-demachy-portrait-soft-edges-1280.webp",
+      "quality": 84,
+      "sha256": "c0f3fd267975f7c04af4ccda35067cc5756d13c49045096531e40e86ffe3bcdb",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 266177,
+    "format": "jpeg",
+    "height": 1617,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-11-11-demachy-portrait-soft-edges-fallback.jpg",
+    "quality": 84,
+    "sha256": "a7f89549b2db8795fdda96f5e828d6a30cdbdac8e362ff5bae13d6d860203ee4",
+    "width": 1280
+  },
+  "original_bytes": 5585755,
+  "original_height": 3400,
+  "original_path": "assets/daily/2026-11-11-demachy-portrait-soft-edges.jpg",
+  "original_sha256": "d306b016f49c693a58124bfeda910a20bbe6506fdfeec642d5f63b391e0fe78f",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1985.203/1985.203_print.jpg",
+  "original_width": 2692,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-11-11-demachy-portrait-soft-edges-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-11-11-demachy-portrait-soft-edges-480.webp?v=3df754b768be 480w, 2026-11-11-demachy-portrait-soft-edges-768.webp?v=faa6ac68be14 768w, 2026-11-11-demachy-portrait-soft-edges-1280.webp?v=c0f3fd267975 1280w"
+}
