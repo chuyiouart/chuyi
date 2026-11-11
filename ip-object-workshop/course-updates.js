@@ -2959,16 +2959,32 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-11-11",
     "type": "图文",
     "time": "11:30",
-    "title": "包装会不会磕碰、好不好拿，怎么试？",
-    "summary": "今天聊聊包装会不会磕碰、好不好拿，怎么试。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "包装磕碰和取放，要用同一套动作检查",
+    "summary": "固定包装版本、提拿位置、移动路线和取出方向，分别记录位移、受压、勾挂与手指空间，才能知道问题发生在哪一步。",
+    "cover": "./assets/updates/2026-11-11/01-website-hero-fallback.png?v=d55feb2f2182",
+    "published": true,
+    "url": "./updates/2026-11-11-test-package-bumps-and-handling-with-repeatable-actions.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 4 / Gate 4",
     "editorial_angle": "失败排查",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-11-11",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-11-11/01-website-hero-480.webp?v=02ec1dc1d8aa 480w, ./assets/updates/2026-11-11/01-website-hero-768.webp?v=4ffc3f0fcb6e 768w, ./assets/updates/2026-11-11/01-website-hero-1280.webp?v=1319e4070035 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-11-11/01-website-hero-fallback.png?v=d55feb2f2182",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-11-12",
