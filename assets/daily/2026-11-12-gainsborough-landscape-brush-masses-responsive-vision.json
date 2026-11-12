@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-12",
+  "agent_prompt": "Inspect this exact responsive museum artwork asset as it would appear scaled on a mobile screen. Determine whether the main landscape subject and major spatial masses remain clearly readable, and whether there are any visible compression, resizing, banding, ringing, blocking, color, or geometry artifacts. This is an official collection image with no GPT-generated text, so OCR exact-match is N/A. Return a concise asset-specific verdict including mobile readability and artifacts.",
+  "agent_prompt_sha256": "98d87faec89c663cb7a3e505a1725a03fa7fead4a8f2d5f288904f352455b6b1",
+  "agent_output": "480 WebP: PASS — At mobile display size, the dark wooded left bank, central ravine and foliage, pale rock face, right slope and water, and hazy distant mountains remain clearly separable. Fine painterly detail is naturally reduced, but no visible blocking, ringing, banding, color shift, geometry distortion, or resizing/compression artifact is present.\n768 WebP: PASS — The landscape's foreground banks, central wooded hollow, pale rock face, stream/weir, trees, and distant mountain layers are clearly readable at mobile scale. Brushwork and tonal transitions remain coherent, with no visible blocking, ringing, banding, color shift, geometry distortion, or resizing/compression artifact.\n1280 WebP: PASS — The full spatial structure and main subject are clearly readable when scaled for mobile: dark foreground and trees frame the ravine, the pale rock anchors the center-right, water crosses the lower right, and atmospheric mountains recede behind. No visible blocking, ringing, banding, color shift, geometry distortion, or resizing/compression artifact is present.\nFallback JPEG: PASS — The same major landscape masses and depth sequence remain clearly readable on mobile, with stable painterly texture and natural soft atmospheric transitions. No visible blocking, ringing, banding, color shift, geometry distortion, or resizing/compression artifact is present.\nOCR exact-match: N/A for all four assets because this official collection image contains no GPT-generated text.",
+  "agent_output_sha256": "2ac7951888a8f5beaaf64ad345928153c45b0856edc8196d004397fd40de3812",
+  "results": {
+    "480": {
+      "image_sha256": "2befee62139633f60be0ca4fc84dae8c9ca88e3ef154420dafe3d57dbf7de633",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "fb295b91803c4a16c084a4d382a8ad296901c8bb875ad4bf3c883f3695388251",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "4eba4e0b436e49a6cbc154d384babc721ee728e3df99671a0d57c352eab807e0",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "7e03f39dbfa2048a2fcbc0d493a276ee50a383ab4d991b5b3a0f005a8fb12a76",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}

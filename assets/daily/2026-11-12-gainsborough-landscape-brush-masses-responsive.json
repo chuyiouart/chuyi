@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 14898,
+      "format": "webp",
+      "height": 367,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-12-gainsborough-landscape-brush-masses-480.webp",
+      "quality": 84,
+      "sha256": "2befee62139633f60be0ca4fc84dae8c9ca88e3ef154420dafe3d57dbf7de633",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 31642,
+      "format": "webp",
+      "height": 588,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-12-gainsborough-landscape-brush-masses-768.webp",
+      "quality": 84,
+      "sha256": "fb295b91803c4a16c084a4d382a8ad296901c8bb875ad4bf3c883f3695388251",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 81834,
+      "format": "webp",
+      "height": 980,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-12-gainsborough-landscape-brush-masses-1280.webp",
+      "quality": 84,
+      "sha256": "4eba4e0b436e49a6cbc154d384babc721ee728e3df99671a0d57c352eab807e0",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 174556,
+    "format": "jpeg",
+    "height": 980,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-11-12-gainsborough-landscape-brush-masses-fallback.jpg",
+    "quality": 84,
+    "sha256": "7e03f39dbfa2048a2fcbc0d493a276ee50a383ab4d991b5b3a0f005a8fb12a76",
+    "width": 1280
+  },
+  "original_bytes": 5406612,
+  "original_height": 2603,
+  "original_path": "assets/daily/2026-11-12-gainsborough-landscape-brush-masses.jpg",
+  "original_sha256": "e089d66679b230124384e86120df963b53d178b4a52c9841cc85aa35af79db6e",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1984.59/1984.59_print.jpg",
+  "original_width": 3400,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-11-12-gainsborough-landscape-brush-masses-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-11-12-gainsborough-landscape-brush-masses-480.webp?v=2befee621396 480w, 2026-11-12-gainsborough-landscape-brush-masses-768.webp?v=fb295b91803c 768w, 2026-11-12-gainsborough-landscape-brush-masses-1280.webp?v=4eba4e0b436e 1280w"
+}
