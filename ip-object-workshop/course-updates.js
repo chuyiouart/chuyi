@@ -2990,16 +2990,33 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-11-12",
     "type": "视频",
     "time": "19:30",
-    "title": "让 AI 帮忙核对说明和实物是不是同一版",
-    "summary": "今天聊聊让 AI 帮忙核对说明和实物是不是同一版。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "说明和实物是不是同一版，别只看文件名",
+    "summary": "把说明、照片、展示模型和实物放到同一组可见特征下核对；AI负责找疑点，人负责回查来源和真实对象。",
+    "cover": "./assets/updates/2026-11-12/01-website-hero-fallback.png?v=6e32bc980e28",
+    "published": true,
+    "url": "./updates/2026-11-12-check-documentation-and-physical-object-version-consistency.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 4 / Gate 4",
     "editorial_angle": "失败排查",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-11-12",
+    "media_status": "partial",
+    "passedRoles": [
+      "website_hero",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [
+      "core_explanation"
+    ],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-11-12/01-website-hero-480.webp?v=f13feb6969d6 480w, ./assets/updates/2026-11-12/01-website-hero-768.webp?v=f3c2e326f6de 768w, ./assets/updates/2026-11-12/01-website-hero-1280.webp?v=037737f95f16 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-11-12/01-website-hero-fallback.png?v=6e32bc980e28",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-11-13",
