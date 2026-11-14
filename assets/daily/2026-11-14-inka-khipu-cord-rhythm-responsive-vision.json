@@ -1,0 +1,34 @@
+{
+  "agent_output": "480: The overall khipu is clearly readable at mobile scale: the curved main attachment cord, radiating groups of hanging cords, the larger knots and upper loops remain distinct, and dark brown, black, gray, and pale cords separate against the warm light background. The finest twist and small-knot detail is naturally reduced at this size but does not obscure the subject. No visible blocking, ringing, banding, resize distortion, objectionable blur, or compression artifacts. PASS.\n\n768: The main attachment cord, dense and sparse hanging-cord groups, numerous knots, upper loops, and tonal differences are clearly readable. Fine cord paths remain separated through the denser lower fan. No visible blocking, ringing, banding, resize distortion, objectionable blur, or compression artifacts. PASS.\n\n1280: The attachment cord, individual pendant groups, twists, knots, looped upper cords, frayed ends, and tonal groupings are clearly readable, including in densely packed areas. Edges remain natural and continuous. No visible blocking, ringing, banding, resize distortion, objectionable blur, or compression artifacts. PASS.\n\nfallback: The attachment cord, individual hanging cords, knots, loops, frayed ends, and tonal separation are clearly readable at mobile scale. Fine details remain clean without artificial edge halos or broken gradients. No visible blocking, ringing, banding, resize distortion, objectionable blur, or JPEG compression artifacts. PASS.",
+  "agent_output_sha256": "43c5bd513938e564fecbe99e2a45942673186d2a141c6c47838d296aa88f305e",
+  "agent_prompt": "Inspect this exact responsive asset at mobile display scale. Verify that the Inka khipu’s main horizontal attachment cord, hanging cord groups, knots, loops, tonal separation, and overall subject remain clearly readable; identify any visible compression, resizing, ringing, blocking, banding, blur, or other artifacts. Do not infer from dimensions or metadata. Return a concise factual assessment and explicit PASS or FAIL.",
+  "agent_prompt_sha256": "a1f8089870107eb1c92a404a9700975ec24a7dbadeead9d6448bf055f98f8830",
+  "date": "2026-11-14",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "e0340151e490178e8f47d376e78d61a05fa0dcbcecca121558bb19e79fc0abcf",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "b84cb75f0bfe92979ac8a76ddc731add7091f0e7d925dbe44baff1679d2c9641",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "4f537333add4b6df1799dd0e33c635e0994bf1184ef2763c230c0cf845b0bba4",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "8a8180ab106ae5768d1ec9e5c76d67f1248a7ea8b561922f762f53fe83642853",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}
