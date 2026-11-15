@@ -1,0 +1,34 @@
+{
+  "agent_output": "480 — PASS. Mobile readability: true. The Korean wedding fan is immediately recognizable; the circular body, long handle and end ring, bright central vertical metal band, mirrored pair of cranes, and repeated surrounding ornament/cloud units remain discernible at this scale. The smallest embroidered details are naturally simplified but the bilateral organization remains clear. Artifacts: none visible; no compression blockiness, ringing, banding, broken contours, or scaling distortion observed.\n\n768 — PASS. Mobile readability: true. The complete fan silhouette, circular rim, handle, central metal strip and its engraved ornament, paired cranes, repeated side motifs, and balanced left/right arrangement are clear. Fine surface wear and embroidery remain coherent rather than turning into compression noise. Artifacts: none visible; no blur beyond normal downscaling, ringing, blockiness, banding, or broken details observed.\n\n1280 — PASS. Mobile readability: true. The subject and full silhouette are clear, with the rim, handle, central decorated metal band, two opposed cranes, cloud/ornament bands, and bilateral layout all readily legible. Fine textile and metal decoration is well retained. Artifacts: none visible; edges are stable and there is no visible ringing, macroblocking, banding, malformed texture, or scaling damage.\n\nfallback — PASS. Mobile readability: true. The circular fan body, central vertical fitting, paired crane motifs, repeated ornament rows, handle, and bilateral structure are all clearly readable, with coherent textile texture and metal detail. Artifacts: none visible; no JPEG blocking, haloing, banding, broken detail, or scaling distortion observed.\n\nOCR exact match: N/A for all four assets because the official collection image contains no GPT-generated text.",
+  "agent_output_sha256": "d62accb7506316644f8122ca1d27a8ff445b00467a7f99d02c393b9df9fa9a13",
+  "agent_prompt": "Inspect this exact Daily Art derivative at a mobile-display scale. Judge only what is visibly present: whether the Korean wedding fan remains clearly readable as the subject, whether its circular fan body, central vertical metal band, paired crane motifs, repeated cloud/ornament bands, handle, and bilateral organization remain discernible, and whether compression or scaling introduces blur, ringing, blockiness, banding, broken details, or other visible artifacts. Do not infer from dimensions, metadata, filenames, or another image. Return a concise but complete visual QA finding for this opened asset, explicitly stating PASS or FAIL, mobile readability, and artifacts present or absent. OCR is not applicable because this is an official collection image with no GPT-generated text.",
+  "agent_prompt_sha256": "57f5777dfa889cb2320ff5d962b3216d3a3865c2cf12427773a3127e798c32f5",
+  "date": "2026-11-15",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "7a10197fcde7eb71af16958a6cdf8ab009d1f6aba0350aa8668081e28fe3268a",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "7a5e34a40be37d5ecaa3613a0a4a6b4cc7eb28473f801f378519d607fa772d56",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "94b568f87df20a0e072f2c6c839b8f2d3556055489f15196dd612c188d79dcaf",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "256e0155f7391c280c7e24db691ed44ae8dff163fbd4279cf4c602909cee861f",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}
