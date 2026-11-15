@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 22016,
+      "format": "webp",
+      "height": 641,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-15-korean-wedding-fan-bilateral-balance-480.webp",
+      "quality": 84,
+      "sha256": "7a5e34a40be37d5ecaa3613a0a4a6b4cc7eb28473f801f378519d607fa772d56",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 52446,
+      "format": "webp",
+      "height": 1026,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-15-korean-wedding-fan-bilateral-balance-768.webp",
+      "quality": 84,
+      "sha256": "94b568f87df20a0e072f2c6c839b8f2d3556055489f15196dd612c188d79dcaf",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 139642,
+      "format": "webp",
+      "height": 1710,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-15-korean-wedding-fan-bilateral-balance-1280.webp",
+      "quality": 84,
+      "sha256": "7a10197fcde7eb71af16958a6cdf8ab009d1f6aba0350aa8668081e28fe3268a",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 244788,
+    "format": "jpeg",
+    "height": 1710,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-11-15-korean-wedding-fan-bilateral-balance-fallback.jpg",
+    "quality": 84,
+    "sha256": "256e0155f7391c280c7e24db691ed44ae8dff163fbd4279cf4c602909cee861f",
+    "width": 1280
+  },
+  "original_bytes": 886465,
+  "original_height": 3400,
+  "original_path": "assets/daily/2026-11-15-korean-wedding-fan-bilateral-balance.jpg",
+  "original_sha256": "5c339835accb52f684fed8cf652d57e3a5e6794e4eeedfe4b5e0c0e724c0dc75",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1918.558/1918.558_print.jpg",
+  "original_width": 2545,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-11-15-korean-wedding-fan-bilateral-balance-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-11-15-korean-wedding-fan-bilateral-balance-480.webp?v=7a5e34a40be3 480w, 2026-11-15-korean-wedding-fan-bilateral-balance-768.webp?v=94b568f87df2 768w, 2026-11-15-korean-wedding-fan-bilateral-balance-1280.webp?v=7a10197fcde7 1280w"
+}
