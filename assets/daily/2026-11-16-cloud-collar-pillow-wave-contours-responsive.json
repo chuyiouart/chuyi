@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 7678,
+      "format": "webp",
+      "height": 381,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-16-cloud-collar-pillow-wave-contours-480.webp",
+      "quality": 84,
+      "sha256": "b564dff9e839d4dbbb0f6b7708c0f4f13ff9ab6957b627a7f7f9bfa73aa90bda",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 16126,
+      "format": "webp",
+      "height": 609,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-16-cloud-collar-pillow-wave-contours-768.webp",
+      "quality": 84,
+      "sha256": "0c31557e25163f2565797fa1a5216175751e6589b0052e3a03137bde61c93d57",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 37662,
+      "format": "webp",
+      "height": 1015,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-16-cloud-collar-pillow-wave-contours-1280.webp",
+      "quality": 84,
+      "sha256": "efe5f191b93ebfef047f6cf3f16a10b723031b357911cb1c6baf2ab8c6b98919",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 102004,
+    "format": "jpeg",
+    "height": 1015,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-11-16-cloud-collar-pillow-wave-contours-fallback.jpg",
+    "quality": 84,
+    "sha256": "a000096d92b90060f1263b7eb03e0b91b04603d66779abaa664098d9b089aef0",
+    "width": 1280
+  },
+  "original_bytes": 3485096,
+  "original_height": 2561,
+  "original_path": "assets/daily/2026-11-16-cloud-collar-pillow-wave-contours.jpg",
+  "original_sha256": "32d39d7b5b2c45bd7d8b9c59a05bb986ad11251d59a662131c6a6b9ac04d6bd3",
+  "original_url": "https://openaccess-cdn.clevelandart.org/2003.88/2003.88_print.jpg",
+  "original_width": 3230,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-11-16-cloud-collar-pillow-wave-contours-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-11-16-cloud-collar-pillow-wave-contours-480.webp?v=b564dff9e839 480w, 2026-11-16-cloud-collar-pillow-wave-contours-768.webp?v=0c31557e2516 768w, 2026-11-16-cloud-collar-pillow-wave-contours-1280.webp?v=efe5f191b93e 1280w"
+}

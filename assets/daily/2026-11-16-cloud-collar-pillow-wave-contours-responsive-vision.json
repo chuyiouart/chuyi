@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-16",
+  "agent_prompt": "OUART 每日一画响应式图像 Vision QA。以下四项均须真实打开并仅依据像素判断手机宽度缩放下的可读性与伪影；馆藏图无 GPT 生成文字，OCR exact 必须记为 N/A。\n\n资产键：480；文件：2026-11-16-cloud-collar-pillow-wave-contours-480.webp；预期 SHA-256：b564dff9e839d4dbbb0f6b7708c0f4f13ff9ab6957b627a7f7f9bfa73aa90bda。检查北宋青白瓷云头形枕的完整主体、起伏外轮廓、顶部重复波纹和前侧刻纹是否清楚可读；检查明显压缩、缩放、色带、块状、锐化光晕或破图伪影。\n\n资产键：768；文件：2026-11-16-cloud-collar-pillow-wave-contours-768.webp；预期 SHA-256：0c31557e25163f2565797fa1a5216175751e6589b0052e3a03137bde61c93d57。检查北宋青白瓷云头形枕的完整主体、起伏外轮廓、顶部重复波纹和前侧刻纹是否清楚可读；检查明显压缩、缩放、色带、块状、锐化光晕或破图伪影。\n\n资产键：1280；文件：2026-11-16-cloud-collar-pillow-wave-contours-1280.webp；预期 SHA-256：efe5f191b93ebfef047f6cf3f16a10b723031b357911cb1c6baf2ab8c6b98919。检查北宋青白瓷云头形枕的完整主体、起伏外轮廓、顶部重复波纹和前侧刻纹是否清楚可读；检查明显压缩、缩放、色带、块状、锐化光晕或破图伪影。\n\n资产键：fallback；文件：2026-11-16-cloud-collar-pillow-wave-contours-fallback.jpg；预期 SHA-256：a000096d92b90060f1263b7eb03e0b91b04603d66779abaa664098d9b089aef0。检查北宋青白瓷云头形枕的完整主体、起伏外轮廓、顶部重复波纹和前侧刻纹是否清楚可读；检查明显压缩、缩放、色带、块状、锐化光晕或破图伪影。\n\n对每项输出客观完整观察与 PASS/FAIL 结论。",
+  "agent_prompt_sha256": "1b338bef5f46891d5cd3f5b87f0d21d80c3e7e0bfd15cd9b705c738b74d6f27b",
+  "agent_output": "480：已真实打开。主体完整位于深灰背景前，前后左右四向云头形起伏外轮廓清楚，三层器身及横向接缝可辨；顶部重复波纹因白釉低反差而较浅，但在手机宽度下仍能辨认为沿凹面转向的成组弧线，前侧中央云头刻纹也可读。未见破图、明显块状压缩、色带、缩放锯齿或锐化光晕。OCR exact：N/A。结论：PASS。\n\n768：已真实打开。完整器物、顶部高点与四向云瓣、前侧宽面和两侧后退关系均清楚；顶部浅刻波纹比 480 档更易连续追踪，前侧云头刻纹轮廓完整。灰背景过渡平顺，釉面高光与边缘自然，未见破图、明显块状压缩、色带、缩放锯齿或锐化光晕。OCR exact：N/A。结论：PASS。\n\n1280：已真实打开。器物外缘、层叠厚度、釉面细微色差、顶部各组顺形波纹和前侧中央刻纹均清楚；浅刻线保持低反差但没有被压缩抹除。背景、器物边缘和高光无异常断裂，未见破图、明显块状压缩、色带、缩放锯齿或锐化光晕。缩至手机宽度时主体身份与练习所需的外形、厚度、波纹关系仍可读。OCR exact：N/A。结论：PASS。\n\nfallback：已真实打开。完整主体与四向云头起伏清楚，三层横向体块、两侧后退和底部投影稳定；顶部重复波纹及前侧刻纹可辨，细线没有出现明显涂抹或断裂。灰背景平滑，白釉边缘自然，未见破图、明显 JPEG 块状、色带、缩放锯齿或锐化光晕。缩至手机宽度仍满足主体与纹样观察。OCR exact：N/A。结论：PASS。",
+  "agent_output_sha256": "cbb151adfb700e8f3a1edf6644f25cc421c1df7737692b4c384a29ef40d1b403",
+  "results": {
+    "480": {
+      "image_sha256": "b564dff9e839d4dbbb0f6b7708c0f4f13ff9ab6957b627a7f7f9bfa73aa90bda",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "0c31557e25163f2565797fa1a5216175751e6589b0052e3a03137bde61c93d57",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "efe5f191b93ebfef047f6cf3f16a10b723031b357911cb1c6baf2ab8c6b98919",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "a000096d92b90060f1263b7eb03e0b91b04603d66779abaa664098d9b089aef0",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
