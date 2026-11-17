@@ -3131,16 +3131,32 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-11-17",
     "type": "视频",
     "time": "19:30",
-    "title": "用 Codex 帮忙搭一个以后还能改的作品页",
-    "summary": "今天聊聊用 Codex 帮忙搭一个以后还能改的作品页。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "Codex搭作品页，先留好以后修改的位置",
+    "summary": "把作品数据、页面组件和样式分开，让Codex一次只改一个能检查的小步骤；页面能运行、能回退，才算真正方便继续维护。",
+    "cover": "./assets/updates/2026-11-17/01-website-hero-fallback.png?v=05e27fde795a",
+    "published": true,
+    "url": "./updates/2026-11-17-build-an-editable-portfolio-page-with-codex.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 5 / 发布验收",
     "editorial_angle": "失败排查",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-11-17",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-11-17/01-website-hero-480.webp?v=b851d6e5de1c 480w, ./assets/updates/2026-11-17/01-website-hero-768.webp?v=d5aab0df2deb 768w, ./assets/updates/2026-11-17/01-website-hero-1280.webp?v=314de2b9f417 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-11-17/01-website-hero-fallback.png?v=05e27fde795a",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-11-18",
@@ -4475,6 +4491,21 @@ window.WORKSHOP_UPDATES = [
     "status": "planned",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 5 / 发布验收",
+    "editorial_angle": "交付复核"
+  },
+  {
+    "date": "2027-02-15",
+    "type": "图文",
+    "time": "11:30",
+    "title": "只有 3 天，怎么选出最值得先做的一件事？",
+    "summary": "今天聊聊只有 3 天，怎么选出最值得先做的一件事。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 1–5 / 阶段验收",
     "editorial_angle": "交付复核"
   }
 ];
