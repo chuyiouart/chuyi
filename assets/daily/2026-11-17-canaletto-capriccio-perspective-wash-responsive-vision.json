@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-17",
+  "agent_prompt": "You are performing fail-closed visual QA for one responsive rendition of an official museum artwork. Inspect the actual pixels at a mobile-display scale. Determine whether the main architectural subject, figures, perspective lines, and tonal washes remain clear and readable, and whether there are any compression artifacts, ringing, blockiness, banding, corruption, unintended crop, or scaling distortion. This museum image contains no GPT-generated text, so OCR exact match is N/A. Return a concise verdict with exactly these fields: vision_mobile_readable: true|false; artifacts: true|false; ocr_exact_match: N/A; observations: <specific visual evidence>. Do not infer quality from dimensions or metadata; judge only the opened image.",
+  "agent_prompt_sha256": "76810e85866f5a5f58d75cab8a7d1a7bc44e8abd5a094015c44bf43ea7cad1ef",
+  "agent_output": "[480]\nvision_mobile_readable: true; artifacts: false; ocr_exact_match: N/A; observations: The palace arch, columns, stairs, lagoon edge, boats, foreground figures, converging architectural lines, and broad gray washes remain distinguishable at mobile scale. Fine ornament is naturally simplified at this smallest rendition, but there is no visible ringing, blockiness, banding, corruption, unintended crop, or geometric distortion.\n\n[768]\nvision_mobile_readable: true; artifacts: false; ocr_exact_match: N/A; observations: The full architectural subject and shoreline composition are clear; figures and boat rigging remain readable, perspective edges are continuous, and transparent gray tonal transitions are preserved without visible compression damage, crop, or scaling distortion.\n\n[1280]\nvision_mobile_readable: true; artifacts: false; ocr_exact_match: N/A; observations: Palace ornament, columns, arches, steps, figures, rigging, perspective construction, and layered ink washes are all clearly resolved. No visible ringing, blocking, banding, corruption, unintended crop, or aspect-ratio distortion is present.\n\n[fallback]\nvision_mobile_readable: true; artifacts: false; ocr_exact_match: N/A; observations: The JPEG fallback preserves the complete composition and clearly renders the palace, foreground figures, boats, perspective lines, and tonal wash modulation. No visible JPEG blocking, ringing, banding, corruption, unintended crop, or scaling distortion is present.",
+  "agent_output_sha256": "a8359a81b570768fd45b4cf5417d764c64f3f2297b6be9274304fbc32ab872c7",
+  "results": {
+    "480": {
+      "image_sha256": "bf5a8d86bc6fb32cfff7caeb46356517cdc26cebad42ddd1e05b94b77d3e03b8",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "e3e8c1857431ffb3e733248bbdef4af65107306961d37ef5f5cf53d39c5afeef",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "aa89b4f258eff67c55e534bcc6f11fc40949d626c284dc4e67afb2b6d803e626",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "6f08cac1a90e7ed841315241c168f4690f205f9a072d2dc2d74931c5ec1c95ff",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
