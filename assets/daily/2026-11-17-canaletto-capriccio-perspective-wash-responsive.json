@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 30412,
+      "format": "webp",
+      "height": 309,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-17-canaletto-capriccio-perspective-wash-480.webp",
+      "quality": 84,
+      "sha256": "bf5a8d86bc6fb32cfff7caeb46356517cdc26cebad42ddd1e05b94b77d3e03b8",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 75952,
+      "format": "webp",
+      "height": 494,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-17-canaletto-capriccio-perspective-wash-768.webp",
+      "quality": 84,
+      "sha256": "e3e8c1857431ffb3e733248bbdef4af65107306961d37ef5f5cf53d39c5afeef",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 208586,
+      "format": "webp",
+      "height": 823,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-17-canaletto-capriccio-perspective-wash-1280.webp",
+      "quality": 84,
+      "sha256": "aa89b4f258eff67c55e534bcc6f11fc40949d626c284dc4e67afb2b6d803e626",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 285507,
+    "format": "jpeg",
+    "height": 823,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-11-17-canaletto-capriccio-perspective-wash-fallback.jpg",
+    "quality": 84,
+    "sha256": "6f08cac1a90e7ed841315241c168f4690f205f9a072d2dc2d74931c5ec1c95ff",
+    "width": 1280
+  },
+  "original_bytes": 1869465,
+  "original_height": 2186,
+  "original_path": "assets/daily/2026-11-17-canaletto-capriccio-perspective-wash.jpg",
+  "original_sha256": "0f53316e3c4e40947aa3d9937f5eb54caa0148ba15eb4f4591373700b5ae2d68",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1930.23/1930.23_print.jpg",
+  "original_width": 3400,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-11-17-canaletto-capriccio-perspective-wash-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-11-17-canaletto-capriccio-perspective-wash-480.webp?v=bf5a8d86bc6f 480w, 2026-11-17-canaletto-capriccio-perspective-wash-768.webp?v=e3e8c1857431 768w, 2026-11-17-canaletto-capriccio-perspective-wash-1280.webp?v=aa89b4f258ef 1280w"
+}
