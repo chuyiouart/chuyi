@@ -1,0 +1,34 @@
+{
+  "agent_output": "Asset label: 480 WebP\nMobile readable: PASS\nArtifacts: false\nOCR exact match: N/A\nVisual evidence: At mobile scale the complete basket remains in frame against the gray background. The flared rim, narrow neck, broad shoulder, rounded body, and flat base are distinct. Individual coiled rows remain visible; the shoulder band, large alternating dark forms across the belly, and the smaller repeated human-like figures in the lower register are distinguishable. No visible blockiness, ringing, banding, unintended blur, stretching, crop loss, or aspect-ratio distortion.\n\nAsset label: 768 WebP\nMobile readable: PASS\nArtifacts: false\nOCR exact match: N/A\nVisual evidence: The full vessel silhouette is crisp and proportionate. Coiled weave texture is clear, horizontal registers remain separated, and the lower repeated figures can be followed across the basket. Edges and dark-on-tan patterns show no visible ringing or block breakup; the image has no unintended blur, banding, stretching, cropping, or aspect-ratio distortion.\n\nAsset label: 1280 WebP\nMobile readable: PASS\nArtifacts: false\nOCR exact match: N/A\nVisual evidence: The basket is fully framed and highly legible. Fine coil structure, rim wrapping, shoulder geometry, central alternating motifs, and the lower human-like figure band are all clear enough for close art-study reference. Tonal gradients and edges are clean, with no visible compression damage, ringing, blockiness, banding, unintended blur, stretching, cropping, or aspect-ratio distortion.\n\nAsset label: fallback JPEG\nMobile readable: PASS\nArtifacts: false\nOCR exact match: N/A\nVisual evidence: The fallback preserves the same full composition and proportions as the WebP assets. The flared rim, neck, broad body, horizontal woven bands, and lower repeated figures remain clearly readable; fine coils and dark patterns retain clean separation. No visible JPEG blocking, halos, banding, unintended blur, stretch, crop loss, or aspect-ratio distortion.",
+  "agent_output_sha256": "6ce50614d2de28a10e253a3f5c409d0ade2bed19512220278e428b006dd02eb7",
+  "agent_prompt": "You are the real Vision QA agent for OUART Daily Art 2026-11-18. Inspect this exact responsive asset at mobile-display scale. Determine whether the jar-shaped Timbisha (Panamint) Shoshone basket remains clearly readable as the same artwork: overall vessel silhouette, coiled weave, horizontal patterned bands, and lower register of repeated human-like figures must be visible enough for an art lesson. Check for compression artifacts, ringing, blockiness, banding, unintended blur, stretching, cropping, or aspect-ratio distortion. This is an official collection image with no GPT-generated text, so OCR exact match is N/A. Return a complete plain-text assessment that explicitly states: asset label, mobile readable PASS/FAIL, artifacts true/false, OCR exact match N/A, and concise visual evidence. Do not infer from file metadata; judge the pixels shown.",
+  "agent_prompt_sha256": "cbe605eaecf054a03b6be163cf7b0636c5d83e7a2ce2aab696aaa905808377b7",
+  "date": "2026-11-18",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "1f7f10935a81064d18f569e4ab51e56eb34b70e979be4d27a8b731e5fe74b9ab",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "45f1da5923b1cd4976e6ee1a47b329f7e87f6dd3565c2a9c5353c5dcf31b07ce",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "d9b01db626abb6792c3262b519b603046b6fd83cbd687ee68f0235d84540cbb7",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "0116fb7d5a8e87cea7afcac7934cd5f8364fd90245d56c7c578fbaac22fbbaea",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}
