@@ -1,0 +1,20 @@
+const prefix = "ouart-kansai-travel-";
+const cacheName = prefix + "eb3d35e4e323c254";
+const files = ["index.html","style.css","app.js","trip.enc.json","assets/lucua-access.webp","assets/lucua-10f.webp","assets/lucua-11f.webp","assets/lucua-12f.webp","assets/lucua-13f.webp","assets/sky-christmas.webp","assets/tools-access.webp","assets/daruma-entry.webp","assets/kawachi-entry.webp","assets/sky-tree.webp"];
+self.addEventListener("install", (event) => {
+  event.waitUntil(caches.open(cacheName).then(cache => cache.addAll(files)).then(() => self.skipWaiting()));
+});
+self.addEventListener("activate", (event) => {
+  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith(prefix) && key !== cacheName).map(key => caches.delete(key)))).then(() => self.clients.claim()));
+});
+self.addEventListener("fetch", (event) => {
+  const url = new URL(event.request.url);
+  const scope = new URL(self.registration.scope);
+  if (event.request.method !== "GET" || url.origin !== scope.origin || !url.pathname.startsWith(scope.pathname)) return;
+  const name = url.pathname.slice(scope.pathname.length);
+  if (event.request.mode === "navigate" && (name === "" || name === "index.html")) {
+    event.respondWith(fetch(event.request).catch(() => caches.open(cacheName).then(cache => cache.match("index.html"))));
+  } else if (files.includes(name)) {
+    event.respondWith(caches.open(cacheName).then(cache => cache.match(name)).then(found => found || fetch(event.request)));
+  }
+});
