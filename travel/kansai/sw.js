@@ -1,6 +1,6 @@
 const prefix = "ouart-kansai-travel-";
-const cacheName = prefix + "5868d6c725a24a06";
-const files = ["index.html","editorial.css","editorial.js","trip-editorial.enc.json","assets/lucua-access.webp","assets/lucua-10f.webp","assets/lucua-11f.webp","assets/lucua-12f.webp","assets/lucua-13f.webp","assets/sky-christmas.webp","assets/tools-access.webp","assets/daruma-entry.webp","assets/kawachi-entry.webp","assets/sky-tree.webp","assets/autumn-cover.webp","assets/kyoto-night.webp","assets/otagi-rakan.webp","assets/uji-koshoji.webp","assets/nintendo-entrance.webp","assets/teamlab-preview.webp","assets/wyeth-preview.webp","assets/tools-entry.webp","assets/lucua-south-entry.webp","assets/yodobashi-entry.webp","assets/cosme-entry.webp","assets/marimekko-entry.webp"];
+const cacheName = prefix + "eb11788988661780";
+const files = ["index.html","journey.css","journey.js","trip-transport.enc.json","assets/lucua-access.webp","assets/lucua-10f.webp","assets/lucua-11f.webp","assets/lucua-12f.webp","assets/lucua-13f.webp","assets/sky-christmas.webp","assets/tools-access.webp","assets/daruma-entry.webp","assets/kawachi-entry.webp","assets/sky-tree.webp","assets/autumn-cover.webp","assets/kyoto-night.webp","assets/otagi-rakan.webp","assets/uji-koshoji.webp","assets/nintendo-entrance.webp","assets/teamlab-preview.webp","assets/wyeth-preview.webp","assets/tools-entry.webp","assets/lucua-south-entry.webp","assets/yodobashi-entry.webp","assets/cosme-entry.webp","assets/marimekko-entry.webp","assets/nintendo-route.webp","assets/kyoto-platforms.webp"];
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(cacheName).then(cache => cache.addAll(files)).then(() => self.skipWaiting()));
 });
