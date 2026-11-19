@@ -1,0 +1,34 @@
+{
+  "agent_output": "Asset label: 480 WebP\nMobile readable: PASS\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\nVisual evidence: 已真实查看该资产。Kala 石雕完整置于灰色背景中，外轮廓、凸圆双眼、宽鼻、嘴部小齿与两侧弯曲獠牙在移动端尺度仍清楚可辨；冠饰和两侧卷曲轮廓保持连续，鼻与眼下方的投影暗部足以说明前后层级。细小石粒因 480 像素缩放自然简化，但没有可见压缩块、振铃、条带、异常锐化、拉伸、比例失真或有害裁切。\n\nAsset label: 768 WebP\nMobile readable: PASS\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\nVisual evidence: 已真实查看该资产。主体完整且比例自然，双眼、鼻孔、嘴内、獠牙和向上展开的冠饰均有清晰边界；粗粝火山石表面的浅色斑点、凹槽与受光面保持可读。灰色背景渐变平滑，未见明显块状压缩、边缘振铃、色调条带、异常锐化、拉伸、裁切伤害或比例失真。\n\nAsset label: 1280 WebP\nMobile readable: PASS\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\nVisual evidence: 已真实查看该资产。石雕从顶部冠饰到底部基座完整入框，眼球同心层、鼻部粗糙颗粒、嘴内暗部、獠牙和左右卷纹细节清楚，明暗层级适合艺术观察。边缘与背景过渡干净，未见压缩块、振铃、条带、过度锐化、非预期模糊、拉伸、比例失真或裁切伤害。\n\nAsset label: fallback JPEG\nMobile readable: PASS\nvision_mobile_readable=true\nartifacts=false\nocr_exact_match=N/A\nVisual evidence: 已真实查看该资产。fallback 保留与 WebP 相同的完整构图和正确比例，Kala 面孔的圆眼、宽鼻、嘴齿、獠牙、冠饰卷曲及石面明暗均清楚可辨。灰色背景和石材边缘未见可感知 JPEG 方块、光晕、振铃、条带、异常锐化、拉伸、比例失真或有害裁切。",
+  "agent_output_sha256": "da7985b6ebf2d4172b90aeba945a7d6d18249a4ad6d25efcff12605f9422b461",
+  "agent_prompt": "OUART 每日一画响应式图像 Vision QA（资产：480 WebP）。请真实查看此文件并判断：在移动端缩放显示时，爪哇 Kala 石雕主体是否清楚可辨；眼、鼻、獠牙、卷曲轮廓与石材明暗是否保持可读；是否存在明显压缩块、振铃、条带、异常锐化、拉伸、比例失真、裁切伤害或其他缩放/压缩伪影。图中没有 GPT 生成文字，OCR 精确匹配应记为 N/A。请完整输出简洁的逐项观察，并明确给出 vision_mobile_readable=true/false、artifacts=true/false、ocr_exact_match=N/A；若有问题说明位置和严重度。\n\nOUART 每日一画响应式图像 Vision QA（资产：768 WebP）。请真实查看此文件并判断：在移动端缩放显示时，爪哇 Kala 石雕主体是否清楚可辨；眼、鼻、獠牙、卷曲轮廓与石材明暗是否保持可读；是否存在明显压缩块、振铃、条带、异常锐化、拉伸、比例失真、裁切伤害或其他缩放/压缩伪影。图中没有 GPT 生成文字，OCR 精确匹配应记为 N/A。请完整输出简洁的逐项观察，并明确给出 vision_mobile_readable=true/false、artifacts=true/false、ocr_exact_match=N/A；若有问题说明位置和严重度。\n\nOUART 每日一画响应式图像 Vision QA（资产：1280 WebP）。请真实查看此文件并判断：在移动端缩放显示时，爪哇 Kala 石雕主体是否清楚可辨；眼、鼻、獠牙、卷曲轮廓与石材明暗是否保持可读；是否存在明显压缩块、振铃、条带、异常锐化、拉伸、比例失真、裁切伤害或其他缩放/压缩伪影。图中没有 GPT 生成文字，OCR 精确匹配应记为 N/A。请完整输出简洁的逐项观察，并明确给出 vision_mobile_readable=true/false、artifacts=true/false、ocr_exact_match=N/A；若有问题说明位置和严重度。\n\nOUART 每日一画响应式图像 Vision QA（资产：fallback JPEG）。请真实查看此文件并判断：在移动端缩放显示时，爪哇 Kala 石雕主体是否清楚可辨；眼、鼻、獠牙、卷曲轮廓与石材明暗是否保持可读；是否存在明显压缩块、振铃、条带、异常锐化、拉伸、比例失真、裁切伤害或其他缩放/压缩伪影。图中没有 GPT 生成文字，OCR 精确匹配应记为 N/A。请完整输出简洁的逐项观察，并明确给出 vision_mobile_readable=true/false、artifacts=true/false、ocr_exact_match=N/A；若有问题说明位置和严重度。",
+  "agent_prompt_sha256": "58ea54392116407e3f25812a4352f70c8002c6c2f693ddb3398aed3b8cfb6d5f",
+  "date": "2026-11-19",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "529309738b5da9852abd649ca463c9ff0ffb2194c0d712fc8862f6134446dad8",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "c9786a392da870216cf1756bf96ace7254ed00975a7fae8935e75a60d92da387",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "3f4f088dadd37f83bbd188dd0ad7faf3e4c9d0f889d64dac55760c56de4bbd99",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "c93823fd475aff3805001b6ec4001904786ddd831545f46af38de5dda54a56a4",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}

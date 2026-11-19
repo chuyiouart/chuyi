@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 39184,
+      "format": "webp",
+      "height": 371,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-19-kala-face-shadow-planes-480.webp",
+      "quality": 84,
+      "sha256": "c9786a392da870216cf1756bf96ace7254ed00975a7fae8935e75a60d92da387",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 89476,
+      "format": "webp",
+      "height": 594,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-19-kala-face-shadow-planes-768.webp",
+      "quality": 84,
+      "sha256": "3f4f088dadd37f83bbd188dd0ad7faf3e4c9d0f889d64dac55760c56de4bbd99",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 227872,
+      "format": "webp",
+      "height": 990,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-19-kala-face-shadow-planes-1280.webp",
+      "quality": 84,
+      "sha256": "529309738b5da9852abd649ca463c9ff0ffb2194c0d712fc8862f6134446dad8",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 310811,
+    "format": "jpeg",
+    "height": 990,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-11-19-kala-face-shadow-planes-fallback.jpg",
+    "quality": 84,
+    "sha256": "c93823fd475aff3805001b6ec4001904786ddd831545f46af38de5dda54a56a4",
+    "width": 1280
+  },
+  "original_bytes": 2721080,
+  "original_height": 2629,
+  "original_path": "assets/daily/2026-11-19-kala-face-shadow-planes.jpg",
+  "original_sha256": "592e06327284743f3835c1366e5e319d12a786abadfd25f35db1739c717f321d",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1975.104/1975.104_print.jpg",
+  "original_width": 3400,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-11-19-kala-face-shadow-planes-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-11-19-kala-face-shadow-planes-480.webp?v=c9786a392da8 480w, 2026-11-19-kala-face-shadow-planes-768.webp?v=3f4f088dadd3 768w, 2026-11-19-kala-face-shadow-planes-1280.webp?v=529309738b5d 1280w"
+}
