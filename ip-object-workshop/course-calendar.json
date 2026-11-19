@@ -3186,16 +3186,32 @@
     "date": "2026-11-19",
     "type": "视频",
     "time": "19:30",
-    "title": "同一份作品资料，怎么让 AI 改成不同平台的文案？",
-    "summary": "今天聊聊同一份作品资料，怎么让 AI 改成不同平台的文案。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "一份作品资料，怎么改成三种平台文案",
+    "summary": "先固定作品事实，再按网站、小红书和朋友圈的阅读任务调整顺序、篇幅和行动入口。改写可以不同，名称、阶段、边界和报名信息必须能回到同一份底稿。",
+    "cover": "./assets/updates/2026-11-19/01-website-hero-fallback.png?v=feaa8f9883fa",
+    "published": true,
+    "url": "./updates/2026-11-19-adapt-one-artwork-brief-for-three-platforms.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 5 / 发布验收",
     "editorial_angle": "失败排查",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-11-19",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-11-19/01-website-hero-480.webp?v=b36706eee2ad 480w, ./assets/updates/2026-11-19/01-website-hero-768.webp?v=2a478218c8de 768w, ./assets/updates/2026-11-19/01-website-hero-1280.webp?v=ed98dde9ab1c 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-11-19/01-website-hero-fallback.png?v=feaa8f9883fa",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-11-20",
