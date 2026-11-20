@@ -3217,16 +3217,33 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-11-20",
     "type": "图文",
     "time": "11:30",
-    "title": "为什么还要用手机检查网页上的模型和图片？",
-    "summary": "今天聊聊为什么还要用手机检查网页上的模型和图片。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "手机上看作品页，要查的不只是缩放",
+    "summary": "用真实手机逐项检查主图、画廊、链接和三维模型；把设备、操作和实际现象记清，修改后回到同一条件复查。",
+    "cover": "./assets/updates/2026-11-20/02-core-explanation-fallback.png?v=23e077721cbd",
+    "published": true,
+    "url": "./updates/2026-11-20-check-artwork-page-on-real-phone.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 5 / 发布验收",
     "editorial_angle": "失败排查",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-11-20",
+    "media_status": "partial",
+    "passedRoles": [
+      "core_explanation",
+      "real_application"
+    ],
+    "pendingRoles": [
+      "website_hero",
+      "social_promotion"
+    ],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-11-20/02-core-explanation-480.webp?v=32f3e1a37e00 480w, ./assets/updates/2026-11-20/02-core-explanation-768.webp?v=e1f698343bca 768w",
+      "sizes": "(max-width: 680px) 100vw, 50vw",
+      "fallback": "./assets/updates/2026-11-20/02-core-explanation-fallback.png?v=23e077721cbd",
+      "width": 768,
+      "height": 768
+    }
   },
   {
     "date": "2026-11-21",
@@ -4539,6 +4556,36 @@ window.WORKSHOP_UPDATES = [
     "time": "19:30",
     "title": "做完后记下的问题，怎么让 AI 帮忙整理成修改清单？",
     "summary": "今天聊聊做完后记下的问题，怎么让 AI 帮忙整理成修改清单。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 1–5 / 阶段验收",
+    "editorial_angle": "交付复核"
+  },
+  {
+    "date": "2027-02-17",
+    "type": "图文",
+    "time": "11:30",
+    "title": "做了 5 天，没做完的部分该怎么记？",
+    "summary": "今天聊聊做了 5 天，没做完的部分该怎么记。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 1–5 / 阶段验收",
+    "editorial_angle": "交付复核"
+  },
+  {
+    "date": "2027-02-18",
+    "type": "视频",
+    "time": "19:30",
+    "title": "改前改后差在哪，怎么让 GPT-6 帮忙对照检查记录？",
+    "summary": "今天聊聊改前改后差在哪，怎么让 GPT-6 帮忙对照检查记录。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,
