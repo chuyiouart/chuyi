@@ -3219,7 +3219,7 @@ window.WORKSHOP_UPDATES = [
     "time": "11:30",
     "title": "手机上看作品页，要查的不只是缩放",
     "summary": "用真实手机逐项检查主图、画廊、链接和三维模型；把设备、操作和实际现象记清，修改后回到同一条件复查。",
-    "cover": "./assets/updates/2026-11-20/02-core-explanation-fallback.png?v=23e077721cbd",
+    "cover": "./assets/updates/2026-11-20/01-website-hero-fallback.png?v=8f485558b378",
     "published": true,
     "url": "./updates/2026-11-20-check-artwork-page-on-real-phone.html",
     "status": "published",
@@ -3228,21 +3228,20 @@ window.WORKSHOP_UPDATES = [
     "editorial_angle": "失败排查",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "source_id": "workshop:2026-11-20",
-    "media_status": "partial",
+    "media_status": "complete",
     "passedRoles": [
+      "website_hero",
       "core_explanation",
       "real_application",
       "social_promotion"
     ],
-    "pendingRoles": [
-      "website_hero"
-    ],
+    "pendingRoles": [],
     "coverImage": {
-      "srcset": "./assets/updates/2026-11-20/02-core-explanation-480.webp?v=32f3e1a37e00 480w, ./assets/updates/2026-11-20/02-core-explanation-768.webp?v=e1f698343bca 768w",
-      "sizes": "(max-width: 680px) 100vw, 50vw",
-      "fallback": "./assets/updates/2026-11-20/02-core-explanation-fallback.png?v=23e077721cbd",
-      "width": 768,
-      "height": 768
+      "srcset": "./assets/updates/2026-11-20/01-website-hero-480.webp?v=51766df15789 480w, ./assets/updates/2026-11-20/01-website-hero-768.webp?v=31f491a5826a 768w, ./assets/updates/2026-11-20/01-website-hero-1280.webp?v=e5c29fa6c3ae 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-11-20/01-website-hero-fallback.png?v=8f485558b378",
+      "width": 960,
+      "height": 540
     }
   },
   {
