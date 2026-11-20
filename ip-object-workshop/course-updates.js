@@ -3231,11 +3231,11 @@ window.WORKSHOP_UPDATES = [
     "media_status": "partial",
     "passedRoles": [
       "core_explanation",
-      "real_application"
+      "real_application",
+      "social_promotion"
     ],
     "pendingRoles": [
-      "website_hero",
-      "social_promotion"
+      "website_hero"
     ],
     "coverImage": {
       "srcset": "./assets/updates/2026-11-20/02-core-explanation-480.webp?v=32f3e1a37e00 480w, ./assets/updates/2026-11-20/02-core-explanation-768.webp?v=e1f698343bca 768w",
