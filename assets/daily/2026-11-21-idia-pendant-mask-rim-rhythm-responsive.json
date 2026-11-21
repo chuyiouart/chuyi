@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 34400,
+      "format": "webp",
+      "height": 647,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-21-idia-pendant-mask-rim-rhythm-480.webp",
+      "quality": 84,
+      "sha256": "c60a8c10a0bb097c3e439a2e50b11a8d290e40d6257202b4c636d966bc5450ee",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 72722,
+      "format": "webp",
+      "height": 1036,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-21-idia-pendant-mask-rim-rhythm-768.webp",
+      "quality": 84,
+      "sha256": "3ba41e843a1acece7d2168eda71026c7253bec680d70ab09c010881351d9a910",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 156056,
+      "format": "webp",
+      "height": 1726,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-21-idia-pendant-mask-rim-rhythm-1280.webp",
+      "quality": 84,
+      "sha256": "a6af65e6f64eea3041c04860a2c762c12e31fae60c55beb6d8e854d8c798baa8",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 274516,
+    "format": "jpeg",
+    "height": 1726,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-11-21-idia-pendant-mask-rim-rhythm-fallback.jpg",
+    "quality": 84,
+    "sha256": "686aef5aec38c88716aaa959a90c2ebc793f0b0709f97b4c42b47cf7ceb47542",
+    "width": 1280
+  },
+  "original_bytes": 1648366,
+  "original_height": 2000,
+  "original_path": "assets/daily/2026-11-21-idia-pendant-mask-rim-rhythm.jpg",
+  "original_sha256": "3a112d7354aba8318203a6da83b5843ef374709061941190fc1624292005c0c7",
+  "original_url": "https://images.metmuseum.org/CRDImages/ao/original/DP231460.jpg?download=1",
+  "original_width": 1483,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-11-21-idia-pendant-mask-rim-rhythm-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-11-21-idia-pendant-mask-rim-rhythm-480.webp?v=c60a8c10a0bb 480w, 2026-11-21-idia-pendant-mask-rim-rhythm-768.webp?v=3ba41e843a1a 768w, 2026-11-21-idia-pendant-mask-rim-rhythm-1280.webp?v=a6af65e6f64e 1280w"
+}

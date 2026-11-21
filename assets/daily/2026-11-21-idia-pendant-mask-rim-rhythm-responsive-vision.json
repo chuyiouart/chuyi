@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-21",
+  "agent_prompt": "Inspect this exact responsive museum artwork asset for OUART Daily Art mobile delivery. Judge only what is visibly present: whether the central artwork remains clear and readable at mobile display size, whether important contours and repeated rim details remain distinguishable, and whether there are any visible compression, scaling, ringing, blocking, banding, blur, crop, or other rendering artifacts. This is an official collection photograph with no GPT-generated text, so OCR exact match is N/A. Return a concise plain-text verdict that explicitly states MOBILE_READABLE=true or false and ARTIFACTS=false or true, followed by the visual reasons.",
+  "agent_prompt_sha256": "958f1f12ca36e857ecceca6c3018de0147c9ef40819cebbcabfc242213ff9cf3",
+  "agent_output": "480 WebP — MOBILE_READABLE=true; ARTIFACTS=false. The complete pendant mask remains centered and clearly recognizable at mobile size. Facial contours, forehead marks, beadlike cap texture, and the repeated miniature heads and openwork around the rim remain distinguishable. No visible blocking, ringing, banding, scaling distortion, unintended crop, or objectionable blur is present.\n\n768 WebP — MOBILE_READABLE=true; ARTIFACTS=false. The face, asymmetrical eye inlays, fine ivory cracking, cap texture, openwork side panels, and repeated rim figures are all clear. Edges remain natural without halos; the gray background is smooth, with no visible compression or scaling defects and no unintended crop.\n\n1280 WebP — MOBILE_READABLE=true; ARTIFACTS=false. Fine surface cracks, carved dots, individual rim figures, openwork voids, and the lower curved support are sharply legible while the full object remains in frame. No visible ringing, blocking, banding, blur, resampling damage, or crop is present.\n\nFallback JPEG — MOBILE_READABLE=true; ARTIFACTS=false. The central artwork and its complete outer silhouette are clear; facial planes, inlays, cap pattern, and repeated rim details remain readable. Tonal transitions in the neutral background are smooth, with no visible JPEG blocks, halos, banding, scaling artifacts, or unintended crop.\n\nOCR_EXACT_MATCH=N/A for all four assets because the official collection photograph contains no GPT-generated text.",
+  "agent_output_sha256": "8694e2e12918f21b5e16c1ad984d1c83d9e94f8a15e6a84ff35b40d8a6aae924",
+  "results": {
+    "480": {
+      "image_sha256": "c60a8c10a0bb097c3e439a2e50b11a8d290e40d6257202b4c636d966bc5450ee",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "3ba41e843a1acece7d2168eda71026c7253bec680d70ab09c010881351d9a910",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "a6af65e6f64eea3041c04860a2c762c12e31fae60c55beb6d8e854d8c798baa8",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "686aef5aec38c88716aaa959a90c2ebc793f0b0709f97b4c42b47cf7ceb47542",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
