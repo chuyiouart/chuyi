@@ -3248,16 +3248,33 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-11-21",
     "type": "视频",
     "time": "18:00",
-    "title": "网页上的作品，对应的是哪一版原始文件？",
-    "summary": "今天聊聊网页上的作品，对应的是哪一版原始文件。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "网页里的作品，源文件到底是哪一版",
+    "summary": "从网页正在使用的图片和模型倒查派生文件、源文件与当前实物；相似外观只能缩小范围，真正采用前还要打开文件并核对导出关系。",
+    "cover": "./assets/updates/2026-11-21/01-website-hero-fallback.png?v=0565a364c1e1",
+    "published": true,
+    "url": "./updates/2026-11-21-trace-web-artwork-back-to-source-file.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 5 / 发布验收",
     "editorial_angle": "失败排查",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-11-21",
+    "media_status": "partial",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application"
+    ],
+    "pendingRoles": [
+      "social_promotion"
+    ],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-11-21/01-website-hero-480.webp?v=00a8fb44e140 480w, ./assets/updates/2026-11-21/01-website-hero-768.webp?v=1651ee3dd6c6 768w, ./assets/updates/2026-11-21/01-website-hero-1280.webp?v=c901604e5284 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-11-21/01-website-hero-fallback.png?v=0565a364c1e1",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-11-22",
@@ -4585,6 +4602,21 @@ window.WORKSHOP_UPDATES = [
     "time": "19:30",
     "title": "改前改后差在哪，怎么让 GPT-6 帮忙对照检查记录？",
     "summary": "今天聊聊改前改后差在哪，怎么让 GPT-6 帮忙对照检查记录。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 1–5 / 阶段验收",
+    "editorial_angle": "交付复核"
+  },
+  {
+    "date": "2027-02-19",
+    "type": "图文",
+    "time": "11:30",
+    "title": "已经有模型了，从哪一阶段跟着学比较合适？",
+    "summary": "今天聊聊已经有模型了，从哪一阶段跟着学比较合适。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
     "writing_policy_version": "ip-workshop-plain-language-v1",
     "cover": "",
     "published": false,
