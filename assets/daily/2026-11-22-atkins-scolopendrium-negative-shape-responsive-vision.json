@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-22",
+  "agent_prompt": "[480]\n你是 OUART 每日一画响应式馆藏图 Vision QA。请真实检查这张 480w WebP：按手机端缩放观看，判断蕨叶主体、叶片轮廓、中央叶轴和蓝晒明暗关系是否清楚可读；检查是否存在压缩块、色带、振铃、锯齿、异常模糊、拉伸或比例失真、截断、损坏等生成/缩放伪影。此图是官方馆藏图，不含 GPT 生成文字，OCR exact 必须记为字符串 N/A。请只依据实际像素，用中文完整报告观察，并在末尾明确给出：vision_mobile_readable=true/false；artifacts=true/false；ocr_exact_match=N/A。\n\n[768]\n你是 OUART 每日一画响应式馆藏图 Vision QA。请真实检查这张 768w WebP：按手机端缩放观看，判断蕨叶主体、叶片轮廓、中央叶轴和蓝晒明暗关系是否清楚可读；检查是否存在压缩块、色带、振铃、锯齿、异常模糊、拉伸或比例失真、截断、损坏等生成/缩放伪影。此图是官方馆藏图，不含 GPT 生成文字，OCR exact 必须记为字符串 N/A。请只依据实际像素，用中文完整报告观察，并在末尾明确给出：vision_mobile_readable=true/false；artifacts=true/false；ocr_exact_match=N/A。\n\n[1280]\n你是 OUART 每日一画响应式馆藏图 Vision QA。请真实检查这张 1280w WebP：按手机端缩放观看，判断蕨叶主体、叶片轮廓、中央叶轴和蓝晒明暗关系是否清楚可读；检查是否存在压缩块、色带、振铃、锯齿、异常模糊、拉伸或比例失真、截断、损坏等生成/缩放伪影。此图是官方馆藏图，不含 GPT 生成文字，OCR exact 必须记为字符串 N/A。请只依据实际像素，用中文完整报告观察，并在末尾明确给出：vision_mobile_readable=true/false；artifacts=true/false；ocr_exact_match=N/A。\n\n[fallback]\n你是 OUART 每日一画响应式馆藏图 Vision QA。请真实检查这张受限原格式 fallback JPEG：按手机端缩放观看，判断蕨叶主体、叶片轮廓、中央叶轴和蓝晒明暗关系是否清楚可读；检查是否存在压缩块、色带、振铃、锯齿、异常模糊、拉伸或比例失真、截断、损坏等生成/缩放伪影。此图是官方馆藏图，不含 GPT 生成文字，OCR exact 必须记为字符串 N/A。请只依据实际像素，用中文完整报告观察，并在末尾明确给出：vision_mobile_readable=true/false；artifacts=true/false；ocr_exact_match=N/A。",
+  "agent_prompt_sha256": "ed695a949c3dcab3b8974c77425825b1bbc664fdf9bb138073b6a1505df9ea18",
+  "agent_output": "[480]\n已真实打开并检查 480w WebP。手机端整体缩放下，四组蕨叶标本以浅青白色负形清楚地落在蓝色底面上；两枚大型叶片、右上小叶和右下折叠叶之间的间隔明确，主体可立即辨认。大型叶片的锯齿状外轮廓和下端细叶柄可读，叶面内部的中央叶轴与侧脉因原始蓝晒本身对比柔和而较淡，但仍能沿纵向辨认，明暗关系没有混淆。画面比例正常，纸张边缘与蓝晒矩形完整，没有异常裁切或损坏；未见压缩块、明显色带、振铃、锯齿、异常模糊、拉伸或比例失真。少量斑点、褪色和叶片边缘不规则属于原作及纸面状态，不是响应式生成伪影。\nvision_mobile_readable=true；artifacts=false；ocr_exact_match=N/A。\n\n[768]\n已真实打开并检查 768w WebP。手机端缩放下，蓝底与浅色蕨叶的面积对比稳定，四组叶形和它们之间的负形间隔清楚；左、中的长叶轮廓、右上短叶与右下弯折叶均可辨认。中央叶轴和细微侧脉比 480w 更容易看见，尤其右侧叶片的纵向叶轴和两枚大叶内部的浅淡纹理仍保持自然、连续。画面四周纸边与蓝晒边界完整，纵横比例正常，没有拉伸、截断或损坏。未见压缩块、色带、振铃、明显锯齿或缩放造成的异常锐化/模糊；原作中的细小污点、针孔感和色泽起伏属于馆藏图像本身。\nvision_mobile_readable=true；artifacts=false；ocr_exact_match=N/A。\n\n[1280]\n已真实打开并检查 1280w WebP。缩放到手机视口时，四组蕨叶主体、蓝晒底色和纸张外缘的层次清楚；放大观察时，两枚大型叶片的锯齿边缘、中央纵向叶轴、浅淡侧脉以及下方细叶柄均保持可读，右上与右下叶片的重叠、缺口和弯折形状也没有丢失。蓝色区域存在自然的颗粒、轻微色泽变化与原作斑点，但没有规则压缩块、数字色带、振铃、锯齿或异常模糊。图像未被拉伸，比例与边框正常，无生成过程造成的裁切或损坏。\nvision_mobile_readable=true；artifacts=false；ocr_exact_match=N/A。\n\n[fallback]\n已真实打开并检查受限原格式 fallback JPEG。手机端缩放下，浅色蕨叶与蓝色背景形成明确负形对比，四组叶片的大小、方向和间距均清楚，主体容易辨认。两枚大叶的中央叶轴和细微侧脉、右侧叶片的纵向结构及细叶柄在放大时可读；这些内部纹理本来就比轮廓柔和，表现与馆藏蓝晒一致。纸张边界和蓝晒矩形完整，纵横比例正常，没有拉伸、截断、损坏、异常模糊、压缩块、色带、振铃或明显锯齿。可见的微小斑点、褪色与纸面颗粒是原作/摄影记录特征，不是 fallback 转换伪影。\nvision_mobile_readable=true；artifacts=false；ocr_exact_match=N/A。",
+  "agent_output_sha256": "595b5d8523419fb42f8716848dbc6ac1a802c832bebdff70fb58492b22ba7286",
+  "results": {
+    "480": {
+      "image_sha256": "b25d37704bd9b38fcf0973f1318bd454ede8057ee00807cbbd2e66ba5bb963bc",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "5ca411b48639f6374c81aedb6b71d75bbf8f99ca6dd9e677745786d567ad70a4",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "89132752b4b43467aaca920f83d594ac69bbdeffcd14603a42e91c601cbf9df8",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "4d4b880cd906fb5e41250f81b9fd53a31866282d60a45eefe184ec846c382334",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
