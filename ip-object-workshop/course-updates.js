@@ -3280,16 +3280,32 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-11-22",
     "type": "直播",
     "time": "20:00",
-    "title": "作品页做好后，怎么接着更新、整理素材？",
-    "summary": "今天聊聊作品页做好后，怎么接着更新、整理素材。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "一次只更新一个变化，作品页更好接着做",
+    "summary": "给作品页建立可重复的小更新节奏：围绕一个可见变化准备源文件、图片和说明，公开回看后再开始下一轮。",
+    "cover": "./assets/updates/2026-11-22/01-website-hero-fallback.png?v=cec91494971a",
+    "published": true,
+    "url": "./updates/2026-11-22-keep-project-page-updates-small-and-traceable.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 5 / 发布验收",
     "editorial_angle": "失败排查",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-11-22",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-11-22/01-website-hero-480.webp?v=a0d9ed41b9ef 480w, ./assets/updates/2026-11-22/01-website-hero-768.webp?v=301bd83d8bae 768w, ./assets/updates/2026-11-22/01-website-hero-1280.webp?v=79f38accca0c 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-11-22/01-website-hero-fallback.png?v=cec91494971a",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-11-23",
