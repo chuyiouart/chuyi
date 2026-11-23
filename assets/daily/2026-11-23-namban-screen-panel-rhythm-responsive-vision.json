@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-23",
+  "agent_prompt": "You are performing a fail-closed visual QA of a museum artwork responsive derivative for mobile display. Inspect the actual attached image pixels, not metadata. Determine whether the central artwork subject and major scene groups remain clearly readable at mobile scale, and whether there are any visible compression artifacts, scaling artifacts, corruption, unintended cropping, blank areas, or broken rendering. This archival museum image contains no GPT-generated text, so OCR exact-match is N/A. Return a concise but complete asset-specific assessment, explicitly stating PASS or FAIL, mobile readability, and artifacts.",
+  "agent_prompt_sha256": "5e25987225dd4ab750841ab7e3fb1368c9cf0813d135d05a73c71b9bf04920b9",
+  "agent_output": "480: PASS. The paired six-panel screen remains mobile-readable at overview scale: the upper procession and architecture, lower ship and harbor, gold-ground divisions, waves, and panel structure are clearly distinguishable. Fine individual figures are necessarily small but the central subject and major scene groups remain legible. No visible compression or scaling artifacts, corruption, unintended cropping, blank areas, or broken rendering.\n768: PASS. The paired screen, processions, buildings, harbor, ship, waves, gold ground, and individual panel divisions are clearly readable at mobile scale, with improved figure separation over the 480 asset. No visible compression or scaling artifacts, corruption, unintended cropping, blank areas, or broken rendering.\n1280: PASS. The full paired-screen composition is sharply readable; architecture, processional groups, ships, rigging, waves, shoreline activity, gold-cloud passages, and panel seams retain coherent detail when scaled for mobile viewing. No visible compression or scaling artifacts, corruption, unintended cropping, blank areas, or broken rendering.\nfallback: PASS. The fallback JPEG displays the same complete paired-screen composition with clear major scenes and adequate fine detail for mobile scaling. No visible JPEG blocking, ringing, scaling artifacts, corruption, unintended cropping, blank areas, or broken rendering.",
+  "agent_output_sha256": "d6997c000dd73dc97337d0ec0202de0ecade235354214049d408b528a8c0e3b1",
+  "results": {
+    "480": {
+      "image_sha256": "ac0a39e88c7f15ee822fdfb02c9923e2d5cf32735f914f429f46cb4571d5ee3e",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "086ad499ae82ea4478bc39744563829d86c9984ab7a71ec17194c63902a75841",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "f0dbb0ef8a9fbd94984595a90786bf95254d6f90429b7b6ca68bfec50a89a314",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "fa31b5522bd3b637d5a99cc58882ef01a74b23ac0d49affb46b732409160cedd",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
