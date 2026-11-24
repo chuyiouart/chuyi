@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 91180,
+      "format": "webp",
+      "height": 631,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-24-bahram-dragon-diagonal-force-480.webp",
+      "quality": 84,
+      "sha256": "ecebd2d0a0e604a82c1f768b00c8afbfd8c873ac657f35e08015dab046287c27",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 232034,
+      "format": "webp",
+      "height": 1010,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-24-bahram-dragon-diagonal-force-768.webp",
+      "quality": 84,
+      "sha256": "ed0afb282c7c228d93d781dbc6e1b46270afa33b2f7227b007fd5cf74593e905",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 650628,
+      "format": "webp",
+      "height": 1683,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-24-bahram-dragon-diagonal-force-1280.webp",
+      "quality": 84,
+      "sha256": "417ca3047b8fb399b814a02a1b9c24c6dfc8fdb12d1f2a3c22428668a27b6b11",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 788296,
+    "format": "jpeg",
+    "height": 1683,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-11-24-bahram-dragon-diagonal-force-fallback.jpg",
+    "quality": 84,
+    "sha256": "fba4afa17fc311c4c62304b436f00d9ee66c729519174cd268eecfcdaae2a18b",
+    "width": 1280
+  },
+  "original_bytes": 4814298,
+  "original_height": 3400,
+  "original_path": "assets/daily/2026-11-24-bahram-dragon-diagonal-force.jpg",
+  "original_sha256": "324156e34665ae405c80e8ecc32bca2933cdac33a3358d31ff43bb5a03f771a1",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1943.658.b/1943.658.b_print.jpg",
+  "original_width": 2586,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-11-24-bahram-dragon-diagonal-force-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-11-24-bahram-dragon-diagonal-force-480.webp?v=ecebd2d0a0e6 480w, 2026-11-24-bahram-dragon-diagonal-force-768.webp?v=ed0afb282c7c 768w, 2026-11-24-bahram-dragon-diagonal-force-1280.webp?v=417ca3047b8f 1280w"
+}

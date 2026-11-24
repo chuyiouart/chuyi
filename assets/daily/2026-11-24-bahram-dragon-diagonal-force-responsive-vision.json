@@ -1,0 +1,34 @@
+{
+  "agent_output": "[480 WebP]\nPASS. Mobile readability: the blue-clad warrior, coiling gray dragon, horse, and their opposing diagonal forces remain clearly distinguishable at mobile scale; the complete manuscript leaf and central painted scene are visible without cropping. Artifact findings: no visible compression blocks, ringing, banding, scaling distortion, unintended blur, color break-up, or rendering artifact. Fine manuscript lettering is naturally small at this scale, but that does not obscure the artwork's main subject or composition. OCR exact-match: N/A.\n\n[768 WebP]\nPASS. Mobile readability: the warrior, dragon, horse, rocky setting, and central action are clear, with improved separation of scales, armor, and landscape details; the full leaf is intact and uncropped. Artifact findings: no visible blockiness, ringing, banding, resizing distortion, unintended blur, color shift, or other rendering artifact. OCR exact-match: N/A.\n\n[1280 WebP]\nPASS. Mobile readability: the main figures, intersecting action lines, layered landscape, and manuscript framing remain crisp and readily readable when scaled for mobile display; the complete leaf is present. Artifact findings: no visible compression, resizing, banding, ringing, blocking, blur, color, crop, or rendering artifacts. Existing paper wear and painted-surface age are features of the museum object, not derivative artifacts. OCR exact-match: N/A.\n\n[fallback JPEG]\nPASS. Mobile readability: the blue warrior, gray coiled dragon, red-brown horse, and surrounding landscape are clear and compositionally legible at mobile scale; the complete manuscript leaf is visible without crop. Artifact findings: no visible compression blocks, ringing, banding, resizing distortion, unintended blur, color shift, crop, or other rendering artifact. Existing paper creases and surface wear belong to the original object. OCR exact-match: N/A.",
+  "agent_output_sha256": "c690cfc929c749564ffc7e08e3be0ed7cf476f9fc66d7af270fa8c218c8fb58e",
+  "agent_prompt": "[480 WebP]\nOUART Daily Art responsive Vision QA. Asset: 480 WebP. Inspect the actual opened image as it would appear scaled on a mobile screen. Determine whether the artwork's main subject and composition remain clearly readable and whether there are any visible compression, resizing, banding, ringing, block, blur, color, crop, or other rendering artifacts. This is an official museum collection image with no GPT-generated text, so OCR exact-match is N/A. Respond with an explicit PASS or FAIL, then state mobile readability and artifact findings. Do not infer from dimensions or metadata.\n\n[768 WebP]\nOUART Daily Art responsive Vision QA. Asset: 768 WebP. Inspect the actual opened image as it would appear scaled on a mobile screen. Determine whether the artwork's main subject and composition remain clearly readable and whether there are any visible compression, resizing, banding, ringing, block, blur, color, crop, or other rendering artifacts. This is an official museum collection image with no GPT-generated text, so OCR exact-match is N/A. Respond with an explicit PASS or FAIL, then state mobile readability and artifact findings. Do not infer from dimensions or metadata.\n\n[1280 WebP]\nOUART Daily Art responsive Vision QA. Asset: 1280 WebP. Inspect the actual opened image as it would appear scaled on a mobile screen. Determine whether the artwork's main subject and composition remain clearly readable and whether there are any visible compression, resizing, banding, ringing, block, blur, color, crop, or other rendering artifacts. This is an official museum collection image with no GPT-generated text, so OCR exact-match is N/A. Respond with an explicit PASS or FAIL, then state mobile readability and artifact findings. Do not infer from dimensions or metadata.\n\n[fallback JPEG]\nOUART Daily Art responsive Vision QA. Asset: fallback JPEG. Inspect the actual opened image as it would appear scaled on a mobile screen. Determine whether the artwork's main subject and composition remain clearly readable and whether there are any visible compression, resizing, banding, ringing, block, blur, color, crop, or other rendering artifacts. This is an official museum collection image with no GPT-generated text, so OCR exact-match is N/A. Respond with an explicit PASS or FAIL, then state mobile readability and artifact findings. Do not infer from dimensions or metadata.",
+  "agent_prompt_sha256": "91ca9f99db725e7290aa46f1dc5ddc6d63206862ee3afc060dddbd166f36a609",
+  "date": "2026-11-24",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "417ca3047b8fb399b814a02a1b9c24c6dfc8fdb12d1f2a3c22428668a27b6b11",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "ecebd2d0a0e604a82c1f768b00c8afbfd8c873ac657f35e08015dab046287c27",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "ed0afb282c7c228d93d781dbc6e1b46270afa33b2f7227b007fd5cf74593e905",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "fba4afa17fc311c4c62304b436f00d9ee66c729519174cd268eecfcdaae2a18b",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}
