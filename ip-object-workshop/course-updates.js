@@ -3342,16 +3342,32 @@ window.WORKSHOP_UPDATES = [
     "date": "2026-11-24",
     "type": "视频",
     "time": "19:30",
-    "title": "做完后记下的问题，怎么让 AI 帮忙整理成修改清单？",
-    "summary": "今天聊聊做完后记下的问题，怎么让 AI 帮忙整理成修改清单。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
-    "cover": "",
-    "published": false,
-    "url": "",
-    "status": "planned",
+    "title": "做后问题，怎么整理成修改清单",
+    "summary": "把做后记录分成可见现象、待查原因、修改动作和完成条件；让AI协助归组与补字段，优先级和事实仍由人确认。",
+    "cover": "./assets/updates/2026-11-24/01-website-hero-fallback.png?v=0665499e7870",
+    "published": true,
+    "url": "./updates/2026-11-24-turn-post-make-notes-into-revision-checklist.html",
+    "status": "published",
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 1–5 / 阶段验收",
     "editorial_angle": "失败排查",
-    "writing_policy_version": "ip-workshop-plain-language-v1"
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "source_id": "workshop:2026-11-24",
+    "media_status": "complete",
+    "passedRoles": [
+      "website_hero",
+      "core_explanation",
+      "real_application",
+      "social_promotion"
+    ],
+    "pendingRoles": [],
+    "coverImage": {
+      "srcset": "./assets/updates/2026-11-24/01-website-hero-480.webp?v=abe15e89b697 480w, ./assets/updates/2026-11-24/01-website-hero-768.webp?v=0f3587fc6121 768w, ./assets/updates/2026-11-24/01-website-hero-1280.webp?v=ca673a52174e 1280w",
+      "sizes": "(max-width: 680px) 100vw, 760px",
+      "fallback": "./assets/updates/2026-11-24/01-website-hero-fallback.png?v=0665499e7870",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "date": "2026-11-25",
@@ -4687,5 +4703,20 @@ window.WORKSHOP_UPDATES = [
     "content_policy_version": "ip-workshop-evergreen-v1",
     "course_stage": "Day 1–5 / 阶段验收",
     "editorial_angle": "交付复核"
+  },
+  {
+    "date": "2027-02-22",
+    "type": "图文",
+    "time": "11:30",
+    "title": "只有一个想法，第一件作品先做多大？",
+    "summary": "今天聊聊只有一个想法，第一件作品先做多大。讲清先做什么、怎么检查，以及没做好时怎么改。3–5 天具体学到哪一步，先看你的起点。",
+    "writing_policy_version": "ip-workshop-plain-language-v1",
+    "cover": "",
+    "published": false,
+    "url": "",
+    "status": "planned",
+    "content_policy_version": "ip-workshop-evergreen-v1",
+    "course_stage": "Day 1 / Gate 1",
+    "editorial_angle": "入门判断"
   }
 ];
