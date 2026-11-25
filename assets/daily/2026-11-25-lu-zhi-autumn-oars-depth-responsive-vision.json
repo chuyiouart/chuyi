@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-25",
+  "agent_prompt": "你是 OUART 每日一画响应式图像 Vision QA。请真实查看当前打开的图像资产，并按移动端显示场景评估：主体（山水、舟、人、树木及题跋）是否仍清楚可辨，是否出现压缩块、条带、重影、异常裁切、拉伸或缩放伪影。馆藏原图不是 GPT 生成文字，OCR exact 必须记为字符串 N/A，不评判书法转录。请给出当前资产的 mobile_readable（true/false）、artifacts（true/false）和简洁依据；任何无法真实查看或不能确定的情况必须判失败。",
+  "agent_prompt_sha256": "5b35686fafde8fef0b2909d8216f575c4ddbba8552e2a40852050202df453c67",
+  "agent_output": "480: mobile_readable=true; artifacts=false; ocr_exact_match=N/A。完整画幅已真实打开；高山、层叠洲渚、树丛、下部舟与人物以及上方题跋均可辨，细线在移动端缩放下仍保持连续；未见压缩块、条带、重影、异常裁切、拉伸或缩放伪影。\n768: mobile_readable=true; artifacts=false; ocr_exact_match=N/A。完整画幅已真实打开；山体皴线、水岸层次、树木、屋舍、舟与人物和题跋均清楚，原作淡墨与纸色过渡自然；未见压缩块、条带、重影、异常裁切、拉伸或缩放伪影。\n1280: mobile_readable=true; artifacts=false; ocr_exact_match=N/A。完整画幅已真实打开；远山、中景洲渚、近岸树屋与舟人主体层次清楚，线条和淡色细节保留良好；未见压缩块、条带、重影、异常裁切、拉伸或缩放伪影。\nfallback: mobile_readable=true; artifacts=false; ocr_exact_match=N/A。完整画幅已真实打开；构图比例与三档 WebP 一致，山水、舟、人、树木及题跋均清楚可辨；未见压缩块、条带、重影、异常裁切、拉伸或缩放伪影。",
+  "agent_output_sha256": "de6037c42a41c189183085f91daaf26be82f3df8924962eec215de084dc6b654",
+  "results": {
+    "480": {
+      "image_sha256": "f51b312746a4ea4f4c0688ac0b2967bc224540727ea46892d84a12693ac711b9",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "eb3188e7a20cdc0daf2cd7daf377fff3877427fef85c1608491eca31474d2123",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "0b1ea64701ad4dccf75fc88f44340b7797058481285992b25a3072e9799817c6",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "257c616968d3af05afb6a0b9b3f67406c87fb0bd0e4f896a386f39543988a25d",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}
