@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-26",
+  "agent_prompt": "OUART Daily Art responsive Vision QA, asset=480. Inspect this exact image visually as it would appear scaled on a mobile screen. Determine whether the artwork's main subject (the full Greek black-figure amphora and its central figure scene) remains clear and readable, and whether there are visible compression or scaling artifacts. Do not infer from dimensions or metadata. Return a concise plain-text verdict that explicitly states asset=480, vision_mobile_readable=true or false, artifacts=true or false, followed by visual observations. OCR is not applicable because this is an official collection image with no GPT-generated text.\n\nOUART Daily Art responsive Vision QA, asset=768. Inspect this exact image visually as it would appear scaled on a mobile screen. Determine whether the artwork's main subject (the full Greek black-figure amphora and its central figure scene) remains clear and readable, and whether there are visible compression or scaling artifacts. Do not infer from dimensions or metadata. Return a concise plain-text verdict that explicitly states asset=768, vision_mobile_readable=true or false, artifacts=true or false, followed by visual observations. OCR is not applicable because this is an official collection image with no GPT-generated text.\n\nOUART Daily Art responsive Vision QA, asset=1280. Inspect this exact image visually as it would appear scaled on a mobile screen. Determine whether the artwork's main subject (the full Greek black-figure amphora and its central figure scene) remains clear and readable, and whether there are visible compression or scaling artifacts. Do not infer from dimensions or metadata. Return a concise plain-text verdict that explicitly states asset=1280, vision_mobile_readable=true or false, artifacts=true or false, followed by visual observations. OCR is not applicable because this is an official collection image with no GPT-generated text.\n\nOUART Daily Art responsive Vision QA, asset=fallback. Inspect this exact image visually as it would appear scaled on a mobile screen. Determine whether the artwork's main subject (the full Greek black-figure amphora and its central figure scene) remains clear and readable, and whether there are visible compression or scaling artifacts. Do not infer from dimensions or metadata. Return a concise plain-text verdict that explicitly states asset=fallback, vision_mobile_readable=true or false, artifacts=true or false, followed by visual observations. OCR is not applicable because this is an official collection image with no GPT-generated text.",
+  "agent_prompt_sha256": "fcf92f20de3f3e131fc120fcc49a178ca3f1a005859e85a3778189e4fa2d7119",
+  "agent_output": "asset=480, vision_mobile_readable=true, artifacts=false. The complete amphora, both handles, foot, and central black-figure scene are visibly clear at mobile scale. The main figures, lion, white-painted faces, shield motif, and upper ornamental band remain distinguishable; edges and tonal transitions show no visible blockiness, ringing, stretching, or scaling damage.\n\nasset=768, vision_mobile_readable=true, artifacts=false. The full vessel silhouette and central Herakles-and-lion scene are clear, with figure overlaps, incised lines, white accents, handles, rim, and foot all readable. No visible compression smearing, jagged scaling, banding, or geometric distortion is present.\n\nasset=1280, vision_mobile_readable=true, artifacts=false. The amphora and narrative panel remain sharply legible when viewed and scaled for mobile: individual figures, the lion, shield decoration, borders, and surface wear are distinct. No visible WebP artifacts, halos, pixelation, or scaling deformation is apparent.\n\nasset=fallback, vision_mobile_readable=true, artifacts=false. The complete amphora is cleanly framed and the central figure scene remains readable, including the lion, surrounding figures, white details, shield, and decorative border. The JPEG shows no visible blocking, ringing, blur from scaling, or malformed proportions.",
+  "agent_output_sha256": "baa63bae06296f4611f9cd42f69caf6c3c2e10bb69dc5f026f5597110625c0e3",
+  "results": {
+    "480": {
+      "image_sha256": "783ca0bee8f0ae0fd16eb441fd52cd11e62a35ac5701346bb96ee1494dd52b7a",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "83859bb4d75d205fcbe4a2807c3300f333e4f7ce82633557b93f16b10e9c3950",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "605b747a8582cd3d02c7cb810d6e89bcce8516b5ee5092beca549d173b1fcd7d",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "10a25310169c23806eb6f5878813c0757f569bd7ea6f5d2fcb1110c2f49cd1ab",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 27266,
+      "format": "webp",
+      "height": 600,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-26-greek-amphora-figure-arc-480.webp",
+      "quality": 84,
+      "sha256": "783ca0bee8f0ae0fd16eb441fd52cd11e62a35ac5701346bb96ee1494dd52b7a",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 54296,
+      "format": "webp",
+      "height": 960,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-26-greek-amphora-figure-arc-768.webp",
+      "quality": 84,
+      "sha256": "83859bb4d75d205fcbe4a2807c3300f333e4f7ce82633557b93f16b10e9c3950",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 110782,
+      "format": "webp",
+      "height": 1600,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-26-greek-amphora-figure-arc-1280.webp",
+      "quality": 84,
+      "sha256": "605b747a8582cd3d02c7cb810d6e89bcce8516b5ee5092beca549d173b1fcd7d",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 233731,
+    "format": "jpeg",
+    "height": 1600,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-11-26-greek-amphora-figure-arc-fallback.jpg",
+    "quality": 84,
+    "sha256": "10a25310169c23806eb6f5878813c0757f569bd7ea6f5d2fcb1110c2f49cd1ab",
+    "width": 1280
+  },
+  "original_bytes": 535875,
+  "original_height": 2107,
+  "original_path": "assets/daily/2026-11-26-greek-amphora-figure-arc.jpg",
+  "original_sha256": "a9a597e122683093b5aea89b8504d21f40c15279eea8eb397fb4591bfaaa52aa",
+  "original_url": "https://www.artic.edu/iiif/2/890944df-3646-9db0-f1ce-b8321fd40e89/full/1686,/0/default.jpg",
+  "original_width": 1686,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-11-26-greek-amphora-figure-arc-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-11-26-greek-amphora-figure-arc-480.webp?v=783ca0bee8f0 480w, 2026-11-26-greek-amphora-figure-arc-768.webp?v=83859bb4d75d 768w, 2026-11-26-greek-amphora-figure-arc-1280.webp?v=605b747a8582 1280w"
+}
