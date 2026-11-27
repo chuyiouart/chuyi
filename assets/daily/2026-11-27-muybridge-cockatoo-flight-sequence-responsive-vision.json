@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-27",
+  "agent_prompt": "Inspect this exact responsive artwork asset as it would appear scaled on a mobile screen. Determine whether the complete artwork and its repeated cockatoo-flight sequence remain clearly readable, and whether compression or scaling introduces visible artifacts, corruption, severe blur, banding, blocking, ringing, or distorted geometry. This is an official museum collection image with no GPT-generated text, so do not perform or claim OCR exact matching. Report the visible subject, overall integrity, mobile readability, and artifacts assessment explicitly. Conclude with exactly: vision_mobile_readable=true|false; artifacts=true|false",
+  "agent_prompt_sha256": "5dd0d5060cf131de878c23541ac82fc1ebf1b43910bfb88e945ed9c6e4c7b3e5",
+  "agent_output": "480: The exact 480 WebP was opened and inspected. It shows the complete three-row, twenty-four-frame photographic sequence of a light cockatoo flying across dark gridded panels. At mobile display scale, the sequence structure, bird silhouettes, wing positions, and progression remain clearly readable. Fine feather and grid detail is naturally reduced at this smallest rendition, but there is no corruption, severe blur, banding, blocking, ringing, distorted geometry, or problematic scaling artifact. vision_mobile_readable=true; artifacts=false\n\n768: The exact 768 WebP was opened and inspected. It shows the complete three-row, twenty-four-frame cockatoo-flight sequence with intact borders and regular grid panels. The bird, successive wing positions, and motion progression are clear at mobile scale, with improved feather and grid definition over the smallest rendition. No visible corruption, severe blur, banding, blocking, ringing, distorted geometry, or compression/scaling artifact is present. vision_mobile_readable=true; artifacts=false\n\n1280: The exact 1280 WebP was opened and inspected. It shows the complete museum photograph and all twenty-four sequential cockatoo poses in three rows. Body orientation, wing spread, feather groupings, panel grids, and overall motion sequence are clear and intact when scaled for mobile viewing. No visible corruption, severe blur, banding, blocking, ringing, distorted geometry, or objectionable compression/scaling artifact is present. vision_mobile_readable=true; artifacts=false\n\nfallback: The exact JPEG fallback was opened and inspected. It shows the complete three-row, twenty-four-frame cockatoo-flight study with the artwork borders, gridded panels, and successive bird poses intact. Subject identity and the sequence of wing motion remain clearly readable at mobile scale. No visible corruption, severe blur, banding, blocking, ringing, distorted geometry, or objectionable compression/scaling artifact is present. vision_mobile_readable=true; artifacts=false",
+  "agent_output_sha256": "a982a53af2775b206ee4e5409bf88d67e489c1a2d13c2f300ead9b5459422958",
+  "results": {
+    "480": {
+      "image_sha256": "275eca0dd4e64da9fb4f52d115c10aa2595df0b04d276d0a891d8da2e638fdb4",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "768": {
+      "image_sha256": "8c754f861bc5d9788bacbec5e276ea5ee1c054bc3ce430cf3ef9c213a9567471",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "1280": {
+      "image_sha256": "f178388335bd9cc2c3c6fc95b6eb10165e0b1ebf05ebd5c7ecd777d85cb92086",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    },
+    "fallback": {
+      "image_sha256": "3dd19a1b4f98f19b08d246de81300d2097f6f75a7ffd0d4b352cd7ee2d01c781",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true,
+      "artifacts": false
+    }
+  }
+}

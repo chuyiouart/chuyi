@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 15412,
+      "format": "webp",
+      "height": 271,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-27-muybridge-cockatoo-flight-sequence-480.webp",
+      "quality": 84,
+      "sha256": "275eca0dd4e64da9fb4f52d115c10aa2595df0b04d276d0a891d8da2e638fdb4",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 34766,
+      "format": "webp",
+      "height": 434,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-27-muybridge-cockatoo-flight-sequence-768.webp",
+      "quality": 84,
+      "sha256": "8c754f861bc5d9788bacbec5e276ea5ee1c054bc3ce430cf3ef9c213a9567471",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 80186,
+      "format": "webp",
+      "height": 723,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-27-muybridge-cockatoo-flight-sequence-1280.webp",
+      "quality": 84,
+      "sha256": "f178388335bd9cc2c3c6fc95b6eb10165e0b1ebf05ebd5c7ecd777d85cb92086",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 162069,
+    "format": "jpeg",
+    "height": 723,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-11-27-muybridge-cockatoo-flight-sequence-fallback.jpg",
+    "quality": 84,
+    "sha256": "3dd19a1b4f98f19b08d246de81300d2097f6f75a7ffd0d4b352cd7ee2d01c781",
+    "width": 1280
+  },
+  "original_bytes": 504287,
+  "original_height": 952,
+  "original_path": "assets/daily/2026-11-27-muybridge-cockatoo-flight-sequence.jpg",
+  "original_sha256": "01d2e0c6e7679398568e27c190bf8e0e6224b33d8af522e0b8e05ea7b3b2bd06",
+  "original_url": "https://www.artic.edu/iiif/2/b0371e84-c3de-3e81-626e-bfcbd57af964/full/1686,/0/default.jpg",
+  "original_width": 1686,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-11-27-muybridge-cockatoo-flight-sequence-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-11-27-muybridge-cockatoo-flight-sequence-480.webp?v=275eca0dd4e6 480w, 2026-11-27-muybridge-cockatoo-flight-sequence-768.webp?v=8c754f861bc5 768w, 2026-11-27-muybridge-cockatoo-flight-sequence-1280.webp?v=f178388335bd 1280w"
+}
