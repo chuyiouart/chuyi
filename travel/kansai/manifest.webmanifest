@@ -1,0 +1,32 @@
+{
+  "id": "./",
+  "name": "阿耀来了 · 关西开图计划",
+  "short_name": "阿耀关西",
+  "lang": "zh-CN",
+  "description": "星际朋友的关西八日漫游：真实地图、行程、餐食、购物与展览。",
+  "start_url": "./?view=plan&source=homescreen",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f6fa",
+  "theme_color": "#142444",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -3,35 +3,43 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#18382e">
+  <meta name="theme-color" content="#142444">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="阿耀关西">
+  <meta name="application-name" content="阿耀关西">
   <meta name="robots" content="noindex,nofollow,noarchive">
   <meta name="referrer" content="no-referrer">
-  <title>关西晚秋 · 旅行手册</title>
+  <title>阿耀来了 · 关西开图计划</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png">
   <meta name="description" content="关西八日旅行手册：每日行程、沿途餐食、找店楼层、地图与艺术展览。">
   <script>if('serviceWorker' in navigator && navigator.serviceWorker.controller){let reloading=false;navigator.serviceWorker.addEventListener('controllerchange',()=>{if(!reloading){reloading=true;location.reload();}});}</script>
-  <link rel="stylesheet" href="./journey.css?v=278b1d97944e">
-  <script defer src="./journey.js?v=278b1d97944e"></script>
+  <link rel="stylesheet" href="./journey.css?v=239ed7357139">
+  <script defer src="./journey.js?v=239ed7357139"></script>
 </head>
 <body>
   <a class="skip" href="#main">跳到主要内容</a>
   <header class="masthead">
-    <div class="wrap mast-inner"><a href="?view=plan" class="brand">关西晚秋</a><span id="offline" class="offline" hidden>准备离线资料…</span></div>
+    <div class="wrap mast-inner"><a href="?view=plan" class="brand">阿耀来了 <span>关西开图计划</span></a><span id="offline" class="offline" hidden>准备离线资料…</span></div>
   </header>
   <main id="main" class="wrap">
     <section id="locked" class="notice" aria-live="polite"><h1>关西晚秋</h1><p id="message">正在打开旅行手册…</p></section>
     <div id="trip" hidden>
       <section class="cover" aria-labelledby="title">
-        <div class="cover-copy">
-          <p id="trip-dates" class="dates"></p><h1 id="title" aria-label="关西 · 晚秋八日">关西<span class="title-divider"> · </span><span class="title-phrase">晚秋八日</span></h1><p>京都、宇治、大阪</p>
-          <div class="cover-route" aria-label="住宿分段"><span>京都 <b>4晚</b></span><span>大阪 <b>3晚</b></span></div>
-        </div>
         <figure id="cover-art" class="cover-media"></figure>
+        <div class="cover-copy">
+          <h1 id="title" class="sr-only">阿耀来了 · 关西开图计划</h1>
+          <div><p class="cover-subtitle">星际朋友的八日漫游</p><p id="trip-dates" class="dates"></p></div>
+          <div class="cover-route" aria-label="住宿分段"><span>京都 <b>4晚</b></span><span>大阪 <b>3晚</b></span><button data-view="friends">认识原创旅伴</button></div>
+        </div>
       </section>
       <nav id="views" class="views" aria-label="旅行手册栏目"></nav>
       <section id="view" aria-live="polite"></section>
     </div>
     <noscript><p>请启用 JavaScript 后打开旅行手册。</p></noscript>
   </main>
-  <footer class="wrap footer">行程采用日本时间。青岛出发及抵达时间使用中国时间。<br>餐厅预算按每人日元估算，营业安排以店方当日公告为准。配图来源标在图片下方，菜品为参考，不代表固定套餐。<br>首次联网打开并显示“行程与配图已存离线”后，可离线查看已保存的行程与照片。地图导航、菜单官网和预约仍需联网。</footer>
+  <footer class="wrap footer">阿耀关西 · 2026秋季旅行特别篇<br>行程采用日本时间。青岛出发及抵达时间使用中国时间。餐厅预算按每人日元估算，营业安排以店方当日公告为准。配图来源标在图片下方，菜品为参考。<br>首次联网打开并显示“行程与配图已存离线”后，可离线查看已保存的行程与照片。真实地图、菜单官网和预约需要联网。此浏览器会记住访问链接，方便从桌面图标打开。<details class="home-screen-help"><summary>把“阿耀关西”放到手机桌面</summary><p>苹果：用Safari打开本页，点分享 → 添加到主屏幕，名称使用“阿耀关西”。安卓：用Chrome打开本页，在菜单中选择“添加到主屏幕”或“安装应用”。首次请用完整访问链接打开，等离线资料保存好。</p></details></footer>
 </body>
 </html>

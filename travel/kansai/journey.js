@@ -4,14 +4,17 @@ const get = (id) => document.getElementById(id);
 const html = (text = "") => String(text).replace(/[&<>"']/g, (ch) => ({
   "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
 })[ch]);
-const tabs = {plan:"行程", food:"餐食", map:"地图与路线", shop:"购物清单", art:"画展与活动", pictures:"参考图"};
+const tabs = {plan:"行程", food:"餐食", map:"真实地图", shop:"购物清单", art:"画展与活动", friends:"旅伴图鉴", pictures:"参考图"};
 const allowed = new Set(Object.keys(tabs));
 const params = new URLSearchParams(location.search);
 const fragment = new URLSearchParams(location.hash.slice(1));
-const secret = fragment.get("key") || "";
+let secret = fragment.get("key") || "";
+if(!secret){try{secret=localStorage.getItem("kansai-travel:device-access:v1")||"";}catch{}}
 let selectedView = allowed.has(params.get("view")) ? params.get("view") : "plan";
 let selectedDay = /^[0-7]$/.test(params.get("day")) ? params.get("day") : "all";
 let openMeal = params.get("meal") || "";
+let selectedMapArea=params.get("area") || "umeda";
+let selectedMapId=params.get("place") || "";
 let data;
 
 function picture(file, cssClass = "", eager = false) {
@@ -25,9 +28,16 @@ function picture(file, cssClass = "", eager = false) {
 }
 
 function coverImage() {
-  const cover = data.gallery.find((photo) => photo.role === "cover");
+  const cover = data.gallery.find((photo) => photo.role === "ayao-cover") || data.gallery.find((photo) => photo.role === "cover");
   get("cover-art").innerHTML = cover ? `<img src="${html(cover.embedded || `./assets/${cover.file}`)}" alt="${html(cover.title)}" width="${cover.width}" height="${cover.height}" fetchpriority="high"><figcaption>${html(cover.credit)}</figcaption>` : "";
   get("cover-art").hidden = !cover;
+}
+
+function uiIcon(view){
+ const atlas=data.gallery.find(p=>p.role==="ayao-icons");
+ if(!atlas)return "";
+ const i=({plan:0,food:1,map:2,shop:3,art:4,friends:5,pictures:6})[view]||0;
+ return `<span class="ui-icon" aria-hidden="true" style="background-image:url('${html(atlas.embedded||`./assets/${atlas.file}`)}');background-position:${(i%4)*100/3}% ${Math.floor(i/4)*100}%"></span>`;
 }
 
 function tripHighlights() {
@@ -132,44 +142,26 @@ function savedPanel() {
   return `<h3 class="subhead">你的收藏 · 顺路安排</h3><p class="small soft">从已保存的关西地点中选出与行程同区的店和景点，备选按体力选逛。</p><div class="entries saved-entries">${data.savedStops.map((place) => `<article class="entry"><p class="small soft">${html(place.area)} · ${html(place.day)}</p><h4>${html(place.name)}</h4><p class="small">${html(place.note)}</p>${addLinks(action(google(place.query),"地图定位"))}</article>`).join("")}</div>`;
 }
 
-function paintMap(stage, section) {
-  const canvas = stage.querySelector("canvas");
-  const context = canvas.getContext("2d");
-  const w = canvas.width = 660;
-  const h = canvas.height = 470;
-  context.strokeStyle = "#d3ddce";
-  context.lineWidth = 1;
-  for (let x = 30; x < w; x += 40) {
-    context.beginPath(); context.moveTo(x,0); context.lineTo(x,h); context.stroke();
-  }
-  for (let y = 30; y < h; y += 40) {
-    context.beginPath(); context.moveTo(0,y); context.lineTo(w,y); context.stroke();
-  }
-  for (const line of section.lines) {
-    context.strokeStyle = line === section.lines[0] ? "#527e69" : "#b16a50";
-    context.lineWidth = 3;
-    context.setLineDash([7,6]);
-    context.beginPath();
-    line.forEach((i,j) => {
-      const point = section.points[i];
-      context[j ? "lineTo" : "moveTo"](w*point.x/100,h*point.y/100);
-    });
-    context.stroke();
-  }
+function embeddedGoogle(query){return `https://www.google.com/maps?${new URLSearchParams({q:query,output:"embed",hl:"zh-CN"})}`;}
+function mapContent(){
+ const guide=data.placeGuide;
+ const area=guide.areas.find(a=>a.id===selectedMapArea)||guide.areas[0];
+ selectedMapArea=area.id;
+ const points=guide.places.filter(p=>area.id==="all"||p.area===area.id);
+ const current=points.find(p=>p.id===selectedMapId);
+ const query=current?.query||area.query;
+ const frame=current?embeddedGoogle(query):(area.embed||embeddedGoogle(query));
+ return `<div class="map-controls"><label>选择区域<select data-map-area aria-label="地图区域">${guide.areas.map(a=>`<option value="${html(a.id)}" ${a.id===area.id?"selected":""}>${html(a.name)}</option>`).join("")}</select></label><p>${html(area.note)}</p><span class="map-count">${points.length} 个地点</span></div><div class="real-map-layout"><div class="real-map-main"><div class="real-map-caption"><div><span class="eyebrow">GOOGLE MAPS · LIVE</span><h3>${html(current?.name||area.name)}</h3></div>${action(google(query),"打开Google地图")}</div><iframe class="real-map-frame" title="Google地图 · ${html(current?.name||area.name)}" src="${html(frame)}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><div class="real-map-detail" aria-live="polite"><p>${html(current?.floor||"可在地图中缩放、移动、查看街道与车站。")}</p>${current?`<p lang="ja" class="small soft">${html(current.jp)}</p><p class="small">${html(current.note)}</p>${current.hours?`<p class="small">营业 ${html(current.hours)}</p>`:""}${current.budget?`<p class="small">预算 ${html(current.budget)}／人</p>`:""}${addLinks(action(`https://www.google.com/maps/dir/?${new URLSearchParams({api:"1",destination:current.query})}`,"从当前位置导航"),action(current.source,"地点官方资料"))}`:""}<p class="map-network-note">真实地图需要联网。离线时仍可查看右侧地点名、楼层和保存的行程；恢复网络后打开Google地图导航。</p></div></div><div class="map-place-list" aria-label="${html(area.name)}地点索引">${points.map(p=>`<article class="map-place ${current?.id===p.id?"is-selected":""}"><div class="map-place-heading"><span class="small soft">${html(p.kind)}</span><button data-map-preview="${html(p.id)}" aria-label="在地图预览${html(p.name)}" aria-pressed="${current?.id===p.id}">地图预览</button></div><a class="map-place-name" href="${html(google(p.query))}" target="_blank" rel="noopener noreferrer">${html(p.name)}</a><p class="small soft" lang="ja">${html(p.jp)}</p>${p.floor?`<p class="map-floor">${html(p.floor)}</p>`:""}</article>`).join("")}</div></div>`;
 }
-
-function showPlace(panel, group, index) {
-  const place = data.maps[group].points[index];
-  panel.querySelectorAll("[data-pin]").forEach((button) => button.setAttribute("aria-pressed", String(Number(button.dataset.pin) === index)));
-  panel.querySelector(".place-readout").innerHTML = `<h3>${html(place.cn)}</h3><p class="soft">${html(place.jp || place.query)}</p>${place.floor ? `<p>${html(place.floor)}</p>` : ""}${place.detail ? `<p class="small">${html(place.detail)}</p>` : ""}${place.lat ? `<p class="coordinates small">${place.lat.toFixed(5)}, ${place.lon.toFixed(5)} · 约略点位</p>` : ""}${addLinks(action(google(place.query),"Google Maps"),action(place.url,"官网"))}`;
+function mapLocationState(){
+ const url=new URL(location.href);
+ url.searchParams.set("area",selectedMapArea);
+ if(selectedMapId)url.searchParams.set("place",selectedMapId);else url.searchParams.delete("place");
+ history.replaceState(null,"",url);
 }
-
-function mapPanel(section, group) {
-  return `<div class="map-panel" data-map="${group}"><h3>${html(section.name)}</h3><p class="small soft">${html(section.description)}</p><div class="map-stage"><canvas aria-hidden="true"></canvas>${section.points.map((p,i) => `<button aria-label="${html(p.cn)}" data-pin="${i}" style="left:${p.x}%;top:${p.y}%">${i+1}</button>`).join("")}</div><div class="map-key">${section.points.map((p,i) => `<button data-pin="${i}">${i+1} · ${html(p.short || p.cn)}</button>`).join("")}</div><div class="place-readout" aria-live="polite"></div></div>`;
-}
-
+function refreshMap(){get("map-explorer").innerHTML=mapContent();mapLocationState();}
 function maps() {
-  return title("地图与路线", "交通按日本时间列出。票价为每人单程，出租车按车辆计。步行距离和候车时间是规划估算。") + hotelPanel() + `<h3 class="subhead">每日分段交通</h3><p class="small soft transit-caveat">车次为截至11月18日可查的候选。出发当天请用站内屏和运营方时刻表确认。</p>${data.transport.map(route => transitPanel(route)).join("")}<h3 class="subhead">方位图</h3><div class="map-grid">${data.maps.map(mapPanel).join("")}</div>` + savedPanel();
+ return title("真实地图，照着走", "地点名直接跳转Google地图；“地图预览”在本页查看。楼层和入口单独标明。")+`<p class="map-intro">${html(data.placeGuide.note)}</p><section id="map-explorer">${mapContent()}</section>`+`<details class="map-hotel-details"><summary>京都住处与定位截图</summary>${hotelPanel()}</details><h3 class="subhead">每天怎么走</h3><p class="small soft transit-caveat">以下为分段交通、单程票价与步行估算。所列车次按11月18日资料整理，当天核对站内屏与运营方时刻表。</p>${data.transport.map(route=>transitPanel(route)).join("")}`;
 }
 
 function checked(key) {
@@ -193,20 +185,25 @@ function pictures() {
   return title("参考图", "点图可查看原图或来源。楼层和入口以现场标识及官方最新版本为准。") + groups.map(([label,role]) => `<h3 class="subhead">${label}</h3><div class="gallery">${data.gallery.filter((photo) => (photo.role || "guide") === role).map((photo) => picture(photo.file)).join("")}</div>`).join("");
 }
 
-const renderers = {plan, food, map:maps, shop:shops, art, pictures};
+function friendPortrait(person){
+ const photo=data.gallery.find(p=>p.file===person.photo);
+ return photo?`<img src="${html(photo.embedded||`./assets/${photo.file}`)}" alt="${html(person.name)} · ${html(person.shape)}" width="${photo.width}" height="${photo.height}" loading="lazy">`:"";
+}
+function friends(){
+ const world=data.ayaoWorld;
+ return title("星际朋友，这次一起出发", "十二位伙伴和守卷人，沿用原作名字与造型。")+`<div class="world-intro"><div><span class="eyebrow">AYAO · ORIGINAL WORLD</span><h3>阿耀来了</h3><p>${html(world.intro)}</p><p>${html(world.welcome)}</p><p class="small soft">${html(world.source)}</p></div>${picture("ayao-original-title.webp","world-title")}</div><div class="cast-grid">${world.characters.map(c=>`<article class="cast-card" data-character="${html(c.id)}"><div class="cast-portrait">${friendPortrait(c)}</div><div class="cast-info"><p class="cast-number">星际朋友 ${html(c.id)}</p><h3>${html(c.name)}</h3><p class="small soft">${html(c.shape)}</p><p>${html(c.about)}</p></div></article>`).join("")}</div><article class="keeper-card" data-character="keeper"><div class="keeper-portrait">${friendPortrait(world.keeper)}</div><div><span class="eyebrow">星图与线索</span><h3>守卷人</h3><p>${html(world.keeper.about)}</p><p class="small soft">${html(world.keeper.shape)}</p><button data-view="map">打开这次旅行的真实地图</button></div></article><details class="original-chapters"><summary>回声图鉴 · 原作九章旅程</summary><div class="original-chapter-grid">${world.chapters.map(c=>`<article><span class="small soft">第${c.cycle}轮旅程</span><h4>${html(c.name)}</h4><p>${html(c.text)}</p></article>`).join("")}</div></details><details class="original-chapters"><summary>一路带来的力量</summary><div class="original-chapter-grid">${world.abilities.map(a=>`<article><h4>${html(a.name)}</h4><p>${html(a.text)}</p></article>`).join("")}</div></details><p class="world-quote">${html(world.quote)}</p>`;
+}
+
+const renderers = {plan, food, map:maps, shop:shops, art, friends, pictures};
 function render() {
   const url=new URL(location.href);
   url.searchParams.set("view",selectedView);
   if(selectedDay!=="all")url.searchParams.set("day",selectedDay);else url.searchParams.delete("day");
   if(openMeal)url.searchParams.set("meal",openMeal);else url.searchParams.delete("meal");
   history.replaceState(null,"",url);
-  get("views").innerHTML = Object.entries(tabs).map(([id,label]) => `<button data-view="${id}" aria-pressed="${id === selectedView}">${label}</button>`).join("");
+  get("views").innerHTML = Object.entries(tabs).map(([id,label]) => `<button data-view="${id}" aria-pressed="${id === selectedView}">${uiIcon(id)}<span>${label}</span></button>`).join("");
   get("view").innerHTML = renderers[selectedView]();
-  get("view").querySelectorAll("[data-map]").forEach((panel) => {
-    const group = Number(panel.dataset.map);
-    paintMap(panel.querySelector(".map-stage"), data.maps[group]);
-    showPlace(panel, group, 0);
-  });
+  if(selectedView==="map")mapLocationState();
 }
 
 function bind() {
@@ -228,13 +225,15 @@ function bind() {
       openMeal="";
       render();
       get("view").querySelector(`.day-pick [data-day="${selectedDay}"]`).focus();
-    } else if (button.dataset.pin) {
-      const panel = button.closest("[data-map]");
-      showPlace(panel, Number(panel.dataset.map), Number(button.dataset.pin));
+    } else if (button.dataset.mapPreview) {
+      selectedMapId=button.dataset.mapPreview;
+      refreshMap();
+      get("map-explorer").querySelector(".real-map-caption").scrollIntoView({block:"start",behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
     }
   });
   get("trip").addEventListener("change", (event) => {
     const input = event.target;
+    if(input.hasAttribute("data-map-area")){selectedMapArea=input.value;selectedMapId="";refreshMap();return;}
     if (input.dataset.check) {
       try { localStorage.setItem(`kansai-travel:v1:check:${input.dataset.check}`, input.checked ? "1" : "0"); }
       catch { /* Storage may be unavailable in private browsing. */ }
@@ -265,6 +264,7 @@ async function unlock() {
     const key = await crypto.subtle.importKey("raw",decode(secret),"AES-GCM",false,["decrypt"]);
     const clear = await crypto.subtle.decrypt({name:"AES-GCM",iv:decode(payload.iv)},key,decode(payload.content));
     data = JSON.parse(new TextDecoder().decode(clear));
+    try{localStorage.setItem("kansai-travel:device-access:v1",secret);}catch{}
     get("trip-dates").textContent = data.dates;
     coverImage();
     get("locked").hidden = true;
