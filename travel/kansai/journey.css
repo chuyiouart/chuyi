@@ -167,3 +167,63 @@ figcaption{font-size:.85rem;color:var(--muted);margin-top:5px}
 .route-photos img{height:180px;object-fit:contain;background:var(--paper)}
 .saved-entries{margin-top:12px}
 .saved-entries h4{margin:4px 0}
+
+/* Dining: a photographic index, with practical details one tap away. */
+.views{position:sticky;top:0;z-index:3;background:var(--paper);padding-top:10px;gap:8px;box-shadow:0 5px 8px #f7f5edb3}
+.views button{border-radius:30px;padding:8px 18px;font-size:1rem}
+.tag,.slot-label,.highlight-date,.highlight-title,.rest,.offline{font-size:.875rem}
+.overview-row p{font-size:1rem}
+.meal-jump{font-size:.875rem;min-height:38px;padding:5px 8px;margin-top:10px;background:var(--pale);border:0;font-weight:600;white-space:normal;text-align:left}
+.food-intro{display:grid;grid-template-columns:1fr auto;gap:32px;background:var(--green);color:#fffaf0;border-radius:12px;padding:28px 32px;margin:20px 0 26px}
+.food-intro h3{font-family:var(--serif);font-size:1.9rem;margin:6px 0 10px;font-weight:650}
+.food-intro p{max-width:37em;color:#e7eee8}
+.eyebrow{letter-spacing:.16em;font-size:.875rem;color:#ead4b7}
+.food-intro button{margin-top:18px;border-color:#c9d2be;background:#f9f5e9}
+.food-stats{display:flex;flex-direction:column;justify-content:center;gap:7px;border-left:1px solid #678070;padding-left:28px;font-size:.875rem;min-width:175px}
+.food-stats strong{font-size:1.5rem;font-family:var(--serif)}
+.food-guide-note{font-size:.875rem;color:var(--muted);margin:0 0 22px;max-width:65em}
+.food-guide-note span{white-space:nowrap}
+.meal-section{border:1px solid var(--line);border-radius:12px;padding:0;background:var(--white);margin:16px 0;overflow:hidden;scroll-margin-top:140px}
+.meal-section>summary{display:flex;gap:20px;align-items:center;list-style:none;min-height:155px;padding:0 22px 0 0;position:relative}
+.meal-section>summary::-webkit-details-marker{display:none}
+.meal-cover{width:180px;align-self:stretch;max-height:190px;object-fit:cover;flex-shrink:0;background:var(--pale)}
+.meal-summary{display:flex;flex-direction:column;gap:6px;padding:18px 0;min-width:0;flex:1}
+.meal-kicker{font-size:.875rem;letter-spacing:.025em;color:var(--rust);font-weight:600}
+.meal-summary strong{font-family:var(--serif);font-size:1.4rem;line-height:1.4}
+.meal-area,.meal-options{font-size:.875rem;font-weight:400;color:var(--muted)}
+.meal-options{color:var(--ink);font-weight:600}
+.meal-hint{font-size:.875rem;color:var(--green);font-weight:600;margin-top:3px}
+.meal-toggle{font-size:1.6rem;line-height:1;border:1px solid var(--line);border-radius:50%;width:34px;height:34px;display:grid;place-items:center;flex-shrink:0;font-weight:400}
+.meal-section[open]>.meal-toggle,.meal-section[open]>summary .meal-toggle{transform:rotate(45deg)}
+.meal-section[open]>summary{border-bottom:1px solid var(--line)}
+.meal-expanded{padding:22px}
+.meal-route{background:var(--pale);border-left:3px solid #76967a;border-radius:3px;padding:12px 16px;font-size:1rem;margin-bottom:20px}
+.restaurant-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start}
+.restaurant-card{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:9px;background:#fffefa}
+.restaurant-body{padding:16px}
+.restaurant-body h4{font-size:1.15rem;margin:8px 0 5px;line-height:1.4}
+.restaurant-jp{font-size:.875rem;color:var(--muted);line-height:1.55;overflow-wrap:anywhere}
+.food-photo{position:relative;margin:0}
+.food-photo img{width:100%;aspect-ratio:1.55;object-fit:cover;border-radius:0}
+.food-photo figcaption{padding:6px 10px;margin:0;font-size:.75rem;background:#f2f1e8;color:#3d5147;line-height:1.4}
+.food-budget{font-size:1.12rem;line-height:1.5;font-weight:700;color:var(--rust);margin:13px 0 8px;font-variant-numeric:tabular-nums}
+.food-order{font-size:1rem;margin-bottom:14px}
+.food-facts{margin:0;display:grid;gap:12px}
+.food-facts>div{display:grid;gap:2px}
+.food-facts dt{font-size:.875rem;font-weight:700;color:var(--green)}
+.food-facts dd{font-size:1rem;margin:0;line-height:1.6;overflow-wrap:anywhere}
+.restaurant-note{font-size:.875rem;color:var(--muted);padding-top:12px;margin-top:14px;border-top:1px solid var(--line)}
+.restaurant-card .inline-links{gap:6px;margin-top:16px}
+.restaurant-card .action{font-size:.875rem;flex-grow:1;justify-content:center;padding:8px;min-height:44px}
+.restaurant-card .action:first-child{color:var(--white);background:var(--green);border-color:var(--green)}
+.food-source{border:0;padding:12px 0 0;font-size:.875rem}
+.food-source summary{font-size:.875rem;color:var(--muted);font-weight:400}
+.food-source .action{display:inline-flex;background:transparent!important;color:var(--ink)!important}
+.birthday-meal{border-color:#c59b78}
+.birthday-meal>summary{background:#fbefe0}
+.day-dining{margin-top:32px}
+.day-dining>h3{font-family:var(--serif);font-size:1.6rem;margin-bottom:6px}
+@media(min-width:1000px){.wrap{max-width:1240px}.restaurant-body{padding:18px}.meal-expanded{padding:24px}}
+@media(max-width:850px){.restaurant-grid{grid-template-columns:1fr}.restaurant-card{display:grid;grid-template-columns:minmax(175px,.75fr) minmax(0,1.25fr);align-items:start}.food-photo img{aspect-ratio:1.2}.food-photo{position:sticky;top:85px}.food-intro{padding:24px;gap:20px}.food-stats{padding-left:20px;min-width:140px}.meal-cover{width:150px}.meal-summary strong{font-size:1.22rem}}
+@media(max-width:560px){.views{gap:5px;flex-wrap:nowrap;overflow-x:auto;margin-inline:-16px;padding-inline:16px;scrollbar-width:thin}.views button{flex:none;padding:8px 14px;font-size:.94rem}.food-intro{grid-template-columns:1fr;padding:22px;gap:18px}.food-intro h3{font-size:1.65rem}.food-stats{border:0;border-top:1px solid #678070;padding:14px 0 0;display:flex;flex-direction:row;align-items:center;flex-wrap:wrap;gap:5px 16px}.food-stats strong{font-size:1.2rem}.food-stats span{font-size:.875rem}.meal-section>summary{flex-wrap:wrap;gap:0;padding:0;align-items:stretch}.meal-cover{width:100%;height:145px;max-height:145px;object-position:50% 55%}.meal-summary{padding:16px 42px 16px 16px;flex-basis:100%}.meal-toggle{position:absolute;right:12px;bottom:22px;width:28px;height:28px;font-size:1.35rem}.meal-summary strong{font-size:1.25rem}.meal-expanded{padding:12px}.meal-route{padding:12px;margin-bottom:14px}.restaurant-card{display:block}.food-photo{position:static}.food-photo img{aspect-ratio:1.6}.restaurant-body{padding:17px}.restaurant-grid{gap:18px}.day-pick{gap:6px}.day-pick button{font-size:.9rem}.overview-row{grid-template-columns:79px minmax(0,1fr)}.meal-jump{font-size:.875rem;padding:5px}.meal-section{scroll-margin-top:80px}.photo figcaption{font-size:.8rem}}
+@media print{.meal-section{break-inside:avoid}.meal-cover,.food-photo{display:none}.food-intro{background:none;color:var(--ink)}.restaurant-grid{grid-template-columns:repeat(3,1fr)}}

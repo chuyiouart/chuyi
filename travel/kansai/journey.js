@@ -4,13 +4,14 @@ const get = (id) => document.getElementById(id);
 const html = (text = "") => String(text).replace(/[&<>"']/g, (ch) => ({
   "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
 })[ch]);
-const tabs = {plan:"行程", map:"地图与路线", shop:"购物清单", art:"画展与活动", pictures:"参考图"};
+const tabs = {plan:"行程", food:"餐食", map:"地图与路线", shop:"购物清单", art:"画展与活动", pictures:"参考图"};
 const allowed = new Set(Object.keys(tabs));
 const params = new URLSearchParams(location.search);
 const fragment = new URLSearchParams(location.hash.slice(1));
 const secret = fragment.get("key") || "";
 let selectedView = allowed.has(params.get("view")) ? params.get("view") : "plan";
-let selectedDay = "all";
+let selectedDay = /^[0-7]$/.test(params.get("day")) ? params.get("day") : "all";
+let openMeal = params.get("meal") || "";
 let data;
 
 function picture(file, cssClass = "", eager = false) {
@@ -45,7 +46,7 @@ function tripHighlights() {
 
 function action(url, label) {
   if (!url || !/^https:\/\/|^\.\/assets\//.test(url)) return "";
-  return `<a class="action" href="${html(url)}" target="_blank" rel="noopener noreferrer">${html(label)} ↗</a>`;
+  return `<a class="action" href="${html(url)}" target="_blank" rel="noopener noreferrer">${html(label)}</a>`;
 }
 
 function google(query) {
@@ -81,7 +82,7 @@ function period(day, key, label) {
 }
 
 function overview() {
-  return `<div class="overview"><div class="overview-row head"><span>日期 / 住宿</span><span>上午 — 午饭</span><span>下午 · 13:30—18:00</span><span>晚上</span></div>${data.days.map((day,i) => `<article class="overview-row"><div><button class="daynum" data-day="${i}" aria-label="查看${html(day.short)}详情">${html(day.short)} ${html(day.week)}</button><p class="small">${html(day.city)}</p><p class="soft small">${html(day.hotel)}</p></div>${period(day,"am","上午 — 午饭")}${period(day,"pm","下午")}${period(day,"night","晚上")}</article>`).join("")}</div>`;
+  return `<div class="overview"><div class="overview-row head"><span>日期 / 住宿</span><span>上午 — 午饭</span><span>下午 · 13:30—18:00</span><span>晚上</span></div>${data.days.map((day,i) => `<article class="overview-row"><div><button class="daynum" data-day="${i}" aria-label="查看${html(day.short)}详情">${html(day.short)} ${html(day.week)}</button><p class="small">${html(day.city)}</p><p class="soft small">${html(day.hotel)}</p><button class="meal-jump" data-food-day="${i}">午晚餐 · 各3选</button></div>${period(day,"am","上午 — 午饭")}${period(day,"pm","下午")}${period(day,"night","晚上")}</article>`).join("")}</div>`;
 }
 
 function eventRow(event) {
@@ -95,7 +96,27 @@ function plan() {
   if (selectedDay === "all") return header + tripHighlights() + dayPicker() + overview();
   const day = data.days[Number(selectedDay)];
   const transit = data.transport.find((item) => item.day === day.short);
-  return header + dayPicker() + title(`${day.short} ${day.week} · ${day.theme}`, `住宿  ${day.hotel}`) + (transit ? transitPanel(transit, true) : "") + `<div class="split day-split"><ol class="timeline">${day.events.map(eventRow).join("")}</ol><aside class="day-aside">${(day.photos || []).map((file) => picture(file,"day-photo")).join("")}<div class="notes"><h3>当天备注</h3><ul>${day.notes.map(([name, note]) => `<li><strong>${html(name)}</strong><p class="small">${html(note)}</p></li>`).join("")}</ul></div></aside></div>`;
+  return header + dayPicker() + title(`${day.short} ${day.week} · ${day.theme}`, `住宿  ${day.hotel}`) + (transit ? transitPanel(transit, true) : "") + `<div class="split day-split"><ol class="timeline">${day.events.map(eventRow).join("")}</ol><aside class="day-aside">${(day.photos || []).map((file) => picture(file,"day-photo")).join("")}<div class="notes"><h3>当天备注</h3><ul>${day.notes.map(([name, note]) => `<li><strong>${html(name)}</strong><p class="small">${html(note)}</p></li>`).join("")}</ul></div></aside></div><div class="day-dining"><h3>当天午餐与晚餐</h3><p class="soft">每餐三个选择，点开查看照片、楼层、营业时间与菜单。</p>${data.dining.meals.filter(m=>m.day===Number(selectedDay)).map(m=>mealBlock(m,false)).join("")}</div>`;
+}
+
+function restaurantCard(id, meal, index) {
+  const place = data.dining.restaurants.find(r=>r.id===id);
+  const nav = `https://www.google.com/maps/dir/?${new URLSearchParams({api:"1",destination:place.query})}`;
+  const label = meal.birthday ? "生日晚餐候选" : meal.planned===id ? "原定午餐 · 未订座" : index===0 ? "顺路建议" : "备选";
+  return `<article class="restaurant-card" data-restaurant="${html(id)}">${picture(place.photo,"food-photo")}<div class="restaurant-body">${statusTag(label)}<h4>${html(place.name)}</h4><p class="restaurant-jp" lang="ja">${html(place.jp)}</p><p class="food-budget">${html(place.budget)}</p>${place.familyBudget ? `<p class="small">${html(place.familyBudget)}</p>` : ""}<p class="food-order">${html(place.dishes)}</p><dl class="food-facts"><div><dt>楼层</dt><dd>${html(place.floor)}</dd></div><div><dt>营业</dt><dd>${html(place.hours)}</dd></div><div><dt>找店</dt><dd>${html(place.find)}</dd></div></dl>${place.note ? `<p class="restaurant-note">${html(place.note)}</p>` : ""}${addLinks(action(nav,"导航去这里"),action(place.menu,place.menuLabel || "查看菜单"),action(place.campaign,"联名菜单"),action(place.booking,"查看预约"))}${place.menuNote ? `<p class="small soft menu-note">${html(place.menuNote)}</p>`:""}<details class="food-source"><summary>营业信息来源</summary>${action(place.source,"门店官方资料")}<p class="small soft">整理于${html(data.dining.checked)}，未公开的最后点餐或楼层细节以店内公告为准。</p></details></div></article>`;
+}
+
+function mealBlock(meal, expanded) {
+  const places=meal.options.map(id=>data.dining.restaurants.find(r=>r.id===id));
+  const cover=data.gallery.find(p=>p.file===places[0].photo);
+  const day=data.days[meal.day];
+  const image=cover ? `<img class="meal-cover" src="${html(cover.embedded || `./assets/${cover.file}`)}" alt="${html(cover.title)}" width="${cover.width}" height="${cover.height}" loading="lazy">` : "";
+  return `<details class="meal-section ${meal.birthday ? "birthday-meal" : ""}" id="meal-${html(meal.id)}" ${expanded || openMeal===meal.id ? "open" : ""}><summary>${image}<span class="meal-summary"><span class="meal-kicker">${html(day.short)} ${html(day.week)} · ${meal.slot==="lunch"?"午餐":"晚餐"} · ${html(meal.time)}</span><strong>${html(meal.title)}</strong><span class="meal-area">${html(meal.area)} · ${html(meal.status)}</span><span class="meal-options">${places.map(p=>html(p.name.split(" · ")[0])).join(" / ")}</span><span class="meal-hint">查看三个选择与找店信息</span></span><span class="meal-toggle" aria-hidden="true">＋</span></summary><div class="meal-expanded"><p class="meal-route">${html(meal.note)}</p><div class="restaurant-grid">${meal.options.map((id,index)=>restaurantCard(id,meal,index)).join("")}</div></div></details>`;
+}
+
+function food() {
+  const meals=data.dining.meals.filter(m=>selectedDay==="all" || m.day===Number(selectedDay));
+  return title("沿途好好吃饭", "午餐、晚餐各三个选择。点开一餐，照片、楼层与导航都在一起。") + `<div class="food-intro"><div><span class="eyebrow">THE TABLE · KANSAI</span><h3>一天两顿，顺路坐下来</h3><p>逛店、看展、赏枫之间，把吃饭和休息留出来。生日那一晚，三个选择都保留。</p><button data-food-day="2">看生日晚餐</button></div><div class="food-stats"><strong>8天 · 16餐</strong><span>48个候选位置</span><span>实景与菜品参考图</span></div></div>` + dayPicker() + `<p class="food-guide-note">${html(data.dining.intro)} <span>更新 ${html(data.dining.checked)}</span></p><div class="meal-list">${meals.map(m=>mealBlock(m,selectedDay!=="all")).join("")}</div>`;
 }
 
 function hotelPanel() {
@@ -172,8 +193,13 @@ function pictures() {
   return title("参考图", "点图可查看原图或来源。楼层和入口以现场标识及官方最新版本为准。") + groups.map(([label,role]) => `<h3 class="subhead">${label}</h3><div class="gallery">${data.gallery.filter((photo) => (photo.role || "guide") === role).map((photo) => picture(photo.file)).join("")}</div>`).join("");
 }
 
-const renderers = {plan, map:maps, shop:shops, art, pictures};
+const renderers = {plan, food, map:maps, shop:shops, art, pictures};
 function render() {
+  const url=new URL(location.href);
+  url.searchParams.set("view",selectedView);
+  if(selectedDay!=="all")url.searchParams.set("day",selectedDay);else url.searchParams.delete("day");
+  if(openMeal)url.searchParams.set("meal",openMeal);else url.searchParams.delete("meal");
+  history.replaceState(null,"",url);
   get("views").innerHTML = Object.entries(tabs).map(([id,label]) => `<button data-view="${id}" aria-pressed="${id === selectedView}">${label}</button>`).join("");
   get("view").innerHTML = renderers[selectedView]();
   get("view").querySelectorAll("[data-map]").forEach((panel) => {
@@ -187,12 +213,19 @@ function bind() {
   get("trip").addEventListener("click", (event) => {
     const button = event.target.closest("button");
     if (!button) return;
-    if (button.dataset.view) {
+    if (button.dataset.foodDay !== undefined) {
+      selectedView="food";
+      selectedDay=button.dataset.foodDay;
+      openMeal=selectedDay==="2" ? "2-dinner" : "";
+      render();
+      (get("view").querySelector(selectedDay==="2" ? "#meal-2-dinner" : ".day-pick") || get("views")).scrollIntoView({block:"start",behavior:"smooth"});
+    } else if (button.dataset.view) {
       selectedView = button.dataset.view;
       render();
       get("views").querySelector(`[data-view=${selectedView}]`).focus({preventScroll:true});
     } else if (button.dataset.day) {
       selectedDay = button.dataset.day;
+      openMeal="";
       render();
       get("view").querySelector(`.day-pick [data-day="${selectedDay}"]`).focus();
     } else if (button.dataset.pin) {
@@ -248,7 +281,10 @@ async function unlock() {
     try {
       await navigator.serviceWorker.register("./sw.js", {scope:"./"});
       const registration = await navigator.serviceWorker.ready;
-      if (registration.active) get("offline").textContent = "离线资料已保存";
+      const reportReady=()=>{ get("offline").textContent="行程与配图已存离线"; };
+      if (registration.installing) {
+        registration.installing.addEventListener("statechange", event=>{if(event.target.state==="activated")reportReady();});
+      } else if (registration.active) reportReady();
     } catch { get("offline").textContent = "当前浏览器未保存离线资料"; }
   }
 }
