@@ -331,3 +331,10 @@ h1,h2,h3,h4{letter-spacing:-.02em}
 @media(max-width:850px){.cast-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.world-intro{grid-template-columns:1fr}.world-title{max-width:100%}.original-chapter-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.mast-inner{min-height:62px;gap:8px}.brand{font-size:1rem}.brand span{display:block;margin:0;font-size:.8rem}.offline{font-size:.75rem;max-width:110px}.cover{margin-top:16px;border-radius:10px}.cover-media{height:auto;grid-row:auto}.cover-copy{padding:14px 16px;flex-wrap:wrap;gap:11px}.cover-subtitle{font-size:1.05rem}.cover .dates{font-size:.875rem}.cover-route{font-size:.875rem;gap:14px;width:100%;justify-content:space-between}.cover-route button{font-size:.875rem;min-height:38px}.views{margin-inline:-16px;padding-inline:16px;gap:6px}.views button{padding:8px 11px;font-size:.9rem}.ui-icon{width:27px;height:27px}.cast-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.cast-portrait{height:170px;padding:14px}.cast-portrait img{max-height:145px}.cast-info{padding:12px}.cast-info h3{font-size:1.24rem}.cast-info>p:last-child{font-size:.94rem}.keeper-card{grid-template-columns:1fr;padding:18px;gap:12px}.keeper-portrait img{max-height:220px}.keeper-card h3{font-size:1.6rem}.world-intro{padding:18px}.original-chapter-grid{grid-template-columns:1fr}.original-chapters{padding:14px}.wrap{padding-bottom:env(safe-area-inset-bottom)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation:none!important;transition:none!important}}
+.restore-access{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;max-width:620px}
+.restore-access label{flex-basis:100%;font-weight:650}
+.restore-access input{font:inherit;font-size:16px;min-width:0;flex:1 1 220px;min-height:48px;border:1px solid var(--line);border-radius:7px;background:#fff;padding:10px 12px;color:var(--ink)}
+.restore-access>p{flex-basis:100%}
+.trip-highlights .highlight{display:flex;flex-direction:column;align-items:stretch}
+.trip-highlights .highlight-title{padding-bottom:6px}
+.trip-highlights img[alt*="怀斯"]{object-fit:cover;object-position:50% 55%}

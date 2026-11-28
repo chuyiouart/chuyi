@@ -43,8 +43,11 @@ function uiIcon(view){
 function tripHighlights() {
   const highlights = [
     {day:0, file:"kyoto-night.webp", text:"京都 · 清水寺夜游"},
-    {day:3, file:"uji-koshoji.webp", text:"宇治 · 红叶与任天堂"},
-    {day:5, file:"sky-tree.webp", text:"大阪 · 梅田圣诞市集"}
+    {day:1, file:"otagi-rakan.webp", text:"岚山 · 爱宕念佛寺"},
+    {day:2, file:"nara-deer.webp", text:"奈良 · 小鹿〔暂定〕"},
+    {day:3, file:"nintendo-entrance.webp", text:"任天堂博物馆 · 已购票"},
+    {day:5, file:"sky-tree.webp", text:"梅田 · 圣诞市集"},
+    {day:6, file:"wyeth-preview.webp", text:"怀斯画展 · 已排／待购票"}
   ];
   return `<div class="trip-highlights" aria-label="旅行亮点">${highlights.map(({day,file,text}) => {
     const photo = data.gallery.find((item) => item.file === file);
@@ -197,6 +200,7 @@ function friends(){
 const renderers = {plan, food, map:maps, shop:shops, art, friends, pictures};
 function render() {
   const url=new URL(location.href);
+  if(!new URLSearchParams(url.hash.slice(1)).get("key")&&secret)url.hash=new URLSearchParams({key:secret}).toString();
   url.searchParams.set("view",selectedView);
   if(selectedDay!=="all")url.searchParams.set("day",selectedDay);else url.searchParams.delete("day");
   if(openMeal)url.searchParams.set("meal",openMeal);else url.searchParams.delete("meal");
@@ -254,7 +258,7 @@ function decode(value) {
 
 async function unlock() {
   if (!/^[A-Za-z0-9_-]{43}$/.test(secret)) {
-    get("message").textContent = "请用带专用密钥的完整链接打开。";
+    get("message").textContent = "请用完整的行程链接打开，或在下方粘贴链接。";
     return;
   }
   try {
@@ -289,4 +293,16 @@ async function unlock() {
   }
 }
 
+get("restore-access").addEventListener("submit",async(event)=>{
+ event.preventDefault();
+ const button=event.currentTarget.querySelector("button");
+ try{
+  const link=new URL(get("access-link").value.trim());
+  const supplied=new URLSearchParams(link.hash.slice(1)).get("key")||"";
+  if(!/^[A-Za-z0-9_-]{43}$/.test(supplied))throw new Error("invalid access link");
+  secret=supplied;button.disabled=true;get("message").textContent="正在打开你的关西行程…";
+  await unlock();
+ }catch{get("message").textContent="请粘贴完整的本次行程链接，再点打开行程。";}
+ finally{button.disabled=false;}
+});
 unlock();

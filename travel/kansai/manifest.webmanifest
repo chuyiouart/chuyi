@@ -1,10 +1,9 @@
 {
   "id": "./",
-  "name": "阿耀来了 · 关西开图计划",
+  "name": "和阿耀去旅行 · 关西行",
   "short_name": "阿耀关西",
   "lang": "zh-CN",
   "description": "星际朋友的关西八日漫游：真实地图、行程、餐食、购物与展览。",
-  "start_url": "./?view=plan&source=homescreen",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f5f6fa",
