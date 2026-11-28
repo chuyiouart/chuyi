@@ -4,7 +4,7 @@ const get = (id) => document.getElementById(id);
 const html = (text = "") => String(text).replace(/[&<>"']/g, (ch) => ({
   "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
 })[ch]);
-const tabs = {plan:"行程", food:"餐食", map:"真实地图", shop:"购物清单", art:"画展与活动", friends:"旅伴图鉴", pictures:"参考图"};
+const tabs = {plan:"行程", food:"餐食", map:"真实地图", shop:"购物清单", art:"画展与活动", pictures:"参考图"};
 const allowed = new Set(Object.keys(tabs));
 const params = new URLSearchParams(location.search);
 const fragment = new URLSearchParams(location.hash.slice(1));
@@ -36,7 +36,7 @@ function coverImage() {
 function uiIcon(view){
  const atlas=data.gallery.find(p=>p.role==="ayao-icons");
  if(!atlas)return "";
- const i=({plan:0,food:1,map:2,shop:3,art:4,friends:5,pictures:6})[view]||0;
+ const i=({plan:0,food:1,map:2,shop:3,art:4,pictures:6})[view]||0;
  return `<span class="ui-icon" aria-hidden="true" style="background-image:url('${html(atlas.embedded||`./assets/${atlas.file}`)}');background-position:${(i%4)*100/3}% ${Math.floor(i/4)*100}%"></span>`;
 }
 
@@ -188,16 +188,7 @@ function pictures() {
   return title("参考图", "点图可查看原图或来源。楼层和入口以现场标识及官方最新版本为准。") + groups.map(([label,role]) => `<h3 class="subhead">${label}</h3><div class="gallery">${data.gallery.filter((photo) => (photo.role || "guide") === role).map((photo) => picture(photo.file)).join("")}</div>`).join("");
 }
 
-function friendPortrait(person){
- const photo=data.gallery.find(p=>p.file===person.photo);
- return photo?`<img src="${html(photo.embedded||`./assets/${photo.file}`)}" alt="${html(person.name)} · ${html(person.shape)}" width="${photo.width}" height="${photo.height}" loading="lazy">`:"";
-}
-function friends(){
- const world=data.ayaoWorld;
- return title("星际朋友，这次一起出发", "十二位伙伴、守卷人，还有这次新加入的四位旅伴。")+`<div class="world-intro"><div><span class="eyebrow">AYAO · ORIGINAL WORLD</span><h3>阿耀来了</h3><p>${html(world.intro)}</p><p>${html(world.welcome)}</p><p class="small soft">${html(world.source)}</p></div>${picture("ayao-original-title.webp","world-title")}</div><div class="cast-grid">${world.characters.map(c=>`<article class="cast-card" data-character="${html(c.id)}"><div class="cast-portrait">${friendPortrait(c)}</div><div class="cast-info"><p class="cast-number">星际朋友 ${html(c.id)}</p><h3>${html(c.name)}</h3><p class="small soft">${html(c.shape)}</p><p>${html(c.about)}</p></div></article>`).join("")}</div><article class="keeper-card" data-character="keeper"><div class="keeper-portrait">${friendPortrait(world.keeper)}</div><div><span class="eyebrow">星图与线索</span><h3>守卷人</h3><p>${html(world.keeper.about)}</p><p class="small soft">${html(world.keeper.shape)}</p><button data-view="map">打开这次旅行的真实地图</button></div></article><section class="world-intro new-companions"><div><span class="eyebrow">NEW TRAVEL COMPANIONS</span><h3>原画里的四位新旅伴</h3><p>${html(world.newCompanions.note)}</p><div class="new-companion-list">${world.newCompanions.characters.map(c=>`<article><h4>${html(c.label)}</h4><p>${html(c.shape)}</p></article>`).join("")}</div></div>${picture(world.newCompanions.photo,"world-title")}</section><details class="original-chapters"><summary>回声图鉴 · 原作九章旅程</summary><div class="original-chapter-grid">${world.chapters.map(c=>`<article><span class="small soft">第${c.cycle}轮旅程</span><h4>${html(c.name)}</h4><p>${html(c.text)}</p></article>`).join("")}</div></details><details class="original-chapters"><summary>一路带来的力量</summary><div class="original-chapter-grid">${world.abilities.map(a=>`<article><h4>${html(a.name)}</h4><p>${html(a.text)}</p></article>`).join("")}</div></details><p class="world-quote">${html(world.quote)}</p>`;
-}
-
-const renderers = {plan, food, map:maps, shop:shops, art, friends, pictures};
+const renderers = {plan, food, map:maps, shop:shops, art, pictures};
 function render() {
   const url=new URL(location.href);
   if(!new URLSearchParams(url.hash.slice(1)).get("key")&&secret)url.hash=new URLSearchParams({key:secret}).toString();
