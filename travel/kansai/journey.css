@@ -338,3 +338,7 @@ h1,h2,h3,h4{letter-spacing:-.02em}
 .trip-highlights .highlight{display:flex;flex-direction:column;align-items:stretch}
 .trip-highlights .highlight-title{padding-bottom:6px}
 .trip-highlights img[alt*="怀斯"]{object-fit:cover;object-position:50% 55%}
+.new-companion-list{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:20px}
+.new-companion-list h4{font-size:1rem;margin-bottom:5px}
+.new-companion-list p{font-size:.94rem}
+@media(max-width:560px){.new-companion-list{grid-template-columns:1fr}}
