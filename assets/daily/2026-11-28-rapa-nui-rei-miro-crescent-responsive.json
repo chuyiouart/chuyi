@@ -1,0 +1,74 @@
+{
+  "derivatives": [
+    {
+      "budget_bytes": 184320,
+      "bytes": 7770,
+      "format": "webp",
+      "height": 273,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-28-rapa-nui-rei-miro-crescent-480.webp",
+      "quality": 84,
+      "sha256": "9bed0acebf9380387e3a6520e377fd4270519912c0ebf71d3dafd2b58ad8c749",
+      "width": 480
+    },
+    {
+      "budget_bytes": 460800,
+      "bytes": 13362,
+      "format": "webp",
+      "height": 438,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-28-rapa-nui-rei-miro-crescent-768.webp",
+      "quality": 84,
+      "sha256": "3fe1b23c3f96e77a41578dd034b50bd4311407d7d6ad51e5b5271816185e91bf",
+      "width": 768
+    },
+    {
+      "budget_bytes": 819200,
+      "bytes": 29872,
+      "format": "webp",
+      "height": 729,
+      "mime": "image/webp",
+      "page_use": "hero",
+      "path": "assets/daily/2026-11-28-rapa-nui-rei-miro-crescent-1280.webp",
+      "quality": 84,
+      "sha256": "b11dab083c42b7ffe52dab80730e6faaa783cd86ba6af3c3d8de7c3726477e7f",
+      "width": 1280
+    }
+  ],
+  "effective_date": "2026-08-12",
+  "expected_text": [],
+  "fallback": {
+    "bytes": 62209,
+    "format": "jpeg",
+    "height": 729,
+    "mime": "image/jpeg",
+    "page_use": "fallback",
+    "path": "assets/daily/2026-11-28-rapa-nui-rei-miro-crescent-fallback.jpg",
+    "quality": 84,
+    "sha256": "d347153ef8c2d15730f08fc069868d956c74e66240e6f472213685f4f74e8d12",
+    "width": 1280
+  },
+  "original_bytes": 633609,
+  "original_height": 1937,
+  "original_path": "assets/daily/2026-11-28-rapa-nui-rei-miro-crescent.jpg",
+  "original_sha256": "d5fafaa7e30232fd68414c17515b53d6b9d4223bc8f1fdc12054f8b01d003c15",
+  "original_url": "https://openaccess-cdn.clevelandart.org/1961.406/1961.406_print.jpg",
+  "original_width": 3400,
+  "page_role": "hero",
+  "qa_policy": {
+    "artifacts_must_be_false": true,
+    "ocr_exact_match": "N/A",
+    "ocr_reason": "official_collection_image_has_no_GPT_generated_text",
+    "receipt_must_bind_prompt_and_every_asset_sha256": true,
+    "vision_mobile_readable_required": true
+  },
+  "qa_receipt_path": "assets/daily/2026-11-28-rapa-nui-rei-miro-crescent-responsive-vision.json",
+  "qa_receipts": {},
+  "require_text_qa": false,
+  "schema_version": 1,
+  "sizes": "(max-width: 680px) 100vw, 70vw",
+  "source_preserved": true,
+  "srcset": "2026-11-28-rapa-nui-rei-miro-crescent-480.webp?v=9bed0acebf93 480w, 2026-11-28-rapa-nui-rei-miro-crescent-768.webp?v=3fe1b23c3f96 768w, 2026-11-28-rapa-nui-rei-miro-crescent-1280.webp?v=b11dab083c42 1280w"
+}

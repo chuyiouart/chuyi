@@ -1,0 +1,34 @@
+{
+  "agent_output": "[480]\nThe actual 480 WebP was opened and inspected. The complete crescent-shaped wooden rei miro and both raised end forms remain clearly distinguishable at mobile scale; the layered carved edges and tonal modelling are readable. No visible blockiness, ringing, banding, stretching, or other compression/scaling artifact is present. mobile_readability=true; artifacts=false; ocr_exact_match=N/A.\n\n[768]\nThe actual 768 WebP was opened and inspected. The full crescent silhouette, raised terminal forms, layered inner rim, wood grain, and surface modelling remain clear when scaled for mobile viewing. No visible compression or scaling artifacts are present. mobile_readability=true; artifacts=false; ocr_exact_match=N/A.\n\n[1280]\nThe actual 1280 WebP was opened and inspected. The entire object is sharp and clearly readable at mobile scale, including the symmetrical raised ends, nested crescent contours, edge transitions, wood grain, and wear. No visible compression or scaling artifacts are present. mobile_readability=true; artifacts=false; ocr_exact_match=N/A.\n\n[fallback]\nThe actual JPEG fallback was opened and inspected. The complete wooden gorget, its crescent silhouette, raised ends, layered contours, grain, and tonal transitions remain clear at mobile scale. No visible JPEG blocking, ringing, smearing, stretching, or other compression/scaling artifact is present. mobile_readability=true; artifacts=false; ocr_exact_match=N/A.",
+  "agent_output_sha256": "35bbc995e818b6266b07dad35993e7f0a08f928ffa63c3815f420b7558cc1a99",
+  "agent_prompt": "[480]\nOUART Daily Art responsive visual QA for asset 480. Inspect the actual opened image as it would appear scaled on a mobile screen. Determine whether the artwork's main subject remains clearly readable and whether there are any visible compression or scaling artifacts. This is an official museum image with no GPT-generated text, so OCR exact match is N/A. Return a concise factual assessment explicitly stating mobile readability and artifacts status.\n\n[768]\nOUART Daily Art responsive visual QA for asset 768. Inspect the actual opened image as it would appear scaled on a mobile screen. Determine whether the artwork's main subject remains clearly readable and whether there are any visible compression or scaling artifacts. This is an official museum image with no GPT-generated text, so OCR exact match is N/A. Return a concise factual assessment explicitly stating mobile readability and artifacts status.\n\n[1280]\nOUART Daily Art responsive visual QA for asset 1280. Inspect the actual opened image as it would appear scaled on a mobile screen. Determine whether the artwork's main subject remains clearly readable and whether there are any visible compression or scaling artifacts. This is an official museum image with no GPT-generated text, so OCR exact match is N/A. Return a concise factual assessment explicitly stating mobile readability and artifacts status.\n\n[fallback]\nOUART Daily Art responsive visual QA for asset fallback. Inspect the actual opened image as it would appear scaled on a mobile screen. Determine whether the artwork's main subject remains clearly readable and whether there are any visible compression or scaling artifacts. This is an official museum image with no GPT-generated text, so OCR exact match is N/A. Return a concise factual assessment explicitly stating mobile readability and artifacts status.",
+  "agent_prompt_sha256": "092eccfcba300c986a92d5a5faba067465d836caa7e868edd4b392380dc9bfab",
+  "date": "2026-11-28",
+  "results": {
+    "1280": {
+      "artifacts": false,
+      "image_sha256": "b11dab083c42b7ffe52dab80730e6faaa783cd86ba6af3c3d8de7c3726477e7f",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "480": {
+      "artifacts": false,
+      "image_sha256": "9bed0acebf9380387e3a6520e377fd4270519912c0ebf71d3dafd2b58ad8c749",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "768": {
+      "artifacts": false,
+      "image_sha256": "3fe1b23c3f96e77a41578dd034b50bd4311407d7d6ad51e5b5271816185e91bf",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    },
+    "fallback": {
+      "artifacts": false,
+      "image_sha256": "d347153ef8c2d15730f08fc069868d956c74e66240e6f472213685f4f74e8d12",
+      "ocr_exact_match": "N/A",
+      "vision_mobile_readable": true
+    }
+  },
+  "schema_version": 1
+}
